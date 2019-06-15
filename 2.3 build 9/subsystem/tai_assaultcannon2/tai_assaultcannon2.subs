@@ -1,0 +1,8 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="MediumArmour"
+LoadSharedModel(NewSubSystemType,"Tai_AssaultCannon");
+StartSubSystemWeaponConfig(NewSubSystemType,"Tai_AssaultGun2","Weapon_Gun1","Weapon_Gun1");

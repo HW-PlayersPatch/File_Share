@@ -1,0 +1,9 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="SmallCapitalShip"
+NewSubSystemType.ArmourFamily="HeavyArmour"
+LoadSharedModel(NewSubSystemType,"Kus_DestroyerIon1");
+StartSubSystemWeaponConfig(NewSubSystemType,"Kus_DestroyerIon1","Weapon_Gun1","Weapon_Gun1");

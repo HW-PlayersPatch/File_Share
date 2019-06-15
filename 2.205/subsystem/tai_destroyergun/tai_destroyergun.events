@@ -1,0 +1,39 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Gun0",
+            length = 2.5,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	wpn1 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0.0" },
+            { "marker", "Weapon_Gun0_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },
+        wpn2 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0.2" },
+            { "marker", "Weapon_Gun0Slave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_CANNON_SHELL" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

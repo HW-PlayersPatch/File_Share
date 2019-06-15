@@ -1,0 +1,15 @@
+-- sum of values cannot exceed 1
+NAVS = {
+climbTime = 0.00,
+topWaitTime = 0.1,
+decayTime = 0.15,
+bottomWaitTime= 0.75,
+illumSawHz = 15731.93,
+illumSawMin = 0.9,
+illumSawMax = 1.1,
+illumSinHz = 0.125,
+illumSinMin = 0.95,
+illumSinMax = 1.05,
+illumSinOfs = 0.5,
+noSelfLight=1,
+}

@@ -1,0 +1,9 @@
+KUS_DRONE0_Normal_OnSet = function(ship)
+	startEffect(ship, "launch")
+end
+KUS_DRONE0_Launched_OnSet = function(ship)
+	startEffect(ship, "launch")
+end
+KUS_DRONE0_Docked_OnSet = function(ship)
+	startEffect(ship, "launch")
+end

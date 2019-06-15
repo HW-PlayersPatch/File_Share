@@ -1,0 +1,193 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Fire_Top",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "Fire_Bottom",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation4 =
+        {
+            name = "PowerOff",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation5 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation6 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },
+        animation7 =
+        {
+            name = "dmg02",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        },        
+    },
+    events =
+    {
+        death1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+            { "fx", "death_generic_fighter" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "0.75" },
+        },
+				death2 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.65" },
+            { "marker", "Root" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1" },
+        },
+        death3 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.91" },
+            { "marker", "Root" },
+            { "fx", "dmg_cloud_main_explosion_combo" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "2" },
+        },
+				death4 =
+        {
+            { "anim", "Death1" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "death_generic_fighter" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "entity" },
+        },
+        wpn1 =
+        {
+            { "anim", "Fire_Top" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TurretTop_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+            { "fx_scale", "0.5" },
+        },
+        wpn2 =
+        {
+            { "anim", "Fire_Bottom" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TurretBottom_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+            { "fx_scale", "0.5" },
+        },
+        wpn3 =
+        {
+            { "anim", "Fire_Top" },
+            { "animtime", "0.5" },
+            { "marker", "Weapon_TurretTopSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+            { "fx_scale", "0.5" },
+        },
+        wpn4 =
+        {
+            { "anim", "Fire_Bottom" },
+            { "animtime", "0.5" },
+            { "marker", "Weapon_TurretBottomSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+            { "fx_scale", "0.5" },
+        },        
+        dmg1 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_steam_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },
+        dmg2 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "marker3,marker4,marker5" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_steam_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "2.5" },
+            { "fx_nlips", "on" },
+        },        
+				--chunck fast							
+				chunckfast1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.92", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast1", },                 
+						{ "fx_scale", "0.6", }, 
+				},      
+				eventPowerOff = 
+				{ 
+						{ "anim", "PowerOff", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 
+						{ "fx", "plasma_ball_spray", }, 
+						{ "sound", "SPECIAL/PS", }, 
+						{ "fx_scale", "7", },
+				},
+    }
+}

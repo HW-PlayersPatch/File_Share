@@ -1,0 +1,13 @@
+
+-- formats:
+
+hitfx = "dmg_sml_missle_combo"
+bulletfx = "dmg_sml_missle_combo"
+nopenetratefx = "dmg_sml_missle_combo"
+deathtype = "deathCannon"
+
+hit_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_TORPEDO_HIT"
+nopenetrate_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_TORPEDO_HIT"
+
+hit_clamp = {1.0, 1.0}
+nopenetrate_clamp = {1.0, 1.0}

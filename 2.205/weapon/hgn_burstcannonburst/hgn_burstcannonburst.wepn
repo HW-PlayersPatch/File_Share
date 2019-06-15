@@ -1,0 +1,16 @@
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","ArtilleryBurst","Normal",0,0,60,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100,100,"");
+setPenetration(NewWeaponType,5,1,
+{unarmoured=0.09*3.095},
+{Unarmoured_hw1=0.458},
+{lightarmour=0.16},
+{lightarmour_hw1=0.38},
+{mediumarmour=2.5},
+{heavyarmour=2.5},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SpaceMineArmor=1});
+setFireMultFactor(NewWeaponType, 1.0);

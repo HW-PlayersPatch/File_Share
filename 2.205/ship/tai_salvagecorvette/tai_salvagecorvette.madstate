@@ -1,0 +1,25 @@
+TAI_SALVAGECORVETTE_Launched_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "SwingCockpit_IN") ~= 0) then
+        startTime = getAnimLength(ship, "SwingCockpit_IN") - getTime(ship, "SwingCockpit_IN")
+        stopAnim(ship, "SwingCockpit_IN")
+        endEffect(ship, "SwingCockpit_IN")
+    end
+    startAnim(ship, "SwingCockpit_OUT")
+    startEffect(ship, "SwingCockpit_OUT")
+    setTime(ship,"SwingCockpit_OUT",startTime)
+    setPauseTime(ship, "SwingCockpit_OUT", 1000)
+end
+
+TAI_SALVAGECORVETTE_Docked_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "SwingCockpit_OUT") ~= 0) then
+        startTime = getAnimLength(ship, "SwingCockpit_OUT") - getTime(ship, "SwingCockpit_OUT")
+        stopAnim(ship, "SwingCockpit_OUT")
+        endEffect(ship, "SwingCockpit_OUT")
+    end
+    startAnim(ship, "SwingCockpit_IN")
+    startEffect(ship, "SwingCockpit_IN")
+    setTime(ship,"SwingCockpit_IN",startTime)
+    setPauseTime(ship, "SwingCockpit_IN", 1000)
+end

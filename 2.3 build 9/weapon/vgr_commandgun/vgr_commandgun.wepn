@@ -1,0 +1,7 @@
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Kinetic_Small", "Normal", 20000, 2400, 0, 0, 0, 0, 1, 0, 0, 15, 0, 0, 1, 0, 0, 0, 0.1, "Normal", 1, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 0.0, 0.0, "")
+setPenetration(NewWeaponType,0,0);
+setAccuracy(NewWeaponType,1)
+setAngles(NewWeaponType,179,0,0,0,0)
+
+setFireMultFactor(NewWeaponType, 1.0);

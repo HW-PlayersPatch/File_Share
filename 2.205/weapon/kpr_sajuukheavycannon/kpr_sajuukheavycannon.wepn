@@ -1,0 +1,19 @@
+
+StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","Super_BeamSaj","Normal",0,20000,0,8,4,0,30,0,1,15,0,0,0,0,0,0,0.1,"Bypass",1,0,1000000);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",75000,75000,"");
+AddWeaponResult(NewWeaponType,"Hit","Push","Target",-1000,-1000,"");
+setPenetration(NewWeaponType,100,1);
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.0},
+{SpaceMine=0.0},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0},
+{Fighter_hw1=0},
+{Corvette=0},
+{Corvette_hw1=0},
+{munition=0});
+setAngles(NewWeaponType,5,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

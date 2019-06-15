@@ -1,0 +1,213 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 3,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.25,
+            maximum = 1,
+            markers = {""}
+        },
+        animation4 =
+        {
+            name = "dmg02",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },
+        animation5 =
+        {
+            name = "dmg03",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        },
+				animationrad =
+        {
+            name = "Radiation",
+            length = 2,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        death1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.45" },
+            { "marker", "Root" },
+            { "fx", "dmg_cloud_main_explosion_combo" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "16" },
+        },
+				--smoke
+				smoke1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 
+						{ "fx", "death_generic_cf_instant", },						
+						{ "fx_scale", "entity", }, 
+				},  
+				--chunck				
+				chunck1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.42", }, 						
+						{ "marker", "Root", }, 
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final2", },                 
+						{ "fx_scale", "0.85", }, 
+				},        
+				chunck2 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.43", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final1", },                 
+						{ "fx_scale", "0.95", }, 
+				},
+				--chunck fast				
+				chunckfast1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.44", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast2", },                 
+						{ "fx_scale", "0.5", }, 
+				},    				
+				chunckfast2 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.45", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast1", },                 
+						{ "fx_scale", "0.6", }, 
+				}, 	
+        death2 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "top_00,left_00,right_00,front_00,back_00,bottom_00" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA_FAR" },
+            { "fx_scale", "1.5" },
+        },
+        death3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "top_01,left_01,right_01,front_01,back_01,bottom_01" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "fx_scale", "2" },
+        },
+        death4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.15" },
+            { "marker", "top_02,left_01,right_01,front_02,back_02,bottom_02" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA_FAR" },
+            { "fx_scale", "2.5" },
+        },
+        death5 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.25" },
+            { "marker", "top_00,left_00,right_00,front_00,back_00,bottom_00" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA_FAR" },
+            { "fx_scale", "3" },
+        },
+        death6 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.3" },
+            { "marker", "top_01,left_01,right_01,front_01,back_01,bottom_01" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "fx_scale", "3.5" },
+        },
+        death7 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "top_02,left_01,right_01,front_02,back_02,bottom_02" },
+            { "fx", "dmg_cloud_explosion_large_nodebris" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "4" },
+        },
+				dmg1 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "top_00,left_00,right_00,front_00,back_00,bottom_00" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_LIGHT" },
+            { "fx_scale", "3.1" },
+            { "fx_nlips", "on" },
+        },
+        dmg2 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "top_01,left_01,right_01,front_01,back_01,bottom_01" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_LIGHT" },
+            { "fx_scale", "4.1" },
+            { "fx_nlips", "on" },
+        },
+        dmg3 =
+        {
+            { "anim", "dmg03" },
+            { "animtime", "-1" },
+            { "marker", "top_02,left_01,right_01,front_02,back_02,bottom_02" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_LIGHT" },
+            { "fx_scale", "5.1" },
+            { "fx_nlips", "on" },
+        },
+				Radiation =
+        {
+            { "anim", "Radiation", },
+            { "animtime", "-1", },
+            { "marker", "Root", },
+            { "fx", "sparks_small_spray_rad", }, 
+						--{ "sound", "SPECIAL/PS", }, 
+            { "fx_scale", "20", },
+            { "fx_nlips", "on" },
+        },				
+    }
+}

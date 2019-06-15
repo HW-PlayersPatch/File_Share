@@ -1,0 +1,1131 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 4,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Weapon_Triton1",
+            length = 5,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "Weapon_Triton2",
+            length = 5,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation4 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.25,
+            maximum = 1,
+            markers = {""}
+        },
+        animation5 =
+        {
+            name = "dmg02",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },
+        animation6 =
+        {
+            name = "dmg03",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        },
+        animation7 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation8 =
+        {
+            name = "Trigger",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation9 =
+        {
+            name = "Weapon_DreadTurret",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_mesh" },
+            { "sound", "WEAPON/MEGASHIP/FIRE/DREADNAUGHT_FIRE_1" },
+            { "fx_scale", "1" },
+        },
+        event2 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event3 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.05" },
+            { "marker", "marker2" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event4 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker3" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event5 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.15" },
+            { "marker", "marker4" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event6 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.2" },
+            { "marker", "marker5" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event7 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.25" },
+            { "marker", "marker6" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event8 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.3" },
+            { "marker", "marker7" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event9 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.35" },
+            { "marker", "marker8" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event10 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.4" },
+            { "marker", "marker9" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event11 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.45" },
+            { "marker", "marker10" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event12 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.5" },
+            { "marker", "marker11" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event13 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.55" },
+            { "marker", "marker12" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event14 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "marker13" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event15 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.125" },
+            { "marker", "marker18" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event16 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker14" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event17 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.2" },
+            { "marker", "marker15" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event18 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.075" },
+            { "marker", "marker16" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event19 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.05" },
+            { "marker", "marker17" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event20 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker18" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event21 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.15" },
+            { "marker", "marker19" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event22 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.025" },
+            { "marker", "marker20" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event23 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker21" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event24 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.175" },
+            { "marker", "marker22" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event25 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker23" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event26 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "marker35" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event27 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.05" },
+            { "marker", "marker34" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event28 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.1" },
+            { "marker", "marker33" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event29 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.15" },
+            { "marker", "marker24" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event30 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.2" },
+            { "marker", "marker25" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event31 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.25" },
+            { "marker", "marker26" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event32 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.3" },
+            { "marker", "marker27" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event33 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.35" },
+            { "marker", "marker28" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event34 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.4" },
+            { "marker", "marker29" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event35 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.45" },
+            { "marker", "marker30" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event36 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.5" },
+            { "marker", "marker31" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event37 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.55" },
+            { "marker", "marker32" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event38 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.4" },
+            { "marker", "marker36" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event39 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.93" },
+            { "marker", "marker37" },
+            { "fx", "super_beam_lensflare" },
+            { "fx_scale", "0.5" },
+            { "gameEv", "playBgLightAnim,super_beam_background_ring" },
+        },
+        event40 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_mesh_engine" },
+            { "fx_scale", "1" },
+        },
+        event41 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_channels_mesh" },
+            { "fx_scale", "1" },
+        },
+        event42 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_mesh" },
+            { "fx_scale", "1" },
+        },
+        event43 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event44 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.05" },
+            { "marker", "marker2" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event45 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker3" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event46 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.15" },
+            { "marker", "marker4" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event47 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.2" },
+            { "marker", "marker5" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event48 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.25" },
+            { "marker", "marker6" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event49 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.3" },
+            { "marker", "marker7" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event50 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.35" },
+            { "marker", "marker8" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event51 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.4" },
+            { "marker", "marker9" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event52 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.45" },
+            { "marker", "marker10" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event53 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.5" },
+            { "marker", "marker11" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event54 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.55" },
+            { "marker", "marker12" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event55 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "marker13" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event56 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.125" },
+            { "marker", "marker18" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event57 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker14" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event58 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.2" },
+            { "marker", "marker15" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event59 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.075" },
+            { "marker", "marker16" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event60 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.05" },
+            { "marker", "marker17" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event61 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker18" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event62 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.15" },
+            { "marker", "marker19" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event63 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.025" },
+            { "marker", "marker20" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event64 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker21" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event65 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.175" },
+            { "marker", "marker22" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event66 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker23" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event67 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "marker35" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event68 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.05" },
+            { "marker", "marker34" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event69 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.1" },
+            { "marker", "marker33" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event70 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.15" },
+            { "marker", "marker24" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event71 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.2" },
+            { "marker", "marker25" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event72 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.25" },
+            { "marker", "marker26" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event73 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.3" },
+            { "marker", "marker27" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event74 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.35" },
+            { "marker", "marker28" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event75 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.4" },
+            { "marker", "marker29" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event76 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.45" },
+            { "marker", "marker30" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event77 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.5" },
+            { "marker", "marker31" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event78 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.55" },
+            { "marker", "marker32" },
+            { "fx", "super_beam_flare_spray" },
+            { "fx_scale", "1" },
+        },
+        event79 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.4" },
+            { "marker", "marker36" },
+            { "fx", "super_beam_flare_spray02" },
+            { "fx_scale", "1" },
+        },
+        event80 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.93" },
+            { "marker", "marker37" },
+            { "fx", "super_beam_lensflare" },
+            { "fx_scale", "1" },
+            { "gameEv", "playBgLightAnim,super_beam_background_ring" },
+        },
+        event81 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_mesh_engine" },
+            { "fx_scale", "1" },
+        },
+        event82 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "super_beam_dreadnaught_channels_mesh" },
+            { "fx_scale", "1" },
+        },
+        event83 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.85" },
+            { "marker", "Weapon_Triton1_Muzzle" },
+            { "fx", "super_beam_combo_nis" },
+            { "fx_scale", "1" },
+        },
+        event84 =
+        {
+            { "anim", "Weapon_Triton2" },
+            { "animtime", "0.85" },
+            { "marker", "Weapon_Triton1_Muzzle" },
+            { "fx", "super_beam_glow_nis" },
+            { "fx_scale", "1" },
+        },
+        event85 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "markerd1" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1.5" },
+        },
+        event86 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.025" },
+            { "marker", "markerd2" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "2" },
+        },
+        event87 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.05" },
+            { "marker", "markerd3" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "5" },
+        },
+        event88 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.08" },
+            { "marker", "markerd4" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "2.5" },
+        },
+        event89 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "markerd5" },
+            { "fx", "dmg_capital_explosion_large_hull_flare" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "3" },
+        },
+        event90 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.2" },
+            { "marker", "markerd6" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1" },
+        },
+        event91 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.225" },
+            { "marker", "markerd7" },
+            { "fx", "dmg_capital_explosion_large_hull_flare" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        event92 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.25" },
+            { "marker", "markerd8" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "2" },
+        },
+        event93 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.275" },
+            { "marker", "markerd9" },
+            { "fx", "dmg_capital_explosion_large_hull_flare" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "3" },
+        },
+        event94 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.3" },
+            { "marker", "markerd10" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "6" },
+        },
+        event95 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "markerd11" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "5" },
+        },
+        event96 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.425" },
+            { "marker", "markerd12" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "6" },
+        },
+        event97 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.45" },
+            { "marker", "markerd13" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        event98 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.478" },
+            { "marker", "markerd14" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_noscar" },
+            { "fx_scale", "4.5" },
+        },
+        event99 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.5" },
+            { "marker", "markerd15" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "2" },
+        },
+        event100 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.6" },
+            { "marker", "markerd16" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "2.5" },
+        },
+        event101 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.625" },
+            { "marker", "markerd17" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "8" },
+        },
+        event102 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.65" },
+            { "marker", "markerd18" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "6" },
+        },
+        event103 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.675" },
+            { "marker", "markerd19" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_noscar" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "4" },
+        },
+        event104 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.7" },
+            { "marker", "markerd20" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "4" },
+        },
+        event105 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.3" },
+            { "marker", "markerd21" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "9" },
+        },
+        event106 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "markerd22" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "1.5" },
+        },
+        event107 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "markerd23" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "5" },
+        },
+        event108 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.45" },
+            { "marker", "markerd24" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "2.5" },
+        },
+        event109 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.5" },
+            { "marker", "markerd25" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        event110 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.7" },
+            { "marker", "Root" },
+            { "fx", "dmg_capital_burn_ring" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        event111 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "Root" },
+            { "fx", "dmg_capital_explosion_combo" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "45" },
+            { "fx_sm", "on" },
+        },
+        event112 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "Root" },
+            { "fx", "DMG_MASSIVE_MESH_SPHERE_RING" },
+            { "fx_scale", "2" },
+            { "fx_sm", "on" },
+        },
+        event113 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "6" },
+            { "fx_nlips", "on" },
+        },
+        event114 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "marker11,marker12,marker13,marker14,marker15" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "10" },
+            { "fx_nlips", "on" },
+        },
+        event115 =
+        {
+            { "anim", "dmg03" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "9" },
+            { "fx_nlips", "on" },
+        },
+        event116 =
+        {
+            { "anim", "dmg03" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "4" },
+            { "fx_nlips", "on" },
+        },
+        event117 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "marker11,marker12,marker13,marker14,marker15" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "7" },
+            { "fx_nlips", "on" },
+        },
+        event118 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "5" },
+            { "fx_nlips", "on" },
+        },
+        event119 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.93" },
+            { "marker", "marker37" },
+            { "fx", "super_beam_light" },
+            { "fx_scale", "1" },
+        },
+        event120 =
+        {
+            { "anim", "Trigger" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "pro_tech_dreadnaught_trigger" },
+        },
+        event121 =
+        {
+            { "anim", "Trigger" },
+            { "animtime", "0.5" },
+            { "marker", "Root" },
+            { "fx", "super_beam_flare_ring01" },
+            { "fx_scale", "20" },
+        },
+        event122 =
+        {
+            { "anim", "Weapon_DreadTurret" },
+            { "animtime", "0" },
+            { "marker", "Weapon_DreadTurret_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital_dread" },
+            { "sound", "WEAPON/MEGASHIP/FIRE/DWEAPON_MOVER_KINETIC_AUTOGUN_SHELL" },
+            { "fx_scale", "3" },
+        },
+        event123 =
+        {
+            { "anim", "Weapon_DreadTurret" },
+            { "animtime", "0.2" },
+            { "marker", "Weapon_DreadTurretSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital_dread" },
+            { "sound", "WEAPON/MEGASHIP/FIRE/DWEAPON_MOVER_KINETIC_AUTOGUN_SHELL" },
+            { "fx_scale", "3" },
+        },
+        event124 =
+        {
+            { "anim", "Weapon_Triton1" },
+            { "animtime", "0.73" },
+            { "marker", "marker37" },
+            { "sound", "WEAPON/MEGASHIP/FIRE/SAJUUK_HEAVY_ION_CANNON_BEAM" },
+        },
+    }
+}

@@ -1,0 +1,50 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("Shot1_CamShape",4)
+	speechSetDir("NIS_08")
+	wideScreenIn(4)
+at frame 1
+	cameraCut("Shot1_CamShape")
+	musicStart("nis08")
+at frame 720
+	cameraCut("CamShape2")
+at frame 864
+	cameraCut("Shot1_CamShape")
+at frame 1080
+	cameraCut("CamShape2")
+at frame 1280
+	speechEvent("$56080",2)
+at frame 1373
+	speechEvent("$56081",2)
+at frame 1438
+	cameraCut("Shot1_CamShape")
+at frame 1518
+	speechEvent("$56082",2)
+at frame 1582
+	cameraCut("CamShape3")
+at frame 1590
+	speechEvent("$56083",2)
+at frame 1667
+	speechEvent("$56084",2)
+at frame 1728
+	cameraCut("Shot1_CamShape")
+at frame 1798
+	cameraCut("CamShape3")
+at frame 1870
+	cameraCut("Shot1_CamShape")
+at frame 2000
+	focus()
+	musicStop(4)
+	nisOut(4)
+
+with |Shot1_Cam_root|Kpr_Destroyer1
+{
+	at frame 0
+		focusAtEnd()
+		remainAtEnd("Keeper")
+		setPlayer(1)
+	at frame 1088
+		startEffectEvent("On")
+	at frame 2080
+		keepMovingAtEnd("InhibitorChunk2")
+}

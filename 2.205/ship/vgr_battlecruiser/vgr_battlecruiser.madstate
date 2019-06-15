@@ -1,0 +1,5 @@
+VGR_BATTLECRUISER_Normal_OnSet = function(ship)
+    startParamAnim(ship, "HorizontalThrustVectoring", "HorizontalRotation")
+    --pauseAnim(ship, "HorizontalThrustVectoring")
+end
+

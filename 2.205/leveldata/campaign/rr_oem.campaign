@@ -1,0 +1,30 @@
+-- localized display name for the UI
+displayName = "$4062"
+
+-- 2 = Extra
+contentType = 2
+contentName = "rr_oem"
+contentOrdered = 0
+contentChooseText = "$4062"
+contentThumbName = "$4064"
+contentThumbDesc = "$4063"
+contentSort = 0.5	-- Default is 1.0, so 0.5 will appear _before_ others.
+contentRules = "SinglePlayer"	-- A DEFAULT that actually reads from SinglePlayerOptions.lua
+
+ExtFilter = "campaign_rroem,campaign_gbx,campaign_gbx_rroem"
+
+Mission = { }   -- create a mission structure
+
+-- Mission 1 
+Mission[1] = {
+    postload        = function () end,
+
+    directory       = "Mission05OEM",
+    level           = "Mission05OEM.level",
+    postlevel       = function () postLevelComplete() end,
+
+    displayName     = "$4062",
+    description     = "$4063",
+	usepersist = "player:Campaign//HOMEWORLDCLASSIC//persist5.lua",
+	usedefaultpersist = 1,
+}

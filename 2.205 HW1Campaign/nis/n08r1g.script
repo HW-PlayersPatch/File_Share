@@ -1,0 +1,34 @@
+speechSetDir("n08r1g")
+at frame 0
+    fadeSet(0.995)
+    loadBackground("ez11")
+    hideUniverse(0)
+at frame 30
+    fadeTo(0.0, 2)
+at frame 510
+    cameraLeave()
+at frame 630
+    musicStop(1)
+at frame 658
+    wideScreenOut(2)
+    focus()
+with Kus_Mothership
+{
+    at frame 0
+        hide()
+        focusAtEnd()
+    at frame 60
+        speechEventActor("$66645", 18, 2)
+}
+
+with NIS_GalaxyMap
+{
+    at frame 1
+        MeshSetParamF1("Galaxy_Disc", "NIS_TimeScale", -1.0)
+		MeshSetParamF1("Galaxy_Vectors", "NIS_TimeScale", -1.0)
+        MeshSetParamTime("Galaxy_Disc", "NIS_Trigger", 15.0, 15.0)
+		MeshSetParamTime("Galaxy_Vectors", "NIS_Trigger", 15.0, 15.0)
+
+        show()
+}
+

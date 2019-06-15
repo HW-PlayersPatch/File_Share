@@ -1,0 +1,9 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+LoadHODFile(NewSubSystemType,1); 
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="TurretArmour"
+StartSubSystemWeaponConfig(NewSubSystemType,"Hgn_IonCannonTurret","Weapon_Top","Weapon_Top");

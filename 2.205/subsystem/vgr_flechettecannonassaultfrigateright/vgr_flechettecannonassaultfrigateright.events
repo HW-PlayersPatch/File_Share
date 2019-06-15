@@ -1,0 +1,29 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Right",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_Right" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Right_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "sound", "WEAPON/FRIGATE/FIRE/VWEAPON_FIRIGATE_FLECHETTE_REPEATER_SHELL" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

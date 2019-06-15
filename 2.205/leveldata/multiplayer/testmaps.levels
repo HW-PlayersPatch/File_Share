@@ -1,0 +1,237 @@
+
+--Local_Desc - Description of this package
+--Package_Sym - Shared name for packages with the same catagory
+--Package_Desc - Description - may move to a 'package' desc file...
+
+Root = "DATA:\\LevelData\\Multiplayer\\DeathMatch"
+
+ExtFilter = "levels_test"
+
+--Tags - Set single tags for all levels...
+Tags = "test"
+
+--TagSets - Set groups of tags for all levels (defined in Scripts/Tags/*.tags) - makes bulk editing faster...
+--TagSets = "test"
+
+LevelList = {
+	{
+		Name = "bentus",
+		Desc = "bentus",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "combattesting",
+		Desc = "combattesting",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "combattesting_vaygr",
+		Desc = "combattesting_vaygr",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "demo_pax",
+		Desc = "demo_pax",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "eventsimulator",
+		Desc = "EVENT SIMULATOR",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "minspectest",
+		Desc = "minspectest",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "multiplayertestmap",
+		Desc = "MULTIPLAYER TEST MAP",
+		MaxPlayers = 8,
+	},
+	{
+		Name = "noship_astronautsmurderingforsport",
+		Desc = "NS: AstronautsMurderingForSport",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_a_light_shining_in_darkness",
+		Desc = "NS: A Light Shining In Darkness",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_demo1",
+		Desc = "NS: e3_demo1",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_demo2",
+		Desc = "NS: e3_demo2",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_megalot",
+		Desc = "NS: e3_megalot",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_megalothw1",
+		Desc = "NS: e3_megalothw1",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_megalothw1_kus",
+		Desc = "NS: e3_megalothw1_kus",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_megalothw1_tai",
+		Desc = "NS: e3_megalothw1_tai",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_e3_megalot_resources",
+		Desc = "NS: e3_megalot_resources",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez01",
+		Desc = "NS: hw1_demo_ez01",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez02",
+		Desc = "NS: hw1_demo_ez02",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez04",
+		Desc = "NS: hw1_demo_ez04",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez07",
+		Desc = "NS: hw1_demo_ez07",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez08",
+		Desc = "NS: hw1_demo_ez08",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw1_demo_ez10",
+		Desc = "NS: hw1_demo_ez10",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_combatdemo_m03",
+		Desc = "NS: hw2_combatdemo_m03",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_combatdemo_m09",
+		Desc = "NS: hw2_combatdemo_m09",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_combatdemo_m11",
+		Desc = "NS: hw2_combatdemo_m11",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_combatdemo_m13",
+		Desc = "NS: hw2_combatdemo_m13",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_combatdemo_m15",
+		Desc = "NS: HW2_combatdemo_m15",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m01",
+		Desc = "NS: HW2_demo_m01",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m03",
+		Desc = "NS: HW2_demo_m03",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m09",
+		Desc = "NS: HW2_demo_m09",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m11",
+		Desc = "NS: HW2_demo_m11",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m13",
+		Desc = "NS: HW2_demo_m13",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_hw2_demo_m15",
+		Desc = "NS: HW2_demo_m15",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_megalot_thefleet",
+		Desc = "NS: Megalot - The Fleet",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_megalot_zoo",
+		Desc = "NS: Megalot - Zoo",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "noship_perpetualviolence",
+		Desc = "NS: Perpetual Violence",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "oni_colisiontestmap",
+		Desc = "Oni: Collision Test",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "parkinglot",
+		Desc = "Parkinglot",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "parkinglot_assaultfrigate",
+		Desc = "Parkinglot: AssaultFrigate",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "parkinglot_asteroid",
+		Desc = "Parkinglot: Asteroid",
+		MaxPlayers = 1,
+	},
+	{
+		Name = "parkinglot_cmdline",
+		Desc = "Parkinglot: CmdLine",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "parkinglot_megalith",
+		Desc = "Parkinglot: Megalith",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "shadertest",
+		Desc = "shadertest",
+		MaxPlayers = 2,
+	},
+	{
+		Name = "unittestmap",
+		Desc = "Unit Test Map",
+		MaxPlayers = 2,
+	},
+}

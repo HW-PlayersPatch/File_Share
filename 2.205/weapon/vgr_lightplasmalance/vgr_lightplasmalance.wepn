@@ -1,0 +1,29 @@
+StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","VgrBeam_Lance","Normal",0,1410,0,0.4,0,0,2,1,0,0.4,1.2,3,0,0,0,0,0.1,"Normal",0,0,300);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",60,60,"");
+setPenetration(NewWeaponType,5,1,
+{ResArmour=0.6},
+{LightArmour_hw1=1.12},
+{TurretArmour=1.0},
+{MediumArmour=1.0},
+{HeavyArmour=1.0},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.1},
+{Fighter_hw1=0.1},
+{Corvette_hw1=1.0},
+{munition=0.01});
+setAngles(NewWeaponType,9,0,0,0,0);
+setFrustratedTimers(NewWeaponType, 0.0, 10.0);
+setDamageFalloff(NewWeaponType, 0.10/1410.0, 0.1);
+setAccuracyFalloff(NewWeaponType, 0.10/1410.0, 0.1);
+setBallistics(NewWeaponType,1,0.0);
+setFireMultFactor(NewWeaponType, 1.0);
+setRangeBoost(NewWeaponType, 1.0);
+setRangeByStance(NewWeaponType, 1.0, 1.0, 1.0);

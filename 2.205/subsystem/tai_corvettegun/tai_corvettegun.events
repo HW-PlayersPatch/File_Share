@@ -1,0 +1,69 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Weapon_Top",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+		animation3 =
+        {
+            name = "Weapon_Top_Special",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+		wpn1 =
+        {
+            { "anim", "Weapon_Top" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Top_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+						{ "fx_scale", "0.75" },
+            { "fx_nlips", "on" },
+        },
+		wpn2 =
+        {
+            { "anim", "Weapon_Top" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TopSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+						{ "fx_scale", "0.75" },
+            { "fx_nlips", "on" },
+        },
+		wpn1s =
+        {
+            { "anim", "Weapon_Top_Special" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Top_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_FLAK_CANNON_SHELL" },
+			{ "fx_scale", "1.25" },
+            { "fx_nlips", "on" },
+        },
+		wpn2s =
+        {
+            { "anim", "Weapon_Top_Special" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TopSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_FLAK_CANNON_SHELL" },
+			{ "fx_scale", "1.25" },
+            { "fx_nlips", "on" },
+        },
+	}
+}

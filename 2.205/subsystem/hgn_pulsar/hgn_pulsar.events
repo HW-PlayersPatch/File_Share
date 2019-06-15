@@ -1,0 +1,28 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Fire",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Fire" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Pulsar_Muzzle" },
+            { "fx", "lance_charged_particle" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_VULCAN_KINETIC_TURRET_SHELL" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

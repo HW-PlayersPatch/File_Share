@@ -1,0 +1,15 @@
+
+StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","VgrBeam","Normal",0,1400,0,3,0,0,10,0,1,5,0,0,0,0,0,0,0.1,"Normal",0,0,300);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",4500,4500,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1);
+
+setFireMultFactor(NewWeaponType, 1.0);

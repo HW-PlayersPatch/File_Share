@@ -1,0 +1,223 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 7,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },        
+    },
+    events =
+    {
+        death1 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "front_01" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/ACCENTS" },
+            { "fx_scale", "11.5" },
+        },
+        death2 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "top_01" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "11" },
+        },
+        death3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.05" },
+            { "marker", "top_01" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "5.75" },
+        },
+        death4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.01" },
+            { "marker", "root" },
+            { "fx", "dmg_capital_explosion_combo_red" },
+            { "sound", "EXPLOSION/STRESSACCENTS" },
+            { "fx_scale", "34.5" },
+        },        
+        death6 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.2" },
+            { "marker", "front_01" },
+            { "fx", "muzzle_flash_glow_capital_dread" },
+            { "fx_scale", "1" },
+        },        
+        death8 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.25" },
+            { "marker", "front_01" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1" },
+        },        
+        death10 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "dmg_capital_smoke_mushroom_spray" },
+            { "fx_scale", "24" },
+        },
+        death11 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "dmg_sparks_glitter_spray" },
+            { "fx_scale", "15" },
+        },
+        death12 =
+        {
+             { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "dmg_sparks_glitter_spray" },
+            { "fx_scale", "13" },
+        },
+        death13 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "dmg_sparks_glitter_spray" },
+            { "fx_scale", "19" },
+        },        
+        death15 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.5" },
+            { "marker", "root" },
+            { "fx", "explosion_firework_particle_asteroid" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "32" },
+        },
+        death16 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "surfacexplode_cloud_ring_cf_5" },
+            { "fx_scale", "16.5" },
+        },
+        death17 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "left_01" },
+            { "fx", "dmg_headshot_explosion_debris" },
+            { "fx_scale", "2" },
+        },
+        death18 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "top_01" },
+            { "fx", "dmg_headshot_explosion_debris" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        death19 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "top_01" },
+            { "fx", "dmg_headshot_explosion_debris" },
+            { "fx_scale", "7.5" },
+        },
+        death20 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "right_01" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "8" },
+        },
+        death21 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "bottom_01" },
+            { "fx", "dmg_headshot_explosion_debris" },
+            { "fx_scale", "4" },
+        },
+        death22 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "right_01" },
+            { "fx", "dmg_headshot_explosion_debris" },
+            { "fx_scale", "5.5" },
+        },
+        death23 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "front_01" },
+            { "fx", "surfacexplode_cloud_ring_cf_5" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_PLASMA" },
+            { "fx_scale", "3" },
+        },
+        death24 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.45" },
+            { "marker", "front_01" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "fx_scale", "2.5" },
+        },
+        death25 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.5" },
+            { "marker", "front_01" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "fx_scale", "3" },
+        },
+        death26 =
+        {
+            { "anim", "death" },
+            { "animtime", "-1" },
+            { "marker", "top_01" },
+            { "fx", "resourcing_dust_spray_full" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "26.4" },
+        },
+        death27 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "Root" },
+            { "fx", "dmg_capital_explosion_combo_red" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "36" },
+            { "fx_sm", "on" },
+        },
+        death28 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "Root" },
+            { "fx", "DMG_MASSIVE_MESH_SPHERE_RING" },
+            { "fx_scale", "1.2" },
+            { "fx_sm", "on" },
+        },        
+    }
+}

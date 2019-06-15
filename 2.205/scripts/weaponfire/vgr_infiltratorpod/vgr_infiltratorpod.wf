@@ -1,0 +1,10 @@
+
+-- formats:
+
+hitfx = "hit_generic"
+bulletfx = "bullet_generic"
+nopenetratefx = "nopen_generic"
+deathtype = "deathCannon"
+
+hit_sfx = "weapon/frigate/impact/WEAPON_FRIGATE_Flechette_Cannon_Hit"
+hit_clamp = {1.0, 1.0}

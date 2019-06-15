@@ -1,0 +1,118 @@
+NewShipType = StartShipConfig()
+NewShipType.displayedName="$10098"
+NewShipType.sobDescription="$10099"
+NewShipType.maxhealth=75000
+NewShipType.regentime=0
+NewShipType.minRegenTime=0
+NewShipType.sideArmourDamage=0.5
+NewShipType.rearArmourDamage=0.5
+NewShipType.isTransferable=0
+NewShipTypeuseEngagementRanges=1
+
+
+NewShipType.mass=2000
+NewShipType.collisionMultiplier=1
+NewShipType.thrusterMaxSpeed=0
+NewShipType.mainEngineMaxSpeed=0
+NewShipType.rotationMaxSpeed=0
+NewShipType.thrusterAccelTime=6
+NewShipType.thrusterBrakeTime=2
+NewShipType.mainEngineAccelTime=6
+NewShipType.mainEngineBrakeTime=2
+NewShipType.rotationAccelTime=0.5
+NewShipType.rotationBrakeTime=0.3
+NewShipType.thrusterUsage=1
+NewShipType.accelerationAngle=30
+NewShipType.mirrorAngle=0
+NewShipType.secondaryTurnAngle=0
+NewShipType.maxBankingAmount=20
+NewShipType.descendPitch=10
+NewShipType.goalReachEpsilon=25
+NewShipType.slideMoveRange=350
+NewShipType.controllerType="Ship"
+NewShipType.tumbleStaticX=5
+NewShipType.tumbleStaticY=7
+NewShipType.tumbleStaticZ=3
+NewShipType.tumbleDynamicX=1
+NewShipType.tumbleDynamicY=5
+NewShipType.tumbleDynamicZ=3
+NewShipType.tumbleSpecialDynamicX=1
+NewShipType.tumbleSpecialDynamicY=5
+NewShipType.tumbleSpecialDynamicZ=3
+NewShipType.relativeMoveFactor=1
+setTargetBox(NewShipType, 0, -0.5,-0.5,-0.35, 0.5,0.5,0.35)
+NewShipType.dustCloudDamageTime=160
+NewShipType.nebulaDamageTime=300
+NewShipType.MinimalFamilyToFindPathAround="SuperPriority"
+NewShipType.BuildFamily="NotBuildable"
+NewShipType.AttackFamily="Mothership"
+NewShipType.DockFamily="fieldgenerator2"
+NewShipType.AvoidanceFamily="SuperPriority"
+NewShipType.DisplayFamily="Megalith"
+NewShipType.AutoFormationFamily="Fighter"
+NewShipType.CollisionFamily="Unmoveable"
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "HeavyArmour")
+setSupplyValue(NewShipType, "SinglePlayerMisc", 1.0)
+NewShipType.fighterValue=0
+NewShipType.corvetteValue=0
+NewShipType.frigateValue=0
+NewShipType.neutralValue=0
+NewShipType.antiFighterValue=0
+NewShipType.antiCorvetteValue=0
+NewShipType.antiFrigateValue=0
+NewShipType.buildCost=1
+NewShipType.buildTime=1
+NewShipType.buildPriorityOrder=10
+NewShipType.retaliationRange=6000
+NewShipType.retaliationDistanceFromGoal=160
+NewShipType.visualRange=1000
+NewShipType.prmSensorRange=6500
+NewShipType.secSensorRange=7500
+NewShipType.detectionStrength=1
+NewShipType.mouseOverMinFadeSize=0.045
+NewShipType.mouseOverMaxFadeSize=0.1
+NewShipType.healthBarStyle=2
+NewShipType.nlips=0.0
+NewShipType.nlipsRange=0.0
+NewShipType.nlipsFar=0.0
+NewShipType.nlipsFarRange=0.0
+NewShipType.SMRepresentation="Mesh"
+NewShipType.meshRenderLimit=35000
+NewShipType.dotRenderLimit=10
+NewShipType.visibleInSecondary=1
+NewShipType.minLOD=0.25
+NewShipType.goblinsStartFade=3000
+NewShipType.goblinsOff=3000
+NewShipType.minimumZoomFactor=0.5
+NewShipType.selectionLimit=150000
+NewShipType.preciseSelectionLimit=30000
+NewShipType.preciseATILimit=100000
+NewShipType.selectionPriority=75
+NewShipType.militaryUnit=1
+NewShipType.SMHighlightDistMin=15000
+NewShipType.SMHighlightDistMax=25000
+addAbility(NewShipType,"CanDock",1,1);
+addAbility(NewShipType,"CanLaunch");
+NewShipType.launchTimeBetweenTwoFormations=0
+NewShipType.launchTimeBeforeStart=0
+NewShipType.launchNrOfShipsInDockFormation=1
+NewShipType.launchFormation="delta"
+LoadSharedModel(NewShipType, "Tai_FieldGeneratorSegment1")
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.75,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.05,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.05,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.05,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg01",1, 0.05,0,0,0, 60,30,150,25,35,125,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml01",1, 0.01,0,0,0, 80,125,60,75,125,80,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml02",1, 0.01,0,0,0, 25,0,-125,50,80,35,120,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml03",1, 0.01,0,0,0, 60,95,200,50,15,200,20,125,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml04",1, 0.01,0,0,0, 10,60,-300,25,35,80,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml05",1, 0.01,0,0,0, 60,10,30,75,35,25,65,75,0,0,0,60,0,0,0,50);
+NewShipType.battleScarCoverage=4
+NewShipType.battleScarBudgetLow = 1200
+NewShipType.battleScarBudgetNext = 1800
+NewShipType.sobDieTime=8
+NewShipType.sobSpecialDieTime=1
+NewShipType.specialDeathSpeed=40
+NewShipType.chanceOfSpecialDeath=0
+NewShipType.deadSobFadeTime=0.1

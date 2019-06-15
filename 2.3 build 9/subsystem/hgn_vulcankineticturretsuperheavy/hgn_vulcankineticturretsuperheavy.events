@@ -1,0 +1,37 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Top",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_Top" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Top_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_FLAK_CANNON_SHELL" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event2 =
+        {
+            { "anim", "Weapon_Top" },
+            { "animtime", "0.5" },
+            { "marker", "Weapon_TopSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_FLECHETTE_CANNON_SHELL" },
+        },			
+    }
+}

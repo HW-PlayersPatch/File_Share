@@ -1,0 +1,47 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "MissileTrail",
+            length = 5,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "MissileTrail" },
+            { "animtime", "-1" },
+            { "marker", "EngineNozzle1" },
+            { "fx", "missle_ignite_combo" },
+            { "sound", "SPECIAL/SPECIAL_ABILITIES_MISSLE_STEAM" },
+            { "fx_scale", "entity" },
+        },
+        event2 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+			{ "fx", "dmg_sml_missle_combo" },
+            { "sound", "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_TORPEDO_HIT" },
+            { "fx_transform", "None" },
+        },
+    }
+}

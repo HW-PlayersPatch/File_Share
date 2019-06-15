@@ -1,0 +1,91 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Activate",
+            length = 4,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Trap",
+            length = 4,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "Pulse",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Activate" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "pro_tech_power_mesh" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event2 =
+        {
+            { "anim", "Pulse" },
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "pro_tech_power_mesh_loop" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event3 =
+        {
+            { "anim", "Activate" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "pro_tech_key_mesh_left_loop" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event4 =
+        {
+            { "anim", "Activate" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "pro_tech_key_mesh_right_loop" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event5 =
+        {
+            { "anim", "Trap" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+        event6 =
+        {
+            { "anim", "Trap" },
+            { "animtime", "-1" },
+            { "marker", "marker1" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },
+    }
+}

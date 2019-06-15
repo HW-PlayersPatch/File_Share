@@ -1,0 +1,86 @@
+--=============================================================================
+--    Name    : Hgn_ResourceCollector.madStates
+--    Purpose : Animation state data.
+--
+--Created 250403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+-- RESOURCE COLLECITON ---------------------------------------------------------
+HGN_RESOURCECOLLECTOR_ResourceStart_OnSet = function(ship)
+    -- unset the state, the C++ will have set it but we want to delay till the anim is finished
+    setState(ship, "ResourceStart", 0)
+    stopAnim(ship, "Close")
+    stopAnim(ship, "Work")
+    endEffect(ship, "Resourcing")
+    startAnim(ship, "Open")
+    startEffect(ship, "Open")
+    -- apparently we are supposed to use a 'big number' to mean pause at end, 1000 is apparently 'big' enough
+    setPauseTime(ship, "Open", 1000)
+end
+
+HGN_RESOURCECOLLECTOR_ResourceStart_OnPause = function(ship)
+    -- the open animation has finished, now we can set the state to resource start
+    setState(ship, "ResourceStart", 1)
+end
+
+HGN_RESOURCECOLLECTOR_ResourceDo_OnSet = function(ship)
+    -- stop the open animation (that's the one that should have played to get us here, and may still be playing)
+    stopAnim(ship, "Open")
+    stopAnim(ship, "Close")
+    startAnim(ship, "Work")
+    startEffect(ship, "Resourcing")
+    setLoopCount(ship, "Work", 1000000)
+    setState(ship, "ResourceDo", 1)
+end
+
+HGN_RESOURCECOLLECTOR_ResourceEnd_OnSet = function(ship)
+    -- stop the open and work animations, they may be running
+    stopAnim(ship, "Open")
+    stopAnim(ship, "Work")
+    endEffect(ship, "Resourcing")
+    startAnim(ship, "Close")
+    startEffect(ship, "Close")
+    setState(ship, "ResourceEnd", 1)
+    setPauseTime(ship, "Close", 1000)
+end
+
+-- REPAIRING -------------------------------------------------------------------
+HGN_RESOURCECOLLECTOR_RepairStart_OnSet = function(ship)
+    -- unset the state, the C++ will have set it but we want to delay till the anim is finished
+    setState(ship, "RepairStart", 0)
+    stopAnim(ship, "Close")
+    stopAnim(ship, "Work")
+    endEffect(ship, "Repairing")
+    startAnim(ship, "Open")
+    startEffect(ship, "Open")
+    -- apparently we are supposed to use a 'big number' to mean pause at end, 1000 is apparently 'big' enough
+    setPauseTime(ship, "Open", 1000)
+end
+
+HGN_RESOURCECOLLECTOR_RepairStart_OnPause = function(ship)
+    -- the open animation has finished, now we can set the state to repair start
+    setState(ship, "RepairStart", 1)
+end
+
+HGN_RESOURCECOLLECTOR_RepairDo_OnSet = function(ship)
+    -- stop the open animation (that's the one that should have played to get us here, and may still be playing)
+    stopAnim(ship, "Open")
+    stopAnim(ship, "Close")
+    startAnim(ship, "Work")
+    startEffect(ship, "Repairing")
+    setLoopCount(ship, "Work", 1000000)
+    setState(ship, "RepairDo", 1)
+end
+
+HGN_RESOURCECOLLECTOR_RepairEnd_OnSet = function(ship)
+    -- stop the open and work animations, they may be running
+    stopAnim(ship, "Open")
+    stopAnim(ship, "Work")
+    endEffect(ship, "Repairing")
+    startAnim(ship, "Close")
+    startEffect(ship, "Close")
+    setState(ship, "RepairEnd", 1)
+    setPauseTime(ship, "Close", 1000)
+end
+

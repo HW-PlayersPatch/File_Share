@@ -1,0 +1,262 @@
+speechSetDir("n07")
+at 0
+    print("swapRaces")
+at frame 1
+    SFXVolume(0.0)
+    musicVolume(0.5)
+    speechVolume(1.0)
+    cameraBlendOutOnSkip("Camera2", 2.0)
+at frame 2
+    musicStart("N07_P3vsTraders")
+at frame 596
+    seekForward(0.166666666666667)
+at frame 600
+	cameraCut("Camera1")
+at frame 1196
+    seekForward(0.166666666666667)
+at frame 1199
+	cameraCut("Camera2")
+at frame 1740
+    musicStop(2)
+at frame 1721
+    cameraLeave()
+at frame 1798
+    wideScreenOut(2)
+    focus()
+    cameraBlendOut("Camera2", 2)
+with Kus_Mothership
+{
+    at 0
+        hide()
+}
+
+with Ben_BentusiExchange
+{
+    at 0
+        remainAtEnd("Traders")
+        invincible()
+        focusAtEnd()
+        lockLOD(1)
+        --DOFFollowJointFade("Camera0", 0.2, "Weapon_Gun0_Rest", 2)
+        --DOFFollowJointFade("Camera0", 0.2, "Root", 2)
+    at frame 1798
+        lockLOD(0)
+    at frame 330
+        attack("Tai_AssaultFrigate3")
+    at frame 600
+        haltAttack()
+    at frame 1260
+        attack("Tai_IonCannonFrigate3")
+    at frame 1320
+        haltAttack()
+    at frame 1350
+        attack("Tai_IonCannonFrigate2")
+    at frame 1798
+        haltAttack()
+        vincible()
+    at 28
+        DOFFollowFade("Camera0", 0.8, 2)
+    at 51
+        DOFFollowJointFade("Camera0", 0.2, "top_00", 2)
+    at 57
+        DOFFollowJointFade("Camera0", 1.0, "top_00", 3)
+
+}
+
+with Ben_CargoBarge
+{
+    at frame 0
+        hide()
+    at frame 600
+        show()
+    at frame 596
+        DOFFollowFade("Camera1", 0.2, 0.02)
+    at frame 1060
+        death("deathCannon")
+}
+
+with Tai_HeavyCruiser
+{
+    at frame 0
+        remainAtEnd("Cruiser")
+        invincible()
+    at frame 150
+        attack("Ben_BentusiExchange")
+    at frame 570
+        haltAttack()
+    at frame 600
+        attack("Ben_CargoBarge")
+    at frame 1000
+        haltAttack()
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+    at 41
+        DOFFollowFade("Camera0", 0.2, 0.2)
+}
+
+with Tai_Destroyer1
+{
+    at frame 0
+        remainAtEnd("Destroyers")
+        invincible()
+    at frame 90
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+
+with Tai_Destroyer2
+{
+    at frame 0
+        remainAtEnd("Destroyers")
+        invincible()
+    at frame 60
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+
+with Tai_Destroyer3
+{
+    at frame 0
+        remainAtEnd("Destroyers")
+        invincible()
+    at frame 30
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+    at 43
+        DOFFollowFade("Camera0", 0.2, 2)
+
+}
+
+with Tai_AssaultFrigate1
+{
+    at frame 0
+        invincible()
+        hide()
+    at frame 550
+        show()
+        attack("Ben_BentusiExchange")
+    at frame 900
+        haltAttack()
+        attack("Ben_CargoBarge")
+    at frame 1200
+        haltAttack()
+        vincible()
+        hide()
+}
+
+with Tai_AssaultFrigate2
+{
+    at frame 0
+        remainAtEnd("AssaultFrigates")
+        invincible()
+    at frame 30
+        attack("Ben_BentusiExchange")
+    at frame 700
+        haltAttack()
+    at frame 730
+        attack("Ben_CargoBarge")
+    at frame 1200
+        haltAttack()
+}
+
+with Tai_AssaultFrigate3
+{
+    at frame 0
+        invincible()
+    at frame 1
+        attack("Ben_BentusiExchange")
+    at frame 1020
+        haltAttack()
+        death("deathCannon")
+}
+
+with Tai_IonCannonFrigate1
+{
+    at frame 0
+        remainAtEnd("IonCannonFrigates")
+        invincible()
+    at frame 1
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+
+with Tai_IonCannonFrigate2
+{
+    at frame 0
+        remainAtEnd("IonCannonFrigates")
+        invincible()
+    at frame 60
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+
+with Tai_IonCannonFrigate3
+{
+    at frame 45
+        attack("Ben_BentusiExchange")
+    at frame 650
+        haltAttack()
+    at frame 848
+        attack("Ben_CargoBarge")
+    at frame 1140
+        haltAttack()
+    at frame 1200
+        attack("Ben_BentusiExchange")
+    at frame 1470
+        haltAttack()
+        death("deathBeam")
+}
+
+with Tai_IonCannonFrigate4
+{
+    at frame 0
+        remainAtEnd("IonCannonFrigates")
+        invincible()
+    at frame 75
+        attack("Ben_BentusiExchange")
+    at frame 600
+        haltAttack()
+    at frame 900
+        attack("Ben_CargoBarge")
+    at frame 1140
+        haltAttack()
+    at frame 1200
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+
+with Tai_IonCannonFrigate5
+{
+    at frame 0
+        remainAtEnd("IonCannonFrigates")
+        invincible()
+    at frame 60
+        haltAttack()
+        attack("Ben_BentusiExchange")
+    at frame 890
+        haltAttack()
+    at frame 1050
+        attack("Ben_CargoBarge")
+    at frame 1140
+        haltAttack()
+    at frame 1200
+        attack("Ben_BentusiExchange")
+    at frame 1798
+        haltAttack()
+        vincible()
+}
+

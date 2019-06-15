@@ -1,0 +1,581 @@
+effects =
+{
+    animations =
+    {        
+        animation1 =
+        {
+            name = "Death",
+            length = 3,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.25,
+            maximum = 1,
+            markers = {""}
+        },
+        animation4 =
+        {
+            name = "dmg02",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },
+        animation5 =
+        {
+            name = "dmg03",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        },
+				animation6 =
+        {
+            name = "dronelaunch1",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation7 =
+        {
+            name = "dronelaunch2",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation8 =
+        {
+            name = "dronelaunch3",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation9 =
+        {
+            name = "dronelaunch4",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation10 =
+        {
+            name = "dronelaunch_sfx1",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation11 =
+        {
+            name = "dronelaunch_sfx2",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation12 =
+        {
+            name = "dronelaunch_sfx3",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation13 =
+        {
+            name = "dronelaunch_sfx4",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation14 =
+        {
+            name = "dronelaunch_sfx5",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation15 =
+        {
+            name = "dronelaunch_sfx6",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation16 =
+        {
+            name = "droneretract_sfx1",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation17 =
+        {
+            name = "droneretract_sfx2",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation18 =
+        {
+            name = "droneretract_sfx3",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation19 =
+        {
+            name = "droneretract_sfx4",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation20 =
+        {
+            name = "droneretract_sfx5",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation21 =
+        {
+            name = "droneretract_sfx6",
+            length = 2.0,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animationrad =
+        {
+            name = "Radiation",
+            length = 2,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {        
+        death1 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "top_00,left_00,right_00,front_00,back_00,bottom_00" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1.5" },
+        },
+        death2 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "top_01,left_01,right_01,front_01,back_01,bottom_01" },
+            { "fx", "dmg_cloud_explosion_large" },            
+            { "fx_scale", "2" },
+        },
+        death3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.2" },
+            { "marker", "top_02,left_02,right_02,front_02,back_02,bottom_02" },
+            { "fx", "dmg_cloud_explosion_large" },
+						{ "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "3" },
+        },
+        death4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.3" },
+            { "marker", "top_03,left_03,right_03,back_03,bottom_03" },
+            { "fx", "dmg_cloud_explosion_large" },            
+            { "fx_scale", "4" },
+        },
+        death5 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "left_04,right_04,back_04" },
+            { "fx", "dmg_cloud_explosion_large" },
+						{ "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_PLASMA" },
+            { "fx_scale", "5" },
+        },
+        death6 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.45" },
+            { "marker", "Root" },
+            { "fx", "dmg_cloud_main_explosion_combo" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "7" },
+        },
+				--smoke
+				smoke1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 
+						{ "fx", "death_generic_cf_instant", },						
+						{ "fx_scale", "entity", }, 
+				},  
+				--chunck				
+				chunck1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.42", }, 						
+						{ "marker", "Root", }, 
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final2", },                 
+						{ "fx_scale", "0.85", }, 
+				},        
+				chunck2 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.43", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final1", },                 
+						{ "fx_scale", "0.95", }, 
+				},
+				--chunck fast				
+				chunckfast1 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.44", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast2", },                 
+						{ "fx_scale", "0.5", }, 
+				},    				
+				chunckfast2 = 
+				{ 
+						{ "anim", "death", }, 
+						{ "animtime", "0.45", }, 						
+						{ "marker", "Root", },
+						{ "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast1", },                 
+						{ "fx_scale", "0.6", }, 
+				}, 
+				death7 =
+        {
+            { "anim", "death1" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "death_generic" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "entity" },
+        },
+        dmg1 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "top_00,left_00,right_00,front_00,back_00,bottom_00" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "5" },
+            { "fx_nlips", "on" },
+        },
+        dmg2 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "top_01,left_01,right_01,front_01,back_01,bottom_01" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "7.5" },
+            { "fx_nlips", "on" },
+        },
+        dmg3 =
+        {
+            { "anim", "dmg03" },
+            { "animtime", "-1" },
+            { "marker", "top_02,left_02,right_02,front_02,back_02,bottom_02" },
+            { "fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "10" },
+            { "fx_nlips", "on" },
+        },
+				--
+				dronelaunch11 = 
+				{ 
+						{ "anim", "dronelaunch1", }, 
+						{ "animtime", "0.2", }, 
+						{ "marker", "dronelaunch1", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.13", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch12 = 
+				{ 
+						{ "anim", "dronelaunch1", }, 
+						{ "animtime", "0.4", }, 
+						{ "marker", "dronelaunch1", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.18", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch13 = 
+				{ 
+						{ "anim", "dronelaunch1", }, 
+						{ "animtime", "0.6", }, 
+						{ "marker", "dronelaunch1", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.23", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				--
+				dronelaunch21 = 
+				{ 
+						{ "anim", "dronelaunch2", }, 
+						{ "animtime", "0.2", }, 
+						{ "marker", "dronelaunch2", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.13", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch22 = 
+				{ 
+						{ "anim", "dronelaunch2", }, 
+						{ "animtime", "0.4", }, 
+						{ "marker", "dronelaunch2", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.18", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch23 = 
+				{ 
+						{ "anim", "dronelaunch2", }, 
+						{ "animtime", "0.6", }, 
+						{ "marker", "dronelaunch2", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.23", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				--
+				dronelaunch31 = 
+				{ 
+						{ "anim", "dronelaunch3", }, 
+						{ "animtime", "0.2", }, 
+						{ "marker", "dronelaunch3", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.13", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch32 = 
+				{ 
+						{ "anim", "dronelaunch3", }, 
+						{ "animtime", "0.4", }, 
+						{ "marker", "dronelaunch3", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.18", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch33 = 
+				{ 
+						{ "anim", "dronelaunch3", }, 
+						{ "animtime", "0.6", }, 
+						{ "marker", "dronelaunch3", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.23", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				--
+				dronelaunch41 = 
+				{ 
+						{ "anim", "dronelaunch4", }, 
+						{ "animtime", "0.2", }, 
+						{ "marker", "dronelaunch4", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.13", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch42 = 
+				{ 
+						{ "anim", "dronelaunch4", }, 
+						{ "animtime", "0.4", }, 
+						{ "marker", "dronelaunch4", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.18", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch43 = 
+				{ 
+						{ "anim", "dronelaunch4", }, 
+						{ "animtime", "0.6", }, 
+						{ "marker", "dronelaunch4", }, 
+						{ "fx", "resourcing_dust_spray_full", }, 
+						--{ "sound", "SPECIAL/DRONE_LAUNCH", },
+						{ "fx_scale", "0.23", },                 
+						{ "fx_nlips", "on", }, 
+				}, 
+				dronelaunch_sfx1 = 
+				{ 
+						{ "anim", "dronelaunch_sfx1", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_1", },						
+				}, 
+				dronelaunch_sfx2 = 
+				{ 
+						{ "anim", "dronelaunch_sfx2", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_2", },						
+				}, 
+				dronelaunch_sfx3 = 
+				{ 
+						{ "anim", "dronelaunch_sfx3", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_3", },						
+				}, 
+				dronelaunch_sfx4 = 
+				{ 
+						{ "anim", "dronelaunch_sfx4", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_4", },						
+				}, 
+				dronelaunch_sfx5 = 
+				{ 
+						{ "anim", "dronelaunch_sfx5", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_5", },						
+				}, 
+				dronelaunch_sfx6 = 
+				{ 
+						{ "anim", "dronelaunch_sfx6", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONELAUNCH_6", },						
+				}, 
+				droneretract_sfx1 = 
+				{ 
+						{ "anim", "droneretract_sfx1", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_1", },						
+				}, 
+				droneretract_sfx2 = 
+				{ 
+						{ "anim", "droneretract_sfx2", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_2", },						
+				}, 
+				droneretract_sfx3 = 
+				{ 
+						{ "anim", "droneretract_sfx3", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_3", },						
+				}, 
+				droneretract_sfx4 = 
+				{ 
+						{ "anim", "droneretract_sfx4", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_4", },						
+				}, 
+				droneretract_sfx5 = 
+				{ 
+						{ "anim", "droneretract_sfx5", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_5", },						
+				}, 
+				droneretract_sfx6 = 
+				{ 
+						{ "anim", "droneretract_sfx6", }, 
+						{ "animtime", "0", }, 
+						{ "marker", "Root", }, 						
+						{ "sound", "SPECIAL/KUS_DRONEFRIGATE/COMMAND_DRONERETRACT_6", },						
+				}, 				
+				Radiation =
+        {
+            { "anim", "Radiation", },
+            { "animtime", "-1", },
+            { "marker", "Root", },
+            { "fx", "sparks_small_spray_rad", }, 
+						--{ "sound", "SPECIAL/PS", }, 
+            { "fx_scale", "20", },
+            { "fx_nlips", "on" },
+        },				
+    }
+}

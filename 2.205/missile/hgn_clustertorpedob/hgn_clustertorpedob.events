@@ -1,0 +1,28 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+						{ "fx", "dmg_cloud_torpedo_combo" },
+            { "sound", "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_HEAVY_FUSION_MISSILE_DETONATION" },
+            { "fx_transform", "None" },
+        },
+    }
+}

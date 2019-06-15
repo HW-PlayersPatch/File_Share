@@ -1,0 +1,51 @@
+KUS_DEFENDER_Launched_OnSet = function(ship)    
+	if(isAnimRunning(ship,"Arms_CLOSE") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "Arms_OPEN") ~= 0) then
+			startTime = getAnimLength(ship, "Arms_OPEN") - getTime(ship, "Arms_OPEN")
+			stopAnim(ship, "Arms_OPEN")			
+		end		
+		startAnim(ship, "Arms_CLOSE")
+		setTime(ship,"Arms_CLOSE",startTime)
+		setPauseTime(ship, "Arms_CLOSE", 1000)
+	end
+end
+
+KUS_DEFENDER_Normal_OnSet = function(ship)    
+	if(isAnimRunning(ship,"Arms_CLOSE") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "Arms_OPEN") ~= 0) then
+			startTime = getAnimLength(ship, "Arms_OPEN") - getTime(ship, "Arms_OPEN")
+			stopAnim(ship, "Arms_OPEN")			
+		end		
+		startAnim(ship, "Arms_CLOSE")
+		setTime(ship,"Arms_CLOSE",startTime)
+		setPauseTime(ship, "Arms_CLOSE", 1000)
+	end
+end
+
+KUS_DEFENDER_CodeRed_OnSet = function(ship)
+	if(isAnimRunning(ship, "Arms_OPEN") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "Arms_CLOSE") ~= 0) then
+			startTime = getAnimLength(ship, "Arms_CLOSE") - getTime(ship, "Arms_CLOSE")
+			stopAnim(ship, "Arms_CLOSE")			
+		end
+		startAnim(ship, "Arms_OPEN")		
+		setTime(ship,"Arms_OPEN",startTime)        
+		setPauseTime(ship, "Arms_OPEN", 1000)
+	end
+end
+
+KUS_DEFENDER_CodeGreen_OnSet = function(ship)    
+	if(isAnimRunning(ship,"Arms_CLOSE") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "Arms_OPEN") ~= 0) then
+			startTime = getAnimLength(ship, "Arms_OPEN") - getTime(ship, "Arms_OPEN")
+			stopAnim(ship, "Arms_OPEN")			
+		end		
+		startAnim(ship, "Arms_CLOSE")
+		setTime(ship,"Arms_CLOSE",startTime)
+		setPauseTime(ship, "Arms_CLOSE", 1000)
+	end
+end

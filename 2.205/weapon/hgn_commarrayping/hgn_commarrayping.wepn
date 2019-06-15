@@ -1,0 +1,8 @@
+
+StartWeaponConfig(NewWeaponType,"Gimble","InstantHit","IonBeam","Special Attack",0,1000,0,20,0,0,50,0,0,50,0,0,0,0,0,0,0.1,"Enhanced",0,0,1000);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",100000000,100000000,"");
+setPenetration(NewWeaponType,5,1,{PlanetKillerArmour=0});
+setAccuracy(NewWeaponType,1,{Fighter=0.001},{Corvette=0.0005},{munition=0.1});
+setAngles(NewWeaponType,15,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

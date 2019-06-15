@@ -1,0 +1,29 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Gun0",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun0_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+	    { "fx_scale", "0.75" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

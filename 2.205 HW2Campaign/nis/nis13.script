@@ -1,0 +1,77 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("CamShape1",1)
+	fadeSet(1)
+	speechSetDir("NIS_13")
+	wideScreenIn(0)
+at frame 1
+	cameraCut("CamShape1")
+	musicStart("nis13")
+at frame 2
+	fadeTo(0,6)
+at frame 360
+	cameraCut("CamShape2")
+at frame 440
+	speechEventActor("$56120",2,2)
+at frame 690
+	cameraCut("CamShape3")
+at frame 719
+	speechEventActor("$56121",2,2)
+at frame 882
+	speechEventActor("$56122",2,2)
+at frame 1020
+	speechEventActor("$56123",2,2)
+at frame 1032
+	cameraCut("CamShape4")
+at frame 1348
+	fadeSet(0)
+at frame 1354
+	fadeTo(1,3)
+at frame 1452
+	cameraCut("MS_camShape")
+at frame 1458
+	fadeSet(1)
+at frame 1460
+	fadeTo(0,3)
+at frame 1740
+	cameraLeave()
+	musicStartAtEnd("ambient/amb_13")
+	wideScreenOut(4)
+
+with |joint4|Hgn_Dreadnaught
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		show()
+	at frame 808
+		startEffectEvent("Trigger")
+	at frame 1450
+		hide()
+}
+
+with |Meg_BalcoraGate
+{
+	at frame 0
+		remainAtEnd("Balcora_Gate")
+		setPlayer(2)
+	at frame 1
+		startEffectEvent("Trench")
+	at frame 824
+		startEffectEvent("Gate_Trigger")
+	at frame 864
+		startEffectEvent("Hyperspace")
+}
+
+with |joint3|Vgr_MotherShip1
+{
+	at frame 0
+		setPlayer(1)
+        colourScheme({0.047, 0.047, 0.047}, {0.561,0.0,0.043}, "DATA:Badges/Vaygr.tga" )
+	at frame 1
+		show()
+	at frame 1068
+		startEffectEvent("Gate_Hyperspace")
+	at frame 1228
+		hide()
+}

@@ -1,0 +1,6 @@
+-- format:
+-- SetLogicalJoint("logicalName", "actualJointName0", "actualJointName1", ...)
+--   logicalName is what the joint will be know as in the ETG
+--	 actualJointName is what the corresponding joint is named in the ship model
+
+SetLogicalJoint("vent", "vent0", "vent1", "vent2", "vent3", "vent4")

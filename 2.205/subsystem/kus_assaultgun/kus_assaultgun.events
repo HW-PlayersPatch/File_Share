@@ -1,0 +1,29 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Gun0",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun0_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_FLAK_CANNON_SHELL" },
+            { "fx_scale", "1" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

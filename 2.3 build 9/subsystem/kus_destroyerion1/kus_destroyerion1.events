@@ -1,0 +1,29 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Gun1",
+            length = 5,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	 event1 =
+        {
+            { "anim", "Weapon_Gun1" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun1_Muzzle" },
+            { "fx", "ion_beam_charge_combo_kus" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+						{ "fx_scale", "1.75" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

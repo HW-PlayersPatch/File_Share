@@ -1,0 +1,39 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Gun_R",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_Gun_R" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun_R_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "fx_scale", "1" },
+	    { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+        },
+        event2 =
+        {
+            { "anim", "Weapon_Gun_R" },
+            { "animtime", "0.3" },
+            { "marker", "Weapon_Gun_RSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "fx_scale", "1" },
+	    { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_PULASAR_CANNON_BEAM" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

@@ -1,0 +1,35 @@
+speechSetDir("n06")
+at 0
+    print("swapRaces")
+    cameraBlendIn("Camera0", 7)
+at frame 1
+    musicVolume(0.7)
+    speechVolume(1.0)
+    SFXVolume(0.8)
+at frame 2
+    musicStart("N06_Supernova")
+at frame 1378
+    musicStop(2)
+    cameraLeave()
+at frame 1378
+    wideScreenOut(2)
+    focus()
+    cameraBlendOut("Camera0", 2)
+with Tai_ResearchStation
+{
+    at 0
+        centreShip()
+        focusAtEnd()
+        hide()
+}
+
+with Tai_AssaultFrigate
+{
+    at 0
+        hide()
+    at frame 600
+        show()
+    at 45
+        hide()
+}
+

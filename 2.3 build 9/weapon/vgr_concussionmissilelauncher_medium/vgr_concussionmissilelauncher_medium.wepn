@@ -1,0 +1,27 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_AntiFighterMissile","Normal",40,2000*1.1,0,0,0,2,1,0,0,7.0,0,0,1,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_MediumMissileBurst");
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_MediumMissileBurst");
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",95,95,"");
+setPenetration(NewWeaponType,5,1,
+{Unarmoured=0.04},
+{Unarmoured_hw1=0.09},
+{Lightarmour=0.60},
+{Lightarmour_hw1=0.58},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,0,
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=1.0},
+{Fighter_hw1=1.0},
+{Corvette=1.0},
+{Corvette_hw1=1.0});
+setAngles(NewWeaponType,180,0,0,0,0);
+setMiscValues(NewWeaponType,0,3);
+setDamageMultFactor(NewWeaponType, 1.0);
+setFireMultFactor(NewWeaponType, 1.0);

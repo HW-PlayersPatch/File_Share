@@ -1,0 +1,147 @@
+--  hw2 level exporter generated file
+--=============================================================================
+--  Name    : CombatTesting.level
+--  Purpose : Automatically generated level file by the level exporter.
+--  Created Monday, July 21, 2003 by the level exporter.
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================
+
+function DetermChunk()
+	addSquadron("Hgn_Carrier", "Hgn_Carrier",	{3126, 0, -4338},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MotherShip", "Hgn_MotherShip",	{2170, 0, -4338},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonTurret", "Hgn_IonTurret",	{2283, 0, -3496},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceCollector", "Hgn_ResourceCollector",	{3219, 0, -3177},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceController", "Hgn_ResourceController",	{2914, 0, -3177},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Scout", "Hgn_Scout",	{-591, 0, -2775},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate", "Hgn_TorpedoFrigate",	{1344, 0, -3700},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Scout1", "Hgn_Scout",	{-799, 0, -2775},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Scout5", "Hgn_Scout",	{-403, 0, -2775},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate1", "Hgn_IonCannonFrigate",	{654, 0, -3702},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate3", "Hgn_IonCannonFrigate",	{846, 0, -3702},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate5", "Hgn_IonCannonFrigate",	{1054, 0, -3702},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate1", "Hgn_TorpedoFrigate",	{1527, 0, -3700},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate2", "Hgn_TorpedoFrigate",	{1721, 0, -3700},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceCollector1", "Hgn_ResourceCollector",	{3410, 0, -3177},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Carrier1", "Hgn_Carrier",	{-2626, 0, 3731},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_MotherShip1", "Hgn_MotherShip",	{-1670, 0, 3731},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_IonTurret1", "Hgn_IonTurret",	{-1687, 0, 2746},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceCollector4", "Hgn_ResourceCollector",	{-2719, 0, 2518},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceController1", "Hgn_ResourceController",	{-2415, 0, 2518},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate6", "Hgn_TorpedoFrigate",	{-844, 0, 3093},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate8", "Hgn_IonCannonFrigate",	{-155, 0, 3095},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate9", "Hgn_IonCannonFrigate",	{-346, 0, 3095},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate11", "Hgn_IonCannonFrigate",	{-554, 0, 3095},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate7", "Hgn_TorpedoFrigate",	{-1028, 0, 3093},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate8", "Hgn_TorpedoFrigate",	{-1221, 0, 3093},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceCollector5", "Hgn_ResourceCollector",	{-2910, 0, 2518},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor7", "Hgn_Interceptor",	{-1129, 0, -3197},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor8", "Hgn_Interceptor",	{-756, 0, -3197},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor10", "Hgn_Interceptor",	{-346, 0, -3197},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate1", "Hgn_MarineFrigate",	{-597, 0, -3706},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate2", "Hgn_MarineFrigate",	{-937, 0, -3706},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate4", "Hgn_MarineFrigate",	{-1260, 0, -3706},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate6", "Hgn_MarineFrigate",	{1817, 0, 3080},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate9", "Hgn_MarineFrigate",	{1477, 0, 3080},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate11", "Hgn_MarineFrigate",	{1153, 0, 3080},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Destroyer", "Hgn_Destroyer",	{2702, 0, 3193},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Destroyer1", "Hgn_Destroyer",	{3109, 0, 3193},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Destroyer3", "Hgn_Destroyer",	{-2365, 0, -3830},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Destroyer5", "Hgn_Destroyer",	{-2782, 0, -3830},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_BattleCruiser", "Hgn_BattleCruiser",	{-1898, 0, -3685},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_BattleCruiser1", "Hgn_BattleCruiser",	{2264, 0, 3178},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_GunTurret1", "Hgn_GunTurret",	{-1445, 0, 2740},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_GunTurret", "Hgn_GunTurret",	{1962, 0, -3508},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate", "Hgn_AssaultFrigate",	{242, 0, 3449},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate1", "Hgn_AssaultFrigate",	{501, 0, 3449},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate2", "Hgn_AssaultFrigate",	{785, 0, 3449},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate3", "Hgn_AssaultFrigate",	{-204, 0, -4126},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate4", "Hgn_AssaultFrigate",	{55, 0, -4126},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate5", "Hgn_AssaultFrigate",	{339, 0, -4126},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber", "Hgn_AttackBomber",	{1976, 0, -2963},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber1", "Hgn_AttackBomber",	{1976, 0, -3180},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber2", "Hgn_AttackBomber",	{2189, 0, -3180},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber3", "Hgn_AttackBomber",	{2189, 0, -2963},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber4", "Hgn_AttackBomber",	{2411, 0, -3180},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber5", "Hgn_AttackBomber",	{2411, 0, -2963},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette1", "Hgn_AssaultCorvette",	{398, -0, -3173},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette4", "Hgn_AssaultCorvette",	{851, -0, -3173},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette6", "Hgn_AssaultCorvette",	{1304, -0, -3173},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette3", "Hgn_PulsarCorvette",	{395, 0, -2579},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette4", "Hgn_PulsarCorvette",	{864, 0, -2579},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette5", "Hgn_PulsarCorvette",	{1307, 0, -2579},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Scout6", "Hgn_Scout",	{1311, 0, 1979},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Scout7", "Hgn_Scout",	{1520, 0, 1979},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Scout8", "Hgn_Scout",	{1123, 0, 1979},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor11", "Hgn_Interceptor",	{1850, 0, 2401},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor12", "Hgn_Interceptor",	{1476, 0, 2401},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor13", "Hgn_Interceptor",	{1066, 0, 2401},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber6", "Hgn_AttackBomber",	{-1256, 0, 2166},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber7", "Hgn_AttackBomber",	{-1256, 0, 2384},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber8", "Hgn_AttackBomber",	{-1468, 0, 2384},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber9", "Hgn_AttackBomber",	{-1468, 0, 2166},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber10", "Hgn_AttackBomber",	{-1690, 0, 2384},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber11", "Hgn_AttackBomber",	{-1690, 0, 2166},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette7", "Hgn_AssaultCorvette",	{323, -0, 2377},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette8", "Hgn_AssaultCorvette",	{-130, -0, 2377},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvette9", "Hgn_AssaultCorvette",	{-584, -0, 2377},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette6", "Hgn_PulsarCorvette",	{325, 0, 1783},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette7", "Hgn_PulsarCorvette",	{-144, 0, 1783},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette8", "Hgn_PulsarCorvette",	{-587, 0, 1783},	1, {0.000, 180.000, 0.000},0,0)
+
+	setWorldBoundsInner({0.00, 0.00, 0.00}, {10526.84, 10526.84, 10526.84})
+
+end -- end of deterministic function
+
+function NonDetermChunk()
+	fogSetActive(0)
+	setGlareIntensity(0.000000)
+
+	setLevelShadowColour(0.000000, 0.000000, 0.000000, 1.0)
+
+
+	loadBackground("m03")
+	setSensorsManagerCameraDistances(12000,45000)
+
+
+
+
+
+end -- end of nondeterm function
+
+
+
+--HeaderInfo: max number of players allowed on this level
+maxPlayers = 2;
+testMap = 1
+
+--PlayerInfo: info on each possible player in this level
+player = {};
+player[0] = {
+	id = 0,
+	name = "",
+	resources = 0,
+	raceName = "Hiigaran",
+	startPos = 0
+}
+
+player[1] = {
+	id = 1,
+	name = "",
+	resources = 0,
+	raceName = "Hiigaran",
+	startPos = 0
+}
+
+
+
+-- **** Object Counts **** --
+
+
+--Pebbles: 0
+--Asteroids: 0
+--Dustclouds: 0
+--DustcloudMeshes: 0
+--NebulaBranches: 0
+--NebulaMeshes - Total number of points: 0
+--NebulaNexii 0
+

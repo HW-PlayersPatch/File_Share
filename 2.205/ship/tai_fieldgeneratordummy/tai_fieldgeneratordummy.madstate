@@ -1,0 +1,5 @@
+TAI_FIELDGENERATORDUMMY_Normal_OnSet = function(ship)
+    --startAnim(ship, "SPIN")
+		--startEffect(ship, "amb")
+    --setLoopCount(ship, "SPIN", 100000)
+end

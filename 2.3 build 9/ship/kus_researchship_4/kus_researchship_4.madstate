@@ -1,0 +1,18 @@
+KUS_RESEARCHSHIP_4_NIS00_OnSet = function(ship)
+  local start_time = 0
+
+  if (isAnimRunning(ship, "SpinAnimation")~= 0) then
+    start_time = 70 - getTime(ship, "SpinAnimation")
+    start_time = 10 - start_time
+
+    if (start_time < 0) then
+      start_time = 0
+    end
+  end
+
+  if (isAnimRunning(ship, "SpinAnimation")== 0) then
+    startAnim(ship, "SpinAnimation")
+  end
+
+  setTime(ship, "SpinAnimation", start_time)
+end

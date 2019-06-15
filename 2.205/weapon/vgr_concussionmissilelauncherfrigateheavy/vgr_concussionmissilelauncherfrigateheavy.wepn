@@ -1,0 +1,13 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_SmallFrigateMissile","Normal",40,4000,0,0,0,2,1,0,0,5.0,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurstHeavy");
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurstHeavy");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,0,
+{Corvette_hw1=1.0});
+setAngles(NewWeaponType,180,0,0,0,0);
+setMiscValues(NewWeaponType,0,3);
+
+setFireMultFactor(NewWeaponType, 1.0);

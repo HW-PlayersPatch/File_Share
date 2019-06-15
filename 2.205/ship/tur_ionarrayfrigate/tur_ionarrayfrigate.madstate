@@ -1,0 +1,103 @@
+TUR_IONARRAYFRIGATE_Open_OnSet = function(ship)
+
+    --Work around a state oscillation in FormationMoveCommand that causes an oscillation between the Open and Closed states.
+    --see if we're given a open state while the close state is in progress.  This means we can't close just now.
+    if (isAnimRunning(ship,"Array_Close") ~= 0) then
+        local timeLeft = getAnimLength(ship, "Array_Close") - getTime(ship, "Array_Close")
+        if (timeLeft >= 0.1) then
+            return
+        end
+    end
+
+	setState(ship, "Open", 0)
+
+	if(isAnimRunning(ship,"Array_Open") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship,"Array_Close") ~= 0) then
+			startTime = getAnimLength(ship, "Array_Close") - getTime(ship, "Array_Close")
+			stopAnim(ship, "Array_Close")
+			endEffect(ship, "Array_Close")
+		end
+		startAnim(ship, "Array_Open")		
+		setTime(ship,"Array_Open",startTime)
+		setPauseTime(ship, "Array_Open", 1000)
+	end
+end
+
+TUR_IONARRAYFRIGATE_Open_OnPause = function(ship)
+	setState(ship, "Open", 1)
+end
+
+TUR_IONARRAYFRIGATE_Closed_OnSet = function(ship)	
+
+    --Work around a state oscillation in FormationMoveCommand that causes an oscillation between the Open and Closed states.
+    --see if we're given a close state while the open state is in progress.  This means we can't close just now.
+    if (isAnimRunning(ship,"Array_Open") ~= 0) then
+        local timeLeft = getAnimLength(ship, "Array_Open") - getTime(ship, "Array_Open")
+        if (timeLeft >= 0.1) then
+            return
+        end
+    end
+
+	setState(ship, "Closed", 0)
+	
+    if(isAnimRunning(ship,"Array_Close") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship,"Array_Open") ~= 0) then
+			startTime = getAnimLength(ship, "Array_Open") - getTime(ship, "Array_Open")
+			stopAnim(ship, "Array_Open")
+			endEffect(ship, "Array_Open")
+		end
+		startAnim(ship, "Array_Close")		
+		setTime(ship,"Array_Close",startTime)
+		setPauseTime(ship, "Array_Close", 1000)
+	end	
+end
+
+TUR_IONARRAYFRIGATE_Closed_OnPause = function(ship)
+	setState(ship, "Closed", 1)
+end
+
+TUR_IONARRAYFRIGATE_Launched_OnSet = function(ship)
+	setState(ship, "Launched", 0)
+	if(isAnimRunning(ship,"Array_Open") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship,"Array_Close") ~= 0) then
+			startTime = getAnimLength(ship, "Array_Close") - getTime(ship, "Array_Close")
+			stopAnim(ship, "Array_Close")
+			endEffect(ship, "Array_Close")
+		end
+		startAnim(ship, "Array_Open")		
+		setTime(ship,"Array_Open",startTime)
+		setPauseTime(ship, "Array_Open", 1000)
+	end
+end
+
+TUR_IONARRAYFRIGATE_Launched_OnPause = function(ship)
+	setState(ship, "Launched", 1)
+    setState(ship, "Open", 1)
+    setState(ship, "Closed", 0)
+end
+
+TUR_IONARRAYFRIGATE_Docked_OnSet = function(ship)	
+	setState(ship, "Docked", 0)
+	if(isAnimRunning(ship,"Array_Close") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship,"Array_Open") ~= 0) then
+			startTime = getAnimLength(ship, "Array_Open") - getTime(ship, "Array_Open")
+			stopAnim(ship, "Array_Open")
+			endEffect(ship, "Array_Open")
+		end
+		startAnim(ship, "Array_Close")		
+		setTime(ship,"Array_Close",startTime)
+		setPauseTime(ship, "Array_Close", 1000)
+	end	
+end
+
+TUR_IONARRAYFRIGATE_Docked_OnPause = function(ship)
+	setState(ship, "Docked", 1)
+    setState(ship, "Closed", 1)
+    setState(ship, "Open", 0)
+end
+
+

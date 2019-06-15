@@ -1,0 +1,57 @@
+speechSetDir("n08r1a")
+at frame 0
+    musicVolume(0.6)
+    speechVolume(0.7)
+    SFXVolume(0.2)
+at frame 2
+    musicStart("N08_Awareness")
+at frame 582
+    seekForward(0.166666666666667)
+at frame 586
+	cameraCut("Camera1")
+at frame 717
+    seekForward(0.166666666666667)
+at frame 720
+	cameraCut("Camera2")
+at frame 1380
+    fadeTo(0.995, 2)
+at frame 1441
+    hideUniverse(1)
+at frame 1447
+    newNIS("nis/n08r1b")
+at frame 1448
+    --musicStop(0.0333333333333333)
+with Ben_BentusiExchange
+{
+    at frame 0
+        health(0.2)
+        lockLOD(1)
+    at frame 300
+        speechEventActor("$66636", 18, 2)
+    at frame 700
+        speechEventActor("$66637", 18, 2)
+    at frame 1130
+        speechEventActor("$66638", 18, 2)
+    at frame 1200
+        lockLOD(0)
+}
+
+with NIS_GalaxyMap
+{
+    at 0
+        hide()
+    at frame 625
+        MeshSetParamF1("Galaxy_Disc", "NIS_TimeScale", 1.1)
+		MeshSetParamF1("Galaxy_Vectors", "NIS_TimeScale", 1.1)
+        MeshSetParamTime("Galaxy_Disc", "NIS_Trigger", 3.5, 3.5)
+		MeshSetParamTime("Galaxy_Vectors", "NIS_Trigger", 3.5, 3.5)
+
+        show()
+}
+
+with Kus_Mothership
+{
+    at frame 0
+        hide()
+}
+

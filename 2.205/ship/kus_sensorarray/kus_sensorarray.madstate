@@ -1,0 +1,32 @@
+KUS_SENSORARRAY_Normal_OnSet = function(ship)
+	startTime = 0
+	startAnim(ship, "ms_init")
+	setTime(ship,"ms_init",startTime)
+	setPauseTime(ship, "ms_init", 1000)
+end
+
+KUS_SENSORARRAY_Launched_OnSet = function(ship)    
+	if(isAnimRunning(ship,"ms_open") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "ms_init") ~= 0) then
+			startTime = getAnimLength(ship, "ms_init") - getTime(ship, "ms_init")
+			stopAnim(ship, "ms_init")			
+		end		
+		startAnim(ship, "ms_open")
+		startEffect(ship, "open")
+		setTime(ship,"ms_open",startTime)
+		setPauseTime(ship, "ms_open", 1000)
+	end
+end
+
+KUS_SENSORARRAY_Docked_OnSet = function(ship)
+	startTime = 0
+	if(isAnimRunning(ship, "ms_open") ~= 0) then
+		startTime = getAnimLength(ship, "ms_open") - getTime(ship, "ms_open")
+		stopAnim(ship, "ms_open")
+	end
+	startAnim(ship, "ms_init")	
+	startEffect(ship, "close")
+	setTime(ship,"ms_init",startTime)
+	setPauseTime(ship, "ms_init", 1000)
+end

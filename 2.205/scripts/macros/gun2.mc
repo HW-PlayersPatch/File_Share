@@ -1,0 +1,7 @@
+-- =============================================================================
+--     Name    : gun2.lua
+--     Purpose : macro script for setting weapon ETG effects to keys
+--
+--     Created 4/16/2001 by egeorges
+--     Copyright Relic Entertainment, Inc.  All rights reserved.
+-- =============================================================================

@@ -1,0 +1,17 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","VgrBeam","Normal",0,1575,0,1.0,0,0,2,0,0,10,0,0,1,0,500,500,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",40,40,"");
+setPenetration(NewWeaponType,5,0, 
+{MineArmour=1}, 
+{TorpedoArmor=0.9}, 
+{SmallMissileArmor=1}, 
+{HeavyMissileArmor=0.75}, 
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType, 0, 
+{SpaceMine=1},
+{Torpedo=0.678},
+{HeavyMissile=0.678},
+{SmallMissile=0.678},
+{Munition=0.678});
+setAngles(NewWeaponType,0,-45,45,-45,45);
+setMissileKiller(NewWeaponType,1);
+setFireMultFactor(NewWeaponType, 1.0);

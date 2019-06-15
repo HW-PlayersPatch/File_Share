@@ -1,0 +1,11 @@
+
+-- formats:
+
+hitfx = "plasma_hit_spray"
+bulletfx = "plasma_bomb_tracer"
+nopenetratefx = "plasma_hit_spray"
+deathtype = "deathPlasma"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+hit_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+nopenetrate_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+hit_clamp = {1.0, 1.0}

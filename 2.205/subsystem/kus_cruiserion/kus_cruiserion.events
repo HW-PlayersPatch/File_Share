@@ -1,0 +1,59 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_Turret_Ion1",
+            length = 4,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+		wpn1 =
+        {
+            { "anim", "Weapon_Turret_Ion1" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Turret_Ion1_Muzzle" },
+            { "fx", "ion_beam_charge_combo_kus" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },
+        wpn2 =
+        {
+            { "anim", "Weapon_Turret_Ion1" },
+            { "animtime", "0.1" },
+            { "marker", "Weapon_Turret_Ion1_Muzzle" },
+            { "fx", "ion_cannon_steam_spray" },
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },
+        wpn3 =
+        {
+            { "anim", "Weapon_Turret_Ion1" },
+            { "animtime", "0.5" },
+            { "marker", "Weapon_Turret_Ion1Slave_Muzzle" },
+            { "fx", "ion_beam_charge_combo_kus" },
+            { "sound", "WEAPON/FRIGATE/FIRE/WEAPON_FRIGATE_ION_CANNON_BEAM" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },
+        wpn4 =
+        {
+            { "anim", "Weapon_Turret_Ion1" },
+            { "animtime", "0.6" },
+            { "marker", "Weapon_Turret_Ion1Slave_Muzzle" },
+            { "fx", "ion_cannon_steam_spray" },
+            { "sound", "DAMAGE/SMOKE/ION_BEAM_DISCHARGE" },
+            { "fx_scale", "2" },
+            { "fx_nlips", "on" },
+        },	
+    }
+}

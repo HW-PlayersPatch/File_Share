@@ -1,0 +1,37 @@
+--=============================================================================
+--    Name    : Vgr_Carrier.madStates
+--    Purpose : Animation state data.
+--
+--Created 220503 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+VGR_CARRIER_Launched_OnSet = function(ship)
+    -- not already doing the open?
+    if(isAnimRunning(ship, "Open") == 0) then
+        print("carrier open")
+        startTime = 0
+        if(isAnimRunning(ship, "Close") ~= 0) then
+            startTime = getAnimLength(ship, "Close") - getTime(ship, "Close")
+            stopAnim(ship, "Close")
+        end
+        startAnim(ship, "Open")
+        setTime(ship,"Open",startTime)
+        setPauseTime(ship, "Open", 1000)
+    end
+end
+
+VGR_CARRIER_Docked_OnSet = function(ship)
+    -- not already doing the close
+    if(isAnimRunning(ship, "Close") == 0) then
+        print("carrier close")
+        startTime = 0
+        if(isAnimRunning(ship, "Open") ~= 0) then
+            startTime = getAnimLength(ship, "Open") - getTime(ship, "Open")
+            stopAnim(ship, "Open")
+        end
+        startAnim(ship, "Close")
+        setTime(ship,"Close",startTime)
+        setPauseTime(ship, "Close", 1000)
+    end
+end

@@ -1,0 +1,9 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="MediumArmour"
+LoadSharedModel(NewSubSystemType,"Hgn_VulcanKineticTurretHeavy"); 
+StartSubSystemWeaponConfig(NewSubSystemType,"Hgn_VulcanKineticTurretSuperHeavy","Weapon_Top","Weapon_Top");

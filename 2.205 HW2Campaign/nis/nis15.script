@@ -1,0 +1,117 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("ShotAShape",4)
+	wideScreenIn(4)
+at frame 1
+	cameraCut("ShotAShape")
+	musicStart("nis15")
+at frame 424
+	cameraCut("ShotBShape")
+at frame 602
+	cameraCut("ShotCShape")
+at frame 748
+	cameraCut("ShotDShape")
+at frame 904
+	cameraCut("ShotEShape")
+at frame 1474
+	cameraCut("ShotFShape")
+at frame 1712
+	cameraCut("ShotGShape")
+at frame 1854
+	cameraCut("ShotHShape")
+at frame 2028
+	cameraCut("ShotIShape")
+at frame 2280
+	cameraLeave()
+	musicStartAtEnd("battle/battle_01")
+	wideScreenOut(4)
+
+with |joint1|group6
+{
+	at frame 0
+		hide()
+		remainAtEnd("Planet_Killer_1")
+		setPlayer(4)
+	at frame 248
+		show()
+	at frame 1488
+		setMADState("NIS00")
+}
+
+with |joint1|group7
+{
+	at frame 0
+		hide()
+		remainAtEnd("Planet_Killer_2")
+		setPlayer(4)
+	at frame 776
+		show()
+	at frame 1535
+		setMADState("NIS00")
+}
+
+with |joint1|group8
+{
+	at frame 0
+		hide()
+		remainAtEnd("Planet_Killer_3")
+		setPlayer(4)
+	at frame 528
+		show()
+	at frame 1500
+		setMADState("NIS00")
+}
+
+with |pro_tech_hyperspace_flare_flash_planetkiller
+{
+	at frame 52
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_flare_flash_planetkiller3
+{
+	at frame 576
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_flare_flash_planetkiller6
+{
+	at frame 326
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_flare_planetkiller
+{
+	at frame 52
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_flare_planetkiller3
+{
+	at frame 576
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_flare_planetkiller6
+{
+	at frame 326
+		triggerEffect(1.25)
+}
+
+with |pro_tech_hyperspace_vacuum_planetkiller
+{
+	at frame 32
+		triggerEffect(40)
+}
+
+with |pro_tech_hyperspace_vacuum_planetkiller3
+{
+	at frame 548
+		triggerEffect(40)
+}
+
+with |pro_tech_hyperspace_vacuum_planetkiller6
+{
+	at frame 316
+		triggerEffect(40)
+}
