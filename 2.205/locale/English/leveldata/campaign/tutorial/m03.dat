@@ -1,0 +1,109 @@
+filerange 51000 52071
+rangestart 51000 52071
+
+// Subtitles
+51000	Select the Fighters
+51001	Assign Interceptors to group 1
+51002	Assign Bombers to group 2
+51003	Destroy Vaygr Frigate
+51004	Move to Ping
+51007	Bring up the Sensors Manager
+51008	Select the Carrier
+51009	Click the flashing SPECIAL ACTIONS icon in the taskbar
+51017	De-Cloak the Carrier
+51018	Capture the Enemy Frigate
+51023	Select the indicated ships
+51024	Assign the ships to a strikegroup
+51021	Exit the tutorial
+51010	Select the three squadrons of Interceptors by dragging a bandbox around them.
+51011	Assign the Interceptors to Control Group 1 by selecting the ships and pressing CTRL+1.
+51012	Assign the Bombers to Control Group 2 by selecting the ships and pressing CTRL+2.
+51013	Select available Fighters and issue an attack order on the unarmed  Vaygr Frigate.
+51014	From within the Sensors Manager, select one of your ships and issue a move command by activating the movement disc. To adjust the height of the destination point, you can press and hold SHIFT while moving the mouse.
+51015	Cloak the Carrier by clicking on the flashing Cloak button on the Taskbar, or by SHIFT-RIGHT-CLICKING on the Carrier and choosing the Cloak special ability.
+51019	Select the Marine frigate provided, and CAPTURE the enemy frigate by RIGHT-CLICKING on it
+51022	If you wish to exit the tutorial, press F10 to bring up the in-game menu.
+51025	Using drag-selecting or the SHIFT key, select all the indicated ships.
+51026	Assign the ships you have selected in the previous step to a strikegroup. Strikegroup formation hotkeys are by default F5-F7. You may also use the strikegroup rollout located on the taskbar.
+51005	Enemy Frigate
+51006	Bring a ship here
+51020	ADVANCED COMMANDS
+51028	This tutorial covers Control Groups, Special Actions and Advanced Commands.
+51031	Control Groups allow you to select a group of ships and assign them to one of the 10 number keys. Click OK to Continue.#+
+51032	First, select the 3 squadrons of Interceptors.
+51040	Now press the CTRL key and the NUMBER ONE at the same time to assign the Interceptors to Group 1.
+51050	You have now assigned that group to the number 1.
+51051	From now on, pressing the NUMBER 1 key, or clicking on the ONE icon on the task bar, will select Group One. Click OK to Continue.#+
+51052	Pressing the NUMBER 1 twice will also focus the Camera on the Interceptors.
+51055	Up to 10 Groups can be assigned, each corresponding to one of the Number Keys.#+
+51054	Now assign the newly arrived Bombers to Group 2.
+51060	Excellent.  Now order Group 2 to attack the Enemy Frigate that has just hyperspaced in.
+51070	Well done.
+51090	The next lesson covers Special Actions.
+51091	Special actions vary from ship to ship.
+51092	The Carrier that has just arrived has a Cloaking Generator.
+51100	To use Special Actions, first select the Carrier.
+51101	Now click on the Special Actions Tab in the Taskbar.
+51102	This tab displays all Special Actions. Currently only the CLOAK ABILITY ICON is active.
+51103	Press the CLOAK ICON to activate the carrier's Cloak Generator.
+51110	Special Actions are also activated via the SHIFT MENU.
+51111	To access the SHIFT MENU, HOLD DOWN SHIFT, and RIGHT-CLICK on a ship or empty space.
+51112	Using either the Special Actions commands icons menu on the taskbar, or the SHIFT MENU, order the Carrier to de-cloak.
+51120	Unlike Cloak, some Special Actions require a target.
+51121	This Marine Frigate is one such example.
+51122	Marine Frigates are used to capture enemy ships.
+51162	To capture an enemy ship, select the Marine Frigate and RIGHT-CLICK on the enemy Frigate.
+51163	You can also use the CAPTURE ICON or the Shift Menu.
+51130	Well done.
+51132	You have now successfully completed the final Tutorial for Homeworld.
+51140	When you are done, press F10 to return to the menu. #+
+52000	Tactics will be covered next.
+52001	Idle ships will default to their Tactics setting. Tactics govern how ships react to the enemy targets. Click OK to Continue. #+
+52003	Units set on Aggressive will retaliate against all enemy targets.
+52004	Ships on Defensive will defend friendly ships, but will not pursue enemy targets. This is the default tactic.
+52005	Passive Tactics order units to stand down. They will not engage the enemy under any circumstances.
+52006	Tactics will also change the formations ships use. Click OK to continue. #+
+52007	To change Tactics for selected ships, click on the desired Tactic on the taskbar.
+52008	You can also use the Tactics Hotkeys. #+
+52009	Ships on Sentry will hold their position while firing on incoming enemies.
+52010	Strikegroups are tactical formations of ships designed to support each other in battle. Click OK to Continue.  #+
+52011	Drag select all of these ships.
+52013	Now, select a Strikegroup formation from the STRIKEGROUP Roll Out on the task bar.
+52012	Well done.  Strikegroups are more efficient than the collection of their parts.
+52014	However, you will notice that a Strikegroup will only travel as quickly as its slowest unit.
+52015	Therefore a Strikegroup is a tradeoff between speed and efficiency. #+
+52019	You can set Tactics for an entire Strikegroup, or for elements individually. Click OK to Continue. #+
+52016	You now have full understanding of all the commands available in Homeworld.
+52017	If you wish to practice these skills, you will be confronted by ever increasing Vaygr strike forces. #+
+52018	If you wish to play the full game, press esc to return to the menu.
+51053	Good Job.
+52030	Waypoints allow you to move your ships along specified paths. This can be used to move around asteroid fields or to set up sneak attacks. Click OK to Continue.#+
+52031	Click on the WAYPOINT ICON (hotkey: W) to enter Waypoint mode.
+52032	While in this mode, you can queue a series of move commands. Your ships will move to each destination point in sequence. Practice this now.
+52033	To end the waypoint, simply click on the Waypoint icon, the hotkey (W) or press ESC.#+
+52034	Waypoints can also be used to issue common commands such as Attack or Harvest.
+52035	However, once a command is issued, the waypoint path ends at that point.
+52050	The Move hotkey is M
+52051	The Guard hotkey is G
+52052	The Attack hotkey is CONTROL
+52053	The Dock hotkey is D
+52054	The Rally Point hotkey is P
+52055	The Harvest hotkey is H
+52056	The Hyperspace Jump hotkey is J
+52057	The Repair hotkey is Y
+52058	The Waypoint hotkey is W
+52059	The Stop hotkey is S
+52060	The Special Action hotkey is Z
+52061	The Cloak hotkey is C
+52062	The Defense Field hotkey is T
+52063	The EMP hotkey is E
+52064	The Deploy Mines hotkey is N
+52065	The Sensor Ping hotkey is X
+52066	The Build hotkey is B
+52067	The Research hotkey is R
+52068	The Sensors Manager hotkey is SPACE
+52069	The Events hotkey is V
+52070	The Objectives hotkeys is O
+52071	The Diplomacy hotkey is K
+
+rangeend

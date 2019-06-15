@@ -1,0 +1,26 @@
+filerange 60511 60823
+rangestart 60511 60823
+
+// Subtitles
+60512	Hyperspace successful.  Current position and pre-jump coordinates are in perfect alignment.  We are on target.
+60513	We detect large resource deposits but no vessels.  It is possible that the Taiidan could be hiding in the denser portions of the belt. It may cause interference with our sensors.  Send probes to investigate.  All fleet assets should be kept on alert.
+60515	We detect large resource deposits but no vessels.  It is possible that the Kushan could be hiding in the denser portions of the belt. It may cause interference with our sensors.  Send probes to investigate.  All fleet assets should be kept on alert.
+60517	Ship profiles and markings match those from the recording at Kharak.  There is no doubt that this is the fleet.  Destroy them.
+60518	Research Division reports it is now equipped for Ion Cannon technology.  We advise commencing research immediately.
+60519	Research Division reports it is now equipped for Plasma Bomb technology.  We advise commencing research immediately.
+60520	Sensors indicate the enemy is harvesting resources.  Destroy their collector to impair ship production.
+60521	Enemy capital ships appear to be most heavily armored on the front and sides.  Our capital ships should be issued move orders while attacking to take advantage of the more vulnerable sides.
+60522	The enemy is using a new Fighter class ship with strong defensive capabilities but low maneuverability.  Our Research Division reports that it can produce a similar vessel.  Begin research as soon as possible.
+60523	Taiidan fleet destroyed.  Hyperspace coordinates locked in.
+60524	Kushan fleet destroyed.  Hyperspace coordinates locked in.
+60525	Taiidan Empire
+60526	Investigate
+60527	Taiidan Carrier
+60511	Destroy Collector
+60762	Enemy capital ships appear to have lighter armor on the top, bottom, and rear sides. Our capital ships should be issued move orders while attacking to take advantage of this weakness.
+60820	Sensors cannot penetrate the asteroid belt.  Send probes into the belt to scout for Taiidan vessels.
+60821	We have located the Taiidan fleet responsible for destroying Kharak.  Destroy all enemy ships.  Show no mercy.
+60822	The enemy is attempting to harvest resources from the asteroid field.  Destroy their collector to sabotage the efforts.
+60823	We believe we can reverse-engineer the enemy's defensive fighter.  Conduct research on these Defender sub-systems.
+
+rangeend

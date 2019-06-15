@@ -1,0 +1,5 @@
+mips = 
+{
+	"Data:UI/Pings/Meshes/battle_arrow_good_32x32.tga",
+	"Data:UI/Pings/Meshes/battle_arrow_good_16x16.tga",
+}

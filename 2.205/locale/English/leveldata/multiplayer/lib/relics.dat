@@ -1,0 +1,26 @@
+filerange 14805 14824
+rangestart 14805 14824
+
+// Subtitles
+14805	Examine unknown relic.
+14806	Sensors are detecting an unidentified relic. Send ships to investigate.
+14807	Relic: Sensors are detecting an unidentified relic. Send ships to investigate.
+14808	Unknown relic, can generate RU
+14809	Analysis of unknown relic complete. Allocate combat ships to to prevent relic being captured by enemy fleets.
+14810	Relic: Analysis of unknown relic complete. Allocate combat ships to to prevent relic being captured by enemy fleets.
+14811	Relic: Examine unknown relic, <c=c80000>failed.</c>  Awarded to %[0]wS
+14812	Relic unsafe
+14813	Relic captured
+14814	Relic: Examine unknown relic, <c=00c800>complete</c>
+14815	Relic: + %[0].0f RU recovered from relic
+14816	Relic safe, generating %[0].0f RU (%[1].0f seconds left)
+14817	Relic: Secure and analyze unknown relic.
+14818	Relic: Relic secured.  Analysis %s complete.
+14819	Relic: Relic analysis complete.
+14820	Relic: Enemy relic secured.  Analysis %s complete.
+14821	Relic: Enemy relic analysis complete.  Transferring control.
+14822	Relic: Failed to secure relic.  %s RU awarded to Player %d.
+14823	Relic: %s RU recovered from relic.
+14824	Relic: %s technology gained from relic.
+
+rangeend

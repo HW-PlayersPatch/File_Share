@@ -1,0 +1,526 @@
+filerange 7000 7914
+rangestart 7000 7914
+
+// Subtitles
+7000	Fighter Facility
+7001	<B>Description:</B>  Enables Fighter Class production.  \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> None.
+7002	Corvette Facility
+7003	<b>Description:</b>  Enables Corvette Class production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> Research Module.
+7004	Frigate Facility
+7005	<b>Description:</b>  Enables Frigate Class production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> Research Module.
+7006	Capital Class Facility
+7007	<b>Description:</b>  Enables Capital Class production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> None.
+7008	Platform Control Module
+7009	<b>Description:</b>  Coordinates Weapon Platform operations. Required for building Weapon Platforms.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> None.
+7010	Research Module
+7011	<b>Description:</b>  Science Division. Unlocks research and new ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot). \n\n<b>Prerequisites:</b> None.
+7012	Adv. Research Module
+7013	<b>Description:</b>  Engineering Division. Unlocks advanced technologies and new ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot).\n\n<b>Prerequisites:</b> Research Module.
+7014	Hyperspace Module
+7015	<b>Description:</b>  Hyperspace Drives and Wake Generators. Allows nearby Frigates and Capital ships to hyperspace.  \n\n<b>Type:</b> Module (Takes 1 Module Slot). \n\n<b>Prerequisites:</b> Research Module.
+7016	Gravity Well Generator
+7017	<b>Description:</b>  Hyperspace Inhibitor. Prevents enemy ships from entering or exiting hyperspace within a limited radius around the ship.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module.
+7018	Cloak Generator
+7019	<b>Description:</b>  Sensor Disruption. Cloaks nearby ships from enemy sensors when activated.  Small energy cost when initiated and minimum amount of energy (10% of total) required to activate.  \n\n<b>Type:</b> Module (Takes 1 Module Slot). \n\n<b>Prerequisites:</b> Research Module.
+7020	Fire Control Tower
+7021	<b>Description:</b>  Coordinates all ship defenses. Improves the combat effectiveness of nearby friendly ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot). \n\n<b>Prerequisites:</b> Advanced Research Module.
+7036	Hyperspace Sensors
+7037	<b>Description:</b> Detects all hyperspace signatures within a radius around the ship.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot). \n\n<b>Prerequisites:</b> None.
+7022	Advanced Sensors Array
+7023	<b>Description:</b> Improves basic sensors.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot). \n\n<b>Prerequisites:</b> None.
+7024	Anti-Cloaking Sensors
+7025	<b>Description:</b> Improves sensors against cloaked ships.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot). \n\n<b>Prerequisites:</b> None.
+7026	Anti-Cloaking Sensors
+7027	<b>Description:</b> Improves the ships sensors against cloaked ships.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot). \n\n<b>Prerequisites:</b> None.
+7028	Anti-Cloaking Sensors
+7029	<b>Description:</b> Improves the ships sensors against cloaked ships.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot). \n\n<b>Prerequisites:</b> None.
+7030	Scout
+7031	<b>Description:</b> Reconnaissance Fighter Squadron.  \n\n<b>Strong vs:</b> None \n<b>Weak vs:</b> Fighters, Corvettes, Frigates and Capital Ships \n\n<b>Prerequisites:</b> None.
+7032	Interceptor
+7033	<b>Description:</b> Basic Fighter Squadron.  \n\n<b>Strong vs:</b> Fighters  \n<b>Weak vs:</b> Corvettes, Frigates and Capital Ships \n\n<b>Prerequisites:</b> Fighter Facility.
+7034	Bomber
+7035	<b>Description:</b> Anti-Capital Ship Fighter Squadron.  \n\n<b>Strong vs:</b> Frigates, Capital Ships, Subsystems  \n<b>Weak vs:</b>  Fighters, Corvettes and Anti-Fighter Frigates \n\n<b>Prerequisites:</b> Fighter Facility.
+7038	Gunship
+7039	<b>Description:</b> Anti-Fighter Corvette Squadron.  \n\n<b>Strong vs:</b> Fighters \n<b>Weak vs:</b> Corvettes, Frigates and Capital Ships \n\n<b>Prerequisites:</b> Corvette Facility.
+7040	Pulsar Gunship
+7041	<b>Description:</b> Heavy Corvette Squadron.  \n\n<b>Strong vs:</b> Corvettes and Frigates \n<b>Weak vs:</b> Capital Ships \n\n<b>Prerequisites:</b> Corvette Facility.
+7042	Minelayer
+7043	<b>Description:</b> Utility Corvette. Can deploy mines as a special action (Default N).  \n\n<b>Strong vs:</b> Capital Ships \n<b>Weak vs:</b> Corvettes and Capital Ships \n\n<b>Prerequisites:</b> Corvette Facility, Advanced Research Module and Minelaying Technology.
+7044	Defense Field Frigate
+7045	<b>Description:</b> Utility Frigate. Can protect nearby ships from most attacks. Must be activated (Default T).  \n\n<b>Strong vs:</b> N/A Defensive Ship \n<b>Weak vs:</b> Bombers and Corvettes \n\n<b>Prerequisites:</b> Frigate Facility, Advanced Research Module and Defense Field Technology.
+7046	Torpedo Frigate
+7047	<b>Description:</b> Basic Frigate. Torpedoes can be upgraded to improve effectiveness against Capital Class ships.  \n\n<b>Strong vs:</b> Corvettes, Frigates (when upgraded) \n<b>Weak vs:</b> Bombers, Destroyers \n\n<b>Prerequisites:</b> Frigate Facility.
+7048	Flak Frigate
+7049	<b>Description:</b> Advanced Anti-Fighter Frigate equipped with powerful Flak Turrets.  \n\n<b>Strong vs:</b> Fighters \n<b>Weak vs:</b> Capital Ships \n\n<b>Prerequisites:</b> Frigate Facility and Advanced Research Module.
+7050	Ion Frigate
+7051	<b>Description:</b> Anti-Capital Frigate equipped with Ion Beams. Capital Ship killer.  \n\n<b>Strong vs:</b> Frigates, Capital Ships \n<b>Weak vs:</b> Bombers, Destroyers \n\n<b>Prerequisites:</b> Frigate Facility and Advanced Research Module.
+7052	Marine Frigate
+7053	<b>Description:</b> Frigate capable of initiating boarding actions and capturing enemy ships.  \n\n<b>Strong vs:</b> Capital Ships \n<b>Weak vs:</b> Bombers, Frigates \n\n<b>Prerequisites:</b> Frigate Facility and Advanced Research Module.
+7054	Carrier
+7055	<b>Description:</b> Capital Class Production Ship equipped with 3 Production and 2 Module Slots.  \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Capital Ship \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7056	Destroyer
+7057	<b>Description:</b> Capital Class Anti-Frigate Ship.  \n\n<b>Strong vs:</b> Frigates, Capital Ships. \n<b>Weak vs:</b> Bombers, Battlecruisers \n\n<b>Prerequisites:</b> Capital Ship Facility, Research Module and Destroyer Chassis.
+7058	Shipyard
+7059	<b>Description:</b> Mothership Class Production Ship equipped with 4 Production, 4 Module and 1 Sensor slots. This ship is so massive it can only Hyperspace into battle.  \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Capital Ships \n\n<b>Prerequisites:</b> Hyperspace Module.
+7060	Battlecruiser
+7061	<b>Description:</b> Heavy Capital Class Ship.  \n\n<b>Strong vs:</b> Capital Ships, Frigates. \n<b>Weak vs:</b> Bombers \n\n<b>Prerequisites:</b> Capital Ship Facility (Shipyard only), Advanced Research Module and Battlecruiser Chassis Research.
+7062	Gun Platform
+7063	<b>Description:</b> Stationary Anti-Fighter Weapon Platform. Once deployed it cannot be moved again.  \n\n<b>Strong vs:</b> Fighters. \n<b>Weak vs:</b> Frigates, Capital Ships \n\n<b>Prerequisites:</b> Platform Controller Module.
+7064	Ion Beam Platform
+7065	<b>Description:</b> Stationary Anti-Capital Ship Weapon Platform. Once deployed it cannot be moved again.  \n\n<b>Strong vs:</b> Frigate, Capital Ships. \n<b>Weak vs:</b> Fighters, Corvettes \n\n<b>Prerequisites:</b> Platform Controller Module and Research Module and Platform Ion Weapon Research.
+7066	Resource Collector
+7067	<b>Description:</b> Basic Utility ship, can harvest Resources. When upgraded Resource Collectors can repair damaged ships.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7068	Mobile Refinery
+7069	<b>Description:</b> Mobile Resource drop-off point. Can dock 2 Resource Collectors at once.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7070	Probe
+7071	<b>Description:</b> Long Range Sensor Device. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7072	Proximity Sensor
+7073	<b>Description:</b> Sensor Device capable of detecting cloaked ships. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> Research Module and Proximity Sensor Technology.
+7074	Sensors Distortion Probe
+7075	<b>Description:</b> Remote device that scrambles enemy sensors. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> Advanced Research Module and Sensors Distortion Probe Research.
+7076	Light Corvette
+7077	<b>Description:</b> TODO
+7078	Heavy Corvette
+7079	<b>Description:</b> TODO
+7080	Assault Frigate
+7081	<b>Description:</b> TODO
+7500	Minelaying Technology
+7501	<b>Description:</b> Unlocks Minelayer Corvettes. \n\n<b>Prerequisites:</b> Advanced Research Module and Corvette Facility.
+7200	Minelaying
+7502	Platform Ion Weapons
+7503	<b>Description:</b> Automated Ion Cannon controls. Unlocks Ion Cannon Platforms.  \n\n<b>Prerequisites:</b> Research Module and Platform Controller.
+7201	Platform Ions
+7504	Battlecruiser Chassis
+7505	<b>Description:</b> Unlocks Battlecruiser. Battlecruisers can only be built from Shipyards. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7202	Battlecruiser
+7507	Destroyer Chassis
+7508	<b>Description:</b> Unlocks Destroyers. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7203	Destroyer
+7509	Sensors Distortion Probe
+7510	<b>Description:</b> Unlocks the Sensors Distortion Probe.  \n\n<b>Prerequisites:</b> Advanced Research Module.
+7204	Sen. Dist. Probe
+7650	Proximity Sensor Probe
+7651	<b>Description:</b> Unlocks the Proximity Sensor Probe.  \n\n<b>Prerequisites:</b> Research Module.
+7214	Prox. Sens. Probe
+7511	Collector Repair
+7512	<b>Description:</b> Allows Resource Collectors to repair friendly units. \n\n<b>Prerequisites:</b> Research Module.
+7205	Repair
+7513	Enhanced Scout Sensors
+7514	<b>Description:</b> Allows scouts to "Ping" the mission area, briefly revealing enemy units. \n\n<b>Prerequisites:</b> None.
+7206	Enhanced Sensors
+7515	Improved Torpedoes
+7516	<b>Description:</b> Allows Torpedo Frigates and Destroyers to fire improved Anti-Capital Ship torpedoes. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7207	Imp. Torpedoes
+7517	Improved Bombs
+7518	<b>Description:</b> Allows Bombers to launch anti-subsystem bombs. \n\n<b>Prerequisites:</b> Research Module.
+7208	Imp. Bombs
+7519	Electro-Magnetic Pulse
+7520	<b>Description:</b> Allows Scouts to fire a EMP attack that disables enemy ships for a limited time. \n\n<b>Prerequisites:</b> Research Module.
+7209	EMP
+7521	Defense Field
+7522	<b>Description:</b> Unlocks the Defense Field Frigate. When activated, the Defense Field protects friendly ships from most attacks. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7210	Def. Field
+7211	Lvl 1 Mothership
+7212	Lvl 2 Mothership
+7213	Lvl 3 Mothership
+7523	Mothership Hull 1
+7524	<b>Description:</b> Improves Mothership Hull integrity, allowing it to withstand more damage. \n\n<b>Prerequisites:</b> Research Module.
+7525	Mothership Hull 2
+7526	<b>Description:</b> Improves Mothership Hull integrity, allowing it to withstand more damage to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module.
+7527	Mothership Engine 1
+7528	<b>Description:</b> Improves Mothership conventional drive systems. \n\n<b>Prerequisites:</b> Research Module.
+7529	Mothership Engine 2
+7530	<b>Description:</b> Improves Mothership conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module.
+7800	Improved Manufacturing
+7801	<b>Description:</b> Improves construction speed by 30% on the Mothership. \n\n<b>Prerequisites:</b> Advanced Research Module.
+7240	Imp. Manufacturing
+7221	Lvl 1 Carrier
+7222	Lvl 2 Carrier
+7223	Lvl 3 Carrier
+7531	Carrier Hull 1
+7532	<b>Description:</b> Improves Carrier Hulls, allowing them to withstand more damage.  \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7533	Carrier Hull 2
+7534	<b>Description:</b> Improves Carrier Hulls to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7535	Carrier Engine 1
+7536	<b>Description:</b> Improves Carrier conventional drive systems. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7537	Carrier Engine 2
+7538	<b>Description:</b> Improves Carrier conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7805	Improved Manufacturing
+7806	<b>Description:</b> Improves construction speed by 30% on all Carriers. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7231	Lvl 1 Interceptor
+7232	Lvl 2 Interceptor
+7233	Lvl 3 Interceptor
+7539	Interceptor Armor 1
+7540	<b>Description:</b> Improves Interceptor armor. \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7541	Interceptor Armor 2
+7542	<b>Description:</b> Improves Interceptor armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Fighter Facility.
+7543	Interceptor Engine 1
+7544	<b>Description:</b> Improves Interceptor max speed. \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7545	Interceptor Engine 2
+7546	<b>Description:</b> Improves Interceptor max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Fighter Facility.
+7234	Lvl 1 Bomber
+7235	Lvl 2 Bomber
+7236	Lvl 3 Bomber
+7547	Bomber Armor 1
+7548	<b>Description:</b> Improves Bomber armor. \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7549	Bomber Armor 2
+7550	<b>Description:</b> Improves Bomber armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Fighter Facility.
+7551	Bomber Engine 1
+7552	<b>Description:</b> Improves Bomber max speed. \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7553	Bomber Engine 2
+7554	<b>Description:</b> Improves Bomber max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Fighter Facility.
+7237	Lvl 1 Gunship
+7238	Lvl 2 Gunship
+7239	Lvl 3 Gunship
+7555	Gunship Armor 1
+7556	<b>Description:</b> improves Gunship Corvette armor, allowing them to withstand more damage. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7557	Gunship Armor 2
+7558	<b>Description:</b> Improves Gunship Corvette armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Corvette Facility.
+7559	Gunship Engine 1
+7560	<b>Description:</b> Improves Gunship Corvette max speed. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7561	Gunship Engine 2
+7562	<b>Description:</b> Improves Gunship Corvette max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Corvette Facility.
+7241	Lvl 1 Pulsar
+7242	Lvl 2 Pulsar
+7243	Lvl 3 Pulsar
+7563	Pulsar Armor 1
+7564	<b>Description:</b> Improves Pulsar Corvette armor, allowing them to withstand more damage. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7565	Pulsar Armor 2
+7566	<b>Description:</b> Improves Pulsar Corvette armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Corvette Facility.
+7567	Pulsar Engine 1
+7568	<b>Description:</b> Improves Pulsar Corvette max speed. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7569	Pulsar Engine 2
+7570	<b>Description:</b> Improves Pulsar Corvette max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Corvette Facility.
+7244	Lvl 1 Torp. Frigate
+7245	Lvl 2 Torp. Frigate
+7246	Lvl 3 Torp. Frigate
+7571	Torpedo Frigate Armor 1
+7572	<b>Description:</b> Improves Torpedo Frigate armor. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7573	Torpedo Frigate Armor 2
+7574	<b>Description:</b> Improves Torpedo Frigate armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7575	Torpedo Frigate Engine 1
+7576	<b>Description:</b> Improves Torpedo Frigate max speed. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7577	Torpedo Frigate Engine 2
+7578	<b>Description:</b> Improves Torpedo Frigate max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7247	Lvl 1 Ion Frigate
+7248	Lvl 2 Ion Frigate
+7249	Lvl 3 Ion Frigate
+7579	Ion Frigate Armor 1
+7580	<b>Description:</b> Improves Ion Beam Frigate armor. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7581	Ion Frigate Armor 2
+7582	<b>Description:</b> Improves Ion Beam Frigate armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7583	Ion Frigate Engine 1
+7584	<b>Description:</b> Improves Ion Beam Frigate max speed. \n\n<b>Prerequisites:</b> Research Module and  Frigate Facility.
+7585	Ion Frigate Engine 2
+7586	<b>Description:</b> Improves Ion Beam Frigate max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7251	Lvl 1 Flak Frigate
+7252	Lvl 2 Flak Frigate
+7253	Lvl 3 Flak Frigate
+7587	Flak Frigate Armor 1
+7588	<b>Description:</b> Improves Flak Frigate Armor. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7589	Flak Frigate Armor 2
+7590	<b>Description:</b> Improves Flak Frigate Armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7591	Flak Frigate Engine 1
+7592	<b>Description:</b> Improves Flak Frigate max speed. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7593	Flak Frigate Engine 2
+7594	<b>Description:</b> Improves Flak Frigate max speed to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Frigate Facility.
+7254	Lvl 1 B.Cruiser
+7255	Lvl 2 B.Cruiser
+7256	Lvl 3 B.Cruiser
+7595	Battlecruiser Hull  1
+7596	<b>Description:</b> Improves Battlecruiser Hulls, allowing them to withstand more damage. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7597	Battlecruiser Hull 2
+7598	<b>Description:</b> Improves Battlecruiser Hulls to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7599	Battlecruiser Engine 1
+7600	<b>Description:</b> Improves Battlecruiser conventional drive systems. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7601	Battlecruiser Engine 2
+7602	<b>Description:</b> Improves Battlecruiser conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7257	Lvl 1 Gun Platform
+7258	Lvl 2 Gun Platform
+7259	Lvl 3 Gun Platform
+7603	Gun Platform Hull 1
+7604	<b>Description:</b> Improves Gun Platform armor.   \n\n<b>Prerequisites:</b> Research Module and Platform Controller.
+7605	Gun Platform Hull 2
+7606	<b>Description:</b> Improves Gun Platform armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Platform Controller.
+7261	Lvl 1 Ion Platform
+7262	Lvl 2 Ion Platform
+7263	Lvl 3 Ion Platform
+7607	Ion Beam Platform Hull 1
+7608	<b>Description:</b> Improves Ion Beam Platform armor.   \n\n<b>Prerequisites:</b> Research Module and Platform Controller.
+7609	Ion Beam Platform Hull 2
+7610	<b>Description:</b> Improves Ion Beam Platform armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Platform Controller.
+7264	Lvl 1 Collector
+7265	Lvl 2 Collector
+7266	Lvl 3 Collector
+7611	Resource Collector Hull 1
+7612	<b>Description:</b> Improves Resource Collector armor.   \n\n<b>Prerequisites:</b> Research Module.
+7613	Resource Collector Hull 2
+7614	<b>Description:</b> Improves Resource Collector armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module.
+7267	Lvl 1 Refinery
+7268	Lvl 2 Refinery
+7269	Lvl 3 Refinery
+7615	Mobile Refinery Hull 1
+7616	<b>Description:</b> Improves Mobile Refinery armor.   \n\n<b>Prerequisites:</b> Research Module.
+7617	Mobile Refinery Hull 2
+7618	<b>Description:</b> Improves Mobile Refinery armor to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module.
+7271	Lvl 1 Shipyard
+7272	Lvl 2 Shipyard
+7273	Lvl 3 Shipyard
+7619	Shipyard Hull 1
+7620	<b>Description:</b> Improves Shipyard Hull integrity, allowing it to withstand more damage. \n\n<b>Prerequisites:</b> Research Module, Capital Ship Facility and Hyperspace Module.
+7621	Shipyard Hull 2
+7622	<b>Description:</b> Improves Shipyard Hull integrity, allowing it to withstand more damage to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module, Capital Ship Facility and Hyperspace Module.
+7623	Shipyard Engine 1
+7624	<b>Description:</b> Improves Shipyard conventional drive systems. \n\n<b>Prerequisites:</b> Research Module, Capital Ship Facility and Hyperspace Module.
+7625	Shipyard Engine 2
+7626	<b>Description:</b> Improves Shipyard conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module, Capital Ship Facility and Hyperspace Module.
+7810	Improved Manufacturing
+7811	<b>Description:</b> Improves construction speed by 30% on the Shipyard. \n\n<b>Prerequisites:</b> Advanced Research Module, Capital Ship Facility and Hyperspace Module.
+7274	Lvl 1 Destroyer
+7275	Lvl 2 Destroyer
+7276	Lvl 3 Destroyer
+7639	Destroyer Hull  1
+7640	<b>Description:</b> Improves Destroyer Hulls, allowing them to withstand more damage.  \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7641	Destroyer Hull 2
+7642	<b>Description:</b> Improves Destroyer Hulls to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7643	Destroyer Engine 1
+7644	<b>Description:</b> Improves Destroyer conventional drive systems. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7645	Destroyer Engine 2
+7646	<b>Description:</b> Improves Destroyer conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Advanced Research Module and Capital Ship Facility.
+7627	Improved Hyperspace Drive 1
+7628	<b>Description:</b> Enhances the Hyperspace Drives Systems, reducing the hyperspace cost by 20%. \n\n<b>Prerequisites:</b> Research Module and Hyperspace Module.
+7280	Hyperspace 1
+7629	Improved Hyperspace Drive 2
+7630	<b>Description:</b> Enhances the Hyperspace Drives Systems, reducing the hyperspace cost by an additional 25%. \n\n<b>Prerequisites:</b> Advanced Research Module and Hyperspace Module.
+7281	Hyperspace 2
+7631	Improved Hyperspace Navigation
+7632	<b>Description:</b> Improves telemetry data processing, reduces the transit time of hyperspace by 33%. \n\n<b>Prerequisites:</b> Research Module and Hyperspace Module.
+7282	HS Nav 1
+7633	Advanced Hyperspace Navigation
+7634	<b>Description:</b> Advanced telemetry data processing, reduces the transit time of hyperspace by an additional 50%. \n\n<b>Prerequisites:</b> Advanced Research Module and Hyperspace Module.
+7283	HS Nav 2
+7635	Improved Hyperspace Recovery
+7636	<b>Description:</b> Reduces hyperspace recovery time by 33%. \n\n<b>Prerequisites:</b> Research Module and Hyperspace Module.
+7284	HS Rec. 1
+7637	Adv. Hyperspace Recovery
+7638	<b>Description:</b> Reduces hyperspace recovery time by an additional 33%. \n\n<b>Prerequisites:</b> Advanced Research Module and Hyperspace Module.
+7285	HS Rec. 2
+7100	Fighter Facility
+7101	<B>Description:</B>  Enables Fighter Class Production.  \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> None.
+7102	Corvette Facility
+7103	<b>Description:</b>  Enables Corvette Class Production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> Corvette Chassis Research.
+7104	Frigate Facility
+7105	<b>Description:</b>  Enables Frigate Class Production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> Frigate Chassis Research.
+7106	Capital Class Facility
+7107	<b>Description:</b>  Enables Capital Class Production. \n\n<b>Type:</b> Production Facility (Takes 1 Production Slot). \n\n<b>Prerequisites:</b> None.
+7108	Platform Control Module
+7109	<b>Description:</b>  Coordinates Weapon Platform operations. Required for building Weapon Platforms.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> None.
+7110	Research Module
+7111	<b>Description:</b>  Science Division. Unlocks research and new ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> None.
+7112	Advanced Research Module
+7113	<b>Description:</b>  Engineering Division. Unlocks advanced technologies and new ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module.
+7114	Hyperspace Module
+7115	<b>Description:</b>  The Vaygr HS Module is less effective than its Hiigaran Counterpart, hyperspace with a Module is more costly as a result.   \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module and Hyperspace Gate Research.
+7116	Gravity Well Generator
+7117	<b>Description:</b>  Hyperspace Inhibitor. Prevents enemy Ships from entering or exiting Hyperspace within a limited radius around the ship.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module.
+7118	Cloak Generator
+7119	<b>Description:</b>  Sensor Disruption. Cloaks nearby ships from enemy sensors when activated.  Small energy cost when initiated and minimum amount of energy (10% of total) required to activate.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module.
+7120	Fire Control Tower
+7121	<b>Description:</b>  Coordinates all ship defenses. Improves the combat effectiveness of nearby friendly ships.  \n\n<b>Type:</b> Module (Takes 1 Module Slot) \n\n<b>Prerequisites:</b> Research Module.
+7122	Advanced Sensors Array
+7123	<b>Description:</b> Improves basic sensors.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot) \n\n<b>Prerequisites:</b> None.
+7124	Anti-Cloaking Sensors
+7125	<b>Description:</b> Improves sensors against cloaked ships.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot) \n\n<b>Prerequisites:</b> None.
+7126	Hyperspace Sensors
+7127	<b>Description:</b> Detects all hyperspace signatures within a radius around the ship.  \n\n<b>Type:</b> Sensors (Takes 1 Sensors Slot) \n\n<b>Prerequisites:</b> None.
+7130	Survey Scout
+7131	<b>Description:</b> Reconnaissance Fighter Squadron.  \n\n<b>Strong vs:</b> None \n<b>Weak vs:</b> Fighters, Corvettes, Frigates, Capital Ships \n\n<b>Prerequisites:</b> None.
+7132	Assault Craft
+7133	<b>Description:</b> Basic Fighter Squadron.  \n\n<b>Strong vs:</b> Fighters  \n<b>Weak vs:</b> Corvettes, Frigates, Capital Ships \n\n<b>Prerequisites:</b> Fighter Facility.
+7134	Bomber
+7135	<b>Description:</b> Anti-Capital Ship Fighter Squadron.  \n\n<b>Strong vs:</b> Frigates, Capital Ships, Subsystems  \n<b>Weak vs:</b>  Fighters, Corvettes, Anti-Fighter Frigates \n\n<b>Prerequisites:</b> Fighter Facility, Research Module and Fusion Bomb Research.
+7136	Lance Fighter
+7137	<b>Description:</b> Heavy Fighter Squadron.  \n\n<b>Strong vs:</b> Corvettes  \n<b>Weak vs:</b>  Anti-Fighter Frigates, Fighters \n\n<b>Prerequisites:</b> Fighter Facility, Research Module and Lance Beam Research.
+7138	Missile Corvette
+7139	<b>Description:</b> Heavy Corvette Squadron.  \n\n<b>Strong vs:</b> Corvettes, Frigates \n<b>Weak vs:</b> Capital Ships \n\n<b>Prerequisites:</b> Corvette Facility.
+7140	Laser Corvette
+7141	<b>Description:</b> Anti-Capital Ship Corvette Squadron.  \n\n<b>Strong vs:</b> Frigates, Capital Ships \n<b>Weak vs:</b> Corvettes, Frigates \n\n<b>Prerequisites:</b> Corvette Facility, Research Module and Corvette Laser Research.
+7142	Minelayer
+7143	<b>Description:</b> Utility Corvette. Can deploy mines as a Special Action (Default N)  \n\n<b>Strong vs:</b> Capital Ships \n<b>Weak vs:</b> Corvettes \n\n<b>Prerequisites:</b> Corvette Facility, Research Module and Minelaying Technology.
+7144	Command Corvette
+7145	<b>Description:</b> Utility Corvette with improved sensors and fire control systems. Improves all nearby Vaygr ship accuracy.  \n\n<b>Strong vs:</b> N/A \n<b>Weak vs:</b> Corvettes, Capital Ships \n\n<b>Prerequisites:</b> Corvette Facility, Research Module and Command Corvette Systems Research.
+7146	Assault Frigate
+7147	<b>Description:</b> Advanced Anti-Fighter Frigate equipped with turrets and swarmer missiles.  \n\n<b>Strong vs:</b> Fighters \n<b>Weak vs:</b> Bombers, Capital Ships \n\n<b>Prerequisites:</b> Frigate Facility, Research Module and Assault Frigate Chassis Research.
+7148	Heavy Missile Frigate
+7149	<b>Description:</b> Basic Frigate equipped with powerful anti-ship missiles.  \n\n<b>Strong vs:</b> Frigates, Capital Ships \n<b>Weak vs:</b> Bombers, Destroyers \n\n<b>Prerequisites:</b> Frigate Facility.
+7150	Infiltrator Frigate
+7151	<b>Description:</b> Frigate capable of infiltrating and commandeering enemy ships using drop pods.  \n\n<b>Strong vs:</b> Capital Ship \n<b>Weak vs:</b> Bombers, Frigates \n\n<b>Prerequisites:</b> Frigate Facility, Research Module and Infiltration Pod Research.
+7152	Destroyer
+7153	<b>Description:</b> Capital Class Anti-Frigate ship.  \n\n<b>Strong vs:</b> Frigates, Capital Ships. \n<b>Weak vs:</b> Bombers, Battlecruisers \n\n<b>Prerequisites:</b> Capital Ship Facility, Research Module and Destroyer Chassis.
+7154	Carrier
+7155	<b>Description:</b> Capital Class Production ship equipped with 1 Production and 2 Module Slots.  \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Capital Ship \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7156	Shipyard
+7157	<b>Description:</b> Mothership Class Production ship equipped with 4 Production, 4 Module and 1 Sensor slots. This ship is so massive it can only Hyperspace into battle.  \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Capital Ships \n\n<b>Prerequisites:</b> Hyperspace Module.
+7158	Battlecruiser
+7159	<b>Description:</b> Heavy Capital Class ship.  \n\n<b>Strong vs:</b> Capital Ships, Frigates. \n<b>Weak vs:</b> Bombers \n\n<b>Prerequisites:</b> Capital Ship Facility (Shipyard only), Research Module and Battlecruiser Chassis Research.
+7160	Gun Platform
+7161	<b>Description:</b> Stationary Anti-Fighter Weapon platform. Once deployed it cannot be moved again.  \n\n<b>Strong vs:</b> Fighters. \n<b>Weak vs:</b> Frigates, Capital Ships \n\n<b>Prerequisites:</b> Platform Controller Module.
+7162	Heavy Missile Platform
+7163	<b>Description:</b> Stationary Anti-Capital Ship Weapon platform. Once deployed it cannot be moved again.  \n\n<b>Strong vs:</b> Frigate, Capital Ships. \n<b>Weak vs:</b> Fighters, Corvettes \n\n<b>Prerequisites:</b> Platform Controller Module, Research Module and Platform Missile Research.
+7164	Resource Collector
+7165	<b>Description:</b> Basic Utility ship, can harvest resources. When upgraded Resource Collectors can repair damaged ships.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7166	Mobile Refinery
+7167	<b>Description:</b> Mobile Resource Drop-Off point. Can dock 2 Resource Collectors at once.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7168	Probe
+7169	<b>Description:</b> Long Range Sensor device. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> None.
+7170	Proximity Sensor
+7171	<b>Description:</b> Sensor device capable of detecting cloaked ships. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> Research Module and Proximity Sensor Research.
+7172	Sensors Distortion Probe
+7173	<b>Description:</b> Remote device that scrambles enemy sensors. One-shot movement.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> Research Module and Sensors Distortion Probe Research.
+7174	Hyperspace Gate
+7175	<b>Description:</b> Basic Hyperspace Generator unique to the Vaygr. When linked with a second Hyperspace Gate it allows friendly ships to jump between the two locations.  \n\n<b>Strong vs:</b> N/A. \n<b>Weak vs:</b> All \n\n<b>Prerequisites:</b> Platform Control Module, Research Module and Hyperspace Gate Generator Research.
+7176	Corvette Chassis
+7177	<b>Description:</b>  Enables Corvette Class production facility. \n\n<b>Prerequisites:</b> Research Module.
+7180	Corvette Chassis
+7178	Frigate Chassis
+7179	<b>Description:</b>  Enables Frigate Class production facility. \n\n<b>Prerequisites:</b> Research Module.
+7181	Frigate Chassis
+7700	Sensors Distortion Probe
+7701	<b>Description:</b> Electronic Counter Measures. Unlocks the Sensors Distortion Probe.  \n\n<b>Prerequisites:</b> Research Module.
+7182	Sen. Dist. Probe
+7183	Proximity Sensor Probe
+7184	<b>Description:</b> Unlocks the Proximity Sensors Probe.  \n\n<b>Prerequisites:</b> Research Module.
+7185	Prox. Sen. Probe
+7702	Fusion Bombs
+7703	<b>Description:</b> Impact delay Fusion Bombs. Unlocks Bombers.  \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7300	Fusion Bombs
+7704	Lance Beams
+7705	<b>Description:</b> Plasma Lance fighter technology. Unlocks the Lance Fighter.  \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7301	Lance Beams
+7706	Corvette Minelaying Systems
+7707	<b>Description:</b> Minelaying technology. Unlocks Minelayer Corvettes. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7302	Minelaying
+7708	Corvette Laser Systems
+7709	<b>Description:</b> Anti-Capital Ship laser technology. Unlocks Laser Corvettes. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7303	Laser Systems
+7710	Command Corvette Systems
+7711	<b>Description:</b> Enhanced Sensors and Tactical Interface. Unlocks Command Corvettes. \n\n<b>Prerequisites:</b> Research Module and Corvette Facility.
+7304	Command Systems
+7712	Platform Heavy Missile System
+7713	<b>Description:</b> Automated Missile Controls. Unlocks Heavy Missile Platforms.  \n\n<b>Prerequisites:</b> Research Module and Platform Controller.
+7305	Platform Missiles
+7714	Assault Frigate Chassis
+7715	<b>Description:</b> Standard Frigate Chassis equipped with Anti-Fighter weaponry. Unlocks Assault Frigates. \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7306	Assault Frigate
+7716	Infiltration Pods
+7717	<b>Description:</b> Drop ships used to board enemy vessels. Unlocks Infiltrator Frigates.  \n\n<b>Prerequisites:</b> Research Module and Frigate Facility.
+7307	Infiltrator Pods
+7718	Battlecruiser Chassis
+7719	<b>Description:</b> Enables Battlecruiser production. \n\n<b>Prerequisites:</b> Research Module, Capital Ship Facility and Destroyer Chassis.
+7308	Battlecruiser
+7720	Destroyer Chassis
+7721	<b>Description:</b> Capital Ship chassis equipped with Anti-Frigate weaponry. Unlocks Destroyers. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7309	Destroyer
+7722	Hyperspace Gate Generators
+7723	<b>Description:</b> Mobile Hyperspace Gate generators. Unlocks Hyperspace Gate Platforms. \n\n<b>Prerequisites:</b> Hyperspace Module.
+7310	HS. Gates
+7724	Resource Collector Repair Systems
+7725	<b>Description:</b> Allows Resource Collectors to repair friendly units. \n\n<b>Prerequisites:</b> Research Module.
+7311	Repair
+7726	Enhanced Scout Sensors
+7727	<b>Description:</b> Allows scouts to "Ping" the mission area, briefly revealing enemy units. \n\n<b>Prerequisites:</b> None.
+7312	Scout Sensors
+7730	Improved Bombs
+7731	<b>Description:</b> Allows Bombers to launch anti-subsystem bombs. \n\n<b>Prerequisites:</b> Research Module and Fighter Facility.
+7313	Imp. Bombs
+7732	Scout Electro-Magnetic Pulse
+7734	<b>Description:</b> Allows Scouts to fire a EMP attack that disables enemy ships for a limited time. \n\n<b>Prerequisites:</b> Research Module.
+7314	EMP
+7321	Lvl 1 Flagship
+7322	Lvl 2 Flagship
+7323	Lvl 3 Flagship
+7735	Flagship Hull  1
+7736	<b>Description:</b> Improves Flagship hull integrity, allowing it to withstand more damage. \n\n<b>Prerequisites:</b> None.
+7737	Flagship Hull  2
+7738	<b>Description:</b> Improves Flagship hull integrity, allowing it to withstand more damage to Lvl 2. \n\n<b>Prerequisites:</b> None.
+7739	Flagship Engines 1
+7740	<b>Description:</b> Improves Flagship conventional drive systems. \n\n<b>Prerequisites:</b> None.
+7741	Flagship Engines 2
+7742	<b>Description:</b> Improves Flagship conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> None.
+7815	Improved Manufacturing
+7816	<b>Description:</b> Improves construction speed by 30% on the Flagship. \n\n<b>Prerequisites:</b> Research Module.
+7354	Lvl 1 Capital Ship
+7355	Lvl 2 Capital Ship
+7356	Lvl 3 Capital Ship
+7743	Capital Ship Hull  1
+7744	<b>Description:</b> Improves all Capital Ship hulls, allowing them to withstand more damage.  \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7745	Capital Ship Hull  2
+7746	<b>Description:</b> Improves all Capital Ship hulls to Lvl 2. \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7747	Capital Ship Engines 1
+7748	<b>Description:</b> Improves all Capital Ship conventional drive systems. \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7749	Capital Ship Engines 2
+7750	<b>Description:</b> Improves all Capital Ship conventional drive systems to Lvl 2. \n\n<b>Prerequisites:</b> Capital Ship Facility.
+7820	Improved Manufacturing
+7821	<b>Description:</b> Improves construction speed by 30% on all carriers. \n\n<b>Prerequisites:</b> Research Module and Capital Ship Facility.
+7825	Improved Manufacturing
+7826	<b>Description:</b> Improves construction speed by 30% on the Shipyard. \n\n<b>Prerequisites:</b> Research Module, Capital Ship Facility and Research Module and Hyperspace Module.
+7331	Lvl 1 Fighter
+7332	Lvl 2 Fighter
+7333	Lvl 3 Fighter
+7751	Fighter Class Armor 1
+7752	<b>Description:</b> Improves Fighter Class armor. \n\n<b>Prerequisites:</b> Fighter Facility.
+7753	Fighter Class Armor 2
+7754	<b>Description:</b> Improves Fighter Class armor to Lvl 2. \n\n<b>Prerequisites:</b> Fighter Facility.
+7755	Fighter Class Engines 1
+7756	<b>Description:</b> Improves Fighter Class max speed. \n\n<b>Prerequisites:</b> Fighter Facility.
+7757	Fighter Class Engines 2
+7758	<b>Description:</b> Improves Fighter Class max speed to Lvl 2. \n\n<b>Prerequisites:</b> Fighter Facility.
+7341	Lvl 1 Corvette
+7342	Lvl 2 Corvette
+7343	Lvl 3 Corvette
+7759	Corvette Class Armor 1
+7760	<b>Description:</b> Improves Corvette Class armor. \n\n<b>Prerequisites:</b> Corvette Facility.
+7761	Corvette Class Armor 2
+7762	<b>Description:</b> Improves Corvette Class armor to Lvl 2. \n\n<b>Prerequisites:</b> Corvette Facility.
+7763	Corvette Class Engines 1
+7764	<b>Description:</b> Improves Corvette Class max speed. \n\n<b>Prerequisites:</b> Corvette Facility.
+7765	Corvette Class Engines 2
+7766	<b>Description:</b> Improves Corvette Class max speed to Lvl 2. \n\n<b>Prerequisites:</b> Corvette Facility.
+7371	Lvl 1 Frigate
+7372	Lvl 2 Frigate
+7373	Lvl 3 Frigate
+7767	Frigate Class Armor 1
+7768	<b>Description:</b> Improves Frigate Class Armor. \n\n<b>Prerequisites:</b> Frigate Facility.
+7769	Frigate Class Armor 2
+7770	<b>Description:</b> Improves Frigate Class Armor to Lvl 2. \n\n<b>Prerequisites:</b> Frigate Facility.
+7771	Frigate Class Engines 1
+7772	<b>Description:</b> Improves Frigate Class max speed. \n\n<b>Prerequisites:</b> Frigate Facility.
+7773	Frigate Class Engines 2
+7774	<b>Description:</b> Improves Frigate Class max speed to Lvl 2. \n\n<b>Prerequisites:</b> Frigate Facility.
+7361	Lvl 1 Platform
+7362	Lvl 2 Platform
+7363	Lvl 3 Platform
+7775	Platform Class Armor 1
+7776	<b>Description:</b> Improves Platform Class Armor. \n\n<b>Prerequisites:</b> Platform Controller.
+7777	Platform Class Armor 2
+7778	<b>Description:</b> Improves Platform Class Armor to Lvl 2. \n\n<b>Prerequisites:</b> Platform Controller.
+7351	Lvl 1 Utility
+7352	Lvl 2 Utility
+7353	Lvl 3 Utility
+7779	Utility Class Armor 1
+7780	<b>Description:</b> Improves Utility Class Armor. \n\n<b>Prerequisites:</b> None.
+7781	Utility Class Armor 2
+7782	<b>Description:</b> Improves Utility Class Armor to Lvl 2. \n\n<b>Prerequisites:</b> None.
+7900	Anti-Mover Weaponry Enhancements
+7901	Analysis of the derelict Mover has revealed a number of weaknesses our engineers can exploit. Researching Anti-Mover Weapon Enhancements will increase our weapon's effectiveness against the movers.
+7902	Anti-Mover Weaponry
+7905	Improved Defense Fields
+7906	<b>Description:</b> Improvements to Defense Field technology will allow protection from radiation, in addition to its existing qualities \n\n<b>Prerequisites:</b> Defense Field Technology.
+7907	Imp Defense Field
+7910	Mover Facility
+7911	<b>Description:</b> Enables construction of Progenitor Movers. \n\n<b>Prerequisites:</b> Derelict Mover Analysis.
+7912	Mover Construction
+7913	Mover
+7914	<b>Description:</b> Progenitor Mover Replica. Movers are AI controlled vessels.  \n\n<b>Strong vs:</b> Frigates \n<b>Weak vs:</b> Torpedo Frigates \n\n<b>Prerequisites:</b> Derelict Mover Analysis
+
+rangeend

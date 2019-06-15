@@ -1,0 +1,21 @@
+fps = 15;
+startFrame = 0;
+loopCount = 1;
+
+texture = 
+{
+	"DATA:UI\\Cursors\\ui_cursor_pulse_0.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_1.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_2.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_3.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_4.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_5.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_6.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_7.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_8.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_9.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_a.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_b.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_c.dds",
+	"DATA:UI\\Cursors\\ui_cursor_pulse_d.dds"
+}

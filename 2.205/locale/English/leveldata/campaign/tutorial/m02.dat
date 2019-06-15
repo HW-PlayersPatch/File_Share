@@ -1,0 +1,72 @@
+filerange 50500 50702
+rangestart 50500 50702
+
+// Subtitles
+50500	Collect one load of resources and deliver them back to the carrier.
+50501	Build a squadron of Scouts
+50502	Build a Research Module
+50503	Select the Research Module
+50504	Open the Research Menu
+50505	Research Scout Sensors
+50506	Build a squadron of Bombers
+50507	Destroy the Torpedo Frigate.
+50508	Open the Build Manager
+50509	BAND BOX attack the three Drones
+50510	Destroy Drone Frigate
+50512	Select the resource collecter, and right-click on any nearby asteroids or press the Harvest key to initiate resource collection (default key: H).
+50513	Activate the Build Menu and choose the Fighter category (left-most icon) to build a Scout fighter squadron. To activate the Build Menu, either click on the Build icon on the taskbar, or press the Build key (default key: B).
+50514	Activate the Build Menu and choose the Subsystems category to build a Research Module subsystem.
+50515	The Research Module is located on the hull of the build ship (in this case, the Carrier).
+50516	To activate the Research Menu, either click on the Research icon in the taskbar, or press the Research key (default key: R).
+50517	Click on the Scout Sensors research option in the "Technologies" section of the Research Menu to initiate research.
+50518	Select the Bombers option from the Fighter section of the Build Menu.
+50519	Order your Fighter squadrons to attack the disarmed Drone frigate.
+50523	The Build Manager can be opened by clicking on the flashing BUILD icon on the taskbar. The default BUILD key is B.
+50524	While holding down CTRL, DRAG a BANDBOX around both targets to initiate an attack.
+50520	RESOURCING, BUILDING AND COMBAT
+50522	Select this Resource Collector, and order it to harvest the resources
+50529	This tutorial will cover Resourcing, Ship Building and Combat.
+50530	To build ships and research new technology you will need to harvest Resources.
+50531	Resources can be gathered from asteroids and salvage containers. Click OK to Continue.#+
+50532	To Harvest, select the Resource Collector and RIGHT-CLICK on the indicated asteroid.
+50533	Do this now.
+50534	Additionally, pressing the Harvest Hotkey (H) will order selected Resource Collectors to Harvest nearby resources. Click OK to Continue.#+
+50540	Production ships, like this Carrier, can build ships.
+50542	Click the BUILD BUTTON (B) to open the BUILD MANAGER.
+50543	The Build Manager is organized according to Production Facilities.
+50544	The currently displayed menu shows the available Fighter-Class ships that can be built. Click OK to Continue.#+
+50541	Click on the Scout icon to begin construction of a Scout squadron
+50546	Notice how the progress bar increases, indicating the status of the current build task.
+50550	In order to perform upgrades to existing systems or to acquire new technology, a Research Module must be built. Click OK to Continue.#+
+50555	^__^
+50560	The Research Module is a Subsystem. Click on the subsystem panel to locate it.
+50561	Build a Research Module on the Carrier by clicking on its icon now.
+50562	Subsystems allow you to customize your ships and unlock special abilities or new build options.
+50565	The Research Module is complete and is located here. Click OK to Continue.#+
+50566	Subsystems can be selected by zooming the camera in, and clicking on the Subsystem itself.
+50567	Select the Research Module now.
+50568	Leftclick on the Research Module to select it.
+50569	Good.  Subsystems can also be selected using the taskbar. Click OK to Continue.#+
+50700	First, select the Carrier.
+50701	Now Leftclick on the Research Module icon to select it from the taskbar.
+50702	Excellent.
+50570	New technologies and build options are now available. Click OK to Continue.#+
+50571	Click on the RESEARCH BUTTON, or the Research Hotkey (R) to activate the Research Manager.
+50577	This is the Research Manager.
+50580	Notice that "Enhanced Scout Sensors" technology is available for research. This improves Scout sensors. Click OK to Continue. #+
+50581	Click on "Enhanced Scout Sensors" to research Enhanced Scout Sensors.
+50590	Each Research Item will unlock new build options or enhance your ships.
+50591	Deciding what to research or upgrade is critical for victory.
+50596	Scout Sensor research complete.
+50600	Stand by to begin combat lessons.
+50601	A Squadron of Bombers has been constructed, and an unarmed Torpedo Frigate has been provided. Click OK to Continue.#+
+50610	To attack a target, select the Bomber Squadron and RIGHT-CLICK on the Torpedo Frigate.
+50619	Order the Bombers to attack the Torpedo Frigate now.
+50612	This is the basic method used for issuing an attack.
+50613	To attack multiple enemies, hold down CTRL and use the LEFT-MOUSE BUTTON to DRAG-SELECT a group of targets.
+50614	Attack the 3 Frigates now.
+50630	Congratulations.
+50631	You now understand all the basics required to play Homeworld. #+
+50640	Good work.
+
+rangeend

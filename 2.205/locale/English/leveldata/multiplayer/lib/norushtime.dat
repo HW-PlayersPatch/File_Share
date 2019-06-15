@@ -1,0 +1,9 @@
+filerange 14770 14772
+rangestart 14770 14772
+
+// Subtitles
+14770	No Rush Time: You are in a restricted area! Your ships are taking damage.
+14771	No Rush Time: %[0].0f minutes
+14772	No Rush Time: Elapsed, no more restricted areas.
+
+rangeend

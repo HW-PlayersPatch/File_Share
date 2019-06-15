@@ -1,0 +1,18 @@
+name = "Arrow"
+displayName = "Supercapship"
+mesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 1,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\Arrow.hod"}
+}
+
+mouseOverMesh =
+{
+    colour = {0,0,0,0},
+    lineWeight = 2,
+    renderFlags = {"scaleX", "scaleY"},
+    LODs = {1, "UI\\TacticalIcons\\Meshes\\Arrow_2x.hod"}
+}
+

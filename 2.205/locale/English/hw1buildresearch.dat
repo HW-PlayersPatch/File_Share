@@ -1,0 +1,133 @@
+filerange 11000 11563
+rangestart 11000 11563
+
+// Subtitles
+11000	Scout
+11001	<b>Description:</b> Reconnaissance Fighter.  Fast engines and strong sensors. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Fighters, Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> None.
+11002	Interceptor
+11003	<b>Description:</b> Anti-Strike Craft Fighter.  Excels at dogfights with other strike craft. \n\n<b>Strong vs:</b> Fighters.  \n<b>Weak vs:</b> Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Fighter Drive, Fighter Chassis.
+11004	Attack Bomber
+11005	<b>Description:</b> Anti-Capital Ship Fighter.  Launches slow but damaging plasma bombs. \n\n<b>Strong vs:</b> Frigates, Capital Ships and Subsystems. \n<b>Weak vs:</b>  Fighters, Corvettes and Anti-Fighter Frigates. \n\n<b>Prerequisites:</b> Fighter Drive, Fighter Chassis, Plasma Bomb Launcher.
+11006	Defender
+11007	<b>Description:</b> Heavy Defense Fighter.  Designed to protect larger vessels from strike craft. \n\n<b>Strong vs:</b> Fighters.  \n<b>Weak vs:</b> Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Fighter Drive, Defender Sub-Systems.
+11008	Cloaked Fighter
+11009	<b>Description:</b> Covert Operations Fighter.  Personal cloaking field renders the craft invisible. \n\n<b>Strong vs:</b> Fighters.  \n<b>Weak vs:</b> Scouts and Proximity Sensors. \n\n<b>Prerequisites:</b> Fighter Drive, Fighter Chassis, Cloaked Fighter.
+11010	Defense Fighter
+11011	<b>Description:</b> Anti-Projectile Fighter.  Destroys incoming projectiles with targeted lasers. \n\n<b>Strong vs:</b> Missiles and Mines.  \n<b>Weak vs:</b> Fighters, Corvettes, Frigates and Capital Ships \n\n<b>Prerequisites:</b> Fighter Drive, Fighter Chassis, Defense Fighter.
+11012	Light Corvette
+11013	<b>Description:</b> Light Attack Corvette.  Basic early-tier heavy strike craft. \n\n<b>Strong vs:</b> Fighters. \n<b>Weak vs:</b> Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Corvette Drive.
+11014	Heavy Corvette
+11015	<b>Description:</b> Heavy Assault Corvette.  Heaviest weapons and armor of any strike craft. \n\n<b>Strong vs:</b> Corvettes and Frigates. \n<b>Weak vs:</b> Anti-Strike Craft Frigates and Capital Ships. \n\n<b>Prerequisites: </b> Corvette Drive, Corvette Chassis, Heavy Corvette Upgrade.
+11016	Multi-Gun Corvette
+11017	<b>Description:</b> Anti-Fighter Corvette.  Specializes in taking out large fighter groups. \n\n<b>Strong vs:</b> Fighters. \n<b>Weak vs:</b> Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Corvette Drive, Corvette Chassis, Fast-Tracking Turrets.
+11018	Minelayer Corvette
+11019	<b>Description:</b> Mine-Deploying Corvette. Deploys fields of magnetic mines. \n\n<b>Strong vs:</b> Frigates and Capital Ships. \n<b>Weak vs:</b> Fighters and Corvettes. \n\n<b>Prerequisites:</b> Corvette Drive, Corvette Chassis, Minelaying Tech.
+11020	Salvage Corvette
+11021	<b>Description:</b> Salvage & Capture Corvette. Disables and captures enemy vessels. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Corvette Drive, Corvette Chassis.
+11022	Repair Corvette
+11023	<b>Description:</b> Field Repair Corvette. Repairs ships and refits one strike craft vessel. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> None.
+11024	Assault Frigate
+11025	<b>Description:</b> Frontline Attack Frigate.  Assaults enemy craft with turrets and bombs. \n\n<b>Strong vs:</b> Corvettes and Frigates. \n<b>Weak vs:</b> Bombers and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive, Capital Ship Chassis.
+11026	Ion Cannon Frigate
+11027	<b>Description:</b> Anti-Capital Ship Beam Frigate. Ravages capital ships with a powerful ion beam. \n\n<b>Strong vs:</b> Frigates and Capital Ships. \n<b>Weak vs:</b> Bombers and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive, Capital Ship Chassis, Ion Cannons.
+11028	Support Frigate
+11029	<b>Description:</b> Heavy Repair Frigate.  Repairs ships and can refit multiple strike craft. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive.
+11030	Drone Frigate
+11031	<b>Description:</b>  Drone Deployment Frigate.  Uses multiple drones to obliterate strike craft. \n\n<b>Strong vs:</b> Fighters and Corvettes. \n<b>Weak vs:</b> Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive, Capital Ship Chassis, Drone Technology.
+11032	Field Frigate
+11033	<b>Description:</b>  Field Deployment Frigate.  Emits a large-scale anti-projectile force field. \n\n<b>Strong vs:</b> Turrets, Mines, and Missiles. \n<b>Weak vs:</b> Bombers and Ion Cannon Weapons. \n\n<b>Prerequisites:</b> Capital Ship Drive, Capital Ship Chassis, Defense Field.
+11034	Destroyer
+11035	<b>Description:</b>  Frontline Attack Capital Ship. Attacks with large front-side ion cannons and turrets. \n\n<b>Strong vs:</b> Frigates and Capital Ships. \n<b>Weak vs:</b> Bombers and Cruisers. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive, Ion Cannons, Super-Heavy Chassis.
+11036	Missile Destroyer
+11037	<b>Description:</b>  Long-Range Capital Ship.  Attacks with volleys of long-range guided missiles. \n\n<b>Strong vs:</b> Fighters, Corvettes. \n<b>Weak vs:</b> Bombers and Capital Ships. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive, Guided Missiles.
+11038	Heavy Cruiser
+11039	<b>Description:</b>  Heavy Assault Capital Ship. \n\n<b>Strong vs:</b> Frigates and Capital Ships. \n<b>Weak vs:</b> Bombers. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive, Super-Heavy Chassis, Heavy Guns.
+11040	Carrier
+11041	<b>Description:</b>  Fleet Support Capital Ship.  Constructs new vessels to bolster the front line. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive.
+11042	Research Ship
+11043	<b>Description:</b> Research & Development Hub.  Houses labs to research new technologies. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> None.
+11044	Resource Collector
+11045	<b>Description:</b>  Resource Mining Vessel.  Mines space debris for material resources. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Corvettes, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> None.
+11046	Resource Controller
+11047	<b>Description:</b>  Mobile Resource Depository.  Converts harvested materials into RUs. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> None.
+11048	Gravwell Generator
+11049	<b>Description:</b>  Anti-Strike Craft Utility Vessel.  Emits a gravity well that disables strike craft engines. Hyperspace Inhibitor. \n\n<b>Strong vs:</b> Fighters and Corvettes. \n<b>Weak vs:</b> Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive, Gravity Generator.
+11050	Cloak Generator
+11051	<b>Description:</b>  Fleet Infiltration Vessel.  Emits a cloaking field that hides all nearby units from sensors. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Scouts, Proximity Sensors, Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Capital Ship Drive, Cloak Generator.
+11052	Probe
+11053	<b>Description:</b>  Long-Range Scanning Probe. Detects enemy ships and resources for mining. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> All. \n\n<b>Prerequisites:</b> None.
+11054	Proximity Sensor
+11055	<b>Description:</b>  Cloak Detection Probe. Uses motion detection to locate cloaked ships. \n\n<b>Strong vs:</b> Cloaked ships. \n<b>Weak vs:</b> All. \n\n<b>Prerequisites:</b> Proximity Sensor.
+11056	Sensors Array
+11057	<b>Description:</b>  Sensor Support Platform.  Enhances the Mothership's sensor range. \n\n<b>Strong vs:</b> None. \n<b>Weak vs:</b> Bombers, Frigates and Capital Ships. \n\n<b>Prerequisites:</b> Proximity Sensor, Sensor Array.
+11058	Research Ship (Aux. Hub. 1)
+11059	Research Ship (Aux. Hub. 2)
+11060	Research Ship (Aux. Hub. 3)
+11061	Research Ship (Aux. Hub. 4)
+11062	Research Ship (Aux. Hub. 5)
+11500	Fighter Production
+11501	<b>Description:</b> The Fighter production upgrade improves the speed and efficiency of new ship output. \n\n<b>Prerequisites:</b> Fighter Chassis.
+11502	Fighter Drive
+11503	<b>Description:</b> These uprated drive systems are used for the larger Fighters. \n\n<b>Prerequisites:</b> None.
+11504	Cooling Systems
+11505	<b>Description:</b> Cooling systems disperse thermal energy generated by engines and weapons on smaller ships. \n\n<b>Prerequisites:</b> None.
+11506	Cloaked Fighter
+11507	<b>Description:</b> Cloaked Fighter technology enables the Fighter to hide from visual and electronic detection. \n\n<b>Prerequisites:</b> Fighter Chassis.
+11508	Defense Fighter
+11509	<b>Description:</b> Defense Fighter technology combines excellent tracking ability and pulse lasers that are used to destroy enemy projectiles. \n\n<b>Prerequisites:</b> Fighter Chassis.
+11510	Fast-Tracking Turrets
+11511	<b>Description:</b> These turrets are designed to track quickly and destroy fast targets.  Required for Multi-Gun Corvettes. \n\n<b>Prerequisites:</b> Corvette Chassis.
+11512	Plasma Bomb Launcher
+11513	<b>Description:</b> This weapon discharges orbs of superheated plasma that are devastating against the hardened armor of Capital Ships.\n\n<b>Prerequisites:</b> Fighter Chassis.
+11514	Fighter Chassis
+11515	<b>Description:</b> The Heavy Fighter chassis is required to build larger Fighters like Interceptors and Attack Bombers. \n\n<b>Prerequisites:</b> Fighter Drive.
+11516	Corvette Drive
+11517	<b>Description:</b> Corvette-class ships require a powerplant of this size. \n\n<b>Prerequisites:</b> None.
+11518	Heavy Corvette Upgrade
+11519	<b>Description:</b> The Heavy Corvette upgrade increases armor strength and firepower. \n\n<b>Prerequisites:</b> Corvette Chassis.
+11520	Minelaying Tech
+11521	<b>Description:</b> Minelayer technology enables the Minelayer Corvette. \n\n<b>Prerequisites:</b> Corvette Chassis.
+11522	Corvette Chassis
+11523	<b>Description:</b> The Corvette chassis provides a larger platform for the heavier, more specialized Corvettes. \n\n<b>Prerequisites:</b> Corvette Drive.
+11524	Advanced Cooling Systems
+11525	<b>Description:</b> Advanced cooling systems are required for large capital ships and are essential for safely dispersing the massive heat generated by drives and weapons. \n\n<b>Prerequisites:</b> None.
+11526	Capital Ship Drive
+11527	<b>Description:</b> Frigates and other small Capital Ships require this drive system. \n\n<b>Prerequisites:</b> None.
+11528	Defender Sub-Systems
+11529	<b>Description:</b> This technology integrates the high firepower weapons and tracking systems required for the Defender. \n\n<b>Prerequisites:</b> Fighter Drive.
+11530	Corvette Production
+11531	<b>Description:</b> Corvette production technology streamlines ship fabrication and improves production speed. \n\n<b>Prerequisites:</b> Corvette Chassis.
+11532	Strike Craft Support
+11533	<b>Description:</b> This key technology is crucial to constructing Support Frigates and Carriers. \n\n<b>Prerequisites:</b> None.
+11534	Ion Cannons
+11535	<b>Description:</b> These advanced weapons are carried on specifically-modified Ion Cannon Frigates. \n\n<b>Prerequisites:</b> Capital Ship Chassis.
+11536	Drone Technology
+11537	<b>Description:</b> This technology is required by Drone Frigates to be able to launch and control their 14 armed drones. \n\n<b>Prerequisites:</b> Capital Ship Chassis.
+11538	Defense Field
+11539	<b>Description:</b> Defense field technology is employed by the Field Frigate to redirect enemy projectiles. \n\n<b>Prerequisites:</b> Capital Ship Chassis.
+11540	Capital Ship Chassis
+11541	<b>Description:</b> The Capital Ship Chassis is a versatile platform that enables the development of several different weapons systems. \n\n<b>Prerequisites:</b> Capital Ship Drive.
+11542	Super-Capital Ship Drive
+11543	<b>Description:</b> This massive engine system is required for Destroyers, Heavy Cruisers, and Carriers. \n\n<b>Prerequisites:</b> Capital Ship Chassis.
+11544	Advanced Targeting
+11545	<b>Description:</b> Advanced targeting allows large ships to track and destroy a greater number of targets. \n\n<b>Prerequisites:</b> None.
+11546	Guided Missiles
+11547	<b>Description:</b> Guided missiles form part of the weapon system for the Missile Destroyer. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive.
+11548	Carrier Tech
+11549	<b>Description:</b> Carrier technology enables the Carrier to construct new ships and maintain fleet systems. \n\n<b>Prerequisites:</b> None.
+11550	Heavy Guns
+11551	<b>Description:</b> Heavy guns are the critical component of the massive weapon inventory on the Heavy Cruiser. \n\n<b>Prerequisites:</b> Super-Heavy Chassis.
+11552	Proximity Sensor
+11553	<b>Description:</b> A Proximity Sensor can find cloaked enemy ships within a substantial radius. \n\n<b>Prerequisites:</b> None.
+11554	Sensors Array
+11555	<b>Description:</b> The Sensors Array uses a complex suite of instruments to locate and track enemy ships at great distances. \n\n<b>Prerequisites:</b> Proximity Detector.
+11556	Gravity Generator
+11557	<b>Description:</b> The Gravity Well Generator creates a field that can stop any strike craft that enters it. \n\n<b>Prerequisites:</b> Capital Ship Drive.
+11558	Cloak Generator
+11559	<b>Description:</b> Cloak Generator technology creates a powerful area-effect cloaking field where all friendly ships are rendered invisible. \n\n<b>Prerequisites:</b> Capital Ship Drive.
+11560	Super-Heavy Chassis
+11561	<b>Description:</b> The Super-Heavy chassis is required for the most massive capital ships - Heavy Cruisers and Destroyers. \n\n<b>Prerequisites:</b> Super-Capital Ship Drive.
+11562	Capital Ship Production
+11563	<b>Description:</b> This production upgrade increases the speed at which the mammoth capital ships can be constructed. \n\n<b>Prerequisites:</b> Capital Ship Chassis.
+
+rangeend
