@@ -1,0 +1,50 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "opening",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "death_generic_fighter" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "4.0" },
+        },
+				event2 =
+        {
+            { "anim", "opening" },
+            { "animtime", "0" },
+            { "sound", "SP_ELEMENTS/HGN_PROBE_OPEN" },
+        },
+        event3 =
+        {
+            { "anim", "opening" },
+            { "animtime", "-1" },
+            { "sound", "SPECIAL/HPROBERANDOMAMB" },
+        },
+    }
+}

@@ -1,0 +1,42 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Vgr_Laser_Small","Normal Only",1200,1800*1.1,0,0,0,0,1,1,0,1.6,0,0,1,0,260,40,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",320,320,"");
+setPenetration(NewWeaponType,5,1,
+{TurretArmour=0.5},
+{ResArmour=0.12},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{Unarmoured=0.10},
+{Unarmoured_hw1=0.10},
+{LightArmour=0.25},
+{LightArmour_hw1=0.25},
+{MediumArmour=0.85},
+{HeavyArmour=0.51 * 1.15},
+{SubSystemArmour=0.25});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.01},
+{Fighter_hw1=0.01},
+{Corvette=0.02},
+{Corvette_hw1=0.02},
+{Frigate=0.80},
+{munition=0.1});
+setAngles(NewWeaponType,0,-15,15,-15,15);
+setMiscValues(NewWeaponType,4,0.2);
+setFrustratedTimers(NewWeaponType, 0.0, 10.0);
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.20, 0.35, 0.55, 0.65);
+setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.1, 100, 1.0, 235, 0.60, 300, 0.50);
+setLifetimeMult(NewWeaponType, 1.65);
+setDamageFalloff(NewWeaponType, 0.15/1980.0, 0.1);
+setAccuracyFalloff(NewWeaponType, 0.15/1980.0, 0.1);
+setBallistics(NewWeaponType,0,0.96); -- velocity prediction variation, do not touch
+setFireMultFactor(NewWeaponType, 1.0);
+setRangeBoost(NewWeaponType, 1.0);
+setRangeByStance(NewWeaponType, 1.0, 1.0, 1.0);

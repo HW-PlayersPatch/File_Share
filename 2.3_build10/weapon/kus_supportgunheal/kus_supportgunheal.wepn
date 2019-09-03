@@ -1,0 +1,11 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","InstantHit","HealBeam","Normal",0,1000,0,1.01,0,0,1,1,1,1,0,0,1,0,45,45,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",-14.17,-14.17,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1);
+setAngles(NewWeaponType,0,-45,45,-45,45);
+setMiscValues(NewWeaponType,1.5,0);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
+setFireMultFactor(NewWeaponType, 1.0);

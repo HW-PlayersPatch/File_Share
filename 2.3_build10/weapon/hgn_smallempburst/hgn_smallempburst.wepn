@@ -1,0 +1,13 @@
+StartWeaponConfig(NewWeaponType,"Fixed","SphereBurst","EMP","Normal",0,0,500,2,0,0,10,0,0,0,0,0,0,0,0,0,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","Disable","Target",20,20,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAngles(NewWeaponType,180,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

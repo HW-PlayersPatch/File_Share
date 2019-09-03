@@ -1,0 +1,16 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Improved_Plasma_Bomb","Special Attack",1800,2000,0,0,0,0,1,1,1,2.1,0,0,1,0,260,40,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",190,190,"");
+setPenetration(NewWeaponType,5,1,{ResArmour=0.2},{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},{SubSystemArmour=2.5},{TurretArmour=0.45});
+setAccuracy(NewWeaponType,0,{SubSystem=1});
+setAngles(NewWeaponType,0,-10,10,-10,10);
+setMiscValues(NewWeaponType,0,0);
+setFrustratedTimers(NewWeaponType, 0.0, 10.0);
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.75, 0.95, 0.85, 0.85);
+setLifetimeMult(NewWeaponType, 1.75);
+setDamageFalloff(NewWeaponType, 0.5/500.0, 0.8);
+setAccuracyFalloff(NewWeaponType, 0.5/500.0, 0.8);
+setFireMultFactor(NewWeaponType, 1.0);
+setRangeBoost(NewWeaponType, 1.0);
+setRangeByStance(NewWeaponType, 1.0, 1.0, 1.0);

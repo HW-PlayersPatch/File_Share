@@ -1,0 +1,29 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Kus_MissileVolley","Special Attack",675,4000,0,0,0,0,1,1,1,50,0,0,1,0,0,0,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",260,260,"");
+setPenetration(NewWeaponType,25,0.5,
+{Unarmoured=0.75},
+{Unarmoured_hw1=0.75},
+{LightArmour=0.82},
+{LightArmour_hw1=1.5},
+{MediumArmour=2.0},
+{HeavyArmour=3.0},
+{TurretArmour=0.32},
+{MineArmour=1.0},
+{ResArmour=0.32},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=1.0},
+{Fighter_hw1=1.0},
+{Corvette=1.0},
+{Corvette_hw1=1.0},
+{munition=0});
+setAngles(NewWeaponType,120,0,0,0,0);
+setMiscValues(NewWeaponType,0.45,0.45);
+setFireMultFactor(NewWeaponType, 1.0);

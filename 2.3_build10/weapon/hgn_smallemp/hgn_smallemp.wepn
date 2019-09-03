@@ -1,0 +1,24 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Bullet","Plasma_Bomb","Special Attack",900,1500,0,0,0,0,1,1,0,70,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Hgn_SmallEMPBurst");
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Hgn_SmallEMPBurst");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.05},
+{Fighter_hw1=0.05},
+{Corvette=1.0},
+{Corvette_hw1=1.0},
+{munition=0.2});
+setAngles(NewWeaponType,15,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

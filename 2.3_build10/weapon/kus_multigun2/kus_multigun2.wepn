@@ -1,0 +1,41 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Mass_Corvette","Normal",1700,2000,0,0,0,0,1,1,1,2.0,0.0,0.0,1,0,75,75,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",12,12,"");
+setPenetration(NewWeaponType,5,1,
+{Unarmoured=0.8},
+{Unarmoured_hw1=1.2},
+{LightArmour=0.85},
+{LightArmour_hw1=1.5},
+{MediumArmour=1.0},
+{HeavyArmour=0.80},
+{MineArmour=1.0},
+{PlanetKillerArmour=0},
+{SwarmerArmor=1.80},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{ResArmour=0.80});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.75},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.75},
+{Fighter_hw1=0.85},
+{Corvette=0.50},
+{Corvette_hw1=0.50},
+{munition=0.02},
+{Frigate=0.80},
+{SmallCapitalShip=0.50},
+{BigCapitalShip=0.50},
+{ResourceLarge=0.60});
+setAngles(NewWeaponType,5,-45,155,-10,33);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.30, 0.50, 0.55, 0.55);
+setLifetimeMult(NewWeaponType, 1.65);
+setDamageFalloff(NewWeaponType, 0.15/2000.0, 0.1);
+setAccuracyFalloff(NewWeaponType, 0.15/2000.0, 0.1);
+setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.8, 200, 1.1, 300, 1.0, 487, 1.2, 535, 1.6);
+setBallistics(NewWeaponType,0,0.0);
+setFireMultFactor(NewWeaponType, 1.0);

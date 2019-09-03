@@ -1,0 +1,14 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_SmallFrigateMissile","Normal",40,2800,0,0,0,2,1,0,0,8.1,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurst");
+AddWeaponResult(NewWeaponType,"Miss","SpawnWeaponFire","Target",0,0,"Vgr_FrigateMissileBurst");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01});
+setAngles(NewWeaponType,180,0,0,0,0);
+setMiscValues(NewWeaponType,0,3);
+
+setFireMultFactor(NewWeaponType, 1.0);

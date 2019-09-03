@@ -1,0 +1,158 @@
+
+NewShipType = StartShipConfig()
+NewShipType.displayedName="$1660"
+NewShipType.sobDescription="$1661"
+NewShipType.maxhealth=getShipNum(NewShipType, "maxhealth", 27750)
+NewShipType.regentime=600
+NewShipType.minRegenTime=450
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
+setTacticsMults(NewShipType, "ENGINEACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.0, 1.0)
+NewShipType.isTransferable=1
+NewShipType.defaultROE="Defensive"
+NewShipType.defaultStance="Neutral"
+NewShipType.paradeData="vgr_hyperspace_platform"
+NewShipType.formationSpacing=400
+NewShipType.mass=100
+NewShipType.collisionMultiplier=1
+NewShipType.mainEngineMaxSpeed = getShipNum(NewShipType, "mainEngineMaxSpeed", 600)
+NewShipType.thrusterMaxSpeed = getShipNum(NewShipType, "thrusterMaxSpeed", 600)
+NewShipType.rotationMaxSpeed=171
+NewShipType.thrusterAccelTime=5
+NewShipType.thrusterBrakeTime=3
+NewShipType.mainEngineAccelTime=5
+NewShipType.mainEngineBrakeTime=3
+NewShipType.rotationAccelTime=0.6
+NewShipType.rotationBrakeTime=0.3
+NewShipType.thrusterUsage=1
+NewShipType.accelerationAngle=90
+NewShipType.mirrorAngle=0
+NewShipType.secondaryTurnAngle=0
+NewShipType.maxBankingAmount=15
+NewShipType.descendPitch=0
+NewShipType.goalReachEpsilon=5
+NewShipType.slideMoveRange=100
+NewShipType.controllerType="Ship"
+NewShipType.tumbleStaticX=10
+NewShipType.tumbleStaticY=20
+NewShipType.tumbleStaticZ=5
+NewShipType.tumbleDynamicX=2
+NewShipType.tumbleDynamicY=10
+NewShipType.tumbleDynamicZ=5
+NewShipType.tumbleSpecialDynamicX=2
+NewShipType.tumbleSpecialDynamicY=10
+NewShipType.tumbleSpecialDynamicZ=5
+NewShipType.relativeMoveFactor=6
+NewShipType.swayUpdateTime=2
+NewShipType.swayOffsetRandomX=10
+NewShipType.swayOffsetRandomY=10
+NewShipType.swayOffsetRandomZ=10
+NewShipType.swayBobbingFactor=0
+NewShipType.swayRotateFactor=0
+setTargetBox(NewShipType, 0, -0.5,-0.5,-0.5, 0.5,0.5,0.5)
+NewShipType.dustCloudDamageTime=160
+NewShipType.nebulaDamageTime=120
+NewShipType.MinimalFamilyToFindPathAround="SuperPriority"
+NewShipType.BuildFamily="Platform_Vgr"
+NewShipType.AttackFamily="Utility"
+NewShipType.DockFamily="Utility"
+NewShipType.AvoidanceFamily="Frigate"
+NewShipType.DisplayFamily="Platform"
+NewShipType.AutoFormationFamily="Fighter"
+NewShipType.CollisionFamily="Big"
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "MediumArmour")
+setSupplyValue(NewShipType, "Platform", 1.0)
+setSupplyValue(NewShipType, "HyperspacePlatform", 1.0)
+NewShipType.fighterValue=0
+NewShipType.corvetteValue=0
+NewShipType.frigateValue=0
+NewShipType.neutralValue=0
+NewShipType.antiFighterValue=0
+NewShipType.antiCorvetteValue=0
+NewShipType.antiFrigateValue=0
+NewShipType.totalValue=0
+NewShipType.buildCost=325
+NewShipType.buildTime=20
+NewShipType.buildPriorityOrder=10
+NewShipType.retaliationRange=4800
+NewShipType.retaliationDistanceFromGoal=160
+NewShipType.visualRange=4000
+NewShipType.prmSensorRange=7500
+NewShipType.secSensorRange=7500
+NewShipType.detectionStrength=1
+NewShipType.TOIcon="Hexagon"
+NewShipType.TOScale=1
+NewShipType.TODistanceFade0=10000
+NewShipType.TODistanceDisappear0=8000
+NewShipType.TODistanceFade1=4500
+NewShipType.TODistanceDisappear1=3500
+NewShipType.TODistanceFade2=12000
+NewShipType.TODistanceDisappear2=35000
+NewShipType.TOGroupScale=1
+NewShipType.TOGroupMergeSize=0
+NewShipType.mouseOverMinFadeSize=0.045
+NewShipType.mouseOverMaxFadeSize=0.1
+NewShipType.healthBarStyle=1
+NewShipType.nlips=0.00015
+NewShipType.nlipsRange=6000
+NewShipType.nlipsFar=0.00005
+NewShipType.nlipsFarRange=10000
+NewShipType.SMRepresentation="HardDot"
+NewShipType.meshRenderLimit=14000
+NewShipType.dotRenderLimit=10
+NewShipType.visibleInSecondary=1
+NewShipType.minLOD=0.25
+NewShipType.goblinsStartFade=2150
+NewShipType.goblinsOff=2150
+NewShipType.upLOD=2250
+NewShipType.downLOD=2000
+NewShipType.minimumZoomFactor=1
+NewShipType.selectionLimit=150000
+NewShipType.preciseATILimit=0
+NewShipType.selectionPriority=75
+NewShipType.militaryUnit=0
+addAbility(NewShipType,"MoveCommand",1,1);
+addAbility(NewShipType,"CanDock",1,0);
+NewShipType.dockTimeBetweenTwoFormations=1
+NewShipType.dockTimeBeforeStart=2
+NewShipType.dockNrOfShipsInDockFormation=1
+NewShipType.dockFormation="delta"
+NewShipType.queueFormation="dockline"
+NewShipType.canJoinStrikeGroup=0
+NewShipType.dontDockWithOtherRaceShips=1
+NewShipType.ignoreRaceWhenDocking=0
+addAbility(NewShipType,"CanLaunch");
+NewShipType.launchTimeBetweenTwoFormations=1
+NewShipType.launchTimeBeforeStart=2
+NewShipType.launchNrOfShipsInDockFormation=1
+NewShipType.launchFormation="delta"
+addAbility(NewShipType,"ParadeCommand",1);
+addAbility(NewShipType,"WaypointMove");
+addAbility(NewShipType,"HyperSpaceCommand",1,1,250,500,0,3);
+addAbility(NewShipType,"FormHyperspaceGateCommand",1,1000,500,250,0);
+addAbility(NewShipType,"CanBeCaptured",30,0.1);
+LoadModel(NewShipType,1);
+addShield(NewShipType,"EMP",10000,20);
+AddShipMultiplier(NewShipType,"SensorDistortion","ThisShipOnly","Linear",0.6,0.6,0);
+NewShipType.battleScarCoverage=2
+NewShipType.battleScarBudgetLow = 400
+NewShipType.battleScarBudgetNext = 600
+NewShipType.sobDieTime=1
+NewShipType.sobSpecialDieTime=1
+NewShipType.specialDeathSpeed=40
+NewShipType.chanceOfSpecialDeath=0
+NewShipType.deadSobFadeTime=1
+NewShipType.trailLinger=2
+setEngineGlow(NewShipType,1,1,1.02,20,300,50,1.5,{0.92, 0.21, .09, 0.25});
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/Vaygr/NonMilitary/",0,"ENGINES/VWEAPONPLATFORMENG","",1,"Ambience/VWeaponPlatformHyperspaceGateAmb","");
+NewShipType.minFalloffDamageDist=25
+NewShipType.maxFalloffDamageDist=25*3
+NewShipType.maxFalloffScuttleDamageDist=25*6
+NewShipType.explosiveScuttleDamageOnDeath=563
+NewShipType.maxFalloffForce=20*10
+NewShipType.explosiveDamageOnDeath=113	
+NewShipType.radiusDamageEvadeMod=1.1													 
+NewShipType.hideNormalAttackUICooldown=1

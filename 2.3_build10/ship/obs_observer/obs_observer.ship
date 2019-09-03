@@ -1,0 +1,168 @@
+NewShipType = StartShipConfig()
+NewShipType.displayedName="Observer"
+NewShipType.sobDescription="Observer"
+NewShipType.maxhealth=1000000
+NewShipType.regentime=0
+NewShipType.minRegenTime=0
+NewShipType.sideArmourDamage = 1.0
+NewShipType.rearArmourDamage = 1.0
+setTacticsMults(NewShipType, "MAXSPEED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ENGINEACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ENGINEBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTER", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTERACCEL", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "THRUSTERBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATION", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "ROTATIONACCEL", 1.0, 1.10, 1.0)
+setTacticsMults(NewShipType, "ROTATIONBRAKE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "WEAPONACCURACY", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "WEAPONDAMAGE", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "BULLETSPEED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "DAMAGEAPPLIED", 1.0, 1.0, 1.0)
+setTacticsMults(NewShipType, "FIRERATE", 1.0, 1.0, 1.0)
+NewShipType.isTransferable=0
+NewShipType.formationSpacing=15
+NewShipType.defaultROE="Defensive"
+NewShipType.defaultStance="Evasive"
+NewShipType.holdSlots=2
+NewShipType.mass=10
+NewShipType.collisionMultiplier=1
+NewShipType.thrusterMaxSpeed=1000
+NewShipType.mainEngineMaxSpeed=1000
+NewShipType.rotationMaxSpeed=100
+NewShipType.thrusterAccelTime=2
+NewShipType.thrusterBrakeTime=1
+NewShipType.mainEngineAccelTime=2
+NewShipType.mainEngineBrakeTime=1
+NewShipType.rotationAccelTime=0.75
+NewShipType.rotationBrakeTime=0.5
+NewShipType.thrusterUsage=0.25
+NewShipType.accelerationAngle=175
+NewShipType.mirrorAngle=25
+NewShipType.secondaryTurnAngle=90
+NewShipType.maxBankingAmount=85
+NewShipType.descendPitch=0
+NewShipType.goalReachEpsilon=5
+NewShipType.slideMoveRange=0
+NewShipType.controllerType="Ship"
+NewShipType.tumbleStaticX=10
+NewShipType.tumbleStaticY=20
+NewShipType.tumbleStaticZ=5
+NewShipType.tumbleDynamicX=100
+NewShipType.tumbleDynamicY=200
+NewShipType.tumbleDynamicZ=50
+NewShipType.tumbleSpecialDynamicX=600
+NewShipType.tumbleSpecialDynamicY=800
+NewShipType.tumbleSpecialDynamicZ=500
+NewShipType.relativeMoveFactor=6
+NewShipType.swayUpdateTime=2
+NewShipType.swayOffsetRandomX=10
+NewShipType.swayOffsetRandomY=10
+NewShipType.swayOffsetRandomZ=10
+NewShipType.swayBobbingFactor=0.05
+NewShipType.swayRotateFactor=0.1
+NewShipType.dustCloudDamageTime=160
+NewShipType.nebulaDamageTime=1000000
+NewShipType.MinimalFamilyToFindPathAround="SuperCap"
+NewShipType.mirrorAboveManeuver="ImmelMann_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
+NewShipType.mirrorBelowManeuver="Split_S_speedy, OneEightyDegRightTurn, OneEightyDegLeftTurn, Split_S_speedy, Split_S_speedy, Split_S_speedy"
+NewShipType.mirrorAboveManeuver="ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
+NewShipType.mirrorBelowManeuver="ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy, ImmelMann_speedy"
+NewShipType.specialTurnLeftManeuver="NinetyDegLeftTurn, None"
+NewShipType.specialTurnRightManeuver="NinetyDegRightTurn, None"
+NewShipType.BuildFamily="NotBuildable"
+NewShipType.AttackFamily="UnAttackable"
+NewShipType.DockFamily="Flagship"
+NewShipType.AvoidanceFamily="Strikecraft"
+NewShipType.DisplayFamily="Fighter"
+NewShipType.AutoFormationFamily="Fighter"
+NewShipType.CollisionFamily="Small"
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "Unarmoured_hw1")
+setSupplyValue(NewShipType, "Fighter", 1.0)
+setSupplyValue(NewShipType, "DefenseFighters", 1.0)
+setSupplyValue(NewShipType, "LayoutFighter", 1.0)
+NewShipType.CombatFamily="Fighter_Special"
+NewShipType.fighterValue=0
+NewShipType.corvetteValue=0
+NewShipType.frigateValue=0
+NewShipType.neutralValue=0
+NewShipType.antiFighterValue=0
+NewShipType.antiCorvetteValue=0
+NewShipType.antiFrigateValue=0
+NewShipType.totalValue=0
+NewShipType.buildCost=1
+NewShipType.buildTime=1
+NewShipType.buildPriorityOrder=50
+NewShipType.retaliationRange=1000
+NewShipType.retaliationDistanceFromGoal=160
+NewShipType.visualRange=0
+NewShipType.prmSensorRange=0
+NewShipType.secSensorRange=0
+NewShipType.detectionStrength=1
+NewShipType.TOIcon="Triangle"
+NewShipType.TOScale=1
+NewShipType.TODistanceFade0=7000
+NewShipType.TODistanceDisappear0=5000
+NewShipType.TODistanceFade1=2500
+NewShipType.TODistanceDisappear1=2000
+NewShipType.TODistanceFade2=12000
+NewShipType.TODistanceDisappear2=35000
+NewShipType.TOGroupScale=1.5
+NewShipType.TOGroupMergeSize=0
+NewShipType.mouseOverMinFadeSize=0.045
+NewShipType.mouseOverMaxFadeSize=0.1
+NewShipType.healthBarStyle=0
+NewShipType.nlips=0.0005
+NewShipType.nlipsRange=6000
+NewShipType.nlipsFar=0.0003
+NewShipType.nlipsFarRange=10000
+NewShipType.SMRepresentation="HardDot"
+NewShipType.meshRenderLimit=11000
+NewShipType.dotRenderLimit=10
+NewShipType.visibleInSecondary=1
+NewShipType.minLOD=1
+-- NewShipType.goblinsStartFade=210
+-- NewShipType.goblinsOff=210
+NewShipType.minimumZoomFactor=0.75
+NewShipType.selectionLimit=150000
+NewShipType.preciseATILimit=0
+NewShipType.selectionPriority=75
+NewShipType.militaryUnit=0
+addAbility(NewShipType,"MoveCommand",1,0);
+NewShipType.queueFormation="n_delta"
+NewShipType.dontDockWithOtherRaceShips=1
+NewShipType.ignoreRaceWhenDocking=0
+addAbility(NewShipType,"CanLaunch");
+NewShipType.launchTimeBetweenTwoFormations=0.5
+NewShipType.launchTimeBeforeStart=1.5
+NewShipType.launchNrOfShipsInDockFormation=1
+NewShipType.launchFormation="n_delta"
+addAbility(NewShipType,"WaypointMove");
+addAbility(NewShipType,"HyperspaceCommand", 1, 0, 0, 0, 0, 0);
+addAbility(NewShipType,"CanBuildShips",1,"","");
+--addAbility(NewShipType,"CloakAbility",1,999,0,3000,1,0,18,0);
+addCustomCode(NewShipType,"data:Ship/Obs_Observer/Obs_Observer.lua","","Create_Obs_Observer","Update_Obs_Observer","","Obs_Observer",4)
+LoadModel(NewShipType,1);
+addShield(NewShipType,"EMP",9999,20);
+NewShipType.battleScarCoverage=0
+NewShipType.sobDieTime=2
+NewShipType.sobSpecialDieTime=2
+NewShipType.specialDeathSpeed=40
+NewShipType.chanceOfSpecialDeath=0.37
+NewShipType.deadSobFadeTime=0
+setEngineTrail(NewShipType,0,1.6,"trail_ribbon.tga",0.01,0.5,0.025,1.25);
+setEngineBurn(NewShipType,24,0.5,1,15,0,0.7,0.1,22);
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/Hiigaran/Fighter/",0,"HScoutEng","");
+NewShipType.minFalloffDamageDist=1
+NewShipType.maxFalloffDamageDist=1
+NewShipType.maxFalloffScuttleDamageDist=1
+NewShipType.explosiveScuttleDamageOnDeath=1
+NewShipType.maxFalloffForce=1
+NewShipType.explosiveDamageOnDeath=1
+NewShipType.radiusDamageEvadeMod=1.1													 
+NewShipType.hideNormalAttackUICooldown=1
+NewShipType.agileFlight=1
+NewShipType.homingDistance=2000
+NewShipType.homingDelay=0.5
+NewShipType.strikeGroupSpeed=5000
+NewShipType.canSurround=0

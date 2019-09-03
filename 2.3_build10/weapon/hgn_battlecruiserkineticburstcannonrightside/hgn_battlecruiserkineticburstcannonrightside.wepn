@@ -1,0 +1,37 @@
+
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Large","Normal",2000,4500,0,0,0,0,1,1,1,5,0,0,1,1,40,25,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",550,550,"");
+setPenetration(NewWeaponType,50,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SubSystemArmour=0.3},
+{MediumArmour=1.0},
+{HeavyArmour=1.0});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.05},
+{Fighter_hw1=0.05},
+{Corvette=0.1},
+{Corvette_hw1=0.1},
+{munition=0.025},
+{Frigate=0.6},
+{SmallCapitalShip=1.0},
+{BigCapitalShip=0.8},
+{ResourceLarge=0.6});
+setAngles(NewWeaponType,0,-180,0,0,60);
+setMiscValues(NewWeaponType,4,0.6);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.75, 0.95, 0.85, 0.85);
+setLifetimeMult(NewWeaponType, 2.0);
+
+
+
+setFireMultFactor(NewWeaponType, 1.0);
