@@ -155,6 +155,12 @@
 
 ---
 
+## Platform Facilities
+> *Just a tad too free.*
+* **Cost:** `600 => 625` (+4.2%)
+
+---
+
 ## Probes
 > *Part of wider nerfs to vision overall.*
 * **Cost:** `100 => 120` (+20%)
@@ -191,7 +197,7 @@
 ---
 
 ## Shipyards
-> *See the entry on the Flagship*
+> *See the entry on the Flagship.*
 * **Research:**
   * **Production time upgrade:**
     * **Cost:** `1750 => 1000` (-42.9%)
