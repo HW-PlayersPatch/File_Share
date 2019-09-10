@@ -22,10 +22,11 @@
 * Hiigaran is largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races. The biggest difference from hw2c is single tiered upgrades to balance against Homeworld 1 races that do not have upgrades (as implimented in the 2.0 patch).
 
 **Scouts**
-* Speed 512->480
+* Speed 512->480 (All scouts are now slower to make scouting harder)
 * EMP Weapon:
   * Range 3000->1500
-  * Now leads targets
+  * Now leads targets (works better vs corvettes now)
+* Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
 **Interceptors**
 Damage vs corvettes -31%
@@ -57,6 +58,7 @@ Damage vs fighters/probes increased 100%
 * Speed 233->291
 * Armor 900->1500
 * Aggressive stance damage +32%->+10%
+* Mine Duration 200->60 (to avoid stalemates)
 -Cost 800->400 -50% (buff, hw1 are 275)
 -Damage bonus in aggressive stance 1.32->1.1 -17%
 
@@ -129,7 +131,7 @@ Damage vs idle fighters/probes increased a lot
 * Armor Upgrade Value 2.0->1.6
 * Repair Research Cost 750->200
 * Repair Research Time 40->20
-* Kamikazi multiplier 0.2->0.6
+* Kamikaze multiplier 0.2->0.6
 
 **Resource Controllers**
 * Armor 18k->16k
@@ -150,12 +152,16 @@ Damage vs hw2 resource collectors -45%
 * Cost 600->500
 * Build Time 20->25
 * Armor 800->400
+* Ability to reduce enemy sensor range is a bit stronger now.
 
 **Carrier Fighter/Corvette/Frigate Modules**
 * Armor 28k->25k
 
 **Carrier Platform Modules**
 * Armor 20k->25k
+
+**Fire Control Modules**
+* Now affect the ship they are on. (this is intended to balance two Hiigaran cruisers with FCTs vs two Vaygr cruisers with command corvettes)
 
 **Proximity Sensor Modules**
 * Cost 250->375
@@ -172,8 +178,9 @@ Damage vs hw2 resource collectors -45%
 * Re-balanced the Vaygr unit caps, to allow for fair transferring between players of different races. Interceptors/Bombers now count as 5 supply, and Missle/Laser Corvettes count now as 3 supply. Unit caps have been updated appropriately.
 
 **Scouts**
-* Speed 420->350
+* Speed 420->350 (All scouts are now slower to make scouting harder. When upgraded they are about the same speed as interceptors)
 -Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
+* Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
 **Assault Craft**
 Damage vs corvettes -31%
@@ -195,7 +202,7 @@ Damage vs frigates +40%
 * Armor Upgrade Cost 1600->1800 (to balance vs Hiigaran)
 
 **Missile Corvettes**
-* Kamikazi multiplier 1.0->0.6 (To prevent exploits)
+* Kamikaze multiplier 1.0->0.6 (To prevent exploits)
 -Damage vs hw1 fighters +110% (now performs similarly vs hw1 and hw2 fighters)
 Damage vs fighters -55% (they now perform closer to hw2c)
 Fixed a bug where they would deal zero damage to probes
@@ -203,7 +210,7 @@ Fixed a bug where they would deal zero damage to probes
 **Laser Corvettes**
 * Cost 650->625
 * Armor 480->510
-* Kamikazi multiplier 0.7->0.6 (To prevent exploits)
+* Kamikaze multiplier 0.7->0.6 (To prevent exploits)
 -Laser Corvettes were the only corvettes negatively impacted by the 666 Bug. They are now performing as intended: the best anti-frigate and anti-capital ship corvette in the game.
 Fixed a bug with the attack script where laser corvettes would start doing evasive maneuvers and rarely attacking. This bug fix makes laser corvettes much more effective.
 
@@ -219,6 +226,7 @@ Fixed a bug with the attack script where laser corvettes would start doing evasi
 * Cost 800->400
 * Armor 900->1000
 * Aggressive stance damage +32%->+10%
+* Mine Duration 200->60 (to avoid stalemates)
 -Cost 800->400 -50% (buff, hw1 are 275)
 -Damage bonus in aggressive stance 1.32->1.1 -17%
 
@@ -287,7 +295,8 @@ Accuracy vs frigates and capital-ships 40%->80%
 * Build Time 45->20
 * Speed 650->600
 * Armor 18500->27750
-* Now able to hyperspace jump.
+* The gate is now able to hyperspace jump on its own.
+* All probes can now travel through hyperspace gates.
 -Build Time 45->20sec (these took too long to setup)
 -Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
 
@@ -299,7 +308,7 @@ Accuracy vs frigates and capital-ships 40%->80%
 * Repair Research Cost 500->200
 * Repair Research Time 30->20
 * Speed 280->276
-* Kamikazi multiplier 0.2->0.6
+* Kamikaze multiplier 0.2->0.6
 -Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now within 1% of each other.)
 
 **Resource Controllers**
@@ -320,12 +329,16 @@ Damage vs hw2 resource collectors -45%
 * Sensors Distortion Research Time 60->50
 * Build Time 20->25
 * Armor 800->400
+* Ability to reduce enemy sensor range is a bit stronger now.
 
 **Carrier Fighter/Corvette/Frigate Modules**
 * Armor 28k->25k
 
 **Carrier Platform Modules**
 * Armor 20k->25k
+
+**Fire Control Modules**
+* Now affect the ship they are on.
 
 **Hyperspace Sensor Modules**
 * Cost 250->500
@@ -337,14 +350,15 @@ Damage vs hw2 resource collectors -45%
 * Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, Hull, costs, Build Times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
 * Adjusted Kushan/Taiidan harvesting so that harvesting for all four races is balanced at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different asteriod layouts.
 * Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster, eliminating some pain points.
--Adjusted base Hull to remove hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units. The ship Hull values listed below are the actual effective Hull.
+* Non-attackable subsystem icons now appear in the UI for Kushan/Taiidan Motherships and Carriers after researching Fighter, Corvette, Frigate, and Capital Ship research.
+* Removed hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units.
 * Corvettes now move around their targets a lot more in combat (similar to hw1c).
 * Race specific unit abilities now perform closer to hw1c, details are below.
 * Many changes below are to make ships relatively similar to hw1c, while also providing for better balance vs hw2 races.
 
 **Scouts**
 * Cost 70->100
-* Speed 490->460
+* Speed 490->460 (All scouts are now slower to make scouting harder)
 * Speed burst ability duration 50->30
 Speed burst ability multiplier ?->?
 -Kushan and Taiidan Scouts are now balanced, previously Kushan would always win. (Not intended)
@@ -417,6 +431,7 @@ Damage vs fighters +20%
     * Time 90->60
 * Build Time 30->25
 * Armor 1000->1200
+* Can now kamikaze
 
 **Heavy Corvettes**
 * Heavy Corvette Research Cost 600->400
@@ -445,6 +460,7 @@ Damage vs fighters +38%
 * Armor -20% (removed a hidden multiplier)
 * Armor 900->1800
 * Aggressive stance damage +32%->+10%
+* Mine Duration 200->60 (to avoid stalemates)
 
 **Support Frigates**
 * Capital Ship Drive Research:
@@ -529,6 +545,7 @@ Can now target any ship (previously couldn't target some ships)
 
 **Heavy Cruisers**
 * Heavy Gun Research Cost 5500->7000
+* No longer take hyperspace damage when they hit an inhibitor/GW. (like hw2 cruisers)
 
 **Resource Collectors**
 * Cost 600->500
@@ -536,7 +553,7 @@ Can now target any ship (previously couldn't target some ships)
 * Speed 110->206 (to match assault frigates speed like hw1c)
 * Armor 6000->5000
 * Resource capacity 500->250
-* Kamikazi multiplier 0.2->0.6
+* Kamikaze multiplier 0.2->0.6
 
 **Resource Controller**
 * Speed 100->190

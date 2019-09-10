@@ -1,5 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
-# Change List for Build 10 from August 31, 2019
+# Homeworld Remastered 2.3 Players Patch | Build 10 - August 31, 2019
 
 ## Gameplay Options and Features
 * Added a Dual Command mode to allow one player to control two fleets. Change your race to a Dual Command race, and then change a CPU ally to the same Dual Command race. You will start with two fleets, double the starting RUs, double the research costs, and will have double the unit caps.
