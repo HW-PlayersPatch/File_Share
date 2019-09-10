@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 9 | Aug 17, 2018 Change List
+# Build 9 Change List | Aug 17, 2018
 
 ## HWR Bugs Fixes and Improvements
 * Kushan/Taiidan Repair Corvette heal beams now originate from the correct locations (previously they were healing from their guns).

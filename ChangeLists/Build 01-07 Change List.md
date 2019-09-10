@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 1 | Nov 3, 2017 Change List
+# Build 1 Change List | Nov 3, 2017
 
 ## General
 * Included all the changes from Gearbox’s unfinished 2.205 Patch Preview, as described [here](https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1).
@@ -27,21 +27,21 @@
 
 
 
-# Build 2 | Nov 20, 2017 Change List
+# Build 2 Change List | Nov 20, 2017
 
 ## Balance
 * Kushan and Taiidan corvettes now move around their targets a lot more in combat (similar to homeworld 1 classic)
 
 
 
-# Build 3 | Nov 21, 2017 Change List
+# Build 3 Change List | Nov 21, 2017
 
 ## HWR Bugs Fixes
 * Fixed Kushan destroyer ion cannon sound effects (they were previously silent)
 
 
 
-# Build 4 | Dec 2, 2017 Change List
+# Build 4 Change List | Dec 2, 2017
 
 ## HWR Bug Fixes
 * Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds)
@@ -56,14 +56,14 @@
 
 
 
-# Build 5 | Dec 3, 2017 Change List
+# Build 5 Change List | Dec 3, 2017
 
 ## Improvements
 * The game mode now says "Homeworld Remastered v2.3" when hosting games in multiplayer.
 
 
 
-# Build 6 | Jan 12, 2018 Change List
+# Build 6 Change List | Jan 12, 2018
 
 ## Gameplay Options
 * Added a Vast unit cap option. This is double the size of Huge, and only recommended for very fast machines.
@@ -91,7 +91,7 @@
 
 
 
-# Build 7 | Mar 8, 2018 Change List
+# Build 7 Change List | Mar 8, 2018
 
 ## Gameplay Options and Features
 * Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.

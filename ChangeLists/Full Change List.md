@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Full Change List | Build 1-10 | August 31, 2019
+# Build 1-10 Full Change List | August 31, 2019
 
 ## Summary
 The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many bugs, exploits, and balance issues from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances multiplayer and singleplayer while respecting Gearbox's direction, and the feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered. All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
