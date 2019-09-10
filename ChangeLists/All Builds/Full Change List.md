@@ -15,9 +15,9 @@
 * Kamikaze damage adjusted on some units to prevent exploits, and resolve typos.
 * Lowered death/scuttle blast range on frigates, motherships, carriers, shipyards, and battle cruisers (so fighters and corvettes can better survive capital ship battles).
 * High unit caps: Destroyers 9->7, Missile Destroyers 4->3, Cruisers 4->3. Huge unit caps: Destroyers 14->11.
+* Note: the base research times below get faster with each research ship/module.
 
-
-
+ 
 ## Hiigaran
 * Hiigaran is largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races. The biggest difference from hw2c is single tiered upgrades to balance against Homeworld 1 races that do not have upgrades (as implimented in the 2.0 patch).
 
@@ -82,7 +82,7 @@ Damage vs hw1 fighters increased 64% (results in a decent buff)
 * Armor 20k->25k
 -Cost 1000->1250 +25% (to match hw2c)
 -Build Time 60->70 +17% (to match hw2c)
--Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 30k)
+-Hull 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 30k)
 
 **Motherships**
 * Speed Upgrade Cost 600->400
@@ -212,7 +212,7 @@ Fixed a bug with the attack script where laser corvettes would start doing evasi
 * Cost 400->750
 * Build Time 30->45
 * Armor 900->1000
--Build time 30->45 +50% (slows down the replenishment of these powerful units)
+-Build Time 30->45 +50% (slows down the replenishment of these powerful units)
 -Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 **Minelayer Corvettes**
@@ -268,7 +268,7 @@ Damage vs capital-ships -6% (with no micro, makes 1 hiigaran cruiser vs 1 vaygr 
 **Platforms**
 * Armor Upgrade Cost 1500->1400
 * Armor Upgrade Time 150->135
--Health Upgrade Costs 1500->1600 (to balance vs Hiigaran)
+-Hull Upgrade Costs 1500->1600 (to balance vs Hiigaran)
 
 **Gun Platforms**
 * Speed 100->125 (to match hw2c)
@@ -334,26 +334,33 @@ Damage vs hw2 resource collectors -45%
 
 
 ## Kushan and Taiidan
-* Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
+* Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, Hull, costs, Build Times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
 * Adjusted Kushan/Taiidan harvesting so that harvesting for all four races is balanced at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different asteriod layouts.
 * Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster, eliminating some pain points.
--Adjusted base health to remove hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units. The ship health values listed below are the actual effective health.
+-Adjusted base Hull to remove hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units. The ship Hull values listed below are the actual effective Hull.
 * Corvettes now move around their targets a lot more in combat (similar to hw1c).
 * Race specific unit abilities now perform closer to hw1c, details are below.
 * Many changes below are to make ships relatively similar to hw1c, while also providing for better balance vs hw2 races.
 
 **Scouts**
--Build Time 10->8
--Speed burst ability duration 50->30
+* Cost 70->100
+* Speed 490->460
+* Speed burst ability duration 50->30
+Speed burst ability multiplier ?->?
 -Kushan and Taiidan Scouts are now balanced, previously Kushan would always win. (Not intended)
 Damage vs fighters -50% (A typo gave them twice their intended damage, causing major balance issues)
 Damage vs corvettes -31%
 Damage vs frigates and capital-ships -50%
 
 **Interceptors**
--Fighter Drive Research Cost 100->500, Time 25->14
--Fighter Chassis Research Cost 200->800, Time 35->21
--Build Time 7->9 (was funny to have interceptors build faster than scouts)
+* Fighter Drive Research:
+    * Cost 100->200
+    * Time 35->20
+* Fighter Chassis Research:
+    * Cost 200->300
+    * Time 50->30
+* Build Time 7->9
+(was funny to have interceptors build faster than scouts)
 -Kushan and Taiidan Interceptors are now balanced, previously Taiidan would always win. (Not intended)
 Damage vs corvettes -31%
 Damage vs frigates and capital-ships -50%
@@ -367,68 +374,91 @@ Accuracy vs corvettes 80%->20%
 Damage vs frigates +40%
 
 **Defenders**
--Defender Sub-Systems Research Cost 400->1000, Time 64->53
--Build Time 9->7
-Speed +53%
+* Defender Sub-Systems Research:
+    * Cost 400->800
+    * Time 90->75
+* Build Time 9->7
+* Speed 140->214
+* Armor -10% (removed a hidden multiplier)
+* Armor 360->400
 
 **Kushan Cloaked Fighters**
--Cloaked Fighter Research Cost 500->1100
+* Cloaked Fighter Research Cost 500->1000
 * Cost 130->120
 * Build Time 15->10
 * Cloak ability now lasts indefinitely (same as hw1c)
 
 **Taiidan Defense Fighters**
--Defense Fighter Research Cost 500->1100
--Built Time 18->15
--Armor 108->300
+* Defense Fighter Research Cost 500->1000
+* Built Time 18->15
+* Armor +20% (removed a hidden multiplier)
+* Armor 135->300
 -Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
 -Added an accuracy reduction within the field of -1% (similar to Field Frigates, but a smaller effect)
 
 **Repair Corvettes**
--Build Time 20->16
--Speed 255->320 (to be able to heal the fastest corvette)
--Armor 1440->1200
+* Build Time 20->16
+* Speed 255->320 (to be able to heal the fastest corvette)
+* Armor -20% (removed a hidden multiplier)
 -Healing beam arc increased
 
 **Light Corvettes**
--Corvette Drive Research Cost 800->1500, Time 71->53
--Speed 285->305
+* Corvette Drive Research:
+    * Cost 800->1000
+    * Time 100->75
+* Cost 225->215
+* Build Time 18->17
+* Speed 285->305
 Damage vs fighters +20%
 
 **Salvage Corvettes**
--Corvette Chassis Cost 900->1200, Time 64->42
+* Corvette Chassis Research:
+    * Cost 900->700
+    * Time 90->60
+* Build Time 30->25
+* Armor 1000->1200
 
 **Heavy Corvettes**
--Cost 315->240 (general buff, and to balance vs Hiigaran/Vaygr)
--Build time 22->20
--Speed 245->290
+* Heavy Corvette Research Cost 600->400
+* Cost 315->230
+* Build Time 22->19
+* Speed 245->290
 -Kushan and Taiidan Heavy Corvettes are now balanced, previously Taiidan would always win. (Not intended)
 -No longer prioritize attacking fighters (since they aren't very good vs fighters)
 Damage vs hw2 corvettes -9%
 
 **Multi-Gun Corvettes**
--Fast-Tracking Turret Research Cost 700->800
--Cost 300->235 (general buff, and to balance vs Hiigaran/Vaygr)
--Speed 275->320
--Armor 1100->1400
+* Fast-Tracking Turret Research Cost 700->500
+* Cost 300->225
+* Build Time 22->21
+* Speed 275->320
+* Armor 1100->1400
 Damage vs fighters +38%
 
 **Minelayer Corvettes**
--Minelaying Tech Research Cost 700->1200, Time 49->71
--Build Time 25->35
--Speed 246->255
--Armor 1080->1800
+* Minelaying Tech Research:
+    * Cost 700->1200
+    * Time 70->100
+* Cost 275->325
+* Build Time 25->35
+* Speed 246->280
+* Armor -20% (removed a hidden multiplier)
+* Armor 900->1800
 * Aggressive stance damage +32%->+10%
 
 **Support Frigates**
--Capital Ship Drive Research Cost 800->1300, Time 71->53
--Cost 800->600
--Build Time 85->65
--Armor 26000->21000
+* Capital Ship Drive Research:
+    * Cost 800->1000
+    * Time 100->75
+* Cost 800->700
+* Build Time 85->60
+* Armor 26k->21k
 -Healing beam arc increased
 
 **Assault Frigates**
--Capital Ship Chassis Research Cost 1400->1500, Time 85->64
+* Capital Ship Chassis Research:
+    * Cost 1400->1200
+    * Time 160->90
 * Cost 800->700
 * Build Time 68->60
 * Now prioritize attacking corvettes over frigates.
@@ -439,104 +469,118 @@ Damage vs corvettes -50%
 Damage vs hw2 resource collectors -25%
 
 **Ion Frigates**
--Ion Cannon Research Cost 1000->2000, Time 64->85
--Cost 900->800
--Build Time 73->60
+* Ion Cannon Research:
+    * Cost 1000->1700
+    * Time 50->120
+* Cost 900->750
+* Build Time 73->60
 Ion Cannon Research Time up 35->64 (same timing, considering the capital ship chassis research buff)
-Damage vs frigates -24% (they still beat hw2 ion frigates with 10% health left. This was a big oversight in balance testing the 2.0 patch.)
+Damage vs frigates -24% (they still beat hw2 ion frigates with 10% Hull left. This was a big oversight in balance testing the 2.0 patch.)
 
 **Kushan Drone Frigates**
--Drone Tech Research Cost 1100->1300, Time 28->57
--Build Time 77->70
--Speed 166->206
--Armor 25500->27500
--Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c)
+* Drone Tech Research Time 40->80
+* Cost 900->700
+* Build Time 77->50
+* Speed 166->222
+* Armor 25500->27500
+* Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c). Drones now attack properly while the frigate is moving.
 
 **Taiidan Field Frigates**
--Defense Field Research Cost 1100->1300, Time 28->57
--Build Time 77->70
--Speed 166->206
--Armor 26000->30000
+* Defense Field Research Time 40->80
+* Build Time 77->70
+* Speed 166->206
+* Armor 26k->30k
 
 **Motherships**
--Multiplayer Only: Armor 322k->420k (to match an upgraded Hiigaran Mothership)
+* Armor -15% (removed a hidden multiplier)
+* Multiplayer Only: Armor 280k->420k (to match an upgraded Hiigaran Mothership)
 Damage vs fighters +25%
 Can now target any ship (previously couldn't target some ships)
 
 **Carriers**
--Super Capital Ship Drive Research Cost 1300->1700, Time 71->35
+* Super Capital Ship Drive Research:
+    * Cost 1300->1500
+    * Time 100->50
 * Cost 3000->3500 (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
-* Build time 210->130 (it was a huge blow to lose a carrier, since they took so long to build)
+* Build Time 210->130 (it was a huge blow to lose a carrier, since they took so long to build)
 * Armor 105k->120k
 Damage vs fighters +25%
 Damage vs hw2 resource collectors -45%
 Can now target any ship (previously couldn't target some ships)
 
 **Missile Destroyers**
--Guided Missile Research Cost 1400->3500, Time 42->71
--Cost 2000->2500
--Speed 130->145
--Armor 65k->106k
--Damage vs hw1 corvettes
--Damage vs hw2 corvettes
--Now count againt the destroyer unit cap like hw1c. Normal unit caps allow for six destroyers, two of which can be missile destroyers.
+* Guided Missile Research:
+    * Cost 1400->3000
+    * Time 60->100
+* Cost 2000->2500
+* Speed 130->145
+* Armor 65k->75k
+-Damage vs hw1 corvettes -40%
+-Damage vs hw2 corvettes -20%
+* Now count againt the destroyer unit cap like hw1c.
 
 **Destroyers**
--Super Heavy Chassis Research Cost 1900->5000, Time 53->99
--Cost 2500->2250
--Build Time 160->145 (to balance vs Hiigaran/Vaygr)
--Armor 106k->112k
-Cost 1800->2500 (to balance vs hw2 destroyer ship and upgrade costs)
-Health +7%
-Normal Unit Caps 5->6
+* Super Heavy Chassis Research:
+    * Cost 1900->3000
+    * Time 75->140
+* Cost 1800->2250 (to balance vs hw2 destroyer ship and upgrade costs)
+* Build Time 160->145 (to balance vs hw2)
+* Armor 99k->112k
 
 **Heavy Cruisers**
--Heavy Gun Research Cost 5500->9000
+* Heavy Gun Research Cost 5500->7000
 
 **Resource Collectors**
--Cost 600->500 
--Build Time 50->40
--Armor 6000->5000
--Speed 110->206 (to match assault frigates speed like hw1c)
--Resource capacity 500->250
+* Cost 600->500
+* Build Time 50->40
+* Speed 110->206 (to match assault frigates speed like hw1c)
+* Armor 6000->5000
+* Resource capacity 500->250
 * Kamikazi multiplier 0.2->0.6
 
 **Resource Controller**
--Armor 27500->30000
--Speed 100->190
+* Speed 100->190
+* Armor -10% (removed a hidden multiplier)
+* Armor 25k->30k
 
 **Research Ships**
--Build Time 50->45 (the first hub now builds as fast as the rest)
--Speed 100->175 
--Taiidan Armor 30k->45k (to match Kushan Armor and fix a mistake from the 2.1 patch)
+* Build Time 50->45 (the first hub now builds as fast as the rest)
+* Speed 100->175
+* Taiidan Armor 30k->45k (to match Kushan Armor and fix a mistake from the 2.1 patch)
 
 **Probes**
--Cost 70->120
--Health 800->400 -50% (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
+* Cost 70->120
+* Hull 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 **Proximity Sensors**
--Proximity Sensor Research Cost 250->500
--Speed 350->450
+* Proximity Sensor Research:
+    * Cost 250->600
+    * Time 40->45
+* Build Time 6->20
+* Speed 350->450
+* Hull 800->400
 
 **Sensors Array**
--Sensor Array Research Cost 350->1000
--Speed 90->175
+* Sensor Array Research Cost 350->500
+* Cost 700->500
+* Build Time 70->60
+* Speed 90->175
 
 **Gravity Wells**
--Gravity Generator Research Time 35->71 (same as v2.1)
--Cost 800->1000
--Armor 14400->11000
--Ability duration 30->25 (they are extremely effective with ballistics)
--Can now be repaired (like in hw1c)
-Now uses frigate armour (this is generally a health buff)
-Research Time down 71->35 (to allow hw1 to get hyperspace inhibitors faster)
-Ability Duration 45->30 seconds
-Ability Range -20%
+* Cost 800->1000
+* Armor +20% (removed a hidden multiplier)
+* Armor 18k->11k
+* Now uses frigate armour (this is generally a armor buff, as most ships deal reduced damage to frigates)
+* Ability duration 45->25 (they are extremely effective with ballistics)
+-Ability Range -20%
+* Can now be repaired (like in hw1c)
 
 **Cloak Generators**
+* Cloak Generator Research:
+    * Cost 800->500
+    * Time 100->50
 * Cost 800->750
 * Speed 114->206
 * Armor +20% (removed a hidden multiplier)
--Armor 7500->9000
--Ability duration 100->120
+* Ability duration 100->120
 -Ability range +100%
