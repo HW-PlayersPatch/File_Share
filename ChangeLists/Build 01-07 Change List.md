@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 1 | Nov 3, 2017
+# Build 1 | Nov 3, 2017 Change List
 
 ## General
 * Included all the changes from Gearbox’s unfinished 2.205 Patch Preview, as described [here](https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1).
@@ -27,21 +27,21 @@
 
 
 
-# Build 2 | Nov 20, 2017
+# Build 2 | Nov 20, 2017 Change List
 
 ## Balance
 * Kushan and Taiidan corvettes now move around their targets a lot more in combat (similar to homeworld 1 classic)
 
 
 
-# Build 3 | Nov 21, 2017
+# Build 3 | Nov 21, 2017 Change List
 
 ## HWR Bugs Fixes
 * Fixed Kushan destroyer ion cannon sound effects (they were previously silent)
 
 
 
-# Build 4 | Dec 2, 2017
+# Build 4 | Dec 2, 2017 Change List
 
 ## HWR Bug Fixes
 * Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds)
@@ -56,14 +56,14 @@
 
 
 
-# Build 5 | Dec 3, 2017
+# Build 5 | Dec 3, 2017 Change List
 
 ## Improvements
 * The game mode now says "Homeworld Remastered v2.3" when hosting games in multiplayer.
 
 
 
-# Build 6 | Jan 12, 2018
+# Build 6 | Jan 12, 2018 Change List
 
 ## Gameplay Options
 * Added a Vast unit cap option. This is double the size of Huge, and only recommended for very fast machines.
@@ -75,13 +75,13 @@
 * Fixed Taiidan's Emperor voice, when playing the 'Homeworld 1 Deathmatch' game type (it was playing Vaygr's Makaan voice)
 
 ## Campaign
-**Homeworld 1**
-Mission 3:
+### Homeworld 1
+#### Mission 3
 * Increased the cryo tray health (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
-Mission 4:
+#### Mission 4
 * The objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
-**Homeworld 2**
-Mission 2:
+### Homeworld 2
+#### Mission 2
 * The mothership's engine speed now matches the audio cues and hw2c.
 * The transport ships' speed now increases after events as they did hw2c.
 * Increased Captain Soban's weapon damage to match hw2c.
@@ -91,10 +91,9 @@ Mission 2:
 
 
 
-# Build 7 | Mar 8, 2018
+# Build 7 | Mar 8, 2018 Change List
 
 ## Gameplay Options and Features
-Gearbox/Relic partially developed some of these options, but never implemented them in the game. By popular demand, they have now been added to HWR:
 * Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
 * Added a Camera Pan Speed adjuster. This lets players increase the camera speed to move around maps faster with the arrow keys and edge of screen mouse pan.
 * Added a Camera Max Zoom adjuster. This lets players increase the maximum distance the camera can zoom out before having to use the sensors manager.
@@ -111,21 +110,21 @@ Gearbox/Relic partially developed some of these options, but never implemented t
 * In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
 
 ## Campaign
-**Homeworld 1**
+### Homeworld 1
 * Updated the parade formations to better handle salvaged ships.
 * Fixed the turanic missile corvette's missile burn effects.
 * Increased turanic ion array frigate speed to be relatively similar to hw1c.
 * Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
-Mission 3:
+#### Mission 3
 * Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
-Mission 7:
+#### Mission 7
 * The enemy AI reinforcements now work properly based on your starting fleet value.
 * Fixed an issue where the multi-gun corvette research sometimes doesn't get enabled.
-Mission 8:
+#### Mission 8
 * Increased kadesh multi-beam frigate health and speed to be relatively similar to hw1c.
 * Lowered the accuracy of the kadesh mothership ion cannons vs moving fighters and corvettes.
 * Kadesh ships now properly defend the final area like in hw1c.
-Mission 10:
+#### Mission 10
 * Fixed the camera location at the start of the mission.
 
 ## Balance

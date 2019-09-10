@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 10 | August 31, 2019
+# Build 10 | August 31, 2019 Change List
 
 ## Gameplay Options and Features
 * Added a Dual Command mode to allow one player to control two fleets. Change your race to a Dual Command race, and then change a CPU ally to the same Dual Command race. You will start with two fleets, double the starting RUs, double the research costs, and will have double the unit caps.
@@ -31,6 +31,7 @@
 * The RU available on each mission has been tweaked to account for the Kushan research cost changes below.
 
 ## Balance
+* Note, build 10 was released in a hurry following the Homeworld 3 announcement. Some balance changes are experimental and may be reverted in the next build.
 * Kushan and Taiidan research costs went up too high in build 9, and have been reduced accordingly in build 10. Fighters -1100ru, Corvettes -1500ru, Frigates -1100ru, Capitals -4700ru, and Non-Combat -700 for a total of -9100ru.
 * Mine duration reduced from 200 to 60sec to avoid stalemates.
 * All probes can now travel through hyperspace gates, but can not move again after they exit the hyperspace gate.
