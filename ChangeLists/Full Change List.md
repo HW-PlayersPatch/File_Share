@@ -1,9 +1,13 @@
-# General
+# Homeworld Remastered 2.3 Players Patch
+# Full Change List
+# Build 1-10 | August 31, 2019
+
+## General
 * All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
 
 
 
-# Balance
+## Balance
 * Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1) - Formations and squadrons now perform as they were intended to!
 * With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted. Ships now perform like they are supposed to using balistic/simulation combat features (for example idle ships are generally a lot easier to hit than moving ships).
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
@@ -18,7 +22,7 @@
 * Note: the base research times below get faster with each research ship/module.
 
  
-## Hiigaran
+### Hiigaran
 * Hiigaran is largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races. The biggest difference from hw2c is single tiered upgrades to balance against Homeworld 1 races that do not have upgrades (as implimented in the 2.0 patch).
 
 **Scouts**
@@ -173,7 +177,7 @@ Damage vs hw2 resource collectors -45%
 
 
 
-## Vaygr
+### Vaygr
 * Vaygr is largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races. The biggest difference from hw2c is single tiered upgrades to balance against Homeworld 1 races that do not have upgrades (as implimented in the 2.0 patch).
 * Re-balanced the Vaygr unit caps, to allow for fair transferring between players of different races. Interceptors/Bombers now count as 5 supply, and Missle/Laser Corvettes count now as 3 supply. Unit caps have been updated appropriately.
 
@@ -346,7 +350,7 @@ Damage vs hw2 resource collectors -45%
 
 
 
-## Kushan and Taiidan
+### Kushan and Taiidan
 * Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, Hull, costs, Build Times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
 * Adjusted Kushan/Taiidan harvesting so that harvesting for all four races is balanced at the 10, 20, and 30 minute marks. Previously hw1 was behind hw2 at 10mins, and ahead at 30minutes. Harvesting is also now better balanced on maps with different asteriod layouts.
 * Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster, eliminating some pain points.

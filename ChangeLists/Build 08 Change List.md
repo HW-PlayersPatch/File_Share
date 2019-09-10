@@ -1,4 +1,5 @@
-# Build 8 - Mar 8, 2018
+# Homeworld Remastered 2.3 Players Patch
+# Build 8 | Mar 8, 2018
 
 ## Gameplay Options and Features
 * Added an Observer mode to spectate multiplayer matches.
@@ -14,11 +15,14 @@
 
 ## Campaign Improvements
 **Homeworld 1**
+###### Homeworld 1
+##### Homeworld 1
+#### Homeworld 1
 * Fixed a rules of engagement bug that caused many Turanic, Kadeshi, and Junkyard ships to sometimes stop attacking unexpectedly and behave passively.
 * Updated research costs to match multiplayer, and research times to 1.5x slower than multiplayer (the campaign research is slower paced). These hadn't been updated since HWR v1.0. Mission resources were also adjusted to support the changes.
 * Captured Turanic Standard Corvettes can now be repaired.
 * Captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
-**Homeworld 2**
+#### Homeworld 2
 * Fixed a rules of engagement bug that caused Keeper ships to sometimes stop attacking unexpectedly and behave passively.
 * Applied some research cost/build time changes from the 2.0, 2.1, and 2.205 patches. These changes were made in multiplayer, but were accidently missed in the campaign. The campaign research stats now better match multiplayer.
 * The base health of Vaygr missile platforms, destroyers, cruisers, and flagships have been slightly tweaked to align with multiplayer as they did in hw2c.
@@ -34,34 +38,41 @@ Mission 13:
 * Tweaked ship damage vs resourcing units, to be closer to the classics.
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 
-### Hiigaran and Vaygr
-Resource Collectors:
-* Upgraded Health 5000->4000 -20% (to match hw2c)
-Bombers:
+### Hiigaran
+**Bombers**
 * Damage vs corvettes -30%
-Minelayer Corvettes:
+**Pulsar Corvettes**
+* Damage vs frigates -10%
+**Minelayer Corvettes**
 * Cost 800->400 -50% (buff, hw1 are 275)
 * Damage bonus in aggressive stance 1.32->1.1 -17%
-Destroyers:
-* Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded by popular demand)
-
-### Hiigaran
-Pulsar Corvettes:
-* Damage vs frigates -10%
-Defense Field Frigates:
+**Defense Field Frigates**
 * Health 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 30k)
+**Destroyers**
+* Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded by popular demand)
+**Resource Collectors**
+* Upgraded Health 5000->4000 -20% (to match hw2c)
 
 ### Vaygr
-Resource Collectors:
-* Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now within 1% of each other.)
-Hyperspace Platforms:
-* Build Time 45->20sec (these took too long to setup)
-* Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
+Bombers:
+* Damage vs corvettes -30%
 Missile Corvettes:
 * Damage vs hw1 fighters +110% (now performs similarly vs hw1 and hw2 fighters)
 Command Corvettes:
 * Build time 30->45sec +50% (slows down the replenishment of these powerful units)
 * Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
+Minelayer Corvettes:
+* Cost 800->400 -50% (buff, hw1 are 275)
+* Damage bonus in aggressive stance 1.32->1.1 -17%
+Hyperspace Platforms:
+* Build Time 45->20sec (these took too long to setup)
+* Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
+Destroyers:
+* Health 85k->90k +6% (+13% over v2.1, closer to hw2c when upgraded by popular demand)
+Resource Collectors:
+* Upgraded Health 5000->4000 -20% (to match hw2c)
+* Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now balanced vs each other.)
+
 
 ### Kushan and Taiidan
 * Overhauled Kushan and Taiidan. These races were rushed into HWR at release, and repeatedly band-aided over the previous patches. All ship speeds, health, costs, build times, and research costs/times are now consistently translated into the HWR engine, with a robust design methodology. Kushan and Taiidan now feel much more like hw1 classic, while being better balanced against Hiigaran and Vaygr.
