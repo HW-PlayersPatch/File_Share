@@ -115,6 +115,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 * Balanced dock repair times for fighters and corvettes. Addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair slower, closer to their hw2c rate. hw1 corvettes repair 4.5x faster than before, to balance vs hw2.
 * Decreased the sensors range of all scouts and probes by about 20%, 30% for Kushan/Taiidan scouts. Scouting is easy in HWR compared to other RTS games, so this is intended to make information harder to obtain.
+* Fixed several issues that made it hard for some ships to kill probes
 * Tweaked rotational speeds on some units, for example to aid in positioning motherships around asteriod patches.
 * Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in hw1c)
 * Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor.
@@ -131,47 +132,58 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 #### Scouts
 * Speed 512->480 (All scouts are now slower to make scouting harder)
 * EMP Weapon:
-  * Range 3000->1500
-  * Now leads targets (works better vs corvettes now)
-* Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
+    * Range 3000->1500 (Improves accuracy vs moving targets)
+    * Now leads targets
+    * Accuracy vs corvettes 0.15->1.0
+    * Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
 #### Interceptors
-Damage vs corvettes -31%
-Damage vs frigs and capital-ships -60%
-Damage vs subsystems +40%
+* Weapon:
+    * Damage vs corvettes 0.8->0.52
+    * Damage vs frigates/capitals 1.0->0.4
+    * Damage vs platforms 0.7->0.4
 
 #### Bombers
-* Speed Upgrade Cost 600->400
+* Speed Upgrade Cost 600->400 (to balance vs Vaygr)
 * Speed 279->300
--Speed Upgrade Costs 600->400 (to balance vs Vaygr)
--Hiigaran bombers now check their line of fire like the other races do, to avoid friendly fire incidents
--Damage vs corvettes -30%
-Accuracy vs corvettes 80%->20%
-Damage vs frigates +40%
+* Weapons:
+    * Now check their line of fire (like the other races do, to avoid friendly fire incidents)
+    * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+    * Damage vs corvettes 1.0->0.7
+    * Damage vs frigates 1.0->1.2
+    * Damage vs resourcing 0.2->0.17
+    * Accuracy vs corvettes 0.8->0.2
 
 #### Gunship Corvettes
 * Armor Upgrade Cost 800->600
 * Armor Upgrade Time 40->35
 * Speed 232->254
-Damage vs fighters +13%
+* Weapon:
+    * Velocity 1500->1800
+    * Range 1600->2200
+    * Damage vs fighters 1.5->1.7
+    * Damage vs frigates 0.8->0.7
+    * Damage vs resourcing 0.8->0.6
 
 #### Pulsar Corvettes
--Damage vs hw2 corvettes -33% (to balance vs Vaygr)
--Damage vs frigates -10%
-Damage vs fighters/probes increased 100%
+* Weapon:
+    * Damage vs fighters 0.1->0.2
+    * Damage vs hw2 corvettes 0.95->0.63 (to balance vs Vaygr)
+    * Damage vs frigates 1.5->1.35
+    * Damage vs resourcing 0.59->0.4
+    * Accuracy vs resourcing 0.6->0.5
 
 #### Minelayer Corvettes
-* Cost 800->400
+* Cost 800->400 (to balance vs hw1)
 * Speed 233->291
 * Armor 900->1500
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
--Cost 800->400 -50% (buff, hw1 are 275)
--Damage bonus in aggressive stance 1.32->1.1 -17%
 
 #### Torpedo Frigates
-Damage vs hw2 resource collectors increased 30% (only helps vs upgraded hw2 collectors)
-Damage vs fighters/probes increased 100%
+* Weapon:
+    * Damage vs fighters/probes 0.03->0.06
+    * Damage vs resourcing 1.0->1.15 (only helps vs upgraded hw2 collectors) 
 
 #### Flak Frigates
 * Speed Upgrade Cost 600->400
@@ -179,7 +191,7 @@ Damage vs fighters/probes increased 100%
 * Armor Upgrade Cost 1000->600
 * Armor Upgrade Time 75->40
 * Build Time 50->45
-Damage vs hw1 fighters increased 64% (results in a decent buff)
+* Weapon Damage vs hw1 fighters .28->.46
 
 #### Marine Frigates
 * Speed 230->270
@@ -188,28 +200,34 @@ Damage vs hw1 fighters increased 64% (results in a decent buff)
 #### Defense Field Frigates
 * Build Time 60->55
 * Speed 177->220
-* Armor 20k->25k
--Cost 1000->1250 +25% (to match hw2c)
--Build Time 60->70 +17% (to match hw2c)
--Hull 20k->25k +25% (since this ship can't be upgraded, Taiidan Field Frigate is 30k)
+* Armor 20k->25k (since this ship can't be upgraded)
 
 #### Motherships
 * Speed Upgrade Cost 600->400
 * Armor Upgrade Cost 1000->800
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Carriers
 * Speed Upgrade Cost 600->400
 * Armor Upgrade Cost 1000->800
 * Build Speed Upgrade Cost 1500->2250
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Shipyards
 * Speed Upgrade Cost 600->400
 * Armor Upgrade Cost 1000->800, Time 60->30
 * Build Time 85->75 (to match hw2c)
--Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes, fighters, and corvettes.
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
+    * Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes, fighters, and corvettes.
 
 #### Destroyers
 * Armor 80k->90k (closer to hw2c when upgraded)
@@ -218,20 +236,22 @@ Damage vs hw2 resource collectors -45%
 #### Battle Cruisers
 * Armor 170k->192k
 * Ion Weapons Range 5800->5500
-* Gun Weapons Range 5000->4500 
-Range +3%
-Fixed an issue where the hiigaran battlecruiser would sometimes sit pointed 10 degrees up or down vs a target on the same vertical level - causing the nose of the ship to block one ion turret from attacking.
+* Gun Weapons Range 5000->4500
+* Fixed an issue where the hiigaran battlecruiser would sometimes sit pointed 10 degrees up or down vs a target on the same vertical level; causing the nose of the ship to block one ion turret from attacking.
 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
-Damage vs fighters +100% (A typo gave them less damage than intended)
-Damage vs hw2 resource collectors -43%
-Accuracy vs frigates and capital-ships 40%->80%
+* Weapon:
+    * Damage 40->60
+    * Damage vs fighters 0.5->1.0 (A typo gave them less damage than intended)
+    * Damage vs resourcing 0.7->0.4
+    * Accuracy vs frigates/capitals/resourcing 0.4->0.8
 
 #### Ion Platforms
 * Speed 100->125 (to match hw2c)
--Damage -16% (same as hw2c)
-Damage vs idle fighters/probes increased a lot
+* Weapon:
+    * Damage 600->500
+    * Damage vs fighters/probes 0.02->0.2 (helps vs idle fighters)
 
 #### Resource Collectors
 * Armor Upgrade Cost 800->1000
@@ -242,7 +262,10 @@ Damage vs idle fighters/probes increased a lot
 
 #### Resource Controllers
 * Armor 18k->16k
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.0
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Probes
 * Cost 70->120
@@ -286,8 +309,9 @@ Damage vs hw2 resource collectors -45%
 
 #### Scouts
 * Speed 420->350 (All scouts are now slower to make scouting harder. When upgraded they are about the same speed as interceptors)
--Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
-* Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
+* Weapon:
+    * Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
+    * Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
 #### Assault Craft
 Damage vs corvettes -31%
@@ -330,12 +354,10 @@ Fixed a bug with the attack script where laser corvettes would start doing evasi
 -Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
 
 #### Minelayer Corvettes
-* Cost 800->400
+* Cost 800->400 (to balance vs hw1)
 * Armor 900->1000
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
--Cost 800->400 -50% (buff, hw1 are 275)
--Damage bonus in aggressive stance 1.32->1.1 -17%
 
 #### Assault Frigate
 * Assault Research Cost 500->550
@@ -361,15 +383,24 @@ Damage vs hw1 fighters +400% (results in a decent buff)
 * Speed Upgrade Cost 1500->2000, Time 60->80 (to balance vs Hiig)
 
 #### Flagships
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Carriers
 * Build Speed Upgrade Cost 1500->2500
 * Cost 1900->2100
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Shipyards
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.8
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Destroyers
 * Destroyer Research Cost 2000->1750
@@ -388,7 +419,7 @@ Damage vs capital-ships -6% (with no micro, makes 1 hiigaran cruiser vs 1 vaygr 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
 Damage vs fighters +100% (A typo gave them less damage than intended)
-Damage vs hw2 resource collectors -43%
+Damage vs resourcing -43%
 Accuracy vs frigates and capital-ships 40%->80%
 
 #### Heavy Missile Platforms
@@ -420,7 +451,10 @@ Accuracy vs frigates and capital-ships 40%->80%
 
 #### Resource Controllers
 * Armor 18k->16k
-Damage vs hw2 resource collectors -45%
+* Weapon:
+    * Damage vs fighters 3.0->1.0
+    * Damage vs resourcing 1.35->0.75
+    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Probes
 * Cost 70->120
@@ -589,7 +623,7 @@ Damage vs fighters +38%
 * For Taiidan, fixed a gun alignment bug which caused 2 of their 4 guns to always miss small targets.
 Capital Ship Chassis Research Time down 113->85 (allows hw1 to get assault frigates faster)
 Damage vs corvettes -50%
-Damage vs hw2 resource collectors -25%
+Damage vs resourcing -25%
 
 #### Ion Frigates
 * Ion Cannon Research:
@@ -628,7 +662,7 @@ Can now target any ship (previously couldn't target some ships)
 * Build Time 210->130 (it was a huge blow to lose a carrier, since they took so long to build)
 * Armor 105k->120k
 Damage vs fighters +25%
-Damage vs hw2 resource collectors -45%
+Damage vs resourcing -45%
 Can now target any ship (previously couldn't target some ships)
 
 #### Missile Destroyers
