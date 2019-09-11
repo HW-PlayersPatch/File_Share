@@ -6,7 +6,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 
 ## Gameplay Options and Features
 * Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
-* Added a Vast unit cap option. This is double the size of Huge, and only recommended for very fast machines.
+* Added a Vast unit cap option to multiplayer and Player vs CPU. This is double the size of Huge, and only recommended for very fast machines.
 * Added an AI Attack Damage adjuster to multiplayer and player vs cpu. This can be used to increase the AI's attack damage for a more challenging game.
 * Added an Observer mode to spectate multiplayer matches. When prompted to continue watching, click yes to observe.
 * Added a Dual Command mode to allow one player to control two fleets. Change your race to a Dual Command race, and then change a CPU ally to the same Dual Command race. You will start with two fleets, double the starting RUs, double the research costs, and will have double the unit caps.
@@ -19,50 +19,53 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Added a Build/Research/Launch Panel adjuster. This lets players set and save the size of the Build/Research/Launch menus in the options. Previously these were adjustable, but their size was not saved across games.
 
 ## HWR Bugs Fixes and Improvements
-* Addressed the major Cross Race Docking Bug. Fighters and corvettes will now only dock with ships from their own race. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to major game lag and multiple glitches.
+#### Exploits
 * Prevented attempting to hyperspace ships inside a hyperspace inhibitor. This resolves the exploit to reset marine/infiltrator frigate capture progress for free, which previously rendered them useless. This hyperspace in gravity well exploit has finally been fixed!
 * When salvage corvettes latch on and return enemy frigate/capital ships to their mothership or carrier, an exploit allowed those ships to be scuttled right before they were captured. This prevented salvage corvettes from capturing frigate/capital ships, however the salvage scuttle exploit has now been fixed!
 * Addressed kamikaze exploits that allowed cheap ships to kill expensive ships, and that allowed squadrons to kill targets and then dock-heal for free.
+#### General
+* Addressed the major Cross Race Docking Bug. Fighters and corvettes will now only dock with ships from their own race. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to major game lag and multiple glitches.
 * When a docking squadron is under attack, they sometimes glitch out and stop moving. Affected Squadrons are now automatically issued another dock order to dock with the closest ship.
 * The Kushan/Taiidan Gravity Well ability previously continued to lock down strikecraft in an area after it had moved away. The area of affect now stays with the Gravity Well.
 * Fixed the bug that allowed Kushan/Taiidan players to build two research ships at once on separate carriers.
-* Fixed the build/research/launch menu scaling problem, that primarily affects 4k resolutions
-* Fixed the build and research queue pause buttons, so that they no longer get disabled
-* Improved the spacing in the build/research queues for better readability.
-* Fixed the race specific research tabs, so that they are hidden based on the race your playing
-* Slightly changed the advanced research module icon to differentiate it more from the regular research module icon.
-* Kushan/Taiidan accuracy reduction abilities are now painted orange in the tactical overlay
-* The score screen now treats ru spent on subsystems the same as ru spent on research for the building and research score total.
-* When a private message is sent, everyone in the lobby hears the audio alert even when they are not the recipient. As a workaround the audio alert has been removed, as the chat window already visually flashes for the recipient.
 * Improved parade formations for resource collectors, to reduce collisions with the motherships.
-* Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds)
-* Hiigaran Marine Frigates, Vaygr Infiltrator Frigates, and all Minelayer corvettes are no longer included in the military selection priority. This prevents accidentally de-latching capture frigates, or messing up mine walls.
-* ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms.
-* Fixed Taiidan Resource Controller nlips clipping (docked collectors would appear inside the controller when zoomed out)
-* 'Resource Controller Complete' audio is now played for Taiidan Resource Controllers
-* The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
-* Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
-* Kushan/Taiidan corvettes now respond quickly to certain attack orders, without a long delay.
-* Removed Kushan/Taiidan repair ships from military selection priority.
-* Kushan/Taiidan repair ships now have a continuous beam like hw1c
-* Kushan/Taiidan Repair Corvette heal beams now originate from the correct locations (previously they were healing from their guns).
-* Fixed Kushan and Taiidan Repair Corvette sound effects (so they no longer play gun noises while repairing)
-* Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
-* 'Frigate Complete' audio is now played for Taiidan Ion Frigates
-* Fixed Kushan Destroyer ion cannon sound effects
-* Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
-* Reduced the Kushan probe death explosion to an appropriate size.
-* 'Generator Complete' audio is now played for Taiidan Cloaked Generators
-* Fixed Taiidan's Emperor voice, when playing the 'Homeworld 1 Deathmatch' game type (it was playing Vaygr's Makaan voice)
+* Hiigaran Marine Frigates, Vaygr Infiltrator Frigates, Kushan/Taiidan repair ships, and all Minelayer corvettes are no longer included in the military selection priority. This prevents accidentally de-latching capture frigates, messing up repair orders, or messing up mine walls.
+* Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game's performance in long games.
 * Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher by mistake)
 * Fixed a bug that prevented the Crates gameplay option from granting ships.
 * The 'No Cruisers' game option text now displays in your current locale language rather than always in English.
 * In the carrier only gamemode, all races now start with the same number of carriers.
 * In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
 * In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
-* Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game's performance in long games.
-* Fixed the Turanic Carrier Engine missing icon. (v2.205 fix)
+* The score screen now treats ru spent on subsystems the same as ru spent on research for the building and research score total.
+#### UI
+* Fixed the build/research/launch menu scaling problem, that primarily affects 4k resolutions.
+* Fixed the build and research queue pause buttons, so that they no longer get disabled.
+* Improved the spacing in the build/research queues for better readability.
+* Fixed the race specific research tabs, so that they are hidden based on the race your playing
+* Slightly changed the advanced research module icon to differentiate it more from the regular research module icon.
+* Kushan/Taiidan accuracy reduction abilities are now painted orange in the tactical overlay
+#### Graphics
 * Fixed Hiigaran Mothership visual errors, mainly the badge being cut off. (v2.205 fix)
+* Fixed the Turanic Carrier Engine missing icon. (v2.205 fix)
+* Fixed Taiidan Resource Controller nlips clipping (docked collectors would appear inside the controller when zoomed out).
+* Kushan Research Ship's with all six hubs, now spin like they did in hw1c.
+* Kushan/Taiidan repair ships now have a continuous beam like hw1c
+* Kushan/Taiidan Repair Corvette heal beams now originate from the correct locations (previously they were healing from their guns).
+* Fixed the player colors on the Kushan Heavy Cruiser ion turrets.
+* Reduced the Kushan probe death explosion to an appropriate size.
+#### Sound
+* When a private message is sent, everyone in the lobby hears the audio alert even when they are not the recipient. As a workaround the audio alert has been removed, as the chat window already visually flashes for the recipient.
+* Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds).
+* ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms.
+* 'Resource Controller Complete' audio is now played for Taiidan Resource Controllers
+* The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
+* Fixed Kushan and Taiidan Repair Corvette sound effects (so they no longer play gun noises while repairing).
+* Kushan Ion Cannon Frigates are now pronounced correctly as 'Cannon', previously they were being pronounced as 'Cannit'.
+* 'Frigate Complete' audio is now played for Taiidan Ion Frigates.
+* Fixed Kushan Destroyer ion cannon sound effects.
+* 'Generator Complete' audio is now played for Taiidan Cloaked Generators.
+* Fixed Taiidan's Emperor voice, when playing the 'Homeworld 1 Deathmatch' game type (it was playing Vaygr's Makaan voice).
 * More details on HWR's bugs can be found here: https://forums.gearboxsoftware.com/t/hwr-bugs-solutions/1639765/1
 
 ## Campaign
@@ -104,6 +107,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 #### Mission 13
 * Lowered the Vaygr corvette, frigate, and captial ship health upgrades to be closer to hw2c. (these were unintentionally altered in the 2.0 patch)
 
+
+
 ## Balance
 * Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1) - Formations and squadrons now perform as they were intended to!
 * With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted. Ships now perform like they are supposed to using balistic/simulation combat features (for example idle ships are generally a lot easier to hit than moving ships).
@@ -117,6 +122,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Lowered death/scuttle blast range on frigates, motherships, carriers, shipyards, and battle cruisers (so fighters and corvettes can better survive capital ship battles).
 * High unit caps: Destroyers 9->7, Missile Destroyers 4->3, Cruisers 4->3. Huge unit caps: Destroyers 14->11.
 * Note: the base research times below get faster with each research ship/module.
+
 
  
 ### Hiigaran
@@ -453,7 +459,7 @@ Damage vs hw2 resource collectors -45%
 * Generally research costs have gone up, while research times have come down. This improves balance vs hw2 upgrade costs, while allowing hw1 to tech up faster, eliminating some pain points.
 * Non-attackable subsystem icons now appear in the UI for Kushan/Taiidan Motherships and Carriers after researching Fighter, Corvette, Frigate, and Capital Ship research.
 * Removed hidden armour modifiers from all ships other than frigates. Relic only applied armour modifiers to frigates, however Gearbox used them sporadically on hw1 units.
-* Corvettes now move around their targets a lot more in combat (similar to hw1c).
+* Corvettes now move around their targets a lot more in combat (similar to hw1c). Corvettes also now respond quickly to certain attack orders, without a long delay.
 * Race specific unit abilities now perform closer to hw1c, details are below.
 * Many changes below are to make ships relatively similar to hw1c, while also providing for better balance vs hw2 races.
 
