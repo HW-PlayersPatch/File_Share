@@ -4,25 +4,17 @@
 
 ---
 
-## Advanced Research Modules
-> *Part of general timing resets for Hiigaran.*
-* **Build time:** `140 => 150` (+7.1%)
-
----
-
-## Battlecruisers
-> *Reverting a 2.4 change. Cruisers were very fragile, however a flat buff would be a step back with this unit. BC range was reduced by 10% in 2.4, we've changed this to be a flat 500 range nerf now. This is because a % nerf was interacting in unexpected ways in cruiser duels due to various factors such as turret placements and the fact that not all cruiser weapons have the same range.*
-* **Research:**
-  * **Unit unlock:**
-    * **Time:** `150 => 140` (-6.9%)
-  * **HP upgrade:**
-    * **Cost:** `2000 => 1500` (-25%)
-  * **Speed upgrade:** `900 => 600` (-33%)
-* **HP:** `160000 => 192000` (+18%)
-* **Speed:** `87 => 79` (-10.9%)
+## Scouts
+> *Chipping away at this units escape factor. Keeping in mind that ints move with `488` speed when upgraded. Some reversions to EMP changes - EMP now stuns vettes in two hits and frigates in five - planning to make further changes. Finally, scouts should not be able to cut through dust clouds. There are units dedicated to this role (probes, proxies).*
+* **Speed:** `485 => 480`
 * **Weapons:**
-  * **Main ions**
-    * **Range:** `5400 => 5500` (+1.9%)
+  * **EMP:**
+    * **Base damage down:** `50 => 20` (-40%)
+    * **Range down:** `3000 => 1500` (-50%)
+    * **Accuracy multipliers:**
+      * **vs Corvettes:** `0.15 => 1` (+566%)
+* **Vision:**
+  * **Vision range:** `4000 => 1500` (-62.5%)
 
 ---
 
@@ -38,6 +30,30 @@
 > *Carriers were building these 5s faster than motherships. Oops.*
 * **Build time (carriers):** `55 => 60` (+10%)
 
+---
+
+## Gunships
+> *Gunship-core unit comps more viable.*
+* **Research:**
+  * **HP upgrade:**
+    * **Cost:** `650 => 600` (-7.7%)
+
+---
+
+## Pulsar Corvettes
+> *Some reversions here - prior changes were not properly tested and have affected pulsars in unexpected ways.*
+* **Weapons:**
+  * **Up/down max angle of canon down.**
+  * **Damage Multipliers:**
+	  * **vs HW2 Fighters:** `0.19 => 0.24` (+23.3%)
+	  * **vs HW1 Fighters:** `0.2 => 0.25` (+25%)
+
+---
+
+## Minelayer Corvettes
+> *The lifetime of mines is significantly down since vanilla.*
+* **HP:** `900 => 1500` (+50%)
+* **Speed:** `233 => 291` (+22%)
 
 ---
 
@@ -47,15 +63,12 @@
 
 ---
 
-## Destroyers
-> *Total reversion of this unit. Many of the later buffs were implemented to offset early nerfs. This has made a mess of the unit overall. Destroyers overall had their damage cut against resourcing. This has made them extremely linear in their gameplan as they are hard pressed to inflict logistical damage without significant numbers. Reverting this.*
-* **Research:**
-  * **Unit unlock:**
-    * **Time:** `100 => 90` (-10%)
+## Torpedo Frigates
+> *A nerf which was put in place after various other nerfs to corvettes. In practice, had very little effect as the damage load of a torpedo is so high that the weapon needs very strong nerfs to make a difference. Various corvettes have their old HP values, so this is also going back.*
 * **Weapons:**
-  * **Torpedoes:**
-    * **Damage multipliers:**
-      * **vs Resourcing:** `0.3 => 0.6` (+100%)
+  * **Cluster torpedo:**
+	* **Damage multipliers:**
+		* **vs HW1 Corvettes:** `0.4 => 0.8` (+100%)
 
 ---
 
@@ -71,27 +84,36 @@
 
 ---
 
-## Gunships
-> *Gunship-core unit comps more viable.*
-* **Research cost:** `650 => 600`
+## Destroyers
+> *Total reversion of this unit. Many of the later buffs were implemented to offset early nerfs. This has made a mess of the unit overall. Destroyers overall had their damage cut against resourcing. This has made them extremely linear in their gameplan as they are hard pressed to inflict logistical damage without significant numbers. Reverting this.*
+* **Research:**
+  * **Unit unlock:**
+    * **Time:** `100 => 90` (-10%)
+* **Weapons:**
+  * **Torpedoes:**
+    * **Damage multipliers:**
+      * **vs Resourcing:** `0.3 => 0.6` (+100%)
 
 ---
 
-## Minelayer Corvettes
-> *Big reversions. Minelayers got totally decked in 2.4 due to abuse of the unit in stalling tactics. Since the lifetime of mines is now significantly lower, these misplaced nerfs can generally go.*
-* **HP:** `900 => 1500` (+50%)
-* **Speed:** `233 => 291` (+22%)
-
----
-
-## Mobile Refineries
-> *Go backstab these guys.*
-* **HP:** `18000 => 16000` (-11.8%)
+## Battlecruisers
+> *Reverting a 2.4 change. Cruisers were very fragile, however a flat buff would be a step back with this unit. BC range was reduced by 10% in 2.4, we've changed this to be a flat 500 range nerf now. This is because a % nerf was interacting in unexpected ways in cruiser duels due to various factors such as turret placements and the fact that not all cruiser weapons have the same range. Since cruiser are so large, the tricannon needs less range that the Hiigaran ions for example in order to engage in combat.*
+* **Research:**
+  * **Unit unlock:**
+    * **Time:** `150 => 140` (-6.9%)
+  * **HP upgrade:**
+    * **Cost:** `2000 => 1500` (-25%)
+  * **Speed upgrade:** `900 => 600` (-33%)
+* **HP:** `160000 => 192000` (+18%)
+* **Speed:** `87 => 79` (-10.9%)
+* **Weapons:**
+  * **Main ions**
+    * **Range:** `5400 => 5500` (+1.9%)
 
 ---
 
 ## Mothership
-> *Capital build speed ups were overall hit hard. This was mostly a stab at various 'spam' builds, notably heavy missile spam. The mothership is the least problematic (with the shipyard) production ship for spam strats since it is, at most, just one production queue. Limiting the MS's build capability actually enhances the strength of carriers even further. Reversion to this*
+> *Part of rollbacks to 2.3 stats.*
 * **Research:**
   * **HP upgrade:**
     * **Time:** `45 => 30` (-33%)
@@ -101,6 +123,28 @@
   * **Damage multipliers:**
 	* **vs Fighters:** `3 => 1.8` (-40%)
 * **Hyperspace animation time up:** `6 => 9.5` (+58%)
+
+---
+
+## Shipyards
+> *Same idea behind a similar change the Mothership.*
+* **Research:**
+  * **Production speed upgrade:**
+	* **Cost:** `1750 => 1000` (-54.5%)
+    * **Time:** `60 => 40` (-33%)
+
+---
+
+## Resource Collectors
+> *This tech is such a defensive freebie it hurts to think about. Small nerf to make it more of an actual decision.*
+* **Research:**
+  * **HP upgrade:** `800 => 1000` (+25%)
+
+---
+
+## Mobile Refineries
+> *Go backstab these guys.*
+* **HP:** `18000 => 16000` (-11.8%)
 
 ---
 
@@ -114,54 +158,12 @@
 
 ---
 
-## Pulsar Corvettes
-> *Some reversions here - prior changes were not properly tested and have affected pulsars in unexpected ways.*
-* **Weapons:**
-  * **No longer shoots at secondary targets if primary is out of range.**
-  * **Up/down max angle of canon down.**
-  * **Damage Multipliers:**
-	  * **vs HW2 Fighters:** `0.19 => 0.24` (+23.3%)
-	  * **vs HW1 Fighters:** `0.2 => 0.25` (+25%)
-
-
----
-
 ## Proximity Sensors
-> *Part of wider nerfs to vision overall. This unit is a very hard counter to cloak, but also to sensor distortion (distortion probes only affect sensors, not 'vision'). As such, we'd like to see the buffed distortion probes actually carve a niche without being shut down effortlessly by proxys.*
+> *Reverting this to its 2.3 state.*
 * **Research:**
   * **Unit unlock:**
 	* **Cost:** `600 => 500` (-18.1%)
 * **Build time:** `15 => 20` (+33%)
-
----
-
-## Resource Collectors
-> *This tech is such a defensive freebie it hurts to think about. Small nerf to make it more of an actual decision.*
-* **Research:**
-  * **HP upgrade:** `800 => 1000` (+25%)
-
----
-
-## Shipyards
-> *Same idea behind a similar change the Mothership.*
-* **Research:**
-  * **Production speed upgrade:**
-	* **Cost:** `1750 => 1000` (-54.5%)
-    * **Time:** `60 => 40` (-33%)
-
----
-
-## Scouts
-> *Chipping away at this units escape factor. Keeping in mind that ints move with `488` speed when upgraded. Some reversions to EMP changes. Finally, scouts should not be able to cut through dust clouds. There are units dedicated to this role (probes, proxies).*
-* **Speed:** `485 => 480`
-* **Weapons:**
-  * **EMP:**
-	* **Base damage down:** `50 => 20` (-40%)
-	* **Range down:** `3000 => 1500` (-50%)
-	* **Accuracy multipliers:**
-	  * **vs Corvettes:** `0.15 => 1` (+566%)
-* **Vision:**
-  * **Vision range:** `4000 => 1500` (-62.5%)
 
 ---
 
@@ -180,11 +182,6 @@
 
 ---
 
-## Torpedo Frigates
-> *A nerf which was put in place after various other nerfs to corvettes. In practice, had very little effect as the damage load of a torpedo is so high that the weapon needs very strong nerfs to make a difference. Various corvettes have their old HP values, so this is also going back.*
-* **Weapons:**
-  * **Cluster torpedo:**
-	* **Damage multipliers:**
-		* **vs HW1 Corvettes:** `0.4 => 0.8` (+100%)
-
----
+## Advanced Research Modules
+> *Part of general timing resets for Hiigaran.*
+* **Build time:** `140 => 150` (+7.1%)
