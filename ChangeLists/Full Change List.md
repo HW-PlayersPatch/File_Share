@@ -110,6 +110,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 
 
 ## Balance
+* This section covers balances changes and many balance related bug fixes.
 * Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1) - Formations and squadrons now perform as they were intended to!
 * With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted. Ships now perform like they are supposed to using balistic/simulation combat features (for example idle ships are generally a lot easier to hit than moving ships).
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.

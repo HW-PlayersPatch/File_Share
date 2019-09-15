@@ -2,14 +2,14 @@
 # Build 1 Change List | Nov 3, 2017
 
 ## General
-* Included all the changes from Gearbox’s unfinished 2.205 Patch Preview, as described [here](https://steamcommunity.com/linkfilter/?url=http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1).
+* Included all the changes from Gearbox’s unfinished 2.205 Patch Preview, as described [here](http://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1).
 
 ## Balance
 * The bulk of the balance changes are from Gearbox’s 2.205 Patch Preview. Additional changes are listed below.
-* Fixed the major [666 Formation Targeting Bug](https://steamcommunity.com/linkfilter/?url=https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1). Formations and squadrons now perform as they were intended to!
+* Fixed the major [666 Formation Targeting Bug](https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832/1). Formations and squadrons now perform as they were intended to!
 * Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game’s performance in long games.
 * High Unit Caps adjusted so cruisers are capped at 3, rather than 4.
-* Hiigaran/Vaygr Gun Platforms, Ion Platforms, and Missile Platforms speed up 25% (to match hw2c)
+* Hiigaran/Vaygr Gun Platforms, Ion Platforms, and Missile Platforms speed 100->125 (to match hw2c)
 * Hiigaran/Vaygr Carriers and Battle Cruisers death/scuttle blast range down some
 * Hiigaran Bombers speed Upgrade Costs 600->400 (to balance vs Vaygr)
 * Hiigaran Defense Field Frigates cost 1000->1250 (to match hw2c), build Time 60->70 (to match hw2c)
@@ -129,10 +129,12 @@
 
 ## Balance
 * Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor
-* Probe cost 70->100 +43% (half way between hw1c and hw2c)
+* Probe cost 70->100 (half way between hw1c and hw2c)
 * Addressed the gun alignment on the Hiigaran Shipyard and Vaygr Scout. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
-* Hiigaran Ion Cannon Platform/Vaygr Heavy Missile Platform damage down 16% (same as hw2c)
-* Kushan/Taiidan Multi-Gun Corvette Research Time 28->18sec -36%, Cost 300->235 -22% (general buff, and to balance vs hw2 corvettes)
-* Kushan/Taiidan Heavy Corvette Research time 21->14sec -33%, Cost 285->240 -16%, Build time 22->20 -9% (general buff, and to balance vs hw2 corvettes)
-* Kushan/Taiidan Missile Destroyer damage vs hw1 corvettes down 40%
-* Kushan/Taiidan Missile Destroyer Speed 130->145 +12% (relatively closer to hw1c)
+* Hiigaran Ion Cannon Platform/Vaygr Heavy Missile Platform damage -16% (same as hw2c)
+* Kushan/Taiidan Multi-Gun Corvette Research Time 40->25
+* Kushan/Taiidan Multi-Gun Corvette Cost 300->235 (general buff, and to balance vs hw2 corvettes)
+* Kushan/Taiidan Heavy Corvette Research time 30->20
+* Kushan/Taiidan Heavy Corvette Cost 285->240, Build time 22->20 (general buff, and to balance vs hw2 corvettes)
+* Kushan/Taiidan Missile Destroyer damage vs hw1 corvettes -40%
+* Kushan/Taiidan Missile Destroyer Speed 130->145 (relatively closer to hw1c)
