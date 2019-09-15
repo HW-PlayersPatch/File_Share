@@ -315,44 +315,57 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
 #### Assault Craft
-Damage vs corvettes -31%
-Damage vs frigs and capital-ships -60%
-Damage vs subsystems +40%
+* Weapon:
+    * Damage corvettes vs 0.8->0.29
+    * Damage vs frigs and capital-ships 1.0->0.4
+    * Damage vs platforms 0.7->0.4
 
 #### Bombers
 * Speed 279->300
--Damage vs corvettes -30%
-Accuracy vs corvettes 80%->20%
-Damage vs frigates +40%
+* Weapons:
+    * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+    * Damage vs corvettes 1.0->0.7
+    * Damage vs frigates 1.05->1.2
+    * Damage vs resourcing 0.2->0.17
+    * Accuracy vs corvettes 0.8->0.2
 
 #### Lance Fighters
 * Speed 279->314
 * Armor 90->110
 * Small/High unit caps increased to match bombers
+* Weapon: (after the 666 bug was fixed, this weapon was overperforming vs everything)
+    * Damage vs fighters 1.0->0.3
+    * Damage vs corvettes 1.0->0.65
+    * Damage vs frigates/capitals 1.0->0.4
+    * Damage vs platforms 1.0->0.6
+    * Damage vs resourcing 0.6->0.5
 
 #### Corvettes
 * Armor Upgrade Cost 1600->1800 (to balance vs Hiigaran)
 
 #### Missile Corvettes
 * Kamikaze multiplier 1.0->0.6 (To prevent exploits)
--Damage vs hw1 fighters +110% (now performs similarly vs hw1 and hw2 fighters)
-Damage vs fighters -55% (they now perform closer to hw2c)
-Fixed a bug where they would deal zero damage to probes
+* Weapon:
+    * Damage vs fighters 0.155->0.07 (they now perform closer to hw2c)
+    * Damage vs hw1 corvettes 0.2->0.4 (now performs similarly vs hw1 and hw2 corvettes)
+    * Fixed a bug where they would deal zero damage to probes
 
 #### Laser Corvettes
 * Cost 650->625
 * Armor 480->510
 * Kamikaze multiplier 0.7->0.6 (To prevent exploits)
--Laser Corvettes were the only corvettes negatively impacted by the 666 Bug. They are now performing as intended: the best anti-frigate and anti-capital ship corvette in the game.
-Fixed a bug with the attack script where laser corvettes would start doing evasive maneuvers and rarely attacking. This bug fix makes laser corvettes much more effective.
+* Fixed a bug with the attack script where laser corvettes would start doing evasive maneuvers and rarely attacking. This bug fix makes laser corvettes much more effective.
+* Laser Corvettes were the only corvettes negatively impacted by the 666 Bug. They are now performing as intended: the best anti-frigate and anti-capital ship corvette in the game.
+* Weapon:
+    * Damage vs capitalships 0.51->0.59
+    * Damage vs resourcing 0.24->0.12
 
 #### Command Corvettes
 * Command Systems Research Time 60->45
 * Cost 400->750
-* Build Time 30->45
+* Build Time 30->45 (slows down the replenishment of these powerful units)
 * Armor 900->1000
--Build Time 30->45 +50% (slows down the replenishment of these powerful units)
--Attack/accuracy bonus range -51% (forces these ships to be on the front line so they can be countered)
+* Ability damage/accuracy effect range 4500->2200 (forces these ships to be on the front line so they can be countered)
 
 #### Minelayer Corvettes
 * Cost 800->400 (to balance vs hw1)
@@ -360,19 +373,25 @@ Fixed a bug with the attack script where laser corvettes would start doing evasi
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
 
+#### Frigates
+* Anti-Corvette Missile Weapon:
+    * Damage 109->25 (All Vaygr Frigates are not supposed to be good vs corvettes)
+    * Damage vs resourcing 1.0->0.6
+
 #### Assault Frigate
 * Assault Research Cost 500->550
 * Assault Research Time 40->35
 * Armor 17k->18k
-Cost 500->650 (was 650 in hw2c)
-Research Time +12% (to same as hw2c)
-Damage vs Hiig/Vaygr fighters -50% (results in a small nerf)
-Damage vs hw1 fighters +400% (results in a decent buff)
+* Gun Weapons:
+    * Damage vs fighters 0.27->0.5
+    * Damage vs resourcing 1.0->0.6
+    * Accuracy vs corvettes 0.14->0.35
 
 #### Heavy Missile Frigates
 * Build Time 45->50
 * Armor 18.5k->18k
--Range -6% (closer to hw2c)
+* Weapon:
+    * Range 4000->3750 (closer to hw2c's 3500)
 
 #### Infiltrator Frigates
 * Infiltration Research Cost 1000->800, Time 60->50
@@ -409,35 +428,38 @@ Damage vs hw1 fighters +400% (results in a decent buff)
 
 #### Battlecruiser
 * Armor 170k->192k
-Trinity Cannon Range +1%
-Damage vs capital-ships -6% (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c. With micro, vaygr can slightly out-range hiigaran and win.)
+* Trinity Cannon Weapon
+    * Range 5500->5050 (Being on the nose of the ship, the trinity cannon now has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
+    * Damage vs capitalships 1.26->1.1 (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c.)
+* Missile Launcher Weapon:
+    * Range 6000->5500
 
 #### Platforms
 * Armor Upgrade Cost 1500->1400
 * Armor Upgrade Time 150->135
--Hull Upgrade Costs 1500->1600 (to balance vs Hiigaran)
 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
-Damage vs fighters +100% (A typo gave them less damage than intended)
-Damage vs resourcing -43%
-Accuracy vs frigates and capital-ships 40%->80%
+* Weapon:
+    * Damage 40->60
+    * Damage vs fighters 0.5->1.0 (A typo gave them less damage than intended)
+    * Damage vs resourcing 0.7->0.4
+    * Accuracy vs frigates/capitals/resourcing 0.4->0.8
 
 #### Heavy Missile Platforms
 * Speed 100->125 (to match hw2c)
--Damage -16% (same as hw2c)
+* Weapon:
+    * Fire Delay 11->15 (same as hw2c)
 
 #### Hyperspace Platforms
 * Hyperspace Research Cost 750->500
 * Hyperspace Research Time 50->45
 * Cost 375->325
-* Build Time 45->20
-* Speed 650->600
+* Build Time 45->20 (these took too long to setup)
+* Speed 650->600 (to match hw2c as they should not be faster than a probe)
 * Armor 18500->27750
 * The gate is now able to hyperspace jump on its own.
 * All probes can now travel through hyperspace gates.
--Build Time 45->20sec (these took too long to setup)
--Speed 650->600 -8% (to match hw2c as they should not be faster than a probe)
 
 #### Utility Ships
 * Armor Upgrade Cost 1200->1400
@@ -448,7 +470,7 @@ Accuracy vs frigates and capital-ships 40%->80%
 * Repair Research Time 30->20
 * Speed 280->276
 * Kamikaze multiplier 0.2->0.6
--Resource capacity 208->200 -4% (Now matches Hiigaran to better balance harvesting. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now within 1% of each other.)
+* Resource capacity 208->200 -4% (Now matches hw2c and Hiigaran. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now balanced.)
 
 #### Resource Controllers
 * Armor 18k->16k
@@ -526,6 +548,14 @@ Damage vs subsystems +40%
 * Cost 120->130
 * Speed 390->420
 * Armor 135->125
+* Weapon:
+    * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+    * Damage vs fighters/corvettes 1.0->0.7
+    * Damage vs frigates 1.0->1.6
+    * Damage vs capitals 1.1->1.5
+    * Damage vs platforms 0.7->0.85
+    * Damage vs resourcing 0.2->0.17
+    * Accuracy vs corvettes 0.8->0.2
 Accuracy vs corvettes 80%->20%
 Damage vs frigates +40%
 
