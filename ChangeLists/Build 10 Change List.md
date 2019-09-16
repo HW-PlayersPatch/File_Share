@@ -42,3 +42,224 @@
 * Kushan Drone Frigates can now attack while they are moving. Previously the drones rarely ever fired while the frig was moving. We plan to continue to improve this ship.
 * Kushan and Taiidan Heavy Cruisers no longer take hyperspace damage when they hit a hyperspace inhibitor mid-jump. Hiigaran/Vaygr Cruisers have always been immune to such damage.
 * The changes above are just a small sample of the many balance refinements included. The full Build 10 balance change list will be available soon.
+
+
+
+### Hiigaran
+
+#### Scouts
+* There has been a general reduction in scout speed. Vision is too powerful these are part of overall vision nerf.*
+* Sensors Range 11000->8500
+* Speed 512->480
+
+#### Bombers
+* Projectiles were too slow and caused them to be less effective vs Frigates and Subs, this has been changed.
+* Weapon:
+   * Projectile Velocity 1200->1800   
+* Speed 279->300  
+
+#### Gunships
+* Speed increased along with upgrade for HP reduced.
+* Armor Upgrade Cost 800->600
+* Speed 232->254
+
+#### Minlayer Corvettes
+* Speed and Armor increased.
+* Speed 233->291
+* Armor 900->1500
+
+#### Flak Frigates
+* Flaks are quite expensive to upgrade and use, they shouldnt be so punishing to the player just to use.
+* Speed Upgrade Cost 600->400
+* Speed Upgrade Time 75->40
+* Build Time 50->25
+
+#### Marine Frigates
+* Minor buffs to increase usability.
+* Speed 230->270
+* Armor 20000->23500
+
+#### Defense Field Frigates
+* Minor buffs to increase usability.
+* Cost 1250->1000
+* Build Time 70->50
+* Speed 77->220
+
+#### Carriers
+* Increased cost of Improved Manufacture due to it being so powerful it needs to cost more.
+* Improved Manufacturing Upgrade Cost 1500->2250
+
+#### Destroyers
+* Reduced time it takes to regen HP, HW2 repair is already weak.
+* Regen Time 1074->750
+
+#### Battlecruisers
+* Battlecruisers are oppresive and their range is a large part of that, this has been reduced.
+* Kinetic Weapons Range 5000->4500
+* Ion Weapons Range 6000->5500
+
+#### Resource Collectors
+* HP upgrade is too cheap and overpowered, HP upgrade now costs more. In addition repair is rather sub-par and this is a QOL chagne to it.
+* Armor Upgrade Cost 800->1000
+* Repair Research Cost 750->200
+
+#### Resource Controllers
+* Controlers are a bit too tanky so HP is reduced.
+* Armor 18000->16000
+
+#### Probes
+* Vision is too powerful and this is apart of the overall vision nerf.
+* Cost 70->120
+* Sensor Range 5000->4000
+
+#### Proximity Sensors
+* Quality of life changes
+* Build Time 15->20
+
+#### Sensors Distortion Probes
+* Quality of life changes.
+* Cost 600->500
+* Build Time 30->25
+
+
+
+### Vaygr
+
+#### Scouts
+* There has been a general reduction in scout speed. Vision is too powerful these are part of overall vision nerf.
+* Speed 420->350
+* Sensor Range 11000->8500
+
+#### Lance Fighters
+* Lance fighters have had their HP increased aswell as their speed to help Vaygr deal with corvettes better.
+* Speed 279->314
+* Armor 90->110
+
+#### Laser Corvettes
+* Lasers have received QOL changes in cost and HP.
+* Cost 650->625
+* Armor 480->510
+
+#### Command Corvettes
+* Command vetts have been buffed so that they actualy live long enough to be effective in battles, thier cost has increased to offset.
+* Command Corvette Reseach Time 60->45
+* Cost 400->750
+* Armor 900->1000
+
+#### Minelayer Corvettes
+* Rebalance changes
+* Armor 900->1000
+
+#### Assault Frigates
+* QOL changes to make assautls more effictive as an anti-fighter option.
+* Assault Frigate Research Cost 650->500
+* Armor 17000->18000
+
+#### Heavy Missile Frigates
+* HMF have been far too oppressive due to investment for HP+DMG+Build time (lol vaygr carrier) this has been reduced.
+* Build Time 45->50
+* Armor 18500->18000
+
+#### Infiltrator Frigates
+* QOL changes to make them more effective at their role.
+* Infiltrator Frigate Research Cost 1000->800
+* Infiltrator Frigate Research Time 60->50
+* Speed 230->240
+* Armor 20000->21000    
+
+#### Hyperspace Gates
+* This tool is not used often, so here are some QOL changes.
+* Hyperspace Gates Research Cost 750->500
+* Cost 75->25
+* Armor 18500->27750
+
+#### Utility Research
+* Part of overall nerfs to utility research for HW2.
+* Utility Research Upgrade Cost 1200->1400
+
+#### Resource Controllers
+* Controlers are a bit too tanky so HP is reduced.
+* Armor 18000->16000
+
+#### Probes
+* Vision is too powerful and this is apart of the overall vision nerf.
+* Cost 100->120
+* Sensor Range 5000->4000
+
+#### Prosimity Sensors
+* Quality of life changes
+* Build Time 15->20
+
+#### Sensors Distortion Probes
+* Quality of life changes.
+* Cost 600->500
+* Build Time 30->25
+
+
+
+### Kushan and Taiidan
+
+#### Scouts
+* Cost 70->100
+* Speed 490->460
+* Build Time 8->10
+
+#### Attack Bombers
+* Speed 390->420
+* Armor 135->125
+
+#### Kushan Cloaked Fighters
+* Cost 130->120
+* Build Time 15->10
+* Now repair themselves quickly when not taking damage
+
+#### Light Corvettes
+* Cost 225->215
+
+#### Salvage Corvettes
+* Armor 1000->1200
+
+#### Heavy Corvettes
+* Cost 240->230
+
+#### Multigun Corvettes
+* Cost 235->225
+
+#### Minelayer Corvettes
+* Cost 275->325
+* Speed 255->280
+
+#### Support Frigates
+* Cost 600->700
+* Build Time 65->60
+
+#### Ion Cannon Frigates
+* Cost 800->750
+
+#### Kushan Drone Frigates
+* Cost 900->700
+* Build Time 70->50
+* Speed 206->222
+
+#### Carriers
+* Build Time 165->130
+
+#### Missile Destroyers
+* Armor 106000->75000
+
+#### Probes
+ * Cost 100->120 
+ * Sensor Range 5000->4000
+ 
+#### Proximity Sensors
+ * Build Time 15->20
+ 
+#### Sensor Arrays
+* Cost 700->500
+* Build Time 70->60 
+
+#### Gravity Well Generators
+* Cost 800->1000
+
+#### Cloak Generators
+* Cost 800->750
