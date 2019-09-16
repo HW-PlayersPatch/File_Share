@@ -48,76 +48,70 @@
 ### Hiigaran
 
 #### Scouts
-* There has been a general reduction in scout speed. Vision is too powerful these are part of overall vision nerf.*
-* Sensors Range 11000->8500
-* Speed 512->480
+* Speed 512->480 (All scouts are now slower to make scouting harder)
 
 #### Bombers
-* Projectiles were too slow and caused them to be less effective vs Frigates and Subs, this has been changed.
+* Speed 279->300
 * Weapon:
-   * Projectile Velocity 1200->1800   
-* Speed 279->300  
+   * Projectile Velocity 1200->1800 (so they can hit subsystems on moving carriers)
 
 #### Gunships
-* Speed increased along with upgrade for HP reduced.
-* Armor Upgrade Cost 800->600
+* Armor Upgrade:
+   * Cost 800->600
+   * Time 40->35
 * Speed 232->254
 
 #### Minlayer Corvettes
-* Speed and Armor increased.
 * Speed 233->291
 * Armor 900->1500
 
 #### Flak Frigates
 * Flaks are quite expensive to upgrade and use, they shouldnt be so punishing to the player just to use.
-* Speed Upgrade Cost 600->400
-* Speed Upgrade Time 75->40
-* Build Time 50->25
+* Speed Upgrade:
+   * Cost 600->400
+   * Time 50->25
+* Health Upgrade:
+   * Cost 1000->600
+   * Time 75->40
+* Build Time 50->45
 
 #### Marine Frigates
-* Minor buffs to increase usability.
 * Speed 230->270
 * Armor 20000->23500
 
 #### Defense Field Frigates
-* Minor buffs to increase usability.
 * Cost 1250->1000
-* Build Time 70->50
+* Build Time 70->55
 * Speed 77->220
 
 #### Carriers
-* Increased cost of Improved Manufacture due to it being so powerful it needs to cost more.
 * Improved Manufacturing Upgrade Cost 1500->2250
 
 #### Destroyers
-* Reduced time it takes to regen HP, HW2 repair is already weak.
 * Regen Time 1074->750
 
 #### Battlecruisers
-* Battlecruisers are oppresive and their range is a large part of that, this has been reduced.
 * Kinetic Weapons Range 5000->4500
 * Ion Weapons Range 6000->5500
 
 #### Resource Collectors
-* HP upgrade is too cheap and overpowered, HP upgrade now costs more. In addition repair is rather sub-par and this is a QOL chagne to it.
 * Armor Upgrade Cost 800->1000
-* Repair Research Cost 750->200
+* Repair Research:
+   * Cost 750->200
+   * Time 40->20
 
 #### Resource Controllers
-* Controlers are a bit too tanky so HP is reduced.
 * Armor 18000->16000
 
 #### Probes
-* Vision is too powerful and this is apart of the overall vision nerf.
-* Cost 70->120
-* Sensor Range 5000->4000
+* Cost 100->120
 
 #### Proximity Sensors
-* Quality of life changes
+* Proximity Research Time 35->45
 * Build Time 15->20
 
 #### Sensors Distortion Probes
-* Quality of life changes.
+* Sensors Distortion Research Time 45->30
 * Cost 600->500
 * Build Time 30->25
 
@@ -126,78 +120,92 @@
 ### Vaygr
 
 #### Scouts
-* There has been a general reduction in scout speed. Vision is too powerful these are part of overall vision nerf.
-* Speed 420->350
-* Sensor Range 11000->8500
+* Speed 420->350 (All scouts are now slower, still the fastest scout in the game when upgraded)
+
+#### Bombers
+* Speed 279->300
 
 #### Lance Fighters
-* Lance fighters have had their HP increased aswell as their speed to help Vaygr deal with corvettes better.
 * Speed 279->314
 * Armor 90->110
 
 #### Laser Corvettes
-* Lasers have received QOL changes in cost and HP.
 * Cost 650->625
 * Armor 480->510
 
 #### Command Corvettes
-* Command vetts have been buffed so that they actualy live long enough to be effective in battles, thier cost has increased to offset.
 * Command Corvette Reseach Time 60->45
 * Cost 400->750
 * Armor 900->1000
 
 #### Minelayer Corvettes
-* Rebalance changes
 * Armor 900->1000
 
 #### Assault Frigates
-* QOL changes to make assautls more effictive as an anti-fighter option.
-* Assault Frigate Research Cost 650->500
+* Assault Frigate Research:
+   * Cost 650->550
+   * Time 45->35
 * Armor 17000->18000
 
 #### Heavy Missile Frigates
-* HMF have been far too oppressive due to investment for HP+DMG+Build time (lol vaygr carrier) this has been reduced.
 * Build Time 45->50
 * Armor 18500->18000
 
 #### Infiltrator Frigates
-* QOL changes to make them more effective at their role.
-* Infiltrator Frigate Research Cost 1000->800
-* Infiltrator Frigate Research Time 60->50
+* Infiltrator Frigate Research:
+   * Cost 1000->800
+   * Time 60->50
 * Speed 230->240
-* Armor 20000->21000    
+* Armor 20000->21000
+
+#### Capitals
+* Health Upgrade Cost 4000->3500
+
+#### Carriers
+* Improved Manufacturing Upgrade Cost 1500->2500
+
+#### Destroyers
+* Destroyer Technology Cost 2000->1750
+
+#### Platforms
+* Health Upgrade Research:
+   * Cost 1600->1400
+   * Time 150->135
 
 #### Hyperspace Gates
-* This tool is not used often, so here are some QOL changes.
-* Hyperspace Gates Research Cost 750->500
-* Cost 75->25
+* Hyperspace Gates Research:
+   * Cost 750->500
+   * Time 50->45
+* Cost 375->325
 * Armor 18500->27750
 
 #### Utility Research
-* Part of overall nerfs to utility research for HW2.
 * Utility Research Upgrade Cost 1200->1400
 
+#### Resource Collectors
+* Repair Ability Research:
+   * Cost 500->200
+   * Time 30->20
+
 #### Resource Controllers
-* Controlers are a bit too tanky so HP is reduced.
 * Armor 18000->16000
 
 #### Probes
-* Vision is too powerful and this is apart of the overall vision nerf.
 * Cost 100->120
-* Sensor Range 5000->4000
 
 #### Prosimity Sensors
-* Quality of life changes
+* Proximity Research Time 40->45
 * Build Time 15->20
 
 #### Sensors Distortion Probes
-* Quality of life changes.
+* Sensors Distortion Research Time 60->50
 * Cost 600->500
 * Build Time 30->25
 
 
 
 ### Kushan and Taiidan
+Need to add research times.
 
 #### Scouts
 * Cost 70->100
@@ -248,11 +256,10 @@
 * Armor 106000->75000
 
 #### Probes
- * Cost 100->120 
- * Sensor Range 5000->4000
+* Cost 100->120 
  
 #### Proximity Sensors
- * Build Time 15->20
+* Build Time 15->20
  
 #### Sensor Arrays
 * Cost 700->500

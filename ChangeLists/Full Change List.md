@@ -145,7 +145,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs platforms 0.7->0.4
 
 #### Bombers
-* Speed Upgrade Cost 600->400 (to balance vs Vaygr)
+* Speed Upgrade:
+    * Cost 600->400 (to balance vs Vaygr)
 * Speed 279->300
 * Weapons:
     * Now check their line of fire (like the other races do, to avoid friendly fire incidents)
@@ -156,8 +157,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Accuracy vs corvettes 0.8->0.2
 
 #### Gunship Corvettes
-* Armor Upgrade Cost 800->600
-* Armor Upgrade Time 40->35
+* Armor Upgrade:
+    * Cost 800->600
+    * Time 40->35
 * Speed 232->254
 * Weapon:
     * Velocity 1500->1800
@@ -187,10 +189,12 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs resourcing 1.0->1.15 (only helps vs upgraded hw2 collectors) 
 
 #### Flak Frigates
-* Speed Upgrade Cost 600->400
-* Speed Upgrade Time 50->25
-* Armor Upgrade Cost 1000->600
-* Armor Upgrade Time 75->40
+* Speed Upgrade:
+    * Cost 600->400
+    * Time 50->25
+* Armor Upgrade:
+    * Cost 1000->600
+    * Time 75->40
 * Build Time 50->45
 * Weapon Damage vs hw1 fighters .28->.46
 
@@ -204,25 +208,33 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Armor 20k->25k (since this ship can't be upgraded)
 
 #### Motherships
-* Speed Upgrade Cost 600->400
-* Armor Upgrade Cost 1000->800
+* Speed Upgrade:
+    * Cost 600->400
+* Armor Upgrade:
+    * Cost 1000->800
 * Weapon:
     * Damage vs fighters 3.0->1.8
     * Damage vs resourcing 1.35->0.75
     * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Carriers
-* Speed Upgrade Cost 600->400
-* Armor Upgrade Cost 1000->800
-* Build Speed Upgrade Cost 1500->2250
+* Speed Upgrade:
+    * Cost 600->400
+* Armor Upgrade:
+    * Cost 1000->800
+* Build Speed Upgrade:
+    * Cost 1500->2250
 * Weapon:
     * Damage vs fighters 3.0->1.8
     * Damage vs resourcing 1.35->0.75
     * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Shipyards
-* Speed Upgrade Cost 600->400
-* Armor Upgrade Cost 1000->800, Time 60->30
+* Speed Upgrade:
+    * Cost 600->400
+* Armor Upgrade:
+    * Cost 1000->800
+    * Time 60->30
 * Build Time 85->75 (to match hw2c)
 * Weapon:
     * Damage vs fighters 3.0->1.8
@@ -236,9 +248,11 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 
 #### Battle Cruisers
 * Armor 170k->192k
-* Ion Weapons Range 5800->5500
-* Gun Weapons Range 5000->4500
 * Fixed an issue where the hiigaran battlecruiser would sometimes sit pointed 10 degrees up or down vs a target on the same vertical level; causing the nose of the ship to block one ion turret from attacking.
+* Gun Weapons:
+    * Range 5000->4500
+* Ion Weapons:
+    * Range 5800->5500
 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
@@ -255,8 +269,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs fighters/probes 0.02->0.2 (helps vs idle fighters)
 
 #### Resource Collectors
-* Armor Upgrade Cost 800->1000
-* Armor Upgrade Value 2.0->1.6
+* Armor Upgrade:
+    * Cost 800->1000
+    * Value 2.0->1.6
 * Repair Research Cost 750->200
 * Repair Research Time 40->20
 * Kamikaze multiplier 0.2->0.6
@@ -274,12 +289,14 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Armor 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 #### Proximity Sensors
-* Proximity Sensor Research Time 35->45
+* Proximity Sensor Research:
+    * Time 35->45
 * Build Time 15->20
 * Armor 800->400
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research Time 45->30
+* Sensors Distortion Research:
+    * Time 45->30
 * Cost 600->500
 * Build Time 20->25
 * Armor 800->400
@@ -341,7 +358,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs resourcing 0.6->0.5
 
 #### Corvettes
-* Armor Upgrade Cost 1600->1800 (to balance vs Hiigaran)
+* Armor Upgrade:
+    * Cost 1600->1800 (to balance vs Hiigaran)
 
 #### Missile Corvettes
 * Kamikaze multiplier 1.0->0.6 (To prevent exploits)
@@ -361,7 +379,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs resourcing 0.24->0.12
 
 #### Command Corvettes
-* Command Systems Research Time 60->45
+* Command Systems Research:
+    * Time 60->45
 * Cost 400->750
 * Build Time 30->45 (slows down the replenishment of these powerful units)
 * Armor 900->1000
@@ -379,8 +398,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs resourcing 1.0->0.6
 
 #### Assault Frigate
-* Assault Research Cost 500->550
-* Assault Research Time 40->35
+* Assault Research:
+    * Cost 500->550
+    * Time 40->35
 * Armor 17k->18k
 * Gun Weapons:
     * Damage vs fighters 0.27->0.5
@@ -394,13 +414,19 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Range 4000->3750 (closer to hw2c's 3500)
 
 #### Infiltrator Frigates
-* Infiltration Research Cost 1000->800, Time 60->50
+* Infiltration Research:
+    * Cost 1000->800
+    * Time 60->50
 * Speed 230->240
 * Armor 20k->21k
 
 #### Capital Ships
-* Armor Upgrade Cost 3000->3500, Time 90->95 (to balance vs Hiig)
-* Speed Upgrade Cost 1500->2000, Time 60->80 (to balance vs Hiig)
+* Armor Upgrade:
+    * Cost 3000->3500
+    * Time 90->95 (to balance vs Hiig)
+* Speed Upgrade:
+    * Cost 1500->2000
+    * Time 60->80 (to balance vs Hiig)
 
 #### Flagships
 * Weapon:
@@ -423,7 +449,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Destroyers
-* Destroyer Research Cost 2000->1750
+* Destroyer Research:
+    * Cost 2000->1750
 * Armor 80k->90k (closer to hw2c when upgraded)
 
 #### Battlecruiser
@@ -435,8 +462,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Range 6000->5500
 
 #### Platforms
-* Armor Upgrade Cost 1500->1400
-* Armor Upgrade Time 150->135
+* Armor Upgrade:
+    * Cost 1500->1400
+    * Time 150->135
 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
@@ -452,8 +480,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Fire Delay 11->15 (same as hw2c)
 
 #### Hyperspace Platforms
-* Hyperspace Research Cost 750->500
-* Hyperspace Research Time 50->45
+* Hyperspace Research:
+    * Cost 750->500
+    * Time 50->45
 * Cost 375->325
 * Build Time 45->20 (these took too long to setup)
 * Speed 650->600 (to match hw2c as they should not be faster than a probe)
@@ -462,12 +491,14 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * All probes can now travel through hyperspace gates.
 
 #### Utility Ships
-* Armor Upgrade Cost 1200->1400
-* Armor Upgrade Value 2.0->1.6
+* Armor Upgrade:
+    * Cost 1200->1400
+    * Value 2.0->1.6
 
 #### Resource Collectors
-* Repair Research Cost 500->200
-* Repair Research Time 30->20
+* Repair Research:
+    * Cost 500->200
+    * Time 30->20
 * Speed 280->276
 * Kamikaze multiplier 0.2->0.6
 * Resource capacity 208->200 -4% (Now matches hw2c and Hiigaran. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now balanced.)
@@ -485,12 +516,14 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Armor 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 #### Proximity Sensors
-* Proximity Research Time 40->45
+* Proximity Research:
+    * Time 40->45
 * Build Time 15->20
 * Armor 800->400
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research Time 60->50
+* Sensors Distortion Research:
+    * Time 60->50
 * Build Time 20->25
 * Armor 800->400
 * Ability to reduce enemy sensor range is a bit stronger now.
@@ -575,7 +608,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 
 
 #### Kushan Cloaked Fighters
-* Cloaked Fighter Research Cost 500->1000
+* Cloaked Fighter Research:
+    * Cost 500->1000
 * Cost 130->120
 * Build Time 15->10
 * Cloak ability now lasts indefinitely (same as hw1c)
@@ -584,7 +618,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs corvettes 0.6->0.8
 
 #### Taiidan Defense Fighters
-* Defense Fighter Research Cost 500->1000
+* Defense Fighter Research:
+    * Cost 500->1000
 * Built Time 18->15
 * Armor +20% (removed a hidden multiplier)
 * Armor 135->300
@@ -619,7 +654,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Can now kamikaze
 
 #### Heavy Corvettes
-* Heavy Corvette Research Cost 600->400
+* Heavy Corvette Research:
+    * Cost 600->400
 * Cost 315->230
 * Build Time 22->19
 * Speed 245->290
@@ -633,7 +669,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Kushan and Taiidan Heavy Corvettes are now balanced, previously Taiidan would always win. (Not intended)
 
 #### Multi-Gun Corvettes
-* Fast-Tracking Turret Research Cost 700->500
+* Fast-Tracking Turret Research:
+    * Cost 700->500
 * Cost 300->225
 * Build Time 22->21
 * Speed 275->320
@@ -697,7 +734,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs frigates 1.12->0.85 (they still beat hw2 ion frigates with 10% Hull left. This was a big oversight in balance testing the 2.0 patch.)
 
 #### Kushan Drone Frigates
-* Drone Tech Research Time 40->80
+* Drone Tech Research:
+    * Time 40->80
 * Cost 900->700
 * Build Time 77->50
 * Speed 166->222
@@ -720,7 +758,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Accuracy vs capitals 0.55->1.0
 
 #### Taiidan Field Frigates
-* Defense Field Research Time 40->80
+* Defense Field Research:
+    * Time 40->80
 * Build Time 77->70
 * Speed 166->206
 * Armor 26k->30k
@@ -774,7 +813,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs corvettes 1.0->0.6
 
 #### Heavy Cruisers
-* Heavy Gun Research Cost 5500->7000
+* Heavy Gun Research:
+    * Cost 5500->7000
 * No longer take hyperspace damage when they hit an inhibitor/GW. (like hw2 cruisers)
 * Gun Weapons:
     * Range 5500->5000
@@ -812,7 +852,8 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Hull 800->400
 
 #### Sensors Array
-* Sensor Array Research Cost 350->500
+* Sensor Array Research:
+    * Cost 350->500
 * Cost 700->500
 * Build Time 70->60
 * Speed 90->175
