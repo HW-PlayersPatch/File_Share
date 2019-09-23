@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 1-10 Full Change List | August 31, 2019
+# Build 1-11 Full Change List | September ??, 2019
 
 ## Summary
 The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many bugs, exploits, and balance issues from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances multiplayer and singleplayer while respecting Gearbox's direction, and the feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered. All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
@@ -26,7 +26,10 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 #### General
 * Addressed the major Cross Race Docking Bug. Fighters and corvettes will now only dock with ships from their own race. Previously, regenerated Hiigaran/Vaygr ships would be unable to launch from Kushan/Taiidan Repair Corvettes, Support Frigates, and Resource Controllers leading to major game lag and multiple glitches.
 * When a docking squadron is under attack, they sometimes glitch out and stop moving. Affected Squadrons are now automatically issued another dock order to dock with the closest ship.
+* When salvage corvettes in a formation are given multiple different salvage targets, they often crash the game. To prevent this crash, salvage corvettes will no longer be able to join formations/strikegroups.
+* Ships have always held their formation in aggressive stance, but now they also hold their formation in neutral stance like hw1c.
 * The Kushan/Taiidan Gravity Well ability previously continued to lock down strikecraft in an area after it had moved away. The area of affect now stays with the Gravity Well.
+* The Taiidan Defense Fighter no longer shoots down missiles from allies.
 * Fixed the bug that allowed Kushan/Taiidan players to build two research ships at once on separate carriers.
 * Improved parade formations for resource collectors, to reduce collisions with the motherships.
 * Hiigaran Marine Frigates, Vaygr Infiltrator Frigates, Kushan/Taiidan repair ships, and all Minelayer corvettes are no longer included in the military selection priority. This prevents accidentally de-latching capture frigates, messing up repair orders, or messing up mine walls.
@@ -56,8 +59,10 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Reduced the Kushan probe death explosion to an appropriate size.
 #### Sound
 * When a private message is sent, everyone in the lobby hears the audio alert even when they are not the recipient. As a workaround the audio alert has been removed, as the chat window already visually flashes for the recipient.
+* Fixed Hiigaran Pulsar Corvette weapon sound effects (they were missing).
 * Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds).
 * ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms.
+* Drone frigates with launched drones no longer make such a loud death explosion.
 * 'Resource Controller Complete' audio is now played for Taiidan Resource Controllers
 * The 'Research Ship Complete' audio is now played after each additional Kushan/Taiidan Research Ship Hub is built.
 * Fixed Kushan and Taiidan Repair Corvette sound effects (so they no longer play gun noises while repairing).
@@ -116,12 +121,13 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 * Balanced dock repair times for fighters and corvettes. Addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair slower, closer to their hw2c rate. hw1 corvettes repair 4.5x faster than before, to balance vs hw2.
 * Decreased the sensors range of all scouts and probes by about 20%, and 30% for the cheaper Kushan/Taiidan scouts. Scouting is easy in HWR compared to other RTS games, so this is intended to make information harder to obtain.
-* Fixed several issues that made it hard for some ships to kill probes
+* Kamikaze damage adjusted on some units to prevent exploits, and resolve typos.
+* Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor.
+* Lowered death/scuttle blast range on frigates, motherships, carriers, shipyards, and battle cruisers (so fighters and corvettes can better survive capital ship battles).
 * Tweaked rotational speeds on some units, for example to aid in positioning motherships around asteriod patches.
 * Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in hw1c)
-* Hyperspace exit damage lowered from 25% to 10%, when running into a hyperspace inhibitor.
-* Kamikaze damage adjusted on some units to prevent exploits, and resolve typos.
-* Lowered death/scuttle blast range on frigates, motherships, carriers, shipyards, and battle cruisers (so fighters and corvettes can better survive capital ship battles).
+* Damaged resource collectors latched onto RU drop-offs now heal 2.5 times faster (so they don't clog up resource drop-offs for so long).
+* Fixed several issues that made it hard for some ships to kill probes
 * High unit caps: Destroyers 9->7, Missile Destroyers 4->3, Cruisers 4->3. Huge unit caps: Destroyers 14->11.
 * Note: the base research times below get faster with each research ship/module.
 
@@ -129,6 +135,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
  
 ### Hiigaran
 * Hiigaran is largely the same as in Homeworld 2 Classic (hw2c), but with several improvements and many tweaks for better balance vs hw1 races. The biggest difference from hw2c is single tiered upgrades to balance against Homeworld 1 races that do not have upgrades (as implimented in the 2.0 patch).
+* Hyperspace time reduced from 9.5 to 7 seconds for all non-production ships to add some race flavor.
 
 #### Scouts
 * Speed 512->480 (All scouts are now slower to make scouting harder)
@@ -183,11 +190,6 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
 
-#### Torpedo Frigates
-* Weapon:
-    * Damage vs fighters/probes 0.03->0.06
-    * Damage vs resourcing 1.0->1.15 (only helps vs upgraded hw2 collectors) 
-
 #### Flak Frigates
 * Speed Upgrade:
     * Cost 600->400
@@ -197,6 +199,15 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Time 75->40
 * Build Time 50->45
 * Weapon Damage vs hw1 fighters .28->.46
+
+#### Torpedo Frigates
+* Weapon:
+    * Damage vs fighters/probes 0.03->0.06
+    * Damage vs resourcing 1.0->1.15 (only helps vs upgraded hw2 collectors) 
+
+#### Ion Cannon Frigates
+* Weapon:
+    * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Marine Frigates
 * Speed 230->270
@@ -244,7 +255,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 
 #### Destroyers
 * Armor 80k->90k (closer to hw2c when upgraded)
-* Regen Time 1074->750
+* Armor Regeneration Time 1074->750
 
 #### Battle Cruisers
 * Armor 170k->192k
@@ -456,8 +467,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 #### Battlecruiser
 * Armor 170k->192k
 * Trinity Cannon Weapon
-    * Range 5500->5050 (Being on the nose of the ship, the trinity cannon now has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
+    * Range 5500->5050 (All cruiser ranges were reduced. However being on the nose of the ship, the trinity cannon now has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
     * Damage vs capitalships 1.26->1.1 (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c.)
+    * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 * Missile Launcher Weapon:
     * Range 6000->5500
 
@@ -613,7 +625,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Cost 130->120
 * Build Time 15->10
 * Cloak ability now lasts indefinitely (same as hw1c)
-* Now repair themselves quickly when not taking damage
+* Now repair themselves in 60 seconds when idle and not taking damage
 * Weapon:
     * Damage vs corvettes 0.6->0.8
 
@@ -724,7 +736,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
     * Damage vs corvettes 1.25->0.5
     * Accuracy vs corvettes 0.55->0.7
 
-#### Ion Frigates
+#### Ion Cannon Frigates
 * Ion Cannon Research:
     * Cost 1000->1700
     * Time 50->120 (same timing, considering the capital ship chassis research buff)
@@ -732,6 +744,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Build Time 73->60
 * Weapon:
     * Damage vs frigates 1.12->0.85 (they still beat hw2 ion frigates with 10% Hull left. This was a big oversight in balance testing the 2.0 patch.)
+    * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Kushan Drone Frigates
 * Drone Tech Research:
@@ -828,8 +841,9 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Armor 6000->5000
 * Resource capacity 500->250
 * Kamikaze multiplier 0.2->0.6
+* Minimum hyperspace cost 300->350
 
-#### Resource Controller
+#### Resource Controllers
 * Speed 100->190
 * Armor -10% (removed a hidden multiplier)
 * Armor 25k->30k
@@ -851,7 +865,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Speed 350->450
 * Hull 800->400
 
-#### Sensors Array
+#### Sensors Arrays
 * Sensor Array Research:
     * Cost 350->500
 * Cost 700->500
@@ -865,6 +879,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Now uses frigate armour (this is generally a armor buff, as most ships deal reduced damage to frigates)
 * Ability range 3750->3000
 * Ability duration 45->25 (they are extremely effective with ballistics)
+* Ability update interval 1.9->1 (so ships are caught faster)
 * Can now be repaired (like in hw1c)
 
 #### Cloak Generators

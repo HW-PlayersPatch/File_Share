@@ -31,4 +31,4 @@
 * The RU available on each mission has been tweaked to account for the Kushan research cost changes below.
 
 ## Balance
-* After the big Homeworld 3 announcement, we decided to release build 10 early. Some balance changes are experimental and may be reverted in the next build. A detailed balance change list will be included with build 11.
+* After the big Homeworld 3 announcement, we decided to release build 10 early. Some balance changes are experimental and may be altered in the next build. A detailed balance change list will be included with build 11.
