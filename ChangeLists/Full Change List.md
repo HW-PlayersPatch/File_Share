@@ -115,7 +115,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted. Ships now perform like they are supposed to using balistic/simulation combat features (for example idle ships are generally a lot easier to hit than moving ships).
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 * Balanced dock repair times for fighters and corvettes. Addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair slower, closer to their hw2c rate. hw1 corvettes repair 4.5x faster than before, to balance vs hw2.
-* Decreased the sensors range of all scouts and probes by about 20%, 30% for Kushan/Taiidan scouts. Scouting is easy in HWR compared to other RTS games, so this is intended to make information harder to obtain.
+* Decreased the sensors range of all scouts and probes by about 20%, and 30% for the cheaper Kushan/Taiidan scouts. Scouting is easy in HWR compared to other RTS games, so this is intended to make information harder to obtain.
 * Fixed several issues that made it hard for some ships to kill probes
 * Tweaked rotational speeds on some units, for example to aid in positioning motherships around asteriod patches.
 * Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in hw1c)
