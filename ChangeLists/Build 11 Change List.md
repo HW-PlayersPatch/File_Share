@@ -7,7 +7,7 @@
 * The Taiidan Defense Fighter no longer shoots down missiles from allies.
 * Fixed Hiigaran Pulsar Corvette weapon sound effects (they were missing).
 * Vaygr Battlecruiser Trinity Cannon now has enhanced sound effects based on the original intended sound from hw2c.
-* Drone frigates with launched drones no longer make such a loud death explosion.
+* Kushan Drone Frigates no longer make such a loud explosion when all their drones die.
 
 ## Campaign Improvements
 ### Homeworld 1
@@ -18,7 +18,7 @@
 
 
 ## Balance
-* Following the Homeworld 3 announcement, we decided to release build 10 early as a 'work in progress'. Some balance changes were experimental and were further refined in build 11. The list below covers all balance changes made in build 10 and 11.
+* Following the Homeworld 3 announcement, we decided to release build 10 early as a 'work in progress'. Some balance changes were experimental and were further refined in build 11. The list below covers all balance changes made in build 10 (August 31, 2019) and build 11 (September 28, 2019). This amounts to a years worth of balance changes since build 9 was released on Aug 17, 2018.
 * Decreased the sensors range of all scouts and probes by about 20%, and 30% for the cheaper Kushan/Taiidan scouts. Scouting is easy in HWR compared to other RTS games, so this is intended to make information harder to obtain.
 * Lowered death/scuttle blast range on frigates, motherships, and shipyards (so fighters and corvettes can better survive capital ship battles).
 * Damaged resource collectors latched onto RU drop-offs now heal 2.5 times faster (so they don't clog up resource drop-offs for so long).
