@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 1-11 Full Change List | September ??, 2019
+# Build 1-11 Full Change List | September 28, 2019
 
 ## Summary
 The community created Homeworld Remastered [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many bugs, exploits, and balance issues from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances singleplayer and multiplayer while respecting the look, sound, and feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered. It also features additional gameplay options including a campaign difficulty adjuster, UI/camera adjusters, dual command mode, observer mode, vast unit caps, and much more. All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
@@ -61,6 +61,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * When a private message is sent, everyone in the lobby hears the audio alert even when they are not the recipient. As a workaround the audio alert has been removed, as the chat window already visually flashes for the recipient.
 * Fixed Hiigaran Pulsar Corvette weapon sound effects (they were missing).
 * Fixed Hiigaran Gunship weapon sound effects (they were playing pulsar sounds).
+* Vaygr Battlecruiser Trinity Cannon now has enhanced sound effects based on the original intended sound from hw2c.
 * ‘Platform Complete’ audio is now played for Vaygr Gun Platforms and Missile Platforms.
 * Drone frigates with launched drones no longer make such a loud death explosion.
 * 'Resource Controller Complete' audio is now played for Taiidan Resource Controllers
@@ -86,6 +87,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
 #### Mission 3
 * Increased the cryo tray health to be closer to hw1c gameplay. (Gearbox increased the health on most Kushan/Taiidan ships to balance vs Hiigaran/Vaygr upgrades, but forgot some campaign only ships).
+* After salvaging the first frigate for RU, the remaining frigates are now properly captured like in hw1c.
 #### Mission 4
 * Bentusi Trade research costs have been increased to align with normal research costs. However if your in a bind, you may be offered a discount.
 * The objective is now complete as soon as the carrier is killed, rather than after the explosion animation finishes (to prevent a timing error).
@@ -148,9 +150,10 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 
 #### Interceptors
 * Weapon:
-    * Damage vs corvettes 0.8->0.52
+    * Damage vs corvettes 0.8->0.29
     * Damage vs frigates/capitals 1.0->0.4
     * Damage vs platforms 0.7->0.4
+    * Damage vs subsystems 1.0->1.4
 
 #### Bombers
 * Speed Upgrade:
@@ -165,14 +168,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Accuracy vs corvettes 0.8->0.2
 
 #### Gunship Corvettes
-* Armor Upgrade:
-    * Cost 800->600
-    * Time 40->35
-* Speed 232->254
 * Weapon:
-    * Velocity 1500->1800
-    * Range 1600->2200
-    * Damage vs fighters 1.5->1.7
+    * Velocity 1500->1600
     * Damage vs frigates 0.8->0.7
     * Damage vs resourcing 0.8->0.6
 
@@ -186,19 +183,11 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 
 #### Minelayer Corvettes
 * Cost 800->400 (to balance vs hw1)
-* Speed 233->291
-* Armor 900->1500
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
 
 #### Flak Frigates
-* Speed Upgrade:
-    * Cost 600->400
-    * Time 50->25
-* Armor Upgrade:
-    * Cost 1000->600
-    * Time 75->40
-* Build Time 50->45
+* Armor 18000->18500
 * Weapon Damage vs hw1 fighters .28->.46
 
 #### Torpedo Frigates
@@ -211,13 +200,11 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Marine Frigates
-* Speed 230->270
-* Armor 20k->23.5k
+* Armor 20k->22k
 
 #### Defense Field Frigates
-* Build Time 60->55
 * Speed 177->220
-* Armor 20k->25k (since this ship can't be upgraded)
+* Armor 20k->22k (since this ship can't be upgraded)
 
 #### Motherships
 * Speed Upgrade:
@@ -225,9 +212,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Armor Upgrade:
     * Cost 1000->800
 * Weapon:
-    * Damage vs fighters 3.0->1.8
+    * Damage vs fighters 3.0->2.25
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Carriers
 * Speed Upgrade:
@@ -237,9 +223,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Build Speed Upgrade:
     * Cost 1500->2250
 * Weapon:
-    * Damage vs fighters 3.0->1.8
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Shipyards
 * Speed Upgrade:
@@ -249,9 +233,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Time 60->30
 * Build Time 85->75 (to match hw2c)
 * Weapon:
-    * Damage vs fighters 3.0->1.8
+    * Damage vs fighters 3.0->1.0
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
     * Addressed a gun alignment bug. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes, fighters, and corvettes.
 
 #### Destroyers
@@ -269,12 +252,13 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
 * Weapon:
-    * Damage 40->60
     * Damage vs fighters 0.5->1.0 (A typo gave them less damage than intended)
     * Damage vs resourcing 0.7->0.4
     * Accuracy vs frigates/capitals/resourcing 0.4->0.8
 
 #### Ion Platforms
+* Health Upgrade:
+    * Time 120->100
 * Speed 100->125 (to match hw2c)
 * Weapon:
     * Damage 600->500
@@ -284,33 +268,27 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Armor Upgrade:
     * Cost 800->1000
     * Value 2.0->1.6
-* Repair Research Cost 750->200
-* Repair Research Time 40->20
+* Repair Research:
+    * Cost 750->350
+    * Time 40->25
 * Kamikaze multiplier 0.2->0.6
 
 #### Resource Controllers
-* Armor 18k->16k
 * Weapon:
-    * Damage vs fighters 3.0->1.0
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Probes
-* Cost 70->120
+* Cost 70->150
 * Build Time 10->15
 * Armor 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 #### Proximity Sensors
-* Proximity Sensor Research:
-    * Time 35->45
+* Cost 150->250
 * Build Time 15->20
 * Armor 800->400
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research:
-    * Time 45->30
-* Cost 600->500
-* Build Time 20->25
+* Build Time 20->30
 * Armor 800->400
 * Ability to reduce enemy sensor range is a bit stronger now.
 
@@ -324,7 +302,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Now affect the ship they are on. (this is intended to balance two Hiigaran cruisers with FCTs vs two Vaygr cruisers with command corvettes)
 
 #### Proximity Sensor Modules
-* Cost 250->375
+* Cost 250->500
 * Build Time 35->45
 
 #### Hyperspace Sensor Modules
@@ -348,23 +326,24 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Damage corvettes vs 0.8->0.29
     * Damage vs frigs and capital-ships 1.0->0.4
     * Damage vs platforms 0.7->0.4
+    * Damage vs subsystems 1.0->1.4
 
 #### Bombers
 * Speed 279->300
 * Weapons:
     * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
     * Damage vs corvettes 1.0->0.7
-    * Damage vs frigates 1.05->1.2
+    * Damage vs frigates 1.05->1.1
     * Damage vs resourcing 0.2->0.17
     * Accuracy vs corvettes 0.8->0.2
 
 #### Lance Fighters
 * Small/High unit caps increased to match bombers
-* Speed 279->314
+* Speed 279->300
 * Armor 90->110
 * Weapon: (after the 666 bug was fixed, this weapon was overperforming vs everything)
     * Damage vs fighters 1.0->0.3
-    * Damage vs corvettes 1.0->0.65
+    * Damage vs corvettes 1.0->0.61
     * Damage vs frigates/capitals 1.0->0.4
     * Damage vs platforms 1.0->0.6
     * Damage vs resourcing 0.6->0.5
@@ -381,56 +360,37 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Fixed a bug where they would deal zero damage to probes
 
 #### Laser Corvettes
-* Cost 650->625
-* Armor 480->510
 * Kamikaze multiplier 0.7->0.6 (To prevent exploits)
 * Fixed a bug with the attack script where laser corvettes would start doing evasive maneuvers and rarely attacking. This bug fix makes laser corvettes much more effective.
 * Laser Corvettes were the only corvettes negatively impacted by the 666 Bug. They are now performing as intended: the best anti-frigate and anti-capital ship corvette in the game.
 * Weapon:
-    * Damage vs capitalships 0.51->0.59
     * Damage vs resourcing 0.24->0.12
 
 #### Command Corvettes
-* Command Systems Research:
-    * Time 60->45
-* Cost 400->750
+* Cost 400->600
 * Build Time 30->45 (slows down the replenishment of these powerful units)
-* Armor 900->1000
 * Ability damage/accuracy effect range 4500->2200 (forces these ships to be on the front line so they can be countered)
 
 #### Minelayer Corvettes
 * Cost 800->400 (to balance vs hw1)
-* Armor 900->1000
 * Aggressive stance damage +32%->+10%
 * Mine Duration 200->60 (to avoid stalemates)
 
-#### Frigates
-* Anti-Corvette Missile Weapon:
-    * Damage 109->25 (All Vaygr Frigates are not supposed to be good vs corvettes)
-    * Damage vs resourcing 1.0->0.6
-
 #### Assault Frigate
 * Assault Research:
-    * Cost 500->550
-    * Time 40->35
-* Armor 17k->18k
+    * Cost 500->650 (like hw2c)
+    * Time 40->45 (like hw2c)
+* Armor 17000->18500
 * Gun Weapons:
     * Damage vs fighters 0.27->0.5
     * Damage vs resourcing 1.0->0.6
-    * Accuracy vs corvettes 0.14->0.35
 
 #### Heavy Missile Frigates
-* Build Time 45->50
-* Armor 18.5k->18k
 * Weapon:
     * Range 4000->3750 (closer to hw2c's 3500)
 
 #### Infiltrator Frigates
-* Infiltration Research:
-    * Cost 1000->800
-    * Time 60->50
-* Speed 230->240
-* Armor 20k->21k
+* Armor 20k->22k
 
 #### Capital Ships
 * Armor Upgrade:
@@ -442,47 +402,40 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 
 #### Flagships
 * Weapon:
-    * Damage vs fighters 3.0->1.8
+    * Damage vs fighters 3.0->2.25
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Carriers
 * Build Speed Upgrade Cost 1500->2500
 * Cost 1900->2100
 * Weapon:
-    * Damage vs fighters 3.0->1.8
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Shipyards
 * Weapon:
-    * Damage vs fighters 3.0->1.8
+    * Damage vs fighters 3.0->1.0
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Destroyers
-* Destroyer Research:
-    * Cost 2000->1750
 * Armor 80k->90k (closer to hw2c when upgraded)
 
 #### Battlecruiser
 * Armor 170k->192k
+* Missile Launcher Weapon:
+    * Range 6000->5500 (All race cruiser ranges were reduced)
 * Trinity Cannon Weapon
-    * Range 5500->5050 (All cruiser ranges were reduced. However being on the nose of the ship, the trinity cannon now has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
+    * Range 5500->5050 (Being on the nose of the ship, the trinity cannon now has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
     * Damage vs capitalships 1.26->1.1 (with no micro, makes 1 hiigaran cruiser vs 1 vaygr cruiser consistently come out even like in hw2c.)
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
-* Missile Launcher Weapon:
-    * Range 6000->5500
 
 #### Platforms
 * Armor Upgrade:
-    * Cost 1500->1400
-    * Time 150->135
+    * Cost 1500->1600
+    * Time 150->140
 
 #### Gun Platforms
 * Speed 100->125 (to match hw2c)
 * Weapon:
-    * Damage 40->60
     * Damage vs fighters 0.5->1.0 (A typo gave them less damage than intended)
     * Damage vs resourcing 0.7->0.4
     * Accuracy vs frigates/capitals/resourcing 0.4->0.8
@@ -493,13 +446,9 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Fire Delay 11->15 (same as hw2c)
 
 #### Hyperspace Platforms
-* Hyperspace Research:
-    * Cost 750->500
-    * Time 50->45
-* Cost 375->325
-* Build Time 45->20 (these took too long to setup)
+* Build Time 45->25 (these took too long to setup)
 * Speed 650->600 (to match hw2c as they should not be faster than a probe)
-* Armor 18500->27750
+* Armor 18500->25900
 * The gate is now able to hyperspace jump on its own.
 * All probes can now travel through hyperspace gates.
 
@@ -510,33 +459,27 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 
 #### Resource Collectors
 * Repair Research:
-    * Cost 500->200
+    * Cost 500->250
     * Time 30->20
 * Speed 280->276
 * Kamikaze multiplier 0.2->0.6
 * Resource capacity 208->200 -4% (Now matches hw2c and Hiigaran. Vaygr still start with one extra collector to make up for their Flagship's long collector drop off route. Harvesting for all four races is now balanced.)
 
 #### Resource Controllers
-* Armor 18k->16k
 * Weapon:
-    * Damage vs fighters 3.0->1.0
     * Damage vs resourcing 1.35->0.75
-    * Accuracy vs hw1 fighters 0.17->0.34
 
 #### Probes
-* Cost 70->120
+* Cost 70->150
 * Build Time 10->15
 * Armor 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 #### Proximity Sensors
-* Proximity Research:
-    * Time 40->45
+* Cost 150->250
 * Build Time 15->20
 * Armor 800->400
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research:
-    * Time 60->50
 * Build Time 20->25
 * Armor 800->400
 * Ability to reduce enemy sensor range is a bit stronger now.
@@ -567,7 +510,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Many changes below are to make ships relatively similar to hw1c, while also providing for better balance vs hw2 races.
 
 #### Scouts
-* Cost 70->100
+* Cost 70->90
 * Speed 490->460 (All scouts are now slower to make scouting harder)
 * Speed burst ability multiplier 1.25->1.10
 * Speed burst ability duration 50->30
@@ -588,15 +531,15 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Time 50->30
 * Build Time 7->9
 * Weapon:
-    * Damage vs corvettes 0.8->0.36
+    * Damage vs corvettes 0.8->0.33
     * Damage vs frigates/capitals 1.0->0.5
     * Damage vs platforms 0.7->0.5
+    * Damage vs subsystems 1.0->1.4
     * Kushan and Taiidan Interceptors are now balanced, previously Taiidan would always win. (Not intended)
 
 #### Bombers
 * Cost 120->130
 * Speed 390->420
-* Armor 135->125
 * Weapon:
     * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
     * Damage vs fighters/corvettes 1.0->0.7
@@ -604,9 +547,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Damage vs capitals 1.1->1.5
     * Damage vs platforms 0.7->0.85
     * Damage vs resourcing 0.2->0.23
-    * Damage vs subsystems 2.5->2.3
+    * Damage vs subsystems 2.5->2.0
     * Accuracy vs corvettes 0.8->0.2
-    * Accuracy vs frigates 0.6->0.8
 
 #### Defenders
 * Defender Sub-Systems Research:
@@ -619,12 +561,10 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Weapon:
     * Velocity 1200->1750
 
-
 #### Kushan Cloaked Fighters
 * Cloaked Fighter Research:
     * Cost 500->1000
-* Cost 130->120
-* Build Time 15->10
+* Build Time 15->12
 * Cloak ability now lasts indefinitely (same as hw1c)
 * Now repair themselves in 60 seconds when idle and not taking damage
 * Weapon:
@@ -633,7 +573,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 #### Taiidan Defense Fighters
 * Defense Fighter Research:
     * Cost 500->1000
-* Built Time 18->15
+* Built Time 18->12
 * Armor +20% (removed a hidden multiplier)
 * Armor 135->300
 * Attack style is now closer to hw1c. Their laser weapon has been adjusted to be more consistent, and it now prioritizes mines over missiles.
@@ -675,7 +615,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * No longer prioritize attacking fighters (since they aren't very good vs fighters)
 * Weapon:
     * Damage vs hw2 fighters 1.0->0.5
-    * Damage vs corvettes 0.55->0.6
+    * Damage vs corvettes 0.55->0.5
     * Damage vs frigates 1.0->1.1
     * Damage vs resourcing 0.85->0.4
     * Accuracy vs resourcing 0.5->0.6
@@ -689,10 +629,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Speed 275->320
 * Armor 1100->1400
 * Weapon
-    * Damage 9->12
     * Velocity 1500->1700
-    * Range 1600->2000
-    * Damage vs fighters 1.3->0.8
+    * Damage vs fighters 1.3->0.88
     * Damage vs corvettes 1.0->0.85
     * Accuracy vs fighters 0.9->0.75
 
@@ -702,7 +640,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
     * Time 70->100
 * Cost 275->325
 * Build Time 25->35
-* Speed 246->280
+* Speed 246->255
 * Armor -20% (removed a hidden multiplier)
 * Armor 900->1800
 * Aggressive stance damage +32%->+10%
@@ -712,8 +650,8 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Capital Ship Drive Research:
     * Cost 800->1000
     * Time 100->75
-* Cost 800->700
-* Build Time 85->60
+* Cost 800->600
+* Build Time 85->65
 * Armor 26k->21k
 * Healing beam arc increased
 
@@ -727,13 +665,11 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Rebalanced weapons to be more consistent vs fighters and corvettes, by increasing accuracy and decreasing damage.
 * For Taiidan, fixed a gun alignment bug which caused 2 of their 4 guns to always miss small targets.
 * Gun Weapons:
-    * Velocity 1500->1800
     * Damage vs fighters 0.45->0.1
     * Damage vs corvettes 1.1->0.2
     * Damage vs resourcing 0.8->0.6
-    * Accuracy vs fighters 0.15->0.72
+    * Accuracy vs fighters 0.15->0.9
 * Plasma Bomb Weapon:
-    * Velocity 1750->3500
     * Damage vs corvettes 1.25->0.5
     * Accuracy vs corvettes 0.55->0.7
 
@@ -741,7 +677,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Ion Cannon Research:
     * Cost 1000->1700
     * Time 50->120 (same timing, considering the capital ship chassis research buff)
-* Cost 900->750
+* Cost 900->800
 * Build Time 73->60
 * Weapon:
     * Damage vs frigates 1.12->0.85 (they still beat hw2 ion frigates with 10% Hull left. This was a big oversight in balance testing the 2.0 patch.)
@@ -750,26 +686,24 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 #### Kushan Drone Frigates
 * Drone Tech Research:
     * Time 40->80
-* Cost 900->700
-* Build Time 77->50
-* Speed 166->222
+* Build Time 77->70
+* Speed 166->206
 * Armor 25500->27500
 * Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c).
 * Drones now attack properly while the frigate is moving.
 * Weapon:
-    * Damage 15->10
-    * Velocity 1700->2500
-    * Range 2660->3000
-    * Fire Delay 0.3->0.2
-    * Damage vs fighters 1.0->0.25
-    * Damage vs corvettes 1.0->0.1
+    * Damage 15->50
+    * Fire Delay 0.3->1.0 (Increased damage and reduced fire rate to improve the game's performance when these units are on the field)
+    * Velocity 1700->2100
+    * Damage vs fighters 1.0->0.15
+    * Damage vs corvettes 1.0->0.07
     * Damage vs frigates 0.7->0.2
     * Damage vs capitals 0.88->0.25
-    * Damage vs resourcing 0.47->0.3
-    * Accuracy vs fighters 0.7->0.425
-    * Accuracy vs corvettes 0.25->0.5
-    * Accuracy vs frigates 0.55->0.95
-    * Accuracy vs capitals 0.55->1.0
+    * Damage vs platforms 1.0->0.2
+    * Damage vs resourcing 0.47->0.25
+    * Accuracy vs fighters 0.7->0.9
+    * Accuracy vs corvettes 0.25->0.75
+    * Accuracy vs frigates/capitals 0.55->0.9
 
 #### Taiidan Field Frigates
 * Defense Field Research:
@@ -782,7 +716,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Armor -15% (removed a hidden multiplier)
 * Multiplayer Only: Armor 280k->420k (to match an upgraded Hiigaran Mothership)
 * Weapon:
-    * Damage vs fighters 3.0->2.25
+    * Damage vs fighters 3.0->3.75
     * Can now target any ship (previously couldn't target some ships)
 
 #### Carriers
@@ -793,38 +727,36 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Build Time 210->130 (it was a huge blow to lose a carrier, since they took so long to build)
 * Armor 105k->120k
 * Weapon:
-    * Damage vs fighters 3.0->2.25
     * Can now target any ship (previously couldn't target some ships)
 
 #### Missile Destroyers
 * Now count againt the destroyer unit cap like hw1c.
 * Guided Missile Research:
-    * Cost 1400->3000
-    * Time 60->100
+    * Cost 1400->3500
+    * Time 60->120
 * Cost 2000->2500
 * Speed 130->145
-* Armor 65k->75k
+* Armor 65k->106k
 * Weapon:
     * Range 4500->4000
-    * Damage vs fighters 0.576->0.3
+    * Damage vs fighters 0.576->0.58
     * Damage vs corvettes 1.25->0.8
 * Missile Volley:
     * Range 4500->4000
     * Fire Delay 30->50
-    * Damage vs fighters 0.576->0.75
-    * Damage vs frigates 0.98->2.0
-    * Damage vs capitals 1.0->3.0
+    * Damage vs fighters 0.576->0.72
+    * Damage vs frigates/capitals 1.0->2.0
 
 #### Destroyers
 * Super Heavy Chassis Research:
-    * Cost 1900->3000
+    * Cost 1900->4000
     * Time 75->140
 * Cost 1800->2250 (to balance vs hw2 destroyer ship and upgrade costs)
 * Build Time 160->145 (to balance vs hw2)
 * Armor 99k->112k
 * Weapon:
     * Damage vs fighters 1.0->0.5
-    * Damage vs corvettes 1.0->0.6
+    * Damage vs corvettes 1.0->0.5
 
 #### Heavy Cruisers
 * Heavy Gun Research:
@@ -855,22 +787,23 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Taiidan Armor 30k->45k (to match Kushan Armor and fix a mistake from the 2.1 patch)
 
 #### Probes
-* Cost 70->120
+* Cost 70->150
 * Hull 800->400 (its now half way between hw1c and hw2c, as some ships were taking too long just to kill a probe.)
 
 #### Proximity Sensors
 * Proximity Sensor Research:
-    * Cost 250->600
-    * Time 40->45
+    * Cost 250->500
+* Cost 150->250
 * Build Time 6->20
 * Speed 350->450
 * Hull 800->400
+* Can now guard ships (like hw1c)
 
 #### Sensors Arrays
 * Sensor Array Research:
-    * Cost 350->500
+    * Time 80->50
 * Cost 700->500
-* Build Time 70->60
+* Build Time 70->50
 * Speed 90->175
 
 #### Gravity Wells
@@ -887,7 +820,7 @@ The community created Homeworld Remastered [2.3 Players Patch](https://forums.ge
 * Cloak Generator Research:
     * Cost 800->500
     * Time 100->50
-* Cost 800->750
+* Cost 800->600
 * Speed 114->206
 * Armor +20% (removed a hidden multiplier)
 * Ability range 1000->2000

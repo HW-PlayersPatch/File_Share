@@ -1,6 +1,6 @@
 Note: All proposed changes are suggestions/ideas, until deemed final.
 
-# Build 11 Change List
+# WIP Change List
 
 ## Gameplay Options and Features
 

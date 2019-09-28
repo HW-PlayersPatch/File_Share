@@ -1,16 +1,21 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 11 Change List | September ??, 2019
+# Build 11 Change List | September 28, 2019
 
 ## HWR Bugs Fixes and Improvements
 * When salvage corvettes in a formation are given multiple different salvage targets, they often crash the game. To prevent this crash, salvage corvettes will no longer be able to join formations/strikegroups.
 * Ships have always held their formation in aggressive stance, but now they also hold their formation in neutral stance like hw1c.
 * The Taiidan Defense Fighter no longer shoots down missiles from allies.
 * Fixed Hiigaran Pulsar Corvette weapon sound effects (they were missing).
+* Vaygr Battlecruiser Trinity Cannon now has enhanced sound effects based on the original intended sound from hw2c.
 * Drone frigates with launched drones no longer make such a loud death explosion.
 
 ## Campaign Improvements
 ### Homeworld 1
 * Kadeshi ships now have red hyperspace windows like hw1c.
+#### Mission 3
+* After salvaging the first frigate for RU, the remaining frigates are now properly captured like in hw1c.
+
+
 
 ## Balance
 * Following the Homeworld 3 announcement, we decided to release build 10 early as a 'work in progress'. Some balance changes were experimental and were further refined in build 11. The list below covers all balance changes made in build 10 and 11.
@@ -32,44 +37,47 @@
     * Accuracy vs corvettes 0.15->1.0
     * Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
+#### Interceptors
+* Weapon:
+    * Damage vs corvettes 0.26->0.29
+
 #### Bombers
 * Speed 279->300
 * Weapon:
    * Projectile Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+* Unupgraded Weapon:
+   * These changes were made on the upgraded weapon back in v2.205, but were missed on the unupgraded weapon.
+   * Damage vs corvettes 1.0->0.7
+   * Damage vs frigates 1.0->1.2
+   * Damage vs resourcing 0.2->0.17
+   * Accuracy vs corvettes 0.8->0.2
 
-#### Gunships
-* Armor Upgrade:
-   * Cost 800->600
-   * Time 40->35
-* Speed 232->254
+#### Gunship Corvettes
+* Weapon:
+    * Velocity 1500->1600
 
 #### Minlayer Corvettes
-* Speed 233->291
-* Armor 900->1500
 * Mine Duration 200->60 (to avoid stalemates)
 
 #### Flak Frigates
-* Flaks are quite expensive to upgrade and use, they shouldnt be so punishing to the player just to use.
-* Speed Upgrade:
-   * Cost 600->400
-   * Time 50->25
-* Armor Upgrade:
-   * Cost 1000->600
-   * Time 75->40
-* Build Time 50->45
+* Armor 18000->18500 (to match ions)
 
 #### Ion Cannon Frigates
 * Weapon:
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Marine Frigates
-* Speed 230->270
-* Armor 20000->23500
+* Armor 20000->22000
 
 #### Defense Field Frigates
-* Cost 1250->1000
-* Build Time 70->55
+* Cost 1250->1000 (back to v2.1 value)
+* Build Time 70->60
 * Speed 77->220
+* Armor 25k->22k
+
+#### Motherships
+* Weapons:
+    * Damage vs fighters 3.0->2.25
 
 #### Carriers
 * Improved Manufacturing Upgrade Cost 1500->2250
@@ -78,36 +86,35 @@
 * Armor Regeneration Time 1074->750
 
 #### Battlecruisers
-* Kinetic Weapons Range 5000->4500
-* Ion Weapons Range 6000->5500
+* Kinetic Weapons:
+   * Range 5000->4500
+* Ion Weapons:
+   * Range 6000->5500
+
+#### Ion Platforms
+* Armor Upgrade Time 120->100
 
 #### Resource Collectors
 * Armor Upgrade Cost 800->1000
 * Repair Research:
-   * Cost 750->200
-   * Time 40->20
-
-#### Resource Controllers
-* Armor 18000->16000
+   * Cost 750->350
+   * Time 40->25
 
 #### Probes
-* Cost 100->120
+* Cost 100->150
 
 #### Proximity Sensors
-* Proximity Research Time 35->45
+* Cost 150->250
 * Build Time 15->20
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research Time 45->30
-* Cost 600->500
-* Build Time 30->25
 * Ability to reduce enemy sensor range is a bit stronger now.
 
 #### Fire Control Modules
 * Now affect the ship they are on. (this is intended to balance two Hiigaran cruisers with FCTs vs two Vaygr cruisers with command corvettes)
 
 #### Proximity Sensor Modules
-* Cost 250->375
+* Cost 250->500
 * Build Time 35->45
 
 #### Hyperspace Sensor Modules
@@ -123,44 +130,46 @@
 * EMP Weapon:
     * Kushan and Taiidan fighters and corvettes can now be EMP'd with just one squad of scouts, rather than two squads like before.
 
+#### Assault Craft
+* Weapon:
+    * Damage corvettes vs 0.26->0.29
+
 #### Bombers
 * Speed 279->300
+* Weapons:
+    * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+* Unupgraded Weapon:
+   * These changes were made on the upgraded weapon back in v2.205, but were missed on the unupgraded weapon.
+   * Damage vs corvettes 1.0->0.7
+   * Damage vs frigates 1.05->1.1
+   * Damage vs resourcing 0.2->0.17
+   * Accuracy vs corvettes 0.8->0.2
 
 #### Lance Fighters
-* Speed 279->314
+* Weapon: (after the 666 bug was fixed, this weapon was overperforming vs everything)
+    * Damage vs corvettes 0.55->0.61
+
+#### Missile Corvettes
+* Weapon:
+   * Now checks line of fire
+
+#### Lance Fighters
+* Speed 279->300
 * Armor 90->110
 * Weapon:
    * Penetration vs subsystems 0.5->1.0 (to match v2.1, this was a typo from an earlier build)
 
-#### Laser Corvettes
-* Cost 650->625
-* Armor 480->510
-
 #### Command Corvettes
-* Command Corvette Reseach Time 60->45
-* Cost 400->750
-* Armor 900->1000
+* Cost 400->600
 
 #### Minelayer Corvettes
-* Armor 900->1000
 * Mine Duration 200->60 (to avoid stalemates)
 
 #### Assault Frigates
-* Assault Frigate Research:
-   * Cost 650->550
-   * Time 45->35
-* Armor 17000->18000
-
-#### Heavy Missile Frigates
-* Build Time 45->50
-* Armor 18500->18000
+* Armor 17000->18500
 
 #### Infiltrator Frigates
-* Infiltrator Frigate Research:
-   * Cost 1000->800
-   * Time 60->50
-* Speed 230->240
-* Armor 20000->21000
+* Armor 20k->22k
 
 #### Capitals
 * Armor Upgrade Cost 4000->3500
@@ -168,25 +177,25 @@
 #### Carriers
 * Improved Manufacturing Upgrade Cost 1500->2500
 
-#### Destroyers
-* Destroyer Technology Cost 2000->1750
+#### Motherships
+* Weapons:
+    * Damage vs fighters 3.0->2.25
 
 #### Battlecruiser
-* Trinity Cannon Weapon:
+* Missile Launcher Weapon:
+    * Range 6000->5500 (All race cruiser ranges were reduced)
+* Trinity Cannon Weapon
+    * Range 5550->5050 (Being on the nose of the ship, the trinity cannon has 50 more effective range than all other cruiser weapons. With precise micro, vaygr can slightly out-range other cruisers and win.)
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
    
 #### Platforms
 * Armor Upgrade Research:
-   * Cost 1600->1400
-   * Time 150->135
+   * Time 150->140
 
 #### Hyperspace Gates
 * Vaygr Hyperspace Gates can now hyperspace to a destination on their own. Slightly increased the built in sensors distortion ability, that helps it hide from probes.
-* Hyperspace Gates Research:
-   * Cost 750->500
-   * Time 50->45
-* Cost 375->325
-* Armor 18500->27750
+* Build Time 20->25
+* Armor 18500->25900
 * All probes can now travel through hyperspace gates.
 
 #### Utility Research
@@ -194,24 +203,17 @@
 
 #### Resource Collectors
 * Repair Ability Research:
-   * Cost 500->200
+   * Cost 500->250
    * Time 30->20
 
-#### Resource Controllers
-* Armor 18000->16000
-
 #### Probes
-* Cost 100->120
+* Cost 100->150
 
 #### Prosimity Sensors
-* Proximity Research Time 40->45
+* Cost 150->250
 * Build Time 15->20
 
 #### Sensors Distortion Probes
-* Sensors Distortion Research:
-    * Time 60->50
-* Cost 600->500
-* Build Time 30->25
 * Ability to reduce enemy sensor range is a bit stronger now.
 
 #### Fire Control Modules
@@ -224,86 +226,168 @@
 
 
 ### Kushan and Taiidan
-* Kushan and Taiidan research costs went up too high in build 9, and have been reduced accordingly. Fighters -1100ru, Corvettes -1500ru, Frigates -1100ru, Capitals -4700ru, and Non-Combat -700 for a total of -9100ru.
+* Kushan and Taiidan research costs went up too high in build 9, and have been reduced accordingly. Fighters -1100ru, Corvettes -1500ru, Frigates -1100ru, Capitals -3200ru, and Non-Combat -800 for a total of -7700ru.
 * Non-attackable subsystem icons now appear in the UI for Kushan/Taiidan Motherships and Carriers after researching Fighter, Corvette, Frigate, and Capital Ship research.
 
-
-Need to add research times and weapons.
-
-
 #### Scouts
-* Cost 70->100
-* Speed 490->460
-* Build Time 8->10
+* Cost 70->90
+* Speed 490->460 (All scouts are now slower to make scouting harder)
 * Speed burst ability multiplier 1.25->1.10
+
+#### Interceptors
+* Fighter Drive Research:
+    * Cost 500->200
+* Fighter Chassis Research:
+    * Cost 800->300
+* Weapon:
+    * Damage vs corvettes 0.3->0.33
 
 #### Attack Bombers
 * Speed 390->420
-* Armor 135->125
+* Weapons:
+   * Velocity 1200->1800 (so they can hit subsystems on moving carriers)
+   * Damage vs subsystems 2.5->2.0
+
+#### Defenders
+* Defender Sub-Systems Research:
+    * Cost 1000->800
+* Weapon:
+    * Velocity 1200->1750
+    * Damage vs fighters 1.0->0.5
 
 #### Kushan Cloaked Fighters
-* Cost 130->120
-* Build Time 15->10
+* Cloaked Fighter Research:
+    * Cost 1100->1000
+* Build Time 15->12
 * Now repair themselves in 60 seconds when idle and not taking damage
 
+#### Taiidan Defense Fighters
+* Defense Fighter Research:
+    * Cost 1100->1000
+* Build Time 15->12
+
 #### Light Corvettes
+* Corvette Drive Research:
+    * Cost 1500->1000
 * Cost 225->215
+* Build Time 18->17
 
 #### Salvage Corvettes
+* Corvette Chassis Research:
+    * Cost 1200->700
+* Build Time 30->25
 * Armor 1000->1200
 * Can now kamikaze
 
 #### Heavy Corvettes
+* Heavy Corvette Research:
+    * Cost 600->400
 * Cost 240->230
+* Build Time 20->19
 
 #### Multigun Corvettes
+* Fast-Tracking Turret Research:
+    * Cost 800->500
 * Cost 235->225
+* Build Time 22->21
+* Weapons:
+   * Damage vs fighters 0.8->0.88
 
 #### Minelayer Corvettes
 * Cost 275->325
-* Speed 255->280
 * Mine Duration 200->60 (to avoid stalemates)
 
 #### Support Frigates
-* Cost 600->700
-* Build Time 65->60
+* Capital Ship Drive Research:
+    * Cost 1300->1000
+
+#### Assault Frigates
+* Capital Ship Chassis Research:
+    * Cost 1500->1200
 
 #### Ion Cannon Frigates
-* Cost 800->750
+* Ion Cannon Research:
+    * Cost 2000->1700
 * Weapon:
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Kushan Drone Frigates
 * Kushan Drone Frigates can now attack while they are moving. Previously the drones rarely ever fired while the frig was moving.
-* Cost 900->700
-* Build Time 70->50
-* Speed 206->222
+* Drone Tech Research:
+    * Cost 1300->1100
+* Drone Weapons:
+    * Damage 15->50
+    * Fire Delay 0.3->1.0 (Increased damage and reduced fire rate to improve the game's performance when these units are on the field)
+    * Velocity 1700->2100
+    * Damage vs fighters 1.0->0.15
+    * Damage vs corvettes 0.4->0.07
+    * Damage vs frigates 0.7->0.2
+    * Damage vs capitals 0.88->0.25
+    * Damage vs platforms 1.0->0.2
+    * Damage vs resourcing 0.47->0.25
+
+#### Taiidan Field Frigates
+* Defense Field Research:
+    * Cost 1300->1100
 
 #### Carriers
+* Super Capital Ship Drive Research:
+    * Cost 1700->1500
 * Build Time 165->130
+* Weapons:
+   * Penetration vs fighters 3.75->3.0
 
 #### Missile Destroyers
-* Armor 106000->75000
+* Research Time 100->160
+* Missile Launcher Weapon:
+   * Range 4500->4000
+   * Damage vs corvettes 1.0->0.8
+* Missile Volley Weapon:
+   * Range 4500->4000
+   * Fire Delay 30->50
+   * Damage vs frigates/capitals 1.0->2.0
+
+#### Destroyers
+* Super Heavy Chassis Research:
+    * Cost 5000->4000
+* Weapon:
+    * Damage vs fighters 1.0->0.5
+    * Damage vs corvettes 1.0->0.5
 
 #### Heavy Cruisers
+* Heavy Gun Research:
+    * Cost 9000->7000
+* Gun Weapons:
+   * Range 5500->5000
+* Ion Weapons:
+   * Range 5300->4800
 * No longer take hyperspace damage when they hit an inhibitor/GW. (like hw2 cruisers)
 
 #### Resource Collectors
 * Minimum hyperspace cost 300->350
+* Maximum hyperspace cost 800->700
 
 #### Probes
-* Cost 100->120 
+* Cost 100->150
  
 #### Proximity Sensors
+* Cost 150->250
 * Build Time 15->20
- 
+* Can now guard ships (like hw1c)
+
 #### Sensor Arrays
+* Sensor Array Research:
+    * Cost 1000->500
+    * Time 80->50
 * Cost 700->500
-* Build Time 70->60 
+* Build Time 70->50
 
 #### Gravity Well Generators
 * Cost 800->1000
 * Ability update interval 1.9->1 (so ships are caught faster)
 
 #### Cloak Generators
-* Cost 800->750
+* Cloak Generator Research:
+    * Cost 800->500
+    * Time 100->50
+* Cost 800->600
