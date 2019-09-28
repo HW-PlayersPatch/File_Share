@@ -2,7 +2,7 @@
 # Build 1-11 Full Change List | September ??, 2019
 
 ## Summary
-The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many bugs, exploits, and balance issues from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances multiplayer and singleplayer while respecting Gearbox's direction, and the feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered. All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
+The community created Homeworld Remastered [2.3 Players Patch](https://forums.gearboxsoftware.com/t/homeworld-remastered-2-3-players-patch/1639142/1) resolves many bugs, exploits, and balance issues from the 2.1 Patch. It includes the changes from Gearbox’s unfinished 2.205 Patch Preview, plus many additional improvements. It enhances singleplayer and multiplayer while respecting the look, sound, and feel of Relic's classics. Notably it fixes the 666 Formation Bug, the Cross Race Docking Bug, and is authored by the players who helped Gearbox balance Homeworld Remastered. It also features additional gameplay options including a campaign difficulty adjuster, UI/camera adjusters, dual command mode, observer mode, vast unit caps, and much more. All changes from Gearbox's 2.205 Patch Preview and the 2.3 Players Patch are listed below.
 
 ## Gameplay Options and Features
 * Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
@@ -81,6 +81,7 @@ The community created [2.3 Players Patch](https://forums.gearboxsoftware.com/t/h
 * Captured Turanic Standard Corvettes can now be repaired.
 * Captured Turanic Ion Array Frigates and Kadeshi Multi-beam Frigates can now be retired immediately.
 * Increased Turanic Ion Array Frigate speed to be relatively similar to hw1c.
+* Kadeshi ships now have red hyperspace windows like hw1c.
 * Updated research costs to match multiplayer, and research times to 1.5x slower than multiplayer (the campaign research is slower paced). These hadn't been updated since HWR v1.0. Mission resources were also adjusted to support the changes.
 * Properly balanced kushan ships vs swarmers to better reflect hw1c gameplay. Corrected swarmer behavior so they dock correctly, and don't stop attacking unexpectedly.
 #### Mission 3

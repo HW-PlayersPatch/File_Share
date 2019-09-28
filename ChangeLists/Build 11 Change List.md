@@ -9,9 +9,8 @@
 * Drone frigates with launched drones no longer make such a loud death explosion.
 
 ## Campaign Improvements
-**Homeworld 1**
-???? WHICH MISSIONS are KADESHI IN???? Then add this to Full change list too!!!
-* Kadeshi now have red hyperspace windows like hw1c
+### Homeworld 1
+* Kadeshi ships now have red hyperspace windows like hw1c.
 
 ## Balance
 * Following the Homeworld 3 announcement, we decided to release build 10 early as a 'work in progress'. Some balance changes were experimental and were further refined in build 11. The list below covers all balance changes made in build 10 and 11.
