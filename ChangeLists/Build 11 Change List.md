@@ -13,7 +13,7 @@
 ### Homeworld 1
 * Kadeshi ships now have red hyperspace windows like hw1c.
 #### Mission 3
-* After salvaging the first frigate for RU, the remaining frigates are now properly captured like in hw1c.
+* After salvaging the first frigate for research, the remaining frigates are now properly captured like in hw1c.
 
 
 
@@ -146,18 +146,15 @@
    * Accuracy vs corvettes 0.8->0.2
 
 #### Lance Fighters
+* Speed 279->300
+* Armor 90->110
 * Weapon: (after the 666 bug was fixed, this weapon was overperforming vs everything)
     * Damage vs corvettes 0.55->0.61
+    * Penetration vs subsystems 0.5->1.0 (to match v2.1, this was a typo from an earlier build)
 
 #### Missile Corvettes
 * Weapon:
    * Now checks line of fire
-
-#### Lance Fighters
-* Speed 279->300
-* Armor 90->110
-* Weapon:
-   * Penetration vs subsystems 0.5->1.0 (to match v2.1, this was a typo from an earlier build)
 
 #### Command Corvettes
 * Cost 400->600
@@ -312,7 +309,7 @@
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Kushan Drone Frigates
-* Kushan Drone Frigates can now attack while they are moving. Previously the drones rarely ever fired while the frig was moving.
+* Kushan Drone Frigates can now attack while they are moving. Previously the drones rarely ever fired while the frig was moving. The drone frigate was a 'work in progress' in build 10, and has been further improved for build 11. The drones now stay in a sphere while move-attacking and drones frigates are also now less demanding on your PC hardware.
 * Drone Tech Research:
     * Cost 1300->1100
 * Drone Weapons:
