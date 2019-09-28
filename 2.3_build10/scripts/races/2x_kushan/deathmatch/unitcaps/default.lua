@@ -1,3 +1,0 @@
---Kushan
-
-supplyShow("Utility", "Never");

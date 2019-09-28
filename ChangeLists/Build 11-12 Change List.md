@@ -392,4 +392,4 @@
 
 
 # Build 12 Change List | September 28, 2019
-* Hotfix: Reverted the Kushan Drone Frigate's drone logic to build 10 due to an error.
+* Hotfix: Reverted the Kushan Drone Frigate's drone logic due to an error.
