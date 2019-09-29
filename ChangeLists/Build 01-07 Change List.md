@@ -59,7 +59,7 @@
 # Build 5 Change List | Dec 3, 2017
 
 ## Improvements
-* The game mode now says "Homeworld Remastered v2.3" when hosting games in multiplayer.
+* The patch name is now visible when hosting games in multiplayer.
 
 
 
