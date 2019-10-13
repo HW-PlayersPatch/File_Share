@@ -388,8 +388,3 @@
     * Cost 800->500
     * Time 100->50
 * Cost 800->600
-
-
-
-# Build 12 Change List | September 28, 2019
-* Hotfix: Reverted the Kushan Drone Frigate's drone logic due to an error.
