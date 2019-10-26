@@ -1,0 +1,39 @@
+[LifeBoat]
+LODFile                             LifeBoat.lod
+pMexData                            LifeBoat\Rl0\LOD0\LifeBoat.mex
+mass                                500.0
+momentOfInertiaX                    500.0
+momentOfInertiaY                    500.0
+momentOfInertiaZ                    500.0
+maxvelocity                         450.0
+maxrot                              1.0
+maxhealth                           80000                        ; hit points
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+pitchdescend            0.5
+sinbank                 0.5
+pitchturn               0.5
+
+;NEEDS SALVAGE LIGHTS!
+
+minimumZoomDistance              	50
+
+renderlistFade     12000.0
+renderlistLimit    26000.0

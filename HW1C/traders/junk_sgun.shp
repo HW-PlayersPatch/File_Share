@@ -1,0 +1,88 @@
+[Junk_SGun]
+
+;Source Files
+;=----------=
+pMexData                            Junk_SGun\Rl0\LOD0\Junk_SGun.mex
+LODFile                             Junk_SGun.lod
+
+;Ship Physics
+;=----------=
+mass                                30.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    30.0                    ; resistance to rotation
+momentOfInertiaY                    30.0                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    30.0
+maxvelocity                         0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+buildCost                           300                        ; resource units to build
+buildTime                           60                         ; time in seconds to build
+maxhealth                           600                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+passiveAttackPenaltyExempt          TRUE
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            800.0                        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          800.0
+thruststrength[TRANS_RIGHT]         600.0
+thruststrength[TRANS_LEFT]          600.0
+thruststrength[TRANS_FORWARD]       1000.0
+thruststrength[TRANS_BACK]          400.0
+rotstrength[ROT_YAWLEFT]            400.0                        ; rotational acceleration (deg/s^2) [0.01 - 400]
+rotstrength[ROT_YAWRIGHT]           400.0
+rotstrength[ROT_PITCHUP]            400.0
+rotstrength[ROT_PITCHDOWN]          400.0
+rotstrength[ROT_ROLLRIGHT]          400.0
+rotstrength[ROT_ROLLLEFT]           400.0
+turnspeed[TURN_YAW]                 4                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               4
+turnspeed[TURN_ROLL]                4
+
+passiveRetaliateZone                9000.0        ; -ve numbers indicate to turn of passive retaliation zone feature
+
+rotateToRetaliate                   TRUE
+
+minimumZoomDistance                 45
+
+
+NUMBER_OF_SALVAGE_POINTS        1
+NUM_NEEDED_FOR_SALVAGE          1               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+
+
+NUMBER_OF_GUNS                      1
+
+GUN         0
+{
+Type                                GUN_Gimble                  ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_MediumEnergyCannon
+DamageLo                            35                            ; damage variance per shot - low
+DamageHi                            50                          ; damage variance per shot - high
+BulletLength                        18.0                        ; visual only.  Length of bullet on screen
+BulletRange                         9000.0                      ; distance bullets travel before disappearing
+BulletSpeed                         8000.0                      ; measured in m/s.
+BulletMass                          0.25                        ; mass of bullet
+FireTime                            0.18                         ; fire repeat rate (reciprocal = shots/second)
+MinAngle                            0
+MaxAngle                            50.0
+TriggerHappy                        5.0
+fireEffect                          defaultBlast.ebg
+hitEffect                           defaultBlast.ebg
+}
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000390                 ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging

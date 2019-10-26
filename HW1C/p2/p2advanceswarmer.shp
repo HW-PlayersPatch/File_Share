@@ -1,0 +1,199 @@
+[P2AdvanceSwarmer]
+
+;Source Files
+;=----------=
+LODFile                             P2AdvanceSwarmer.lod
+pMexData                            P2AdvanceSwarmer\Rl0\LOD0\P2AdvanceSwarmer.mex
+
+;Ship Physics
+;=----------=
+mass                                10.0                           ; ship mass [fighter = 1]
+momentOfInertiaX                    10.0                           ; resistance to rotation
+momentOfInertiaY                    10.0                           ; [fighter = 1]
+momentOfInertiaZ                    10.0
+maxvelocity                         1500.0                         ; [fighter = 1000]
+maxrot                              10.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Fighter
+buildCost                           25                            ; resource units to build
+buildTime                           6                             ; time in seconds to build
+maxhealth                           550                            ; hit points
+maxfuel                             4000.0
+lowfuelpoint                        0.35                          ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.015                         ; based on distance ship moves in the world
+attackfuelburnrate                  0.280
+groupSize                           10                             ; size of group ships of this type tend to form
+
+
+blastRadiusShockWave                6.0
+blastRadiusDamage                   75
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            1000.0                        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          1000.0
+thruststrength[TRANS_RIGHT]         1000.0
+thruststrength[TRANS_LEFT]          1000.0
+thruststrength[TRANS_FORWARD]       1000.0
+thruststrength[TRANS_BACK]          1000.0
+rotstrength[ROT_YAWLEFT]            200.0                        ; rotational acceleration (deg/s^2) [0.01 - 400]
+rotstrength[ROT_YAWRIGHT]           200.0
+rotstrength[ROT_PITCHUP]            200.0
+rotstrength[ROT_PITCHDOWN]          200.0
+rotstrength[ROT_ROLLRIGHT]          200.0
+rotstrength[ROT_ROLLLEFT]           200.0
+turnspeed[TURN_YAW]                 5                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               5
+turnspeed[TURN_ROLL]                5
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      4
+
+rotateToRetaliate                   TRUE
+
+GUN         0
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallEnergyCannon
+DamageLo                        14                              ; damage variance per shot - low
+DamageHi                        16                             ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        4
+BulletLength                    15.0                           ; visual only.  Length of bullet on screen
+BulletRange                     2500.0                         ; distance bullets travel before disappearing
+BulletSpeed                     3000.0                         ; measured in m/s.
+BulletMass                      0.0                            ; mass of bullet
+FireTime                        0.5                            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   0
+BurstWaitTime                   0
+TriggerHappy                    5                           ; how triggerHapppy the ship is when firing the fixed.
+}
+
+GUN         1
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallEnergyCannon
+DamageLo                        14                              ; damage variance per shot - low
+DamageHi                        16                               ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        4
+BulletLength                    15.0                            ; visual only.  Length of bullet on screen
+BulletRange                     2500.0                         ; distance bullets travel before disappearing
+BulletSpeed                     3000.0                         ; measured in m/s.
+BulletMass                      0.0                            ; mass of bullet
+FireTime                        0.5                            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   0
+BurstWaitTime                   0
+TriggerHappy                    5                           ; how triggerHapppy the ship is when firing the fixed.
+}
+
+
+GUN         2
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallEnergyCannon
+DamageLo                        14                              ; damage variance per shot - low
+DamageHi                        16                             ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        4
+BulletLength                    15.0                           ; visual only.  Length of bullet on screen
+BulletRange                     2500.0                         ; distance bullets travel before disappearing
+BulletSpeed                     3000.0                         ; measured in m/s.
+BulletMass                      0.0                            ; mass of bullet
+FireTime                        0.5                            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   0
+BurstWaitTime                   0
+TriggerHappy                    5                           ; how triggerHapppy the ship is when firing the fixed.
+}
+
+GUN         3
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallEnergyCannon
+DamageLo                        14                              ; damage variance per shot - low
+DamageHi                        16                               ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        4
+BulletLength                    15.0                            ; visual only.  Length of bullet on screen
+BulletRange                     2500.0                         ; distance bullets travel before disappearing
+BulletSpeed                     4000.0                         ; measured in m/s.
+BulletMass                      0.0                            ; mass of bullet
+FireTime                        0.5                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   0
+BurstWaitTime                   0
+TriggerHappy                    5                           ; how triggerHapppy the ship is when firing the fixed.
+}
+
+gunsFireTime                    0.15                    ; tune this value, not FireTime of individual guns
+
+
+;Ship AI
+;=-----=
+
+repositionTime                      0.6                          ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         500.0
+fullMovementFreedom                 TRUE
+
+badAI                                    FALSE                          ; normally set this to FALSE
+
+;Ship Trails
+;=---------=
+trailSegments                       10
+trailGranularity                    2
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 4, 141, 106, 87
+trailColor                          0, 9, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 4, 146, 0, 0
+trailColor                          1, 9, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 4, 51, 0, 243
+trailColor                          2, 9, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 4, 0, 84, 4
+trailColor                          3, 9, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 4, 160, 124, 0
+trailColor                          4, 9, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 4, 160, 124, 0
+trailColor                          5, 9, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 4, 121, 0, 135
+trailColor                          6, 9, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 4, 0, 105, 137
+trailColor                          7, 9, 0, 0, 0
+
+;Explosions
+;=--------=
+smallExplosion                      genericBOOM.ebg
+bigExplosion                        genericBOOM.ebg
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000650                 ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+
+;Engine trails
+;=-----------=
+trailWidth                          10.0
+trailHeight                          6.0
+trailRibbonAdjust                    0.6
+trailSpriteRadius                   20.0
+trailSpriteOffset                   -2.0
+
+minimumZoomDistance              	50

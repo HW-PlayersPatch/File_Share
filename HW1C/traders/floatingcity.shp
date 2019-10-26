@@ -1,0 +1,147 @@
+[FloatingCity]
+
+;Source Files
+;=----------=
+pMexData                            FloatingCity\Rl0\LOD0\FloatingCity.mex
+LODFile                             FloatingCity.lod
+
+;Ship Physics
+;=----------=
+mass                                100000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    100000.0                    ; resistance to rotation
+momentOfInertiaY                    1e30                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    1e30
+maxvelocity                         10000                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Mothership
+isCapitalShip                       TRUE
+buildCost                           3200                        ; resource units to build
+buildTime                           300                         ; time in seconds to build
+maxhealth                           400000                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+repairTime                          5                           ; every this many seconds
+repairDamage                        75                          ; this much damage is repaired
+
+passiveAttackPenaltyExempt          TRUE
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            1000.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          1000.0
+thruststrength[TRANS_RIGHT]         1000.0
+thruststrength[TRANS_LEFT]          1000.0
+thruststrength[TRANS_FORWARD]       1000.0
+thruststrength[TRANS_BACK]          1000.0
+rotstrength[ROT_YAWLEFT]             0.25        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.25        ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.02
+rotstrength[ROT_PITCHDOWN]           0.02
+rotstrength[ROT_ROLLRIGHT]           0.02
+rotstrength[ROT_ROLLLEFT]            0.02
+turnspeed[TURN_YAW]                  0.2         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.2
+turnspeed[TURN_ROLL]                 0.2
+
+passiveRetaliateZone                -1.0        ; -ve numbers indicate to turn of passive retaliation zone feature
+
+;;Weapons
+;;=------=
+
+canTargetMultipleTargets            TRUE
+
+NUMBER_OF_GUNS                      3
+
+;deadly ass Ion cannon
+GUN         0
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        50                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        75                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        180
+BulletLength                    9000.0                        ; visual only.  Length of bullet on screen
+BulletRange                     9000.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  0.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        0.1                           ; fire repeat rate (reciprocal = shots/second)
+BarrelLength                   108.0
+}
+
+;deadly ass Ion cannon
+GUN         1
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        50                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        75                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        180
+BulletLength                    9000.0                        ; visual only.  Length of bullet on screen
+BulletRange                     9000.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  0.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        0.1                           ; fire repeat rate (reciprocal = shots/second)
+BarrelLength                   108.0
+}
+
+;deadly ass Ion cannon
+GUN         2
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        50                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        75                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        180
+BulletLength                    9000.0                        ; visual only.  Length of bullet on screen
+BulletRange                     9000.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  0.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        0.1                           ; fire repeat rate (reciprocal = shots/second)
+BarrelLength                   108.0
+}
+
+
+NUMBER_OF_NAV_LIGHTS           13
+
+; format is NavLight           name,type,blinkrate (in seconds), startdelay (in seconds) size (in meters), min LOD, texture name
+NavLight                        baseantenna,    NAVLIGHT_Default, 2,    1,      0,      30, 3,  etg\textures\glow32
+NavLight                        antenna,        NAVLIGHT_Default, 2,    1,      0,      40, 3,  etg\textures\glow32
+NavLight                        antenna1,       NAVLIGHT_Default, 2,    1,      0,      30, 3,  etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,    1,      0,      30, 3,  etg\textures\glow32
+NavLight                        topantenna,     NAVLIGHT_Default, 2,    1,      0,      40, 3,  etg\textures\glow32
+NavLight                        topres1,        NAVLIGHT_Default, 0.5,  2.5,    0,      50, 3,  etg\textures\glow32
+NavLight                        topres2,        NAVLIGHT_Default, 0.5,  2.5,    0,      50, 3,  etg\textures\glow32
+NavLight                        bottomres1,     NAVLIGHT_Default, 0.5,  2.5,    0,      50, 3,  etg\textures\glow32
+NavLight                        bottomres2,     NAVLIGHT_Default, 0.5,  2.5,    0,      50, 3,  etg\textures\glow32
+NavLight                        navlight,       NAVLIGHT_Default, 5,    2,      0,      80, 3,  etg\textures\glow32
+NavLight                        bay1,           NAVLIGHT_Default, 0.5,  1,      0,      50, 3,  etg\textures\glow32
+NavLight                        door,           NAVLIGHT_Default, 0.5,  1,      0,      50, 3,  etg\textures\glow32
+NavLight                        bay,            NAVLIGHT_Default, 0.5,  1,      0,      50, 3,  etg\textures\glow32
+
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+preciseSelection                    4
+
+minimumZoomDistance              	2700
+
+hyperspaceColor                    255,255,0
+
+
+renderlistFade      5000.0
+renderlistLimit    24000.0

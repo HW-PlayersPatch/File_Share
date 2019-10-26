@@ -1,0 +1,48 @@
+; MissionMan script, Wednesday, Sep 1 1999, 3:44:32 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; MissionSphere Object: ?,ResourceSphere
+
+Resources    Asteroid,-1646.0,2349.6,-757.6,Sphere,AsteroidMiddle.dist,15,2419.9,11990.1,0.0,-1.0,0,?
+Resources    Asteroid,6354.4,66.0,-3154.0,Sphere,AsteroidCentre.dist,30,7500.0,18000.0,1.0,-1.0,0,?
+Resources    Asteroid,15174.0,1284.0,-2156.0,Sphere,AsteroidCentre.dist,30,3118.2,14750.0,0.0,-20.0,0,?
+Resources    Asteroid,22172.5,-715.6,-5156.8,Sphere,AsteroidMiddle.dist,15,1561.4,11410.0,0.0,-20.0,0,?
+Resources    Asteroid,26888.2,5568.0,-6312.3,Sphere,AsteroidLong.dist,10,1044.2,6940.0,0.0,-20.0,0,?
+Resources    Asteroid,30657.4,8284.0,-7616.3,Sphere,AsteroidOuter.dist,12,1437.7,5130.0,0.0,-20.0,0,?
+Resources    Asteroid,32602.2,11141.0,-9156.5,Sphere,AsteroidMiddle.dist,5,1219.1,4350.0,0.0,-20.0,0,?
+Resources    Asteroid,-3969.0,-6933.0,-4013.0,Sphere,AsteroidLong.dist,10,3250.0,8940.0,0.0,-20.0,0,?
+Resources    Asteroid,-5995.0,-11933.0,-6205.0,Sphere,AsteroidMiddle.dist,10,2500.0,6480.0,0.0,-20.0,0,?
+Resources    Asteroid,-8995.0,-15934.0,-8205.4,Sphere,AsteroidMiddle.dist,10,1510.6,5390.0,0.0,-20.0,0,?
+Resources    Asteroid,-12191.0,-18934.0,-8840.1,Sphere,AsteroidMiddle.dist,5,1163.1,4150.0,0.0,-20.0,0,?
+Resources    Asteroid,25186.0,-1716.0,-156.0,Sphere,AsteroidLong.dist,8,2334.5,8330.0,0.0,-19.0,0,?
+Resources    Asteroid,-14191.0,-20934.0,-9839.6,Sphere,AsteroidLong.dist,5,1025.7,3660.0,0.0,-20.0,0,?
+Resources    Asteroid,-9827.4,14066.0,4844.0,Sphere,AsteroidMiddle.dist,6,1981.4,7070.0,0.0,-19.0,0,?
+Resources    Asteroid,-13826.6,19067.0,5843.7,Sphere,large_asteroid.dist,12,1628.3,5810.0,0.0,-19.0,0,?
+Resources    Asteroid,-15827.2,22068.0,4843.6,Sphere,AsteroidOuter.dist,5,1160.3,4140.0,0.0,-19.0,0,?
+Resources    Asteroid,-18825.7,22427.8,3843.8,Sphere,AsteroidMiddle.dist,3,980.9,3500.0,0.0,-19.0,0,?
+Resources    Asteroid,-20969.0,22428.7,3242.5,Sphere,AsteroidOuter.dist,3,697.8,2490.0,0.0,-19.0,0,?
+Resources    Asteroid,-13969.0,23428.5,6243.0,Sphere,AsteroidMiddle.dist,3,697.8,2490.0,0.0,-19.0,0,?
+Resources    Asteroid,-13766.7,24294.6,5243.0,Sphere,AsteroidMiddle.dist,2,568.9,2030.0,0.0,-19.0,0,?
+Resources    Asteroid,-12767.3,25294.7,4243.0,Sphere,AsteroidMiddle.dist,3,484.8,1730.0,0.0,-19.0,0,?
+Resources    Asteroid,-5970.0,8067.0,2844.2,Sphere,AsteroidMiddle.dist,5,2505.5,8940.0,0.0,-20.0,0,?
+Resources    Asteroid,28281.0,-6715.0,1843.0,Sphere,AsteroidMiddle.dist,5,3500.0,7010.0,0.0,-19.0,0,?
+Resources    Asteroid,30579.0,-10568.0,3843.0,Sphere,AsteroidLong.dist,6,2250.0,5940.0,0.0,-19.0,0,?
+Resources    Asteroid,32740.5,-14568.0,5842.0,Sphere,AsteroidLong.dist,10,2000.0,5420.0,0.0,-19.0,0,?
+Resources    Asteroid,33134.0,-16568.0,6842.0,Sphere,AsteroidLong.dist,5,1500.0,4220.0,0.0,-19.0,0,?
+Resources    Asteroid,33675.4,-19107.6,7842.2,Sphere,AsteroidBigSingle.dist,1,813.5,2902.8,0.0,-19.0,0,?
+Resources    Asteroid,7171.0,2284.0,4599.0,Sphere,AsteroidMiddle.dist,15,3000.0,9000.0,0.0,-20.0,0,?
+Resources    Asteroid,7029.0,2284.0,7612.0,Sphere,AsteroidOuter.dist,10,2140.0,3000.0,0.0,-20.0,0,?
+Resources    Asteroid,34602.3,13140.5,-9156.5,Sphere,AsteroidOuter.dist,15,1219.1,4350.0,0.0,-20.0,0,?
+Ships    HelplessFighters,8261.6,22899.8,0.0,0.0,R2,LightInterceptor,12,BROAD_FORMATION|?|?,0,?,12
+Ships    ActiveFighters,48000.0,4000.0,0.0,0.0,R2,LightInterceptor,5,DELTA_FORMATION|?|?,0,?,5
+Ships    WimpyCorvettes,48000.0,4000.0,0.0,0.0,R2,LightCorvette,2,BROAD_FORMATION|?|?,0,?,2
+Ships    Dummy,0.0,0.0,0.0,0.0,R2,Probe,0,NULL_FORMATION|?|?,0,?,0
+AISphere    HarvestHere,5860.2,-468.6,-2109.8,17000.0
+Resources    Asteroid,37152.6,-6211.5,0.0,Sphere,AsteroidLong.dist,30,3500.0,7000.0,0.0,-20.0,0,?
+AISphere    CantHarvestHere,37504.5,-6563.3,0.0,8000.0
+Ships    ActiveFighters,48000.0,4000.0,0.0,0.0,R2,LightInterceptor,5,DELTA_FORMATION|?|?,0,?,5
+Ships    WimpyCorvettes,48000.0,4000.0,0.0,0.0,R2,LightCorvette,2,BROAD_FORMATION|?|?,0,?,2
+Ships    ActiveFighters2,48000.0,4000.0,0.0,0.0,R2,LightInterceptor,5,DELTA_FORMATION|?|?,0,?,5
+Ships    WimpyCorvettes2,48000.0,4000.0,0.0,0.0,R2,LightCorvette,2,BROAD_FORMATION|?|?,0,?,2
+Ships    ActiveFighters3,48000.0,4000.0,0.0,0.0,R2,LightInterceptor,5,DELTA_FORMATION|?|?,0,?,5
+Ships    WimpyCorvettes3,48000.0,4000.0,0.0,0.0,R2,LightCorvette,2,BROAD_FORMATION|?|?,0,?,2
+

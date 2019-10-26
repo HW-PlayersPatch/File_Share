@@ -1,0 +1,29 @@
+; MissionMan script, Saturday, Nov 14 1998, 5:36:33 PM
+; Copyright (c) 1998, Relic Entertainment Inc.
+; Single Player Level: Mission08
+; Info: Mission08
+
+[Mission08]
+
+MissionSphere    -1,?,ResourceSphere,4000.0,4000.0,-2326.4,30000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    default
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    160000
+smZoomMin    110000
+smInitialDistance    120000
+smUniverseSizeX    116000
+smUniverseSizeZ    24500
+smUniverseSizeY    105000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeAsteroid    HeadShotAsteroidR1
+ExcludeAsteroid    HeadShotAsteroidR2
+ExcludeDerelict    Fragment
+ExcludeDerelict    Shipwreck
+MissionStartEnemyRUs    5000

@@ -1,0 +1,127 @@
+[SalCapCorvette]
+
+;Source Files
+;=----------=
+LODFile                             SalCapCorvette.lod
+pMexData                            SalCapCorvette\Rl0\LOD0\SalCapCorvette.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                     ; resistance to rotation
+momentOfInertiaY                    400.0                     ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         425.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Corvette
+buildCost                           220                        ; resource units to build
+buildTime                           30                         ; time in seconds to build
+maxhealth                           1500                        ; hit points
+maxfuel                             20000.0
+lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.036
+attackfuelburnrate                  0.036
+groupSize                           5                          ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]              0.5                    ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]             0.5
+rotstrength[ROT_PITCHUP]              0.5
+rotstrength[ROT_PITCHDOWN]            0.5
+rotstrength[ROT_ROLLRIGHT]            0.5
+rotstrength[ROT_ROLLLEFT]             0.5
+turnspeed[TURN_YAW]                   1.1
+turnspeed[TURN_PITCH]                 1.1
+turnspeed[TURN_ROLL]                  1.1
+
+;No Weapons!  Use the salvage 'beam' to do damage
+;=----------------------------------------------=
+
+;Ship AI
+;=-----=
+repositionTime                      1.0                        ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         800.0
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000165                ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+
+
+
+;Engine trails
+;=-----------=
+trailWidth                          30.0
+trailHeight                          4.75
+
+trailWidth2                         30.0
+trailHeight2                         4.75
+
+;Special Salvaging/Capturing Info
+;=-------=
+HealthThreshold                         50.0             ;if ship isn't below this ratio of health to max health, corv will attack it
+healthRemovedPerSecond                  100.0             ;health deducted from target every second once clamped on to it
+getTechTime             30.0        ;time it takes to strip tech from a ship, temporary
+flyToDistance                          2000.0           ;range from target at which time salcap begins docking cone maneuvers..don't make too close
+maxPushingVelocitySingle                300.0            ;salcap can't push a single target faster than this (if the ship requires more than 1 salcap)
+noLightClampingDistance                 100.0
+canSingleClickSpecialActivate           TRUE
+
+minimumZoomDistance                 100
+
+Overlay_Selection_Scalar            1.1         ; scale the tactical overlay by this amount

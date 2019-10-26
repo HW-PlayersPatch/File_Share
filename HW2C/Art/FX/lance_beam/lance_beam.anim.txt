@@ -1,0 +1,25 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+-- This text file appears to be a back-up of a pre-retail anim file. -S
+
+fps = 25;
+startFrame = 0;
+loopCount = 05;
+texture = {
+    "data:/ART/FX/Lance_Beam/Lance_beam00.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam01.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam02.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam03.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam04.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam05.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam04.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam03.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam02.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam01.tga",
+    "data:/ART/FX/Lance_Beam/Lance_beam00.tga",}

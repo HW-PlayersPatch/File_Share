@@ -1,0 +1,46 @@
+[CargoBarge]
+
+;Source Files
+;=----------=
+pMexData                            CargoBarge\Rl0\LOD0\CargoBarge.mex
+LODFile                             CargoBarge.lod
+
+;Ship Physics
+;=----------=
+mass                                30.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    30.0                    ; resistance to rotation
+momentOfInertiaY                    30.0                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    30.0
+maxvelocity                         350.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+buildCost                           300                        ; resource units to build
+buildTime                           60                         ; time in seconds to build
+maxhealth                           20000                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]             0.5        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.5        ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.5
+rotstrength[ROT_PITCHDOWN]           0.5
+rotstrength[ROT_ROLLRIGHT]           0.5
+rotstrength[ROT_ROLLLEFT]            0.5
+turnspeed[TURN_YAW]                  1.1         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                1.1
+turnspeed[TURN_ROLL]                 1.1
+
+passiveRetaliateZone                -1.0        ; -ve numbers indicate to turn of passive retaliation zone feature
+
+minimumZoomDistance              	250

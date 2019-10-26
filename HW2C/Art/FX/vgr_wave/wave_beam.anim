@@ -1,0 +1,27 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+fps = 30;
+startFrame = 0;
+loopCount = 20;
+texture = {
+	"data:/ART/FX/Vgr_wave/wave_glow_00000.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00001.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00002.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00003.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00004.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00005.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00006.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00007.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00008.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00009.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00010.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00011.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00012.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00013.tga",
+	"data:/ART/FX/Vgr_wave/wave_glow_00014.tga"}

@@ -1,0 +1,87 @@
+[ResearchStation]
+LODFile                             ResearchStation.lod
+pMexData                            ResearchStation\Rl0\LOD0\ResearchStation.mex
+
+;Ship Physics
+;=----------=
+mass                                1000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    1000.0                    ; resistance to rotation
+momentOfInertiaY                    1000.0
+momentOfInertiaZ                    1000.0
+maxvelocity                         150.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+buildCost                           3000                        ; resource units to build
+buildTime                           600                         ; time in seconds to build
+maxhealth                           200000                       ; hit points
+
+blastRadiusShockWave                0.5
+blastRadiusDamage                   10000
+
+collBoxOffsetX                      0.0
+collBoxOffsetY                      0.0
+collBoxOffsetZ                      380.0
+collBoxScaleForward                 0.54
+
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]             0.5        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.5        ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.5
+rotstrength[ROT_PITCHDOWN]           0.5
+rotstrength[ROT_ROLLRIGHT]           0.5
+rotstrength[ROT_ROLLLEFT]            0.5
+turnspeed[TURN_YAW]                  1.1         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                1.1
+turnspeed[TURN_ROLL]                 1.1
+
+renderlistFade     20000.0
+renderlistLimit    45000.0
+
+
+passiveRetaliateZone                -1.0        ; -ve numbers indicate to turn of passive retaliation zone feature
+
+minimumZoomDistance                 1750
+
+NUMBER_OF_SALVAGE_POINTS        7
+NUM_NEEDED_FOR_SALVAGE          7               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+SalvagePoint                       Point7,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           13
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,      NAVLIGHT_Default, 2,   1,   0,      60, 2, etg\textures\glow32
+NavLight                        antennatop1,      NAVLIGHT_Default, 2,   1,   0,      50, 2, etg\textures\glow32
+NavLight                        antennatop2,      NAVLIGHT_Default, 2,   1,   0.5,      50, 2, etg\textures\glow32
+NavLight                        antennatop3,      NAVLIGHT_Default, 2,   1,   1,      50, 2, etg\textures\glow32
+NavLight                        antennatop4,      NAVLIGHT_Default, 2,   1,   1.5,      50, 2, etg\textures\glow32
+NavLight                        antennabot1,      NAVLIGHT_Default, 2,   1,   0,      50, 2, etg\textures\glow32
+NavLight                        antennabot2,      NAVLIGHT_Default, 2,   1,   0.5,      50, 2, etg\textures\glow32
+NavLight                        antennabot3,      NAVLIGHT_Default, 2,   1,   1,      50, 2, etg\textures\glow32
+NavLight                        antennabot4,      NAVLIGHT_Default, 2,   1,   1.5,      50, 2, etg\textures\glow32
+NavLight                        bay1,      NAVLIGHT_Default, 1, 0.5,   0,      40, 2, etg\textures\glow32
+NavLight                        bay2,      NAVLIGHT_Default, 1, 0.5,   0,      40, 2, etg\textures\glow32
+NavLight                        bay3,      NAVLIGHT_Default, 1, 0.5,   0,      40, 2, etg\textures\glow32
+NavLight                        bay4,      NAVLIGHT_Default, 1, 0.5,  0,    40, 2, etg\textures\glow32

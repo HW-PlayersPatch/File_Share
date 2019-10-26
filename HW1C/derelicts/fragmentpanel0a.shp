@@ -1,0 +1,29 @@
+[FragmentPanel0a]
+LODFile                             FragmentPanel0a.lod
+pMexData                            FragmentPanel0a\Rl0\LOD0\FragmentPanel0a.mex
+mass                                1000.0              ; ship mass [fighter = 1]
+momentOfInertiaX                    1000.0               ; resistance to rotation
+momentOfInertiaY                    1000.0               ; [fighter = 1]
+momentOfInertiaZ                    1000.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+blastRadiusShockWave                1.0
+blastRadiusDamage                   125
+
+
+renderlistFade     8000.0
+renderlistLimit    21000.0
+
+minimumZoomDistance                 1050
+
+NUMBER_OF_SALVAGE_POINTS        3
+NUM_NEEDED_FOR_SALVAGE          3               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint

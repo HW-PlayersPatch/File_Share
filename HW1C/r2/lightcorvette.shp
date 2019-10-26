@@ -1,0 +1,188 @@
+[LightCorvette]
+
+;Source Files
+;=----------=
+LODFile                             LightCorvette.lod
+pMexData                            LightCorvette\Rl0\LOD0\LightCorvette.mex
+
+;Ship Physics
+;=----------=
+mass                                150.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    25.0                        ; resistance to rotation
+momentOfInertiaY                    25.0                        ; [fighter = 1]
+momentOfInertiaZ                    25.0
+maxvelocity                         575.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Corvette
+buildCost                           135                        ; resource units to build
+buildTime                           22                         ; time in seconds to build
+maxhealth                           900                        ; hit points
+maxfuel                             20000.0
+lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.036
+attackfuelburnrate                  0.06 
+groupSize                           5                          ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            180.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          180.0 
+thruststrength[TRANS_RIGHT]         180.0 
+thruststrength[TRANS_LEFT]          180.0 
+thruststrength[TRANS_FORWARD]       180.0 
+thruststrength[TRANS_BACK]          180.0 
+rotstrength[ROT_YAWLEFT]              1.0                    ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]             1.0 
+rotstrength[ROT_PITCHUP]              1.0 
+rotstrength[ROT_PITCHDOWN]            1.0 
+rotstrength[ROT_ROLLRIGHT]            1.0 
+rotstrength[ROT_ROLLLEFT]             1.0 
+turnspeed[TURN_YAW]                   1.5
+turnspeed[TURN_PITCH]                 1.5
+turnspeed[TURN_ROLL]                  1.5
+
+;Weapons
+;=-----=
+
+NUMBER_OF_GUNS                      2
+
+rotateToRetaliate                   TRUE
+
+;Right gun
+GUN         0
+{
+Type                             GUN_NewGimble
+SoundType                        GS_MediumEnergyCannon
+DamageLo                         10                         ; damage variance per shot - low
+DamageHi                         15.5                         ; damage variance per shot - high
+BulletLength                     22.0                       ; visual only.  Length of bullet on screen
+BulletRange                      5000.0                     ; distance bullets travel before disappearing; also defines the range of the gun
+BulletSpeed                      15000.0                     ; measured in m/s.
+BulletMass                       0.01                        ; mass of bullet
+FireTime                         2.7                        ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                     7.0
+minturnangle                   -30.0                        ; degrees
+maxturnangle                    30.0
+mindeclination                 -30.0
+maxdeclination                  30.0
+maxanglespeed                  360.0                        ; degrees/s
+maxdeclinationspeed            360.0
+angletracking                    4.0
+declinationtracking              4.0
+BarrelLength                    14.6
+RecoilLength                     5.0
+}
+
+Left gun
+GUN         1
+{
+Type                             GUN_NewGimble
+SoundType                        GS_MediumEnergyCannon
+DamageLo                         10                        ; damage variance per shot - low
+DamageHi                         15.5                        ; damage variance per shot - high
+BulletLength                     22.0                       ; visual only.  Length of bullet on screen
+BulletRange                      5000.0                     ; distance bullets travel before disappearing; also defines the range of the gun
+BulletSpeed                      15000.0                     ; measured in m/s.
+BulletMass                       0.01                        ; mass of bullet
+FireTime                         2.7                        ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                     7.0
+minturnangle                   -30.0                        ; degrees
+maxturnangle                    30.0
+mindeclination                 -30.0
+maxdeclination                  30.0
+maxanglespeed                  360.0                        ; degrees/s
+maxdeclinationspeed            360.0
+angletracking                    4.0
+declinationtracking              4.0
+BarrelLength                    14.6
+RecoilLength                     5.0
+}
+
+;Ship AI
+;=-----=
+repositionTime                      1.6                          ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         800.0
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.00014875              ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+//Right gun
+BindGun                             LightCorvetteGun(1) Gun0,Azimuth,Declination,Recoil,Frequency 1
+//Left gun
+BindGun                             LightCorvetteGun(2) Gun1,Azimuth,Declination,Recoil,Frequency 1
+
+
+;Engine trails
+;=-----------=
+trailRibbonAdjust                   0.5             ; also the default
+trailWidth                          30.0
+trailHeight                         19.0
+trailSpriteRadius                   45.0
+
+BindAnimations                          1
+
+;MadStartInfo        needs a starting paused     / Animation Text Name  / needs starting animation  / Animation Text Name   
+                     animation(when built+placed)/ (no spaces allowed!) / (when built and launched) / (no spaces allowed!) 
+MadStartInfo                   0 , blah_blah_who_cares , 1 , Wings_OPEN
+
+;MadDockAnims        definitions of explanation below
+;                        n = number, d = docking, p = post docking, w = damaged
+;
+;                       nd, names, ..., np, names, ..., ndw, names, npw, names
+MadDockAnims            1, Wings_OPEN, 1, Wings_CLOSE, 1, Wings_DMG_Open,1,Wings_DMG_Close
+
+;Ships health must be below this percentage to use the damaged animations.
+madGunOpenDamagedHealthThreshold                0.70    ;<= 1.0f
+
+minimumZoomDistance                     80
+
+Overlay_Selection_Scalar            1.55         ; scale the tactical overlay by this amount

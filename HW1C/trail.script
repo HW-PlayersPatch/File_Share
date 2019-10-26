@@ -1,0 +1,48 @@
+;
+;tweakables for the engine trails.  clear as mud
+;
+RAN_MAX                 5.0     ;decrease to increase the freq of flare jitter
+RAN_JITTER              0.75    ;flare jitter scalar.  very touchy
+
+VELRATIO_THRESH         0.1     ;below this, nozzle flash et al not displayed
+VELRATIO_ACCELTHRESH    0.75    ;show nozzle flash if velratio > this, plus more
+ACCELTHRESH             7.7     ;show nozzle flash if accel > this, plus more
+VELRATIO_CUTOFF         0.9     ;above this, specialvelratio == 1.0
+
+SIZE_MAJOR              6.0     ;major component of trail segment size
+SIZE_INC                1.0     ;segment size increment modifier
+SIZEINC_INC             1.8     ;segment size increment modifier modifier
+SIZE_MAX                65.0    ;maximum segment size
+
+XADJ                    8.0     ;distance scalar
+HALFWIDTH               11.5    ;half width of trail
+HALFWIDTH_FALLOFF       0.7     ;linear halfwidth falloff.  segments are spaced
+                                ;non-linearly, giving this a geometric effect
+HALFWIDTH_MIN           3.2     ;minimum halfwidth
+
+GLOW_RADIALADJUST       0.82    ;[0..1] scales radius of nozzle glow
+GLOW_BASERADIALSCALE    0.2     ;[0..1] this * shipradius is minimum size of glow
+
+BURN_RATIOSCALE         25.0    ;this * linear_velratio scales nozzle afterburn
+BURN_RATIOMIN           6.0     ;minimal nozzle afterburn scalar
+BURN_SIZESCALE          1.7     ;width, height enlarged by this scalar
+BURN_COLORADJUST        -100    ;de/saturation parameter
+
+RANDOMBURN_FREQ         0.2
+
+;0 disables deviation calcs entirely
+COLORADJUST_FREQ        20      ;[0..100] frequency of color deviation
+COLOR_ADJUST            12      ;[0..255] amount of random color deviation
+
+TRAIL_EXPONENT_BASE     3.75
+TRAIL_EXPONENT_RANGE    0.55
+
+TRAIL_GLOW_1_RED        255
+TRAIL_GLOW_1_GREEN      180
+TRAIL_GLOW_1_BLUE       40
+
+TRAIL_GLOW_2_RED        40
+TRAIL_GLOW_2_GREEN      180
+TRAIL_GLOW_2_BLUE       255
+
+TRAIL_EXPANSION_TICKS   16

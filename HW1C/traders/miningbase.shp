@@ -1,0 +1,82 @@
+[MiningBase]
+LODFile                             MiningBase.lod
+pMexData                            MiningBase\Rl0\LOD0\MiningBase.mex
+
+;Ship Physics
+;=----------=
+mass                                100000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    10000.0                    ; resistance to rotation
+momentOfInertiaY                    10000.0
+momentOfInertiaZ                    10000.0
+maxvelocity                         150.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+immobile                            TRUE                       ; indicates object is immobile
+approxcollmodifier                  0.5                        ; use only % of collspheresize for rough approximations
+avoidcollmodifier                   0.5                        ; use only % of collspheresize for collision avoidance
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Destroyer
+buildCost                           3000                        ; resource units to build
+buildTime                           600                         ; time in seconds to build
+maxhealth                           70000                       ; hit points
+
+blastRadiusShockWave                0.5
+blastRadiusDamage                   10000
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]             0.5        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.5        ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.5
+rotstrength[ROT_PITCHDOWN]           0.5
+rotstrength[ROT_ROLLRIGHT]           0.5
+rotstrength[ROT_ROLLLEFT]            0.5
+turnspeed[TURN_YAW]                  1.1         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                1.1
+turnspeed[TURN_ROLL]                 1.1
+
+passiveRetaliateZone                -1.0        ; -ve numbers indicate to turn of passive retaliation zone feature
+
+minimumZoomDistance                 10000
+
+
+NUMBER_OF_SALVAGE_POINTS        8
+NUM_NEEDED_FOR_SALVAGE          8               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+SalvagePoint                       Point7,AttachPoint
+SalvagePoint                       Point8,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           9
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,      NAVLIGHT_Default, 2,   1,   0,      85, 2, etg\textures\glow32
+NavLight                        antenna2,      NAVLIGHT_Default, 2,   1,   1,      85, 2, etg\textures\glow32
+NavLight                        antenna3,      NAVLIGHT_Default, 2,   1,   0,      85, 2, etg\textures\glow32
+NavLight                        antenna4,      NAVLIGHT_Default, 2,   1,   0,      85, 2, etg\textures\glow32
+NavLight                        caution1,      NAVLIGHT_Default, 0.75, 0.75,   0,      70, 2, etg\textures\glow32
+NavLight                        caution2,      NAVLIGHT_Default, 0.5, 0.5,   0,      70, 2, etg\textures\glow32
+NavLight                        caution3,      NAVLIGHT_Default, 0.5, 0.5,   0,      70, 2, etg\textures\glow32
+NavLight                        caution4,      NAVLIGHT_Default, 0.5, 0.5,  0.75,    70, 2, etg\textures\glow32
+NavLight                        caution5,      NAVLIGHT_Default, 0.5, 0.5,  0.75,    70, 2, etg\textures\glow32
+
+
+renderlistFade      5000.0
+renderlistLimit    29000.0

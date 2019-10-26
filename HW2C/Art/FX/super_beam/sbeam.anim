@@ -1,0 +1,56 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+fps = 22;
+startFrame = 0;
+loopCount = 10;
+texture = {
+	"data:/ART/FX/Super_Beam/sbeam_00000.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00001.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00002.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00003.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00004.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00005.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00007.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00008.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00009.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00010.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00011.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00012.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00013.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00014.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga",
+	"data:/ART/FX/Super_Beam/sbeam_00015.tga"}

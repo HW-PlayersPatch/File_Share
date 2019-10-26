@@ -1,0 +1,57 @@
+; MissionMan script, Saturday, Jul 3 1999, 9:15:01 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission01
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,2000.0,19000.0,0.0,3000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez01
+Background    ez01,180,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    250000
+smZoomMin    30000
+smInitialDistance    100000
+smUniverseSizeX    55000
+smUniverseSizeZ    29000
+smUniverseSizeY    55000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeShips    P1,All
+ExcludeShips    R1,HeadShotAsteroid
+ExcludeShips    R2,HeadShotAsteroid
+ExcludeShips    R1,AttackBomber
+ExcludeShips    R1,CloakGenerator
+ExcludeShips    R1,DDDFrigate
+ExcludeShips    R1,GravWellGenerator
+ExcludeShips    R1,MinelayerCorvette
+ExcludeShips    R1,MissileDestroyer
+ExcludeShips    R1,MultiGunCorvette
+ExcludeShips    R1,HeavyCruiser
+ExcludeShips    R2,AttackBomber
+ExcludeShips    R2,CloakGenerator
+ExcludeShips    R2,DFGFrigate
+ExcludeShips    R2,GravWellGenerator
+ExcludeShips    R2,MinelayerCorvette
+ExcludeShips    R2,MissileDestroyer
+ExcludeShips    R2,MultiGunCorvette
+ExcludeShips    R2,HeavyCruiser
+ExcludeShips    R1,DFGFrigate
+ExcludeShips    R2,DDDFrigate
+IncludeShips    R2,TargetDrone
+IncludeShips    R2,Mothership
+ExcludeDerelict    ALL
+IncludeDerelict    PlanetOfOrigin
+IncludeDerelict    Crate
+IncludeDerelict    Scaffold
+BaseColor    5, 255, 255, 255
+StripeColor    5, 255, 255, 255
+AvailableColorSchemes    Derelicts, Scaffold, 0
+AvailableColorSchemes    R2 TargetDrone 0,5
+MissionStartEnemyRUs    999999
+SongNumber    10

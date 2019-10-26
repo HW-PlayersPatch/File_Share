@@ -1,0 +1,281 @@
+[StandardDestroyer]
+
+;Source Files
+;=----------=
+pMexData                            StandardDestroyer\Rl0\LOD0\StandardDestroyer.mex
+LODFile                             StandardDestroyer.lod
+
+;Ship Physics
+;=----------=
+mass                                1800.0      ; ship mass [fighter = 1]
+momentOfInertiaX                    1800.0      ; resistance to rotation
+momentOfInertiaY                    1800.0      ; [fighter = 1]
+momentOfInertiaZ                    1800.0
+maxvelocity                         315.0       ; [fighter = 1000]
+maxrot                              10.0        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Destroyer
+isCapitalShip                       TRUE
+buildCost                           1350        ; resource units to build
+buildTime                           150         ; time in seconds to build
+maxhealth                           44000       ; hit points
+groupSize                           1                   ; size of group ships of this type tend to form
+repairTime                          5                   ; every this many seconds
+repairDamage                        330                  ; this much damage is repaired
+repairCombatTime                    10
+repairCombatDamage                  75
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   125
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            39.0            ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          39.0
+thruststrength[TRANS_RIGHT]         39.0
+thruststrength[TRANS_LEFT]          39.0
+thruststrength[TRANS_FORWARD]       39.0
+thruststrength[TRANS_BACK]          39.0
+rotstrength[ROT_YAWLEFT]             0.36               ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.36
+rotstrength[ROT_PITCHUP]             0.06
+rotstrength[ROT_PITCHDOWN]           0.06
+rotstrength[ROT_ROLLRIGHT]           0.06
+rotstrength[ROT_ROLLLEFT]            0.06
+turnspeed[TURN_YAW]                  0.20                        ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.20
+turnspeed[TURN_ROLL]                 0.20
+
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                7000.0
+
+;Weapons
+;=------=
+NUMBER_OF_GUNS                      6
+
+;Top turret, left barrel
+GUN         0
+//Desired Range = 4000
+//ADD this amount: 179 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                                GUN_NewGimble                   ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                                50          ; damage variance per shot - low
+DamageHi                                62.5            ; damage variance per shot - high
+BulletLength                            20.0                ; visual only.  Length of bullet on screen
+BulletRange                           5071.0                ; distance bullets travel before disappearing
+BulletSpeed                           4300.0                ; measured in m/s.
+BulletMass                               1.2                    ; mass of bullet
+FireTime                                 2.7            ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                             5.0
+minturnangle                          -110.0                    ; degrees
+maxturnangle                           110.0
+mindeclination                          -5.0
+maxdeclination                          30.0
+maxanglespeed                          360.0                    ; degrees/s
+maxdeclinationspeed                    360.0
+angletracking                            2.3
+declinationtracking                      2.3
+BarrelLength                            83.0
+OffsetX                                  0.01
+OffsetY                                -11.0
+OffsetZ                                 -3.0
+RecoilLength                            26.0
+}
+
+;Top turret, right barrel
+GUN         1
+//Desired Range = 4000
+//ADD this amount: 179 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                                GUN_NewGimble                   ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                                50            ; damage variance per shot - low
+DamageHi                                62.5            ; damage variance per shot - high
+BulletLength                            20.0                ; visual only.  Length of bullet on screen
+BulletRange                           5071.0                ; distance bullets travel before disappearing
+BulletSpeed                           4300.0                ; measured in m/s.
+BulletMass                               1.2                    ; mass of bullet
+FireTime                                 2.7            ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                             5.0
+minturnangle                          -110.0                    ; degrees
+maxturnangle                           110.0
+mindeclination                          -5.0
+maxdeclination                          30.0
+maxanglespeed                          360.0                    ; degrees/s
+maxdeclinationspeed                    360.0
+angletracking                            2.3
+declinationtracking                      2.3
+BarrelLength                            83.0
+OffsetX                                  0.01
+OffsetY                                 11.0
+OffsetZ                                 -3.0
+SlaveDriver                              0
+RecoilLength                            26.0
+}
+
+;Bottom turret, left barrel
+GUN         2
+//Desired Range = 4000
+//ADD this amount:  92 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                                GUN_NewGimble                   ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                                50          ; damage variance per shot - low
+DamageHi                                62.5            ; damage variance per shot - high
+BulletLength                            20.0                ; visual only.  Length of bullet on screen
+BulletRange                           4984.0                ; distance bullets travel before disappearing
+BulletSpeed                           4300.0                ; measured in m/s.
+BulletMass                              1.2                    ; mass of bullet
+FireTime                                 2.7            ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                             5.0
+minturnangle                          -110.0                    ; degrees
+maxturnangle                           110.0
+mindeclination                          -5.0
+maxdeclination                          30.0
+maxanglespeed                          360.0                    ; degrees/s
+maxdeclinationspeed                    360.0
+angletracking                            2.0
+declinationtracking                      2.0
+BarrelLength                            83.0
+OffsetX                                  0.01
+OffsetY                                -11.0
+OffsetZ                                 -3.0
+RecoilLength                            26.0
+}
+
+;Bottom turret, right barrel
+GUN         3
+//Desired Range = 4000
+//ADD this amount:  92 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                                GUN_NewGimble                   ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                                50          ; damage variance per shot - low
+DamageHi                                62.5            ; damage variance per shot - high
+BulletLength                            20.0                ; visual only.  Length of bullet on screen
+BulletRange                           4984.0                ; distance bullets travel before disappearing
+BulletSpeed                           4300.0                ; measured in m/s.
+BulletMass                               1.2                    ; mass of bullet
+FireTime                                 2.7            ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                             5.0
+minturnangle                          -110.0                    ; degrees
+maxturnangle                           110.0
+mindeclination                          -5.0
+maxdeclination                          30.0
+maxanglespeed                          360.0                    ; degrees/s
+maxdeclinationspeed                    360.0
+angletracking                            2.0
+declinationtracking                      2.0
+BarrelLength                            83.0
+OffsetX                                  0.01
+OffsetY                                 11.0
+OffsetZ                                 -3.0
+SlaveDriver                              2
+RecoilLength                            26.0
+}
+
+;Ion Cannon, left side
+GUN         4
+//Desired Range = 6000
+//ADD this amount:  15 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        20
+BulletLength                    6907.0                        ; visual only.  Length of bullet on screen
+BulletRange                     6907.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+;Ion Cannon, right side
+GUN         5
+//Desired Range = 6000
+//ADD this amount:  92 to compensate for centrepoint
+//ADD this amount: 892 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        20
+BulletLength                    6984.0                        ; visual only.  Length of bullet on screen
+BulletRange                     6984.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+NUMBER_OF_SALVAGE_POINTS        3
+NUM_NEEDED_FOR_SALVAGE          3               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+
+NUMBER_OF_NAV_LIGHTS           5
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna,    NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        antenna1,       NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        wing1,      NAVLIGHT_Default, 0.5, 1, 0,    10, 2, etg\textures\glow32
+NavLight                        wing2,      NAVLIGHT_Default, 0.5, 1, 0,    10, 2, etg\textures\glow32
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+//Top turret, left barrel
+BindGun                             StandardDestroyerGun(1)    Gun0,Declination,Recoil,Frequency 1
+BindGun                             StandardDestroyerTurret(1) Gun0,Azimuth,Frequency 1
+
+//Top turret, right barrel
+BindGun                             StandardDestroyerGun(2)    Gun1,Declination,Recoil,Frequency 1
+
+
+//Bottom turret, left barrel
+BindGun                             StandardDestroyerGun(3)    Gun2,Declination,Recoil,Frequency 1
+BindGun                             StandardDestroyerTurret(2) Gun2,Azimuth,Frequency 1
+
+//Bottom turret, right barrel
+BindGun                             StandardDestroyerGun(4)    Gun3,Declination,Recoil,Frequency 1
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.00005                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Engine Glow
+;=---------=
+trailWidth         180.0
+trailHeight        180.0
+trailLength        210.0
+trailScaleCap        0.000154
+
+minimumZoomDistance                     600

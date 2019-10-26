@@ -1,0 +1,102 @@
+[P3Destroyer]
+
+;Source Files
+;=----------=
+LODFile                             P3Destroyer.lod
+pMexData                            P3Destroyer\Rl0\LOD0\P3Destroyer.mex
+
+;Ship Physics
+;=----------=
+mass                                1000.0		; ship mass [fighter = 1]
+momentOfInertiaX                    1000.0		; resistance to rotation
+momentOfInertiaY                    1000.0		; [fighter = 1]
+momentOfInertiaZ                    1000.0
+maxvelocity                         250.0		; [fighter = 1000]
+maxrot                              1.0		; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Destroyer
+isCapitalShip                       TRUE
+buildCost                           2000		; resource units to build
+buildTime                           250			; time in seconds to build
+maxhealth                           7000		; hit points
+groupSize                           1                   ; size of group ships of this type tend to form
+repairTime                          10                   ; every this many seconds
+repairDamage                        100                  ; this much damage is repaired
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            20.0		; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          20.0
+thruststrength[TRANS_RIGHT]         20.0
+thruststrength[TRANS_LEFT]          20.0
+thruststrength[TRANS_FORWARD]       20.0
+thruststrength[TRANS_BACK]          20.0
+rotstrength[ROT_YAWLEFT]             0.25        		; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.25
+rotstrength[ROT_PITCHUP]             0.00
+rotstrength[ROT_PITCHDOWN]           0.00
+rotstrength[ROT_ROLLRIGHT]           0.00
+rotstrength[ROT_ROLLLEFT]            0.00
+turnspeed[TURN_YAW]                  0.2                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.2
+turnspeed[TURN_ROLL]                 0.2
+
+rotateToRetaliate                   TRUE
+
+;Weapons
+;=------=
+
+canTargetMultipleTargets            TRUE
+
+NUMBER_OF_GUNS                      1
+
+;Ion Cannon
+GUN         0
+//Desired Range = 6500
+//ADD this amount:  412 to compensate for centrepoint
+//ADD this amount:  892 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_VeryLargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        10                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        14                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        100
+BulletLength                    7804.0                        ; visual only.  Length of bullet on screen
+BulletRange                     7804.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.0
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        3.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+
+NUMBER_OF_NAV_LIGHTS           5
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna,  	NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        antenna1,    	NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        antenna2,  	NAVLIGHT_Default, 2,   1, 0,    7, 2, etg\textures\glow32
+NavLight                        wing,    	NAVLIGHT_Default, 0.5, 1, 0,    10, 2, etg\textures\glow32
+NavLight                        wing1,    	NAVLIGHT_Default, 0.5, 1, 0,    10, 2, etg\textures\glow32
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.00005                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Engine Glow
+;=---------=
+trailWidth    116.0
+trailHeight   184.0
+trailLength   210.0
+trailScaleCap 0.000196
+

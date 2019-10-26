@@ -1,0 +1,18 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+name = "Arrow"
+displayName = "Supercapship"
+mesh = {colour = {0, 0, 0, 0},
+	lineWeight = 1,
+	renderFlags = {"scaleX", "scaleY"},
+	LODs = {1, "UI\\TacticalIcons\\Meshes\\Arrow.hod"},}
+mouseOverMesh = {colour = {0, 0, 0, 0},
+	lineWeight = 2,
+	renderFlags = {"scaleX", "scaleY"},
+	LODs = {1, "UI\\TacticalIcons\\Meshes\\Arrow.hod"},}

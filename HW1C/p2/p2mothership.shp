@@ -1,0 +1,447 @@
+[P2Mothership]
+
+;Source Files
+;=----------=
+pMexData                            P2Mothership\Rl0\LOD0\P2Mothership.mex
+LODFile                             P2Mothership.lod
+
+;Ship Physics
+;=----------=
+mass                                10000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    10000.0                    ; resistance to rotation
+momentOfInertiaY                    10000.0                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    10000.0
+immobile                            FALSE                       ; indicates object is immobile
+approxcollmodifier                  0.50                        ; use only % of collspheresize for rough approximations
+avoidcollmodifier                   0.50                        ; use only % of collspheresize for collision avoidance
+maxvelocity                         150.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+collBoxScaleUp                      0.7
+collBoxScaleRight                   0.7
+
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Mothership
+isCapitalShip                       TRUE
+buildCost                           3200                        ; resource units to build
+buildTime                           300                         ; time in seconds to build
+maxhealth                           112000                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+repairTime                          5                           ; every this many seconds
+repairDamage                        75                          ; this much damage is repaired
+
+blastRadiusShockWave                0.5
+blastRadiusDamage                   10000
+
+passiveAttackPenaltyExempt          TRUE
+
+canBuildShips                       TRUE                        ; ship can build ships
+canReceiveShips                     TRUE                        ; other ships can dock in this ship
+canReceiveResources                 TRUE                        ; Resource Collectors,etc can deposit resources in this ship
+canReceiveShipsPermanently          TRUE                        ; ships can dock permanently here
+canBuildBigShips                    TRUE                        ; can build Destroyers, Carriers, Heavy Cruisers, etc.
+
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+canReceiveResourceCollectors        TRUE
+canReceiveOtherNonCapitalShips      TRUE
+
+pumpFuelRate                        300.0                       ; how fast carrier pumps fuel in.
+repairOtherShipRate                 1                           ; how fast carrier heals damaged ships. Must be an integer
+
+clearanceDirection                  2                           ; (0=up,1=right,2=forward,4=down,5=left,6=back)
+clearanceDistance                   100.0                       ; how far ships go away from this ship when they are just built.
+                                                                ; Note that this number is added to the minimum collision distance.
+
+dockShipRange                       1000.0              ; how close ships should get before considering docking (to ship surface)
+
+surroundDistance                    1000.0                      ; how far ships will minimally disperse themselves from this ship after
+                                                                ; they are built.  Note that this number is added to the minimum collision distance.
+surroundDistanceRand                1000.0                      ; random number between 0 and x added to surroundDistance
+
+surroundRotYMinAng                  -35.0                       ; ship may be positioned between min and max degrees elevation
+surroundRotYMaxAng                  35.0
+surroundRotZMinAng                  -180.0                      ; ship may be positioned between min and max degrees angle
+surroundRotZMaxAng                  180.0
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            15.0         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          15.0     ; used to be 20.0
+thruststrength[TRANS_RIGHT]         15.0
+thruststrength[TRANS_LEFT]          15.0
+thruststrength[TRANS_FORWARD]       10.0
+thruststrength[TRANS_BACK]          10.0
+rotstrength[ROT_YAWLEFT]            0.065                 ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]           0.065         ; used to be 0.05
+rotstrength[ROT_PITCHUP]            0.02
+rotstrength[ROT_PITCHDOWN]          0.02
+rotstrength[ROT_ROLLRIGHT]          0.02
+rotstrength[ROT_ROLLLEFT]           0.02
+turnspeed[TURN_YAW]                  0.065                         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.065
+turnspeed[TURN_ROLL]                 0.1
+
+
+NUMBER_OF_GUNS                      14
+
+rotateToRetaliate                   TRUE
+
+GUN         0
+//Desired Range = 6500
+//ADD this amount: 3726 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        45
+BulletLength                    10976.0                        ; visual only.  Length of bullet on screen
+BulletRange                     10976.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.0
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         1
+//Desired Range = 6500
+//ADD this amount: 3726 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        45
+BulletLength                    10976.0                        ; visual only.  Length of bullet on screen
+BulletRange                     10976.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.0
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+
+
+GUN         2
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                                55
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         3
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                                55
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         4
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                                55
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         5
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                                55
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         6
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                                60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         7
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         8
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         9
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         10
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         11
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         12
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+GUN         13
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                12              ; damage variance per shot - low
+DamageHi                                16              ; damage variance per shot - high
+MinAngle                                0
+MaxAngle                               60
+BulletLength                            15.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           3000.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 0.0            ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                            1.8
+BurstWaitTime                            1.5
+fireEffect                      defaultBlast.ebg
+hitEffect                       defaultBlast.ebg
+}
+
+
+NUMBER_OF_DOCK_POINTS           28
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+
+DockPoint                       In,DockingCone,1000,1000,2000
+DockPoint                       In1,DockingCone,1000,1000,2000
+DockPoint                       In2,DockingCone,1000,1000,2000
+DockPoint                       In3,DockingCone,1000,1000,2000
+DockPoint                       In4,DockingCone,1000,1000,2000
+DockPoint                       In5,DockingCone,1000,1000,2000
+DockPoint                       In6,DockingCone,1000,1000,2000
+DockPoint                       In7,DockingCone,1000,1000,2000
+DockPoint                       In8,DockingCone,1000,1000,2000
+DockPoint                       In9,DockingCone,1000,1000,2000
+DockPoint                       In10,DockingCone,1000,1000,2000
+DockPoint                       In11,DockingCone,1000,1000,2000
+
+DockPoint                       Out,LaunchPoint,800,800,800,1,0
+DockPoint                       Out1,LaunchPoint,800,800,800,1,0
+DockPoint                       Out2,LaunchPoint,800,800,800,1,0
+DockPoint                       Out3,LaunchPoint,800,800,800,1,0
+DockPoint                       Out4,LaunchPoint,800,800,800,1,0
+DockPoint                       Out5,LaunchPoint,800,800,800,1,0
+DockPoint                       Out6,LaunchPoint,800,800,800,1,0
+DockPoint                       Out7,LaunchPoint,800,800,800,1,0
+DockPoint                       Out8,LaunchPoint,800,800,800,1,0
+DockPoint                       Out9,LaunchPoint,800,800,800,1,0
+DockPoint                       Out10,LaunchPoint,800,800,800,1,0
+DockPoint                       Out11,LaunchPoint,800,800,800,1,0
+
+
+DockPoint                       Fuel1,DockingCone,1000,1000,2000
+DockPoint                       Fuel2,DockingCone,1000,1000,2000
+DockPoint                       Fuel3,LaunchPoint,800,800,800,1,0
+DockPoint                       Fuel4,LaunchPoint,800,800,800,1,0
+
+maxDockableFighters                 250
+
+
+NUMBER_OF_SALVAGE_POINTS        8
+NUM_NEEDED_FOR_SALVAGE          99               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+SalvagePoint                       Point7,AttachPoint
+SalvagePoint                       Point8,AttachPoint
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+;Engine trails   This is the top engine
+;=-----------=
+;trailAngle                            90.0
+;trailWidth                          1075.0
+;trailHeight                          150.0
+
+
+;Engine #2       This is the second to top engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+
+;Engine #3       This is the third to top engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+
+;Engine #4       This is the bottom engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+
+trailWidth    900.0
+trailHeight   900.0
+trailLength   1500.0
+trailStyle    2
+;trailScaleCap 0.00025
+
+preciseSelection                    4
+
+hyperspaceColor                    255,0,0
+
+
+minimumZoomDistance              4000
+
+hyperspaceColor                    255,0,0
+

@@ -1,0 +1,123 @@
+[ResourceController]
+
+;Source Files
+;=----------=
+LODFile                             ResourceController.lod
+pMexData                            ResourceController\Rl0\LOD0\ResourceController.mex
+
+;Ship Physics
+;=----------=
+mass                                600.0                          ; ship mass [fighter = 1]
+momentOfInertiaX                    600.0                          ; resistance to rotation
+momentOfInertiaY                    600.0                          ; [fighter = 1]
+momentOfInertiaZ                    600.0
+maxvelocity                         300.0                        ; [fighter = 1000]
+maxrot                              1.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+isCapitalShip                       TRUE
+buildCost                           680                         ; resource units to build
+buildTime                           65                           ; time in seconds to build
+maxhealth                           13600                        ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          5                            ; every this many seconds
+repairDamage                        100                          ; this much damage is repaired
+repairCombatTime                    5                            ; every this many seconds
+repairCombatDamage                  25                           ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   125
+
+canReceiveResources                 TRUE                         ; Resource Collectors,etc can deposit resources in this ship
+canReceiveShips                     TRUE                         ; other ships can dock in this ship
+
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+canReceiveResourceCollectors        TRUE
+
+canHandleNumShipsDocking            9
+canHandleNumShipsDepositingRU       1
+
+pumpFuelRate                        300.0               ; how fast resource controller pumps fuel in.
+
+dockShipRange                       500.0              ; how close ships should get before considering docking (to ship surface)
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+
+NUMBER_OF_SALVAGE_POINTS        3
+NUM_NEEDED_FOR_SALVAGE          3               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+
+
+NUMBER_OF_DOCK_POINTS           9
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       Res,LatchPoint,500,500,1000,2,0
+DockPoint                       Corv0,LatchPoint,500,500,1000,2,5
+DockPoint                       Corv1,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight0,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight1,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight2,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight3,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight4,LatchPoint,500,500,1000,2,5
+DockPoint                       Fight5,LatchPoint,500,500,1000,2,5
+
+NUMBER_OF_DOCK_OVERIDES         1
+
+;need DockOveride       shipraceshipname,<0=no 1=yes: use new heading and up),newHeading,newUp,<yesno use new offset>,offsetx,offsety,offsetz
+;offset is vector seen in lightwave when the ship is attached to the light origin
+;(0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockOveride     R1,ResourceCollector,1,2,4,1,140.0,0.0,-0.5,Res
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.00005                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Engine Glows
+;=----------=
+trailWidth         220.0
+trailHeight        145.0
+trailLength         200.0
+trailScaleCap        0.000188
+
+;Special Ops variables
+
+//distance ship will 'give' fuel to stranded ship so it can dock with ship
+repairApproachDistance                  700.0
+canSpecialBandBoxFriendlies             TRUE
+
+minimumZoomDistance                 435
+
+Overlay_Selection_Scalar            1.25         ; scale the tactical overlay by this amount

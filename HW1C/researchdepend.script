@@ -1,0 +1,691 @@
+; ////////////////////////////////////////////////////////
+; All of the dependancies for SinglePlayer game for RACE 1
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in singleplayer game for RACE 1
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;SPR1ShipDepend    LightDefender
+;SPR1ShipDepend    Probe
+;SPR1ShipDepend    Mothership
+;SPR1ShipDepend    ResearchShip
+;SPR1ShipDepend    ResourceCollector
+;SPR1ShipDepend    SalCapCorvette
+
+;Fighters
+;SPR1ShipDepend    LightInterceptor         MassDrive1Kt
+SPR1ShipDepend    HeavyInterceptor         MassDrive1Kt, Chassis1
+SPR1ShipDepend    HeavyDefender            MassDrive1Kt, Chassis1, FireControl
+SPR1ShipDepend    CloakedFighter           MassDrive1Kt, Chassis1, CloakDefenseFighter
+SPR1ShipDepend    DefenseFighter           MassDrive1Kt, Chassis1, CloakDefenseFighter
+SPR1ShipDepend    AttackBomber             MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+SPR1ShipDepend    RepairCorvette           MassDrive10Kt
+SPR1ShipDepend    LightCorvette            MassDrive10Kt, Chassis2
+SPR1ShipDepend    MultiGunCorvette         MassDrive10Kt, Chassis2, TargetingSystems
+SPR1ShipDepend    HeavyCorvette            MassDrive10Kt, Chassis2, MediumGuns
+SPR1ShipDepend    MinelayerCorvette        MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+SPR1ShipDepend    AdvanceSupportFrigate    MassDrive100Kt
+SPR1ShipDepend    StandardFrigate          MassDrive100Kt, Chassis3
+SPR1ShipDepend    IonCannonFrigate         MassDrive100Kt, Chassis3, IonWeapons
+SPR1ShipDepend    DDDFrigate               MassDrive100Kt, Chassis3, DDDFDFGFTech
+SPR1ShipDepend    DFGFrigate               MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+SPR1ShipDepend    StandardDestroyer        MassDrive1Mt,
+SPR1ShipDepend    MissileDestroyer         MassDrive1Mt, MissileWeapons
+SPR1ShipDepend    Carrier                  MassDrive1Mt, RepairTech
+SPR1ShipDepend    HeavyCruiser             MassDrive1Mt, RepairTech, HeavyGuns
+
+;Non-Combat Ships
+SPR1ShipDepend    SensorArray              ProximityDetector, SensorsArrayTech
+SPR1ShipDepend    GravWellGenerator        MassDrive100Kt, GravityWellGeneratorTech
+SPR1ShipDepend    CloakGenerator           MassDrive100Kt, CloakGeneratorTech
+SPR1ShipDepend    ResourceController       MassDrive100Kt
+SPR1ShipDepend    ProximitySensor          ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in single player game for RACE 1
+; ----------------------------------------------------------------------------
+
+SPR1TechDepend     Chassis1                     MassDrive1Kt
+SPR1TechDepend     FireControl                  Chassis1
+SPR1TechDepend     PlasmaWeapons                Chassis1
+SPR1TechDepend     CloakDefenseFighter          Chassis1
+SPR1TechDepend     Chassis2                     MassDrive10Kt
+SPR1TechDepend     MediumGuns                   Chassis2
+SPR1TechDepend     TargetingSystems             Chassis2
+SPR1TechDepend     MineLayerTech                Chassis2
+SPR1TechDepend     IonWeapons                   Chassis3
+SPR1TechDepend     DDDFDFGFTech                 Chassis3
+SPR1TechDepend     Chassis3                     MassDrive100Kt
+SPR1TechDepend     MassDrive1Mt                 Chassis3
+SPR1TechDepend     GravityWellGeneratorTech     Chassis3
+SPR1TechDepend     CloakGeneratorTech           Chassis3
+SPR1TechDepend     HeavyGuns                    RepairTech
+SPR1TechDepend     RepairTech                   Chassis3
+SPR1TechDepend     MissileWeapons               MassDrive1Mt
+SPR1TechDepend     SensorsArrayTech             ProximityDetector
+SPR1TechDepend     NewAlloys                    Chassis1
+SPR1TechDepend     SupportRefuelTech            Chassis2
+SPR1TechDepend     SalvageTech                  Chassis3
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in single player game for RACE 1
+; ----------------------------------------------------------------------------
+
+SPR1MassDrive1Kt                    90
+SPR1CloakDefenseFighter             400
+SPR1TargetingSystems                300
+SPR1PlasmaWeapons                   300
+SPR1MassDrive10Kt                   130
+SPR1MediumGuns                      160
+SPR1MineLayerTech                   300
+SPR1MassDrive100Kt                  200
+SPR1FireControl                     300
+SPR1IonWeapons                      450
+SPR1DDDFDFGFTech                    400
+SPR1MassDrive1Mt                    300
+SPR1AdvancedFireControl             300
+SPR1MissileWeapons                  300
+SPR1ConstructionTech                300
+SPR1HeavyGuns                       400
+SPR1ProximityDetector               100
+SPR1SensorsArrayTech                400
+SPR1GravityWellGeneratorTech        450
+SPR1CloakGeneratorTech              450
+SPR1Chassis1                        150
+SPR1Chassis2                        160
+SPR1Chassis3                        170
+SPR1RepairTech                      450    ;super capital ship chassis;
+SPR1NewAlloys                       450
+SPR1SupportRefuelTech               450
+SPR1SalvageTech                     450
+
+
+
+; ////////////////////////////////////////////////////////
+; All of the dependancies for SinglePlayer game for RACE 2
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in singleplayer game for RACE 2
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;SPR2ShipDepend    LightDefender
+;SPR2ShipDepend    Probe
+;SPR2ShipDepend    Mothership
+;SPR2ShipDepend    ResearchShip
+;SPR2ShipDepend    ResourceCollector
+;SPR2ShipDepend    SalCapCorvette
+
+;Fighters
+;SPR2ShipDepend    LightInterceptor       MassDrive1Kt
+SPR2ShipDepend    HeavyInterceptor       MassDrive1Kt, Chassis1
+SPR2ShipDepend    HeavyDefender          MassDrive1Kt, Chassis1, FireControl
+SPR2ShipDepend    CloakedFighter         MassDrive1Kt, Chassis1, CloakDefenseFighter
+SPR2ShipDepend    DefenseFighter         MassDrive1Kt, Chassis1, CloakDefenseFighter
+SPR2ShipDepend    AttackBomber           MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+SPR2ShipDepend    RepairCorvette          MassDrive10Kt
+SPR2ShipDepend    LightCorvette          MassDrive10Kt, Chassis2
+SPR2ShipDepend    MultiGunCorvette       MassDrive10Kt, Chassis2, TargetingSystems
+SPR2ShipDepend    HeavyCorvette          MassDrive10Kt, Chassis2, MediumGuns
+SPR2ShipDepend    MinelayerCorvette      MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+SPR2ShipDepend    AdvanceSupportFrigate  MassDrive100Kt
+SPR2ShipDepend    StandardFrigate        MassDrive100Kt, Chassis3
+SPR2ShipDepend    IonCannonFrigate       MassDrive100Kt, Chassis3, IonWeapons
+SPR2ShipDepend    DDDFrigate             MassDrive100Kt, Chassis3, DDDFDFGFTech
+SPR2ShipDepend    DFGFrigate             MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+SPR2ShipDepend    StandardDestroyer      MassDrive1Mt,
+SPR2ShipDepend    MissileDestroyer       MassDrive1Mt, MissileWeapons
+SPR2ShipDepend    Carrier                MassDrive1Mt, RepairTech
+SPR2ShipDepend    HeavyCruiser           MassDrive1Mt, RepairTech, HeavyGuns
+
+;Non-Combat Ships
+SPR2ShipDepend    SensorArray            ProximityDetector, SensorsArrayTech
+SPR2ShipDepend    GravWellGenerator      MassDrive100Kt, GravityWellGeneratorTech
+SPR2ShipDepend    CloakGenerator         MassDrive100Kt, CloakGeneratorTech
+SPR2ShipDepend    ResourceController     MassDrive100Kt
+SPR2ShipDepend    ProximitySensor         ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in single player game for RACE 2
+; ----------------------------------------------------------------------------
+
+SPR2TechDepend     Chassis1                     MassDrive1Kt
+SPR2TechDepend     FireControl                  Chassis1
+SPR2TechDepend     PlasmaWeapons                Chassis1
+SPR2TechDepend     CloakDefenseFighter          Chassis1
+SPR2TechDepend     Chassis2                     MassDrive10Kt
+SPR2TechDepend     MediumGuns                   Chassis2
+SPR2TechDepend     TargetingSystems             Chassis2
+SPR2TechDepend     MineLayerTech                Chassis2
+SPR2TechDepend     IonWeapons                   Chassis3
+SPR2TechDepend     DDDFDFGFTech                 Chassis3
+SPR2TechDepend     Chassis3                     MassDrive100Kt
+SPR2TechDepend     MassDrive1Mt                 Chassis3
+SPR2TechDepend     GravityWellGeneratorTech     Chassis3
+SPR2TechDepend     CloakGeneratorTech           Chassis3
+SPR2TechDepend     HeavyGuns                    RepairTech
+SPR2TechDepend     RepairTech                   Chassis3
+SPR2TechDepend     MissileWeapons               MassDrive1Mt
+SPR2TechDepend     SensorsArrayTech             ProximityDetector
+SPR2TechDepend     NewAlloys                    Chassis1
+SPR2TechDepend     SupportRefuelTech            Chassis2
+SPR2TechDepend     SalvageTech                  Chassis3
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in single player game for RACE 2
+; ----------------------------------------------------------------------------
+
+SPR2MassDrive1Kt                    90
+SPR2CloakDefenseFighter             400
+SPR2TargetingSystems                300
+SPR2PlasmaWeapons                   300
+SPR2MassDrive10Kt                   130
+SPR2MediumGuns                      160
+SPR2MineLayerTech                   300
+SPR2MassDrive100Kt                  200
+SPR2FireControl                     300
+SPR2IonWeapons                      450
+SPR2DDDFDFGFTech                    400
+SPR2MassDrive1Mt                    300
+SPR2AdvancedFireControl             300
+SPR2MissileWeapons                  300
+SPR2ConstructionTech                300
+SPR2HeavyGuns                       400
+SPR2ProximityDetector               100
+SPR2SensorsArrayTech                400
+SPR2GravityWellGeneratorTech        450
+SPR2CloakGeneratorTech              450
+SPR2Chassis1                        150
+SPR2Chassis2                        160
+SPR2Chassis3                        170
+SPR2RepairTech                      450    ;super capital ship chassis;
+SPR2NewAlloys                       450
+SPR2SupportRefuelTech               450
+SPR2SalvageTech                     450
+
+
+
+; ////////////////////////////////////////////////////////
+; All of the dependancies for MultiPlayer game for RACE 1
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in multiplayer game for RACE 1
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;MPR1ShipDepend    LightInterceptor
+;MPR1ShipDepend    LightDefender
+;MPR1ShipDepend    Probe
+;MPR1ShipDepend    Mothership
+;MPR1ShipDepend    ResearchShip
+;MPR1ShipDepend    ResourceCollector
+
+;Fighters
+;MPR1ShipDepend    LightInterceptor       MassDrive1Kt
+MPR1ShipDepend    HeavyInterceptor        MassDrive1Kt  Chassis1
+MPR1ShipDepend    HeavyDefender           MassDrive1Kt, FireControl
+MPR1ShipDepend    CloakedFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPR1ShipDepend    DefenseFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPR1ShipDepend    AttackBomber            MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+;MPR1ShipDepend    RepairCorvette           MassDrive10Kt
+MPR1ShipDepend    LightCorvette           MassDrive10Kt
+MPR1ShipDepend    SalCapCorvette          MassDrive10Kt, Chassis2
+MPR1ShipDepend    MultiGunCorvette        MassDrive10Kt, Chassis2, TargetingSystems
+MPR1ShipDepend    HeavyCorvette           MassDrive10Kt, Chassis2, MediumGuns
+MPR1ShipDepend    MinelayerCorvette       MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+MPR1ShipDepend    AdvanceSupportFrigate   MassDrive100Kt,
+MPR1ShipDepend    StandardFrigate         MassDrive100Kt, Chassis3
+MPR1ShipDepend    IonCannonFrigate        MassDrive100Kt, Chassis3, IonWeapons
+MPR1ShipDepend    DDDFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+MPR1ShipDepend    DFGFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+MPR1ShipDepend    StandardDestroyer       MassDrive1Mt, IonWeapons
+MPR1ShipDepend    MissileDestroyer        MassDrive1Mt, MissileWeapons
+MPR1ShipDepend    Carrier                 MassDrive1Mt, RepairTech
+MPR1ShipDepend    HeavyCruiser            MassDrive1Mt, RepairTech, HeavyGuns, IonWeapons
+
+;Non-Combat Ships
+MPR1ShipDepend    SensorArray             ProximityDetector, SensorsArrayTech
+MPR1ShipDepend    GravWellGenerator       MassDrive100Kt, GravityWellGeneratorTech
+MPR1ShipDepend    CloakGenerator          MassDrive100Kt, CloakGeneratorTech
+MPR1ShipDepend    ResourceController      MassDrive100Kt
+MPR1ShipDepend    ProximitySensor         ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in multi player game for RACE 1
+; ----------------------------------------------------------------------------
+
+MPR1TechDepend     Chassis1                     MassDrive1Kt
+MPR1TechDepend     FireControl                  MassDrive1Kt
+MPR1TechDepend     PlasmaWeapons                Chassis1
+MPR1TechDepend     CloakDefenseFighter          Chassis1
+MPR1TechDepend     Chassis2                     MassDrive10Kt
+MPR1TechDepend     MediumGuns                   Chassis2
+MPR1TechDepend     TargetingSystems             Chassis2
+MPR1TechDepend     MineLayerTech                Chassis2
+MPR1TechDepend     IonWeapons                   Chassis3
+MPR1TechDepend     DDDFDFGFTech                 Chassis3
+MPR1TechDepend     Chassis3                     MassDrive100Kt
+MPR1TechDepend     MassDrive1Mt                 Chassis3
+MPR1TechDepend     GravityWellGeneratorTech     MassDrive100Kt
+MPR1TechDepend     CloakGeneratorTech           MassDrive100Kt
+MPR1TechDepend     HeavyGuns                    RepairTech
+MPR1TechDepend     RepairTech                   Chassis3
+MPR1TechDepend     MissileWeapons               MassDrive1Mt
+MPR1TechDepend     SensorsArrayTech             ProximityDetector
+MPR1TechDepend     NewAlloys                    Chassis1
+MPR1TechDepend     SupportRefuelTech            Chassis2
+MPR1TechDepend     SalvageTech                  Chassis3
+
+
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in multi player game for RACE 1
+; ----------------------------------------------------------------------------
+
+MPR1MassDrive1Kt                    75
+MPR1CloakDefenseFighter             400
+MPR1TargetingSystems                300
+MPR1PlasmaWeapons                   300
+MPR1MassDrive10Kt                   75
+MPR1MediumGuns                      250
+MPR1MineLayerTech                   300
+MPR1MassDrive100Kt                  100
+MPR1FireControl                     300
+MPR1IonWeapons                      450
+MPR1DDDFDFGFTech                    400
+MPR1MassDrive1Mt                    450
+MPR1AdvancedFireControl             300
+MPR1MissileWeapons                  300
+MPR1ConstructionTech                300
+MPR1HeavyGuns                       650
+MPR1ProximityDetector               100
+MPR1SensorsArrayTech                400
+MPR1GravityWellGeneratorTech        520
+MPR1CloakGeneratorTech              520
+MPR1Chassis1                        125
+MPR1Chassis2                        200
+MPR1Chassis3                        320
+MPR1RepairTech                      250    ;super capital ship chassis;
+MPR1NewAlloys                       450
+MPR1SupportRefuelTech               450
+MPR1SalvageTech                     450
+
+
+; ////////////////////////////////////////////////////////
+; All of the dependancies for MultiPlayer game for RACE 2
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in multiplayer game for RACE 2
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;MPR2ShipDepend    LightInterceptor
+;MPR2ShipDepend    LightDefender
+;MPR2ShipDepend    Probe
+;MPR2ShipDepend    Mothership
+;MPR2ShipDepend    ResearchShip
+;MPR2ShipDepend    ResourceCollector
+
+
+;Fighters
+;MPR2ShipDepend    LightInterceptor       MassDrive1Kt
+MPR2ShipDepend    HeavyInterceptor        MassDrive1Kt  Chassis1
+MPR2ShipDepend    HeavyDefender           MassDrive1Kt, FireControl
+MPR2ShipDepend    CloakedFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPR2ShipDepend    DefenseFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPR2ShipDepend    AttackBomber            MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+;MPR2ShipDepend    RepairCorvette           MassDrive10Kt
+MPR2ShipDepend    LightCorvette           MassDrive10Kt
+MPR2ShipDepend    SalCapCorvette          MassDrive10Kt, Chassis2
+MPR2ShipDepend    MultiGunCorvette        MassDrive10Kt, Chassis2, TargetingSystems
+MPR2ShipDepend    HeavyCorvette           MassDrive10Kt, Chassis2, MediumGuns
+MPR2ShipDepend    MinelayerCorvette       MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+MPR2ShipDepend    AdvanceSupportFrigate   MassDrive100Kt,
+MPR2ShipDepend    StandardFrigate         MassDrive100Kt, Chassis3
+MPR2ShipDepend    IonCannonFrigate        MassDrive100Kt, Chassis3, IonWeapons
+MPR2ShipDepend    DDDFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+MPR2ShipDepend    DFGFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+MPR2ShipDepend    StandardDestroyer       MassDrive1Mt, IonWeapons
+MPR2ShipDepend    MissileDestroyer        MassDrive1Mt, MissileWeapons
+MPR2ShipDepend    Carrier                 MassDrive1Mt, RepairTech
+MPR2ShipDepend    HeavyCruiser            MassDrive1Mt, RepairTech, HeavyGuns, IonWeapons
+
+;Non-Combat Ships
+MPR2ShipDepend    SensorArray             ProximityDetector, SensorsArrayTech
+MPR2ShipDepend    GravWellGenerator       MassDrive100Kt, GravityWellGeneratorTech
+MPR2ShipDepend    CloakGenerator          MassDrive100Kt, CloakGeneratorTech
+MPR2ShipDepend    ResourceController      MassDrive100Kt
+MPR2ShipDepend    ProximitySensor         ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in multi player game for RACE 2
+; ----------------------------------------------------------------------------
+
+MPR2TechDepend     Chassis1                     MassDrive1Kt
+MPR2TechDepend     FireControl                  MassDrive1Kt
+MPR2TechDepend     PlasmaWeapons                Chassis1
+MPR2TechDepend     CloakDefenseFighter          Chassis1
+MPR2TechDepend     Chassis2                     MassDrive10Kt
+MPR2TechDepend     MediumGuns                   Chassis2
+MPR2TechDepend     TargetingSystems             Chassis2
+MPR2TechDepend     MineLayerTech                Chassis2
+MPR2TechDepend     IonWeapons                   Chassis3
+MPR2TechDepend     DDDFDFGFTech                 Chassis3
+MPR2TechDepend     Chassis3                     MassDrive100Kt
+MPR2TechDepend     MassDrive1Mt                 Chassis3
+MPR2TechDepend     GravityWellGeneratorTech     MassDrive100Kt
+MPR2TechDepend     CloakGeneratorTech           MassDrive100Kt
+MPR2TechDepend     HeavyGuns                    RepairTech
+MPR2TechDepend     RepairTech                   Chassis3
+MPR2TechDepend     MissileWeapons               MassDrive1Mt
+MPR2TechDepend     SensorsArrayTech             ProximityDetector
+MPR2TechDepend     NewAlloys                    Chassis1
+MPR2TechDepend     SupportRefuelTech            Chassis2
+MPR2TechDepend     SalvageTech                  Chassis3
+
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in multiplayer game for RACE 2
+; ----------------------------------------------------------------------------
+
+MPR2MassDrive1Kt                     75
+MPR2CloakDefenseFighter             400
+MPR2TargetingSystems                300
+MPR2PlasmaWeapons                   300
+MPR2MassDrive10Kt                    75
+MPR2MediumGuns                      250
+MPR2MineLayerTech                   300
+MPR2MassDrive100Kt                  100
+MPR2FireControl                     300
+MPR2IonWeapons                      450
+MPR2DDDFDFGFTech                    400
+MPR2MassDrive1Mt                    450
+MPR2AdvancedFireControl             300
+MPR2MissileWeapons                  300
+MPR2ConstructionTech                300
+MPR2HeavyGuns                       650
+MPR2ProximityDetector               100
+MPR2SensorsArrayTech                400
+MPR2GravityWellGeneratorTech        520
+MPR2CloakGeneratorTech              520
+MPR2Chassis1                        125
+MPR2Chassis2                        200
+MPR2Chassis3                        320
+MPR2RepairTech                      250    ;super capital ship chassis;
+MPR2NewAlloys                       450
+MPR2SupportRefuelTech               450
+MPR2SalvageTech                     450
+
+
+
+
+
+
+/*=============================================================================
+    Multiplayer, with Carrier only
+=============================================================================*/
+
+
+
+
+
+
+; ////////////////////////////////////////////////////////
+; All of the dependancies for MultiPlayer game for RACE 1
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in multiplayer game for RACE 1
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;MPCR1ShipDepend    LightInterceptor
+;MPCR1ShipDepend    LightDefender
+;MPCR1ShipDepend    Probe
+;MPCR1ShipDepend    Mothership
+;MPCR1ShipDepend    ResearchShip
+;MPCR1ShipDepend    ResourceCollector
+
+;Fighters
+;MPCR1ShipDepend    LightInterceptor       MassDrive1Kt
+MPCR1ShipDepend    HeavyInterceptor        MassDrive1Kt  Chassis1
+MPCR1ShipDepend    HeavyDefender           MassDrive1Kt, FireControl
+MPCR1ShipDepend    CloakedFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPCR1ShipDepend    DefenseFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPCR1ShipDepend    AttackBomber            MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+;MPCR1ShipDepend    RepairCorvette           MassDrive10Kt
+MPCR1ShipDepend    LightCorvette           MassDrive10Kt
+MPCR1ShipDepend    SalCapCorvette          MassDrive10Kt, Chassis2
+MPCR1ShipDepend    MultiGunCorvette        MassDrive10Kt, Chassis2, TargetingSystems
+MPCR1ShipDepend    HeavyCorvette           MassDrive10Kt, Chassis2, MediumGuns
+MPCR1ShipDepend    MinelayerCorvette       MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+MPCR1ShipDepend    AdvanceSupportFrigate   MassDrive100Kt,
+MPCR1ShipDepend    StandardFrigate         MassDrive100Kt, Chassis3
+MPCR1ShipDepend    IonCannonFrigate        MassDrive100Kt, Chassis3, IonWeapons
+MPCR1ShipDepend    DDDFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+MPCR1ShipDepend    DFGFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+;MPCR1ShipDepend    StandardDestroyer       MassDrive1Mt, IonWeapons
+;MPCR1ShipDepend    MissileDestroyer        MassDrive1Mt, MissileWeapons
+;MPCR1ShipDepend    Carrier                 MassDrive1Mt, RepairTech
+;MPCR1ShipDepend    HeavyCruiser            MassDrive1Mt, RepairTech, HeavyGuns, IonWeapons
+
+;Non-Combat Ships
+MPCR1ShipDepend    SensorArray             ProximityDetector, SensorsArrayTech
+MPCR1ShipDepend    GravWellGenerator       MassDrive100Kt, GravityWellGeneratorTech
+MPCR1ShipDepend    CloakGenerator          MassDrive100Kt, CloakGeneratorTech
+;MPCR1ShipDepend    ResourceController      MassDrive100Kt
+MPCR1ShipDepend    ProximitySensor          ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in multi player game for RACE 1
+; ----------------------------------------------------------------------------
+
+MPCR1TechDepend     Chassis1                     MassDrive1Kt
+MPCR1TechDepend     FireControl                  MassDrive1Kt
+MPCR1TechDepend     PlasmaWeapons                Chassis1
+MPCR1TechDepend     CloakDefenseFighter          Chassis1
+MPCR1TechDepend     Chassis2                     MassDrive10Kt
+MPCR1TechDepend     MediumGuns                   Chassis2
+MPCR1TechDepend     TargetingSystems             Chassis2
+MPCR1TechDepend     MineLayerTech                Chassis2
+MPCR1TechDepend     IonWeapons                   Chassis3
+MPCR1TechDepend     DDDFDFGFTech                 Chassis3
+MPCR1TechDepend     Chassis3                     MassDrive100Kt
+;MPCR1TechDepend     MassDrive1Mt                 Chassis3
+MPCR1TechDepend     GravityWellGeneratorTech     MassDrive100Kt
+MPCR1TechDepend     CloakGeneratorTech           MassDrive100Kt
+;MPCR1TechDepend     HeavyGuns                    RepairTech
+MPCR1TechDepend     RepairTech                   Chassis3
+;MPCR1TechDepend     MissileWeapons               MassDrive1Mt
+MPCR1TechDepend     SensorsArrayTech             ProximityDetector
+MPCR1TechDepend     NewAlloys                    Chassis1
+MPCR1TechDepend     SupportRefuelTech            Chassis2
+MPCR1TechDepend     SalvageTech                  Chassis3
+
+
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in multi player game for RACE 1
+; ----------------------------------------------------------------------------
+
+MPCR1MassDrive1Kt                     75
+MPCR1CloakDefenseFighter             400
+MPCR1TargetingSystems                300
+MPCR1PlasmaWeapons                   300
+MPCR1MassDrive10Kt                    75
+MPCR1MediumGuns                      250
+MPCR1MineLayerTech                   300
+MPCR1MassDrive100Kt                  100
+MPCR1FireControl                     300
+MPCR1IonWeapons                      450
+MPCR1DDDFDFGFTech                    400
+MPCR1MassDrive1Mt                    450
+MPCR1AdvancedFireControl             300
+MPCR1MissileWeapons                  300
+MPCR1ConstructionTech                300
+MPCR1HeavyGuns                       650
+MPCR1ProximityDetector               100
+MPCR1SensorsArrayTech                400
+MPCR1GravityWellGeneratorTech        520
+MPCR1CloakGeneratorTech              520
+MPCR1Chassis1                        125
+MPCR1Chassis2                        200
+MPCR1Chassis3                        320
+MPCR1RepairTech                      250    ;super capital ship chassis;
+MPCR1NewAlloys                       450
+MPCR1SupportRefuelTech               450
+MPCR1SalvageTech                     450
+
+
+; ////////////////////////////////////////////////////////
+; All of the dependancies for MultiPlayer game for RACE 2
+; \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+; ---------------------------------------------------------------------
+; technology dependancies for each ship in multiplayer game for RACE 2
+; ---------------------------------------------------------------------
+
+;none required for these six so leave them out
+;MPCR2ShipDepend    LightInterceptor
+;MPCR2ShipDepend    LightDefender
+;MPCR2ShipDepend    Probe
+;MPCR2ShipDepend    Mothership
+;MPCR2ShipDepend    ResearchShip
+;MPCR2ShipDepend    ResourceCollector
+
+
+;Fighters
+;MPCR2ShipDepend    LightInterceptor       MassDrive1Kt
+MPCR2ShipDepend    HeavyInterceptor        MassDrive1Kt  Chassis1
+MPCR2ShipDepend    HeavyDefender           MassDrive1Kt, FireControl
+MPCR2ShipDepend    CloakedFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPCR2ShipDepend    DefenseFighter          MassDrive1Kt, Chassis1, CloakDefenseFighter
+MPCR2ShipDepend    AttackBomber            MassDrive1Kt, Chassis1, PlasmaWeapons
+
+;Corvettes
+;MPCR2ShipDepend    RepairCorvette           MassDrive10Kt
+MPCR2ShipDepend    LightCorvette           MassDrive10Kt
+MPCR2ShipDepend    SalCapCorvette          MassDrive10Kt, Chassis2
+MPCR2ShipDepend    MultiGunCorvette        MassDrive10Kt, Chassis2, TargetingSystems
+MPCR2ShipDepend    HeavyCorvette           MassDrive10Kt, Chassis2, MediumGuns
+MPCR2ShipDepend    MinelayerCorvette       MassDrive10Kt, Chassis2, MineLayerTech
+
+;Frigates
+MPCR2ShipDepend    AdvanceSupportFrigate   MassDrive100Kt,
+MPCR2ShipDepend    StandardFrigate         MassDrive100Kt, Chassis3
+MPCR2ShipDepend    IonCannonFrigate        MassDrive100Kt, Chassis3, IonWeapons
+MPCR2ShipDepend    DDDFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+MPCR2ShipDepend    DFGFrigate              MassDrive100Kt, Chassis3, DDDFDFGFTech
+
+;Big Capital Ships
+;MPCR2ShipDepend    StandardDestroyer       MassDrive1Mt, IonWeapons
+;MPCR2ShipDepend    MissileDestroyer        MassDrive1Mt, MissileWeapons
+;MPCR2ShipDepend    Carrier                 MassDrive1Mt, RepairTech
+;MPCR2ShipDepend    HeavyCruiser            MassDrive1Mt, RepairTech, HeavyGuns IonWeapons
+
+;Non-Combat Ships
+MPCR2ShipDepend    SensorArray             ProximityDetector, SensorsArrayTech
+MPCR2ShipDepend    GravWellGenerator       MassDrive100Kt, GravityWellGeneratorTech
+MPCR2ShipDepend    CloakGenerator          MassDrive100Kt, CloakGeneratorTech
+;MPCR2ShipDepend    ResourceController      MassDrive100Kt
+MPCR2ShipDepend    ProximitySensor          ProximityDetector
+
+; ----------------------------------------------------------------------------
+; technology dependancies for each technology in multi player game for RACE 2
+; ----------------------------------------------------------------------------
+
+MPCR2TechDepend     Chassis1                     MassDrive1Kt
+MPCR2TechDepend     FireControl                  MassDrive1Kt
+MPCR2TechDepend     PlasmaWeapons                Chassis1
+MPCR2TechDepend     CloakDefenseFighter          Chassis1
+MPCR2TechDepend     Chassis2                     MassDrive10Kt
+MPCR2TechDepend     MediumGuns                   Chassis2
+MPCR2TechDepend     TargetingSystems             Chassis2
+MPCR2TechDepend     MineLayerTech                Chassis2
+MPCR2TechDepend     IonWeapons                   Chassis3
+MPCR2TechDepend     DDDFDFGFTech                 Chassis3
+MPCR2TechDepend     Chassis3                     MassDrive100Kt
+;MPCR2TechDepend     MassDrive1Mt                 Chassis3
+MPCR2TechDepend     GravityWellGeneratorTech     MassDrive100Kt
+MPCR2TechDepend     CloakGeneratorTech           MassDrive100Kt
+;MPCR2TechDepend     HeavyGuns                    RepairTech
+MPCR2TechDepend     RepairTech                   Chassis3
+;MPCR2TechDepend     MissileWeapons               MassDrive1Mt
+MPCR2TechDepend     SensorsArrayTech             ProximityDetector
+MPCR2TechDepend     NewAlloys                    Chassis1
+MPCR2TechDepend     SupportRefuelTech            Chassis2
+MPCR2TechDepend     SalvageTech                  Chassis3
+
+
+; ----------------------------------------------------------------------------
+; time to complete times for all technologies in multiplayer game for RACE 2
+; ----------------------------------------------------------------------------
+
+MPCR2MassDrive1Kt                     75
+MPCR2CloakDefenseFighter             400
+MPCR2TargetingSystems                300
+MPCR2PlasmaWeapons                   300
+MPCR2MassDrive10Kt                    75
+MPCR2MediumGuns                      250
+MPCR2MineLayerTech                   300
+MPCR2MassDrive100Kt                  100
+MPCR2FireControl                     300
+MPCR2IonWeapons                      450
+MPCR2DDDFDFGFTech                    400
+MPCR2MassDrive1Mt                    450
+MPCR2AdvancedFireControl             300
+MPCR2MissileWeapons                  300
+MPCR2ConstructionTech                300
+MPCR2HeavyGuns                       650
+MPCR2ProximityDetector               100
+MPCR2SensorsArrayTech                400
+MPCR2GravityWellGeneratorTech        520
+MPCR2CloakGeneratorTech              520
+MPCR2Chassis1                        125
+MPCR2Chassis2                        200
+MPCR2Chassis3                        320
+MPCR2RepairTech                      250    ;super capital ship chassis;
+MPCR2NewAlloys                       450
+MPCR2SupportRefuelTech               450
+MPCR2SalvageTech                     450
+
+
+

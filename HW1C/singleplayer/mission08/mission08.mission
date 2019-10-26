@@ -1,0 +1,34 @@
+; MissionMan script, Friday, Sep 3 1999, 1:53:36 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission08
+; Info: Mission08
+
+[Mission08]
+
+MissionSphere    -1,?,ResourceSphere,4000.0,4000.0,0.0,30000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez08
+Background    ez08,180,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    160000
+smZoomMin    20000
+smInitialDistance    120000
+smUniverseSizeX    90000
+smUniverseSizeZ    50000
+smUniverseSizeY    120000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeDerelict    All
+IncludeDerelict    Shipwreck
+BaseColor    5, 255, 255, 255
+BaseColor    6, 255, 128, 0
+StripeColor    5, 255, 255, 255
+AvailableColorSchemes    P2,P2AdvanceSwarmer 5,6
+MissionStartEnemyRUs    5000
+MissionStartEnemyRace    P2
+SongNumber    3

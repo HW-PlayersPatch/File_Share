@@ -1,0 +1,78 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("ShotShape1",4)
+	speechSetDir("NIS_12B")
+	wideScreenIn(4)
+at frame 1
+	cameraCut("ShotShape1")
+	musicStart("nis12b.fda")
+at frame 332
+	speechEvent("$56150",2)
+at frame 445
+	speechEvent("$56151",2)
+at frame 513
+	speechEvent("$56152",2)
+at frame 665
+	speechEvent("$56153",2)
+at frame 730
+	cameraCut("ShotShape2")
+at frame 760
+	cameraLeave()
+	musicStartAtEnd("battle/battle_01.mp3")
+	nisOut(4)
+
+with |joint1|Vgr_BattleCruiser
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 188
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_Destroyer
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 66
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_Destroyer1
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 136
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_MotherShip1
+{
+	at frame 0
+		remainAtEnd("Vaygr_MakaanMothership")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 4
+		hyperspaceIn()
+	at frame 580
+		setEnginePower(1)
+}

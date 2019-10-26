@@ -1,0 +1,26 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+effects = {
+animations = {
+	animation1 = {name = "Death", length = 2, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},
+	animation2 = {name = "Weapon_R", length = 1, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},
+	animation3 = {name = "Weapon_L", length = 1, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},
+	animation4 = {name = "Deathtrail", length = 3, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},},
+events = {
+	event1 = {{"anim", "Weapon_R"}, {"animtime", "0"}, {"marker", "Weapon_R_Muzzle"}, {"fx", "muzzle_flash_combo_plasma"}, {"sound", "WEAPON/FIGHTER/FIRE/WEAPON_FIGHTER_FLECHETTE_REPEATER_SHELL"}, {"fx_nlips", "on"},},
+	event2 = {{"anim", "Weapon_L"}, {"animtime", "0.2"}, {"marker", "Weapon_L_Muzzle"}, {"fx", "muzzle_flash_combo_plasma"}, {"sound", "WEAPON/FIGHTER/FIRE/WEAPON_FIGHTER_FLECHETTE_REPEATER_SHELL"}, {"fx_nlips", "on"},},
+	event3 = {{"anim", "Fire"}, {"animtime", "0"}, {"marker", "Weapon_FrontGun_Position"}, {"fx", "muzzle_flash_combo"},},
+	event4 = {{"anim", "Deathtrail"}, {"animtime", "0"}, {"marker", "marker_death"}, {"fx", "FIERY_TRAIL_SPRAY"}, {"sound", "EXPLOSION/DEATHTRAIL"}, {"fx_scale", "5"},},
+	event5 = {{"anim", "Deathtrail"}, {"animtime", "0"}, {"marker", "marker_death"}, {"fx", "fiery_trail_spray_small"}, {"fx_scale", "5"},},
+	event6 = {{"anim", "Deathtrail"}, {"animtime", "0"}, {"marker", "marker_death"}, {"fx", "fiery_flash_ring_long"}, {"fx_scale", "30"},},
+	event7 = {{"anim", "Death"}, {"animtime", "0"}, {"marker", "root"}, {"fx", "death_generic_fighter"}, {"sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY"}, {"fx_scale", "4"},},
+	event8 = {{"anim", "Deathtrail"}, {"animtime", "0.5"}, {"marker", "root"}, {"fx", "fiery_trail_lines_spray"}, {"fx_scale", "entity"},},
+	event9 = {{"anim", "Deathtrail"}, {"animtime", "0.5"}, {"marker", "root"}, {"fx", "fiery_trail_death_combo"}, {"sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY"}, {"fx_scale", "20"},},
+	event10 = {{"anim", "Deathtrail"}, {"animtime", "1"}, {"marker", "root"}, {"fx", "fiery_trail_shockwave_small"}, {"fx_scale", "entity"},},},}
+

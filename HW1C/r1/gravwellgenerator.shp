@@ -1,0 +1,131 @@
+[GravWellGenerator]
+
+;Source Files
+;=----------=
+LODFile                             GravWellGenerator.lod
+pMexData                            GravWellGenerator\Rl0\LOD0\GravWellGenerator.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                           ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                           ; resistance to rotation
+momentOfInertiaY                    400.0                           ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         325.0                         ; [fighter = 1000]
+maxrot                              10.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+isCapitalShip                       TRUE
+buildCost                           800                           ; resource units to build
+buildTime                           60                            ; time in seconds to build
+maxhealth                           8000                          ; hit points
+groupSize                           2                             ; size of group ships of this type tend to form
+repairTime                          8                           ; every this many seconds
+repairDamage                        75                         ; this much damage is repaired
+repairCombatTime                    8                           ; every this many seconds
+repairCombatDamage                  25                            ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+
+;Weapons
+;=-----=
+;
+;no weapons
+
+
+;Ship Trails
+;=---------=
+
+
+;Explosions
+;=--------=
+explosionType                       ET_InterceptorExplosion
+
+
+NUMBER_OF_NAV_LIGHTS           2
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        side1,        NAVLIGHT_Default, 1,  1, 0,  7,  2, etg\textures\glow32
+NavLight                        side2,        NAVLIGHT_Default, 1,   1, 0,  7,  2, etg\textures\glow32
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+BindAnimations      1
+
+;MadStartInfo        needs a starting paused     / Animation Text Name  / needs starting animation  / Animation Text Name
+                     animation(when built+placed)/ (no spaces allowed!) / (when built and launched) / (no spaces allowed!)
+MadStartInfo                   1 , arms_open , 1 , arms_open
+
+;MadDockAnims        definitions of explanation below
+;                        n = number, d = docking, p = post docking, w = damaged
+;
+;                       nd, names, ..., np, names, ..., ndw, names, npw, names
+MadSpecialCaseAnims            1, arms_open, 1 arms_close, 1, damage_open,1,damage_close
+
+;Ships health must be below this percentage to use the damaged animations.
+madGunOpenDamagedHealthThreshold                0.70    ;<= 1.0f
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Special Effects
+;=--------=
+GravWellRadius                      6000.0                  ; Radius in which things are affected
+OperationTime                       210.0                    ; Time in Seconds the Well is On
+EffectConstant                      0.70                     ; velocity multiplier to slow ships down and stop them!
+scanrate                            63                       ; Every Xth frame at which gravwell scans for objects to capture..lower = slower
+                                                             ; 1,3,7, 15, 31, etc.
+repulseForce                        70.0                   ; repulsion force
+warmupdowntime                      2.0                      ; seconds it takes for grav well to
+;rotaion speeds are maximums...random values are chosen between
+;-rot and +rot and then applied to object
+xrot                                200.0                    ;maximum rotation speed in x direction
+yrot                                200.0                    ;maximum rotation speed in y direction
+zrot                                200.0                    ;maximum rotation speed in z direction
+                                                             ; power up,down
+
+;Engine Glow
+;=---------=
+trailWidth                120.0
+trailHeight               95.0
+trailLength              130.0
+trailScaleCap              0.000196
+
+minimumZoomDistance                 300
+
+Overlay_Selection_Scalar            0.75         ; scale the tactical overlay by this amount

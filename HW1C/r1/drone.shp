@@ -1,0 +1,78 @@
+[Drone]
+
+;Source Files
+;=----------=
+LODFile                             Drone.lod
+pMexData                            Drone\Rl0\LOD0\Drone.mex
+
+;Ship Physics
+;=----------=
+mass                                2.0                           ; ship mass [fighter = 1]
+momentOfInertiaX                    2.0                           ; resistance to rotation
+momentOfInertiaY                    2.0                           ; [fighter = 1]
+momentOfInertiaZ                    2.0
+maxvelocity                         700.0                         ; [fighter = 1000]
+maxrot                              10.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Fighter
+maxhealth                           120                            ; hit points
+groupSize                           48
+
+blastRadiusShockWave                6.0
+blastRadiusDamage                   75
+
+passiveAttackPenaltyExempt          TRUE
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            600.0                        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          600.0
+thruststrength[TRANS_RIGHT]         600.0
+thruststrength[TRANS_LEFT]          600.0
+thruststrength[TRANS_FORWARD]       600.0
+thruststrength[TRANS_BACK]          600.0
+rotstrength[ROT_YAWLEFT]            140.0                        ; rotational acceleration (deg/s^2) [0.01 - 400]
+rotstrength[ROT_YAWRIGHT]           140.0
+rotstrength[ROT_PITCHUP]            140.0
+rotstrength[ROT_PITCHDOWN]          140.0
+rotstrength[ROT_ROLLRIGHT]          140.0
+rotstrength[ROT_ROLLLEFT]           140.0
+turnspeed[TURN_YAW]                 3.5                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               3.5
+turnspeed[TURN_ROLL]                3.5
+
+;Weapons
+;=-----=
+
+NUMBER_OF_GUNS                      1
+
+rotateToRetaliate                   TRUE
+
+
+GUN         0
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallEnergyCannon
+DamageLo                        10                              ; damage variance per shot - low
+DamageHi                        12                              ; damage variance per shot - high
+BulletLength                    15.0                           ; visual only.  Length of bullet on screen
+BulletRange                     6500.0                         ; distance bullets travel before disappearing
+BulletSpeed                     20000.0                         ; measured in m/s.
+BulletMass                      0.0                            ; mass of bullet
+FireTime                        2.7                            ; fire repeat rate (reciprocal = shots/second)
+;BurstFireTime                   1.4
+;BurstWaitTime                   1.1
+TriggerHappy                    5                           ; how triggerHapppy the ship is when firing the fixed.
+MinAngle                        0.0
+MaxAngle                        5.0
+}
+
+passiveRetaliateZone            6500.0
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000700                 ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+

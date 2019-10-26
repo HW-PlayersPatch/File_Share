@@ -1,0 +1,40 @@
+[Mine]
+LODFile                             Mine.lod
+pMexData                            Mine\Rl0\LOD0\Mine.mex
+mass                                0.5
+momentOfInertiaX                    0.5
+momentOfInertiaY                    0.5
+momentOfInertiaZ                    0.5
+maxvelocity                         400.0
+maxvelocity_FORCED                  400.0
+maxrot                              10.0
+maxhealth                           38                         ; hit points
+
+blastRadiusShockWave                6.0
+blastRadiusDamage                   75
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            350.0
+thruststrength[TRANS_DOWN]          350.0
+thruststrength[TRANS_RIGHT]         350.0
+thruststrength[TRANS_LEFT]          350.0
+thruststrength[TRANS_FORWARD]       350.0
+thruststrength[TRANS_BACK]          350.0
+rotstrength[ROT_YAWLEFT]             10.0
+rotstrength[ROT_YAWRIGHT]            10.0
+rotstrength[ROT_PITCHUP]             10.0
+rotstrength[ROT_PITCHDOWN]           10.0
+rotstrength[ROT_ROLLRIGHT]           10.0
+rotstrength[ROT_ROLLLEFT]            10.0
+turnspeed[TURN_YAW]                   4.1
+turnspeed[TURN_PITCH]                 4.1
+turnspeed[TURN_ROLL]                  4.1
+
+;Special Stuff For Mine
+;=-----------=
+MINE_STOP_FRICTION                    0.90      ; Friction applied to mine to stop it in various
+                                                ; places
+MINE_RANGESQR                         3500.0    ; Distance mines will consider targets in
+MINE_RANGESQR_FORCED                  6000.0    ; Distance force_dropped mines will consider targets in
+
