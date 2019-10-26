@@ -1,0 +1,174 @@
+[ResourceCollector]
+
+;Source Files
+;=----------=
+pMexData                            ResourceCollector\Rl0\LOD0\ResourceCollector.mex
+LODFile                             ResourceCollector.lod
+
+;Ship Physics
+;=----------=
+mass                                400.0
+momentOfInertiaX                    400.0
+momentOfInertiaY                    400.0
+momentOfInertiaZ                    400.0
+maxvelocity                         325.0
+maxrot                              10.0
+
+;Basic Ship Stats
+;=--------------=
+shiprace                            RACE_1
+shipclass                           CLASS_Resource
+buildCost                           650
+buildTime                           60
+resourcesAtOneTime                  660                 ; number of resources it will try to get before returning home
+maxresources                        650
+harvestRate                         3                           ; eat asteroid every n+1 frames.  This value must be 1,3,7,15, or 31
+harvestAmount                       5                           ; harvest asteroid for this many RU's every n+1 frames specified above
+maxhealth                           10800
+groupSize                           1                           ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+
+canReceiveShips                     TRUE
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+cantMoveAndAttack                   TRUE
+
+canHandleNumShipsDocking            1
+pumpFuelRate                        450.0                        ; how fast pumps fuel in.
+
+dockShipRange                       500.0
+
+
+repairTime                          15                            ; every this many seconds
+repairDamage                        50                          ; this much damage is repaired
+repairCombatTime                    15                            ; every this many seconds
+repairCombatDamage                  50                           ; this much damage is repaired
+
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]              0.5                    ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]             0.5
+rotstrength[ROT_PITCHUP]              0.5
+rotstrength[ROT_PITCHDOWN]            0.5
+rotstrength[ROT_ROLLRIGHT]            0.5
+rotstrength[ROT_ROLLLEFT]             0.5
+turnspeed[TURN_YAW]                   0.75
+turnspeed[TURN_PITCH]                 0.75
+turnspeed[TURN_ROLL]                  0.75
+
+;No guns
+;=-----=
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+
+NUMBER_OF_DOCK_POINTS           2
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection],[updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       Fight0,LatchPoint,200,150,300,2,4
+DockPoint                       Corv0,LatchPoint,200,150,300,2,4
+
+NUMBER_OF_DOCK_OVERIDES         1
+
+;sscanf(field,"%s %s %d %d %d %d %f %f %f",shipracestr,shiptypestr,&dockstaticoveride->useNewOrientation,&dockstaticoveride->heading, &dockstaticoveride->up,&dockstaticoveride->useNewOffset,&tempx,&tempy,&tempz);
+;need DockOveride       shipraceshipname,<0=no 1=yes: use new heading and up),newHeading,newUp,<yesno use new offset>,offsetx,offsety,offsetz
+;offset is vector seen in lightwave when the ship is attached to the light origin
+;(0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockOveride     R1,CloakedFighter,1,1,2,0,0.0,0.0,0.0
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           4
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        frntcaution,     NAVLIGHT_Default, 1.5,  0.5, 0,    5, 2, etg\textures\glow32
+NavLight                        botcaution,        NAVLIGHT_Default, 2,  0.75, 0,    5, 2, etg\textures\glow32
+NavLight                        sidecaution1,       NAVLIGHT_Default, 1,    1, 0,    5,  2, etg\textures\glow32
+NavLight                        sidecaution2,       NAVLIGHT_Default, 1,    1, 0,   5,  2, etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_ResourcerExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000120                 ; Max value for Interceptors for 5.0^4
+scaleFactor                         1.0                      ; Used for debugging
+
+
+;Engine trails
+;=-----------=
+trailStyle                       1              ; it's the default, too
+trailRibbonAdjust                1.0            ; also the default
+trailWidth                      32.0            ; default is 24.0
+trailHeight                      8.0            ; default is 6.0 (0.25 * defaultWidth)
+trailAngle                      57.0            ; default is 0.0
+trailSpriteRadius               50.0
+
+trailStyle2                      1              ; it's the default, too
+trailRibbonAdjust2               1.0            ; also the default
+trailWidth2                     32.0            ; default is 24.0
+trailHeight2                     8.0            ; default is 6.0 (0.25 * defaultWidth)
+trailAngle2                    123.0            ; default is 0.0
+trailSpriteRadius2              50.0
+
+repairApproachDistance                  600.0
+canSpecialBandBoxFriendlies             TRUE
+minimumZoomDistance              180.0
+
+Overlay_Selection_Scalar            1.2         ; scale the tactical overlay by this amount

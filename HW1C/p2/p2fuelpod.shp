@@ -1,0 +1,178 @@
+[P2FuelPod]
+
+;Source Files
+;=----------=
+LODFile                             P2FuelPod.lod
+pMexData                            P2FuelPod\Rl0\LOD0\P2FuelPod.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                           ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                           ; resistance to rotation
+momentOfInertiaY                    400.0                           ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         250.0                         ; [fighter = 1000]
+maxrot                              10.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+isCapitalShip                       TRUE
+buildCost                           500                           ; resource units to build
+buildTime                           60                            ; time in seconds to build
+maxhealth                           7000                          ; hit points
+groupSize                           2                             ; size of group ships of this type tend to form
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+canReceiveShips                     TRUE                         ; other ships can dock in this ship
+canReceiveFighters                  TRUE
+
+canHandleNumShipsDocking            6
+
+dockShipRange                       500.0						 ; how close ships should get before considering docking (to ship surface)
+
+pumpFuelRate                        500.0                        ; how fast pumps fuel in.
+repairOtherShipRate                 1                            ; how fast heals damaged ships. Must be an integer
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            80.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          80.0
+thruststrength[TRANS_RIGHT]         50.0
+thruststrength[TRANS_LEFT]          50.0
+thruststrength[TRANS_FORWARD]       100.0
+thruststrength[TRANS_BACK]          50.0
+rotstrength[ROT_YAWLEFT]             0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]            0.25
+rotstrength[ROT_PITCHUP]             0.05
+rotstrength[ROT_PITCHDOWN]           0.05
+rotstrength[ROT_ROLLRIGHT]           0.05
+rotstrength[ROT_ROLLLEFT]            0.05
+turnspeed[TURN_YAW]                  0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.3
+turnspeed[TURN_ROLL]                 0.3
+
+
+;Weapons
+;=-----=
+;
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      1
+
+rotateToRetaliate                   TRUE
+
+GUN         0
+GUN         0
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_MediumEnergyCannon
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           3000.0            ; distance bullets travel before disappearing
+BulletSpeed                           2500.0            ; measured in m/s.
+BulletMass                               0.0            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+NUMBER_OF_DOCK_POINTS           6
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       FightL0,LatchPoint,300,200,500,5,0
+DockPoint                       FightL1,LatchPoint,300,200,500,5,0
+DockPoint                       FightL2,LatchPoint,300,200,500,5,0
+DockPoint                       FightR0,LatchPoint,300,200,500,1,0
+DockPoint                       FightR1,LatchPoint,300,200,500,1,0
+DockPoint                       FightR2,LatchPoint,300,200,500,1,0
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_InterceptorExplosion
+
+BindAnimations		1
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.00025                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+
+;Engine Glow
+;=---------=
+trailWidth                          25.0
+trailHeight                         18.0
+trailRibbonAdjust                    0.6
+trailSpriteRadius                   50.0
+
+;MadStartInfo        needs a starting     /Animation Text Name(no spaces allowed!)
+                     animation(1-yes,0-no)/
+MadStartInfo                   1 , open , 1 , open
+
+;MadDockAnims          definitions in explination below
+;                       n = number, g = gun, o = open, c = close, d = damaged, a = animations
+
+;                            ;ngoa,names,...,ngca,names,...,ngoda,names,... ,ngcda,names,...
+;if this doesn't
+;makes sence, ask Bryce
+MadSpecialCaseAnims                     1, close, 1, open, 0,damage_close, 1, damage_open
+
+;Ships health must be below this percentage to use the damaged animations.
+madGunOpenDamagedHealthThreshold                0.70    ;<= 1.0f
+
+minimumZoomDistance              115
+
+hyperspaceColor                    255,0,0

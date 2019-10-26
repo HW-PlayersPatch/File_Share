@@ -1,0 +1,270 @@
+[StandardFrigate]
+
+;Source Files
+;=----------=
+LODFile                             StandardFrigate.lod
+pMexData                            StandardFrigate\Rl0\LOD0\StandardFrigate.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                          ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                          ; resistance to rotation
+momentOfInertiaY                    400.0                          ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         325.0                        ; [fighter = 1000]
+maxrot                              2.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+isCapitalShip                       TRUE
+buildCost                           575                          ; resource units to build
+buildTime                           60                           ; time in seconds to build
+maxhealth                           16000                        ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          10                            ; every this many seconds
+repairDamage                        150                           ; this much damage is repaired
+repairCombatTime                    10                            ; every this many seconds
+repairCombatDamage                  15                           ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.5                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.5
+turnspeed[TURN_ROLL]                0.5
+
+
+;Weapons
+;=-----=
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                7000.0
+
+NUMBER_OF_GUNS                      6
+
+GUN         0
+//Desired Range = 6000
+//ADD this amount:   0 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_Gimble                    ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_MediumPlasmaBomb
+BulletType                          BULLET_PlasmaBomb
+DamageLo                            55                           ; damage variance per shot - low
+DamageHi                            65                          ; damage variance per shot - high
+MinAngle                            0
+MaxAngle                            10
+BulletLength                        4.0                          ; visual only.  Length of bullet on screen
+BulletRange                         6784.0                       ; distance bullets travel before disappearing
+BulletSpeed                         3500.0                        ; measured in m/s.
+BulletMass                          2.5                          ; mass of bullet
+FireTime                            5.0                          ; fire repeat rate (reciprocal = shots/second)
+}
+
+
+;Right side, top
+GUN         1
+//Desired Range = 4800
+//ADD this amount:  22 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_NewGimble               ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_LargeEnergyCannon
+DamageLo                            40                          ; damage variance per shot - low
+DamageHi                            45                          ; damage variance per shot - high
+BulletLength                        18.0                        ; visual only.  Length of bullet on screen
+BulletRange                         5606.0                      ; distance bullets travel before disappearing
+BulletSpeed                         4300.0                      ; measured in m/s.
+BulletMass                          0.75                         ; mass of bullet
+FireTime                            2.9                         ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                       10.0
+minturnangle                     -110.0                      ; degrees
+maxturnangle                       10.0
+mindeclination                    -10.0
+maxdeclination                     90.0
+maxanglespeed                     360.0                        ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       2.5
+declinationtracking                 2.5
+BarrelLength                       47.0                        ; was 70m
+RecoilLength                       12.5
+}
+
+;Left side, top
+GUN         2
+//Desired Range = 4800
+//ADD this amount:  22 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_LargeEnergyCannon
+DamageLo                            40
+DamageHi                            45
+BulletLength                        18.0
+BulletRange                         5606.0
+BulletSpeed                         4300.0
+BulletMass                          0.75
+FireTime                            2.9
+TriggerHappy                        5.0
+minturnangle                      -10.0                      ; degrees
+maxturnangle                      110.0
+mindeclination                    -10.0
+maxdeclination                     90.0
+maxanglespeed                     360.0                        ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       2.5
+declinationtracking                 2.5
+BarrelLength                       47.0                        ; was 70m
+RecoilLength                       12.5
+}
+
+;Left side, bottom
+GUN         3
+//Desired Range = 4800
+//ADD this amount:  22 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_LargeEnergyCannon
+DamageLo                            40
+DamageHi                            45
+BulletLength                        18.0
+BulletRange                         5606.0
+BulletSpeed                         4300.0
+BulletMass                          0.75
+FireTime                            2.9
+TriggerHappy                       10.0
+minturnangle                     -110.0                      ; degrees
+maxturnangle                       10.0
+mindeclination                    -10.0
+maxdeclination                     90.0
+maxanglespeed                     360.0                        ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       2.5
+declinationtracking                 2.5
+BarrelLength                       47.0                        ; was 70m
+RecoilLength                       12.5
+}
+
+;Right side, bottom
+GUN         4
+//Desired Range = 4800
+//ADD this amount:  22 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_LargeEnergyCannon
+DamageLo                            40
+DamageHi                            45
+BulletLength                        18.0
+BulletRange                         5606.0
+BulletSpeed                         4300.0
+BulletMass                          0.75
+FireTime                            2.9
+TriggerHappy                       10.0
+minturnangle                      -10.0                      ; degrees
+maxturnangle                      110.0
+mindeclination                    -10.0
+maxdeclination                     90.0
+maxanglespeed                     360.0                        ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       2.5
+declinationtracking                 2.5
+BarrelLength                       47.0                        ; was 70m
+RecoilLength                       12.5
+}
+
+
+GUN         5
+//Desired Range = 6000
+//ADD this amount:   0 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+
+{
+Type                                GUN_Gimble                    ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_MediumPlasmaBomb
+BulletType                          BULLET_PlasmaBomb
+DamageLo                            55                           ; damage variance per shot - low
+DamageHi                            65                          ; damage variance per shot - high
+MinAngle                            0
+MaxAngle                            10
+BulletLength                        4.0                          ; visual only.  Length of bullet on screen
+BulletRange                         6784.0                       ; distance bullets travel before disappearing
+BulletSpeed                         3500.0                        ; measured in m/s.
+BulletMass                          2.5                          ; mass of bullet
+FireTime                            5.0                          ; fire repeat rate (reciprocal = shots/second)
+}
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           4
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna,    NAVLIGHT_Default, 2, 1, 0,  7, 2, etg\textures\glow32
+NavLight                        antenna1,       NAVLIGHT_Default, 2, 1, 0,  7, 2, etg\textures\glow32
+NavLight                        antenna2,   NAVLIGHT_Default, 2, 1, 0,  7, 2, etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 2, 1, 0,  7, 2, etg\textures\glow32
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+; Right side bottom
+BindGun                             StandardFrigateturret(2) Gun2,Azimuth,Frequency 1
+BindGun                             StandardFrigatebarrel(2) Gun2,Declination,Recoil,Frequency 1
+; Left side bottom
+BindGun                             StandardFrigateturret(1) Gun1,Azimuth,Frequency 1
+BindGun                             StandardFrigatebarrel(1) Gun1,Declination,Recoil,Frequency 1
+
+;Right side top
+BindGun                             StandardFrigateturret(3) Gun3,Azimuth,Frequency 1
+BindGun                             StandardFrigatebarrel(3) Gun3,Declination,Recoil,Frequency 1
+
+;Left side top
+BindGun                             StandardFrigateturret(4) Gun4,Azimuth,Frequency 1
+BindGun                             StandardFrigatebarrel(4) Gun4,Declination,Recoil,Frequency 1
+
+
+;Engine Glow
+;=---------=
+trailWidth          75.0
+trailHeight        105.0
+trailLength        100.0
+trailScaleCap        0.000196
+
+minimumZoomDistance                 240
+
+Overlay_Selection_Scalar            1.25         ; scale the tactical overlay by this amount

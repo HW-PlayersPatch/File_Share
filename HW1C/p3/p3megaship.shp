@@ -1,0 +1,100 @@
+[P3Megaship]
+
+;Source Files
+;=----------=
+pMexData                            P3Megaship\Rl0\LOD0\P3Megaship.mex
+LODFile                             P3Megaship.lod
+
+;Ship Physics
+;=----------=
+mass                                100000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    100000.0                    ; resistance to rotation
+momentOfInertiaY                    1e30                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    1e30
+immobile                            FALSE                       ; indicates object is immobile
+maxvelocity                         295.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Mothership
+isCapitalShip                       TRUE
+buildCost                           3200                        ; resource units to build
+buildTime                           300                         ; time in seconds to build
+maxhealth                           600000                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+repairTime                          5                           ; every this many seconds
+repairDamage                        75                          ; this much damage is repaired
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            35.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          35.0    ; used to be 20.0
+thruststrength[TRANS_RIGHT]         35.0
+thruststrength[TRANS_LEFT]          35.0
+thruststrength[TRANS_FORWARD]       35.0
+thruststrength[TRANS_BACK]          35.0
+rotstrength[ROT_YAWLEFT]             0.25                ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.25        ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.02
+rotstrength[ROT_PITCHDOWN]           0.02
+rotstrength[ROT_ROLLRIGHT]           0.02
+rotstrength[ROT_ROLLLEFT]            0.02
+turnspeed[TURN_YAW]                  0.2                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.2
+turnspeed[TURN_ROLL]                 0.2
+
+
+rotateToRetaliate                   TRUE
+
+;Weapons
+;=------=
+
+canTargetMultipleTargets            TRUE
+
+NUMBER_OF_GUNS                      1
+
+;Ion Cannon
+GUN         0
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        25                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        75                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        180
+BulletLength                    9000.0                        ; visual only.  Length of bullet on screen
+BulletRange                     9000.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  0.2
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        0.1                           ; fire repeat rate (reciprocal = shots/second)
+BarrelLength                   108.0
+}
+
+
+NUMBER_OF_SALVAGE_POINTS        6
+NUM_NEEDED_FOR_SALVAGE          6               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+preciseSelection                    4
+
+minimumZoomDistance              2400

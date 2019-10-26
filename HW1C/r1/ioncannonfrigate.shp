@@ -1,0 +1,120 @@
+[IonCannonFrigate]
+
+;Source Files
+;=----------=
+LODFile                             IonCannonFrigate.lod
+pMexData                            IonCannonFrigate\Rl0\LOD0\IonCannonFrigate.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                          ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                          ; resistance to rotation
+momentOfInertiaY                    400.0                          ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         300.0                        ; [fighter = 1000]
+maxrot                              1.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+isCapitalShip                       TRUE
+buildCost                           650                          ; resource units to build
+buildTime                           60                           ; time in seconds to build
+maxhealth                           15000                         ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          10                            ; every this many seconds
+repairDamage                        150                           ; this much damage is repaired
+repairCombatTime                    10                            ; every this many seconds
+repairCombatDamage                  35                           ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]           75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]         75.0
+thruststrength[TRANS_RIGHT]        75.0
+thruststrength[TRANS_LEFT]         75.0
+thruststrength[TRANS_FORWARD]      75.0
+thruststrength[TRANS_BACK]         75.0
+rotstrength[ROT_YAWLEFT]           0.39                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]          0.39
+rotstrength[ROT_PITCHUP]           0.09
+rotstrength[ROT_PITCHDOWN]         0.09
+rotstrength[ROT_ROLLRIGHT]         0.09
+rotstrength[ROT_ROLLLEFT]          0.09
+turnspeed[TURN_YAW]                0.4                           ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]              0.4
+turnspeed[TURN_ROLL]               0.8
+
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                7000.0
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      1
+;(one BIG gun)
+
+GUN         0
+{
+//Desired Range = 6500
+//ADD this amount:  78 to compensate for centrepoint
+//ADD this amount: 702 to compensate for stopping distance
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        6
+BulletLength                    7280.0                        ; visual only.  Length of bullet on screen
+BulletRange                     7280.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.3
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           4
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,        NAVLIGHT_Default, 2,   1, 0.5,  7,  2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,   1, 0,  6,  2, etg\textures\glow32
+NavLight                        caution,       NAVLIGHT_Default, 1,   0.5, 0, 7,  2, etg\textures\glow32
+NavLight                        bridge,       NAVLIGHT_Default, 1.5,   0.75, 0.5,  6,  2, etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Engine Glow
+;=---------=
+trailWidth          60.0
+trailHeight        110.0
+trailLength        100.0
+trailStyle           3
+trailScaleCap        0.00025
+
+minimumZoomDistance                 270
+
+Overlay_Selection_Scalar            0.9         ; scale the tactical overlay by this amount

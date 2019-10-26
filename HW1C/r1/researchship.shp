@@ -1,0 +1,131 @@
+[ResearchShip]
+
+;Source Files
+;=----------=
+LODFile                             ResearchShip.lod
+pMexData                            ResearchShip\Rl0\LOD0\ResearchShip.mex
+
+;Ship Physics
+;=----------=
+mass                                300.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    300.0                        ; resistance to rotation
+momentOfInertiaY                    300.0                        ; [fighter = 1]
+momentOfInertiaZ                    300.0
+maxvelocity                         280.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+buildCost                           700                        ; resource units to build
+buildTime                           60                         ; time in seconds to build
+maxhealth                           7500                       ; hit points
+;maxfuel                             14000.0
+;lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+;fuelburnrate                        0.004
+groupSize                           3                          ; size of group ships of this type tend to form
+dockShipRange                       900                        ; range before a fuse attempt is made with
+repairTime                          8                           ; every this many seconds
+repairDamage                        75                         ; this much damage is repaired
+repairCombatTime                    8                           ; every this many seconds
+repairCombatDamage                  25                            ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       175.0
+thruststrength[TRANS_BACK]          175.0
+rotstrength[ROT_YAWLEFT]            0.4                         ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.4
+rotstrength[ROT_PITCHUP]            0.2
+rotstrength[ROT_PITCHDOWN]          0.2
+rotstrength[ROT_ROLLRIGHT]          0.2
+rotstrength[ROT_ROLLLEFT]           0.2
+turnspeed[TURN_YAW]                 0.7                         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.7
+turnspeed[TURN_ROLL]                0.7
+
+;Weaknesses
+;----------
+collSideModifiers[TRANS_UP]         1.0
+collSideModifiers[TRANS_DOWN]       1.0                         ; vulnerable in belly
+collSideModifiers[TRANS_RIGHT]      1.0
+collSideModifiers[TRANS_LEFT]       1.0
+collSideModifiers[TRANS_FORWARD]    1.0
+collSideModifiers[TRANS_BACK]       1.0
+
+;No Weapons
+;=-----=
+
+NUMBER_OF_DOCK_POINTS           3
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       In,LatchPoint,500,500,1000,2,4
+DockPoint                       Out,LatchPoint,500,500,1000,2,4
+DockPoint                       Up,LatchPoint,500,500,1000,2,4
+
+;Ship Trails
+;=---------=
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           1
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna,        NAVLIGHT_Default, 1.5,   0.5, 0,   7,  2, etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                  ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+
+R1final_dock_distance                 155.0                   ; one ship sits from another...
+                                                            ; fiddling required.
+R1parallel_dock_distance                 170.0                   ; one ship sits from another...
+
+R1VerticalDockDistance              120.0                   ; distance between center points
+                                                            ; of bottom ship and top ship in
+                                                            ; R1 pie plate stacks
+max_rotate                          0.02                    ; Rad/s /16seconds...speed of rotation
+rotate_acelleration                 0.0001                  ; Accelleration of rotation
+rotate_slow                         0.98                    ; Multiplier used to slow station
+                                                            ; down when other ships docking...n such
+R2DockFinalDistance                 255.0                   ; Seperation distance between
+                                                            ; R2 Ships in final docking position
+RotationAngle                       30                      ;degrees off from vertical that the research station
+                                                            ;will rotate at ALA 2001
+
+
+;Engine Glow
+;=---------=
+trailWidth             80.0
+trailHeight            80.0
+trailLength           100.0
+trailScaleCap           0.000196
+
+minimumZoomDistance              	240
+
+Overlay_Selection_Scalar            0.9         ; scale the tactical overlay by this amount
+

@@ -1,0 +1,177 @@
+[HeavyCorvette]
+
+;Source Files
+;=----------=
+LODFile                             HeavyCorvette.lod
+pMexData                            HeavyCorvette\Rl0\LOD0\HeavyCorvette.mex
+
+;Ship Physics
+;=----------=
+mass                                150.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    25.0                        ; resistance to rotation
+momentOfInertiaY                    25.0                        ; [fighter = 1]
+momentOfInertiaZ                    25.0
+maxvelocity                         520.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Corvette
+buildCost                           240                        ; resource units to build
+buildTime                           25                         ; time in seconds to build
+maxhealth                           1700                        ; hit points
+maxfuel                             20000.0
+lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.036
+attackfuelburnrate                  0.06
+groupSize                           5                          ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            160.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          160.0
+thruststrength[TRANS_RIGHT]         160.0
+thruststrength[TRANS_LEFT]          160.0
+thruststrength[TRANS_FORWARD]       160.0
+thruststrength[TRANS_BACK]          160.0
+rotstrength[ROT_YAWLEFT]              0.9                    ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]             0.9
+rotstrength[ROT_PITCHUP]              0.9
+rotstrength[ROT_PITCHDOWN]            0.9
+rotstrength[ROT_ROLLRIGHT]            0.9
+rotstrength[ROT_ROLLLEFT]             0.9
+turnspeed[TURN_YAW]                   1.5
+turnspeed[TURN_PITCH]                 1.5
+turnspeed[TURN_ROLL]                  1.5
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      2
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+
+;Left gun
+GUN         0
+{
+Type                                GUN_NewGimble
+SoundType                           GS_MediumEnergyCannon
+DamageLo                            28
+DamageHi                            36
+BulletLength                        25.0
+BulletRange                         5000.0
+BulletSpeed                         15000.0
+BulletMass                          0.01                        ; mass of bullet
+FireTime                            2.7
+TriggerHappy                       20.0
+minturnangle                      -90.0                          ; degrees
+maxturnangle                       30.0
+mindeclination                     -0.0
+maxdeclination                     30.0
+maxanglespeed                     360.0                          ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       4.0
+declinationtracking                 4.0
+BarrelLength                        8.0
+RecoilLength                        7.00
+}
+
+;Right gun
+GUN         1
+{
+Type                                GUN_NewGimble
+SoundType                           GS_MediumEnergyCannon
+DamageLo                            28
+DamageHi                            36
+BulletLength                        25.0
+BulletRange                         5000.0
+BulletSpeed                         15000.0
+BulletMass                          0.01
+FireTime                            2.7
+TriggerHappy                       20.0
+minturnangle                      -30.0                          ; degrees
+maxturnangle                       90.0
+mindeclination                     -0.0
+maxdeclination                     30.0
+maxanglespeed                     360.0                          ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       4.0
+declinationtracking                 4.0
+BarrelLength                        8.0
+RecoilLength                        7.00
+}
+
+
+
+;Ship AI
+;=-----=
+repositionTime                      1.6                        ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         1000.0
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000225                ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+
+;Gun Bindings:
+;=----------=
+//Left
+BindGun                             CorvetteGun(2)  Gun0,Azimuth,Recoil,Frequency 1
+//Right
+BindGun                             CorvetteGun(1)  Gun1,Azimuth,Recoil,Frequency 1
+
+BindAnimations                      1
+
+
+
+;Engine trails
+;=-----------=
+trailWidth                         30.0
+trailHeight                         4.0
+
+minimumZoomDistance                     85

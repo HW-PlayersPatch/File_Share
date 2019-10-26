@@ -1,0 +1,427 @@
+[HeavyCruiser]
+
+;Source Files
+;=----------=
+pMexData                            HeavyCruiser\Rl0\LOD0\HeavyCruiser.mex
+LODFile                             HeavyCruiser.lod
+
+;Ship Physics
+;=----------=
+mass                                10000.0              ; ship mass [fighter = 1]
+momentOfInertiaX                    10000.0               ; resistance to rotation
+momentOfInertiaY                    10000.0               ; [fighter = 1]
+momentOfInertiaZ                    10000.0
+avoidcollmodifier                   0.8
+maxvelocity                         250.0               ; [fighter = 1000]
+maxrot                              10.0                ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_HeavyCruiser
+isCapitalShip                       TRUE
+buildCost                           3700                ; resource units to build
+buildTime                           420                 ; time in seconds to build
+maxhealth                           90000               ; hit points
+groupSize                           1                   ; size of group ships of this type tend to form
+repairTime                          5                   ; every this many seconds
+repairDamage                        320                  ; this much damage is repaired
+repairCombatTime                    10                   ; every this many seconds
+repairCombatDamage                  100                  ; this much damage is repaired
+
+blastRadiusShockWave                1.0
+blastRadiusDamage                   125
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            39.0                ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          39.0
+thruststrength[TRANS_RIGHT]         39.0
+thruststrength[TRANS_LEFT]          39.0
+thruststrength[TRANS_FORWARD]       39.0
+thruststrength[TRANS_BACK]          39.0
+rotstrength[ROT_YAWLEFT]            0.36                        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]           0.36
+rotstrength[ROT_PITCHUP]            0.06
+rotstrength[ROT_PITCHDOWN]          0.06
+rotstrength[ROT_ROLLRIGHT]          0.06
+rotstrength[ROT_ROLLLEFT]           0.06
+turnspeed[TURN_YAW]                 0.20                         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.20
+turnspeed[TURN_ROLL]                0.20
+
+
+
+;Weapons
+;=------=
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                7000.0
+
+NUMBER_OF_GUNS                      10
+
+;This is the large Ion Cannon turret on TOP - the first gun is slaved to the second
+GUN         0
+//Desired Range = 6000
+//ADD this amount: 690 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_LargeIonCannon
+BulletType                          BULLET_Beam
+DamageLo                            30
+DamageHi                            33
+BulletLength                        7748.0
+BulletRange                         7748.0
+BulletSpeed                         0.0
+BulletLifeTime                      2.2
+BulletMass                          0.0
+FireTime                            6.0
+TriggerHappy                        7.0
+minturnangle                       -85.0                         ; degrees
+maxturnangle                        85.0
+mindeclination                     -1.0
+maxdeclination                     13.0
+maxanglespeed                     360.0                         ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                      82.0
+OffsetX                             0.01
+OffsetY                             -19
+}
+
+GUN         1
+//Desired Range = 6000
+//ADD this amount: 690 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_LargeIonCannon
+BulletType                          BULLET_Beam
+DamageLo                            30
+DamageHi                            33
+BulletLength                        7748.0
+BulletRange                         7748.0
+BulletSpeed                         0.0
+BulletLifeTime                      2.2
+BulletMass                          0.0
+FireTime                            6.0
+TriggerHappy                        7.0
+minturnangle                      -85.0                        ; degrees
+maxturnangle                       85.0
+mindeclination                     -1.0
+maxdeclination                     13.0
+maxanglespeed                     360.0                         ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                      82.0
+OffsetX                             0.01
+OffsetY                             19
+SlaveDriver                         0
+}
+
+;This is the large Ion Cannon turret on BOTTOM - the first gun is slaved to the second
+GUN         2
+//Desired Range = 6000
+//ADD this amount: 690 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeIonCannon
+BulletType                          BULLET_Beam
+DamageLo                           30
+DamageHi                           33
+BulletLength                        7748.0
+BulletRange                         7748.0
+BulletSpeed                         0.0
+BulletLifeTime                      2.2
+BulletMass                          0.0
+FireTime                            6.0
+TriggerHappy                        7.0
+minturnangle                       -85.0                         ; degrees
+maxturnangle                        85.0
+mindeclination                      -1.0
+maxdeclination                      13.0
+maxanglespeed                      360.0                         ; degrees/s
+maxdeclinationspeed                360.0
+angletracking                        1.5
+declinationtracking                  1.5
+BarrelLength                      82.0
+OffsetX                             0.01
+OffsetY                             -19
+}
+
+GUN         3
+//Desired Range = 6000
+//ADD this amount: 690 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeIonCannon
+BulletType                          BULLET_Beam
+DamageLo                            30
+DamageHi                            33
+BulletLength                        7748.0
+BulletRange                         7748.0
+BulletSpeed                         0.0
+BulletLifeTime                      2.2
+BulletMass                          0.0
+FireTime                            6.0
+TriggerHappy                        7.0
+minturnangle                      -85.0                        ; degrees
+maxturnangle                       85.0
+mindeclination                     -1.0
+maxdeclination                     13.0
+maxanglespeed                     360.0                         ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                      82.0
+OffsetX                             0.01
+OffsetY                             19
+SlaveDriver                         2
+}
+
+
+;Very Large Energy Cannon - Right side of ship, top
+GUN         4
+//Desired Range = 4000
+//ADD this amount: 723 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble                   ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                            100                            ; damage variance per shot - low
+DamageHi                            125                          ; damage variance per shot - high
+BulletLength                       18.0                          ; visual only.  Length of bullet on screen
+BulletRange                      5781.0                       ; distance bullets travel before disappearing
+BulletSpeed                      2800.0                        ; measured in m/s.
+BulletMass                          1.2
+FireTime                            3.7                          ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                        5.0
+minturnangle                     -180.0                         ; degrees
+maxturnangle                       15.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                         ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       14.0
+}
+
+;Very Large Energy Cannon - Left side of ship, top
+GUN         5
+//Desired Range = 4000
+//ADD this amount: 723 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                            100
+DamageHi                            125
+BulletLength                       18.0
+BulletRange                      5781.0
+BulletSpeed                      2800.0
+BulletMass                          1.2
+FireTime                            3.7
+TriggerHappy                        5.0
+minturnangle                      -15.0                         ; degrees
+maxturnangle                      180.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                         ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       14.0
+}
+
+;Very large Energy Cannon - right side of ship, bottom
+GUN         6
+//Desired Range = 4000
+//ADD this amount: 723 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                           100
+DamageHi                           125
+BulletLength                       18.0
+BulletRange                      5781.0
+BulletSpeed                      2800.0
+BulletMass                          1.2
+FireTime                            3.7
+TriggerHappy                        5.0
+minturnangle                     -180.0                      ; degrees
+maxturnangle                       12.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                      ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       14.0
+}
+
+;Very large Energy Cannon - left side of ship, bottom
+GUN         7
+//Desired Range = 4000
+//ADD this amount: 723 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                           100
+DamageHi                           125
+BulletLength                       18.0
+BulletRange                      5781.0
+BulletSpeed                      2800.0
+BulletMass                          1.2
+FireTime                            3.7
+TriggerHappy                        5.0
+minturnangle                      -12.0                     ; degrees
+maxturnangle                      180.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                      ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       14.0
+}
+
+;Very large Energy Cannon - left wing
+GUN         8
+//Desired Range = 4000
+//ADD this amount: 521 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                           100
+DamageHi                           125
+BulletLength                       18.0
+BulletRange                      5579.0
+BulletSpeed                      2800.0
+BulletMass                          1.2
+FireTime                            3.7
+TriggerHappy                        5.0
+minturnangle                     -180.0                      ; degrees
+maxturnangle                      180.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                      ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       20.0
+}
+
+;Very large Energy Cannon - Right Wing
+GUN         9
+//Desired Range = 4000
+//ADD this amount: 521 to compensate for centrepoint
+//ADD this amount:1058 to compensate for stopping distance
+{
+Type                                GUN_NewGimble
+SoundType                           GS_VeryLargeEnergyCannon
+DamageLo                           100
+DamageHi                           125
+BulletLength                       18.0
+BulletRange                      5579.0
+BulletSpeed                      2800.0
+BulletMass                          1.2
+FireTime                            3.7
+TriggerHappy                        5.0
+minturnangle                     -180.0                      ; degrees
+maxturnangle                      180.0
+mindeclination                    -5.42
+maxdeclination                     40.0
+maxanglespeed                     360.0                      ; degrees/s
+maxdeclinationspeed               360.0
+angletracking                       1.5
+declinationtracking                 1.5
+BarrelLength                       49
+RecoilLength                       20.0
+}
+
+
+NUMBER_OF_SALVAGE_POINTS        6
+NUM_NEEDED_FOR_SALVAGE          5               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           6
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,       NAVLIGHT_Default, 2,   1, 0,   8, 2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 1.5,   1, 0,   7, 2, etg\textures\glow32
+NavLight                        sideright1,     NAVLIGHT_Default, 0.5, 1, 1,   9, 2, etg\textures\glow32
+NavLight                        sideright2,     NAVLIGHT_Default, 0.5, 1, 0,  9, 2, etg\textures\glow32
+NavLight                        sideleft1,      NAVLIGHT_Default, 0.5, 1, 1,   9, 2, etg\textures\glow32
+NavLight                        sideleft2,      NAVLIGHT_Default, 0.5, 1, 0,   9, 2, etg\textures\glow32
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+;GUN BINDINGS:
+
+//Very Large Energy Cannon, Top turret, left side
+BindGun                             HeavyCruiserTurret(3) Gun4,Azimuth,Recoil,Frequency 1
+
+//Very Large Energy Cannon, Top turret, right side
+BindGun                             HeavyCruiserTurret(4) Gun5,Azimuth,Recoil,Frequency 1
+
+//Very Large Energy Cannon, Left wing,
+BindGun                             HeavyCruiserTurret(1) Gun8,Azimuth,Recoil,Frequency 1
+
+//Very Large Energy Cannon, Right wing,
+BindGun                             HeavyCruiserTurret(2) Gun9,Azimuth,Recoil,Frequency 1
+
+//Very Large Energy Cannon, Bottom turret, left side
+BindGun                             HeavyCruiserTurret(5) Gun7,Azimuth,Recoil,Frequency 1
+
+//Very Large Energy Cannon, Bottom turret, right side
+BindGun                             HeavyCruiserTurret(6) Gun6,Azimuth,Recoil,Frequency 1
+
+//bottom ion cannon turret
+BindGun                             HeavyCruiserIon(1)     Gun0,Azimuth,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(1)     Gun1,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(1)     Gun0,Azimuth,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(1)     Gun0,Declination,Frequency 1
+//top ion cannon turret
+BindGun                             HeavyCruiserIon(2)     Gun2,Azimuth,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(2)     Gun3,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(2)     Gun2,Azimuth,Declination,Frequency 1
+//BindGun                             HeavyCruiserIon(2)     Gun2,Declination,Frequency 1
+
+
+;Engine Glow
+;=---------=
+trailWidth   270.0
+trailHeight  310.0
+trailLength  300.0
+
+minimumZoomDistance                 825
+
+Overlay_Selection_Scalar            1.35         ; scale the tactical overlay by this amount
