@@ -1,0 +1,55 @@
+; MissionMan script, Monday, Aug 23 1999, 11:51:15 AM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission02
+; Info: Mission02
+
+[Mission02]
+
+MissionSphere    -1,?,ResourceSphere,34000.0,23000.0,0.0,30000.0,0.0,ResourceSphere_0.missphere
+
+Lighting    ez02
+Background    ez02,180,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    150000
+smZoomMin    40000
+smInitialDistance    60000
+smUniverseSizeX    58000
+smUniverseSizeZ    22500
+smUniverseSizeY    57300
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeShips    R1,HeadShotAsteroid
+ExcludeShips    R2,HeadShotAsteroid
+ExcludeShips    R1,CloakGenerator
+ExcludeShips    R1,DDDFrigate
+ExcludeShips    R1,GravWellGenerator
+ExcludeShips    R1,MissileDestroyer
+ExcludeShips    R1,MultiGunCorvette
+ExcludeShips    R1,HeavyCruiser
+ExcludeShips    R2,AttackBomber
+ExcludeShips    R2,CloakGenerator
+ExcludeShips    R2,DFGFrigate
+ExcludeShips    R2,GravWellGenerator
+ExcludeShips    R2,MinelayerCorvette
+ExcludeShips    R2,MissileDestroyer
+ExcludeShips    R2,MultiGunCorvette
+ExcludeShips    R2,HeavyCruiser
+ExcludeShips    R1,DFGFrigate
+ExcludeShips    R2,DDDFrigate
+ExcludeShips    R1,AttackBomber
+ExcludeDerelict    ALL
+IncludeDerelict    Shipwreck
+IncludeDerelict    PrisonShipNew
+IncludeDerelict    Junk3_Boiler
+IncludeDerelict    Junk0_antenna
+IncludeDerelict    Junk3_BoilerCasing
+IncludeDerelict    Junk1_shell
+IncludeDerelict    Junk0_panel
+MissionStartEnemyRUs    8000
+MissionStartEnemyRace    P1
+SongNumber    0

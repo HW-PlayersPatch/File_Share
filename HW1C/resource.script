@@ -1,0 +1,75 @@
+
+COLLECTRESOURCE_DIST                        400.0    ; how close resource collector gets to asteroid before stabilizing
+
+COLLECTRESOURCE_ZONE                        4000.0   ; zone around picked resource resource collector will harvest from
+
+MAX_RESOURCE_VELOCITY_TO_CHASE              150.0
+MAX_RESOURCE_VELOCITY_TO_CHASE_LEVEL6       100.0
+
+ASTEROID_HARVEST_RANGE                      600.0
+
+ASTEROID_MAXHARVEST_RANGE                   700.0
+
+CIRCLE_HARVEST_ASTEROIDS_BIGGEREQUAL_THAN   1        ; if asteroid bigger or equal than this asteroid x, circle it when harvesting
+
+CIRCLE_RIGHT_VELOCITY                       200.0
+CIRCLE_RIGHT_THRUST                         0.8
+
+DUSTCLOUD_RU_DAMAGE_RATIO                   0.5
+
+ASTEROID_RU_DAMAGE_RATIO[Asteroid0]             0.5  ; ratio at which resouce damage is inflicted based upon actual damage.
+ASTEROID_RU_DAMAGE_RATIO[Asteroid1]             0.5  ; E.G. if 50 health is taken away from asteroid, 50*ASTEROID_RU_DAMAGE_RATIO
+ASTEROID_RU_DAMAGE_RATIO[Asteroid2]             0.5  ; will be taken away.
+ASTEROID_RU_DAMAGE_RATIO[Asteroid3]             0.0666
+ASTEROID_RU_DAMAGE_RATIO[Asteroid4]             0.033
+
+ASTEROIDBREAK_LO_VELOCITY                   -200.0
+ASTEROIDBREAK_HI_VELOCITY                   200.0
+
+ASTEROIDBREAK_RADIUS_SCALE                  0.7
+
+ASTEROIDBREAK_LO_ROTATE                    -0.5
+ASTEROIDBREAK_HI_ROTATE                     0.5
+
+ASTEROID_LO_ROTATE[Asteroid0]               -0.5
+ASTEROID_HI_ROTATE[Asteroid0]               0.5
+
+ASTEROID_LO_ROTATE[Asteroid1]               -0.4
+ASTEROID_HI_ROTATE[Asteroid1]               0.4
+
+ASTEROID_LO_ROTATE[Asteroid2]               -0.3
+ASTEROID_HI_ROTATE[Asteroid2]               0.3
+
+ASTEROID_LO_ROTATE[Asteroid3]               -0.2
+ASTEROID_HI_ROTATE[Asteroid3]               0.2
+
+ASTEROID_LO_ROTATE[Asteroid4]               -0.1
+ASTEROID_HI_ROTATE[Asteroid4]               0.1
+
+ASTEROID_ROTATE_PROB                        130      ; chance out of 255 that an asteroid will be given a random rotation
+
+DUSTCLOUD_RCOLLECTOR_BLOWUP_SCALE           1.0      ; modifier for how many RUs Resource collector
+                                                       leaves when blowing up (based on RU's it was carrying)
+
+REGROW_RESOURCES_CHECK_RATE                 255      ; must be 1,3,7, 15, etc. (every # of frames to check regrow resources)
+REGROW_RESOURCES_CHECK_FRAME                86
+
+; modifiers for different grow rates
+REGROW_RATE_MODIFIER[0]             0.25
+REGROW_RATE_MODIFIER[1]             0.5
+REGROW_RATE_MODIFIER[2]             0.75
+REGROW_RATE_MODIFIER[3]             1.0
+REGROW_RATE_MODIFIER[4]             1.25
+REGROW_RATE_MODIFIER[5]             1.50
+REGROW_RATE_MODIFIER[6]             1.75
+REGROW_RATE_MODIFIER[7]             2.0
+
+regenerateRUrate                    255                         ; every number of game frames to regenerate RU's
+                                                                ; value must be 0,1,3,7,15,31,63,127, 255, 511, (2^n)-1
+regenerateRUsIfUnder                400                         ; only regenerate this max number of RU's
+regenerateRUs                       25                          ; regenerate this # of RU's each regeneration
+
+CHECK_HARV_OUTOFWORLD_RESOURCE_RATE         127     ; must be 1,3,7, 15, etc. (every # of frames to check if resource going after is not out of world)
+
+CHECK_SHIP_OUTOFWORLD_RATE                  127     ; must be 1,3,7, 15, etc. (every # of frames to check if ship out of world)
+

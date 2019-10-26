@@ -1,0 +1,45 @@
+; MissionMan script, Tuesday, Aug 24 1999, 11:04:58 AM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission13
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,5000.0,72000.0,0.0,30000.0,0.0,ResourceSphere_0.missphere
+
+Lighting    ez13
+Background    ez13, 180, 0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    300000
+smZoomMin    30000
+smInitialDistance    230000
+smUniverseSizeX    100000
+smUniverseSizeZ    60000
+smUniverseSizeY    100000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeShips    Traders,All
+IncludeShips    R2,ProximitySensor
+IncludeShips    Traders,Junk_LGun
+IncludeShips    Traders,Junk_SGun
+IncludeShips    Traders,JunkyardDawg
+IncludeShips    Traders,JunkyardHQ
+IncludeShips    R2,StandardDestroyer
+ExcludeAsteroid    All
+ExcludeDerelict    Homeworld
+ExcludeDerelict    PlanetOfOrigin_scarred
+ExcludeDerelict    PlanetOfOrigin
+ExcludeDerelict    Crate
+ExcludeDerelict    AngelMoon_clean
+ExcludeDerelict    AngelMoon
+IncludeDerelict    All
+BaseColor    5, 0, 0, 0
+StripeColor    5, 0, 0, 0
+AvailableColorSchemes    R2 StandardDestroyer 1, 5
+SongNumber    7

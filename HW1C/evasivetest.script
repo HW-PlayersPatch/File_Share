@@ -1,0 +1,13 @@
+
+; instructions
+; Select Multiplayer game, vs CPU skirmish, Start
+; Watch battles.  Turbo works.  The Green guys are the first guys, red guys are the second batch of guys
+; Look at generated statlog.txt (probably in \homeworld\exe directory)
+
+ShowFancyFights         TRUE
+
+DoStatsFor  3,  10,R1,HeavyInterceptor,DELTA_FORMATION,Neutral,         10,R1,HeavyInterceptor,DELTA_FORMATION,Aggressive
+DoStatsFor  3,  10,R1,HeavyInterceptor,DELTA_FORMATION,Neutral,         10,R1,HeavyInterceptor,DELTA_FORMATION,Evasive
+DoStatsFor  3,  10,R1,HeavyInterceptor,DELTA_FORMATION,Aggressive,       10,R1,HeavyInterceptor,DELTA_FORMATION,Evasive
+
+

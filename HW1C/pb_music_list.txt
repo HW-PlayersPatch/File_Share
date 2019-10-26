@@ -1,0 +1,6 @@
+// Sample WAVExport imput file
+c:\homeworld\data\soundfx\PB_Music.wxh // Header output file *.wxh
+c:\homeworld\data\PB_Music.wxd // Data output file *.wxd
+
+// Wave/AIFF input file, volume (0-255), bitrate (see fqQuant.h), flags (Loop)
+c:\homeworld\sound\music\A01_mission1.wav, 255, 512, 1

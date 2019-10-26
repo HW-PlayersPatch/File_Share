@@ -1,0 +1,34 @@
+; MissionMan script, Thursday, Aug 19 1999, 1:21:43 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission05
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,-22000.0,-23000.0,0.0,30000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez05
+Background    ez05, 180, 0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    225000
+smZoomMin    30000
+smInitialDistance    120000
+smUniverseSizeX    116000
+smUniverseSizeZ    51100
+smUniverseSizeY    106000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R1,HeadShotAsteroid
+ExcludeShips    R2,HeadShotAsteroid
+ExcludeShips    R2,All
+IncludeShips    R2,HeavyInterceptor
+IncludeShips    R2,StandardFrigate
+IncludeShips    R2,IonCannonFrigate
+IncludeShips    R2,StandardDestroyer
+IncludeShips    R2,Carrier
+ExcludeDerelict    ALL
+MissionStartEnemyRUs    1000
+SongNumber    1

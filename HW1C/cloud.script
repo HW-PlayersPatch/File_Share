@@ -1,0 +1,60 @@
+;
+;Cloud.script
+;
+DUSTCLOUD_RADIAL_SCALE          1.0
+
+DUSTCLOUD_RADII[DustCloud0]     350.0
+DUSTCLOUD_RADII[DustCloud1]     500.0
+DUSTCLOUD_RADII[DustCloud2]     800.0
+DUSTCLOUD_RADII[DustCloud3]     1300.0
+
+DUSTCLOUD_BG_SCALAR             0.3     ;[0..1] multiplier of fog -> bg clearcolor
+DUSTCLOUD_MAX_DENSITY           0.85    ;[0..1] cap fog density here
+DUSTCLOUD_DENSITY_THRESHOLD     0.2     ;[0..1] when fog begins sumOf(1/d * radius)
+
+DUSTCLOUD_RED                   0.7
+DUSTCLOUD_GREEN                 0.6
+DUSTCLOUD_BLUE                  0.4
+
+DUSTCLOUD_RED_DIST              0.05
+DUSTCLOUD_GREEN_DIST            0.03
+DUSTCLOUD_BLUE_DIST             0.04
+
+DUSTCLOUD_FOG_RED               0.45
+DUSTCLOUD_FOG_GREEN             0.35
+DUSTCLOUD_FOG_BLUE              0.20
+
+DUSTCLOUD_RAN_MULTIPLIER        0.006   ;[0..0.1] elliptical unit deviation
+
+CLOUD_LDT0                      800.0
+CLOUD_LDT1                      200.0
+
+CLOUD_LIGHTNING_MAXDIST         420.0   ;maximum distance for a single burst
+
+CLOUD_RADIAL_DAMAGE_SCALAR      2.5     ;multiply radius of cloud by this for discharge damage
+CLOUD_ZAP_SCALAR                2.75     ;discharge damage scalar
+
+//[0..255]
+//amount to brighten a cloud by when lightning strikes.
+//scaled by 2*charge <= 1.0
+CLOUD_LIGHTNING_BRIGHTEN        40
+
+CLOUD_LIGHTNING_WIDTH_UPCLOSE  7.0
+CLOUD_LIGHTNING_WIDTH_FARAWAY  11.0
+
+CLOUD_LIGHTNING_LINE_RED    1.0
+CLOUD_LIGHTNING_LINE_GREEN  1.0
+CLOUD_LIGHTNING_LINE_BLUE   1.0
+
+CLOUD_LIGHTNING_FRINGE_SCALAR    2.0
+CLOUD_LIGHTNING_MIDPOINT_SCALAR  0.75
+
+CLOUD_LIGHTNING_FRINGE_RED    0.1953
+CLOUD_LIGHTNING_FRINGE_GREEN  0.3906
+CLOUD_LIGHTNING_FRINGE_BLUE   1.0
+CLOUD_LIGHTNING_FRINGE_ALPHA  0.294
+
+CLOUD_LIGHTNING_MAIN_RED    1.0
+CLOUD_LIGHTNING_MAIN_GREEN  1.0
+CLOUD_LIGHTNING_MAIN_BLUE   1.0
+CLOUD_LIGHTNING_MAIN_ALPHA  0.55

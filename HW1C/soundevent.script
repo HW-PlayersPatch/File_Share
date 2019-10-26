@@ -1,0 +1,96 @@
+[Soundevent]
+SFX_VOL_FACTOR							0.8	; scale the SFX by this (0.0 - 1.0)
+SFX_MAX_ENGINES							3		; max # of engines playing at a time
+SFX_MIN_CAPSHIPS						2
+SFX_AMBIENT_VOLUME						77; volume of the ambient background loops (0-255)
+SFX_NIS_MAX_ENGINES						9
+SFX_NIS_MIN_CAPSHIPS					3
+SFX_MAX_ENGINE_RANGE					10000.0
+SFX_CAPSHIPS_ALWAYS_ON					FALSE	; TRUE to enable, FALSE to disable
+SFX_MAX_AMBIENT							2
+SFX_FLOAT_VELOCITY						20.0
+SFX_NIS_FLOAT_VELOCITY					0.0
+SFX_MIN_PERCEPTABLE_VOL					10.0	; lowest volume at which to actually play events
+
+SFX_HYPERSPACE_VOLUME					100	; from 0 (silent) to 255 (max)
+
+SFX_DAMAGERATIO_LIGHT					0.6		; the remaining health at which to switch to this ambient (1.0 is full health)
+SFX_DAMAGERATIO_MEDIUM					0.4		; the remaining health at which to switch to this ambient (1.0 is full health)
+SFX_DAMAGERATIO_HEAVY					0.2		; the remaining health at which to switch to this ambient (1.0 is full health)
+SFX_DAMAGERATIO_ENABLE					TRUE	; TRUE to enable, FALSE to disable
+
+SFX_CARDIOD_FACTOR						1.0
+SFX_CARDIOD_MIN							0.23
+
+FIGHTER_VELOCITY_LOWPITCH				0.5		; Start pitch for pitch shifting of fighters
+FIGHTER_VELOCITY_HIGHPITCH				5.0		; Highest pitch to shift up to
+FIGHTER_VELOCITY_SCALE					1.0		; Velocity scale multiplier (small number means not much shifting, big number means a lot)
+
+CORVETTE_VELOCITY_LOWPITCH				0.4		; Start pitch for pitch shifting of fighters
+CORVETTE_VELOCITY_HIGHPITCH				1.0		; Highest pitch to shift up to
+CORVETTE_VELOCITY_SCALE					1.5		; Velocity scale multiplier (small number means not much shifting, big number means a lot)
+
+FIGHTER_DOPPLER_SCALE					0.8		; exagerates doppler if > 1.0, understates if < 1.0
+FIGHTER_DOPPLER_LOW						2		; low band to start the eq at (use 0 to 7)
+FIGHTER_DOPPLER_HIGH					3		; high band to eq to (use 1 to 8)
+FIGHTER_DOPPLER_USEVELOCITY				TRUE	; TRUE to use the velocity to exagerate doppler shifting
+
+CORVETTE_DOPPLER_SCALE					0.5		; exagerates doppler if > 1.0, understates if < 1.0
+CORVETTE_DOPPLER_LOW					0		; low band to start the eq at (use 0 to 7)
+CORVETTE_DOPPLER_HIGH					5		; high band to eq to (use 1 to 8)
+CORVETTE_DOPPLER_USEVELOCITY			FALSE		; FALSE to not use the velocity to exagerate doppler shifting
+
+SPEECH_VOL_FACTOR						0.02	; MAX_VOL - (SPEECH_VOL_FACTOR * distance)
+SPEECH_VOL_LOW							37		; lowest speech volume (vol range is 0-255)
+SPEECH_VOL_MAX							255
+SPEECH_NOISE_FACTOR						0.00002	; SPEECH_NOISE_LOW + (SPEECH_NOISE_FACTOR * distance)
+SPEECH_NOISE_LOW						0.01
+SPEECH_NOISE_HIGH						0.3		; max noise level
+SPEECH_FILTER_LOW						3
+SPEECH_FILTER_HIGH						90
+SPEECH_BREAK_THRESHOLD					0.5
+SPEECH_BREAK_RATE_FACTOR				400
+SPEECH_BREAK_RATE_LOW					0
+SPEECH_BREAK_RATE_HIGH					400
+SPEECH_BREAK_LENGTH_FACTOR				-400
+SPEECH_BREAK_LENGTH_LOW					400
+SPEECH_BREAK_LENGTH_HIGH				1
+SPEECH_CAPSHIP_CHATTER_RANGE			2000.0	; max range that cap ship chatter will be heard
+SPEECH_CAPSHIP_CHATTER_TIME				500		; min time between chatter in ms
+SPEECH_COMBAT_CHATTER_RANGE				500.0	; max range that battle chatter will be heard
+SPEECH_COMBAT_CHATTER_TIME				350		; min time between chatter in ms
+
+SPEECH_MOSHIP_WARNING_TIME				30.0	; # seconds to wait in between MoShip under attack warnings
+SPEECH_WARNING_TIME						30.0	; # seconds to wait in between ship status warnings
+SPEECH_DISOBEY_FORCEDATTACK				10.0	; percentage chance of disobeying the forced attack
+
+SPEECH_MIN_PERCEPTABLE_VOL				0.0	; lowest volume at which to actually play events
+SPEECH_AMBIENT_LEVEL					0.6		; % of volume of speech at which to play the background ambient
+SPEECH_AMBIENT_ENABLE					TRUE	; TRUE to enable, FALSE to disable
+
+SPEECH_STIKEDAMAGE_MULT					1.0
+SPEECH_CAPDAMAGE_MULT					0.75
+
+SPEECH_SINGLEPLAYER_RATIO				0.5		; multiple non-single player speech events by this
+												; when a single player event is happening
+
+SPEECH_STATUS_RATIO						0.8		; amount to scale the Pilot status speech compared to commands
+SPEECH_CHATTER_RATIO					0.7		; amount to scale the Pilot chatter speech compared to commands
+
+MUSIC_DISTANCE_SILENT					1200.0	; distance from closest ship at which the music is minimum volume
+MUSIC_DISTANCE_MAX						3300.0	; distance from closest ship at which the music is at MUSIC_MAXGAME_VOL
+MUSIC_MAXGAME_VOL						0.6	   ; % of max volume to play in the game
+MUSIC_MINACTIVE_VOL						0.17   ; min volume when stuff is happening
+MUSIC_MININACTIVE_VOL					0.35	; min volume when nothing is going on
+MUSIC_SENSORS_VOL						0.1 ; % of max volume to play in the sensors manager
+MUSIC_MANAGERS_VOL						0.2; % of max volume to play in the other manager screens (Build, Launch, Research)
+MUSIC_TUTORIAL_VOL						0.6		; % of max vol to play the tutorial music at
+MUSIC_FADE_TIME							3.0		; # of seconds to fade the volume
+
+MUSIC_MAXBATTLE_VOL						0.85		; % of max volume to play during battles
+MUSIC_MINBATTLE_VOL						0.65	; min volume to play during battles
+
+RANDOM_AMBIENCE_MINFREQ					1.0		; min amount of time to wait between playing randoms
+RANDOM_AMBIENCE_ADDRANDOM				300		; random amount to add to the minimum (100 = 1.0 seconds)
+												; (eg if min is 1.0 and addrandom is 300
+												; then it will wait 1.0 to 4.0 seconds to play next)

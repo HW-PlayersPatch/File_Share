@@ -1,0 +1,118 @@
+;Script file for defining game types
+
+;#define MG_LastMotherShip       BIT1
+;#define MG_CaptureCapitalShip   BIT2
+;#define MG_ResearchEnabled      BIT3
+;//#define MG_BountiesEnabled      BIT4      obsolete, check instead tpGameCreated.bountySize == MG_BountiesOff
+;#define MG_HarvestinEnabled     BIT5
+;#define MG_ResourceInjections   BIT6
+;#define MG_ResourceLumpSum      BIT7
+;#define MG_PasswordProtected    BIT8
+;#define MG_UnitCapsEnabled      BIT9
+;#define MG_FuelBurnEnabled      BIT10
+;#define MG_AlliedVictory        BIT11
+;#define MG_CratesEnabled        BIT12
+;#define MG_CarrierIsMothership  BIT13
+;#define MG_Hyperspace           BIT14
+
+;definitions for other variables
+
+; this is the number of computers in the game
+;tpGameCreated.numComputers              0
+; the following three are for the radio buttons, 0 Low, 1 Medium, 2 High
+;tpGameCreated.startingFleet             1
+;tpGameCreated.bountySize                1
+;tpGameCreated.startingResources         2
+; this is the interval for resource injections
+; take the time in minutes and multiply by 960
+;tpGameCreated.resourceInjectionInterval 9600
+; this is the amount of the resource injection in RU's
+;tpGameCreated.resourceInjectionsAmount  1500
+; this is the time for the lump sum injection
+; take the time in minutes and multiply by 960
+;tpGameCreated.resourceLumpSumTime       19200
+; this is the amount of the lump sum injection in RU's
+;tpGameCreated.resourceLumpSumAmount     2000
+
+;Format:  Game, game number, game name
+
+
+; IMPORTANT!!!!!
+;
+; If you have defined X games..you must set the CUSTOM button in
+; the FEMAN to buttonNumber X (where as all other buttons are numbered
+; from 0 to (X-1)
+
+numGames 4
+
+GAME    Default
+{
+        type.flag                      BIT1     ;destroy mothership
+        type.flag                      BIT5     ;enable harvesting
+        type.flag                      BIT3     ; research
+        type.flag                      BIT9     ; unit caps
+        type.flag                      BIT10    ; fuel burn
+        type.flag                      BIT12    ; crates
+        type.flag                      BIT14    ; hyperspace
+        type.numComputers              0
+        type.startingFleet             1
+        type.bountySize                3        ; turn off bounties (3 = off)
+        type.startingResources         1
+        type.resourceInjectionInterval 14400
+        type.resourceInjectionsAmount  2000
+        type.resourceLumpSumTime       19200
+        type.resourceLumpSumAmount     2000
+}
+
+GAME    I hate harvesting
+{
+        type.flag                      BIT1     ;destroy mothership
+        type.flag                      BIT3     ; research
+        type.flag                      BIT9     ; unit caps
+        type.flag                      BIT10    ; fuel burn
+        type.flag                      BIT12    ; crates
+        type.flag                      BIT14    ; hyperspace
+        type.numComputers              0
+        type.startingFleet             1        ;med starting fleet
+        type.startingResources         1        ;med resources
+        type.bountySize                3        ; turn off bounties (3 = off)
+        type.flag                      BIT6     ;enables resource injections
+        type.resourceInjectionInterval 14400
+        type.resourceInjectionsAmount  2000
+        type.flag                      BIT7     ;enables resource lump sum injections
+        type.resourceLumpSumTime       38400
+        type.resourceLumpSumAmount     4000
+}
+
+GAME    Bounty Hunter
+{
+        type.flag                      BIT1     ;destroy mothership
+        type.flag                      BIT5     ;enable harvesting
+        type.flag                      BIT3     ; research
+        type.flag                      BIT9     ; unit caps
+        type.flag                      BIT10    ; fuel burn
+        type.flag                      BIT12    ; crates
+        type.flag                      BIT14    ; hyperspace
+        type.numComputers              0
+        type.startingFleet             1        ;med starting fleet
+        type.bountySize                2        ;large bounties
+        type.startingResources         1        ;med resources
+}
+
+GAME    Carpe Diem
+{
+        type.flag                      BIT2     ; capture capital ship
+                                                ; deliberately do not enable research
+        type.flag                      BIT9     ; unit caps
+        type.flag                      BIT10    ; fuel burn
+        type.flag                      BIT12    ; crates
+        type.flag                      BIT14    ; hyperspace
+        type.numComputers              0
+        type.startingFleet             2        ;med starting fleet
+        type.startingResources         1        ;high resources
+        type.bountySize                3        ; turn off bounties (3 = off)
+        type.flag                      BIT6     ;enables resource injections
+        type.resourceInjectionInterval 14400
+        type.resourceInjectionsAmount  2000
+}
+

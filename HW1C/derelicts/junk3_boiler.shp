@@ -1,0 +1,16 @@
+[Junk3_Boiler]
+LODFile                             Junk3_Boiler.lod
+pMexData                            Junk3_Boiler\Rl0\LOD0\Junk3_Boiler.mex
+mass                                100000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+
+
+renderlistFade     15000.0
+renderlistLimit    30000.0
+
+minimumZoomDistance              	350

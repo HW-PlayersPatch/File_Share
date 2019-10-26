@@ -1,0 +1,16 @@
+[Junk3_BoilerCasing]
+LODFile                             Junk3_BoilerCasing.lod
+pMexData                            Junk3_BoilerCasing\Rl0\LOD0\Junk3_BoilerCasing.mex
+mass                                100000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+
+renderlistFade     8000.0
+renderlistLimit    21000.0
+
+
+minimumZoomDistance              	430

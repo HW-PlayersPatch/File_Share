@@ -1,0 +1,23 @@
+
+; format is
+; Slot                  up offset, right offset, heading offset, up spacing, rightspacing, heading spacing  facedirection (0=forward,1=back,2=right,3=left)
+
+SlotPositionInfo[SLOT_Fighter0]                 -500.0,     1500.0,    3600.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Fighter1]                 -500.0,     1500.0,    3000.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Fighter2]                 -500.0,     1500.0,    2000.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Fighter3]                 -500.0,     1500.0,    1800.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Fighter4]                 -500.0,     1500.0,    1200.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Fighter5]                 -500.0,     1500.0,     600.0,   0.0,   200.0,   0.0        0
+SlotPositionInfo[SLOT_Corvette0]                -500.0,     1500.0,    -600.0,   0.0,   300.0,   0.0        0
+SlotPositionInfo[SLOT_Corvette1]                -500.0,     1500.0,   -1200.0,   0.0,   300.0,   0.0        0
+SlotPositionInfo[SLOT_Corvette2]                -500.0,     1500.0,   -1800.0,   0.0,   300.0,   0.0        0
+SlotPositionInfo[SLOT_Corvette3]                -500.0,     1500.0,   -2400.0,   0.0,   300.0,   0.0        0
+SlotPositionInfo[SLOT_Frigate]                 -1000.0,    -1500.0,    2000.0,   0.0,  -800.0,   0.0        0
+SlotPositionInfo[SLOT_SupportCorvette]          -500.0,    -1500.0,    1200.0,   0.0,  -350.0,   0.0        0
+SlotPositionInfo[SLOT_ResCollector]             -500.0,    -1500.0,    -500.0,   0.0,  -500.0,   0.0        0
+SlotPositionInfo[SLOT_SensorArray]                 0.0,     1500.0,       0.0    0.0,  1000.0,   0.0        3
+SlotPositionInfo[SLOT_ResearchShip]            -1000.0,    -1500.0,   -1500.0    0.0, -1000.0,   0.0        0
+SlotPositionInfo[SLOT_NonCombat]                1000.0,        0.0,     500.0    0.0,  -800.0,   0.0        0
+
+SlotPositionInfo[SLOT_Misc]                    -1000.0,    -1500.0,   -3500.0    0.0, -1500.0,   0.0        0
+

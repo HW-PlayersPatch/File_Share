@@ -1,0 +1,12 @@
+[PrisonShip]
+LODFile                             PrisonShip.lod
+pMexData                            PrisonShip\Rl0\LOD0\PrisonShip.mex
+mass                                100000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+
+minimumZoomDistance              	1350

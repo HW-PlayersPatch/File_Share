@@ -1,0 +1,12 @@
+[AITrack]
+ErrorVelocitySquared                        0.05    ; Maximum Velocity Error squared, between desired velocity and actual velocity
+StillVelocityLo                             -3.0    ; These next parameters are for ship stabilization (stopping).  If ship is between
+StillVelocityHi                             3.0     ; StillVelocityLo and StillVelocityHi, it is considered "not moving"
+StillRotLo                                  -0.3    ; Same as StillVelocitLo and StillVelocityHi, but for rotation
+StillRotHi                                  0.3
+STABILIZE_Z_LO                              -0.05
+STABILIZE_Z_HI                              0.05
+AITRACKRIGHT_UPACCURACY                     10      ; how accurate (in degrees) aitrackright routine will try to keep the
+                                                    ;  ship pointed up.
+
+

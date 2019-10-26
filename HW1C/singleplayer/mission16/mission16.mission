@@ -1,0 +1,36 @@
+; MissionMan script, Monday, Aug 16 1999, 6:05:57 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission16
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,-22000.0,-23000.0,0.0,30000.0,0.0,ResourceSphere_1.missphere
+AISphere    ?,-2000.1,344000.2,0.0,800000.0
+
+Lighting    ez16,-90, -20
+Background    ez16, -90, -20
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    300000
+smZoomMin    40000
+smInitialDistance    110000
+smUniverseSizeX    125000
+smUniverseSizeZ    90000
+smUniverseSizeY    200000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+IncludeShips    Traders,MiningBase
+ExcludeAsteroid    HeadShotAsteroidR1
+ExcludeAsteroid    HeadShotAsteroidR2
+ExcludeDerelict    ALL
+IncludeDerelict    Homeworld
+BaseColor    5,0,0,0
+BaseColor    6,255,255,255
+StripeColor    5,0,0,0
+StripeColor    6,255,255,255
+AvailableColorSchemes    R2,All 1,5,6,7
+MissionStartEnemyRUs    10000
+SongNumber    8

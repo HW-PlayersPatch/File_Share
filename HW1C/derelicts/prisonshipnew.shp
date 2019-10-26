@@ -1,0 +1,37 @@
+[PrisonShipNew]
+LODFile                             PrisonShipNew.lod
+pMexData                            PrisonShipNew\Rl0\LOD0\PrisonShipNew.mex
+mass                                100000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+renderlistFade						8000.0
+renderlistLimit						24000.0
+
+minimumZoomDistance              	1350
+
+blastRadiusShockWave                1.0
+blastRadiusDamage                   125
+
+;Engine Glow
+;=---------=
+trailWidth    220.0
+trailHeight   330.0
+trailLength   320.0
+trailScaleCap   0.000103
+
+
+NUMBER_OF_NAV_LIGHTS           8
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,       NAVLIGHT_Default, 1.5,   0.5,   0.5,    20, 2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 1.5,   0.5,   0,    20, 2, etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 1,  0.5,   0.5,    15, 2, etg\textures\glow32
+NavLight                        antenna4,       NAVLIGHT_Default, 1.5,   0.5,   0.5,    20, 2, etg\textures\glow32
+NavLight                        antenna5,       NAVLIGHT_Default, 1,   0.5,   0,    15, 2, etg\textures\glow32
+NavLight                        antenna6,       NAVLIGHT_Default, 1,  0.5,   0.5,    15, 2, etg\textures\glow32
+NavLight                        caution1,       NAVLIGHT_Default, 0.75, 0.5,   0.5,    10, 2, etg\textures\glow32
+NavLight                        caution2,       NAVLIGHT_Default, 0.75, 0.5,   0.5,  10, 2, etg\textures\glow32

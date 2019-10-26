@@ -1,0 +1,54 @@
+; MissionMan script, Monday, Aug 9 1999, 10:33:03 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission11
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,1577.0,9934.0,0.0,30000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez11
+Background    ez11,180,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    160000
+smZoomMin    80000
+smInitialDistance    120000
+smUniverseSizeX    80000
+smUniverseSizeZ    40000
+smUniverseSizeY    90000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R2,AdvanceSupportFrigate
+ExcludeShips    R2,AttackBomber
+ExcludeShips    R2,CloakedFighter
+ExcludeShips    R2,CloakGenerator
+ExcludeShips    R2,CryoTray
+ExcludeShips    R2,DefenseFighter
+ExcludeShips    R2,DFGFrigate
+ExcludeShips    R2,GravWellGenerator
+ExcludeShips    R2,HeadShotAsteroid
+ExcludeShips    R2,HeavyCorvette
+ExcludeShips    R2,HeavyDefender
+ExcludeShips    R2,MinelayerCorvette
+ExcludeShips    R2,Mothership
+ExcludeShips    R2,MultiGunCorvette
+ExcludeShips    R2,Probe
+ExcludeShips    R2,ProximitySensor
+ExcludeShips    R2,RepairCorvette
+ExcludeShips    R2,ResourceCollector
+ExcludeShips    R2,ResourceController
+ExcludeShips    R2,SalCapCorvette
+ExcludeShips    R2,SensorArray
+ExcludeShips    R2,TargetDrone
+ExcludeShips    Traders,All
+IncludeShips    Traders,FloatingCity
+IncludeShips    Traders,CargoBarge
+ExcludeDerelict    ALL
+IncludeDerelict    AngelMoon_clean
+IncludeDerelict    PrisonShipnew
+IncludeDerelict    PlanetOfOrigin
+IncludeDerelict    PlanetOfOrigin
+SongNumber    6
