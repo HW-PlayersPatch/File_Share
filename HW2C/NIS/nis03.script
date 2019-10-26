@@ -1,0 +1,75 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("CAMShape1", 4)
+	speechSetDir("NIS_03")
+	wideScreenIn(4)
+at frame 1
+	cameraCut("CAMShape1")
+	musicStart("nis03.fda")
+at frame 404
+	speechEvent("$56060",2)
+at frame 482
+	cameraCut("ShotShape2")
+at frame 548
+	speechEvent("$56061",2)
+at frame 788
+	speechEvent("$56062",2)
+at frame 887
+	fadeSet(0)
+at frame 888
+	fadeTo(1,1)
+at frame 960
+	cameraCut("CAMShape3")
+at frame 961
+	fadeSet(1)
+at frame 962
+	fadeTo(0,2)
+at frame 1018
+	speechEvent("$56063",2)
+at frame 1318
+	speechEvent("$56064",2)
+at frame 1584
+	speechEvent("$56065",2)
+at frame 1822
+	speechEvent("$56066",2)
+at frame 1940
+	cameraCut("CAM3bShape")
+at frame 2320
+	speechEvent("$56067",2)
+at frame 2648
+	speechEvent("$56068",2)
+at frame 2746
+	cameraCut("CamShape4")
+at frame 2828
+	speechEvent("$56069",2)
+at frame 3088
+	speechEvent("$56070",2)
+at frame 3324
+	speechEvent("$56073",2)
+at frame 3442
+	speechEvent("$56072",2)
+at frame 3624
+	speechEvent("$56074",2)
+at frame 3746
+	speechEvent("$56075",2)
+at frame 3840
+	musicStop(6)
+	nisOut(4)
+
+with |joint2|Meg_Bentus1
+{
+	at frame 0
+		setInHyperspace()
+	at frame 78
+		hyperspaceIn()
+	at frame 3480
+		hyperspaceOut()
+}

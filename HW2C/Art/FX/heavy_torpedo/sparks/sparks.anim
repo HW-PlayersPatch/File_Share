@@ -1,0 +1,27 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+fps = 30;
+startFrame = 0;
+loopCount = 1;
+texture = {
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks00.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks00.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks01.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks02.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks02.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks03.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks03.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks03.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks04.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks05.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks05.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks06.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks06.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks06.tga",
+	"data:/art/fx/Heavy_torpedo/Sparks/Sparks07.tga"}

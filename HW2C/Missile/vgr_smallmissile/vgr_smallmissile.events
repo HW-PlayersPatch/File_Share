@@ -1,0 +1,28 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+effects = {
+	animations = {
+	animation1 = {
+	name = "MissileTrail", length = 5, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},
+	animation2 = {
+	name = "Death", length = 2, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},},
+events = {
+	event1 = {
+	{"anim", "MissileTrail"},
+	{"animtime", "-1"},
+	{"marker", "EngineNozzle1"},
+	{"fx", "missle_ignite_combo_sml"},
+	{"sound", "SPECIAL/SPECIAL_ABILITIES_MISSLE_STEAM"},
+	{"fx_scale", "entity"},},
+	event2 = {
+	{"anim", "Death"},
+	{"animtime", "0"},
+	{"marker", "Root"},
+	{"sound", "SPECIAL/SPECIAL_ABILITIES_MISSLE_STEAM"},
+	{"fx_transform", "None"},},},}

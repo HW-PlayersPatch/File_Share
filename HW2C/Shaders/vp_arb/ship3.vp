@@ -1,0 +1,189 @@
+!!ARBvp1.0
+
+OPTION ARB_position_invariant;
+
+ATTRIB iPos		= vertex.position;
+ATTRIB iTex0		= vertex.texcoord[0];
+ATTRIB iNormal		= vertex.normal;
+ATTRIB iVertColour	= vertex.color;
+
+PARAM  miscValues	= { 0, 0.5, 1, 2 };
+#PARAM  mvp[4]		= { state.matrix.mvp };
+PARAM  mv[4]		= { state.matrix.modelview };
+PARAM  mvinv[4]		= { state.matrix.modelview.inverse };
+PARAM  lightDir0	= state.light[0].position;
+PARAM  halfDir0		= state.light[0].half;
+PARAM  lightDir1	= state.light[1].position;
+PARAM  halfDir1		= state.light[1].half;
+PARAM  lightDir2	= state.light[2].position;
+PARAM  lightDir3	= state.light[3].position;
+PARAM  lightDir4	= state.light[4].position;
+PARAM  specExp		= state.material.shininess;
+PARAM  matAmbient	= state.material.shininess;
+PARAM  matDiffuse	= state.material.diffuse;
+PARAM  matSpecular	= state.material.specular;
+PARAM  diffuseCol0	= state.lightprod[0].diffuse;
+PARAM  specularCol0	= state.lightprod[0].specular;
+PARAM  diffuseCol1	= state.lightprod[1].diffuse;
+PARAM  specularCol1	= state.lightprod[1].specular;
+PARAM  diffuseCol2	= state.lightprod[2].diffuse;
+PARAM  attenuation2	= state.light[2].attenuation;
+PARAM  diffuseCol3	= state.lightprod[3].diffuse;
+PARAM  attenuation3	= state.light[3].attenuation;
+PARAM  diffuseCol4	= state.lightprod[4].diffuse;
+PARAM  attenuation4	= state.light[4].attenuation;
+PARAM  sceneAmbient	= state.lightmodel.ambient;
+PARAM  texgenPlaneS	= state.texgen[3].eye.s;
+PARAM  texgenPlaneT	= state.texgen[3].eye.t;
+PARAM  texgenPlaneR	= state.texgen[3].eye.r;
+PARAM  texgenPlaneQ	= state.texgen[3].eye.q;
+PARAM  textureMatrix[4]	= { state.matrix.texture[3] };
+
+TEMP    osLight, osHLight;
+TEMP    diffuse0, specular0;
+TEMP    tempColour, specular, diffuse, ambient;
+TEMP    vertPos, shadowCoord;
+
+#OUTPUT oPos         = result.position;
+OUTPUT oColor0      = result.color;
+OUTPUT oColor1      = result.color.front.secondary;
+OUTPUT oTex0        = result.texcoord[0];
+OUTPUT oTex1        = result.texcoord[1];
+OUTPUT oTex2        = result.texcoord[2];
+OUTPUT oTex3        = result.texcoord[3];
+
+
+
+
+# Transform the vertex to clip coordinates.
+DP4   vertPos.x, mv[0], iPos;
+DP4   vertPos.y, mv[1], iPos;
+DP4   vertPos.z, mv[2], iPos;
+DP4   vertPos.w, mv[3], iPos;
+
+#initialize our colours
+MOV specular, miscValues.x;
+MOV diffuse, miscValues.x;
+MOV ambient, sceneAmbient;
+
+##### LIGHT[0] #####
+### DIFFUSE 0
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir0;
+DP3 osLight.y, mvinv[1], lightDir0;
+DP3 osLight.z, mvinv[2], lightDir0;
+# compute amount of diffuse light
+DP3 tempColour, osLight, iNormal;
+#actual diffuse colour
+MUL diffuse0, diffuseCol0, tempColour;
+### SPECULAR 0
+# Transform the half vector from eye to object space
+DP3 osHLight.x, mvinv[0], halfDir0;
+DP3 osHLight.y, mvinv[1], halfDir0;
+DP3 osHLight.z, mvinv[2], halfDir0;
+#compute specular amount
+DP3 tempColour.x, osHLight, iNormal;
+MAX tempColour.x, miscValues.x, tempColour.x;
+POW tempColour, tempColour.x, specExp.x;
+#actual specular colour
+MUL specular0, specularCol0, tempColour;
+
+##### LIGHT[1] #####
+### DIFFUSE 1
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir1;
+DP3 osLight.y, mvinv[1], lightDir1;
+DP3 osLight.z, mvinv[2], lightDir1;
+# compute amount of diffuse light
+DP3 tempColour, osLight, iNormal;
+#actual diffuse colour
+MUL tempColour, diffuseCol1, tempColour;
+# accumulate diffuse colour
+ADD diffuse, diffuse, tempColour;
+### SPECULAR 1
+# Transform the half vector from eye to object space
+DP3 osHLight.x, mvinv[0], halfDir1;
+DP3 osHLight.y, mvinv[1], halfDir1;
+DP3 osHLight.z, mvinv[2], halfDir1;
+#compute specular amount
+DP3 tempColour.x, osHLight, iNormal;
+MAX tempColour.x, miscValues.x, tempColour.x;
+POW tempColour, tempColour.x, specExp.x;
+#actual specular colour
+MUL tempColour, specularCol1, tempColour;
+# accumulate specular colour
+ADD specular, specular, tempColour;
+
+##### LIGHT[2] #####
+### DIFFUSE 2
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir2;
+DP3 osLight.y, mvinv[1], lightDir2;
+DP3 osLight.z, mvinv[2], lightDir2;
+# compute amount of diffuse light
+DP3 tempColour, osLight, iNormal;
+MUL tempColour, tempColour, attenuation2;
+#actual diffuse colour
+MUL tempColour, diffuseCol2, tempColour;
+# accumulate diffuse colour
+ADD diffuse, diffuse, tempColour;
+
+##### LIGHT[3] #####
+### DIFFUSE 3
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir3;
+DP3 osLight.y, mvinv[1], lightDir3;
+DP3 osLight.z, mvinv[2], lightDir3;
+# compute amount of diffuse light
+DP3 tempColour, osLight, iNormal;
+MUL tempColour, tempColour, attenuation3;
+#actual diffuse colour
+MUL tempColour, diffuseCol3, tempColour;
+# accumulate diffuse colour
+ADD diffuse, diffuse, tempColour;
+
+##### LIGHT[4] #####
+### DIFFUSE 4
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir4;
+DP3 osLight.y, mvinv[1], lightDir4;
+DP3 osLight.z, mvinv[2], lightDir4;
+# compute amount of diffuse light
+DP3 tempColour, osLight, iNormal;
+MUL tempColour, tempColour, attenuation4;
+#actual diffuse colour
+MUL tempColour, diffuseCol4, tempColour;
+# accumulate diffuse colour
+ADD diffuse, diffuse, tempColour;
+
+# add lighting values together
+ADD diffuse, diffuse, ambient;
+MUL diffuse, diffuse, iVertColour;
+
+## Create the proper texture coordinates
+#texgen computation
+DP4 tempColour.x, texgenPlaneS, vertPos;
+DP4 tempColour.y, texgenPlaneT, vertPos;
+DP4 tempColour.z, texgenPlaneR, vertPos;
+DP4 tempColour.w, texgenPlaneQ, vertPos;
+# adjust by texture Matrix
+DP4 shadowCoord.x, textureMatrix[0], tempColour;
+DP4 shadowCoord.y, textureMatrix[1], tempColour;
+DP4 shadowCoord.z, textureMatrix[2], tempColour;
+DP4 shadowCoord.w, textureMatrix[3], tempColour;
+
+#put 1 in the w component for texture mapping to prevent wacky divides
+MOV diffuse0.w, miscValues.z;
+MOV specular0.w, miscValues.z;
+
+# adjust by vertex colour
+MOV diffuse.w, iVertColour.w;
+
+# what we're passing to the fragment program
+MOV   oTex0, iTex0;		# actual texture coordinates
+MOV   oTex1, diffuse0;		# light 0 diffuse as 3d texture
+MOV   oTex2, specular0;		# light 0 specular as 3d texture
+MOV   oTex3, shadowCoord;	# for the shadow map
+MOV   oColor0, diffuse;		# remaining lights' and ambient
+MOV   oColor1, specular;  	# remaining lights' specular
+END

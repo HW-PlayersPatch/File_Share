@@ -1,0 +1,49 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+fps = 15;
+startFrame = 0;
+loopCount = 1;
+texture = {
+	"data:/ART/FX/Super_Beam/sbeam_small_00000.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00001.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00002.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00003.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00004.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00005.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga",
+	"data:/ART/FX/Super_Beam/sbeam_small_00006.tga"}

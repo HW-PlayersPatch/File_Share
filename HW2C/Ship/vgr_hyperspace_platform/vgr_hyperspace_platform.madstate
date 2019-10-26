@@ -1,0 +1,42 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+VGR_HYPERSPACE_PLATFORM_HyperspaceGateActivate_OnSet = function(ship)
+	print("hypergate opening")
+	setState(ship, "HyperspaceGateActivate", 0)
+	if(isAnimRunning(ship, "Open") == 0) then
+	startTime = 0
+	if(isAnimRunning(ship, "Close") ~= 0) then
+	startTime = getAnimLength(ship, "Close") - getTime(ship, "Close")
+	stopAnim(ship, "Close")
+	end
+	startAnim(ship, "Open")
+	setTime(ship,"Open",startTime)
+	startEffect(ship, "Powerup") 
+	setPauseTime(ship, "Open", 1000)
+	end
+end
+
+VGR_HYPERSPACE_PLATFORM_HyperspaceGateActivate_OnPause = function(ship)
+	print("hypergate fully open")
+	setState(ship, "HyperspaceGateActivate", 1)
+end
+
+VGR_HYPERSPACE_PLATFORM_HyperspaceGateDeActivate_OnSet = function(ship)
+	print("hypergate closing")
+	startTime = 0
+	if(isAnimRunning(ship, "Open") ~= 0) then
+	startTime = getAnimLength(ship, "Open") - getTime(ship, "Open")
+	stopAnim(ship, "Open")
+	end
+	startAnim(ship, "Close")
+	endEffect(ship,"Powerup")
+	setTime(ship,"Close",startTime)
+	setState(ship, "HyperspaceGateDeActivate", 1)
+	setPauseTime(ship, "Close", 1000)
+end

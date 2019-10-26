@@ -1,0 +1,21 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+HGN_INTERCEPTOR_Custom0_OnSet = function(ship)
+	rndVal = abs(random())
+	if rndVal < 0.5 then
+	startAnim(ship, "Turnback_l")
+	else
+	startAnim(ship, "Turnback_r")
+	end
+end
+
+HGN_INTERCEPTOR_Custom0_OnEnd = function(ship)
+	setState(ship, "Custom0", false)
+	setState(ship, "Normal", true)
+end

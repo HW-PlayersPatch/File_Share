@@ -1,0 +1,14 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+baseRes = 800
+res800 = "DATA:/UI/NewUI/Taskbar/unitstats_border800.tga"
+res1024 = "DATA:/UI/NewUI/Taskbar/unitstats_border1024.tga"
+res1280 = "DATA:/UI/NewUI/Taskbar/unitstats_border1280.tga"
+res1600 = "DATA:/UI/NewUI/Taskbar/unitstats_border1600.tga"
+

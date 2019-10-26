@@ -1,0 +1,16 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+fps = 30;
+startFrame = 0;
+loopCount = 0;
+texture = {
+	"data:/art/fx/clouds/Clouds_side_splash.tga",
+	"data:/art/fx/clouds/Clouds_side_splash2.tga",
+	"data:/art/fx/clouds/Clouds_side_splash3.tga"}
+
