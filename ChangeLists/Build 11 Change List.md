@@ -13,7 +13,7 @@
 ### Homeworld 1
 * Enemy Kadeshi ships now have red hyperspace windows like hw1c.
 #### Mission 3
-* After salvaging the first frigate for research, the remaining frigates are now properly captured like in hw1c.
+* After salvaging the first frigate for research, most of the remaining frigates can now be captured like hw1c.
 
 
 
