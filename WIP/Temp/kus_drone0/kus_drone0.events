@@ -1,0 +1,64 @@
+effects = 
+{ 
+    animations = 
+    { 
+        animation1 = 
+        { 
+            name = "Death", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, },         
+        animation2 = 
+        { 
+            name = "launch", 
+            length = 1, 
+            loop = 0, 
+            parent = "", 
+            minimum = 0, 
+            maximum = 0, 
+            markers = 
+                { "", }, },
+				animation3 =
+        {
+            name = "fire",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = { "", }, },
+		}, 
+    events = 
+    { 
+        event1 = 
+            { 
+                { "anim", "Death", }, 
+                { "animtime", "0", }, 
+                { "marker", "Root", }, 
+                { "fx", "death_generic_fighter" },
+								{ "sound", "EXPLOSION/tiny/ETG_EXPLODE_TINY_PLASMA" },
+								{ "fx_scale", "1.35" }, 
+            },
+        event2 = 
+            { 
+                { "anim", "launch", }, 
+                { "animtime", "0", }, 
+                { "marker", "Root", }, 
+                { "fx", "resourcing_dust_spray_full", }, 
+                { "sound", "SPECIAL/MISEM", },
+                { "fx_scale", "1", },                 
+            }, 
+				event3 =
+        {
+            { "anim", "fire" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun0_Muzzle" },
+            { "fx", "muzzle_flash_combo" },
+            { "sound", "WEAPON/FIGHTER/FIRE/WEAPON_FIGHTER_KINETIC_AUTOGUN_BURSTFIRE" },
+            { "fx_scale", "0.55" },
+        },		
+}, }
