@@ -7,7 +7,6 @@
 * The Taiidan Defense Fighter no longer shoots down missiles from allies.
 * Fixed Hiigaran Pulsar Corvette weapon sound effects (they were missing).
 * Vaygr Battlecruiser Trinity Cannon now has enhanced sound effects based on the original intended sound from hw2c.
-* Kushan Drone Frigates no longer make such a loud explosion when all their drones die.
 
 ## Campaign Improvements
 ### Homeworld 1
