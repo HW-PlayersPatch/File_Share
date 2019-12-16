@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 13 Change List | December 15, 2019
+# Build 13 Change List | December 16, 2019
 
 ## Gameplay Options and Features
 * Added an option to change the Stance Buttons Order. This changes the order of the stance buttons in the UI to match HWR (Aggressive/Evasive/Neutral) or hw1c (Aggressive/Neutral/Evasive).
@@ -25,6 +25,7 @@
 * Dreadnought weapon beam effects are now fully visible.
 
 ## Balance Changes - All Races
+* Movement speed while being repaired lowered from 95% to 80% (its 65% in v2.1).
 * Friendly fire reduced from 50% to 45% to make it a bit harder for scouts to EMP themselves.
 * Hiigaran scouts can now EMP frigates with just three squads, rather than six (Hiigaran EMP isn't very accurate vs fighters, so its now a bit better vs frigates than vaygr for some race flavor).
 * Vaygr scouts can now EMP frigates with just four squads like hw2c, rather than six.
