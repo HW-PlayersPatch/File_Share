@@ -309,7 +309,7 @@
     * Firing arc 6->12 (so it doesn't have to line up so precisely with its targets)
 
 #### Kushan Drone Frigates
-* Kushan Drone Frigates can now attack while they are moving. Previously the drones rarely ever fired while the frig was moving. Drones frigates are also now less demanding on your PC hardware, they spray less bullets that pack a harder bunch.
+* Drones now attack while the frigate is moving. Previously the drones rarely ever fired while the frig was moving. Drones frigates are also now less demanding on your PC hardware, they spray less bullets that pack a harder bunch.
 * Drone Tech Research:
     * Cost 1300->1100
 * Drone Weapons:
