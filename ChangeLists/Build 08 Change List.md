@@ -1,5 +1,5 @@
 # Homeworld Remastered 2.3 Players Patch
-# Build 8 Change List | Mar 8, 2018
+# Build 8 Change List | Aug 4, 2018
 
 ## Gameplay Options and Features
 * Added an Observer mode to spectate multiplayer matches.
