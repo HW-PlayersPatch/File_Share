@@ -22,7 +22,7 @@
 * Lowered death/scuttle blast range on frigates, motherships, and shipyards (so fighters and corvettes can better survive capital ship battles).
 * Damaged resource collectors latched onto RU drop-offs now heal 2.5 times faster (so they don't clog up resource drop-offs for so long).
 * Movement speed while being repaired increased from 65% to 95%.
-* Normal unit caps: Destroyers 6->5 (back to v2.1 value). High unit caps: Destroyers 9->7, Missile Destroyers 4->3. Huge unit caps: Destroyers 14->11.
+* Normal unit caps: Destroyers 6->5 (back to v2.1 value). High unit caps: Destroyers 9->7, Missile Destroyers 4->3. Huge unit caps: Destroyers 11->14.
 
 
 
