@@ -24,7 +24,7 @@
 #### Mission 13
 * Dreadnought weapon beam effects are now fully visible.
 
-## Balance Changes
+## Balance
 * Movement speed while being repaired lowered from 95% to 80% (its 65% in v2.1).
 * Friendly fire reduced from 50% to 45% to make it a bit harder for scouts to EMP themselves.
 * Hiigaran scouts can now EMP frigates with just three squads, rather than six (Hiigaran EMP isn't very accurate vs fighters, so its now a bit better vs frigates than vaygr for some race flavor).

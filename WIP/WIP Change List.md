@@ -14,22 +14,22 @@ Note: All proposed changes are suggestions/ideas, until deemed final.
 
 
 
-## Balance Changes - All Races
+## Balance (All Races)
 
 
 
-## Hiigaran
+### Hiigaran
 
 
 
-## Vaygr
+### Vaygr
 
 
 
-## Kushan
+### Kushan
 
 
 
-## Taiidan
+### Taiidan
 
 
