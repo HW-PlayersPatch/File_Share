@@ -1,0 +1,60 @@
+
+=== REPORTS DUMP === 
+ "Test 1": { 
+ 	"ship_averages": { 
+ 		"enemy": { 
+ 			"initial": { 
+ 				"hgn_pulsarcorvette": 42, 
+ 			}, 
+ 			"survived": { 
+ 			}, 
+ 			"wins": 0, 
+ 		}, 
+ 		"player": { 
+ 			"initial": { 
+ 				"kus_assaultfrigate": 14, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_assaultfrigate": 9, 
+ 			}, 
+ 			"wins": 5, 
+ 		}, 
+ 	}, 
+ 	"time": { 
+ 		"min": 108.7734375, 
+ 		"range": 47.98828125, 
+ 		"max": 156.76171875, 
+ 		"average": 135.0208106994629, 
+ 	}, 
+ 	"index": 1, 
+ }, 
+ "Test 2": { 
+ 	"ship_averages": { 
+ 		"enemy": { 
+ 			"initial": { 
+ 				"kus_assaultfrigate": 14, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_assaultfrigate": 9.4, 
+ 			}, 
+ 			"wins": 5, 
+ 		}, 
+ 		"player": { 
+ 			"initial": { 
+ 				"hgn_pulsarcorvette": 42, 
+ 			}, 
+ 			"survived": { 
+ 			}, 
+ 			"wins": 0, 
+ 		}, 
+ 	}, 
+ 	"time": { 
+ 		"min": 118.515625, 
+ 		"range": 22.33984375, 
+ 		"max": 140.85546875, 
+ 		"average": 128.68515625, 
+ 	}, 
+ 	"index": 2, 
+ }, 
+ LUA: Balance Screen Unloading 
+ 

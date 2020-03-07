@@ -1,0 +1,63 @@
+
+=== REPORTS DUMP === 
+ "Test 1": { 
+ 	"ship_averages": { 
+ 		"enemy": { 
+ 			"initial": { 
+ 				"kus_heavycorvette": 42, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_heavycorvette": 0.6, 
+ 			}, 
+ 			"wins": 1, 
+ 		}, 
+ 		"player": { 
+ 			"initial": { 
+ 				"kus_assaultfrigate": 14, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_assaultfrigate": 6.2, 
+ 			}, 
+ 			"wins": 4, 
+ 		}, 
+ 	}, 
+ 	"time": { 
+ 		"min": 150.36328125, 
+ 		"range": 143.96484375, 
+ 		"max": 294.328125, 
+ 		"average": 191.9654624938965, 
+ 	}, 
+ 	"index": 1, 
+ }, 
+ "Test 2": { 
+ 	"ship_averages": { 
+ 		"enemy": { 
+ 			"initial": { 
+ 				"kus_assaultfrigate": 14, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_assaultfrigate": 6.6, 
+ 			}, 
+ 			"wins": 4, 
+ 		}, 
+ 		"player": { 
+ 			"initial": { 
+ 				"kus_heavycorvette": 42, 
+ 			}, 
+ 			"survived": { 
+ 				"kus_heavycorvette": 1.2, 
+ 			}, 
+ 			"wins": 1, 
+ 		}, 
+ 	}, 
+ 	"time": { 
+ 		"min": 144.140625, 
+ 		"range": 108.90625, 
+ 		"max": 253.046875, 
+ 		"average": 179.3717407226563, 
+ 	}, 
+ 	"index": 2, 
+ }, 
+ LUA: Balance Screen Unloading 
+ Warning, screen with name SMFiltersMenu does not exist 
+ 
