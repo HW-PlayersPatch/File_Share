@@ -37,7 +37,7 @@
 #### Assault Frigates
 * Gun Weapons:
     * Tracking speed 25->40
-    * Damage vs corvettes 0.2->0.16
+    * Damage vs corvettes 0.2->0.16 (performs the same, but more consistently after the tracking speed buff)
 
 #### Ion Cannon Frigates
 * Weapon:
