@@ -1,1 +1,0 @@
-Download the latest build for GOG from ModDB: http://www.moddb.com/mods/homeworld-remastered-players-patch
