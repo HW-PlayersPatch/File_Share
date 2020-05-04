@@ -1,0 +1,21 @@
+Homeworld Remastered 2.3 Players Patch
+Build XX
+
+Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1190476337
+GOG: http://www.moddb.com/mods/homeworld-remastered-players-patch
+ReadMe: http://steamcommunity.com/workshop/filedetails/discussion/1190476337/1621724915806537704/
+
+
+GOG Instructions:
+1. Download from ModDB here: http://www.moddb.com/mods/homeworld-remastered-players-patch
+
+2. Unzip/extract 2.3PlayersPatch_buildXX.zip
+
+3. Copy the DataWorkshopMODs folder and paste it here (file path may vary):
+C:\Program Files (x86)\GalaxyClient\Games\Homeworld Remastered\HomeworldRM\
+
+4. If prompted, replace any existing files.
+
+5. Use the shortcuts from the .zip file to play Homeworld Remastered, old shortcuts prior to build 13 will not work. If your installation path is different, be sure to edit the shortcuts as needed.
+
+6. When Homeworld Remastered starts, you will see "2.3 Players Patch" in the bottom right of the main menu.
