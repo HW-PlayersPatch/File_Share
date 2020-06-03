@@ -1,4 +1,4 @@
-This is the file share for the 2.3 Players Patch
+This is the file share for the Players Patch
 
 Steam: http://steamcommunity.com/sharedfiles/filedetails/?id=1190476337
 
