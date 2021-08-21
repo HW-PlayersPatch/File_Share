@@ -11,11 +11,13 @@ GOG Instructions:
 
 2. Unzip/extract 2.3PlayersPatch_buildXX.zip
 
-3. Copy the DataWorkshopMODs folder and paste it here (file path may vary):
+3. Copy the DataWorkshopMODs folder and paste it in your HomeworldRM folder here (your instalation path may vary):
 C:\Program Files (x86)\GalaxyClient\Games\Homeworld Remastered\HomeworldRM\
 
 4. If prompted, replace any existing files.
 
-5. Use the shortcuts from the .zip file to play Homeworld Remastered, old shortcuts prior to build 13 will not work. If your installation path is different, be sure to edit the shortcuts as needed.
+5. Use the shortcuts from the .zip file to play Homeworld Remastered, old shortcuts prior to build 13 will not work.
 
-6. When Homeworld Remastered starts, you will see "2.3 Players Patch" in the bottom right of the main menu.
+6. If your installation path is different, then you'll need to edit the Shortcuts. Right click on each shortcut, click Properties, and edit the Target and Start in path to match your unique installation path. For example you may just need to change C:\ to D:\
+
+7. When Homeworld Remastered starts, you will see "2.3 Players Patch" in the bottom right of the main menu.
