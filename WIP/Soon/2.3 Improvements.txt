@@ -1,0 +1,70 @@
+Potential ideas for a future build. TBD.
+
+HW2 Scouts
+Cost 300->350
+Undo this buff and restore hw2c value.
+
+HW2 Interceptors
+Cost 450->500
+Undo this buff and restore hw2c value.
+
+Hiig Defense Field Frigate
+Cost 1000->1250
+Build Time 60->70
+Undo these buffs and restore hw2c values.
+
+Vaygr Command Corvette
+Cost 600->400
+Build Time 45->30
+Undo this nerf and restore hw2c value.
+
+Maybe change all probes from probearmour back to unarmoured. Test ships time to kill (including missile corvs) vs them.
+
+Maybe change research ship from resarmour to mediumarmour.
+
+Hiig Marine
+Max hyperspace cost 450->500
+To match other hiig frigates and restore hw2c.
+
+Hiig Shipyard Hyperspace
+Old: 0,3,1000,2000,0,3
+New: 0,1,500,1000,0,3
+
+Vay Shipyard Hyperspace
+Old: 0,3,1200,2200,0,3
+New: 0,1,600,1200,0,3
+(HW1 hyping MS is like hyping MS and SY for hw2)
+
+Restore most regen times.
+
+Restore hw2c retaliationRange
+Hiig CC/MS/SY/SYelo/SYsp 6500->4800
+Vay CC/SY 6500->4800
+Vay MS 6500->5500
+Vay BC 6500->7000
+
+command corvette retalliationRange
+5500->2000. like you changed minelayers/capture frigs/repair units before. don't want it running off to die.
+
+In 2.1, kamikazying interceptors is insane!!! Mention this exploit fix in 2.3 change log... collisionMultiplier
+ 35.0->0.35 rofl
+
+hw1 colls should start in defensive, not passive... only ships to start in passive.
+ 
+#Stats Tool
+Doesn't handle holdrange for kus_probe and other ships sensors range.
+Delete HomingDistance/HomingDelay columns
+Add some more TacticsMulti columns
+
+vgr_c_production_fighter.subs
+Regentime to 250
+
+vgr_c_sensors_detectcloaked.subs
+vgr_ms_sensors_detectcloaked.subs
+Cost 500, bt 45
+
+hgn_battlecruiserkineticburstcannon.subs (Left/right too)
+Attackfamily subsystem
+Armourfam subsystemarmour
+
+Review 2.3 vs hw2c research and weapons tabs, then done.
