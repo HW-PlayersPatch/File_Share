@@ -1,0 +1,5 @@
+baseRes = 800
+
+res800 = "DATA:\\UI\\CommandIcons\\Repair800.tga"
+res1600 = "DATA:\\UI\\CommandIcons\\Repair1600.tga"
+

@@ -1,0 +1,14 @@
+[AngelMoon_clean]
+LODFile                             AngelMoon_clean.lod
+pMexData                            AngelMoon_clean\Rl0\LOD0\AngelMoon_clean.mex
+mass                                100000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           800000                        ; hit points
+
+worldRender                         TRUE
+scaleFactor                         0.5
+

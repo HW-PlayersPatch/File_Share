@@ -1,0 +1,190 @@
+KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet = function(ship, state, openAnim, closeAnim)
+    print("KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet: "..ship..", "..state..", "..openAnim..", "..closeAnim)
+	setState(ship, state, 0)
+	if(isAnimRunning(ship, openAnim) == 0) then		
+		startTime = 0
+		if(isAnimRunning(ship, closeAnim) ~= 0) then
+			startTime = getAnimLength(ship, closeAnim) - getTime(ship, closeAnim)
+			stopAnim(ship, closeAnim)
+			endEffect(ship, closeAnim)
+		end
+		startAnim(ship, openAnim)
+		startEffect(ship, openAnim)
+		setTime(ship, openAnim, startTime)
+		setPauseTime(ship, openAnim, 1000)
+	end
+end
+
+KUS_SUPPORTFRIGATE_DockPathOpenArm_OnPause = function(ship, state, openAnim, closeAnim)	
+	setState(ship, state, 1)
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet = function(ship, state, openAnim, closeAnim)
+    print("KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet: "..ship..", "..state..", "..openAnim..", "..closeAnim)
+	setState(ship, state, 0)
+	if(isAnimRunning(ship, closeAnim) == 0) then		
+		startTime = 0
+		if(isAnimRunning(ship, openAnim) ~= 0) then
+			startTime = getAnimLength(ship, openAnim) - getTime(ship, openAnim)
+			stopAnim(ship, openAnim)
+			endEffect(ship, openAnim)
+		end
+		startAnim(ship, closeAnim)
+		startEffect(ship, closeAnim)
+		setTime(ship, closeAnim, startTime)
+		setPauseTime(ship, closeAnim, 1000)
+	end
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosedArm_OnPause = function(ship, state, openAnim, closeAnim)	
+	setState(ship, state, 1)
+end
+
+
+
+
+--
+-- State-specific wrappers
+--
+
+--
+-- Docking path 0
+--
+KUS_SUPPORTFRIGATE_DockPathOpen_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet(ship, "DockPathOpen", "open1", "close1")
+end
+
+KUS_SUPPORTFRIGATE_DockPathOpen_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnPause(ship, "DockPathOpen", "open1", "close1")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed", "open1", "close1")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnPause(ship, "DockPathClosed", "open1", "close1")
+	setState(ship, "DockPathClose", 1)
+end
+
+
+--
+-- Docking path 1
+--
+KUS_SUPPORTFRIGATE_DockPathOpen1_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet(ship, "DockPathOpen1", "open2", "close2")
+end
+
+KUS_SUPPORTFRIGATE_DockPathOpen1_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnPause(ship, "DockPathOpen1", "open2", "close2")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed1_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed1", "open2", "close2")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed1_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnPause(ship, "DockPathClosed1", "open2", "close2")
+	setState(ship, "DockPathClose1", 1)
+end
+
+--
+-- Docking path 2
+--
+KUS_SUPPORTFRIGATE_DockPathOpen2_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet(ship, "DockPathOpen2", "open3", "close3")
+end
+
+KUS_SUPPORTFRIGATE_DockPathOpen2_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnPause(ship, "DockPathOpen2", "open3", "close3")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed2_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed2", "open3", "close3")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed2_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnPause(ship, "DockPathClosed2", "open3", "close3")
+	setState(ship, "DockPathClose2", 1)
+end
+
+--
+-- Docking path 3
+--
+KUS_SUPPORTFRIGATE_DockPathOpen3_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnSet(ship, "DockPathOpen3", "open4", "close4")
+end
+
+KUS_SUPPORTFRIGATE_DockPathOpen3_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathOpenArm_OnPause(ship, "DockPathOpen3", "open4", "close4")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed3_OnSet = function(ship)
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed3", "open4", "close4")
+end
+
+KUS_SUPPORTFRIGATE_DockPathClosed3_OnPause = function(ship)	
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnPause(ship, "DockPathClosed3", "open4", "close4")
+	setState(ship, "DockPathClose3", 1)
+end
+
+
+--
+-- Make sure the docking arms are stowed on creation.
+-- To do this, start the close animations and set the stat once (any of the) animations complete.
+--
+KUS_SUPPORTFRIGATE_Launched_OnSet = function(ship)	
+	setState(ship, "Launched", 0)
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed", "open1", "close1")
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed1", "open2", "close2")
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed2", "open3", "close3")
+    KUS_SUPPORTFRIGATE_DockPathClosedArm_OnSet(ship, "DockPathClosed3", "open4", "close4")
+	setState(ship, "Launched", 1)
+end
+
+KUS_SUPPORTFRIGATE_Launched_OnPause = function(ship)	
+    setState(ship, "DockPathClosed", 1)
+    setState(ship, "DockPathClosed1", 1)
+    setState(ship, "DockPathClosed2", 1)
+    setState(ship, "DockPathClosed3", 1)
+end
+
+
+---------------------------
+--  KUS_SUPPORTFRIGATE_Normal_OnSet = function(ship)		
+--  	if(isAnimRunning(ship, "close") == 0) then		
+--  		startTime = 0		
+--  		startAnim(ship, "close")		
+--  		setTime(ship, "close", startTime)
+--  		setPauseTime(ship, "close", 1000)
+--  	end
+--  end
+--
+--  KUS_SUPPORTFRIGATE_Launched_OnSet = function(ship)		
+--  	if(isAnimRunning(ship, "close") == 0) then		
+--  		startTime = 0		
+--  		startAnim(ship, "close")		
+--  		setTime(ship, "close", startTime)
+--  		setPauseTime(ship, "close", 1000)
+--  	end
+--  end
+
+KUS_SUPPORTFRIGATE_RepairStart_OnSet = function(ship)
+	endEffect(ship, "Repairing")		
+	setState(ship, "RepairStart", 0)
+end
+
+KUS_SUPPORTFRIGATE_RepairStart_OnPause = function(ship)
+	setState(ship, "RepairStart", 1)
+end
+
+KUS_SUPPORTFRIGATE_RepairDo_OnSet = function(ship)	
+	startEffect(ship, "Repairing")	
+	setState(ship, "RepairDo", 1)
+end
+
+KUS_SUPPORTFRIGATE_RepairEnd_OnSet = function(ship)	
+	endEffect(ship, "Repairing")	
+	setState(ship, "RepairEnd", 1)	
+end
+

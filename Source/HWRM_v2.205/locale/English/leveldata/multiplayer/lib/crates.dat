@@ -1,0 +1,11 @@
+filerange 14780 14784
+rangestart 14780 14784
+
+// Subtitles
+14780	Crates: New crate spawned!
+14781	Contents unknown
+14782	Crates: Crate found, %[0]s recovered.
+14783	Crates: Crate found, %[0]s technology recovered.
+14784	Crates: Crate found, %[0].0f RU recovered.
+
+rangeend

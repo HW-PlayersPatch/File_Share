@@ -1,0 +1,156 @@
+[P1MissileCorvette]
+
+;Source Files
+;=----------=
+LODFile                             P1MissileCorvette.lod
+pMexData                            P1MissileCorvette\Rl0\LOD0\P1MissileCorvette.mex
+
+;Ship Physics
+;=----------=
+mass                                150.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    25.0                        ; resistance to rotation
+momentOfInertiaY                    25.0                        ; [fighter = 1]
+momentOfInertiaZ                    25.0
+maxvelocity                         500.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Corvette
+buildCost                           290                        ; resource units to build
+buildTime                           1                         ; time in seconds to build
+maxhealth                           1400                        ; hit points
+maxfuel                             30000.0
+lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.019
+attackfuelburnrate                  0.25
+groupSize                           5                          ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]            0.5                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.5
+rotstrength[ROT_PITCHUP]            0.4
+rotstrength[ROT_PITCHDOWN]          0.4
+rotstrength[ROT_ROLLRIGHT]          0.4
+rotstrength[ROT_ROLLLEFT]           0.4
+turnspeed[TURN_YAW]                 1.25                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               1.25
+turnspeed[TURN_ROLL]                1.25
+
+MissileRegenerateTime                0.375           ; (1.5/4) every this many seconds one missile is regenerated
+MissileVolleyTime                    0.2             ; fire rate of missiles when opening massive volley attack
+
+MissileLagVolleyTime                 12.0
+
+
+;Weapons
+;=------=
+NUMBER_OF_GUNS                      2
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+
+
+GUN         0
+{
+Type                                GUN_MissileLauncher              ; type of gun.  Must spell this way.
+SoundType                           GS_MissleLauncher                ; must spell this way.
+DamageLo                                15                      ; damage variance per shot - low
+DamageHi                                35                      ; damage variance per shot - high
+MaxMissiles                             40                      ; maximum # of missiles this missile launcher can carry
+BulletRange                           6000.0
+BulletSpeed                            200.0                     ; initial speed for missile
+FireTime                                 4.0                    ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                            60                      ; how triggerHapppy the ship is when firing the fixed.
+}
+
+GUN         1
+{
+Type                                GUN_MissileLauncher
+SoundType                           GS_MissleLauncher
+DamageLo                                15                      ; damage variance per shot - low
+DamageHi                                35                      ; damage variance per shot - high
+MaxMissiles                             20
+BulletRange                           6000.0
+BulletSpeed                            200.0                     ; initial speed for missile
+FireTime                                 4.0                    ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                            60                      ; how triggerHapppy the ship is when firing the fixed.
+}
+
+
+;Ship AI
+;=-----=
+repositionTime                      0.6                        ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         800.0
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000200                ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+;Engine trails
+;=-----------=
+trailWidth                          42.0
+trailHeight                         18.0
+trailAngle                          90.0
+trailRibbonAdjust                    0.75
+trailSpriteRadius                   60.0
+
+trailWidth2                         42.0
+trailHeight2                        18.0
+trailAngle2                         90.0
+trailRibbonAdjust2                   0.75
+trailSpriteRadius2                  60.0
+
+minimumZoomDistance              	95

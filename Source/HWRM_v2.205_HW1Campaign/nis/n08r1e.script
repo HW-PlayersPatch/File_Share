@@ -1,0 +1,22 @@
+speechSetDir("n08r1e")
+at frame 0
+    fadeSet(0.995)
+    loadBackground("ez08")
+at frame 30
+    fadeTo(0.0, 2)
+at frame 347
+    seekForward(0.166666666666667)
+at frame 351
+	cameraCut("Camera1")
+at frame 645
+    fadeTo(0.995, 2)
+at frame 712
+    newNIS("nis/n08r1f")
+at frame 713
+    --musicStop(0.0333333333333333)
+with Kus_Mothership
+{
+    at 0
+        hide()
+}
+

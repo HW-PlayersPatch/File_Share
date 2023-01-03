@@ -1,0 +1,14 @@
+
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Vgr_HeavyMissile","Normal",40,1200,0,0,0,2,1,0,0,7.5,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1500,1500,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01});
+setAngles(NewWeaponType,179,0,0,0,0);
+setMiscValues(NewWeaponType,0,2);
+
+setFireMultFactor(NewWeaponType, 1.0);

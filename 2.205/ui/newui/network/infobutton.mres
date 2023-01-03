@@ -1,4 +1,0 @@
-baseRes = 800
-
-res800 = "data:ui/newui/network/InfoButton16x16.tga"
-res1600 = "data:ui/newui/network/InfoButton32x32.tga"

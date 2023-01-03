@@ -1,0 +1,37 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_TurretBottom",
+            length = 1.2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	wpn1 =
+        {
+            { "anim", "Weapon_TurretBottom" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TurretBottom_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_VULCAN_KINETIC_TURRET_SHELL" },
+            { "fx_nlips", "on" },
+        },
+        wpn2 =
+        {
+            { "anim", "Weapon_TurretBottom" },
+            { "animtime", "0.5" },
+            { "marker", "Weapon_TurretBottomSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_frigate" },
+            { "sound", "WEAPON/CORVETTE/FIRE/WEAPON_CORVETTE_VULCAN_KINETIC_TURRET_SHELL" },
+            { "fx_nlips", "on" },
+        },			
+    }
+}

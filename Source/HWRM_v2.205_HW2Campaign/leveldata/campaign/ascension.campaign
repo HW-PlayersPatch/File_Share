@@ -1,0 +1,242 @@
+-- =============================================================================
+--     Name    : Ascension.campaign
+--     Purpose : campaign for ascension.
+--
+--     Last modified: March 11, 2003 by clee
+--     Copyright Relic Entertainment, Inc.  All rights reserved.
+-- =============================================================================
+
+-- DAT strings found in UI.DAT
+
+-- localized display name for the UI
+displayName = "$5500"
+
+-- 0 = Primary
+contentType = 0
+contentName = "ascension"
+contentOrdered = 1
+contentChooseText = "$3492" -- CHOOSE MISSION//
+
+ExtFilter = "campaign_ascension,campaign_gbx,campaign_gbx_ascension"
+contentRules = "SinglePlayer"	-- A DEFAULT that actually reads from SinglePlayerOptions.lua
+
+-- initialization
+Mission = { }   -- create a mission structure
+
+-- Mission 1    Tanis
+Mission[1] = {
+    postload		= function () playAnimaticNis("data:animatics/A00.lua", "nis/NIS01A");  end,
+    directory	= "M01_Tanis",
+    level		= "M01_Tanis.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A01.lua", 1, 0) else postLevelComplete() end end,
+--~     postlevel	= function () postLevelComplete() end,
+    -- Localize me
+    displayName    = "$4000",
+    description      = "$4001",
+}
+
+-- Mission 2    Hiigara
+Mission[2] = {
+    --postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A01.lua", 0); end,
+--~     postload		= function () playAnimaticNis("data:animatics/A01.lua", "nis/NIS02A");  end,
+    directory       = "M02_Hiigara",
+    level           = "M02_Hiigara.level",
+
+--    postlevel	= function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A02.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    -- Localize me
+    displayName    = "$4002",
+    description      = "$4003",
+--    loadingScreenTitle = "VAYGR INVASION IN PROGRESS",
+--    loadingScreenDesc = "DESTINATION: HIIGARA, HOMEWORLD SYSTEM",
+}
+
+
+-- Mission 3    Staging Ground
+Mission[3] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A02.lua", 0, 0); end,
+    
+    directory       = "M03_Staging",
+    level           = "M03_Staging.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A03.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4004",
+    description      = "$4005",
+}
+
+-- Mission 4    Outer Gehenna
+Mission[4] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A03.lua", 0, 0); end,
+    
+    directory       = "M04_OuterGeh",
+    level           = "M04_OuterGeh.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A04.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4006",
+    description      = "$4007",
+}
+
+-- Mission 5   Gehenna
+Mission[5] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A04.lua", 0, 0); end,
+    
+    directory       = "M05_Gehenna",
+    level           = "M05_Gehenna.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A05.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4008",
+    description      = "$4009",
+}
+
+-- Mission 6  Karos
+Mission[6] = {
+    --postload        = function () end,
+    postload	= function () playAnimaticNis("data:animatics/A05.lua", "nis/NIS06A");  end,
+    --postload        = function () playAnimatic("data:animatics/A05.lua", 0); end,
+    
+    directory       = "M06_Karos",
+    level           = "M06_Karos.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A06.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4010",
+    description      = "$4011",
+}
+
+-- Mission 7  Veil
+Mission[7] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A06.lua", 0, 0); end,
+    
+    directory       = "M07_Veil_Of_Fire",
+    level           = "M07_Veil_Of_Fire.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A07.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4012",
+    description      = "$4013",
+}
+
+-- Mission 8  Hangar
+Mission[8] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A07.lua", 0, 0); end,
+    
+    directory       = "M08_Hangar",
+    level           = "M08_Hangar.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A08.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4014",
+    description      = "$4015",
+}
+
+-- Mission 9  Outer_Hangar
+Mission[9] = {
+    --postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A08.lua", 0); end,
+    postload	= function () playAnimaticNis("data:animatics/A08.lua", "nis/NIS09A");  end,
+    
+    directory       = "M09_Outer_Hangar",
+    level           = "M09_Outer_Hangar.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A09.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4016",
+    description      = "$4017",
+}
+
+-- Mission 10 Bentusi
+Mission[10] = {
+    --postload        = function () end,
+    postload        = function () playAnimatic("data:animatics/A09.lua", 0, 0); end,
+--~     postload	= function () playAnimaticNis("data:animatics/A09.lua", "nis/M10_Intro");  end,
+    
+    directory       = "M10_Bentusi",
+    level           = "M10_Bentusi.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A10.lua", 1, 0) else postLevelComplete() end end,
+    --postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4018",
+    description      = "$4019",
+}
+
+-- Mission 11 Final Core
+Mission[11] = {
+    postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A10.lua", 0, 0); end,
+    
+    directory       = "M11_Final_Core",
+    level           = "M11_Final_Core.level",
+    --ostlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A11.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4020",
+    description      = "$4021",
+}
+
+-- Mission 12 Three Become One
+Mission[12] = {
+    --postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A11.lua", 0); end,
+    postload	= function () playAnimaticNis("data:animatics/A11.lua", "nis/NIS12");  end,
+    
+    directory       = "M12_Rescue",
+    level           = "M12_Rescue.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A12.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4022",
+    description      = "$4023",
+}
+
+-- Mission 13   Balcora Gate
+Mission[13] = {
+    --postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A12.lua", 0); end,
+    postload	= function () playAnimaticNis("data:animatics/A12.lua", "nis/NIS13");  end,
+    
+    directory       = "M13_Balcora_Gate",
+    level           = "M13_Balcora_Gate.level",
+    --postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A13.lua", 1) else postLevelComplete() end end,
+    postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4024",
+    description      = "$4025",
+}
+
+-- Mission 14   Sajuuk
+Mission[14] = {
+    --postload        = function () end,
+    --postload        = function () playAnimatic("data:animatics/A13.lua", 0); end,
+    postload	= function () playAnimaticNis("data:animatics/A13.lua", "nis/NIS14A");  end,
+    
+    directory       = "M14_Sajuuk",
+    level           = "M14_Sajuuk.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A14.lua", 1, 0) else postLevelComplete() end end,
+--~     postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4026",
+    description      = "$4027",
+}
+
+-- Mission 15   Homeworld
+Mission[15] = {
+    --postload        = function () end,
+--~     postload        = function () playAnimatic("data:animatics/A14.lua", 0, 0); end,
+    
+    directory       = "M15_Homeworld",
+    level           = "M15_Homeworld.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A15.lua", 1, 0) else postLevelComplete() end end,
+    --postlevel	= function () postLevelComplete() end,
+    
+    displayName    = "$4028",
+    description      = "$4029",
+}

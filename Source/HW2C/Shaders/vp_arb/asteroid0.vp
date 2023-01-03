@@ -1,0 +1,70 @@
+!!ARBvp1.0
+OPTION ARB_position_invariant;
+ATTRIB iTex0        = vertex.texcoord[0];
+ATTRIB iTex1        = vertex.texcoord[1];
+#ATTRIB iPos         = vertex.position;
+ATTRIB iNormal      = vertex.normal;
+ATTRIB iTangent     = vertex.attrib[6];
+ATTRIB iBinormal    = vertex.attrib[7];
+PARAM  mvinv[4]     = { state.matrix.modelview.inverse };
+PARAM  lightDir0    = state.light[0].position;
+PARAM  halfDir0     = state.light[0].half;
+PARAM  specExp      = state.material.shininess;
+#PARAM  ambientCol0  = state.lightprod[0].ambient;
+#PARAM  diffuseCol0  = state.lightprod[0].diffuse;
+#PARAM  specularCol0 = state.lightprod[0].specular;
+PARAM  miscValues    = { 0, 0.5, 1, 2 };
+PARAM test = { 0, 0, 1, 1 };
+#TEMP    tsLightNormalized;
+TEMP    osLight, tsLight;
+TEMP    osHLight, specColour0;
+TEMP temp;
+
+#OUTPUT oPos         = result.position;
+OUTPUT oColor0      = result.color;
+#OUTPUT oColor1      = result.color.front.secondary;
+OUTPUT oTex0        = result.texcoord[0];
+#OUTPUT oTex1        = result.texcoord[1];
+
+## Transform the vertex to clip coordinates.
+#DP4   oPos.x, mvp[0], iPos;
+#DP4   oPos.y, mvp[1], iPos;
+#DP4   oPos.z, mvp[2], iPos;
+#DP4   oPos.w, mvp[3], iPos;
+
+## Transform the half vector from eye to object space
+#DP3 osHLight.x, mvinv[0], halfDir0;
+#DP3 osHLight.y, mvinv[1], halfDir0;
+#DP3 osHLight.z, mvinv[2], halfDir0;
+
+#compute specular
+#DP3 specColour0.x, osHLight, iNormal;
+#MAX specColour0.x, miscValues.x, specColour0.x;
+#POW specColour0, specColour0.x, specExp.x;
+
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir0;
+DP3 osLight.y, mvinv[1], lightDir0;
+DP3 osLight.z, mvinv[2], lightDir0;
+
+# Transform the light from object to tangent space
+DP3 tsLight.x, osLight, iTangent;
+DP3 tsLight.y, osLight, iBinormal;
+DP3 tsLight.z, osLight, iNormal;
+
+MAD temp, tsLight, miscValues.y, miscValues.y;
+
+# setup texture coordinates
+#MOV   oColor0, iNormal;
+#MOV   oColor1, specColour0;
+#MOV   oTex0, iNormal;
+#MOV   oTex1, osHLight;
+
+#MOV temp, iNormal;
+#MOV temp.w, miscValues.x;
+
+MOV   oTex0, iTex0;
+#MOV   oTex1, tsLight;
+#MOV   oTex1, tsLight;
+MOV   oColor0, temp;
+END

@@ -1,6 +1,0 @@
---open animation during NIS15a
-VGR_PLANETKILLER_NIS00_OnSet = function(ship)
-    startAnim(ship, "Open")
-    setPauseTime(ship, "Open", 1000)    --pause at end
-end
-

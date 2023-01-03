@@ -1,0 +1,208 @@
+[MinelayerCorvette]
+
+;Source Files
+;=----------=
+LODFile                             MinelayerCorvette.lod
+pMexData                            MinelayerCorvette\Rl0\LOD0\MinelayerCorvette.mex
+
+;Ship Physics
+;=----------=
+mass                                25.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    25.0                        ; resistance to rotation
+momentOfInertiaY                    25.0                        ; [fighter = 1]
+momentOfInertiaZ                    25.0
+maxvelocity                         350.0                      ; [fighter = 1000]
+maxrot                              10.0                       ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Corvette
+buildCost                           265                        ; resource units to build
+buildTime                           45                         ; time in seconds to build
+maxhealth                           20000                        ; hit points
+maxfuel                             20000.0
+lowfuelpoint                        0.25                       ; percentage of tank which is considered "low on fuel"
+fuelburnrate                        0.029
+attackfuelburnrate                  0.25
+groupSize                           5                          ; size of group ships of this type tend to form
+
+blastRadiusDamage                   230
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            150.0                      ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          150.0
+thruststrength[TRANS_RIGHT]         150.0
+thruststrength[TRANS_LEFT]          150.0
+thruststrength[TRANS_FORWARD]       150.0
+thruststrength[TRANS_BACK]          150.0
+rotstrength[ROT_YAWLEFT]              0.5                    ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]             0.5
+rotstrength[ROT_PITCHUP]              0.5
+rotstrength[ROT_PITCHDOWN]            0.5
+rotstrength[ROT_ROLLRIGHT]            0.5
+rotstrength[ROT_ROLLLEFT]             0.5
+turnspeed[TURN_YAW]                   0.75
+turnspeed[TURN_PITCH]                 0.75
+turnspeed[TURN_ROLL]                  0.75
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      2
+
+rotateToRetaliate                   TRUE
+
+GUN         0
+{
+Type                            GUN_MineLauncher                      ; the mine dispenser
+SoundType                       GS_MineLauncher
+DamageLo                        20                              ; damage variance per shot - low
+DamageHi                        30                              ; damage variance per shot - high
+BulletRange                     4000.0                         ; distance bullets travel before disappearing
+BulletSpeed                     25.0                         ; measured in m/s.
+BulletLifeTime                  240.0                            ;Life time of bullet
+FireTime                        2.5                            ; fire repeat rate (reciprocal = shots/second)
+MaxMissiles                     50000000                              ; maximum # of missiles this missile launcher can carry
+TriggerHappy                    60                             ; how triggerHapppy the ship is when firing the fixed.
+}
+
+GUN         1
+{
+Type                            GUN_MineLauncher                      ; the mine dispenser
+SoundType                       GS_MineLauncher
+DamageLo                        20                              ; damage variance per shot - low
+DamageHi                        30                              ; damage variance per shot - high
+BulletRange                     4000.0                         ; distance bullets travel before disappearing
+BulletSpeed                     25.0                         ; measured in m/s.
+BulletLifeTime                  240.0                            ;Life time of bullet
+FireTime                        2.5                            ; fire repeat rate (reciprocal = shots/second)
+MaxMissiles                     50000000                              ; maximum # of missiles this missile launcher can carry
+TriggerHappy                    60                             ; how triggerHapppy the ship is when firing the fixed.
+}
+
+; Force drop differeing variables from normal attack drops
+gunReFireTime                   8.5                            ; Total Fire time, hence 5 seconds to fire two guns
+                                                                ; This number MUST be bigger than individual gun refire times above, otherwise won't function
+forced_drop_damage_lo           100                             ; force dropped mine dammage lo
+forced_drop_damage_hi           150                             ; obvious
+
+;Ship AI
+;=-----=
+//Too variables NOT used by minelayer corvette
+repositionTime                      4.0                        ; time in seconds which corvette will spend to reposition
+                                                               ; itself to a new location for it to fire.
+circleRange                         700.0
+
+breakInAwayDist                     800.0                      ; Distance ship changes heading
+                                                               ; And decides on attack pattern
+DropRange                           700.0                      ; Distance Ship starts dropping mines
+DropStopRange                       1000.0                      ; Distance Ship STOPS dropping mines
+
+
+FlyAwayDist             Evasive         CLASS_Mothership                1500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_HeavyCruiser              1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Carrier                   1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Destroyer                 1200.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Frigate                    800.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Corvette                   500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Fighter                    500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_Resource                   600.0              ; Distance ship flys away before turning around
+FlyAwayDist             Evasive         CLASS_NonCombat                  500.0              ; Distance ship flys away before turning around
+
+FlyAwayDist             Neutral         CLASS_Mothership                1500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_HeavyCruiser              1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Carrier                   1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Destroyer                 1200.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Frigate                    800.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Corvette                   500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Fighter                    500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_Resource                   600.0              ; Distance ship flys away before turning around
+FlyAwayDist             Neutral         CLASS_NonCombat                  500.0              ; Distance ship flys away before turning around
+
+FlyAwayDist             Aggressive      CLASS_Mothership                1500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_HeavyCruiser              1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Carrier                   1300.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Destroyer                 1200.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Frigate                    800.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Corvette                   500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Fighter                    500.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_Resource                   600.0              ; Distance ship flys away before turning around
+FlyAwayDist             Aggressive      CLASS_NonCombat                  500.0              ; Distance ship flys away before turning around
+
+FlyAwayTolerance                    100.0                      ; Within this # of FlyAway dist ship will turnaround
+
+Break2SphereizeFreq                 3.5                        ; After 'adjusting' entering
+                                                               ; mine drop off range, waits
+                                                               ; this long, then recalculates
+                                                               ; flight path to curve around the
+                                                               ; attacked ship...lays mines more
+                                                               ; effectivly.
+
+specialActivateIsContinuous         TRUE
+
+;Ship Trails
+;=---------=
+trailSegments                       20
+trailGranularity                    3
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 8, 141, 106, 87
+trailColor                          0, 19, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 8, 146, 0, 0
+trailColor                          1, 19, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 8, 51, 0, 243
+trailColor                          2, 19, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 8, 0, 84, 4
+trailColor                          3, 19, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 8, 160, 124, 0
+trailColor                          4, 19, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 8, 160, 124, 0
+trailColor                          5, 19, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 8, 121, 0, 135
+trailColor                          6, 19, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 8, 0, 105, 137
+trailColor                          7, 19, 0, 0, 0
+
+;Explosions
+;=--------=
+explosionType                       ET_CorvetteExplosion
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.000245                ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                     ; Used for debugging
+
+
+NumMinesInSide                       5                      ; number of mines to drop in a static drop
+                                                            ; between mine drops.
+MINE_STOP_FRICTION                  0.95                    ; Mine Velocity is multiplied by this
+MineDropDistance                    400.0                   ; Distance from end of mine layer that WALL is formed
+MineSpacing                         750.0                   ; spaceing between mines in wall
+MineClearDistance                   100.0                    ; Distance mine must go from minelayer centre before it
+                                                            ; starts to form a wall
+
+;Engine trails
+;=-----------=
+trailAngle                      90.0
+trailWidth                      42.0
+trailHeight                     4.0
+
+renderlistFade     12000.0
+renderlistLimit    26000.0
+
+
+

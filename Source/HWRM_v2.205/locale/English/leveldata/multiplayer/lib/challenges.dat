@@ -1,0 +1,31 @@
+filerange 14712 14739
+rangestart 14712 14739
+
+// Subtitles
+14712	Challenge: Destroy enemy motherships
+14713	Challenge: Harvest %[0].0f RU before any other player.
+14714	Challenge: First to harvest %[0].0f RU - <c=00c800>Complete.</c>  Awarded %[1].0f RU.
+14715	Challenge: First to harvest %[0].0f RU - <c=C81F00>Failed.</c>  %[1].0f RU awarded to %[2]wS.
+14716	Challenge: Destroy %[0].0f enemy ships before any other player.
+14717	Challenge: First to destroy %[0].0f enemy ships - <c=00c800>Complete.</c>  Awarded %[1].0f RU.
+14718	Challenge: First to destroy %[0].0f enemy ships - <c=C81F00>Failed.</c> %[1].0f RU awarded to %[2]wS.
+14719	Challenge: Build %[0].0f ships before any other player.
+14720	Challenge: First to build %[0].0f ships - <c=00c800>Complete.</c>  Awarded %[1].0f RU.
+14721	Challenge: First to build %[0].0f ships - <c=C81F00>Failed.</c>  %[1].0f RU awarded to %[2]wS.
+14722	Challenge: Research %[0].0f technologies before any other player.
+14723	Challenge: First to research %[0].0f technologies - <c=00c800>Complete.</c>  Awarded %[1].0f RU.
+14724	Challenge: First to research %[0].0f technologies - <c=C81F00>Failed.</c>  %[1].0f RU awarded to %[2]wS.
+14725	Challenge: Survive %[0].0f minutes.
+14726	Challenge: Survive %[0].0f minutes - <c=00c800>Complete.</c>  Awarded %[1].0f RU.
+14730	First to Harvest %.0f RU
+14731	The first player who harvests %[0].0f RUs gets a bonus of %[1].0f RU
+14732	First to Destroy %.0f Enemy Ships
+14733	The first player who destroys %[0].0f enemy ships gets a bonus of %[1].0f RU
+14734	First to Build %.0f Ships
+14735	The first player to build %[0].0f ships gets a bonus of %[1].0f RU
+14736	First to Research %.0f Technologies
+14737	The first player to research %[0].0f technologies gets a bonus of %[1].0f RU
+14738	Survive %.0f minutes
+14739	Each player who survives %[0].0f minutes gets an additional %[1].0f RU
+
+rangeend

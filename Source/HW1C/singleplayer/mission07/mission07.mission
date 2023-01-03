@@ -1,0 +1,37 @@
+; MissionMan script, Thursday, Jun 24 1999, 7:30:35 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission07
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,1577.0,9934.0,0.0,30000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez07
+Background    ez07,160,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    110000
+smZoomMin    35000
+smInitialDistance    90000
+smUniverseSizeX    70000
+smUniverseSizeZ    35000
+smUniverseSizeY    92500
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeAsteroid    HeadShotAsteroidR1
+ExcludeAsteroid    HeadShotAsteroidR2
+ExcludeDerelict    ALL
+BaseColor    7, 255, 255, 255
+BaseColor    5,255,255,255
+BaseColor    6, 255, 128, 0
+StripeColor    7, 255, 255, 255
+StripeColor    5,255,255,255
+AvailableColorSchemes    P2 P2AdvanceSwarmer 5,6
+AvailableColorSchemes    R1 HeavyCorvette  0, 7
+MissionStartEnemyRace    P2
+SongNumber    3
+Asteroid0sCanMove    TRUE

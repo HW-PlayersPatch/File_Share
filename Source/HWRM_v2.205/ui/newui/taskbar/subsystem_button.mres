@@ -1,0 +1,6 @@
+baseRes = 800
+
+res800 = "DATA:/UI/NewUI/Taskbar/subsystem_button800.tga"
+res1024 = "DATA:/UI/NewUI/Taskbar/subsystem_button1024.tga"
+res1280 = "DATA:/UI/NewUI/Taskbar/subsystem_button1280.tga"
+res1600 = "DATA:/UI/NewUI/Taskbar/subsystem_button1600.tga"

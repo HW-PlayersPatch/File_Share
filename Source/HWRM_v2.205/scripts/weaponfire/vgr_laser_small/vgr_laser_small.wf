@@ -1,0 +1,13 @@
+
+-- formats: 
+
+hitfx = "dmg_laser_hit"
+bulletfx = "vgr_wave_beam_combo_small"
+nopenetratefx = "dmg_laser_hit"
+deathtype = "deathBeam"
+firefx = "sunfire_squirt_small"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+fire_sfx = "WEAPON/CORVETTE/FIRE/VWEAPON_CORVETTE_LASER_CANNON_BEAM"
+hit_sfx = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+nopenetrate = "WEAPON/CORVETTE/IMPACT/WEAPON_CORVETTE_PULASAR_CANNON_BEAM_HIT"
+hit_clamp = {1.0, 1.0}

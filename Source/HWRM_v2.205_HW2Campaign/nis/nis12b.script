@@ -1,0 +1,70 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("ShotShape1",4)
+	speechSetDir("NIS_12B")
+	wideScreenIn(4)
+at frame 1
+	cameraCut("ShotShape1")
+	musicStart("nis12b")
+at frame 332
+	speechEventActor("$56150",2,2)
+at frame 445
+	speechEventActor("$56151",2,2)
+at frame 513
+	speechEventActor("$56152",2,2)
+at frame 665
+	speechEventActor("$56153",2,2)
+at frame 730
+	cameraCut("ShotShape2")
+at frame 760
+	cameraLeave()
+	musicStartAtEnd("battle/battle_01")
+	nisOut(4)
+
+with |joint1|Vgr_BattleCruiser
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 188
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_Destroyer
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 66
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_Destroyer1
+{
+	at frame 0
+		remainAtEnd("Makaan_Escort")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 136
+		hyperspaceIn()
+	at frame 700
+		setEnginePower(1)
+}
+
+with |joint1|Vgr_MotherShip1
+{
+	at frame 0
+		remainAtEnd("Vaygr_MakaanMothership")
+		setInHyperspace()
+		setPlayer(1)
+	at frame 4
+		hyperspaceIn()
+	at frame 580
+		setEnginePower(1)
+}

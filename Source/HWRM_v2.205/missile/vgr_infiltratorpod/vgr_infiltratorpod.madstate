@@ -1,0 +1,10 @@
+
+Vgr_InfiltratorPod_Open_OnSet = function(ship)
+    startAnim(ship, "Open")
+    setPauseTime(ship, "Open", 1000)
+end
+
+Vgr_InfiltratorPod_Docked_OnSet = function(ship)
+    startAnim(ship,"Latch")
+    setPauseTime(ship, "Latch", 1000)
+end

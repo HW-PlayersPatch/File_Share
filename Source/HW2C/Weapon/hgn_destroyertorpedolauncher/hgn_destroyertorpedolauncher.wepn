@@ -1,0 +1,15 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+StartWeaponConfig(NewWeaponType, "Fixed", "Missile", "Hgn_LongRangeTorpedo", "Normal Only", 120, 4500, 0, 0, 0, 0, 1, 0, 1, 16, 0, 0, 1, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "DamageHealth", "Target", 3000, 3000, "")
+setPenetration(NewWeaponType, 5, 0.5, {ResArmour = 0.6}, {PlanetKillerArmour = 0})
+setAccuracy(NewWeaponType, 1, {Fighter = 0}, {Corvette = 0}, {munition = 0})
+setAngles(NewWeaponType, 179, 0, 0, 0, 0)
+setMiscValues(NewWeaponType, 0, 4)
+

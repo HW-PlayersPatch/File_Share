@@ -1,0 +1,75 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+				animation2 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },        
+    },
+    events =
+    {
+        death1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx", "dmg_capital_explosion_large" },
+						{ "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+						{ "fx_scale", "4.5" },
+        },
+				death2 = 
+				{ 
+						{ "anim", "Death", }, 
+						{ "animtime", "0.2", }, 
+						{ "marker", "marker1", }, 
+						{ "fx", "dmg_capital_explosion_large_mushroom", },						
+						{ "fx_scale", "4.5", }, 
+				}, 
+				death3 = 
+				{ 
+						{ "anim", "Death", }, 
+						{ "animtime", "0.4", }, 
+						{ "marker", "marker1", }, 
+						{ "fx", "dmg_cloud_explosion_large", },		
+						{ "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+						{ "fx_scale", "4.5", }, 
+				}, 
+				dmg1 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "marker1" },
+            { "fx", "dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+            { "fx_scale", "5" },
+            { "fx_nlips", "on" },
+        },  
+    }
+}

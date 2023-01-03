@@ -1,0 +1,23 @@
+StartWeaponConfig(NewWeaponType,"Fixed","Missile","Hgn_ClusterTorpedoA","Special Attack",120,4500,0,0,0,0,1,0,1,15,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",380,380,"");
+setPenetration(NewWeaponType,5,0.5,
+{LightArmour=0.8},
+{LightArmour_hw1=0.8},
+{ResArmour=0.6},
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{unarmoured=0.02*3},
+{unarmoured_hw1=0.02*3});
+setAccuracy(NewWeaponType,0,
+{Fighter=1},
+{Fighter_hw1=1},
+{Corvette=1},
+{Corvette_hw1=1},
+{munition=0});
+setAngles(NewWeaponType,179,0,0,0,0);
+setMiscValues(NewWeaponType,0,4);
+setFireMultFactor(NewWeaponType, 1.0);

@@ -1,0 +1,139 @@
+[Flightman]
+
+FLIPTURN_FLIPACCELMODIFIER              0.5
+FLIPTURN_MAXROTSPEEDY                   1.0
+FLIPTURN_PAUSEAFTERFLIPTIME             0.25
+FLIPTURN_AFTERFLIPTHRUSTMOD             1.0
+FLIPTURN_ROLLTHRUSTMOD                  0.5
+FLIPTURN_ROLLACCELMODIFIER              0.5
+FLIPTURN_MAXROLLSPEED                   1.0
+
+IMMELMAN_THRUSTMOD                      0.7
+IMMELMAN_ACCELMODIFIERFLIP              0.5
+IMMELMAN_MAXROTSPEEDFLIP                1.0
+IMMELMAN_ROLLACCELMODIFIER              0.5
+IMMELMAN_MAXROLLSPEED                   1.0
+IMMELMAN_ROLLTHRUSTMOD                  0.5
+
+SPLIT_S_THRUSTMOD                       0.5
+SPLIT_S_ACCELMODIFIERFLIP               0.5
+SPLIT_S_MAXROTSPEEDPITCH                1.0
+SPLIT_S_ACCELMODIFIERROLL               0.5
+SPLIT_S_MAXROTSPEEDROLL                 1.0
+
+HARDBANK_THRUSTMOD                      0.5
+HARDBANK_ACCELMODIFIERFLIP              0.5
+HARDBANK_MAXROTSPEEDPITCH               1.0
+HARDBANK_ACCELMODIFIERROLL              0.5
+HARDBANK_MAXROTSPEEDROLL                1.0
+
+SOFTBANK_THRUSTMOD                      0.5
+SOFTBANK_ACCELMODIFIERFLIP              0.5
+SOFTBANK_MAXROTSPEEDPITCH               1.0
+SOFTBANK_ACCELMODIFIERROLL              0.5
+SOFTBANK_MAXROTSPEEDROLL                1.0
+
+VREVERSE_ACCELMODIFIERYAW               0.5
+VREVERSE_MAXROTSPEEDYAW                 1.0
+VREVERSE_THRUSTMOD                      0.5
+VREVERSE_ACCELMODIFIERPITCH             0.5
+VREVERSE_MAXROTSPEEDPITCH               1.0
+
+BARREL_ROLL_MAXROTSPEEDROLL             3.0
+BARREL_ROLL_ACCELMODIFIERROLL           1.0
+
+WHIPSTRAFE_ESCAPEDIST_Z                 500.0
+
+WHIPSTRAFE_BULLETRANGEOPTIMUM           0.2
+WHIPSTRAFE_MAXANGCOMPAREFACTOR          0.5         ; arctan(x) gives angle
+WHIPSTRAFE_FLYBYOVERSHOOT               1.2
+WHIPSTRAFE_MINVELOCITY                  -300.0      ; minimum velocity, but put -ve sign in front
+WHIPSTRAFE_REACHDESTINATIONRANGE        160.0       ; REACHDESTINATIONRANGE*2 must be > abs(MINVELOCITY)
+
+WHIPSTRAFE_FACEDOWNUP_ACCURACY          20.0        ; degrees accuracy to face down/up when whipping away
+WHIPSTRAFE_WHIPTHRUSTMOD                1.0
+WHIPSTRAFE_WHIPTIME                     1.5
+;WHIPSTRAFE_LEVEL_ACCELMOD              0.5
+;WHIPSTRAFE_LEVEL_MAXROT                1.0
+;WHIPSTRAFE_LEVELOUTTHRUSTMOD           1.0
+
+ROLLAWAY_THRUSTMOD                      1.0
+ROLLAWAY_ACCELMODIFIERROLL              1.0
+ROLLAWAY_MAXROTSPEEDROLL                1.0
+;ROLLAWAY_THRUSTMOD2                    0.5
+ROLLAWAY_THRUSTDOWNTIME                 0.3
+
+SPLITSEVASIVE_ACCELMODIFIERPITCH        0.5
+SPLITSEVASIVE_MAXROTSPEEDPITCH          1.0
+SPLITSEVASIVE_THRUSTMOD                 1.0
+SPLITSEVASIVE_ACCELMODIFIERROLL         0.5
+SPLITSEVASIVE_MAXROTSPEEDROLL           1.0
+
+LOYOYO_ACCELMODIFIERPITCH               0.5
+LOYOYO_MAXROTSPEEDPITCH                 1.0
+LOYOYO_GODOWN_TIME                      0.5
+LOYOYO_GOUP_TIME                        1.5
+LOYOYO_THRUSTMOD0                       0.2
+LOYOYO_THRUSTMOD1                       0.7
+LOYOYO_THRUSTMOD2                       0.2
+LOYOYO_THRUSTMOD3                       1.0
+LOYOYO_THRUSTMOD4                       0.2
+
+HIYOYO_ACCELMODIFIERPITCH               0.5
+HIYOYO_MAXROTSPEEDPITCH                 1.0
+HIYOYO_GOUP_TIME                        0.5
+HIYOYO_GODOWN_TIME                      1.5
+HIYOYO_THRUSTMOD0                       0.2
+HIYOYO_THRUSTMOD1                       0.7
+HIYOYO_THRUSTMOD2                       0.2
+HIYOYO_THRUSTMOD3                       1.0
+HIYOYO_THRUSTMOD4                       0.2
+
+SIDESTEP_THRUSTMOD                      1.0
+SIDESTEP_THRUSTMODTURN                  0.2
+SIDESTEP_ACCELMODIFIERYAW               0.5
+SIDESTEP_MAXROTSPEEDYAW                 1.0
+SIDESTEP_ACCELMODIFIERPITCH             0.25
+SIDESTEP_MAXROTSPEEDPITCH               0.5
+SIDESTEP_ACCELMODIFIERROLL              0.5
+SIDESTEP_MAXROTSPEEDROLL                1.0
+SIDESTEP_PAUSETIME                      0.2
+SIDESTEP_BOOTITTIME                     1.5
+SIDESTEP_ROLLROTATE                     70.0
+SIDESTEP_PITCHROTATE                    90.0
+
+SLALOM_MINVELOCITY                       -300.0      ; minimum velocity, but put -ve sign in front
+SLALOM_REACHDESTINATIONRANGE             160.0       ; REACHDESTINATIONRANGE*2 must be > abs(MINVELOCITY)
+SLALOM_MAXWAYPOINTTIME                   10.0
+SLALOM_RUN_LENGTH                        800.0
+SLALOM_RANDOMITERATIONS                  3       ; must be 1,3,7
+SLALOM_BASEITERATIONS                    1
+
+SANDWICH_ANGLE                           45.0    ; angle of sandwich branch out before attack
+SANDWICH_MAXTIME                         10.0    ; maximum time a fighter will spend positioning itself before attack
+SANDWICH_MINVELOCITY                     -300.0  ; minimum velocity, but put -ve sign in front
+SANDWICH_REACHDESTINATIONRANGE           160.0   ; REACHDESTINATIONRANGE*2 must be > abs(MINVELOCITY)
+SANDWICH_PINCHER_SCALE                   0.8     ; relative length of distance a fighter will reposition before attacking
+
+FLIGHTMAN_EVASIVEPURE_PROB[Evasive]      200      ; probability out of 255 that a threatened plane will go into pure
+                                                  ; evasive maneuvers
+FLIGHTMAN_EVASIVEPURE_PROB[Neutral]      50
+FLIGHTMAN_EVASIVEPURE_PROB[Aggressive]   0
+
+FLIGHTMAN_SPLIT_PROB[Evasive]            200     ; probability of a threatened pair doing a defensive split
+FLIGHTMAN_SPLIT_PROB[Neutral]            200
+FLIGHTMAN_SPLIT_PROB[Aggressive]         200
+
+FLIGHTMAN_SANDWICH_PROB[Evasive]         50     ; probability of a pair doing a sandwich on one ship
+FLIGHTMAN_SANDWICH_PROB[Neutral]         100
+FLIGHTMAN_SANDWICH_PROB[Aggressive]      200
+
+FLIGHTMAN_NUM_EVASIVEPURE_MANEUVERS[Evasive]     3
+FLIGHTMAN_NUM_EVASIVEPURE_MANEUVERS[Neutral]     2
+FLIGHTMAN_NUM_EVASIVEPURE_MANEUVERS[Aggressive]  1  ; must be at least 1
+
+; for Evasive Tactics only:
+FLIGHTMAN_TOKEN_EVASIVEPURE_CHECKRATE    63      ; how often to check if we should do a token pure evasive maneuver
+FLIGHTMAN_TOKEN_EVASIVEPURE_CHECKFRAME   47      ; frame to do check on must be <= FLIGHTMAN_TOKEN_EVASIVEPURE_CHECKRATE
+FLIGHTMAN_TOKEN_EVASIVEPURE_PROB         50      ; probability out of 255 of doing a token pure evasive maneuver
+

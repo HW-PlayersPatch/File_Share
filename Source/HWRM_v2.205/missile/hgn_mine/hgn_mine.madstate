@@ -1,0 +1,10 @@
+Hgn_Mine_Open_OnSet = function(ship)
+    startAnim(ship, "Open")
+    setPauseTime(ship, "Open", 1000)
+end
+
+Hgn_Mine_Close_OnSet = function(ship)
+    stopAnim(ship, "Open")
+    startAnim(ship, "Close")
+end
+

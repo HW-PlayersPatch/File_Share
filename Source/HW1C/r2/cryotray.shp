@@ -1,0 +1,56 @@
+[CryoTray]
+LODFile                             CryoTray.lod
+pMexData                            CryoTray\Rl0\LOD0\CryoTray.mex
+mass                                4000.0
+momentOfInertiaX                    1000.0
+momentOfInertiaY                    1000.0
+momentOfInertiaZ                    1000.0
+maxvelocity                         600.0
+maxrot                              6.0
+maxhealth                           18000                        ; hit points
+
+cannotForceAttackIfOwnShip          TRUE
+
+thruststrength[TRANS_UP]            50.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          50.0
+thruststrength[TRANS_RIGHT]         50.0
+thruststrength[TRANS_LEFT]          50.0
+thruststrength[TRANS_FORWARD]       50.0
+thruststrength[TRANS_BACK]          50.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_NonCombat
+repairTime                          10                           ; every this many seconds
+repairDamage                        150                         ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   125
+
+minimumZoomDistance              	760
+
+explosionType		        ET_InterceptorExplosion
+
+
+NUMBER_OF_SALVAGE_POINTS        1
+NUM_NEEDED_FOR_SALVAGE          1               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       point1,AttachPoint
+
+
+renderlistFade      5000.0
+renderlistLimit    24000.0

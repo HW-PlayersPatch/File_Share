@@ -1,6 +1,0 @@
-PersistantData =
-{
-	StrikeGroups = {},
-	Squadrons = {},
-	Research = {},
-}

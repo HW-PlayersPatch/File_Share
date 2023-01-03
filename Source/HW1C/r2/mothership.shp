@@ -1,0 +1,256 @@
+[Mothership]
+
+;Source Files
+;=----------=
+pMexData                            Mothership\Rl0\LOD0\Mothership.mex
+LODFile                             Mothership.lod
+
+;Ship Physics
+;=----------=
+mass                                100000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    100000.0                    ; resistance to rotation
+momentOfInertiaY                    1e30                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    1e30
+immobile                            FALSE                        ; indicates object is immobile
+approxcollmodifier                  0.9                         ; use only % of collspheresize for rough approximations
+avoidcollmodifier                   0.9
+maxvelocity                         50.0                       ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Mothership
+isCapitalShip                       TRUE
+buildCost                           8000                        ; resource units to build
+buildTime                           300                         ; time in seconds to build
+maxhealth                           160000                      ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+repairTime                          5                            ; every this many seconds
+repairDamage                        600                          ; this much damage is repaired
+repairCombatTime                    5                            ; every this many seconds
+repairCombatDamage                  115                           ; this much damage is repaired
+
+passiveAttackPenaltyExempt          TRUE
+
+canBuildShips                       TRUE                        ; ship can build ships
+canReceiveShips                     TRUE                        ; other ships can dock in this ship
+canReceiveResources                 TRUE                        ; Resource Collectors,etc can deposit resources in this ship
+canReceiveShipsPermanently          TRUE                        ; ships can dock permanently here
+canBuildBigShips                    TRUE                        ; can build Destroyers, Carriers, Heavy Cruisers, etc.
+canReceiveShipsForRetire            TRUE                        ; ships can dock here and be converted to RU's!
+
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+canReceiveResourceCollectors        TRUE
+canReceiveOtherNonCapitalShips      TRUE
+
+maxDockableFighters                 250
+maxDockableCorvettes                250
+
+pumpFuelRate                        300.0                       ; how fast carrier pumps fuel in.
+repairOtherShipRate                 0.5                         ; how fast carrier heals damaged ships.  Percentage of the ship's health that gets repaired every univupdate (16 times a second)
+repairResourceCollectorRate         0.2
+
+clearanceDirection                  2                           ; (0=up,1=right,2=forward,4=down,5=left,6=back)
+clearanceDistance                   100.0                       ; how far ships go away from this ship when they are just built.
+                                                                ; Note that this number is added to the minimum collision distance.
+
+dockShipRange                       1500.0              ; how close ships should get before considering docking (to ship surface)
+
+blastRadiusShockWave                1.0
+blastRadiusDamage                   10000
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            5.0         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          5.0     ; used to be 20.0
+thruststrength[TRANS_RIGHT]         5.0
+thruststrength[TRANS_LEFT]          5.0
+thruststrength[TRANS_FORWARD]       10.0
+thruststrength[TRANS_BACK]          10.0
+rotstrength[ROT_YAWLEFT]            0.12                 ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]           0.12         ; used to be 0.05
+rotstrength[ROT_PITCHUP]            0.0
+rotstrength[ROT_PITCHDOWN]          0.0
+rotstrength[ROT_ROLLRIGHT]          0.0
+rotstrength[ROT_ROLLLEFT]           0.0
+turnspeed[TURN_YAW]                  0.05                         ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.0
+turnspeed[TURN_ROLL]                 0.0
+
+
+canTargetMultipleTargets            TRUE
+;Override face-specific damage:
+collSideModifiers[TRANS_UP]         1.0
+collSideModifiers[TRANS_DOWN]       1.0
+collSideModifiers[TRANS_RIGHT]      1.0
+collSideModifiers[TRANS_LEFT]       1.0
+collSideModifiers[TRANS_FORWARD]    1.0
+collSideModifiers[TRANS_BACK]       1.0
+
+
+;Weapons
+;=------=
+NUMBER_OF_GUNS                      5
+
+GUN         0
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           5000.0            ; distance bullets travel before disappearing
+BulletSpeed                           9000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         1
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           5000.0            ; distance bullets travel before disappearing
+BulletSpeed                           9000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         2
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           5000.0            ; distance bullets travel before disappearing
+BulletSpeed                           9000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         3
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           5000.0            ; distance bullets travel before disappearing
+BulletSpeed                           9000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         4
+{
+Type                                GUN_Gimble          ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_SmallProjectile
+DamageLo                                30              ; damage variance per shot - low
+DamageHi                                40              ; damage variance per shot - high
+MinAngle                                 0
+MaxAngle                               100
+BulletLength                            20.0            ; visual only.  Length of bullet on screen
+BulletRange                           5000.0            ; distance bullets travel before disappearing
+BulletSpeed                           9000.0            ; measured in m/s.
+BulletMass                               1.5            ; mass of bullet
+FireTime                                 1.0            ; fire repeat rate (reciprocal = shots/second)
+}
+
+NUMBER_OF_DOCK_POINTS           7
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       Big,LaunchPoint,1000,1000,1000,2,0
+DockPoint                       In0,DockingCone,800,2000,2200
+DockPoint                       In1,DockingCone,800,1400,2000
+DockPoint                       Out0,LaunchPoint,1400,1400,1400,2,0
+DockPoint                       Out1,LaunchPoint,1600,1600,1600,2,0
+DockPoint                       Res0,LatchPoint,800,1000,2000,2,0
+DockPoint                       Res1,LatchPoint,800,1000,2000,2,0
+
+NUMBER_OF_DOCK_OVERIDES         1
+
+;need DockOveride       shipraceshipname,<0=no 1=yes: use new heading and up),newHeading,newUp,<yesno use new offset>,offsetx,offsety,offsetz
+;offset is vector seen in lightwave when the ship is attached to the light origin
+;(0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockOveride     R2,Carrier,0,0,0,1,150.0,0.0,100.0
+
+
+NUMBER_OF_SALVAGE_POINTS        8
+NUM_NEEDED_FOR_SALVAGE          11               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+SalvagePoint                       Point7,AttachPoint
+SalvagePoint                       Point8,AttachPoint
+
+NUMBER_OF_NAV_LIGHTS           12
+
+; format is NavLight           name,type,blinkrate (in seconds), startdelay (in seconds) size (in meters), min LOD, texture name
+NavLight                        antenna1,       NAVLIGHT_Default, 2,    1,      0,      40, 3,  etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,    1,      0,      40, 3,  etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 2,    1,      0,      40, 3,  etg\textures\glow32
+NavLight                        baytop1,        NAVLIGHT_Default, 0.5,  1,      0,      45, 3,  etg\textures\glow32
+NavLight                        baytop2,        NAVLIGHT_Default, 0.5,  1,      0,      45, 3,  etg\textures\glow32
+NavLight                        baybot1,        NAVLIGHT_Default, 0.8,  1.2,    0,      50, 3,  etg\textures\glow32
+NavLight                        baybot2,        NAVLIGHT_Default, 0.8,  1.2,    0,      50, 3,  etg\textures\glow32
+NavLight                        baybot3,        NAVLIGHT_Default, 0.8,  1.2,    0,      50, 3,  etg\textures\glow32
+NavLight                        baybot4,        NAVLIGHT_Default, 0.8,  1.2,    0,      50, 3,  etg\textures\glow32
+NavLight                        navlight,       NAVLIGHT_Default, 5,    1,      0,      80, 3,  etg\textures\glow32
+NavLight            sidelight1  NAVLIGHT_Default, 0.5   0.5 0   40, 3,  etg\textures\glow32
+NavLight            sidelight2  NAVLIGHT_Default, 0.5   0.5 0   40, 3,  etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+;Engine glow
+;=-----------=
+trailWidth                         2500.0
+trailHeight                         550.0
+trailLength                        1200.0
+trailStyle                            2
+
+
+;Engine #2       This is the one on the left side of the 'main' engine
+;=-------=
+trailWidth2                         800.0
+trailHeight2                        720.0
+trailLength2                        850.0
+trailStyle                            2
+
+;Engine #3       This is the one on the right side of the 'main' engine
+;=-------=
+trailWidth3                        1500.0
+trailHeight3                        720.0
+trailLength3                        850.0
+trailStyle                            2
+
+;Engine #4       This is the tiny one on the far right
+;=-------=
+;trailWidth                          390.0
+;trailHeight                         560.0
+
+preciseSelection                    3
+
+minimumZoomDistance                 3500

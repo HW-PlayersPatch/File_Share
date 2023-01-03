@@ -1,0 +1,4 @@
+TAI_RESEARCHSHIP_1_Docked_OnSet = function(ship)
+	--startAnim(ship, "SPIN")
+	--setLoopCount(ship, "SPIN", 100000)
+end

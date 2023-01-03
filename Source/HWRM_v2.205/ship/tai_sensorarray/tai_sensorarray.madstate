@@ -1,0 +1,32 @@
+TAI_SENSORARRAY_Normal_OnSet = function(ship)
+	startTime = 0
+	startAnim(ship, "close")
+	setTime(ship,"close",startTime)
+	setPauseTime(ship, "close", 1000)
+end
+
+TAI_SENSORARRAY_Launched_OnSet = function(ship)
+	if(isAnimRunning(ship,"open") == 0) then
+		startTime = 0
+		if(isAnimRunning(ship, "close") ~= 0) then
+			startTime = getAnimLength(ship, "close") - getTime(ship, "close")
+			stopAnim(ship, "close")
+		end
+		startAnim(ship, "open")	
+		startEffect(ship, "open")
+		setTime(ship,"open",startTime)
+		setPauseTime(ship, "open", 1000)
+	end	
+end
+
+TAI_SENSORARRAY_Docked_OnSet = function(ship)
+	startTime = 0
+	if(isAnimRunning(ship, "open") ~= 0) then
+		startTime = getAnimLength(ship, "open") - getTime(ship, "open")
+		stopAnim(ship, "open")
+	end
+	startAnim(ship, "close")	
+	startEffect(ship, "close")
+	setTime(ship,"close",startTime)
+	setPauseTime(ship, "close", 1000)
+end

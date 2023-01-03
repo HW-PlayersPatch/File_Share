@@ -1,0 +1,16 @@
+
+-- formats:
+-- SetFireEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetBulletEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetHitEffect(NewWeaponFireType, <filename>, real32 distance)
+-- the 'distance' variable sets the max distance to which this effect is visible.
+
+--bulletfx = "explosion_spray_very_small_flak"
+bulletfx = "emp_pulse_combo.lua"
+nopenetratefx = "nopen_generic"
+deathtype = "deathCannon"
+--nopenetratefx = "nopen_generic_ring"
+--deathtype = "death_ring"
+
+hit_sfx = "Weapon/Fighter/Impact/WEAPON_FIGHTER_Kinetic_Autogun_Hit"
+hit_clamp = {1.0, 1.0}

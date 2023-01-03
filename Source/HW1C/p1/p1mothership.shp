@@ -1,0 +1,402 @@
+[P1Mothership]
+
+;Source Files
+;=----------=
+pMexData                            P1Mothership\Rl0\LOD0\P1Mothership.mex
+LODFile                             P1Mothership.lod
+
+;Ship Physics
+;=----------=
+mass                                10000.0                    ; ship mass [fighter = 1]
+momentOfInertiaX                    10000.0                    ; resistance to rotation
+momentOfInertiaY                    10000.0                        ; don't allow mothership to rotate about Y,Z (pitch, roll)
+momentOfInertiaZ                    10000.0
+immobile                            FALSE                       ; indicates object is immobile
+maxvelocity                         235.0                        ; [fighter = 1000]
+maxrot                              10.0                        ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Mothership
+isCapitalShip                       TRUE
+buildCost                           3200                        ; resource units to build
+buildTime                           300                         ; time in seconds to build
+maxhealth                           96000                       ; hit points
+groupSize                           1                           ; size of group ships of this type tend to form
+repairTime                          10                           ; every this many seconds
+repairDamage                        25                          ; this much damage is repaired
+
+blastRadiusShockWave                1.0
+blastRadiusDamage                   125
+
+canBuildShips                       TRUE                        ; ship can build ships
+canReceiveShips                     TRUE                        ; other ships can dock in this ship
+canReceiveResources                 TRUE                        ; Resource Collectors,etc can deposit resources in this ship
+canReceiveShipsPermanently          TRUE                        ; ships can dock permanently here
+canBuildBigShips                    TRUE                        ; can build Destroyers, Carriers, Heavy Cruisers, etc.
+
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+canReceiveResourceCollectors        TRUE
+canReceiveOtherNonCapitalShips      TRUE
+
+pumpFuelRate                        300.0                       ; how fast carrier pumps fuel in.
+repairOtherShipRate                 1                           ; how fast carrier heals damaged ships. Must be an integer
+
+clearanceDirection                  2                           ; (0=up,1=right,2=forward,4=down,5=left,6=back)
+clearanceDistance                   100.0                       ; how far ships go away from this ship when they are just built.
+                                                                ; Note that this number is added to the minimum collision distance.
+
+dockShipRange                       1300.0                      ; how close ships should get before considering docking (to ship surface)
+
+surroundDistance                    1000.0                      ; how far ships will minimally disperse themselves from this ship after
+                                                                ; they are built.  Note that this number is added to the minimum collision distance.
+surroundDistanceRand                1000.0                      ; random number between 0 and x added to surroundDistance
+
+surroundRotYMinAng                  -35.0                       ; ship may be positioned between min and max degrees elevation
+surroundRotYMaxAng                  35.0
+surroundRotZMinAng                  -180.0                      ; ship may be positioned between min and max degrees angle
+surroundRotZMaxAng                  180.0
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            35.0        ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          35.0    ; used to be 20.0
+thruststrength[TRANS_RIGHT]         35.0
+thruststrength[TRANS_LEFT]          35.0
+thruststrength[TRANS_FORWARD]       35.0
+thruststrength[TRANS_BACK]          35.0
+rotstrength[ROT_YAWLEFT]             0.25              ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]            0.25      ; used to be 0.05
+rotstrength[ROT_PITCHUP]             0.02
+rotstrength[ROT_PITCHDOWN]           0.02
+rotstrength[ROT_ROLLRIGHT]           0.02
+rotstrength[ROT_ROLLLEFT]            0.02
+turnspeed[TURN_YAW]                  0.2                        ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]                0.2
+turnspeed[TURN_ROLL]                 0.2
+
+
+
+canTargetMultipleTargets            TRUE
+rotateToRetaliate                   TRUE
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      12
+;(one BIG gun)
+
+rotateToRetaliate                   TRUE
+
+GUN         8
+//Desired Range =  6500
+//ADD this amount: 399 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        25                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        6
+BulletLength                    7649.0                        ; visual only.  Length of bullet on screen
+BulletRange                     7649.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.0
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        6.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         9
+//Desired Range =  6500
+//ADD this amount: 464 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_LargeIonCannon
+BulletType                      BULLET_Beam
+DamageLo                        20                            ; damage variance per shot - low  (continuous damage for BULLET_Beam)
+DamageHi                        24                            ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        6
+BulletLength                    7714.0                        ; visual only.  Length of bullet on screen
+BulletRange                     7714.0                        ; distance bullets travel before disappearing
+BulletSpeed                     0.0                           ; measured in m/s.
+BulletLifeTime                  2.0
+BulletMass                      0.0                           ; mass of bullet
+FireTime                        3.0                           ; fire repeat rate (reciprocal = shots/second)
+}
+
+GUN         0
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         1
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         2
+//Desired Range =  4000
+//ADD this amount: 930 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         3
+//Desired Range =  4000
+//ADD this amount: 585 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         4
+//Desired Range =  4000
+//ADD this amount: 611 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         5
+//Desired Range =  4000
+//ADD this amount: 835 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         6
+//Desired Range =  4000
+//ADD this amount: 506 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         7
+//Desired Range =  4000
+//ADD this amount: 458 to compensate for centrepoint
+//ADD this amount: 750 to compensate for stopping distance
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         10
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+GUN         11
+{
+Type                            GUN_Gimble
+SoundType                       GS_SmallProjectile
+DamageLo                        10                      ; damage variance per shot - low
+DamageHi                        12                     ; damage variance per shot - high
+MinAngle                        0
+MaxAngle                        120
+BulletLength                    20.0                    ; visual only.  Length of bullet on screen
+BulletRange                     5500.0                  ; distance bullets travel before disappearing
+BulletSpeed                     15000.0                  ; measured in m/s.
+BulletMass                      0.0                    ; mass of bullet
+FireTime                        0.1                              ; fire repeat rate (reciprocal = shots/second)
+BurstFireTime                   1.8
+BurstWaitTime                   1.9
+}
+
+
+NUMBER_OF_DOCK_POINTS           3
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       In,DockingCone,5000,1000,6000
+DockPoint                       Out,LaunchPoint,800,800,800,6,0
+DockPoint                       Out1,LaunchPoint,800,800,800,6,0
+
+NUMBER_OF_SALVAGE_POINTS        6
+NUM_NEEDED_FOR_SALVAGE          99               ;number of ships needed to capture a craft
+NEED_BIGR1                      TRUE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                FALSE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+SalvagePoint                       Point5,AttachPoint
+SalvagePoint                       Point6,AttachPoint
+
+NUMBER_OF_NAV_LIGHTS           10
+
+; format is NavLight           name,type,blinkrate (in seconds), startdelay (in seconds) size (in meters), min LOD, texture name
+NavLight                        antenna1,       NAVLIGHT_Default, 2,    0.5,      0.5,      30, 3,  etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,    1,      0,      30, 3,  etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 2,    1,      0,      30, 3,  etg\textures\glow32
+NavLight                        antenna4,       NAVLIGHT_Default, 1.5,    0.75,      0,      30, 3,  etg\textures\glow32
+NavLight                        front1,         NAVLIGHT_Default, 1,  2,    0,      20, 3,  etg\textures\glow32
+NavLight                        front2,         NAVLIGHT_Default, 1,  2,    0,      20, 3,  etg\textures\glow32
+NavLight                        hangar1,     NAVLIGHT_Default, 2,  0.5,    0,     25, 3,  etg\textures\glow32
+NavLight                        hangar2,     NAVLIGHT_Default, 2,  0.5,    0,      25, 3,  etg\textures\glow32
+NavLight                        hangar3,     NAVLIGHT_Default, 1.5,  0.5,    1,      25, 3,  etg\textures\glow32
+NavLight                        hangar4,     NAVLIGHT_Default, 1.5,  0.5,    1,      25, 3,  etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_CarrierExplosion
+
+
+;Engine trails   This is the top engine
+;=-----------=
+;trailAngle                            90.0
+;trailWidth                          1075.0
+;trailHeight                          260.0
+trailWidth            450.0
+trailHeight           300.0
+trailLength           550.0
+trailStyle              3
+trailScaleCap           0.00025
+
+
+
+;Engine #2       This is the second to top engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+;trailWidth2           450.0
+;trailHeight2          300.0
+;trailLength2          550.0
+;trailStyle2             3
+;trailScaleCap2          0.00025
+
+
+;Engine #3       This is the third to top engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+
+;Engine #4       This is the bottom engine
+;=-------=
+;trailAngle                           90.0
+;trailWidth                         1075.0
+;trailHeight                         150.0
+
+minimumZoomDistance                 1550
+
+
+renderlistFade      2700.0
+renderlistLimit    18000.0

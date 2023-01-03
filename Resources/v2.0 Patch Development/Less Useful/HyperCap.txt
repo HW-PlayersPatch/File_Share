@@ -1,0 +1,50 @@
+NOTES
+From pos2 ms patch:
+hiig 
+MS: 500 mid/min, 820 pos 6, 1000 pos 4/max
+CC: 400 mid/min, 800 pos 6/max
+hw1
+MS: 500 mid/min, 900 pos 6, 1100 pos 4, 1300 max
+CC: 400 min, 450 mid, 900 pos 6, 1100 pos 4/max
+Comment later: in public, you can only scout this since you can only make Controllers from the MS, and you then watch the controller head to the CC giving you a small window of time to prepare.
+
+hw1.05:
+On Fields of Plaza and Iron Curtain: jumping MS to the middle of the map was 25,000ru, and jumping MS to your opponents MS was 50,000ru. Jumping a collector accross the map 500ru.
+
+However it was possible to scout, took time to research,
+
+Try attacking the hw1 resource drop off!!! Get 2 bombers. =) This is also a great way for hw1 to undock!
+
+but very counterable as it was possible to scout the quick research module, the mobile refineries, and finally the mothership and carrier moving together to share one hyperspace module. Usually players would also plat/figther/corv/frigate modules prior to the jump, which could also be seen by scouting.
+
+SC2 had the same problem with warp gates in PvP: they had to lengthen the time to get them, and beef up defensive options.
+
+hw1 typically stays docked until it gets a critical mass, while hw2 typically launches everything to try and kill a couple hw1 collectors. If hw2 holds off the first wave that undocks, then hw1 can rebuild and tech switch. When hw1 undocks again, hw2 has no time to react to the tech switch since they can't see whats building or watch the ships move accross the map. At best hw2 can kill some more collectors before hw1 undocks a counter to whatever hw2 has built. Alternatively hw2 can stay docked too and build multiple modules to trick hw1, but then its just a game of luck when both players undock.
+
+Its also far better than simply leaving your mothership at home, while moving your carrier to your opponents expansion. A mothership has more firepower/health than a carrier.
+
+
+
+
+
+
+
+
+Don't Post
+Jump cost changes would make hw1 hypercap:4750, jump costs of 2350, plus res ship ad 900 controllers.
+
+Removing the defenders advantage of travel distance for such low costs is not good for balance in general. and can occur very early. Its also not something you can scout, as hw1 will jump as soon as the mobile refineries are built.
+
+For hw1 vs hw1, this leads to volatile/quick games.
+
+For hw1 vs hw2, theres several problems:
+1. hw2 collectors have less health than hw1 collectors. Both motherships will be attacking each other's collectors, but the hw2 collectors sometimes have to dock to prevent the hw1 mothership from killing them.
+2. hw1 collectors take up more mining time on asteroids. So when hw1 and hw2 both have 6 collectors trying to harvest the same asteroid patch, hw1 gets more mining time.
+
+
+
+3. hw1 is generally better than hw2 in close quarters. No mods to see whats building and no travel distance to react, etc.
+
+3. The hw1 mothership does 300% penetration vs plats, and basically kills them as fast as they're built.
+
+

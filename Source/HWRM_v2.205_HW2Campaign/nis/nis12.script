@@ -1,0 +1,42 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("CamShape1",1)
+	fadeSet(1)
+	wideScreenIn(0)
+at frame 1
+	cameraCut("CamShape1")
+	musicStart("nis12a")
+at frame 4
+	fadeTo(0,4)
+at frame 1668
+	fadeSet(0)
+at frame 1670
+	fadeTo(1,3)
+at frame 1672
+	musicStop(4)
+at frame 1760
+	fadeSet(1)
+at frame 1762
+	cameraCut("CamShape2")
+at frame 1764
+	fadeTo(0,2)
+at frame 1830
+	cameraLeave()
+	wideScreenOut(4)
+
+with |Cam1_root|Vgr_Carrier
+{
+	at frame 0
+		remainAtEnd("Vaygr_Carrier")
+		setPlayer(1)
+}
+
+with |Cam1_root|Vgr_Scout
+{
+	at frame 0
+		setPlayer(1)
+	at frame 780
+		show()
+	at frame 781
+		hide()
+}

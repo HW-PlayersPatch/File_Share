@@ -1,0 +1,5 @@
+
+HGN_PROBE_Open_OnSet = function(ship)
+    startEffect(ship, "Open")
+end
+

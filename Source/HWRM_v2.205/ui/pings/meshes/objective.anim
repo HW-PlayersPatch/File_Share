@@ -1,0 +1,23 @@
+fps = 16;
+startFrame = 0;
+loopCount =100000
+;
+texture = 
+{
+    "data:UI/Pings/Meshes/objective.mtga",   
+	"data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",
+    "data:UI/Pings/Meshes/objective.mtga",    
+	"data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga",
+    "data:UI/Pings/Meshes/objective_flash.mtga", 
+}

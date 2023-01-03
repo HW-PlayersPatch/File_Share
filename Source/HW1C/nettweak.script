@@ -1,0 +1,61 @@
+[NetTweak]
+TITAN_PICKER_REFRESH_TIME       4.0
+TITAN_GAME_EXPIRE_TIME          3600
+
+GAME_PORT                       6037
+
+AD_PORT                         6038
+
+; Main servers
+DIRSERVER_NUM                   3
+
+DIRSERVER_PORTS                 15101,15101,15101
+DIRSERVER_IPSTRINGS             homeworld-demo.east.won.net,homeworld-demo.west.won.net,homeworld.central.won.net
+
+PATCHSERVER_NUM                 1
+
+PATCHSERVER_PORTS               80
+PATCHSERVER_IPSTRINGS           homeworld.update.won.net
+
+PATCHNAME                       HomeworldPatch.exe
+
+PATCHBARCOLOR                   255,0,0
+PATCHBAROUTLINECOLOR            255,255,0
+
+ROUTING_SERVER_NAME              routingserv
+
+CONNECT_TIMEOUT                  8000    ; timeout for connects in ms
+
+; Passing captaincy tweakables:
+
+T1_Timeout                       30.0       ; timeout for not receiving any packets from captain
+T2_Timeout                       14.0        ; timeout for proposing a new captain
+TWAITFORPAUSEACKS_Timeout        14.0        ; timeout for waiting for pause ack's from remaining players
+
+TimedOutWaitingForPauseAcksGiveUpAfterNumTimes   2       ; after this many time outs while waiting for pause acks, give up waiting
+
+HorseRacePlayerDropoutTime       40.0
+HorseRaceDroppedOutColor         75,75,75
+
+; Lan tweakables
+
+LAN_ADVERTISE_USER_TIME          0.5
+LAN_ADVERTISE_USER_TIMEOUT       3.0
+
+LAN_ADVERTISE_GAME_TIME          0.5
+LAN_ADVERTISE_GAME_TIMEOUT       3.0
+
+; Keep alive tweakables (know if player is still actively in game)
+
+KEEPALIVE_SEND_IAMALIVE_TIME    10.0
+KEEPALIVE_IAMALIVE_TIMEOUT      30.0
+KEEPALIVE_SEND_ALIVESTATUS_TIME 30.0
+
+PRINTLAG_IFGREATERTHAN          10          ; make really big to turn off
+PRINTLAG_MINFRAMES              20
+
+ROOM_MIN_THRESHOLD              1
+ROOM_MAX_THRESHOLD              30
+
+WAIT_SHUTDOWN_MS                1000        ; if you have created a game and quit won, wait this long before quitting so the messages to dissolve, etc, get sent.
+

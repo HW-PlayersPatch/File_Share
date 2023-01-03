@@ -1,0 +1,326 @@
+filerange 1500 2414
+rangestart 1500 2414
+
+// Subtitles
+1500	Scout
+1501	Fighter Class - Reconnaissance Squadron
+1502	Interceptor
+1503	Fighter Class - Anti-Fighter Squadron
+1504	Bomber
+1505	Fighter Class - Anti-Capital Ship Squadron
+1506	Gunship
+1507	Corvette Class - Anti-Fighter
+1508	Pulsar Gunship
+1509	Corvette Class - Anti-Corvette
+1510	Minelayer Corvette
+1511	Corvette Class - Deploys and Clears Mines
+1512	Gun Platform
+1513	Static Defense - Anti-Fighter
+1514	Ion Cannon Platform
+1515	Static Defense - Anti-Frigate
+1518	Flak Frigate
+1519	Frigate Class - Anti-Fighter
+1520	Ion Cannon Frigate
+1521	Frigate Class - Anti-Capital Ship
+1522	Torpedo Frigate
+1523	Frigate Class - Anti-Corvette
+1524	Support Frigate
+1525	Fleet Support
+1526	Defense Field Frigate
+1527	Frigate Class - Fleet Defense
+1528	Marine Frigate
+1529	Frigate Class - Boarding Vessel
+1530	Destroyer
+1531	Capital Ship - Anti-Frigate
+1532	Resource Collector
+1533	Resource Class - Mineral Excavation
+1534	Mobile Refinery
+1535	Resource Class - Remote Ore Processing
+1536	Pride of Hiigara
+1537	Mothership
+1538	Battlecruiser
+1539	Capital Class - Heavy Attack
+1540	Dreadnaught
+1541	Gatekeeper of Sajuuk
+1542	Carrier
+1543	Capital Class - Ship Production
+1544	Shipyard
+1545	Capital Class - Ship Production
+1546	Probe
+1547	Reconnaissance Unit, Single-burn
+1548	Proximity Sensor
+1549	Detects Cloaked Ships, Single-burn
+1550	Sensor Distortion Probe
+1551	Sensors Distortion Device, Single-burn
+1552	Dreadnaught Berth
+1553	Dreadnaught Berth
+1556	Mine
+1557	Static Mine
+1558	Torpedo
+1559	Tracking High-Explosive Torpedo
+1560	Elite Interceptor
+1561	Anti-Fighter
+1562	Elite Bomber
+1563	Anti-Capital Ship
+1564	Elite Torpedo Frigate
+1565	Anti-Corvette, Anti Frigate
+1566	Captain Soban
+1567	Boarding vessel
+1568	1568 xMISSINGx
+1569	Specially Modified Hyperspace Inhibitor
+1570	Elite Gunship
+1571	Target Drone
+1572	Shipyard Nabaal
+1573	Hiigaran Ship Production
+1575	MOTHERSHIP
+1576	SHIPYARD
+1577	Hyperspace Core
+1578	Enables long-jump Hyperspace
+1579	Long Range Torpedo
+1580	Big Bang
+1581	Light Corvette
+1582	Heavy Corvette
+1583	Assault Corvette
+1600	Scout
+1601	Fighter Class - Reconnaissance Squadron
+1602	Assault Craft
+1603	Fighter Class - Anti-Fighter Squadron
+1604	Crusader
+1605	Advanced Anti-Fighter
+1606	Lance Fighter
+1607	Fighter Class - Anti-Corvette Squadron
+1608	Bomber
+1609	Fighter Class - Anti-Capital Ship Squadron
+1610	Laser Corvette
+1611	Corvette Class - Anti-Capital Ship Squadron
+1612	Missile Corvette
+1613	Corvette Class - Anti-Corvette Squadron
+1614	Minelayer Corvette
+1615	Corvette Class - Deploys Mines
+1616	Command Corvette
+1617	Corvette Class - Command Ship, Improves Accuracy of Nearby Ships
+1618	Assault Frigate
+1619	Frigate Class - Anti-Fighter
+1620	Infiltrator Frigate
+1621	Frigate Class - Boarding Vessel
+1622	Heavy Missile Frigate
+1623	Frigate Class - Anti-Frigate
+1624	Transport Frigate
+1625	Frigate Class - Fleet Support
+1626	Vaygr Flagship
+1627	Flagship
+1628	Shipyard
+1629	Capital Class - Ship Production
+1630	Carrier
+1631	Capital Class - Ship Production
+1632	Battlecruiser
+1633	Capital Class - Heavy Attack
+1634	Destroyer
+1635	Capital Ship - Anti-Frigate
+1636	Dreadnaught
+1637	Long Range Capital Ship Killer
+1638	Resource Collector
+1639	Resource Class - Mineral Excavation
+1640	Mobile Refinery
+1641	Resource Class - Remote Ore Processing
+1642	Probe
+1643	Single-burn reconnaissance unit
+1644	Sensor Distortion Probe
+1645	Single-burn sensors distortion device
+1646	Proximity Detector
+1647	Single-burn cloak detector device
+1648	Mine
+1649	Static Mine
+1650	Heavy Missile
+1651	Heavy Missile
+1652	Small Missile
+1653	Tracking Infared Signature
+1654	Infiltrator Pod
+1655	Infiltrator Pod
+1656	Gun Platform
+1657	Static Defense - Anti-Fighter
+1658	Heavy Missile Platform
+1659	Static Defense - Anti-Capital Ship Defense
+1660	Hyperspace Gate
+1661	Hyperspace gate
+1662	Communications Rig
+1663	Listening Device
+1664	Low Orbit Atmosphere Deprivation Weapon
+1665	Makaan
+1666	Makaan's Flagship
+1667	Communications Station
+1668	Command Station
+1669	Command Station Thaddis Sabbah
+1675	MOTHERSHIP
+1676	SHIPYARD
+1677	MAKAAN
+1700	Keeper
+1701	Capital ship
+1702	Mover
+1703	Unknown
+1704	Planet Killer
+1705	Planet Killer
+1706	Sajuuk
+1707	Sajuuk
+1708	Drone
+1709	Drone
+1715	SAJUUK
+1716	PLANET KILLER
+1800	Tanis Base
+1801	Tanis Base
+1802	VeilChunk
+1803	VeilChunk
+1804	VeilChunk
+1805	VeilChunk
+1806	Chimera Station
+1807	Forward Operating Base
+1808	
+1809	
+1810	Balcora Gate
+1811	Balcora Gate
+1812	Karos Hulk
+1813	Karos Hulk
+1814	Progenitor Debris
+1815	Progenitor Debris
+1816	Progenitor Nose Hulk
+1817	Progenitor Nose Hulk
+1818	Progenitor Debris
+1819	Progenitor Debris
+1820	Progenitor Debris
+1821	Progenitor Debris
+1822	HgnPlanet
+1823	HgnPlanet
+1824	HgnMoon
+1825	HgnMoon
+1826	Hyperspace Inhibitor
+1827	Hyperspace Inhibitor
+1828	Communications Array
+1829	Communications Array
+1830	Progenitor Mothership
+1831	Progenitor Mothership
+1832	Hyperspace Gate
+1833	Bentus
+1834	Bentus
+1835	Asteroid
+1836	Asteroid
+1837	Nemean Station
+1838	Xanhus Station
+1839	Bentusi Ruins
+1840	Bentusi Core Fragment
+1841	Debris
+1900	Bishop One
+1901	Crew Transport
+1902	Bishop Two
+1903	Bishop Three
+1904	Bishop Four
+1905	Bishop Five
+1906	Bishop Six
+2000	Fighter Facility
+2001	Enables Fighter Class Production
+2002	Resource Drop Off
+2003	RU Processing
+2004	Research Module
+2005	Subsystem Module
+2006	Advanced Research Module
+2007	Subsystem Module
+2008	Corvette Facility
+2009	Enables Corvette Production
+2010	Hyperspace Module
+2011	Subsystem Module
+2012	Cloak Generator
+2013	Subsystem Module
+2014	Frigate Facility
+2015	Enables Frigate Production
+2016	Advanced Frigate Facility
+2017	Enables Advanced Frigate Production
+2018	Platform Controller
+2019	Subsystem Module
+2020	Capital Ship Facility
+2021	Enables Capital Ship Production
+2022	Advanced Capital Ship Facility
+2023	Enables Advanced Capital Ship Production
+2024	Pulsar Turret
+2025	Anti-Corvette Ship Weapon
+2026	Ion Cannon Turret
+2027	Anti-Capital Ship Weapon
+2028	Kinetic Burst Cannon
+2029	Anti-Fighter Weapon
+2030	Engines
+2031	Conventional Drive Systems
+2032	Fire Control Tower
+2033	Subsystem Module
+2034	Hyperspace Inhibitor
+2035	Subsystem Module
+2036	Hyperspace Sensors
+2037	Sensors Subsystem
+2038	Advanced Sensors Array
+2039	Sensors Subsystem
+2040	Proximity Sensors
+2041	Sensors Subsystems
+2042	Defense Field
+2043	Subsystem
+2044	Heavy Gun System
+2045	Anti-Corvette Weapon
+2046	Flechette Cannon
+2047	Anti-Fighter Weapon
+2048	Heavy Missile Battery
+2049	Anti-Capital Ship Weapon
+2050	Communications Facility
+2051	Vaygr Command Station
+2052	Power Generator
+2053	Progenitor Device
+2054	Low Orbit Atmosphere Deprivation Weapon
+2055	Planetary Bombardment Missile Bay
+2056	Mover Construction Facility
+2057	Enables Corvette Production
+2100	Fighter Class
+2101	Corvette Class
+2102	Frigate Class
+2103	Capital Class
+2104	Flagship Class
+2105	Platform Class
+2106	Utility Class
+2107	Module Subsystems
+2108	Sensor Subsystems
+2109	Munition
+2110	Megalith
+2113	Fighters
+2114	Corvettes
+2115	Frigates
+2116	Capital Ships
+2117	Platforms
+2118	Utility Ships
+2119	Motherships
+2120	Dreadnaughts
+2121	Movers
+2122	Torpedo Frigates
+2123	Capture Frigates
+2124	Defense Field Frigates
+2125	Destroyers
+2126	Carriers
+2127	Battlecruisers
+2128	Shipyards
+2129	Hyperspace Gates
+2130	Resource Collectors
+2131	Mobile Refineries
+2132	Probe
+2133	Sensor Distortion Probe
+2134	Proximity Sensor
+2135	Minelayer Corvettes
+2400	EMP
+2401	Attack Bomber
+2402	Torpedo
+2403	The Hand That Shapes
+2413	Missile Volley
+2414	Burst Attack
+2404	Heavy Cruisers
+2405	Fighters
+2406	Corvettes
+2407	Resource Controllers
+2408	Salvage Corvettes
+2409	Crate
+2410	Contents unknown
+2411	Relic
+2412	RU Generator
+
+rangeend

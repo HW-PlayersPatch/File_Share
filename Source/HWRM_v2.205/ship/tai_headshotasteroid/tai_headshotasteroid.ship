@@ -1,0 +1,138 @@
+
+NewShipType = StartShipConfig()
+NewShipType.displayedName="$10064"
+NewShipType.sobDescription="$10065"
+NewShipType.maxhealth=450000
+NewShipType.regentime=0
+NewShipType.minRegenTime=0
+NewShipType.sideArmourDamage = getShipNum(NewShipType, "sideArmourDamage", 1.0)
+NewShipType.rearArmourDamage = getShipNum(NewShipType, "rearArmourDamage", 1.0)
+NewShipType.isTransferable=0
+NewShipType.addedUnitCaps=101
+
+
+NewShipType.mass=20000
+NewShipType.collisionMultiplier=1
+NewShipType.thrusterMaxSpeed=350
+NewShipType.mainEngineMaxSpeed=350
+NewShipType.rotationMaxSpeed=0
+NewShipType.thrusterAccelTime=0.2
+NewShipType.thrusterBrakeTime=0.2
+NewShipType.mainEngineAccelTime=0.2
+NewShipType.mainEngineBrakeTime=0.2
+NewShipType.rotationAccelTime=5
+NewShipType.rotationBrakeTime=0.4
+NewShipType.thrusterUsage=1
+NewShipType.accelerationAngle=30
+NewShipType.mirrorAngle=0
+NewShipType.secondaryTurnAngle=0
+NewShipType.maxBankingAmount=0
+NewShipType.descendPitch=0.0
+NewShipType.goalReachEpsilon=25
+NewShipType.slideMoveRange=400
+NewShipType.controllerType="Ship"
+NewShipType.tumbleStaticX=0
+NewShipType.tumbleStaticY=0
+NewShipType.tumbleStaticZ=0
+NewShipType.tumbleDynamicX=0
+NewShipType.tumbleDynamicY=0
+NewShipType.tumbleDynamicZ=0
+NewShipType.tumbleSpecialDynamicX=0
+NewShipType.tumbleSpecialDynamicY=0
+NewShipType.tumbleSpecialDynamicZ=0
+NewShipType.relativeMoveFactor=1
+NewShipType.swayUpdateTime=10
+NewShipType.swayOffsetRandomX=10
+NewShipType.swayOffsetRandomY=10
+NewShipType.swayOffsetRandomZ=10
+NewShipType.swayBobbingFactor=0
+NewShipType.swayRotateFactor=0
+setTargetBox(NewShipType, 0, -0.19,-0.68,-0.8, 0.15,0.1,0.6)
+NewShipType.useLayoutBounds=1
+NewShipType.layoutBoundX=160
+NewShipType.layoutBoundY=170
+NewShipType.layoutBoundZ=220
+NewShipType.layoutCenterX=0
+NewShipType.layoutCenterY=0
+NewShipType.layoutCenterZ=0
+NewShipType.dustCloudDamageTime=280
+NewShipType.nebulaDamageTime=800
+NewShipType.MinimalFamilyToFindPathAround="SuperPriority"
+NewShipType.BuildFamily="NotBuildable"
+NewShipType.AttackFamily="Mothership"
+NewShipType.DockFamily="Flagship"
+NewShipType.AvoidanceFamily="SuperPriority"
+NewShipType.DisplayFamily="Capital"
+NewShipType.AutoFormationFamily="SuperCap"
+NewShipType.CollisionFamily="Unmoveable"
+NewShipType.CollisionDamageFamily="BigRock"
+NewShipType.ArmourFamily=getShipStr(NewShipType, "ArmourFamily", "HeavyArmour")
+setSupplyValue(NewShipType, "Mothership", 1.0)
+NewShipType.fighterValue=0
+NewShipType.corvetteValue=0
+NewShipType.frigateValue=0
+NewShipType.neutralValue=0
+NewShipType.antiFighterValue=0
+NewShipType.antiCorvetteValue=0
+NewShipType.antiFrigateValue=0
+NewShipType.retaliationRange=4800
+NewShipType.retaliationDistanceFromGoal=160
+NewShipType.visualRange=1000
+NewShipType.prmSensorRange=6500
+NewShipType.secSensorRange=8500
+NewShipType.detectionStrength=1
+NewShipType.TOScale=1
+NewShipType.TOGroupScale=1
+NewShipType.TOGroupMergeSize=0
+NewShipType.mouseOverMinFadeSize=0.15
+NewShipType.mouseOverMaxFadeSize=0.25
+NewShipType.healthBarStyle=2
+NewShipType.nlips=0
+NewShipType.nlipsRange=75000
+NewShipType.nlipsFar=0
+NewShipType.nlipsFarRange=0
+NewShipType.SMRepresentation="Mesh"
+NewShipType.meshRenderLimit=35000
+NewShipType.dotRenderLimit=10
+NewShipType.visibleInSecondary=1
+NewShipType.goblinsStartFade=3000
+NewShipType.goblinsOff=3000
+NewShipType.upLOD=5950
+NewShipType.downLOD=5965
+NewShipType.minimumZoomFactor=0.5
+NewShipType.selectionLimit=150000
+NewShipType.preciseSelectionLimit=10000
+NewShipType.preciseATILimit=100000
+NewShipType.selectionPriority=75
+NewShipType.militaryUnit=0
+NewShipType.blobName="$1575"
+NewShipType.blobNamePriority=100
+NewShipType.alternativeHyperspaceA="/etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN_MS"
+NewShipType.SMHighlightDistMin=20000
+NewShipType.SMHighlightDistMax=30000
+NewShipType.nbRestrictedHardpoints=1
+addAbility(NewShipType,"MoveCommand",1,0);
+LoadModel(NewShipType,1);
+NewShipType.battleScarCoverage=2
+NewShipType.sobDieTime=0.8
+NewShipType.sobSpecialDieTime=1
+NewShipType.specialDeathSpeed=40
+NewShipType.chanceOfSpecialDeath=0
+NewShipType.deadSobFadeTime=0.1
+NewShipType.trailLinger=2
+NewShipType.normalCollisionDamageMultiplier = 2
+setCollisionDamageToModifier(NewShipType, "Ship", 3)
+setCollisionDamageFromModifier(NewShipType, "Ship", 1)
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble",3, 0.45,-30,20,10, 6,9,0,0,0,0,8,125,310,110,50,60,0,0,0,30);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble1",3, 0.2,30,40,10, 5,-4,90,0,0,0,48,-125,-310,-60,0,95,0,0,0,40);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble",3, 0.1,10,-40,50, 12,0,0,0,0,0,98,175,110,-90,0,80,0,0,0,80);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble1",4, 0.09,60,10,50, 6,5,0,0,0,-98,-120,-225,50,0,0,60,0,0,0,30);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble",3, 0.085,60,70,10, 11,0,0,0,0,98,165,-75,50,0,0,60,0,0,0,20);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble1",5, 0.075,0,70,-20, 6,0,0,0,0,98,-165,-175,-60,0,0,60,0,0,0,10);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble0",6, 0.09,10,30,10, 6,0,0,0,0,58,120,-125,-50,0,0,60,0,0,0,60);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble0",7, 0.085,0,20,0, 11,0,0,0,0,28,-165,-75,-80,0,0,60,0,0,0,40);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble0",8, 0.2,-40,0,10, 5,0,0,0,0,0,48,125,50,0,0,35,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"HeadshotPebble0",9, 0.1,0,0,0, 25,-1,0,0,0,0,78,-175,50,0,0,30,0,0,0,50);
+setEngineBurn(NewShipType,9,0.2,0.5,300,1.02,0.1,0.25,380);
+setEngineGlow(NewShipType,1,1,1.02,20,450,200,2,{0.27, 0.47, .69, 0.25});
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/",0,"Hiigaran/MegaShip/Engines/HMothershipEng","",1,"Hiigaran/MegaShip/Ambience/HMotherShipAmb","",3,"Megaliths/RandomEmit/HANGAR_EMITTERS","marker3");

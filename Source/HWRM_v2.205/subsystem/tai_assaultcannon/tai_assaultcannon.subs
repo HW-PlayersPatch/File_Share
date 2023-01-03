@@ -1,0 +1,8 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+LoadHODFile(NewSubSystemType,1); 
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="MediumArmour"
+StartSubSystemWeaponConfig(NewSubSystemType,"Tai_AssaultGun1","Weapon_Gun1","Weapon_Gun1");

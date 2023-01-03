@@ -1,0 +1,690 @@
+wideScreenIn(1.200000048)
+at frame 0
+	cameraCut("Cam1aShape")
+	speechSetDir("NIS_01A")
+	wideScreenIn(0)
+at frame 1
+	musicStartFade("NIS01A",3)
+at frame 452
+	cameraCut("Cam1BShape")
+at frame 502
+	speechEventActor("$56000",9,2)
+at frame 546
+	speechEventActor("$56001",9,2)
+at frame 749
+	speechEventActor("$56003",9,2)
+at frame 821
+	speechEventActor("$56004",9,2)
+at frame 1410
+	cameraCut("CamShape3")
+at frame 1752
+	speechEventActor("$56005",9,2)
+at frame 2080
+	cameraCut("CamShape4")
+at frame 2081
+	speechEventActor("$56006",1,2)
+at frame 2169
+	speechEventActor("$56007",9,2)
+at frame 2254
+	speechEventActor("$56012",1,2)
+at frame 2335
+	speechEventActor("$56009",1,2)
+at frame 2380
+	cameraCut("Cam5bShape")
+at frame 2530
+	cameraCut("cam5cShape")
+at frame 2668
+	speechEventActor("$56010",1,2)
+at frame 2680
+	cameraCut("CamShape5")
+at frame 2776
+	speechEventActor("$56011",1,2)
+at frame 2918
+	cameraCut("Cam6aShape")
+at frame 3072
+	speechEventActor("$56008",1,2)
+at frame 3255
+	cameraCut("CamShape7")
+at frame 3260
+	speechEventActor("$56013",1,2)
+at frame 3490
+	cameraLeave()
+	focus()
+	musicStop(4)
+	nisOut(4)
+
+with |work_group_joint6|Container
+{
+	at frame 1
+		hide()
+	at frame 2380
+		show()
+	at frame 2918
+		hide()
+}
+
+with |work_group_joint14|Container
+{
+	at frame 1
+		hide()
+	at frame 2380
+		show()
+	at frame 2918
+		hide()
+}
+
+with |joint18|Container
+{
+	at frame 1
+		show()
+	at frame 3118
+		hide()
+}
+
+with |joint6|Container
+{
+	at frame 1
+		show()
+	at frame 3033
+		hide()
+}
+
+with |joint14|Container
+{
+	at frame 1
+		show()
+	at frame 3550
+		hide()
+}
+
+with |joint3|Container
+{
+	at frame 1
+		show()
+	at frame 2032
+		hide()
+}
+
+with |RC_container_rig_joint1|Container
+{
+	at frame 1
+		show()
+	at frame 2411
+		hide()
+}
+
+with |joint17|Container6
+{
+	at frame 1
+		show()
+	at frame 3550
+		hide()
+}
+
+with |joint5|Container8
+{
+	at frame 1
+		show()
+	at frame 3400
+		hide()
+}
+
+with |Hgn_MotherShip
+{
+	at frame 0
+		setPlayer(0)
+	at frame 1
+		hide()
+	at frame 2380
+		setEnginePower(0)
+		show()
+	at frame 2468
+		setEnginePower(1)
+	at frame 2752
+		setEnginePower(0)
+	at frame 2918
+		hide()
+}
+
+with |joint5|Hgn_RC1_Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 550
+		show()
+	at frame 560
+		setMADState("ResourceEnd")
+	at frame 3400
+		hide()
+}
+
+with |joint18|Hgn_RC2_Hgn_ResourceCollector
+{
+	at frame 1
+		setMADState("ResourceStart")
+		show()
+	at frame 3118
+		hide()
+}
+
+with |work_group_joint6|Hgn_RC3_Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 1380
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2918
+		hide()
+}
+
+with |joint6|Hgn_RC3_Hgn_ResourceCollector
+{
+	at frame 1
+		show()
+	at frame 1380
+		setMADState("ResourceEnd")
+	at frame 3033
+		hide()
+}
+
+with |joint3|Hgn_RC4_Hgn_ResourceCollector
+{
+	at frame 1
+		show()
+	at frame 608
+		setMADState("ResourceStart")
+	at frame 2032
+		hide()
+}
+
+with |RC_container_rig_joint1|Hgn_RC5_Hgn_ResourceCollector
+{
+	at frame 1
+		setMADState("ResourceStart")
+		show()
+	at frame 2411
+		hide()
+}
+
+with |joint17|Hgn_ResourceCollector
+{
+	at frame 1
+		setMADState("ResourceStart")
+		show()
+	at frame 3550
+		hide()
+}
+
+with |joint9|Hgn_ResourceCollector
+{
+	at frame 1
+		show()
+	at frame 1823
+		hide()
+}
+
+with |joint23|Hgn_ResourceCollector
+{
+	at frame 1
+		show()
+	at frame 1805
+		hide()
+}
+
+with |joint8|Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 2730
+		show()
+	at frame 3550
+		hide()
+}
+
+with |joint15|Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 1448
+		show()
+	at frame 1460
+		setMADState("ResourceStart")
+	at frame 2780
+		setMADState("ResourceEnd")
+	at frame 2872
+		hide()
+}
+
+with |RC3_joint2|Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 2370
+		show()
+	at frame 2950
+		hide()
+}
+
+with |joint16|Hgn_ResourceCollector
+{
+	at frame 1
+		hide()
+	at frame 1590
+		show()
+	at frame 3550
+		hide()
+}
+
+with |joint2|Hgn_ResourceCollector
+{
+	at frame 0
+		focusAtEnd()
+		remainAtEnd("Tanis")
+		setPlayer(0)
+	at frame 1
+		hide()
+	at frame 2730
+		show()
+}
+
+with |RC2_joint1|Hgn_ResourceCollector1
+{
+	at frame 1
+		show()
+	at frame 1591
+		hide()
+}
+
+with |work_group_joint24|Hgn_ResourceCollector3
+{
+	at frame 1
+		hide()
+	at frame 250
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2420
+		setMADState("ResourceEnd")
+	at frame 2832
+		setMADState("ResourceStart")
+	at frame 2918
+		hide()
+}
+
+with |joint24|Hgn_ResourceCollector3
+{
+	at frame 310
+		setMADState("ResourceStart")
+	at frame 2480
+		setMADState("ResourceEnd")
+	at frame 2892
+		setMADState("ResourceStart")
+	at frame 2999
+		show()
+	at frame 3000
+		hide()
+}
+
+with |work_group_joint25|Hgn_ResourceCollector4
+{
+	at frame 1
+		hide()
+	at frame 2200
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2400
+		setMADState("ResourceEnd")
+	at frame 2840
+		setMADState("ResourceStart")
+	at frame 2918
+		hide()
+}
+
+with |joint25|Hgn_ResourceCollector4
+{
+	at frame 61
+		show()
+	at frame 2980
+		setMADState("ResourceStart")
+	at frame 3040
+		setMADState("ResourceEnd")
+	at frame 3122
+		setMADState("ResourceStart")
+	at frame 3214
+		hide()
+}
+
+with |work_group_joint26|Hgn_ResourceCollector5
+{
+	at frame 1
+		hide()
+	at frame 2335
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2868
+		setMADState("ResourceEnd")
+	at frame 2918
+		hide()
+}
+
+with |joint26|Hgn_ResourceCollector5
+{
+	at frame 61
+		show()
+	at frame 2455
+		setMADState("ResourceStart")
+	at frame 2988
+		setMADState("ResourceEnd")
+	at frame 3130
+		setMADState("ResourceStart")
+	at frame 3478
+		setMADState("ResourceEnd")
+	at frame 3670
+		hide()
+}
+
+with |joint27|Hgn_ResourceCollector6
+{
+	at frame 61
+		show()
+	at frame 3590
+		hide()
+}
+
+with |joint28|Hgn_ResourceCollector7
+{
+	at frame 1
+		show()
+	at frame 160
+		setMADState("ResourceStart")
+	at frame 1380
+		setMADState("ResourceEnd")
+	at frame 2280
+		setMADState("ResourceStart")
+	at frame 3610
+		hide()
+}
+
+with |joint29|Hgn_ResourceCollector8
+{
+	at frame 1
+		show()
+	at frame 1160
+		setMADState("ResourceStart")
+	at frame 3610
+		hide()
+}
+
+with |work_group_joint30|Hgn_ResourceCollector9
+{
+	at frame 1
+		hide()
+	at frame 2200
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2460
+		setMADState("ResourceEnd")
+	at frame 2918
+		hide()
+}
+
+with |joint30|Hgn_ResourceCollector9
+{
+	at frame 1
+		show()
+	at frame 2260
+		setMADState("ResourceStart")
+	at frame 2520
+		setMADState("ResourceEnd")
+	at frame 2980
+		setMADState("ResourceStart")
+	at frame 3154
+		hide()
+}
+
+with |joint1|Hgn_ResourceCollector10
+{
+	at frame 1
+		lockLOD(1)
+	at frame 2089
+		show()
+	at frame 2090
+		hide()
+}
+
+with |joint1|Hgn_ResourceCollector11
+{
+	at frame 1
+		lockLOD(1)
+	at frame 2079
+		show()
+	at frame 2080
+		hide()
+}
+
+with |work_group_joint14|Hgn_ResourceCollector12
+{
+	at frame 1
+		setMADState("ResourceStart")
+	at frame 2380
+		show()
+	at frame 2918
+		hide()
+}
+
+with |joint14|Hgn_ResourceCollector12
+{
+	at frame 1
+		setMADState("ResourceStart")
+	at frame 3550
+		hide()
+}
+
+with |Meg_Tanis
+{
+	at frame 0
+		setPlayer(0)
+	at frame 1
+		hide()
+	at frame 2380
+		show()
+	at frame 2918
+		hide()
+}
+
+with |mothership_core_glow_combo
+{
+	at frame 1
+		hide()
+	at frame 1410
+		show()
+		triggerEffect(1)
+	at frame 2080
+		destroyEffect()
+}
+
+with |repair_spark_combo
+{
+	at frame 2310
+		show()
+	at frame 2312
+		triggerEffect(16)
+	at frame 2412
+		hide()
+	at frame 2892
+		show()
+	at frame 3000
+		hide()
+}
+
+with |repair_spark_combo3
+{
+	at frame 2199
+		show()
+	at frame 2200
+		triggerEffect(16)
+	at frame 2382
+		hide()
+	at frame 2954
+		show()
+	at frame 3020
+		hide()
+}
+
+with |repair_spark_combo6
+{
+	at frame 2368
+		show()
+	at frame 2370
+		triggerEffect(16)
+	at frame 2454
+		hide()
+}
+
+with |repair_spark_combo9
+{
+	at frame 1166
+		triggerEffect(16)
+	at frame 1259
+		show()
+	at frame 1260
+		hide()
+}
+
+with |repair_spark_combo12
+{
+	at frame 3179
+		hide()
+	at frame 3180
+		show()
+		triggerEffect(16)
+	at frame 3379
+		show()
+	at frame 3380
+		hide()
+}
+
+with |repair_spark_combo15
+{
+	at frame 1340
+		triggerEffect(16)
+	at frame 3549
+		show()
+	at frame 3550
+		hide()
+}
+
+with |repair_spark_combo18
+{
+	at frame 1
+		hide()
+	at frame 3059
+		show()
+	at frame 3138
+		triggerEffect(16)
+	at frame 3350
+		hide()
+}
+
+with |repair_spark_combo21
+{
+	at frame 1
+		hide()
+	at frame 3012
+		triggerEffect(16)
+	at frame 3074
+		show()
+	at frame 3236
+		hide()
+}
+
+with |repair_spark_combo24
+{
+	at frame 2346
+		triggerEffect(16)
+	at frame 2999
+		show()
+	at frame 3000
+		hide()
+}
+
+with |repair_spark_combo27
+{
+	at frame 2406
+		show()
+	at frame 2408
+		triggerEffect(12)
+	at frame 2428
+		hide()
+	at frame 2828
+		show()
+	at frame 2829
+		hide()
+}
+
+with |repair_spark_combo30
+{
+	at frame 2424
+		triggerEffect(16)
+	at frame 2739
+		show()
+	at frame 2740
+		hide()
+}
+
+with |repair_spark_combo33
+{
+	at frame 2310
+		show()
+	at frame 2312
+		triggerEffect(16)
+	at frame 2412
+		hide()
+	at frame 2892
+		show()
+	at frame 2918
+		hide()
+}
+
+with |repair_spark_combo34
+{
+	at frame 2199
+		show()
+	at frame 2200
+		triggerEffect(16)
+	at frame 2382
+		hide()
+	at frame 2919
+		show()
+	at frame 2920
+		hide()
+}
+
+with |repair_spark_combo35
+{
+	at frame 2368
+		show()
+	at frame 2370
+		triggerEffect(16)
+	at frame 2454
+		hide()
+}
+
+with |repair_spark_combo36
+{
+	at frame 2406
+		show()
+	at frame 2408
+		triggerEffect(12)
+	at frame 2428
+		hide()
+	at frame 2828
+		show()
+	at frame 2829
+		hide()
+}

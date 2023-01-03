@@ -1,0 +1,361 @@
+Hgn_ShipList = { "hgn_scout",
+								 "hgn_interceptor",
+								 "hgn_attackbomber",
+								 "hgn_assaultcorvette",
+								 "hgn_pulsarcorvette",
+								 "hgn_minelayercorvette",								
+								 "hgn_assaultfrigate",
+								 "hgn_torpedofrigate",
+								 "hgn_ioncannonfrigate",
+								 "hgn_marinefrigate",
+								 "hgn_defensefieldfrigate",
+								 --"hgn_mothership",
+								 --"hgn_carrier",
+								 "hgn_shipyard",
+								 "hgn_destroyer",
+								 "hgn_battlecruiser",
+								 "hgn_gunturret",
+								 "hgn_ionturret",								
+								 --"hgn_resourcecollector",
+								 "hgn_resourcecontroller",
+								 "hgn_probe",
+								 "hgn_proximitysensor",
+								 "hgn_ecmprobe",--20/23
+								}		
+
+Vgr_ShipList = { "vgr_scout",
+								 "vgr_interceptor",
+								 "vgr_bomber",
+								 "vgr_lancefighter",
+								 "vgr_missilecorvette",
+								 "vgr_lasercorvette",
+								 "vgr_commandcorvette",
+								 "vgr_minelayercorvette",
+								 "vgr_assaultfrigate",
+								 "vgr_heavymissilefrigate",
+								 "vgr_infiltratorfrigate",
+								 --"vgr_mothership",
+								 --"vgr_carrier",
+								 "vgr_shipyard",
+								 "vgr_destroyer",
+								 "vgr_battlecruiser",
+								 "vgr_weaponplatform_gun",
+								 "vgr_weaponplatform_missile",
+								 "vgr_hyperspace_platform",
+								 --"vgr_resourcecollector",
+								 "vgr_resourcecontroller",
+								 "vgr_probe",
+								 "vgr_probe_prox",
+								 "vgr_probe_ecm",--21/24
+								}		
+
+Kus_ShipList = { "kus_scout",
+								 "kus_interceptor",
+								 "kus_attackbomber",
+								 "kus_defender",
+								 "kus_cloakedfighter",
+								 "kus_lightcorvette",
+								 "kus_heavycorvette",
+								 "kus_salvagecorvette",
+								 "kus_repaircorvette",
+								 "kus_multiguncorvette",
+								 "kus_minelayercorvette",
+								 "kus_assaultfrigate",
+								 "kus_ioncannonfrigate",
+								 "kus_supportfrigate",
+								 "kus_dronefrigate",
+								 --"kus_mothership",
+								 --"kus_carrier",
+								 "kus_destroyer",
+								 "kus_missiledestroyer",
+								 "kus_heavycruiser",
+								 --"kus_researchship",
+								 --"kus_resourcecollector",
+								 "kus_resourcecontroller",								
+								 "kus_cloakgenerator",
+								 "kus_gravwellgenerator",
+								 "kus_probe",
+								 "kus_proximitysensor",
+								 "kus_sensorarray",--24/28
+								}		
+						
+Tai_ShipList = { "tai_scout",
+								 "tai_interceptor",
+								 "tai_attackbomber",
+								 "tai_defender",
+								 "tai_defensefighter",
+								 "tai_lightcorvette",
+								 "tai_heavycorvette",
+								 "tai_salvagecorvette",
+								 "tai_repaircorvette",
+								 "tai_multiguncorvette",
+								 "tai_minelayercorvette",					
+								 "tai_assaultfrigate",
+								 "tai_ioncannonfrigate",
+								 "tai_supportfrigate",
+								 "tai_fieldfrigate",
+								 --"tai_mothership",
+								 --"tai_carrier",
+								 "tai_destroyer",
+								 "tai_missiledestroyer",
+								 "tai_heavycruiser",
+								 --"tai_researchship",
+								 --"tai_resourcecollector",
+								 "tai_resourcecontroller",								 						
+								 "tai_cloakgenerator",
+								 "tai_gravwellgenerator",
+								 "tai_probe",
+								 "tai_proximitysensor",
+								 "tai_sensorarray",--24/28
+								}
+startNum = 0
+function ringAdd(fPosX, fPosY, fPosZ, rDistTable, fAxis1, fAxis2, fWidth, fThickness, fRotY, fRotZ, fArc1, fArc2, iMode)
+	local width, thick, arc, theta, thetaX, thetaY, thetaZ, rotyX, rotyY, rotyZ, rotzX, rotzY, rotzZ, cooX, cooY, cooZ = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+	local minAxis = min(fAxis1, fAxis2)
+	local majAxis = max(fAxis1, fAxis2)
+	local minArc = min(fArc1, fArc2)
+	local maxArc = max(fArc1, fArc2)
+	for k, iCount in rDistTable do
+		for i = 1, iCount.number do
+			if (iMode == 1) then		--if set to random mode
+				theta = random(minArc, maxArc)
+				thetaX = cos(theta)*(majAxis + random(fWidth/-2, fWidth/2))
+				thetaY = sin(theta)*sqrt((majAxis + random(fWidth/-2, fWidth/2))^2 - majAxis^2 + minAxis^2)
+				thetaZ = random(fThickness/-2, fThickness/2)
+			elseif (iMode == 0) then		--if set to non-random mode
+				theta = minArc + arc
+				thetaX = cos(theta)*majAxis		--(majAxis + fWidth/-2 + width)
+				thetaY = sin(theta)*minAxis		--sqrt((majAxis + fWidth/-2 + width)^2 - majAxis^2 + minAxis^2)
+				thetaZ = 0		--(fThickness/-2 + thick)
+			end
+			arc = arc + (maxArc-minArc)/iCount.number
+			width = width + fWidth/iCount.number
+			thick = thick + fThickness/iCount.number
+			rotyX = sin(fRotY)*thetaZ + cos(fRotY)*thetaX
+			rotyY = thetaY
+			rotyZ = cos(fRotY)*thetaZ - sin(fRotY)*thetaX
+			rotzX = cos(fRotZ)*rotyX - sin(fRotZ)*rotyY
+			rotzY = sin(fRotZ)*rotyX + cos(fRotZ)*rotyY
+			rotzZ = rotyZ
+			cooX = rotzX
+			cooY = rotzY
+			cooZ = rotzZ
+			if (iCount.class == "Point") then
+				if (iCount.name == "StartPos") then
+					if startNum == 0 then
+					  addPoint(iCount.name .. startNum, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, -90, 0})
+					else
+					  addPoint(iCount.name .. startNum, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 90, 0})						
+					end
+					startNum = startNum + 1					
+				else
+					addPoint(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 0, 0})
+				end
+			elseif (iCount.class == "Sphere") then
+				addSphere(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.size)
+			elseif (iCount.class == "Camera") then
+				addCamera(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 0, 0})
+			elseif (iCount.class == "Squadron") then
+				addSquadron(iCount.name .. (i-1), iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.player, iCount.rotation, 0, 0)
+			elseif (iCount.class == "Asteroid") then
+				addAsteroid(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 100, 0, 0, 0, 0)
+			elseif (iCount.class == "Salvage") then
+				addSalvage(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 100, 0, 0, 0, 0)
+			elseif (iCount.class == "Pebble") then
+				addPebble(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 0, 0, 0)
+			elseif (iCount.class == "Cloud") then
+				addCloud(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "DustCloud") then
+				addDustCloud(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "Nebula") then
+				addNebula(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "EasyPatch") then
+				easyPatch(fPosX + cooX, fPosZ + cooZ, fPosY + cooY)	
+      elseif (iCount.class == "EasyPatch1") then
+				easyPatch1(fPosX + cooX, fPosZ + cooZ, fPosY + cooY)								
+			end			
+		end
+	end
+end
+function asteroidAdd(fPosX, fPosY, fPosZ, sLayout, rDistTable, a, b, c, fRotY, fRotZ)
+	local rel, cooX, cooY, cooZ = 0, 0, 0, 0
+	for k, iCount in rDistTable do
+		rel = rel + iCount.number
+	end
+	for k, iCount in rDistTable do
+		local minAB, maxAB = min(a, b), max(a, b)
+		for i = 1, iCount.number do		--for i = 1, num*iCount.number do
+			local r, u, v, l, w, h = random(minAB, maxAB), random(0, 180), random(0, 360), random(-0.5*a, 0.5*a), random(-0.5*b, 0.5*b), random(-0.5*c, 0.5*c)
+			if sLayout == "Cylinder" then
+				cooX = cos(fRotZ)*(sin(fRotY)*h + cos(fRotY)*r*cos(v)) - sin(fRotZ)*r*sin(v)
+				cooY = sin(fRotZ)*(sin(fRotY)*h + cos(fRotY)*r*cos(v)) + cos(fRotZ)*r*sin(v)
+				cooZ = cos(rotY)*h - sin(rotY)*r*cos(v)
+			elseif sLayout == "Sphere" then
+				cooX = sqrt(r^2-(r*cos(u))^2)*cos(v)
+				cooY = sqrt(r^2-(r*cos(u))^2)*sin(v)
+				cooZ = r*cos(u);
+			elseif sLayout == "Box" then
+				cooX = cos(fRotZ)*(sin(fRotY)*h + cos(fRotY)*l) - sin(fRotZ)*w
+				cooY = sin(fRotZ)*(sin(fRotY)*h + cos(fRotY)*l) + cos(fRotZ)*w
+				cooZ = cos(fRotY)*h - sin(fRotY)*l
+			end
+			if (iCount.class == "Point") then
+				if (iCount.name == "StartPos") then
+					addPoint(iCount.name .. startNum, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 0, 0})
+					startNum = startNum + 1					
+				else
+					addPoint(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 0, 0})
+				end
+			elseif (iCount.class == "Sphere") then
+				addSphere(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.size)
+			elseif (iCount.class == "Camera") then
+				addCamera(iCount.name .. (i-1), {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, {0, 0, 0})
+			elseif (iCount.class == "Squadron") then
+				addSquadron(iCount.name .. (i-1), iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.player, iCount.rotation, 0, 0)
+			elseif (iCount.class == "Asteroid") then
+				addAsteroid(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 100, 0, 0, 0, 0)
+			elseif (iCount.class == "Salvage") then
+				addSalvage(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 100, 0, 0, 0, 0)
+			elseif (iCount.class == "Pebble") then
+				addPebble(iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, 0, 0, 0)
+			elseif (iCount.class == "Cloud") then
+				addCloud(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "DustCloud") then
+				addDustCloud(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "Nebula") then
+				addNebula(iCount.kind, iCount.type, {fPosX + cooX, fPosZ + cooZ, fPosY + cooY,}, iCount.color, 0.0, iCount.size)
+			elseif (iCount.class == "EasyPatch") then
+				easyPatch(fPosX + cooX, fPosZ + cooZ, fPosY + cooY)
+			end
+		end
+	end
+end
+function easyPatch(epX, epZ, epY)	
+	--9 latch		
+	addAsteroid("Asteroid_5", {epX+0,                epZ+0,                epY+0,                }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4", {epX+random(-200,200), epZ+random(-200,200), epY+random(550,650),  }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4", {epX+random(-200,200), epZ+random(550,650),  epY+random(-200,200), }, 100, 0, 0, 0, 0)
+  addAsteroid("Asteroid_3", {epX+random(450,550),  epZ+random(-200,200), epY+random(-200,200), }, 100, 0, 0, 0, 0)	
+	addAsteroid("Asteroid_3", {epX+random(-200,200), epZ-random(450,550),  epY+random(-200,200), }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_2", {epX-random(400,500),  epZ+random(-200,200), epY+random(-200,200), }, 100, 0, 0, 0, 0)	
+	addAsteroid("Asteroid_1", {epX+random(-200,200), epZ+random(-200,200), epY-random(350,450),  }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_1", {epX+random(350,450),  epZ+random(350,450),  epY+random(-200,200), }, 100, 0, 0, 0, 0)		
+end
+function easyPatch1(epX, epZ, epY)	
+	--6 latch
+	addAsteroid("Asteroid_5", {epX+0,                epZ+0,                epY+0,                }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_4", {epX+random(-200,200), epZ+random(-200,200), epY+random(550,650),  }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_3", {epX+random(-200,200), epZ+random(450,550),  epY+random(-200,200), }, 100, 0, 0, 0, 0)
+	addAsteroid("Asteroid_2", {epX+random(400,500),  epZ+random(-200,200), epY+random(-200,200), }, 100, 0, 0, 0, 0)	
+	addAsteroid("Asteroid_1", {epX+random(-200,200), epZ+random(-200,200), epY-random(350,450),  }, 100, 0, 0, 0, 0)	
+	addAsteroid("Asteroid_1", {epX+random(-200,200), epZ-random(350,450),  epY+random(-200,200), }, 100, 0, 0, 0, 0)	
+end
+levelDesc = "UNIT TEST MAP"
+maxPlayers = 2
+testMap = 1
+player =
+{
+	{id = 0, name = "Vaygr", resources = 1500, raceName = "Vaygr", startPos = 1,},
+	{id = 1, name = "Hiigaran", resources = 1500, raceName = "Hiigaran", startPos = 1,},		
+}
+function DetermChunk()	
+	setWorldBoundsInner({0, 0, 0}, {20000, 20000, 20000})		
+	setWorldBoundsOuter({0, 0, 0}, {21000, 21000, 21000})		
+	local playerPositionRing =
+	{
+		Point0 =
+		{
+			class = "Point",
+			name = "StartPos",		
+			rotation = "toCenter",		
+			teams = 0,		
+			bias = 0,		
+			number = 2,	
+		},
+	}
+	local RU_9Latch_x2 =
+	{
+		RU_9Latch_x2 =
+		{
+			class = "EasyPatch",
+			number = 2,
+		},
+	}
+	local RU_6Latch_x2 =
+	{
+		RU_6Latch_x2 =
+		{
+			class = "EasyPatch1",
+			number = 2,
+		},
+	}
+	local Special_UnitTestMap =
+	{
+		Special_UnitTestMap =
+		{
+			class = "Squadron",
+			name = "Special_UnitTestMap",
+			type = "Special_UnitTestMap",
+			rotation = {0, 0, 0,},
+			player = -1,
+			number = 1,
+		},			
+	}			
+	asteroidAdd(0, 0, 100000, "Box", Special_UnitTestMap, 0, 0, 0, 0, 0)		
+	ringAdd(0, 0, 0, playerPositionRing,		13000,		13000,		0,			0,			0,		0,		0,	360,	0)
+	ringAdd(0, 0, 0, RU_9Latch_x2,		16000,		16000,		0,			0,			0,		0,		0,	360,	0)
+	ringAdd(0, 0, 0, RU_6Latch_x2,		10000,		10000,		0,			0,			0,		0,		30,	390,	0)
+	ringAdd(0, 0, 0, RU_6Latch_x2,		10000,		10000,		0,			0,			0,		0,		-30,	330,	0)	
+	
+	--local z = 0
+	--local x = 0
+	--for k = 1,20,1 do
+		--addSquadron("1", Hgn_ShipList[k], { 13000+z, 0, 2000+x, }, 0,  { 0, -90, 0, }, 0, 0)				
+		--z = z + 0
+		--x = x + 325
+	--end
+	--z = 0
+	--x = 0
+	--for k = 1,21,1 do
+		--addSquadron("1", Vgr_ShipList[k], { 13000+z, 0, -2000-x, }, 0,  { 0, -90, 0, }, 0, 0)				
+		--z = z + 0
+		--x = x + 325
+	--end
+  z = 0
+  x = 0
+  for k = 1,24,1 do
+    --addSquadron("1", Kus_ShipList[k], { 13000+z, 0, 2000+x, }, 0,  { 0, -90, 0, }, 0, 0)				
+    z = z + 0
+    x = x + 325
+  end
+  z = 0
+  x = 0
+  for k = 1,24,1 do
+    --addSquadron("1", Tai_ShipList[k], { 13000+z, 0, -2000-x, }, 0,  { 0, -90, 0, }, 0, 0)				
+    z = z + 0
+    x = x + 325
+  end
+	
+	--addSquadron("1", "Meg_Relic_RUGenerator1", { 1000, 1000, 1000, }, 1,  { 0, -0, 0, }, 0, 0)
+	--addSquadron("1", "Meg_Relic_ResearchGenerator1", { -1000, -1000, -1000, }, 1,  { 0, -0, 0, }, 0, 0)
+	--addSquadron("1", "hgn_mothership_test", { -7500, 0, 2000, }, 0,  { 0, -90, 0, }, 0, 0)
+	--addSquadron("1", "hgn_mothership_test", { 10500, 0, 2000, }, 0,  { 0, -90, 0, }, 0, 0)
+	--for k = 1,9,1 do
+		--addSquadron("1", "hgn_destroyer",     { 7500, 0,    -2400+x, }, 0,  { 0, -90, 0, }, 0, 0)		
+		--addSquadron("1", "hgn_destroyer",     { 4500, 0,    -2400+x, }, 1,  { 0, 90, 0, }, 0, 0)			
+		--x = x + 600
+	--end
+	--for k = 1,3,1 do		
+		--addSquadron("1", "hgn_battlecruiser", { 7500, 1200, -900+z, }, 0,  { 0, -90, 0, }, 0, 0)		
+		--addSquadron("1", "hgn_battlecruiser", { 4500, 1200, -900+z, }, 1,  { 0, 90, 0, }, 0, 0)		
+		--z = z + 900
+	--end
+	--addSquadron("1", "hgn_mothership_test", { -7500, 0, -2000, }, 0,  { 0, -90, 0, }, 0, 0)
+end
+function NonDetermChunk()
+	fogSetActive(0)
+	setGlareIntensity(0)
+	setLevelShadowColour(0, 0, 0, 1)
+	setSensorsManagerCameraDistances(12000,60000)
+	loadBackground("m04")	
+end

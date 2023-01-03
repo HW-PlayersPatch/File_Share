@@ -1,5 +1,0 @@
-baseRes = 800
-
-res1024 = "data:ui/newui/playback/playback_buttons_long_1024.tga"
-res1280 = "data:ui/newui/playback/playback_buttons_long_1280.tga"
-res1600 = "data:ui/newui/playback/playback_buttons_long.tga"

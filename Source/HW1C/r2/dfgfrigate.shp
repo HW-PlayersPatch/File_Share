@@ -1,0 +1,105 @@
+[DFGFrigate]
+
+;Source Files
+;=----------=
+LODFile                             DFGFrigate.lod
+pMexData                            DFGFrigate\Rl0\LOD0\DFGFrigate.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                          ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                          ; resistance to rotation
+momentOfInertiaY                    400.0                          ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         325.0                        ; [fighter = 1000]
+maxrot                              1.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+isCapitalShip                       TRUE
+buildCost                           800                          ; resource units to build
+buildTime                           75                           ; time in seconds to build
+maxhealth                           17600                         ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          10                           ; every this many seconds
+repairDamage                        150                         ; this much damage is repaired
+repairCombatTime                    10                           ; every this many seconds
+repairCombatDamage                  15                            ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+
+;No Weapons except for the missile launcher! :)
+;=--------------------------------------------=
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           6
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,       NAVLIGHT_Default, 2,   1, 0.5,  7,   2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 2,   1, 0.5,  7,   2, etg\textures\glow32
+NavLight                        caution1,       NAVLIGHT_Default, 0.5, 1, 0,    8,   2, etg\textures\glow32
+NavLight                        caution2,       NAVLIGHT_Default, 0.5, 1, 0,    8,   2, etg\textures\glow32
+NavLight                        caution3,       NAVLIGHT_Default, 0.5, 1, 0,    8,   2, etg\textures\glow32
+NavLight                        caution4,       NAVLIGHT_Default, 0.5, 1, 0,    8,   2, etg\textures\glow32
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;DFG's Field Parameters
+;=--------=
+fieldRadius                         2000.0                   ;Radius at which point the bullets are captured by the DFG
+BulletDamageMultiplier              1.0                      ;Bullets damage is multiplied by this factor
+BulletLifeExtension                 1.0                     ;Bullets Life is Extended by this ammount (Set high to ensure collision)
+percentageThatGetThrough            7                       ;percetage of bullets that are uneffected by the field
+                                                            ;integer number between 0 and 100 (0 = perfect shield, 100 = chicken wire fence)
+angleVariance                       30                       ;variance in bullet reflections
+
+
+;Engine Glow
+;=---------=
+trailWidth          75.0
+trailHeight        105.0
+trailLength        100.0
+trailScaleCap        0.000196
+
+minimumZoomDistance                 265
+

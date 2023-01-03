@@ -1,0 +1,86 @@
+
+LATCH_TOLERANCE                             5.0        ; tolerance in metres of how close you need to be to latch
+
+CONEORIGIN_MINFLYSPEED                      -40.0       ; minimum speed will fly to cone origin, but put -ve sign in front.
+CONEORIGIN_TOLERANCE                        50.0        ; tolerance in metres of how close you need to be to cone origin
+                                                        ; make it big enough so that abs(minflyspeed) < 2x
+
+DRONE_CONEORIGIN_MINFLYSPEED                -15.0
+DRONE_CONEORIGIN_TOLERANCE                   7.5        ; make it big enough so that abs(minflyspeed) < 2x
+
+BACKOUT_MINFLYSPEED                         -80.0       ; backing out of latch point
+BACKOUT_TOLERANCE                           50.0
+
+FLYOUTCONE_MINFLYSPEED                      -120.0      ; flying out of launch point
+FLYOUTCONE_TOLERANCE                        65.0
+
+CONEINSIDE_MINFLYSPEED                      -80.0       ; flying to cone inside
+CONEINSIDE_TOLERANCE                        100.0
+
+BACKTODESTINATION_MINFLYSPEED               -40.0       ; flying back to destination
+BACKTODESTINATION_TOLERANCE                 50.0
+
+
+BUSY_ADD_TO_DISTANCE                        5000.0      ; if this docking ship is considered busy, add this number to
+                                                        ; its effective distance away (so that ships will be more likely
+                                                        ; to fly to a different non-busy ship).
+BUSY_ADD_TO_DISTANCE_DEPOSITRU              10000.0     ; same as above number, except for ships docking with resources
+
+R1RESCONTROLLER_FIGHTERLATCHDIST            150.0
+R1RESCONTROLLER_CORVETTELATCHDIST           300.0
+R1RESCONTROLLER_RESOURCERLATCHDIST          0.0         ; latch distance not applicable if set to 0
+R1RESCONTROLLER_LATCHMINTIME                3.0
+
+R2RESCONTROLLER_FIGHTERLATCHDIST            150.0
+R2RESCONTROLLER_CORVETTELATCHDIST           300.0
+R2RESCONTROLLER_RESOURCERLATCHDIST          0.0         ; latch distance not applicable if set to 0
+R2RESCONTROLLER_LATCHMINTIME                3.0
+
+R1ASF_FIGHTERLATCHDIST                      150.0
+R1ASF_CORVETTELATCHDIST                     300.0
+R1ASF_LATCHMINTIME                          3.0
+
+R2ASF_FIGHTERLATCHDIST                      150.0
+R2ASF_CORVETTELATCHDIST                     300.0
+R2ASF_LATCHMINTIME                          3.0
+
+R1CARRIER_REFUELREPAIRMINTIME               5.0
+R1CARRIER_LATCHMINTIME                      3.0
+
+R2CARRIER_REFUELREPAIRMINTIME               4.0
+R2CARRIER_LATCHMINTIME                      3.0
+
+R1MOTHERSHIP_REFUELREPAIRMINTIME            4.0
+R1MOTHERSHIP_LATCHMINTIME                   3.0
+
+R2MOTHERSHIP_REFUELREPAIRMINTIME            4.0
+
+R1REPCORV_FIGHTERLATCHDIST                  150.0
+R1REPCORV_CORVETTELATCHDIST                 300.0
+R1REPCORV_LATCHMINTIME                      3.0
+
+R2REPCORV_FIGHTERLATCHDIST                  150.0
+R2REPCORV_CORVETTELATCHDIST                 300.0
+R2REPCORV_LATCHMINTIME                      3.0
+
+R1RESCOL_FIGHTERLATCHDIST                   150.0
+R1RESCOL_LATCHDIST                          300.0
+R1RESCOL_LATCHMINTIME                       3.0
+
+R2RESCOL_FIGHTERLATCHDIST                   150.0
+R2RESCOL_LATCHDIST                          300.0
+R2RESCOL_LATCHMINTIME                       3.0
+
+JUNKYARDHQ_LATCHDIST                        150.0
+JUNKYARDHQ_LATCHMINTIME                     3.0
+
+JUNKYARDHQ_MUSTBENEAR_TO_DOCK               20000.0
+
+DRONE_LAUNCH_VELOCITY                       300.0
+
+CARRIERMOTHERDOCK_DELAY_FLYINSIDE           4.0
+CARRIERMOTHERDOCK_DELAY_FLYINSIDE_CORVETTE  8.0
+
+SHIP_NEED_REFUEL_PERCENT                    0.7
+SHIP_NEED_REPAIR_PERCENT                    0.7
+

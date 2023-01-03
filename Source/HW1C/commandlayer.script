@@ -1,0 +1,82 @@
+[CommandLayer]
+;CARRIER_FUELPUMP_RATE                       300.0   ; how fast carrier pumps fuel in.
+;CARRIER_HEAL_RATE                           1       ; how fast carrier heals damaged ships. Must be an integer
+
+;CARRIER_AWAY_DIST_PAD                       50.0    ; how far ships go away from carrier when they are just built.
+;                                                    ; Note that this number is added to the minimum collision distance.
+;CARRIER_SURROUND_DIST_PAD                   300.0   ; how far ships will minimally disperse themselves from carrier after
+;                                                    ; they are built.  Note that this number is added to the minimum collision distance.
+;CARRIER_RANDOM_SURROUND_DISTANCE            300.0   ; determines the random distance of how ships surround the carrier after being built
+;
+MAX_DIST_JOIN_GROUP_SQR                     5000.0  ; maximum distance which a ship will fly to get to a far-away group
+
+PROTECT_GET_THIS_CLOSE_CAP                  600.0  ; how close ships should get when protecting another ship - capital ship is the guarder
+PROTECT_GET_THIS_CLOSE_STRIKE               600.0  ; how close ships should get when protecting another ship - strike crafter is the guarder
+
+PROTECT_STILL_VELOCITY                      20.0   ; velocity at which ship being protected must travel before the
+                                                   ;    protecting ships consider it to be "still"
+WINGMAN_JOIN_MAX_DIST                       500.0   ; maximum distance a fellow fighter can be away and still join as wingman
+
+HYPERSPACE                                  FALSE  ; DEBUG Feature which allows hyperspace for easy testing purposes
+
+FIGHTER_PAIRUP_PROB                         255     ; number from 0 to 255, indicating probability of fighter pairing up.
+                                                    ; 0 corresponds to 0%, 255 to 100% probability.
+
+FIGHTER_PAIR_CHECK_RATE[Evasive]            3       ; every number of game frames to check if we are under attack
+                                                    ; value must be 0,1,3,7,15,31,63,127, etc.
+FIGHTER_PAIR_CHECK_RATE[Neutral]            7
+FIGHTER_PAIR_CHECK_RATE[Aggressive]         31
+
+FIGHTER_SINGLE_CHECK_RATE[Evasive]          7      ; every number of game frames to check if I am under attack
+                                                    ; value must be 0,1,3,7,15,31,63,127, etc.
+FIGHTER_SINGLE_CHECK_RATE[Neutral]          15
+FIGHTER_SINGLE_CHECK_RATE[Aggressive]       63
+
+FIGHTER_MAX_THREAT_DIST[Evasive]            3000.0  ; maximum distance a fighter can sense an attacking enemy fighter
+FIGHTER_MAX_THREAT_DIST[Neutral]            2000.0
+FIGHTER_MAX_THREAT_DIST[Aggressive]         2000.0
+
+MULTIPLETARGETS_RETARGET_RATE               15      ; every number of game frames for a ship targeting multiple targets
+                                                    ; to reevaluate its targets.
+                                                    ; value must be 0,1,3,7,15,31,63,127, etc.
+
+GLOBAL_SHIP_HEALTH_MODIFIER                 1.0     ; all ships are increased in health by this factor
+
+FIGHTER_BREAK_ANGLE_MIN                     10
+FIGHTER_BREAK_ANGLE_MAX                     30
+
+FIGHTER_BREAK_VERTICAL_ANGLE_MIN            20
+FIGHTER_BREAK_VERTICAL_ANGLE_MAX            35
+
+BombersUseBombingRun                        FALSE
+
+;=============================================================================
+; Solution for ships moving to single point nastiness:
+;=============================================================================
+
+; If it looks like a bunch of ships in different parts of the world are moving to a "central location" then
+; their relative positions will be scaled near to a single point using the factor SHRINKMIN.
+; If it looks like a bunch of ships are moving to a relatively far location, they will preserve their
+; relative positions (SHRINKMAX, which is typically near 1.0)
+
+; Here is the technical description:
+
+; consider a distance d, which is the average position the ships travel.
+; consider a radius r, within which all ships ordered to move are within
+
+; Take the ratio d/r.
+; if d/r is less than DISTMINRATIO, the relative scaling factor will be SHRINKMIN
+; if d/r is greater than DISTMAXRATIO, the relative scaling factor will be SHRINKMAX
+; in between,
+; scales from a     d/r ratio of DISTMINRATIO      to      a scale factor of SHRINKMIN
+;                                DISTMAXRATIO                                SHRINKMAX
+
+; DISTMINRATIO is 1.0 but you can't change that
+DISTMAXRATIO                                5.0
+SHRINKMIN                                   0.1
+SHRINKMAX                                   1.0
+
+FLY_INTO_WORLD_PERCENT_DIST                 0.96
+
+RESCONTROLLER_FOLLOW_BEHIND                 1.5     ; number of radii resource controller follows behind
+

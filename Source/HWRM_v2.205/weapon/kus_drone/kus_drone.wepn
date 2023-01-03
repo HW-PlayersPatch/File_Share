@@ -1,0 +1,39 @@
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","HW1Kinetic_Small","Normal",1700,2660,0,0,0,0,1,1,0,0.3,1,0.2,1,1,125,125,0.1,"Normal",1,0,0)
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",15,15,"")
+setPenetration(NewWeaponType,5,1,
+{unarmoured=1.0},
+{unarmoured_hw1=1.0},
+{LightArmour=1.0},
+{LightArmour_hw1=1.0},
+{MediumArmour=0.70},
+{HeavyArmour=0.88},
+{ResArmour=0.47},
+{PlanetKillerArmour=0},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.70},
+{Fighter_hw1=0.70},
+{Corvette=0.25},
+{Corvette_hw1=0.35},
+{munition=0.02},
+{Frigate=0.55},
+{SmallCapitalShip=0.55},
+{BigCapitalShip=0.55},
+{ResourceLarge=0.78});
+setAngles(NewWeaponType,1,-179,179,-89,89);
+setMissProperties(NewWeaponType, 0.02, 0.04, 0.20, 0.30, 0.55, 0.55);
+setLifetimeMult(NewWeaponType, 1.77);
+setDamageFalloff(NewWeaponType, 0.15/2660.0, 0.1);
+setAccuracyFalloff(NewWeaponType, 0.15/2660.0, 0.1);
+setSpeedvsAccuracyAgainst(NewWeaponType, 1, 50.0, 1.5, 200, 1.1, 300, 1.0, 487, 1.1, 535, 1.5);
+setBallistics(NewWeaponType,0,0.0);
+setFireMultFactor(NewWeaponType, 1.0);

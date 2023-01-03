@@ -1,0 +1,39 @@
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.displayedName="$2004"
+NewSubSystemType.sobDescription="$2005"
+NewSubSystemType.tacticalIcon="hexagon"
+NewSubSystemType.tacticalIconMinSize=0
+NewSubSystemType.tacticalIconMinFadeSize=0
+NewSubSystemType.tacticalIconMaxFadeSize=0
+NewSubSystemType.groupMergeSize=0
+NewSubSystemType.mouseOverMinFadeSize=0
+NewSubSystemType.mouseOverMaxFadeSize=0
+NewSubSystemType.maxhealth=30000
+NewSubSystemType.regentime=0
+NewSubSystemType.nlips=0
+NewSubSystemType.nlipsRange=0
+NewSubSystemType.nlipsFar=0
+NewSubSystemType.nlipsFarRange=0
+NewSubSystemType.meshRenderLimit=0
+NewSubSystemType.minimumZoomFactor=0
+NewSubSystemType.selectionLimit=0
+NewSubSystemType.preciseATILimit=0
+NewSubSystemType.selectionPriority=0
+NewSubSystemType.type="System"
+NewSubSystemType.typeString="ResearchShip2"
+NewSubSystemType.collateralDamage=0
+NewSubSystemType.inactiveTimeAfterDamage=0
+NewSubSystemType.activateHealthPercentage=0
+NewSubSystemType.costToBuild=1
+NewSubSystemType.timeToBuild=1
+NewSubSystemType.isResearch=1
+NewSubSystemType.visible=0
+NewSubSystemType.innate=1
+LoadHODFile(NewSubSystemType,1);
+NewSubSystemType.BuildFamily="SubSystem_Kus"
+NewSubSystemType.AttackFamily="UnAttackable"
+NewSubSystemType.DockFamily="CantDock"
+NewSubSystemType.DisplayFamily="Munition"
+NewSubSystemType.ArmourFamily="SubSystemArmour"
+--AddSubSystemMultiplier(NewSubSystemType, "MAXHEALTH", "ThisShipOnly", "None", 2, 1, 0)
+AddSubSystemMultiplier(NewSubSystemType, "HealthRegenerationRate", "ThisShipOnly", "None", 4, 1, 0)

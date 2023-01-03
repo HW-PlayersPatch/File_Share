@@ -1,0 +1,17 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+aitrace("LOADING VAYGR UPGRADE INFO")
+
+rt_mothership = {MOTHERSHIPHEALTHUPGRADE1, MOTHERSHIPHEALTHUPGRADE2, MOTHERSHIPMAXSPEEDUPGRADE1, MOTHERSHIPMAXSPEEDUPGRADE2}
+rt_capital = {SUPERCAPHEALTHUPGRADE1, SUPERCAPHEALTHUPGRADE2, SUPERCAPSPEEDUPGRADE1, SUPERCAPSPEEDUPGRADE2}
+rt_fighter = {FIGHTERHEALTHUPGRADE1, FIGHTERHEALTHUPGRADE2}
+rt_corvette = {CORVETTEHEALTHUPGRADE1, CORVETTEHEALTHUPGRADE2}
+rt_frigate = {FRIGATEHEALTHUPGRADE1, FRIGATEHEALTHUPGRADE2}
+rt_platform = {PLATFORMHEALTHUPGRADE1, PLATFORMHEALTHUPGRADE2}
+rt_collector = {UTILITYHEALTHUPGRADE1, UTILITYHEALTHUPGRADE2}

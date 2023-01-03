@@ -1,0 +1,9 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="Frigate"
+NewSubSystemType.ArmourFamily="MediumArmour"
+LoadSharedModel(NewSubSystemType,"Vgr_FlechetteCannonAssaultFrigateBottom");
+StartSubSystemWeaponConfig(NewSubSystemType,"Vgr_FlechetteCannonAssaultFrigateLeft","Weapon_Right","Weapon_Right");

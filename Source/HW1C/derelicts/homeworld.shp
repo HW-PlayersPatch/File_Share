@@ -1,0 +1,14 @@
+[HomeWorld]
+LODFile                             HomeWorld.lod
+pMexData                            HomeWorld\Rl0\LOD0\HomeWorld.mex
+mass                                10000000.0
+momentOfInertiaX                    100.0
+momentOfInertiaY                    100.0
+momentOfInertiaZ                    100.0
+maxvelocity                         150.0
+maxrot                              10.0
+maxhealth                           80000000                        ; hit points
+
+worldRender                         TRUE
+scaleFactor                         10.75
+

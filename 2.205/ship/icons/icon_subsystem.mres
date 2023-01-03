@@ -1,6 +1,0 @@
-baseRes = 800
-
-res800 = "DATA:/Ship/Icons/icons_subsystem_800.dds"
-res1024 = "DATA:/Ship/Icons/icons_subsystem_1024.dds"
-res1280 = "DATA:/Ship/Icons/icons_subsystem_1280.dds"
-res1600 = "DATA:/Ship/Icons/icons_subsystem_1600.dds"

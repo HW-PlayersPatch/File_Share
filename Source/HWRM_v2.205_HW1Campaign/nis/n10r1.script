@@ -1,0 +1,58 @@
+speechSetDir("n10r1")
+at 0
+    hideUniverse(1)
+at frame 1
+    SFXVolume(0.7)
+    musicVolume(1.0)
+    speechVolume(0.7)
+at frame 2
+    musicStart("N10_MiningFacility")
+at frame 448
+    seekForward(0.1)
+at frame 451
+	cameraCut("Camera1")
+at frame 1378
+    seekForward(0.1)
+at frame 1380
+	cameraCut("Camera2")
+at frame 3242
+    seekForward(0.1)
+at frame 3243
+	cameraCut("Camera3")
+at frame 4318
+    wideScreenOut(2)
+    musicStop(2)
+with Tai_ResourceCollector1
+{
+    at 0
+        hide()
+    at frame 835
+        show()
+    at frame 1379
+        trailZero()
+}
+
+with Tai_ResourceCollector2
+{
+    at 0
+        hide()
+        remainAtEnd("NISCollector")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 350
+        show()
+}
+
+with Tai_ResourceController1
+{
+    at frame 350
+        centreShip()
+    at 0
+        remainAtEnd("NIS_SobGroup")
+}
+
+with Tai_ResourceController2
+{
+    at 0
+        remainAtEnd("NIS_SobGroup")
+}
+

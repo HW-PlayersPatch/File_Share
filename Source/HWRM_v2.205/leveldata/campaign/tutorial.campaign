@@ -1,0 +1,64 @@
+-- =============================================================================
+--     Name    : test.campaign
+--     Purpose : test file for campaigns.
+--
+--     Created 9/6/2000 by fpoiker
+--     Copyright Relic Entertainment, Inc.  All rights reserved.
+-- =============================================================================
+
+-- initialization
+
+-- localized display name for the UI
+displayName = "$5501"
+
+-- 1 = Tutorial
+contentType = 1
+contentName = "tutorial"
+contentOrdered = 1
+contentChooseText = "$3451" -- CHOOSE TUTORIAL//
+--contentChooseText = "TEMP" -- CHOOSE TUTORIAL//
+contentRules = "SinglePlayer"	-- A DEFAULT that actually reads from SinglePlayerOptions.lua
+
+ExtFilter = "campaign_tutorial,campaign_gbx,campaign_gbx_tutorial"
+
+Mission = { }   -- create a mission structure
+
+-- Mission 1 
+Mission[1] = {
+--    postload        = function () playNIS("Nis/NIS01_TimeLapse") end,
+    --postload = function () playAnimatic("data:animatics/A01_Backstory.lua") end,
+    directory       = "M01",
+    level           = "M01.level",
+    displayName = "$3452",
+    description = "$3463",
+    forcesubtitles = 1,
+
+--postlevel	= function () postLevelComplete() end,
+}
+
+-- Mission 2
+Mission[2] = {
+--    postload        = function () playNIS("Nis/NIS01_TimeLapse") end,
+    --postload = function () playAnimatic("data:animatics/A02.lua") end,
+    directory       = "M02",
+    level           = "M02.level",
+    displayName = "$3453",
+    description = "$3464",
+    forcesubtitles = 1,
+--postlevel	= function () postLevelComplete() end,
+}
+
+-- Mission 3 
+Mission[3] = {
+--    postload        = function () playNIS("N01_EmperorMassacre") end,
+    --postload = function () playAnimatic("data:animatics/A03.lua") end,
+    directory       = "M03",
+    level           = "M03.level",
+    displayName = "$3454",
+    description = "$3465",
+    forcesubtitles = 1,
+--postlevel	= function () postLevelComplete() end,
+}
+
+
+

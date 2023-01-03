@@ -1,0 +1,129 @@
+//#####
+//#####  Team Colors information script
+//#####
+
+//#########
+//  Here are the supported formats:
+//
+//  TrailColor                          <iPlayer>, <iControlPoint>, <red>, <green>, <blue>
+//      iPlayer is 0..7, iPoint is 0..3, red,green blue is 0..255
+//  Sets the default color of a particular control point for a particular player.
+//
+//  TOColor                             <iPlayer>, <red>, <green>, <blue>
+//  Sets the default tactical overlay color for a given player.
+//
+//  BaseColor/StripeColor               <iPlayer>, <red>, <green>, <blue>
+//  Sets the deault texture colors of a particular player.
+//
+// BaseToTOFactors                      <hue>, <lum>, <sat>
+//      hue/lum/sat are 0.0 .. 1.0
+// Set some parameters by which the HLS of the base color is converted to
+// tactical overlay colors.  hue is added to the hue of the base color and wrapped
+// in the range of 0 .. 1.  Lum and sat are multiplied and clamped to the same range.
+//
+// BaseToTrailFactors<iControlPoint>    <hue>, <lum>, <sat>
+// Same as for BaseToTOFactors except for the control point index.
+//#########
+
+//#########
+//Tactical overlay colorization flags
+BaseToTOFactors                     0, 1.0, 1.8
+
+//#########
+//flat-shaded polygons in team color
+SpecularAdjust                      120000
+DiffuseAdjust                       55000
+AmbientAdjust                       15000
+
+//#########
+//ship trail colorization flags
+;BaseToTrailFactors0                 0, 0.2, 1.0
+;BaseToTrailFactors1                 0.083, 1.4, 1.0
+;BaseToTrailFactors2                 0, 0.8, 1.2
+;BaseToTrailFactors3                 0, 0.05, 1.0
+BaseToTrailFactors0                 0.0, 0.2,  1.0
+BaseToTrailFactors1                 0.0, 1.4,  1.0
+BaseToTrailFactors2                 0.0, 0.8,  1.2
+BaseToTrailFactors3                 0.0, 0.05, 1.0
+
+//#########
+// Team 0
+TrailColor                          0, 0, 0, 0, 0           ;R1 default c-scheme team
+TrailColor                          0, 1, 238, 238, 238
+TrailColor                          0, 2, 141, 106, 87
+TrailColor                          0, 3, 0, 0, 0
+TOColor                             0, 180, 180, 180
+BaseColor                           0, 142, 159, 161
+StripeColor                         0, 255, 255, 255
+//#########
+// Team 1
+TrailColor                          1, 0, 0, 0, 0           ;R2 default c-scheme team
+TrailColor                          1, 1, 225, 124, 33
+TrailColor                          1, 2, 146, 0, 0
+TrailColor                          1, 3, 0, 0, 0
+TOColor                             1, 255, 0, 0
+BaseColor                           1, 255, 210, 0
+StripeColor                         1, 255, 0, 0
+//#########
+// Team 2
+TrailColor                          2, 0, 0, 0, 0           ;blue team
+TrailColor                          2, 1, 11, 255, 255
+TrailColor                          2, 2, 51, 0, 243
+TrailColor                          2, 3, 0, 0, 0
+TOColor                             2, 0, 100, 255
+BaseColor                           2, 0, 100, 255
+StripeColor                         2, 210, 210, 200
+//#########
+// Team 3
+TrailColor                          3, 0, 0, 0, 0           ;green team
+TrailColor                          3, 1, 201, 254, 39
+TrailColor                          3, 2, 0, 84, 4
+TrailColor                          3, 3, 0, 0, 0
+TOColor                             3, 60, 255, 60
+BaseColor                           3, 60, 255, 60
+StripeColor                         3, 210, 210, 200
+//#########
+// Team 4
+TrailColor                          4, 0, 0, 0, 0           ;yellow team
+TrailColor                          4, 1, 255, 240, 97
+TrailColor                          4, 2, 160, 124, 0
+TrailColor                          4, 3, 0, 0, 0
+TOColor                             4, 255, 255, 60
+BaseColor                           4, 255, 255, 60
+StripeColor                         4, 210, 210, 200
+//#########
+// Team 5
+TrailColor                          5, 0, 0, 0, 0           ;orange team
+TrailColor                          5, 1, 225, 255, 11
+TrailColor                          5, 2, 160, 124, 0
+TrailColor                          5, 3, 0, 0, 0
+TOColor                             5, 255, 128, 0
+BaseColor                           5, 255, 128, 0
+StripeColor                         5, 210, 210, 200
+//#########
+// Team 6
+TrailColor                          6, 0, 0, 0, 0           ;purple team
+TrailColor                          6, 1, 255, 135, 157
+TrailColor                          6, 2, 121, 0, 135
+TrailColor                          6, 3, 0, 0, 0
+TOColor                             6, 255, 0, 255
+BaseColor                           6, 255, 0, 255
+StripeColor                         6, 210, 210, 200
+//#########
+// Team 7
+TrailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+TrailColor                          7, 1, 45, 255, 149
+TrailColor                          7, 2, 0, 105, 137
+TrailColor                          7, 3, 0, 0, 0
+TOColor                             7, 0, 200, 255
+BaseColor                           7, 0, 200, 255
+StripeColor                         7, 210, 210, 200
+
+;standardized dot colors
+FriendlyColor                   0,214,0
+AlliedColor                     217,217,0
+HostileColor                    217,0,0
+NeutralColor                    200,200,200
+CtateColor                      255,0,0
+ResourceColor                   157,118,91
+

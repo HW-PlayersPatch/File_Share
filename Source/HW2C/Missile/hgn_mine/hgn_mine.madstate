@@ -1,0 +1,17 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+function Hgn_Mine_Open_OnSet(ship)
+	startAnim(ship, "Open")
+	setPauseTime(ship, "Open", 1000)
+end
+
+function Hgn_Mine_Close_OnSet(ship)
+	stopAnim(ship, "Open")
+	startAnim(ship, "Close")
+end

@@ -1,0 +1,185 @@
+[AdvanceSupportFrigate]
+
+;Source Files
+;=----------=
+LODFile                             AdvanceSupportFrigate.lod
+pMexData                            AdvanceSupportFrigate\Rl0\LOD0\AdvanceSupportFrigate.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                        ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                          ; resistance to rotation
+momentOfInertiaY                    400.0                          ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         350.0                        ; [fighter = 1000]
+maxrot                              1.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+buildCost                           425                          ; resource units to build
+buildTime                           65                           ; time in seconds to build
+maxhealth                           60000                         ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          5                            ; every this many seconds
+repairDamage                        25                           ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+canReceiveShips                     TRUE                         ; other ships can dock in this ship
+
+canReceiveFighters                  TRUE
+canReceiveCorvettes                 TRUE
+
+canHandleNumShipsDocking            14
+
+dockShipRange                       500.0              ; how close ships should get before considering docking (to ship surface)
+
+pumpFuelRate                        500.0                        ; how fast pumps fuel in.
+repairOtherShipRate                 1                            ; how fast heals damaged ships. Must be an integer
+
+renderlistFade     20000.0
+renderlistLimit    40000.0
+
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            50.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          50.0
+thruststrength[TRANS_RIGHT]         50.0
+thruststrength[TRANS_LEFT]          50.0
+thruststrength[TRANS_FORWARD]       50.0
+thruststrength[TRANS_BACK]          50.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                3000.0
+
+;Weapons
+;=-----=
+NUMBER_OF_GUNS                      1
+GUN         0
+//Desired Range = 4800
+//ADD this amount: 150 to compensate for centrepoint
+//ADD this amount: 784 to compensate for stopping distance
+{
+Type                                GUN_NewGimble               ; type of gun - either GUN_Fixed or GUN_Gimble
+SoundType                           GS_LargeEnergyCannon
+DamageLo                            50                          ; damage variance per shot - low
+DamageHi                            75                          ; damage variance per shot - high
+BulletLength                        18.0                        ; visual only.  Length of bullet on screen
+BulletRange                         5734.0                      ; distance bullets travel before disappearing
+BulletSpeed                         4000.0                      ; measured in m/s.
+BulletMass                          0.75                         ; mass of bullet
+FireTime                            1.4                         ; fire repeat rate (reciprocal = shots/second)
+TriggerHappy                        5.0
+minturnangle                        -180.0                      ; degrees
+maxturnangle                        180.0
+mindeclination                      -90.0
+maxdeclination                      02.0
+maxanglespeed                       360.0                        ; degrees/s
+maxdeclinationspeed                 360.0
+angletracking                       8.0
+declinationtracking                 8.0
+BarrelLength                        20.0
+RecoilLength                        15.00
+}
+
+NUMBER_OF_DOCK_POINTS           17
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       FightL0,LatchPoint,300,200,500,0,5
+DockPoint                       FightL1,LatchPoint,300,200,500,0,5
+DockPoint                       FightL2,LatchPoint,300,200,500,0,5
+DockPoint                       FightL3,LatchPoint,300,200,500,0,5
+DockPoint                       FightL4,LatchPoint,300,200,500,0,5
+DockPoint                       FightR0,LatchPoint,300,200,500,0,1
+DockPoint                       FightR1,LatchPoint,300,200,500,0,1
+DockPoint                       FightR2,LatchPoint,300,200,500,0,1
+DockPoint                       FightR3,LatchPoint,300,200,500,0,1
+DockPoint                       FightR4,LatchPoint,300,200,500,0,1
+DockPoint                       Corv0,LatchPoint,300,200,500,0,6
+DockPoint                       Corv1,LatchPoint,300,200,500,0,6
+DockPoint                       Corv2,LatchPoint,300,200,500,0,6
+DockPoint                       Corv3,LatchPoint,300,200,500,0,6
+
+
+NUMBER_OF_SALVAGE_POINTS        4
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+SalvagePoint                       Point3,AttachPoint
+SalvagePoint                       Point4,AttachPoint
+
+
+NUMBER_OF_NAV_LIGHTS           7
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,        NAVLIGHT_Default, 2,   0.5,   1,    6, 2, etg\textures\glow32
+NavLight                        antenna2,       NAVLIGHT_Default, 1.5,   0.5,   0,    4, 2, etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 1,  0.5,   0.5,    4, 2, etg\textures\glow32
+NavLight                        Dock1,          NAVLIGHT_Default, 0.5, 1.5,   0.5,    7, 2, etg\textures\glow32
+NavLight                        Dock2,          NAVLIGHT_Default, 0.5, 1.5,   0.5,  7, 2, etg\textures\glow32
+NavLight                        Dock3,          NAVLIGHT_Default, 0.5, 1.5,   0.5,    7, 2, etg\textures\glow32
+NavLight                        Dock4,          NAVLIGHT_Default, 0.5, 1.5,   0.5,  7, 2, etg\textures\glow32
+
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+;Gun Binding
+BindGun                             AdvanceSupportFrigateGun Gun0,Azimuth,Recoil,Frequency 1
+
+
+;Engine Glow
+;=---------=
+trailWidth          90.0
+trailHeight        136.0
+trailLength        130.0
+trailStyle           3
+trailScaleCap        0.0002
+
+;Special Operation Variables
+;=----------=
+repairApproachDistance                  600.0   ;approach distance, from hull to target
+canSpecialBandBoxFriendlies             TRUE
+
+BindAnimations                      1
+
+;MadStartInfo        needs a starting     /Animation Text Name(no spaces allowed!)
+                     animation(1-yes,0-no)/
+MadStartInfo                   1 , open , 1 , open
+
+;MadDockAnims          definitions in explination below
+;                       n = number, g = gun, o = open, c = close, d = damaged, a = animations
+
+;                            ;ngoa,names,...,ngca,names,...,ngoda,names,... ,ngcda,names,...
+;if this doesn't
+;makes sence, ask Bryce
+MadSpecialCaseAnims                     1, open, 1, close, 0,blah, 1, damageclose
+MadDockAnims                            0, blah, 1, close, 0,blah, 1, damageclose
+
+;Ships health must be below this percentage to use the damaged animations.
+madGunOpenDamagedHealthThreshold                0.70    ;<= 1.0f
+

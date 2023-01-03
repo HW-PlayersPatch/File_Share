@@ -1,0 +1,34 @@
+!!ARBvp1.0
+OPTION ARB_position_invariant;
+ATTRIB iTex0        = vertex.texcoord[0];
+ATTRIB iNormal      = vertex.normal;
+ATTRIB iTangent     = vertex.attrib[6];
+ATTRIB iBinormal    = vertex.attrib[7];
+PARAM  mvinv[4]     = { state.matrix.modelview.inverse };
+PARAM  lightDir     = state.light[1].position;
+PARAM  miscValues    = { 0, 0.5, 1, 2 };
+TEMP    temp, osLight, tsLight;
+
+OUTPUT oTex0        = result.texcoord[0];
+#OUTPUT oTex1        = result.texcoord[1];
+OUTPUT oColor0      = result.color;
+
+# Transform the light from eye to object space
+DP3 osLight.x, mvinv[0], lightDir;
+DP3 osLight.y, mvinv[1], lightDir;
+DP3 osLight.z, mvinv[2], lightDir;
+
+# Transform the light from object to tangent space
+DP3 tsLight.x, osLight, iTangent;
+DP3 tsLight.y, osLight, iBinormal;
+DP3 tsLight.z, osLight, iNormal;
+
+# setup texture coordinates
+MOV   oTex0, iTex0;
+#MOV   oTex1, tsLight;
+
+MAD temp, tsLight, miscValues.y, miscValues.y;
+
+MOV   oTex0, iTex0;
+MOV   oColor0, temp;
+END

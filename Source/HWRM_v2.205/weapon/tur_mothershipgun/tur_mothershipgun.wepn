@@ -1,0 +1,25 @@
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","HDefense","Normal",2500,2200,0,0,0,0,1,1,0,0.5,1.8,1.9,1,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",12,13,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+{ResArmour=0.75},
+{TurretArmour=3.0});
+setAccuracy(NewWeaponType,1,
+{Swarmer=0.01},
+{SpaceMine=0.01},
+{Torpedo=0},
+{HeavyMissile=0},
+{SmallMissile=0},
+{Fighter=0.12},
+{Fighter_hw1=0.12},
+{Corvette=0.32},
+{Corvette_hw1=0.32},
+{munition=0.2});
+setAngles(NewWeaponType,120,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

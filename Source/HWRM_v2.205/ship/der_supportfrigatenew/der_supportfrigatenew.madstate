@@ -1,0 +1,38 @@
+KUS_SUPPORTFRIGATE_Normal_OnSet = function(ship)
+  startTime = 0
+	startAnim(ship, "close")
+	setTime(ship,"close",startTime)
+	setPauseTime(ship, "close", 1000)
+end
+
+KUS_SUPPORTFRIGATE_Launched_OnSet = function(ship)
+	startTime = 0
+	if(isAnimRunning(ship, "close") ~= 0) then
+		startTime = getAnimLength(ship, "close") - getTime(ship, "close")
+		stopAnim(ship, "close")
+	end
+	startAnim(ship, "open")
+	startEffect(ship, "open")
+	setTime(ship,"open",startTime)
+	setPauseTime(ship, "open", 1000)
+end
+
+KUS_SUPPORTFRIGATE_RepairStart_OnSet = function(ship)
+	endEffect(ship, "Repairing")		
+	setState(ship, "RepairStart", 0)
+end
+
+KUS_SUPPORTFRIGATE_RepairStart_OnPause = function(ship)   
+	setState(ship, "RepairStart", 1)
+end
+
+KUS_SUPPORTFRIGATE_RepairDo_OnSet = function(ship)	
+	startEffect(ship, "Repairing")	
+	setState(ship, "RepairDo", 1)
+end
+
+KUS_SUPPORTFRIGATE_RepairEnd_OnSet = function(ship)	
+	endEffect(ship, "Repairing")	
+	setState(ship, "RepairEnd", 1)	
+end
+

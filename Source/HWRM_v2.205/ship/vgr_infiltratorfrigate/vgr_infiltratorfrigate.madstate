@@ -1,0 +1,136 @@
+--=============================================================================
+--    Name    : Vgr_InfiltratorFrigate.madStates
+--    Purpose : Animation state data.
+--
+--Created 280403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+VGR_INFILTRATORFRIGATE_CaptureActive_OnSet = function(ship)
+    setState(ship, "CaptureActive", 0)
+    if(isAnimRunning(ship, "Launch") ~= 0) then
+        -- run it to completion
+        currentTime = getTime(ship, "Launch")
+        stopAnim(ship, "Launch")
+        startAnim(ship, "Launch")
+        setPauseTime(ship, "Launch", 7.1)
+    else
+        startAnim(ship, "Launch")
+        setPauseTime(ship, "Launch", 2.7)
+    end
+end
+
+VGR_INFILTRATORFRIGATE_CaptureActive_OnPause = function(ship)
+    -- what's the time mr infiltrator frigate?
+    currentTime = getTime(ship, "Launch")
+    newTime = 0
+    if(currentTime < 2.8) then
+        setState(ship, "CaptureActive", 1)
+        newTime = 2.9
+    elseif(currentTime < 3.1) then
+        -- first pod launch
+        setJointVisible(ship,"Pod8_Root",0)
+        startEffect(ship, "Launch")
+        newTime = 3.2
+    elseif(currentTime < 3.4) then
+        -- second pod launch
+        setJointVisible(ship,"Pod7_Root",0)
+        startEffect(ship, "Launch")
+        newTime = 3.5
+    elseif(currentTime < 3.7) then
+        -- third pod launch
+        setJointVisible(ship,"Pod6_Root",0)
+        startEffect(ship, "Launch")
+        newTime = 3.8
+    elseif(currentTime < 4.3) then
+        -- fourth pod launch
+        setJointVisible(ship,"Pod5_Root",0)
+        startEffect(ship, "Launch")
+        newTime = 7.1
+    elseif(currentTime < 7.2) then
+        maxTime = getAnimLength(ship, "Launch")
+        setJointVisible(ship,"Pod1_Root",0)
+        setJointVisible(ship,"Pod2_Root",0)
+        setJointVisible(ship,"Pod3_Root",0)
+        setJointVisible(ship,"Pod4_Root",0)
+        setJointVisible(ship,"Pod5_Root",1)
+        setJointVisible(ship,"Pod6_Root",1)
+        setJointVisible(ship,"Pod7_Root",1)
+        setJointVisible(ship,"Pod8_Root",1)
+        --setJointVisible(ship,"Pod9_Root",0)
+        --setJointVisible(ship,"Pod10_Root",0)
+        --setJointVisible(ship,"Pod11_Root",0)
+        --setJointVisible(ship,"Pod12_Root",0)
+        newTime = 7.3
+    else
+        setJointVisible(ship,"Pod1_Root",1)
+        setJointVisible(ship,"Pod2_Root",1)
+        setJointVisible(ship,"Pod3_Root",1)
+        setJointVisible(ship,"Pod4_Root",1)
+        setJointVisible(ship,"Pod9_Root",1)
+        setJointVisible(ship,"Pod10_Root",1)
+        setJointVisible(ship,"Pod11_Root",1)
+        setJointVisible(ship,"Pod12_Root",1)
+
+        -- So we're at the end of the anim loop.
+        -- Unset CaptureActive to force the ship to enter the state again and sit through the
+        -- whole animation, this is better than timing the firetime to the whole animation
+        -- as this way we are always spot on and there is no slippage.
+        -- For this to work we need the weapon to have a fire time smaller than the anim
+        -- time, so it is ready to fire as soon as we go in to CaptureActive again.
+        setState(ship,"CaptureActive",0)
+        setState(ship,"CaptureInActive",1)
+        stopAnim(ship,"Launch")
+    end
+
+
+    -- CaptureActive not set, set it, unpause the anim and set things so we get another pause at the
+    -- end of the animation, the pods start firing now
+    unpauseAnim(ship,"Launch")
+    setPauseTime(ship,"Launch",newTime)
+end
+
+VGR_INFILTRATORFRIGATE_CaptureInActive_OnSet = function(ship)
+    startTime = 0
+
+    -- play the launch anim through to completion but hide a few things to make it look ok
+    -- if we're half way through the launch we want to start the reverse at the right point
+    if(isAnimRunning(ship, "Launch") ~= 0) then
+        startTime = getTime(ship, "Launch")
+        stopAnim(ship, "Launch")
+
+        if(startTime < 2.899) then
+            -- no pods are hidden - hide all the replacement pods
+            setJointVisible(ship,"Pod1_Root",0)
+            setJointVisible(ship,"Pod2_Root",0)
+            setJointVisible(ship,"Pod3_Root",0)
+            setJointVisible(ship,"Pod4_Root",0)
+        elseif(startTime < 3.199) then
+            -- pod 8 is hidden, hide all but pod 2
+            setJointVisible(ship,"Pod1_Root",0)
+            setJointVisible(ship,"Pod3_Root",0)
+            setJointVisible(ship,"Pod4_Root",0)
+        elseif(startTime < 3.499) then
+            -- pod 7 is hidden, hide 3 and 1
+            setJointVisible(ship,"Pod1_Root",0)
+            setJointVisible(ship,"Pod3_Root",0)
+        elseif(startTime < 3.799) then
+            -- pod 6 is hidden, hide 1
+            setJointVisible(ship,"Pod1_Root",0)
+        else
+            -- all pods are hidden, don't hide any of the replacements
+        end
+
+        startAnim(ship,"Launch")
+        setTime(ship,"Launch",startTime)
+
+        if(startTime < 7.08) then
+            setPauseTime(ship,"Launch",7.1)
+        else
+            setPauseTime(ship,"Launch",7.3)
+        end
+    end
+end
+
+VGR_INFILTRATORFRIGATE_CaptureInActive_OnPause = function(ship)
+    VGR_INFILTRATORFRIGATE_CaptureActive_OnPause(ship)
+end

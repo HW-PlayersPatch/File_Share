@@ -1,0 +1,731 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("ShotShape1",1)
+	cameraCut("ShotShape1")
+	fadeSet(1)
+	speechSetDir("NIS_09")
+	wideScreenIn(0)
+at frame 1
+	SFXVolume(0.35)
+	musicStart("nis09a")
+at frame 2
+	fadeTo(0,5)
+at frame 240
+	cameraCut("ShotShape3")
+at frame 432
+	cameraCut("ShotShape4")
+at frame 726
+	cameraCut("ShotShape5")
+at frame 912
+	cameraCut("ShotShape6")
+at frame 1042
+	cameraCut("ShotShape7")
+at frame 1222
+	cameraCut("ShotShape6")
+at frame 1226
+	speechEventActor("$56090",25,2)
+at frame 1351
+	speechEventActor("$56091",25,2)
+at frame 1382
+	cameraCut("ShotShape7")
+at frame 1440
+	speechEventActor("$56093",25,2)
+at frame 1502
+	cameraCut("ShotShape6")
+at frame 1662
+	cameraCut("ShotShape8")
+at frame 1790
+	cameraCut("Shot8bShape")
+at frame 1882
+	cameraCut("ShotShape9")
+at frame 1886
+	speechEventActor("$56094",25,2)
+at frame 1958
+	speechEventActor("$56095",25,2)
+at frame 2086
+	cameraLeave()
+	musicStartAtEnd("staging/staging_01")
+	nisOut(4)
+
+with |joint2|Hgn_Dreadnaught1
+{
+	at frame 0
+		remainAtEnd("Dreadnaught")
+		setInHyperspace()
+		setPlayer(0)
+	at frame 180
+		hyperspaceIn()
+	at frame 1492
+		startEffectEvent("Weapon_Triton2")
+	at frame 1840
+		health(0.2)
+	at frame 2086
+		keepMovingAtEnd()
+}
+
+with |joint7|Vgr_AssaultFrigate1
+{
+	at frame 0
+		remainAtEnd("vaygr_ambush")
+		setPlayer(1)
+	at frame 880
+		attack("|joint2|Hgn_Dreadnaught1")
+	at frame 2086
+		keepMovingAtEnd("dreadnaught")
+}
+
+with |joint1|Vgr_BattleCruiser
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1030
+		attack("|joint2|Hgn_Dreadnaught1")
+	at frame 1620
+		death("death")
+}
+
+with |joint7|Vgr_Destroyer
+{
+	at frame 0
+		remainAtEnd("vaygr_ambush")
+		setPlayer(1)
+	at frame 1112
+		attack("|joint2|Hgn_Dreadnaught1")
+	at frame 2086
+		keepMovingAtEnd("dreadnaught")
+}
+
+with |joint7|Vgr_HeavyMissileFrigate1
+{
+	at frame 0
+		remainAtEnd("vaygr_ambush")
+		setPlayer(1)
+	at frame 840
+		attack("|joint2|Hgn_Dreadnaught1")
+	at frame 2086
+		keepMovingAtEnd("dreadnaught")
+}
+
+with |strike_craft_joint1|Vgr_LanceFighter
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint1|Vgr_LanceFighter1
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint1|Vgr_LanceFighter2
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint1|Vgr_LanceFighter3
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint1|Vgr_LanceFighter4
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint2|Vgr_LanceFighter5
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint2|Vgr_LanceFighter6
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint2|Vgr_LanceFighter7
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |strike_craft_joint2|Vgr_LanceFighter8
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |Shot5_root|Vgr_LanceFighter9
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 731
+		hide()
+	at frame 732
+		show()
+	at frame 752
+		startEffectEvent("Dmg")
+	at frame 782
+		death("deathtrail")
+}
+
+with |Shot5_root|Vgr_LanceFighter10
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 731
+		hide()
+	at frame 732
+		show()
+	at frame 734
+		startEffectEvent("Dmg")
+	at frame 760
+		death("deathtrail")
+}
+
+with |Shot5_root|Vgr_LanceFighter11
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 731
+		hide()
+	at frame 732
+		show()
+	at frame 808
+		startEffectEvent("Dmg")
+	at frame 838
+		death("deathtrail")
+}
+
+with |Shot5_root|Vgr_LanceFighter12
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 731
+		hide()
+	at frame 732
+		show()
+	at frame 870
+		startEffectEvent("Dmg")
+	at frame 894
+		death("deathtrail")
+}
+
+with |joint3|Vgr_Scout
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |joint3|Vgr_Scout1
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |joint3|Vgr_Scout2
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |joint4|Vgr_Scout3
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 558
+		startEffectEvent("Dmg")
+	at frame 588
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint4|Vgr_Scout4
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 644
+		startEffectEvent("Dmg")
+	at frame 660
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint4|Vgr_Scout5
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 550
+		startEffectEvent("Dmg")
+	at frame 566
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |dmg_capital_explosion_combo
+{
+	at frame 1684
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_combo3
+{
+	at frame 1692
+		triggerEffect(1)
+}
+
+with |dmg_capital_explosion_large_hull_flare
+{
+	at frame 1696
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_large_hull_flare3
+{
+	at frame 1722
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_large_hull_flare_mothership
+{
+	at frame 1674
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_large_hull_flare_mothership3
+{
+	at frame 1708
+		triggerEffect(1)
+}
+
+with |dmg_capital_explosion_large_hull_flare_mothership6
+{
+	at frame 1732
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_large_mushroom
+{
+	at frame 1698
+		triggerEffect(2)
+}
+
+with |dmg_capital_explosion_large_mushroom3
+{
+	at frame 1716
+		triggerEffect(2)
+}
+
+with |dreadnaught_rapid_fire_spray
+{
+	at frame 492
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray3
+{
+	at frame 476
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray6
+{
+	at frame 468
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray9
+{
+	at frame 452
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray12
+{
+	at frame 462
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray13
+{
+	at frame 580
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray14
+{
+	at frame 620
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray15
+{
+	at frame 584
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray16
+{
+	at frame 625
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray17
+{
+	at frame 570
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray18
+{
+	at frame 548
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray21
+{
+	at frame 686
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray24
+{
+	at frame 580
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray27
+{
+	at frame 660
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray30
+{
+	at frame 492
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray33
+{
+	at frame 480
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray48
+{
+	at frame 656
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray51
+{
+	at frame 692
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray54
+{
+	at frame 610
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray57
+{
+	at frame 660
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray60
+{
+	at frame 488
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray63
+{
+	at frame 456
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray66
+{
+	at frame 568
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray69
+{
+	at frame 668
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray72
+{
+	at frame 678
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray75
+{
+	at frame 518
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray78
+{
+	at frame 678
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray81
+{
+	at frame 686
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray84
+{
+	at frame 702
+		triggerEffect(1)
+}
+
+with |dreadnaught_rapid_fire_spray87
+{
+	at frame 478
+		triggerEffect(1)
+}
+
+with |strike_craft_joint2|group1
+{
+	at frame 0
+		setPlayer(1)
+	at frame 240
+		show()
+	at frame 241
+		hide()
+}
+
+with |joint5|group2
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 512
+		startEffectEvent("Dmg")
+	at frame 572
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint5|group3
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 672
+		startEffectEvent("Dmg")
+	at frame 700
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint5|group4
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 656
+		startEffectEvent("Dmg")
+	at frame 684
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint5|group5
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 731
+		show()
+	at frame 732
+		hide()
+}
+
+with |joint5|group6
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 731
+		show()
+	at frame 732
+		hide()
+}
+
+with |joint6|group7
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 732
+		hide()
+}
+
+with |joint6|group8
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 732
+		hide()
+}
+
+with |joint6|group9
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 684
+		startEffectEvent("Dmg")
+	at frame 720
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint6|group10
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 576
+		startEffectEvent("Dmg")
+	at frame 604
+		death("deathtrail")
+	at frame 732
+		hide()
+}
+
+with |joint6|group11
+{
+	at frame 0
+		setPlayer(1)
+	at frame 1
+		hide()
+	at frame 410
+		show()
+	at frame 592
+		startEffectEvent("Dmg")
+	at frame 632
+		death("deathtrail")
+	at frame 732
+		hide()
+}

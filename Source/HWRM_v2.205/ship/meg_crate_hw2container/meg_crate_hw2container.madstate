@@ -1,0 +1,5 @@
+MEG_CRATE_HW2CONTAINER_Normal_OnSet = function(ship)
+    startAnim(ship, "SPIN")
+		--startEffect(ship, "amb")
+    setLoopCount(ship, "SPIN", 100000)   --infinite looping
+end

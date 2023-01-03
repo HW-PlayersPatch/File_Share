@@ -1,0 +1,16 @@
+
+-- formats:
+-- SetFireEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetBulletEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetHitEffect(NewWeaponFireType, <filename>, real32 distance)
+-- the 'distance' variable sets the max distance to which this effect is visible.
+
+hitfx = "hit_generic"
+bulletfx = "kinetic_small_bullet"
+nopenetratefx = "hit_generic"
+deathtype = "deathCannon"
+scartype = "Bullet/Bullet"
+fire_sfx = "WEAPON/FRIGATE/FIRE/VWEAPON_FIRIGATE_FLECHETTE_REPEATER_SHELL"
+hit_sfx = "weapon/fighter/impact/WEAPON_FIGHTER_Pea_shooter_Hit"
+firefx = "muzzle_flash_combo_hd"
+hit_clamp = {1.0, 1.0}

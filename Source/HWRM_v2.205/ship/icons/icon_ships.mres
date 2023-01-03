@@ -1,0 +1,6 @@
+baseRes = 800
+
+res800 = "DATA:/Ship/Icons/icon_ships_800.dds"
+res1024 = "DATA:/Ship/Icons/icon_ships_1024.dds"
+res1280 = "DATA:/Ship/Icons/icon_ships_1280.dds"
+res1600 = "DATA:/Ship/Icons/icon_ships_1600.tga"

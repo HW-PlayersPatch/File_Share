@@ -1,0 +1,113 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "marker_main" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.5" },
+        },
+        event2 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.1" },
+            { "marker", "marker1" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.8" },
+        },
+        event3 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.2" },
+            { "marker", "marker1_2" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.6" },
+        },
+        event4 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.3" },
+            { "marker", "marker1_3" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.65" },
+        },
+        event5 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.5" },
+            { "marker", "marker1_4" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.35" },
+        },
+        event6 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.6" },
+            { "marker", "marker1_5" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.3" },
+        },
+        event7 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.65" },
+            { "marker", "marker1_6" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.35" },
+        },
+        event8 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.65" },
+            { "marker", "marker1_7" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.22" },
+        },
+        event9 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.7" },
+            { "marker", "marker1_8" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.2" },
+        },
+        event10 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.4" },
+            { "marker", "marker2_1" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.7" },
+        },
+        event11 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.44" },
+            { "marker", "marker2_2" },
+            { "fx", "cloudexplode_ring" },
+            { "fx_scale", "0.4" },
+        },
+        event12 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.5" },
+            { "marker", "mnarker2_3" },
+        },
+    }
+}

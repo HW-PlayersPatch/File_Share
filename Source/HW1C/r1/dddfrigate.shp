@@ -1,0 +1,178 @@
+[Drone Frigate]
+
+;Source Files
+;=----------=
+LODFile                             DDDFrigate.lod
+pMexData                            DDDFrigate\Rl0\LOD0\DDDFrigate.mex
+
+;Ship Physics
+;=----------=
+mass                                400.0                          ; ship mass [fighter = 1]
+momentOfInertiaX                    400.0                          ; resistance to rotation
+momentOfInertiaY                    400.0                          ; [fighter = 1]
+momentOfInertiaZ                    400.0
+maxvelocity                         325.0                        ; [fighter = 1000]
+maxrot                              1.0                          ; maximum rotation speed [don't make faster than ~10]
+
+;Basic Ship Stats
+;=--------------=
+shipclass                           CLASS_Frigate
+isCapitalShip                       TRUE
+buildCost                           800                          ; resource units to build
+buildTime                           75                           ; time in seconds to build
+maxhealth                           16000                         ; hit points
+groupSize                           2                            ; size of group ships of this type tend to form
+repairTime                          10                            ; every this many seconds
+repairDamage                        150                           ; this much damage is repaired
+repairTime                          10                           ; every this many seconds
+repairDamage                        150                         ; this much damage is repaired
+repairCombatTime                    10                           ; every this many seconds
+repairCombatDamage                  15                            ; this much damage is repaired
+
+blastRadiusShockWave                1.75
+blastRadiusDamage                   275
+
+canReceiveShipsPermanently          TRUE                ; drones can dock permanently here
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            75.0                         ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          75.0
+thruststrength[TRANS_RIGHT]         75.0
+thruststrength[TRANS_LEFT]          75.0
+thruststrength[TRANS_FORWARD]       75.0
+thruststrength[TRANS_BACK]          75.0
+rotstrength[ROT_YAWLEFT]            0.25                          ; rotational acceleration (deg/s^2) [0.01 - 10]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.05
+rotstrength[ROT_PITCHDOWN]          0.05
+rotstrength[ROT_ROLLRIGHT]          0.05
+rotstrength[ROT_ROLLLEFT]           0.05
+turnspeed[TURN_YAW]                 0.3                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.3
+turnspeed[TURN_ROLL]                0.3
+
+rotateToRetaliate                   TRUE
+passiveRetaliateZone                7000.0
+
+;Weapons
+;=-----=
+;all the guns are in the drones
+
+//this causes a crash if true
+canTargetMultipleTargets            FALSE
+
+;Docking
+;
+
+NUMBER_OF_DOCK_POINTS           24
+
+; format is DockPoint           name,type,flyawaydist,mindist,maxdist,[headingdirection,updirection]  (0=up,1=right,2=forward,4=down,5=left,6=back) for direction
+DockPoint                       Drone0,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone1,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone2,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone3,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone4,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone5,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone6,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone7,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone8,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone9,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone10,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone11,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone12,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone13,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone14,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone15,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone16,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone17,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone18,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone19,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone20,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone21,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone22,LaunchPoint,200,200,1000,0,6
+DockPoint                       Drone23,LaunchPoint,200,200,1000,0,6
+
+;DockPoint                       Drone24,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone25,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone26,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone27,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone28,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone29,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone30,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone31,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone32,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone33,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone34,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone35,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone36,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone37,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone38,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone39,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone40,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone41,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone42,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone43,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone44,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone45,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone46,LaunchPoint,200,200,1000,0,6
+;DockPoint                       Drone47,LaunchPoint,200,200,1000,0,6
+
+NUMBER_OF_NAV_LIGHTS           4
+
+; format is NavLight            name, type, blinkrate (in seconds), size (in meters), min LOD, texture name
+NavLight                        antenna1,    NAVLIGHT_Default, 2, 1, 0,  7, 2, etg\textures\glow32
+NavLight                        antenna3,       NAVLIGHT_Default, 1.5, 1, 0,  7, 2, etg\textures\glow32
+NavLight                        antenna2,   NAVLIGHT_Default, 2, 1, 0.5,  6, 2, etg\textures\glow32
+NavLight                        bridge,       NAVLIGHT_Default, 1, 1, 0.5,  6, 2, etg\textures\glow32
+
+
+NUMBER_OF_SALVAGE_POINTS        2
+NUM_NEEDED_FOR_SALVAGE          2               ;number of ships needed to capture a craft
+NEED_BIGR1                      FALSE
+NEED_BIGR2                      TRUE
+WILL_FIT_CARRIER                TRUE
+
+;       format:                    name,type
+SalvagePoint                       Point1,AttachPoint
+SalvagePoint                       Point2,AttachPoint
+
+
+;Explosions
+;=--------=
+explosionType                       ET_FrigateExplosion
+
+;AI
+;=--=
+
+bulletRange[0]                      3000.0      ; explicitly set bulletRange for DDDFrigate because it doesn't have guns
+bulletRange[1]                      3000.0
+bulletRange[2]                      3000.0
+minBulletRange[0]                   1000.0
+minBulletRange[1]                   1000.0
+minBulletRange[2]                   1000.0
+attackRange                         3000.0
+tooCloseRange                       200.0
+internalRegenerateRate              25.0
+externalRegenerateRate              45.0
+droneDeploymentRange                800.0      ; Range from ship's centre point drones will deploy to.
+
+
+
+;Scaling effects
+;=--------=
+N-LIPS                              0.0001                   ; Max value for Interceptors 0.0005
+scaleFactor                         1.0                      ; Used for debugging
+
+
+;Engine Glow
+;=---------=
+trailWidth          60.0
+trailHeight        105.0
+trailLength        90.0
+trailStyle           3
+trailScaleCap        0.00025
+
+minimumZoomDistance                 230
+
+Overlay_Selection_Scalar            1.1         ; scale the tactical overlay by this amount

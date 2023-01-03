@@ -1,0 +1,11 @@
+--=============================================================================
+--    Name    : Meg_BalcoraGate.madStates
+--    Purpose : Animation state data.
+--
+--Created 3/19/2003 by lmoloney
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+MEG_BALCORAGATE_Normal_OnSet = function(ship)
+    startAnim(ship, "RotateInnerRing")
+    setLoopCount(ship, "RotateInnerRing", 100000)   --infinite looping
+end

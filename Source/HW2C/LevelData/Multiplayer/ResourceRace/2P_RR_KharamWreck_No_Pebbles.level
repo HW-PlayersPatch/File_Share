@@ -1,0 +1,64 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+levelDesc = "$6351";
+
+maxPlayers = 2;
+
+player = {};
+player[0] = {id = 0, name = "", resources = 750, raceID = 1, startPos = 1}
+player[1] = {id = 1, name = "", resources = 750, raceID = 2, startPos = 1}
+
+GUID = { 202, 120, 212, 12, 131, 196, 88, 75, 145, 104, 43, 233, 102, 227, 238, 80 }
+
+function DetermChunk()
+	addSquadron("Meg_SajHulkPanels2", "Meg_SajHulkPanels", {1049, 6025, 0}, -1, {-8.864, 20.864, -69.471}, 0, 0)
+	addSquadron("Meg_SajHulkPanels", "Meg_SajHulkPanels", {0, 4409, 0}, -1, {76.592, 2.683, 49.123}, 0, 0)
+	addSquadron("Meg_SajHulkTurret", "Meg_SajHulkTurret", {-3944, 1273, 5088}, -1, {-58.112, -0.000, -17.069}, 0, 0)
+	addSquadron("Meg_SajHulkTurret1", "Meg_SajHulkTurret", {8349, 1869, 2731}, -1, {-8.591, 55.229, -80.346}, 0, 0)
+	addSquadron("Meg_SajHulkPanels4", "Meg_SajHulkPanels", {6083, 3309, 1529}, -1, {1.648, -40.132, -29.450}, 0, 0)
+	addSquadron("Meg_SajHulkPanels5", "Meg_SajHulkPanels", {-3433, 1459, 3050}, -1, {120.108, -38.660, -149.942}, 0, 0)
+	addSquadron("Meg_SajHulkPanels6", "Meg_SajHulkPanels", {-842, 1962, -3368}, -1, {159.446, -67.078, 37.318}, 0, 0)
+	addSquadron("Meg_SajHulkNose1", "Meg_SajHulkNose", {0, 10999, 0}, -1, {-100.154, -5.295, -19.204}, 0, 0)
+
+	addPoint("StartPos0", {-16000, 0, 0}, {0.000, 90.000, 0.000})
+	addPoint("StartPos1", {16000, 0, 0}, {0.000, -90.000, 0.000})
+
+	addAsteroid("Asteroid_3", {37, 74, -268}, 100, -46.282, 27.701, -25.926, 0)
+	addAsteroid("Asteroid_3", {-192, -113, -196}, 100, -46.282, 27.701, -25.926, 0)
+	addAsteroid("Asteroid_3", {210, 121, -36}, 100, -46.282, 27.701, -25.926, 0)
+	addAsteroid("Asteroid_3", {-189, 232, 322}, 100, 29.093, 5.394, 59.186, 0)
+	addAsteroid("Asteroid_3", {-212, 51, 79}, 100, 29.093, 5.394, 59.186, 0)
+	addAsteroid("Asteroid_3", {-111, 371, -1}, 100, 29.093, 5.394, 59.186, 0)
+	addAsteroid("Asteroid_3", {-12643, 228, 1160}, 100, 0.000, 0.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {-12787, 39, 971}, 100, 0.000, 0.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {-12632, 116, 1431}, 100, 0.000, 0.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {12643, 228, -1160}, 100, 0.000, 180.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {12787, 39, -971}, 100, 0.000, 180.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {12632, 116, -1431}, 100, 0.000, 180.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {-1160, 228, -12643}, 100, 0.000, -90.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {-971, 39, -12787}, 100, 0.000, -90.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {-1431, 116, -12632}, 100, 0.000, -90.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {1160, 228, 12643}, 100, 0.000, 90.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {971, 39, 12787}, 100, 0.000, 90.000, 0.000, 0)
+	addAsteroid("Asteroid_3", {1431, 116, 12632}, 100, 0.000, 90.000, 0.000, 0)
+
+	setWorldBoundsInner({0.00, 0.00, 0.00}, {16488.39, 16488.39, 16488.39})
+end
+
+function NonDetermChunk()
+
+	setGlareIntensity(0.000000)
+
+	fogSetActive(0)
+
+	loadBackground("m03")
+	setSensorsManagerCameraDistances(12000, 45000)
+
+	setDefaultMusic("Data:sound/music/STAGING/STAGING_05")
+end

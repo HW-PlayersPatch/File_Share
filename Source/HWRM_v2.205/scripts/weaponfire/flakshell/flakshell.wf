@@ -1,0 +1,17 @@
+
+-- formats:
+-- SetFireEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetBulletEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetHitEffect(NewWeaponFireType, <filename>, real32 distance)
+-- the 'distance' variable sets the max distance to which this effect is visible.
+
+hitfx = "dmg_cloud_spray_large"
+bulletfx = "bullet_flak_combo"
+nopenetratefx = "nopen_generic"
+deathtype = "deathCannon"
+scartype = "default"
+bullet_nlips = .0005;
+hit_nlips = .0005;
+bullet_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_FLAK_CANNON_HIT"
+nopenetrate_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_FLAK_CANNON_HIT"
+hit_clamp = {1.0, 1.0}

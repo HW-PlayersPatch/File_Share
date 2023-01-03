@@ -1,0 +1,16 @@
+
+-- formats:
+-- SetFireEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetBulletEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetHitEffect(NewWeaponFireType, <filename>, real32 distance)
+-- the 'distance' variable sets the max distance to which this effect is visible.
+
+hitfx = "plasma_hit_spray"
+bulletfx = "bullet_tracer_combo_blue"
+nopenetratefx = "plasma_hit_spray"
+deathtype = "deathCannon"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+fire_sfx = "WEAPON/CARRIER/FIRE/WEAPON_CARRIER_KINETIC_AUTOGUN_SHELL"
+hit_sfx = "weapon/fighter/impact/WEAPON_FIGHTER_Pea_shooter_Hit"
+firefx = "muzzle_flash_combo_plasma_kpr_repeat"
+hit_clamp = {1.0, 1.0}

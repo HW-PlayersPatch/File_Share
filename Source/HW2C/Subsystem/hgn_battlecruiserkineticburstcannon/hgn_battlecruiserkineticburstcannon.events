@@ -1,0 +1,15 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+effects = {
+animations = {
+	animation1 = {name = "Weapon_TurretTop", length = 1, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},}, animation2 = {name = "Damage", length = 1, loop = 1, parent = "", minimum = 0, maximum = 0, markers = {""},}, animation3 = {name = "Dmg1", length = 1, loop = 1, parent = "damage", minimum = 0.9, maximum = 1, markers = {""},},},
+events = {
+	event1 = {{"anim", "Weapon_TurretTop"}, {"animtime", "0"}, {"marker", "Weapon_TurretTop_Muzzle"}, {"fx", "muzzle_flash_combo_small_capital"}, {"fx_scale", "3"},},
+	event2 = {{"anim", "Weapon_TurretTop"}, {"animtime", "0.3"}, {"marker", "Weapon_TurretTopSlave_Muzzle"}, {"fx", "muzzle_flash_combo_small_capital"}, {"fx_scale", "3"},},
+	event3 = {{"anim", "Dmg1"}, {"animtime", "-1"}, {"marker", "Root"}, {"fx", "dmg_damage_subsystem_spray"}, {"fx_scale", "entity"},},},}

@@ -1,0 +1,25 @@
+TAI_INTERCEPTOR_Launched_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "Wings_Close") ~= 0) then
+        startTime = getAnimLength(ship, "Wings_Close") - getTime(ship, "Wings_Close")
+        stopAnim(ship, "Wings_Close")
+        endEffect(ship, "Wings_Close")
+    end
+    startAnim(ship, "Wings_Open")
+    startEffect(ship, "Wings_Open")
+    setTime(ship,"Wings_Open",startTime)
+    setPauseTime(ship, "Wings_Open", 1000)
+end
+
+TAI_INTERCEPTOR_Docked_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "Wings_Open") ~= 0) then
+        startTime = getAnimLength(ship, "Wings_Open") - getTime(ship, "Wings_Open")
+        stopAnim(ship, "Wings_Open")
+        endEffect(ship, "Wings_Open")
+    end
+    startAnim(ship, "Wings_Close")
+    startEffect(ship, "Wings_Close")
+    setTime(ship,"Wings_Close",startTime)
+    setPauseTime(ship, "Wings_Close", 1000)
+end

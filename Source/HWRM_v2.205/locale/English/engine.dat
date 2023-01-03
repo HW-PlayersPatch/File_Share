@@ -1,0 +1,145 @@
+filerange 1000 1237
+rangestart 1000 1237
+
+// Subtitles
+1000	Checking for update.
+1001	There is a new update available.
+1002	You have the current version.
+1003	Please choose a download location.
+1004	Downloading.
+1005	Downloading update Info.
+1006	Determining update size.
+1007	Failed to start download.
+1008	Download Complete.  Press the Apply button to install the update.
+1009	Cancelled.
+1010	Error: could not start operation.
+1011	Getting Extra Info.
+1012	Unable to download list of file mirrors.
+1013	No mirror locations available.
+1014	Invalid.
+1015	Looking up host.
+1016	Connecting.
+1017	Sending Request.
+1018	Posting.
+1019	Waiting.
+1020	Receiving status.
+1021	Receiving headers.
+1022	Receiving file.
+1023	Invalid.
+1024	Success.
+1025	Out of memory.
+1026	Buffer overflow.
+1027	Parsing of URL failed.
+1028	Host lookup failed.
+1029	Socket failed.
+1030	Connection failed.
+1031	Bad response.
+1032	Request rejected.
+1033	Unauthorized Access.
+1034	Forbidden Access.
+1035	File not found.
+1036	Server error.
+1037	File write failed.
+1038	File read failed.
+1040	Bad Patch URL.  Do not know how to handle patch of this type
+1080	Homeworld 2 can not start.  Please switch your desktop color depth to 32bit.
+1090	Homeworld 2 has detected your system has OpenGL %i.%i.  Homeworld2 plays best with OpenGL 1.3 or better support.\nPlease download new drivers for your %S %S.
+1091	Homeworld 2 has detected obsolete video card drivers.\nPlease download new drivers for your %S %S.
+1092	Homeworld 2 is currently running with a %i bit depth buffer because it could not switch to a video mode with a 24bit or better depth buffer.  This will likely cause visual artifacts.  You may be able to solve this by setting your desktop color depth to 32bit.
+1093	Homeworld 2 is currently running with a %i bit stencil buffer because it could not find a video mode with a 1bit or better depth buffer.  This will cause problems with Sensors Manager shadows.
+1094	Homeworld 2 suspects you have an AGP card running in PCI mode.  If this is the case HW2 will perform better by switching to AGP mode.
+1095	Homeworld2 has detected you are running with video drivers that have known problems and has disabled certain features to prevent crashes.  If you install newer drivers from your video hardware vendor Homeworld2 will look better and run faster.
+1096	Homeworld 2 has detected your video hardware does not support enough textures per pass and will not be able to play Homeworld 2.\nPlease upgrade your system.
+1097	Homeworld2 has detected your video hardware does not support per pixel dot products and will not be able to play Homeworld 2.\nPlease upgrade your system.
+1098	Homeworld 2 has detected your video hardware does not support cube maps and will not be able to play Homeworld 2.\nPlease upgrade your system.
+1099	Homeworld 2 suspects your hardware does not support destination alpha and will not run Homeworld 2 correctly.\nPlease try running in a 32bit color mode.
+1100	Hiigaran
+1101	Vaygr
+1102	Keeper
+1103	Bentusi
+1104	Kushan
+1105	Taiidan
+1106	Turanic Raiders
+1107	Kadeshi
+1110	Are you sure you want to exit?
+1111	You must enter a valid chat name.
+1112	An error occurred while saving.  Could not save game. Please ensure that there is enough disk space.
+1113	Invalid filename.  A filename cannot contain any of the following characters:\n\n / \\ : * ? \" < > |\n
+1114	Are you sure you want to overwrite the existing saved game?
+1115	An error occurred while loading.  Could not load game.
+1116	Invalid filename. File with that name does not exist.
+1117	Are you sure you want to quit your current game?
+1118	File loaded but wasn't closed properly.  Starting to player the recorded game.
+1119	File size error. Could not play recorded game.
+1120	Invalid filename. Could not play recorded game.
+1121	Wrong version.  This recorded game is no longer supported.
+1122	Are you sure you want to delete the selected game?
+1123	Error deleting file.
+1124	You must create a user profile to continue.
+1125	Player profile could not be created. A profile with that name already exists.
+1126	You must enter a valid profile name.
+1127	You are running a different version of Homeworld Remastered than the host.  To join a game you need to be running exactly the same version as the host.\n\nFor information on where to find different versions of Homeworld Remastered, you should contact the host of the game or visit www.homeworldremastered.com.
+1128	Are you sure you want to restart? Your current game will be lost.
+1129	There are no more tutorials. Do you want to return to the main menu instead?
+1130	Are you sure you want to retire your entire fleet? The current game will be lost.
+1131	Are you sure you want to reset all missions? All mission progress will be lost.
+1132	Are you sure you want to delete the selected profile? All saved games and player information for this profile will be lost.
+1133	Are you sure you want to replace your %ls subsystem with this one?
+1134	Are you sure you want to restore the default controls?
+1135	<c=FFD800>%ls</c> is already assigned to  <c=FFD800>%ls</c>\n\nDo you want to replace it?
+1136	<c=FFD800>%ls</c> is already assigned to  <c=FFD800>%ls</c> and is not assignable.
+1137	Are you sure you want to reset the selected key?
+1138	Unassigned.
+1139	Press Key...
+1140	Are you sure you want to restore the default player settings?  All team colors will be lost.
+1141	Game passwords do not match, please confirm password.
+1142	Homeworld must shut down to install the update.\n\nPress Yes to continue with the installation or press No to return to the Main Menu.
+1143	Your nickname contains characters that are invalid while playing multiplayer through online multiplayer they will not display correctly.\nValid characters are: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789[]\\`_^{|}-"
+1144	Are you sure you want to restore the default options?
+1145	This command %ls can only be assigned to a single key.
+1146	Unable to load your saved game. The saved game is either corrupted or from a different version of Homeworld Remastered.
+1147	Howeworld Remastered must be restarted for your resolution changes to take effect.  Would you like to restart Homeworld 2 now?
+1200	Host not found.
+1201	Invalid address.
+1202	Invalid password.
+1203	Network unavailable.
+1204	Game is full.
+1205	Different version/mods.
+1206	Out of sync.
+1207	Unknown level.
+1208	The host has left the game.
+1209	Waiting for other players to finish loading...
+1210	Downloading content...
+1211	You were kicked out of the game.
+1212	has left the game.
+1220	*ESRB Notice: Game Experience May Change During Online Play.
+1221	v%d.%d
+1222	AutoSave
+1223	You are running with "-mod" command line arguments that are not compatible with the host. You must have the same versions of the files ran with "-mod" for your game to properly run. Please contact the host of the game or get the latest version of the mod you are trying to run to ensure compatibility.
+1230	Unable to connect to online multiplayer client.
+1231	%ls has been destroyed!
+1232	You have been defeated by %ls!
+1233	
+1234	
+1235	
+1050	The current game has more players than the max number of player slots in (%s).  If you continue, the players in slots being removed will be placed in open or CPU slots.  They will be removed from the game if no slots are available.  Proceed?
+1051	Network has been disconnected
+1052	Do you want to keep these display settings?
+1053	These settings may cause the game to become unstable.  Proceed?
+1213	Game has already started or is closed.
+1214	Your system does not meet the minimum requirements for OpenGL to run this game. The minimum OpenGL version required is
+1215	Your system reports OpenGL version
+1216	Please update your video card driver to see if a more recent driver has better support for OpenGL. If you choose to continue to launch the game, it could crash.
+1217	Out of Memory - Please consider lowing your Texture Detail or Texture Quality settings.
+1218	General Failure
+1219	Access Violation
+1224	OpenGL Failed to Load
+1225	Restore Reamstered Profile Defaults
+1226	The next time you start Homeworld Remastered, your profile settings will be set to default.
+1227	You will not lose any save game data.
+1228	A valid OpenGL 3.3 context could not be acquired.  
+1229	Ensure your devices support OpenGL 3.3, all drivers are up to date, and your device is selected for this game.
+1236	The game has failed due to an Out Of Memory condition.  
+1237	Please consider lowering your Texture Quality or Texture Size settings.
+
+rangeend

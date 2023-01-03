@@ -1,0 +1,1362 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 45,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.25,
+            maximum = 1,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "dmg02",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.5,
+            maximum = 1,
+            markers = {""}
+        },
+        animation4 =
+        {
+            name = "dmg03",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        },
+        animation5 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+		animation6 =
+		{
+			name = "FXPreload",
+			length = 1,
+			loop = 0,
+			parent = "",
+			minimum = 0,
+            maximum = 0,
+            markers = {""}
+		},
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "marker64" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/ACCENTS" },
+            { "fx_scale", "5" },
+        },
+        event2 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.005" },
+            { "marker", "marker65" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.01" },
+            { "marker", "marker66" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "11" },
+        },
+        event4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.015" },
+            { "marker", "marker67" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "9" },
+        },
+        event5 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.008" },
+            { "marker", "marker60" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/ACCENTS" },
+            { "fx_scale", "5" },
+        },
+        event6 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.016" },
+            { "marker", "marker61" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event7 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.02" },
+            { "marker", "marker62" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "8" },
+        },
+        event8 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.025" },
+            { "marker", "marker63" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "9" },
+        },
+        event9 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.03" },
+            { "marker", "marker32" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "4" },
+        },
+        event10 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.325" },
+            { "marker", "marker77" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "6" },
+        },
+        event11 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.035" },
+            { "marker", "marker78" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event12 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.04" },
+            { "marker", "marker79" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event13 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.05" },
+            { "marker", "marker51" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "5" },
+        },
+        event14 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.06" },
+            { "marker", "marker52" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event15 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.065" },
+            { "marker", "marker53" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "11" },
+        },
+        event16 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.072" },
+            { "marker", "marker50" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "12" },
+        },
+        event17 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.06" },
+            { "marker", "marker54" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event18 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.065" },
+            { "marker", "marker55" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "4" },
+        },
+        event19 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.07" },
+            { "marker", "marker56" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "6" },
+        },
+        event20 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.075" },
+            { "marker", "marker57" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "7" },
+        },
+        event21 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "marker62" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "6" },
+        },
+        event22 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.11" },
+            { "marker", "marker63" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "5" },
+        },
+        event23 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.115" },
+            { "marker", "marker60" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event24 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.119" },
+            { "marker", "marker61" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "6" },
+        },
+        event25 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.122" },
+            { "marker", "marker59" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "12" },
+        },
+        event26 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.22" },
+            { "marker", "marker77" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event27 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.23" },
+            { "marker", "marker78" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "20" },
+        },
+        event28 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.235" },
+            { "marker", "marker79" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "11" },
+        },
+        event29 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.17" },
+            { "marker", "marker80" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "8.5" },
+        },
+        event30 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.175" },
+            { "marker", "marker44" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event31 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.2" },
+            { "marker", "marker47" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event32 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.21" },
+            { "marker", "marker43" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event33 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.215" },
+            { "marker", "marker46" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event34 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.22" },
+            { "marker", "marker11" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event35 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.33" },
+            { "marker", "marker5" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event36 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "marker6" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event37 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.355" },
+            { "marker", "marker7" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event38 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.365" },
+            { "marker", "marker8" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event39 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.42" },
+            { "marker", "marker6" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event40 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.425" },
+            { "marker", "marker8" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "12" },
+        },
+        event41 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.2" },
+            { "marker", "marker45" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event42 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.21" },
+            { "marker", "marker22" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event43 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.215" },
+            { "marker", "marker23" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event44 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.24" },
+            { "marker", "marker62" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event45 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.25" },
+            { "marker", "marker63" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event46 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.26" },
+            { "marker", "marker64" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event47 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.275" },
+            { "marker", "marker65" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event48 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.28" },
+            { "marker", "marker44" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event49 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.29" },
+            { "marker", "marker41" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event50 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.3" },
+            { "marker", "marker42" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event51 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.31" },
+            { "marker", "marker30" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event52 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.33" },
+            { "marker", "marker73" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "9" },
+        },
+        event53 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.34" },
+            { "marker", "marker46" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "10" },
+        },
+        event54 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.345" },
+            { "marker", "marker11" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "15" },
+        },
+        event55 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "marker45" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "20" },
+        },
+        event56 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.38" },
+            { "marker", "marker43" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "20" },
+        },
+        event57 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.39" },
+            { "marker", "marker47" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "12" },
+        },
+        event58 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "marker44" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event59 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.415" },
+            { "marker", "marker21" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "8" },
+        },
+        event60 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.43" },
+            { "marker", "marker27" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event61 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.435" },
+            { "marker", "marker28" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "11" },
+        },
+        event62 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.44" },
+            { "marker", "marker29" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event63 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.445" },
+            { "marker", "marker30" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "13" },
+        },
+        event64 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.43" },
+            { "marker", "marker33" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "7" },
+        },
+        event65 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.435" },
+            { "marker", "marker34" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "11" },
+        },
+        event66 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.44" },
+            { "marker", "marker35" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event67 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.445" },
+            { "marker", "marker36" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "13" },
+        },
+        event68 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.47" },
+            { "marker", "marker30" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event69 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.48" },
+            { "marker", "marker29" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "6" },
+        },
+        event70 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.49" },
+            { "marker", "marker28" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event71 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.495" },
+            { "marker", "marker27" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "15" },
+        },
+        event72 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.505" },
+            { "marker", "marker26" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "10" },
+        },
+        event73 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.515" },
+            { "marker", "marker25" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "11" },
+        },
+        event74 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.53" },
+            { "marker", "marker24" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "8" },
+        },
+        event75 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.54" },
+            { "marker", "marker21" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "13" },
+        },
+        event76 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.48" },
+            { "marker", "marker13" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event77 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.49" },
+            { "marker", "marker14" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event78 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.5" },
+            { "marker", "marker15" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event79 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.51" },
+            { "marker", "marker16" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "15" },
+        },
+        event80 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.515" },
+            { "marker", "marker17" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "10" },
+        },
+        event81 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.52" },
+            { "marker", "marker18" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "11" },
+        },
+        event82 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.53" },
+            { "marker", "marker20" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "8" },
+        },
+        event83 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.545" },
+            { "marker", "marker19" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "13" },
+        },
+        event84 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.47" },
+            { "marker", "marker8" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "8" },
+        },
+        event85 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.475" },
+            { "marker", "marker9" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "5" },
+        },
+        event86 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.48" },
+            { "marker", "marker10" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "3" },
+        },
+        event87 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.485" },
+            { "marker", "marker13" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "4" },
+        },
+        event88 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.57" },
+            { "marker", "marker13" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "9" },
+        },
+        event89 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.58" },
+            { "marker", "marker14" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event90 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.59" },
+            { "marker", "marker15" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "6" },
+        },
+        event91 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.6" },
+            { "marker", "marker16" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "15" },
+        },
+        event92 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.59" },
+            { "marker", "marker22" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "18" },
+        },
+        event93 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.595" },
+            { "marker", "marker24" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "12" },
+        },
+        event94 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.6" },
+            { "marker", "marker25" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "16" },
+        },
+        event95 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.61" },
+            { "marker", "marker26" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event96 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.62" },
+            { "marker", "marker27" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "20" },
+        },
+        event97 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.65" },
+            { "marker", "marker22" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "12" },
+        },
+        event98 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.66" },
+            { "marker", "marker23" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "16" },
+        },
+        event99 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.67" },
+            { "marker", "marker32" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event100 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.685" },
+            { "marker", "marker17" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "20" },
+        },
+        event101 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.73" },
+            { "marker", "marker1" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "12" },
+        },
+        event102 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.735" },
+            { "marker", "marker2" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "15" },
+        },
+        event103 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.74" },
+            { "marker", "marker3" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "20" },
+        },
+        event104 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.75" },
+            { "marker", "marker4" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "18" },
+        },
+        event105 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.755" },
+            { "marker", "marker23" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "fx_scale", "8" },
+        },
+        event106 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.74" },
+            { "marker", "marker80" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "12" },
+        },
+        event107 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.75" },
+            { "marker", "marker81" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "10" },
+        },
+        event108 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.77" },
+            { "marker", "marker82" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "20" },
+        },
+        event109 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.8" },
+            { "marker", "marker83" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "15" },
+        },
+        event110 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.84" },
+            { "marker", "marker74" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event111 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "marker75" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event112 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.855" },
+            { "marker", "marker76" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "16" },
+        },
+        event113 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.86" },
+            { "marker", "marker77" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "9" },
+        },
+        event114 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "marker10" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event115 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.868" },
+            { "marker", "marker46" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "fx_scale", "13" },
+        },
+        event116 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.87" },
+            { "marker", "marker11" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "19" },
+        },
+        event117 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.875" },
+            { "marker", "marker45" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "13" },
+        },
+        event118 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.85" },
+            { "marker", "marker50" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event119 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.868" },
+            { "marker", "marker51" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event120 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.87" },
+            { "marker", "marker52" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "18" },
+        },
+        event121 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.875" },
+            { "marker", "marker53" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "9" },
+        },
+        event122 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.88" },
+            { "marker", "marker80" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event123 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.885" },
+            { "marker", "marker81" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event124 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.89" },
+            { "marker", "marker82" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "18" },
+        },
+        event125 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.9" },
+            { "marker", "marker83" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "9" },
+        },
+        event126 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.88" },
+            { "marker", "marker64" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "10" },
+        },
+        event127 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.885" },
+            { "marker", "marker65" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event128 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.89" },
+            { "marker", "marker66" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "18" },
+        },
+        event129 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.9" },
+            { "marker", "marker67" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "9" },
+        },
+        event130 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.92" },
+            { "marker", "marker75" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "15" },
+        },
+        event131 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.93" },
+            { "marker", "marker76" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "13" },
+        },
+        event132 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.935" },
+            { "marker", "marker77" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "20" },
+        },
+        event133 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.94" },
+            { "marker", "marker78" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "25" },
+        },
+        event134 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.935" },
+            { "marker", "marker77" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "20" },
+        },
+        event135 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.95" },
+            { "marker", "marker50" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "25" },
+        },
+        event136 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.96" },
+            { "marker", "marker51" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "20" },
+        },
+        event137 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.97" },
+            { "marker", "marker52" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "25" },
+        },
+        event138 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.98" },
+            { "marker", "marker53" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "20" },
+        },
+        event139 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.91" },
+            { "marker", "marker54" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "25" },
+        },
+        event140 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.93" },
+            { "marker", "marker67" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+        },
+        event141 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.9325" },
+            { "marker", "marker68" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_FIREY" },
+            { "fx_scale", "25" },
+        },
+        event142 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.94" },
+            { "marker", "marker69" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "15" },
+        },
+        event143 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.95" },
+            { "marker", "marker70" },
+            { "fx", "dmg_capital_explosion_large_mushroom" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "15" },
+        },
+        event144 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.98" },
+            { "marker", "Root" },
+            { "fx", "dmg_capital_explosion_combo" },
+            { "fx_scale", "250" },
+            { "fx_sm", "on" },
+        },
+        event145 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.98" },
+            { "marker", "Root" },
+            { "fx", "DMG_MASSIVE_MESH_SPHERE_combo_bentusi" },
+            { "fx_scale", "5" },
+            { "fx_sm", "on" },
+        },
+        event146 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.55" },
+            { "marker", "markerS1" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "25" },
+        },
+        event147 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.57" },
+            { "marker", "markerS2" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "30" },
+        },
+        event148 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.55" },
+            { "marker", "markerS1" },
+            { "fx", "DMG_PANEL_CHUNKS_SPRAY_bentusi" },
+            { "fx_scale", "10" },
+        },
+        event149 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.57" },
+            { "marker", "markerS2" },
+            { "fx", "DMG_PANEL_CHUNKS_SPRAY_bentusi" },
+            { "sound", "EXPLOSION/LARGE/ETG_EXPLODE_LARGE_PLASMA" },
+            { "fx_scale", "15" },
+        },
+        event150 =
+        {
+            { "anim", "dmg01" },
+            { "animtime", "-1" },
+            { "marker", "marker1,marker2,marker3,marker4,marker5,marker6,marker7,marker8,marker9,marker10" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+        },
+        event151 =
+        {
+            { "anim", "dmg02" },
+            { "animtime", "-1" },
+            { "marker", "marker11,marker12,marker13,marker14,marker15,marker16,marker17,marker18,marker19,marker20" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+        },
+        event152 =
+        {
+            { "anim", "dmg03" },
+            { "animtime", "-1" },
+            { "marker", "marker20,marker21,marker22,marker23,marker24,marker25,marker26,marker27,marker28,marker29,marker30" },
+            { "fx", "dmg_damage_puff_combo,dmg_damage_cloud_puff_spray,dmg_damage_spark_combo,dmg_damage_puff_combo" },
+            { "sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY" },
+        },
+        event153 =
+        {
+            { "anim", "FXPreload" }, -- I am a dummy that forces effects to be loaded to prevent a crash in the NIS
+            { "animtime", "-1" },
+            { "marker", "root" },
+            { "fx", "dmg_panel_chunks_large_spray_bentusi" },
+        },
+    }
+}

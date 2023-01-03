@@ -1,0 +1,21 @@
+
+-- formats: 
+-- hitfx = "name"
+-- bulletfx = "name"
+-- nopenetratefx = "name"
+-- missfx = "name"
+-- anticipatefx = "name"
+-- deathtype = "name"
+-- component = "name"
+
+
+hitfx = "ion_repairflash"
+bulletfx = "repair_beam_frigate"
+nopenetratefx = "ion_repairflash"
+blowthroughfx = "blowthrough_generic"
+deathtype = "deathBeam"
+scartype = "iontrail"
+
+hit_sfx = "SP_ELEMENTS/HGN_RESOURCECOLLECTOR_REPAIRING"
+nopentrate_sfx = "SP_ELEMENTS/HGN_RESOURCECOLLECTOR_REPAIRING"
+hit_clamp = {0.5, 1.25}

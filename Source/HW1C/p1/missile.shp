@@ -1,0 +1,67 @@
+[Missile]
+LODFile                             Missile.lod
+pMexData                            Missile\Rl0\LOD0\Missile.mex
+mass                                0.5
+momentOfInertiaX                    0.5
+momentOfInertiaY                    0.5
+momentOfInertiaZ                    0.5
+maxvelocity                         1150.0
+maxrot                              10.0
+maxhealth                           30                         ; hit points
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            1600.0
+thruststrength[TRANS_DOWN]          1600.0
+thruststrength[TRANS_RIGHT]         1600.0
+thruststrength[TRANS_LEFT]          1600.0
+thruststrength[TRANS_FORWARD]       1650.0
+thruststrength[TRANS_BACK]          1600.0
+rotstrength[ROT_YAWLEFT]            120.0
+rotstrength[ROT_YAWRIGHT]           120.0
+rotstrength[ROT_PITCHUP]            120.0
+rotstrength[ROT_PITCHDOWN]          120.0
+rotstrength[ROT_ROLLRIGHT]          120.0
+rotstrength[ROT_ROLLLEFT]           120.0
+turnspeed[TURN_YAW]                   2.8
+turnspeed[TURN_PITCH]                 2.8
+turnspeed[TURN_ROLL]                  2.8
+
+
+
+;Ship Trails
+;=---------=
+trailSegments                       10
+trailGranularity                    2
+trailColor                          0, 0, 0, 0, 0           ;grey team
+trailColor                          0, 1, 238, 238, 238
+trailColor                          0, 4, 141, 106, 87
+trailColor                          0, 9, 0, 0, 0
+trailColor                          1, 0, 0, 0, 0           ;red team
+trailColor                          1, 1, 225, 124, 33
+trailColor                          1, 4, 146, 0, 0
+trailColor                          1, 9, 0, 0, 0
+trailColor                          2, 0, 0, 0, 0           ;blue team
+trailColor                          2, 1, 11, 255, 255
+trailColor                          2, 4, 51, 0, 243
+trailColor                          2, 9, 0, 0, 0
+trailColor                          3, 0, 0, 0, 0           ;green team
+trailColor                          3, 1, 201, 254, 39
+trailColor                          3, 4, 0, 84, 4
+trailColor                          3, 9, 0, 0, 0
+trailColor                          4, 0, 0, 0, 0           ;yellow team
+trailColor                          4, 1, 255, 240, 97
+trailColor                          4, 4, 160, 124, 0
+trailColor                          4, 9, 0, 0, 0
+trailColor                          5, 0, 0, 0, 0           ;orange team
+trailColor                          5, 1, 225, 255, 11
+trailColor                          5, 4, 160, 124, 0
+trailColor                          5, 9, 0, 0, 0
+trailColor                          6, 0, 0, 0, 0           ;purple team
+trailColor                          6, 1, 255, 135, 157
+trailColor                          6, 4, 121, 0, 135
+trailColor                          6, 9, 0, 0, 0
+trailColor                          7, 0, 0, 0, 0           ;pale blue-green team
+trailColor                          7, 1, 45, 255, 149
+trailColor                          7, 4, 0, 105, 137
+trailColor                          7, 9, 0, 0, 0

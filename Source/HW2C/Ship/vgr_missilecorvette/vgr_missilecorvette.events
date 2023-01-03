@@ -1,0 +1,23 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+effects = {
+animations = {
+	animation1 = {name = "Death", length = 2, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},
+	animation2 = {name = "Fire_Missile", length = 4, loop = 0, parent = "", minimum = 0, maximum = 0, markers = {""},},},
+events = {
+	event1 = {{"anim", "Death"}, {"animtime", "0.2"}, {"marker", "marker2"}, {"fx", "dmg_cloud_explosion_large"}, {"sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY"}, {"fx_scale", "1"},},
+	event2 = {{"anim", "Death"}, {"animtime", "0"}, {"marker", "marker3"}, {"fx", "dmg_cloud_explosion_large"}, {"fx_scale", "0.6"},},
+	event3 = {{"anim", "Death"}, {"animtime", "0.5"}, {"marker", "Root"}, {"fx", "dmg_cloud_main_explosion_combo"}, {"sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY"}, {"fx_scale", "5"},},
+	event4 = {{"anim", "Death"}, {"animtime", "0.1"}, {"marker", "marker1"}, {"fx", "dmg_cloud_explosion_large"}, {"fx_scale", "1"},},
+	event5 = {{"anim", "dmg01"}, {"animtime", "-1"}, {"marker", "marker1,maker2"}, {"fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray"}, {"sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY"}, {"fx_scale", "3"}, {"fx_nlips", "on"},},
+	event6 = {{"anim", "dmg02"}, {"animtime", "-1"}, {"marker", "marker3,maker4"}, {"fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray"}, {"sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY"}, {"fx_scale", "2"}, {"fx_nlips", "on"},},
+	event7 = {{"anim", "dmg03"}, {"animtime", "-1"}, {"marker", "marker5"}, {"fx", "dmg_damage_puff_combo_frigate,dmg_damage_cloud_puff_spray"}, {"sound", "DAMAGE/SMOKE/DAMAGE_SMOKE_EXHAUST_HEAVY"}, {"fx_scale", "5"}, {"fx_nlips", "on"},},
+	event8 = {{"anim", "Fire_Missile"}, {"animtime", "0"}, {"marker", "markerMissle1"}, {"fx", "torpedo_steam_spray_inherit"}, {"sound", "WEAPON/CORVETTE/FIRE/WEAPON_VCORVETTE_TORPEDO_LAUNCH"}, {"fx_scale", "0.5"}, {"fx_nlips", "on"},},
+	event9 = {{"anim", "Fire_Missile"}, {"animtime", "0.8"}, {"marker", "markerMissle2"}, {"fx", "torpedo_steam_spray_inherit"}, {"sound", "WEAPON/CORVETTE/FIRE/WEAPON_VCORVETTE_TORPEDO_LAUNCH"}, {"fx_scale", "0.5"}, {"fx_nlips", "on"},},},}
+

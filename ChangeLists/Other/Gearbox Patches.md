@@ -5,4 +5,4 @@ Information on Gearbox's patch changes from v1.0 to v2.205 are linked below.
 https://gearboxsoftware.zendesk.com/hc/en-us/articles/205281840-Homeworld-Remastered-Collection-Update-Information
 
 ## Balance Changes
-https://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771/1
+https://web.archive.org/web/20210614220220/https://forums.gearboxsoftware.com/t/homeworld-remastered-patch-balance-changes/1501771

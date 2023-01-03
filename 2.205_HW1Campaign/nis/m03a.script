@@ -1,7 +1,0 @@
-speechSetDir("m03a")
-with Tur_P1Mothership
-{
-    at frame 90
-        death("deathCannon")
-}
-

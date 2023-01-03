@@ -1,0 +1,44 @@
+; MissionMan script, Wednesday, Aug 11 1999, 11:45:33 AM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Mission03
+
+[]
+
+MissionSphere    -1,?,ResourceSphere,2000.0,19000.0,0.0,3000.0,0.0,ResourceSphere_1.missphere
+
+Lighting    ez01
+Background    ez01,180,0
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    120000
+smZoomMin    25000
+smInitialDistance    100000
+smUniverseSizeX    55000
+smUniverseSizeZ    29000
+smUniverseSizeY    55000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    Traders,All
+ExcludeShips    R1,HeadShotAsteroid
+ExcludeShips    R2,HeadShotAsteroid
+ExcludeShips    R2, All
+IncludeShips    R1,CryoTray
+IncludeShips    R2,CryoTray
+IncludeShips    R2,Probe
+IncludeShips    R2,HeavyInterceptor
+IncludeShips    R2,AttackBomber
+IncludeShips    R2,IonCannonFrigate
+IncludeShips    R2,StandardDestroyer
+IncludeShips    R2,MissileDestroyer
+IncludeShips    R2,Carrier
+ExcludeDerelict    All
+IncludeDerelict    PlanetOfOrigin_scarred
+IncludeDerelict    Scaffold
+IncludeDerelict    PlanetOfOrigin
+AvailableColorSchemes    Derelicts, Scaffold, 0
+AvailableColorSchemes    Derelicts, Scaffold_scarred, 0
+AvailableColorSchemes    Derelicts, ScaffoldFingerA_scarred, 0
+AvailableColorSchemes    Derelicts, ScaffoldFingerB_scarred, 0

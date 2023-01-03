@@ -1,0 +1,313 @@
+[AIPlayer]
+
+AIPLAYER_UPDATE_RATE[AI_BEG]    63      ; every number of game frames to do player AI
+AIPLAYER_UPDATE_RATE[AI_INT]    31      ; value must be 0,1,3,7,15,31,63,127, etc.
+AIPLAYER_UPDATE_RATE[AI_ADV]    15
+
+ATTMAN_BUILDPRIORITY_RATIO      0.45
+DEFMAN_BUILDPRIORITY_RATIO      0.10
+RESMAN_BUILDPRIORITY_RATIO      0.45      ; these 3 numbers must add to 1.0
+
+AIPLAYER_OVERKILL_FACTOR        1.4
+
+AIPLAYER_BIGOTRY[0]             100
+AIPLAYER_BIGOTRY[1]             100
+AIPLAYER_BIGOTRY[2]             100
+AIPLAYER_BIGOTRY[3]             100
+AIPLAYER_BIGOTRY[4]             100
+AIPLAYER_BIGOTRY[5]             100
+AIPLAYER_BIGOTRY[6]             100
+AIPLAYER_BIGOTRY[7]             100
+
+AIF_RESEARCH_DELAY[AI_BEG]      2
+AIF_RESEARCH_DELAY[AI_INT]      1
+AIF_RESEARCH_DELAY[AI_ADV]      0
+
+;=============================================================================
+;    Attackman tweaks:
+;=============================================================================
+;probabilities out of 255
+;below are the probabilities of all the attack types the computer player can choose
+AIA_ATTACK_FLEET_FAST_PROB[AI_BEG]      0      ;probability of attack type
+AIA_ATTACK_FLEET_FAST_RANGE[AI_BEG]     0      ;range to adjust attack probability up or down
+AIA_ATTACK_FLEET_FAST_PROB[AI_INT]      50
+AIA_ATTACK_FLEET_FAST_RANGE[AI_INT]     50
+AIA_ATTACK_FLEET_FAST_PROB[AI_ADV]      160
+AIA_ATTACK_FLEET_FAST_RANGE[AI_ADV]     50
+
+AIA_ATTACK_FLEET_GUARD_PROB[AI_BEG]     150
+AIA_ATTACK_FLEET_GUARD_RANGE[AI_BEG]    50
+AIA_ATTACK_FLEET_GUARD_PROB[AI_INT]     50
+AIA_ATTACK_FLEET_GUARD_RANGE[AI_INT]    50
+AIA_ATTACK_FLEET_GUARD_PROB[AI_ADV]     100
+AIA_ATTACK_FLEET_GUARD_RANGE[AI_ADV]    50
+
+AIA_ATTACK_FLEET_BIG_PROB[AI_BEG]       150
+AIA_ATTACK_FLEET_BIG_RANGE[AI_BEG]      50
+AIA_ATTACK_FLEET_BIG_PROB[AI_INT]       180
+AIA_ATTACK_FLEET_BIG_RANGE[AI_INT]      50
+AIA_ATTACK_FLEET_BIG_PROB[AI_ADV]       160
+AIA_ATTACK_FLEET_BIG_RANGE[AI_ADV]      50
+
+AIA_ATTACK_FLEET_HUGE_PROB[AI_BEG]      0
+AIA_ATTACK_FLEET_HUGE_RANGE[AI_BEG]     0
+AIA_ATTACK_FLEET_HUGE_PROB[AI_INT]      0
+AIA_ATTACK_FLEET_HUGE_RANGE[AI_INT]     0
+AIA_ATTACK_FLEET_HUGE_PROB[AI_ADV]      100
+AIA_ATTACK_FLEET_HUGE_RANGE[AI_ADV]     40
+
+AIA_TAKEOUT_TARGET_PROB[AI_BEG]         0
+AIA_TAKEOUT_TARGET_RANGE[AI_BEG]        0
+AIA_TAKEOUT_TARGET_PROB[AI_INT]         50
+AIA_TAKEOUT_TARGET_RANGE[AI_INT]        50
+AIA_TAKEOUT_TARGET_PROB[AI_ADV]         100
+AIA_TAKEOUT_TARGET_RANGE[AI_ADV]        50
+
+AIA_FANCY_TAKEOUT_TARGET_PROB[AI_BEG]   0
+AIA_FANCY_TAKEOUT_TARGET_RANGE[AI_BEG]  0
+AIA_FANCY_TAKEOUT_TARGET_PROB[AI_INT]   30
+AIA_FANCY_TAKEOUT_TARGET_RANGE[AI_INT]  30
+AIA_FANCY_TAKEOUT_TARGET_PROB[AI_ADV]   50
+AIA_FANCY_TAKEOUT_TARGET_RANGE[AI_ADV]  40
+
+AIA_FIGHTER_STRIKE_PROB[AI_BEG]         0
+AIA_FIGHTER_STRIKE_RANGE[AI_BEG]        0
+AIA_FIGHTER_STRIKE_PROB[AI_INT]         15
+AIA_FIGHTER_STRIKE_RANGE[AI_INT]        15
+AIA_FIGHTER_STRIKE_PROB[AI_ADV]         15
+AIA_FIGHTER_STRIKE_RANGE[AI_ADV]        15
+
+AIA_CORVETTE_STRIKE_PROB[AI_BEG]        0
+AIA_CORVETTE_STRIKE_RANGE[AI_BEG]       0
+AIA_CORVETTE_STRIKE_PROB[AI_INT]        100
+AIA_CORVETTE_STRIKE_RANGE[AI_INT]       60
+AIA_CORVETTE_STRIKE_PROB[AI_ADV]        100
+AIA_CORVETTE_STRIKE_RANGE[AI_ADV]       60
+
+AIA_FRIGATE_STRIKE_PROB[AI_BEG]         0
+AIA_FRIGATE_STRIKE_RANGE[AI_BEG]        0
+AIA_FRIGATE_STRIKE_PROB[AI_INT]         0
+AIA_FRIGATE_STRIKE_RANGE[AI_INT]        0
+AIA_FRIGATE_STRIKE_PROB[AI_ADV]         115
+AIA_FRIGATE_STRIKE_RANGE[AI_ADV]        70
+
+AIA_HARASS_BIG_PROB[AI_BEG]             0
+AIA_HARASS_BIG_RANGE[AI_BEG]            0
+AIA_HARASS_BIG_PROB[AI_INT]             0
+AIA_HARASS_BIG_RANGE[AI_INT]            0
+AIA_HARASS_BIG_PROB[AI_ADV]             90
+AIA_HARASS_BIG_RANGE[AI_ADV]            35
+
+AIA_HARASS_SMALL_PROB[AI_BEG]           0
+AIA_HARASS_SMALL_RANGE[AI_BEG]          0
+AIA_HARASS_SMALL_PROB[AI_INT]           0
+AIA_HARASS_SMALL_RANGE[AI_INT]          0
+AIA_HARASS_SMALL_PROB[AI_ADV]           0
+AIA_HARASS_SMALL_RANGE[AI_ADV]          0
+
+AIA_CAPTURE_PROB[AI_BEG]                0
+AIA_CAPTURE_RANGE[AI_BEG]               0
+AIA_CAPTURE_PROB[AI_INT]                0
+AIA_CAPTURE_RANGE[AI_INT]               0
+AIA_CAPTURE_PROB[AI_ADV]                85
+AIA_CAPTURE_RANGE[AI_ADV]               35
+
+AIA_MINE_PROB[AI_BEG]                   0
+AIA_MINE_RANGE[AI_BEG]                  0
+AIA_MINE_PROB[AI_INT]                   20
+AIA_MINE_RANGE[AI_INT]                  20
+AIA_MINE_PROB[AI_ADV]                   90
+AIA_MINE_RANGE[AI_ADV]                  30
+
+AIA_CLOAKGEN_PROB[AI_BEG]               0
+AIA_CLOAKGEN_RANGE[AI_BEG]              0
+AIA_CLOAKGEN_PROB[AI_INT]               0
+AIA_CLOAKGEN_RANGE[AI_INT]              0
+AIA_CLOAKGEN_PROB[AI_ADV]               60
+AIA_CLOAKGEN_RANGE[AI_ADV]              30
+
+AIA_GRAVWELL_PROB[AI_BEG]               0
+AIA_GRAVWELL_RANGE[AI_BEG]              0
+AIA_GRAVWELL_PROB[AI_INT]               0
+AIA_GRAVWELL_RANGE[AI_INT]              0
+AIA_GRAVWELL_PROB[AI_ADV]               60
+AIA_GRAVWELL_RANGE[AI_ADV]              30
+
+
+;probabilities out of 100
+AIA_KAMIKAZE_PROB[AI_BEG]       0
+AIA_KAMIKAZE_RANGE[AI_BEG]      0
+AIA_KAMIKAZE_PROB[AI_INT]       0
+AIA_KAMIKAZE_RANGE[AI_INT]      0
+AIA_KAMIKAZE_PROB[AI_ADV]       20
+AIA_KAMIKAZE_RANGE[AI_ADV]      5
+
+AIA_NUM_ARMADA_TEAMS[AI_BEG]            0
+AIA_NUM_ARMADA_TEAMS[AI_INT]            1
+AIA_NUM_ARMADA_TEAMS[AI_ADV]            2
+
+AIA_ENEMYBLOBS_PER_RECON      7
+
+
+;=============================================================================
+;    Defenseman tweaks:
+;=============================================================================
+AID_MOTHERSHIP_DEFENSE_FLEET_STRENGTH           1.4     ;strength of defend mothership fleet to determine of ships are needed for defense
+AID_RESCON_ASF_DEFENDABLE_MULTIPLIER            2       ;how much more a resource controller or advance support frigate count towards total defendable ships
+AID_SPHERE_OF_INFLUENCE_INTERVAL                15      ;how often the sphere of influence gets recalculated (must be 2^n - 1)
+AID_ROVING_DEFENSE_LOW_COUNT_CUTOFF             3       ;at what point (how many guard teams) the roving defenses get created at the slow rate
+AID_ROVING_DEFENSE_LOW_COUNT_DIVISOR            4       ;number of defendable ships per guard team at low rate
+AID_ROVING_DEFENSE_HIGH_COUNT_DIVISOR           2       ;number of defendable ships per guard team at high rate
+AID_DEFEND_MOTHERSHIP_FUEL_LOW                  5       ;the fuel low event trigger for the defend mothership moves
+AID_MOTHERSHIP_ATTACKER_FLEET_RADIUS            3000    ;how far to look around a ship attacking the mothership for it's fleet
+
+
+;=============================================================================
+;    Team tweaks:
+;=============================================================================
+AIT_TEAM_MOVE_DELAY[TEAM_BEGINNER]              2
+AIT_TEAM_MOVE_DELAY[TEAM_BEGINNER_INTERMEDIATE] 1
+AIT_TEAM_MOVE_DELAY[TEAM_INTERMEDIATE]          1
+AIT_TEAM_MOVE_DELAY[TEAM_INTERMEDIATE_ADVANCED] 0
+AIT_TEAM_MOVE_DELAY[TEAM_ADVANCED]              0
+AIT_DEFAULT_FORMATION                           BROAD_FORMATION     ;if no formation is specified, the team gets put into the default formation
+AIT_DEFTEAM_NEEDS_HELP_STRENGTH                 1.2                 ;relative strength of defense teams taking out enemy ships - lower means the team would need help
+
+
+;=============================================================================
+;    Order tweaks:
+;=============================================================================
+AIO_GUARD_SHIPS_NUM_CAPITAL         12                  ;how many ships to build if the ship being guarded is a capital ship
+AIO_GUARD_SHIPS_NUM_NONCAPITAL      6                   ;how many ships to build if the ship being guarded is not a capital ship
+AIO_GUARD_SHIPS_FUEL_LOW            15                  ;fuel low trigger point for guard ships
+AIO_HARASS_INITIAL_MOVE_FORMATION   DELTA_FORMATION     ;formation for the first harass move
+AIO_HARASS_FUEL_LOW                 15                  ;fuel low trigger point for harass ships
+AIO_HARASS_NUMBERS_LOW              40                  ;numbers low trigger point for harass ships
+AIO_DEFMOTHERSHIP_FUEL_LOW          5                   ;fuel low trigger point for the defend mothership move
+AIO_PATROL_FUEL_LOW                 15                  ;fuel low trigger point for the patrol move
+AIO_PATROL_NUMBERS_LOW              50                  ;numbers low trigger point for patrol move
+AIO_FASTROVING_FUEL_LOW             15                  ;fuel low trigger point for the fast roving defense team
+AIO_FASTROVING_NUMBERS_LOW          80                  ;numbers low trigger point for fast roving defense
+AIO_SLOWROVING_FUEL_LOW             15                  ;fuel low trigger point for
+AIO_SLOWROVING_NUMBERS_LOW          50                  ;numbers low trigger point for slow roving defense
+AIO_TOUT_MSHIP_FAST_TGRD_FORMATION  BROAD_FORMATION     ;Temp guard formation for takeout mothership fast
+AIO_TOUT_MSHIP_FAST_TGRD_TACTICS    Aggressive          ;Temp guard tactics for takeout mothership fast
+AIO_TOUT_MSHIP_BIG_TGRD_FORMATION   BROAD_FORMATION     ;Temp guard formation for takeout mothership big
+AIO_TOUT_MSHIP_BIG_TGRD_TACTICS     Aggressive          ;Temp guard tactics for takeout motherhsip big
+AIO_TOUT_MSHIP_GUARD_TGRD_FORMATION BROAD_FORMATION     ;Temp guard formation for takeout mothership guard
+AIO_TOUT_MSHIP_GUARD_TGRD_TACTICS   Aggressive          ;Temp guard tactics for takeout mothership guard
+AIO_TOUT_TARG_WCUR_FORMATION        WALL_FORMATION      ;Formation for takeout target with current team
+AIO_TOUT_TARG_WCUR_TACTICS          Aggressive          ;Tactics for takeout target with current team
+AIO_TOUT_TARG_TGUARD_FORMATION      BROAD_FORMATION     ;Formation for temp guard in takeout target order
+AIO_TOUT_TARG_TGUARD_TACTICS        Aggressive          ;Tactics for temp guard in takout target order
+AIO_TOUT_TARG_FANCY_TGRD_FORMATION  BROAD_FORMATION     ;Formation for temp guard move in takeout target fancy order
+AIO_TOUT_TARG_FANCY_TGRD_TACTICS    Aggressive          ;Tactics for temp guard move in takeout target fancey order
+AIO_FIGHTER_KAMIKAZE_HEALTH         45                  ;The health percentage below which fighters kamikaze into their attack targets
+AIO_CORVETTE_KAMIKAZE_HEALTH        20                  ;The health percentage below which corvettes kamikaze into their attack targets
+
+
+
+;=============================================================================
+;    Move and Handler tweaks:
+;=============================================================================
+AIH_GENERIC_GETTINGROCKED_STRENGTH  2.5                 ;strength ratio for a ship to decide if it attacks when it's getting rocked, or keeps going
+AIH_GENERIC_GETTINGROCKED_FORMATION BROAD_FORMATION     ;formation for counterattack when ship is getting rocked
+AIM_DIST_MOVE_END                   2000.0;             ;distance squared from the end of a move
+AIM_SQUADRON_NUM_SHIPS              5                   ;number of ships needed in a selection for it to be considered a squadron (treated differently in attacks)
+AIM_INTERCEPT_FINISH_DISTSQ         16000000            ;distance squared for intercept move to finish
+AIM_INTERCEPT_RECALC_DISTSQ         2000000             ;distance squared for the intercept target to move away from its original position for the destination to be recalculated
+
+;-----------------------------------------------------------------------------
+;    Harass Move tweaks:
+;-----------------------------------------------------------------------------
+AIM_MIN_HARASS_ATTACK_DIST_SQ       400000000           ;minimum distance squared for the harass team to attack
+AIM_HARASS_STANDOFF_DIST            11000               ;how close the harass team gets to it's target before launching the attack
+AIM_HARASS_PROTECTION_RADIUS        10000               ;radius of other ships around the harass target that are considered protection
+AIM_HARASS_MOVE_FORMATION           DELTA3D_FORMATION   ;formation used when harass team moves closer to the target
+AIM_HARASS_SINGLETARGET_FORMATION   CLAW_FORMATION      ;formation used when harass team attacks a single target
+AIM_HARASS_MULTITARGET_FORMATION    CLAW_FORMATION      ;formation used when harass team attacks multiple targets
+AIH_HARASS_SINGLEATTACK_FORMATION   WALL_FORMATION      ;formation used when harass team engages a single target
+AIH_HARASS_NUMLOW_STANDOFF_DIST     7500                ;how close the harass team moves to the mothership to wait for new ships
+AIH_HARASS_NUMLOW_FORMATION         BROAD_FORMATION     ;formation for the harass team when moves to the mothership for new ships
+
+;-----------------------------------------------------------------------------
+;    Flank Attack Move Tweaks:
+;-----------------------------------------------------------------------------
+AIM_FLANK_ATTACK_RADIUS             16000               ;radius for flank attack
+AIM_FLANK_MOVE_FORMATION            SAME_FORMATION      ;formation used when flank attack team moves into position
+AIM_FLANK_ATTACK_FORMATION          SAME_FORMATION      ;formation used when flank attack team attacks
+
+;-----------------------------------------------------------------------------
+;    Dock Move tweaks:
+;-----------------------------------------------------------------------------
+AIM_DOCK_REPAIRHEALTH_TRIGGER       80                  ;below what health the dock command decides to dock for repair as well as refuel
+AIM_DOCK_FINISH_FUEL_THRESHOLD      0.95                ;average fuel percentage for the dock command to complete
+AIM_DOCK_DEFAULT_FORMATION          WALL_FORMATION    ;default formation for the dock move
+
+;-----------------------------------------------------------------------------
+;    Defend Mothership Move tweaks:
+;-----------------------------------------------------------------------------
+AIM_DEF_MOTHERSHIP_ATTACK_FORMATION WALL_FORMATION      ;the formation ships get into when they attack while defending the mothership
+
+;-----------------------------------------------------------------------------
+;    Active Patrol Move tweaks:
+;-----------------------------------------------------------------------------
+AIM_PATROL_FIRST_FORMATION          DELTA_FORMATION     ;the formation patrol ships get into in their first patrol move
+AIM_PATROL_GENERAL_FORMATION        DELTA3D_FORMATION   ;the formation patrol ships get into in all other patrol move
+AIH_PATROL_ENEMYNEARBY_STRENGTH     1.5                 ;relative strength of patrol fleet for it to attack an enemy nearby
+AIH_PATROL_ENEMYNEARBY_FORMATION    BROAD_FORMATION     ;formation assumed when patrol team attacks an enemy nearby
+
+AIH_FASTDEF_NUMLOW_STANDOFF_DIST    7500                ;how close the fast defense teams move to the mothership to wait for new ships
+AIH_FASTDEF_NUMLOW_FORMATION        BROAD_FORMATION     ;formation for the fast defense team for when it waits for new ships
+AIH_FASTDEF_INVADER_ENEMYDIST       1500                ;radius of ships around invading ships that are considered enemy invaders as well
+AIH_FASTDEF_INVADER_LOTSFEW_LIMIT   1                   ;how many ships are considered "few", any more are considered lots
+AIH_FASTDEF_INVADER_LOTS_FORMATION  CLAW_FORMATION      ;formation assumed when there are lots of invading ships
+AIH_FASTDEF_INVADER_FEW_FORMATION   CLAW_FORMATION    ;formation assumed when there are only a few invaders
+
+AIH_SLOWDEF_NUMLOW_STANDOFF_DIST    7000                ;how close the slow defense teams move to the mothership to wait for new ships
+AIH_SLOWDEF_NUMLOW_FORMATION        BROAD_FORMATION     ;formation for the slow defense team for when it waits for new ships
+AIH_SLOWDEF_RESPONSE_MAXDISTSQ      100000000           ;distance squared for a slow defense to react to an invasion call
+AIH_SLOWDEF_INVADER_ENEMYDIST       1500                ;radius of ships around invading ships that are considered enemy invaders as well
+AIH_SLOWDEF_INVADER_LOTSFEW_LIMIT   1                   ;how many ships are considered "few", any more are considered lots
+AIH_SLOWDEF_INVADER_LOTS_FORMATION  BROAD_FORMATION     ;formation assumed when there are lots of invading ships
+AIH_SLOWDEF_INVADER_FEW_FORMATION   SPHERE_FORMATION    ;formation assumed when there are only a few invaders
+
+;-----------------------------------------------------------------------------
+;    Temp Guard tweaks:
+;-----------------------------------------------------------------------------
+AIM_TEMP_GUARD_MOVE_LOCATION_MULT   0.6666              ;fraction of the sphere of influence radius
+AIM_TEMP_GUARD_MOVE_FORMATION       BROAD_FORMATION     ;the formation temp guard teams get into when the move to their guard location
+AIM_TEMP_GUARD_MOVE_TACTICS         Aggressive          ;the tactics temp guard teams get into when the move to their guard location
+AIM_TEMP_GUARD_INVADER_FORMATION    BROAD_FORMATION     ;the formation temp guard teams get into when attacking invaders
+
+;-----------------------------------------------------------------------------
+;    Support Tweaks:
+;-----------------------------------------------------------------------------
+AIM_SUPPORT_SAFE_DISTANCE           16000               ;how far a support ship hangs back from combat
+
+
+;=============================================================================
+;    AI Utilities tweaks:
+;=============================================================================
+AIU_STANDOFF_NEG_ERROR_ANGLE        -10.0               ;(degrees) negative limit to random angle variation in standoff point generation
+AIU_STANDOFF_POS_ERROR_ANGLE        10.0                ;(degrees) positive limit to random angle variation in standoff point generation
+AIU_STANDOFF_DIST_ERROR_LOW         0.95                ;low limit to random distance variation in standoff point generatio
+AIU_STANDOFF_DIST_ERROR_HIGH        1.05                ;high limit to random distance variation in standoff point generation
+AIU_RESCUE_MULTIPLE_MINSHIPS        4                   ;minimum number of ships needed for team to be considered having "multiple" ships
+AIU_RESCUE_ENEMYMULTIPLE_MINSHIPS   2                   ;minimum number of ships needed for enemy team to be considered having multiple ships
+AIU_RESCUE_NOMULTIPLE_FORMATION     BROAD_FORMATION     ;formation the rescue team takes when neither team nor enemy have multiple ships
+AIU_RESCUE_TEAMMULTIPLE_FORMATION   SPHERE_FORMATION    ;formation the rescue team takes when it has multiple ships, but enemy doesn't
+AIU_RESCUE_BOTHMULTIPLE_FORMATION   WALL_FORMATION      ;formation the rescue team takes when both the team and enemy has multiple ships
+AIU_TAKEOUT_ENEMYFLEET_RADIUS       1500                ;radius computer player searches for other enemy ships near the ship the team is taking out
+AIU_TAKEOUT_MULTIPLE_MINSHIPS       4                   ;minimum number of ships needed for team to be considered having "multiple" ships
+AIU_TAKEOUT_ENEMYMULTIPLE_MINSHIPS  2                   ;minimum number of ships needed for enemy team to be considered having multiple ships
+AIU_TAKEOUT_NOMULTIPLE_FORMATION    BROAD_FORMATION     ;formation the takeout team takes when neither team nor enemy have multiple ships
+AIU_TAKEOUT_TEAMMULTIPLE_FORMATION  SPHERE_FORMATION    ;formation the takeout team takes when it has multiple ships, but enemy doesn't
+AIU_TAKEOUT_BOTHMULTIPLE_FORMATION  WALL_FORMATION      ;formation the takeout team takes when both the team and enemy has multiple ships
+AIU_SAFEST_STANDOFF_DIST_MULT       2.2                 ;multiplier to determine the safest distance for enemy ships
+AIU_FINDUNARMED_PROTECTION_STRENGTH 2.0                 ;minimum strength difference between teamships and enemy protection for the unarmed target to be considered
+AIU_FINDATTACKING_ENEMYFLEET_RADIUS 1000                ;radius computer player searches for other enemy ships with the attacking ship
+AIU_HARASS_PROTECTION_RADIUS        1500                ;radius computer player searches for enemy protection while issuing the harass command
+AIU_UNARMED_UNDEFENDED_MODIFIER     1.0                 ;distance modifier to prioritize unarmed undefended ships as harass targets - lower the number, higher priority in attacks
+AIU_UNARMED_MODIFIER                1.2                 ;distance modifier to prioritize unarmed enemy ships as harass targets - lower the number, higher priority in attacks
+AIU_FIGHTER_VULNERABLE_MODIFIER     0.8                 ;distance modifier to prioritize fighter vulnerable ships as harass targets - lower the number, higher priority in attacks

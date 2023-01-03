@@ -1,0 +1,372 @@
+wideScreenIn(1)
+at frame 0
+	cameraBlendIn("CamShape1", 4)
+	speechSetDir("NIS_01B")
+	wideScreenIn(4)
+at frame 1
+	cameraCut("CamShape1")
+	musicStart("nis01b")
+at frame 17
+	speechEventActor("$56020",4,2)
+at frame 211
+	speechEventActor("$56021",4,2)
+at frame 298
+	cameraCut("CamShape2")
+at frame 580
+	cameraCut("Cam2bShape")
+at frame 697
+	speechEventActor("$56022",4,2)
+at frame 788
+	cameraCut("CamShape3")
+at frame 892
+	cameraCut("CamShape4")
+at frame 1008
+	cameraCut("CamShape5")
+at frame 1034
+	speechEvent("$56023",2)
+at frame 1174
+	cameraCut("CamShape6")
+at frame 1410
+	cameraLeave()
+	musicStartAtEnd("battle/battle_01")
+	nisOut(4)
+
+with |joint1|Hgn_Interceptor
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 1007
+		hide()
+	at frame 1008
+		show()
+	at frame 1529
+		show()
+	at frame 1530
+		hide()
+}
+
+with |joint1|Hgn_Interceptor1
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 1007
+		hide()
+	at frame 1008
+		show()
+	at frame 1529
+		show()
+	at frame 1530
+		hide()
+}
+
+with |joint1|Hgn_Interceptor2
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 1007
+		hide()
+	at frame 1008
+		show()
+	at frame 1529
+		show()
+	at frame 1530
+		hide()
+}
+
+with |joint1|Hgn_Interceptor3
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 1007
+		hide()
+	at frame 1008
+		show()
+	at frame 1529
+		show()
+	at frame 1530
+		hide()
+}
+
+with |joint1|Hgn_Interceptor4
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 1007
+		hide()
+	at frame 1008
+		show()
+	at frame 1529
+		show()
+	at frame 1530
+		hide()
+}
+
+with |joint2|Hgn_Interceptor7
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 955
+		show()
+	at frame 1008
+		hide()
+}
+
+with |joint3|Hgn_Interceptor8
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 942
+		show()
+	at frame 1007
+		hide()
+}
+
+with |joint5|Hgn_Interceptor10
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 936
+		show()
+	at frame 1007
+		hide()
+}
+
+with |joint7|Hgn_Interceptor12
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 898
+		show()
+	at frame 1007
+		hide()
+}
+
+with |joint8|Hgn_Interceptor13
+{
+	at frame 0
+		hide()
+		setPlayer(0)
+	at frame 920
+		show()
+	at frame 1007
+		hide()
+}
+
+with |Cam2_root|Vgr_Bomber
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2_root|Vgr_Bomber1
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2_root|Vgr_Bomber2
+{
+	at frame 0
+		setPlayer(3)
+	at frame 279
+		hide()
+	at frame 280
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2_root|Vgr_Bomber3
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2_root|Vgr_Bomber4
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam3_root|Vgr_Bomber5
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam3_root|Vgr_Bomber6
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam3_root|Vgr_Bomber7
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam3_root|Vgr_Bomber8
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam3_root|Vgr_Bomber9
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2b_root|Vgr_Bomber10
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2b_root|Vgr_Bomber11
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2b_root|Vgr_Bomber12
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2b_root|Vgr_Bomber13
+{
+	at frame 0
+		setPlayer(3)
+	at frame 286
+		hide()
+	at frame 287
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}
+
+with |Cam2b_root|Vgr_Bomber14
+{
+	at frame 0
+		setPlayer(3)
+	at frame 283
+		hide()
+	at frame 284
+		show()
+	at frame 898
+		show()
+	at frame 899
+		hide()
+}

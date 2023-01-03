@@ -1,0 +1,53 @@
+; MissionMan script, Wednesday, Sep 1 1999, 3:26:45 PM
+; Copyright (c) 1998-99, Relic Entertainment Inc.
+; Single Player Level: Tutorial1
+; Info: Tutorial1
+
+[Tutorial1]
+
+MissionSphere    0,R1,Mothership,0.0,0.0,0.0,40000,0.0,Mothership_0.missphere
+MissionSphere    -1,?,ResourceSphere,-13000.0,24000.0,0.0,30000.0,0.0,ResourceSphere_3.missphere
+AIPoint    ?,10999.8,14000.0,0.0,0.0
+
+Lighting    default
+smDepthCueRadius    50000
+smDepthCueStartRadius    20000
+smCircleBorder    90000
+smZoomMax    120000
+smZoomMin    20000
+smInitialDistance    100000
+smUniverseSizeX    100000
+smUniverseSizeZ    22500
+smUniverseSizeY    60000
+RUNeededForNextHyperSpaceJump    1000
+ExcludeShips    Traders,All
+ExcludeShips    P1,All
+ExcludeShips    P2,All
+ExcludeShips    P3,All
+ExcludeShips    R2,All
+ExcludeShips    R1,ResourceController
+ExcludeShips    R1,LightDefender
+ExcludeShips    R1,HeadShotAsteroid
+ExcludeShips    R1,TargetDrone
+ExcludeShips    R1,AttackBomber
+ExcludeShips    R1,CloakGenerator
+ExcludeShips    R1,DDDFrigate
+ExcludeShips    R1,GravWellGenerator
+ExcludeShips    R1,MinelayerCorvette
+ExcludeShips    R1,MissileDestroyer
+ExcludeShips    R1,MultiGunCorvette
+ExcludeShips    R1,HeavyCruiser
+ExcludeShips    R1,DFGFrigate
+ExcludeShips    R1,Carrier
+ExcludeShips    R1,CloakedFighter
+ExcludeShips    R1,DefenseFighter
+ExcludeShips    R1,HeavyCorvette
+ExcludeShips    R1,IonCannonFrigate
+ExcludeShips    R1,RepairCorvette
+ExcludeShips    R1,SensorArray
+ExcludeShips    R1,StandardDestroyer
+ExcludeShips    R1,SalCapCorvette
+ExcludeShips    R1,Probe
+ExcludeShips    R1,AdvanceSupportFrigate
+ExcludeDerelict    All
+SongNumber    9

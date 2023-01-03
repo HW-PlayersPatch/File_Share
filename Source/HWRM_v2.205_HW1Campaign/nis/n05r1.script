@@ -1,0 +1,666 @@
+speechSetDir("n05r1")
+at 0
+    cameraBlendIn("Camera0", 3)
+at frame 1
+    hideUniverse(1)
+    musicVolume(0.65)
+    speechVolume(1.0)
+    SFXVolume(0.3)
+at frame 3400
+    hideUniverse(0)
+at frame 2
+    musicStart("N05_P2Intro")
+at frame 276
+	cameraCut("Camera1")
+at frame 1019
+	cameraCut("Camera2")
+at frame 1104
+	cameraCut("Camera3")
+at frame 1214
+	cameraCut("Camera4")
+at frame 1220
+    SFXVolume(0.0)
+at frame 2950
+    SFXVolume(0.3)
+at frame 3154
+    SFXVolume(0.6)
+at frame 273
+    seekForward(0.166666666666667)
+at frame 1016
+    seekForward(0.166666666666667)
+at frame 1101
+    seekForward(0.166666666666667)
+at frame 1211
+    seekForward(0.166666666666667)
+at frame 1463
+    seekForward(0.166666666666667)
+at frame 1466
+	cameraCut("Camera5")
+at frame 1810
+    seekForward(0.166666666666667)
+at frame 1813
+	cameraCut("Camera6")
+at frame 2141
+    seekForward(0.166666666666667)
+at frame 2144
+	cameraCut("Camera7")
+at frame 2591
+    seekForward(0.166666666666667)
+at frame 2594
+	cameraCut("Camera8")
+at frame 2871
+    seekForward(0.166666666666667)
+at frame 2874
+	cameraCut("Camera9")
+at frame 3141
+    seekForward(0.166666666666667)
+at frame 3144
+	cameraCut("Camera10")
+at frame 4222
+    musicStop(1)
+at frame 4282
+    wideScreenOut(2)
+    --hideUniverse(0)
+    focus()
+    --cameraBlendOut("Camera10", 2)
+
+with Kus_Mothership
+{
+    at 0
+        hide()
+    at frame 1
+        show()
+    at frame 278
+        hide()
+    --at frame 3500
+    --    show()
+}
+
+with Kus_Ambassador
+{
+    at frame 1
+        --colourScheme({1,1,1}, {1,1,1}, "Kushan.tga")
+        colourSchemeTrail({1,1,1}, {1,1,1}, "Kushan.tga", {45/255, 255/255, 149/255}, "")
+        --meshAnimStart Make_Ambassador
+        print("meshAnimSeek")
+        print("meshAnimPause")
+    at frame 3176
+        print("meshAnimStop")
+    at 0
+        show()
+    at frame 3175
+        hide()
+    at frame 2430
+        speechEventActor("$66548", 21, 2)
+}
+
+with Kad_P2Mothership
+{
+    at 0
+        show()
+        lockLOD(1)
+    at frame 4282
+        lockLOD(0)
+    at frame 907
+        hide()
+    at frame 3051
+        show()
+    at frame 1220
+        speechEventActor("$66544", 19, 2)
+    at frame 1490
+        speechEventActor("$66545", 19, 2)
+    at frame 1845
+        speechEventActor("$66546", 19, 2)
+    at frame 2280
+        speechEventActor("$66547", 19, 2)
+    at frame 2695
+        speechEventActor("$66549", 19, 2)
+}
+
+with Kad_Swarmer1
+{
+    at 0
+        hide()
+    at frame 720
+        show()
+    at frame 3355
+        hide()
+}
+
+with Kad_FuelPod1
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        focusAtEnd()
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3460
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_FuelPod2
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3460
+        show()
+}
+
+with Kad_FuelPod3
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3460
+        show()
+}
+
+with Kad_Swarmer2
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer3
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer4
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer5
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer6
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer7
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer8
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer9
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer10
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer11
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer12
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer13
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer14
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer15
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer16
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer17
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer18
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer19
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer20
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer21
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer22
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer23
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer24
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer25
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer26
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer27
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer28
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer29
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer30
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer31
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer32
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer33
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer34
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer35
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer36
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer37
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer38
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer39
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer40
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer41
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer42
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer43
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_Swarmer44
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_Swarmer45
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_AdvancedSwarmer1
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_AdvancedSwarmer2
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_AdvancedSwarmer3
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+with Kad_AdvancedSwarmer4
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam3")
+    at frame 3390
+        show()
+}
+
+with Kad_AdvancedSwarmer5
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam1")
+        keepMovingAtEnd("GrowSelection_PlayerMothership")
+    at frame 3390
+        show()
+    at frame 4270
+        attackSobGroup("GrowSelection_NISTargetShips")
+}
+
+with Kad_AdvancedSwarmer6
+{
+    at 0
+        hide()
+        remainAtEnd("NISTeam2")
+    at frame 3390
+        show()
+}
+
+
+-- List of unhandled functions (not converted):
+--meshAnimStart: 1 instances
+
+

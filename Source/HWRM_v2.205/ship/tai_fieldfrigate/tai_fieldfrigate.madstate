@@ -1,0 +1,16 @@
+--=============================================================================
+--    Name    : Tai_FieldFrigate.madStates
+--    Purpose : Animation state data.
+--
+--Created 290403 by cgladstone
+--Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================*/
+
+TAI_FIELDFRIGATE_MagneticFieldActivate_OnSet = function(ship)
+    startEffect(ship, "On")
+end
+
+TAI_FIELDFRIGATE_MagneticFieldDeActivate_OnSet = function(ship)
+    endEffect(ship, "On")
+end
+

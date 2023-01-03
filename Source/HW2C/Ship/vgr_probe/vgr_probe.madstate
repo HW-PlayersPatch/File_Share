@@ -1,0 +1,20 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+VGR_PROBE_Open_OnSet = function(ship)
+	stopAnim(ship, "Close")
+	startAnim(ship, "Open")
+	startEffect(ship, "Open")
+	setPauseTime(ship, "Open", 1000)
+end
+
+VGR_PROBE_Close_OnSet = function(ship)
+	stopAnim(ship, "Open")
+	startAnim(ship, "Close")
+	setPauseTime(ship, "Close", 1000)
+end

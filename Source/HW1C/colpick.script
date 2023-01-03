@@ -1,0 +1,47 @@
+//colpick.script: defines hue-specific team color scalars
+
+//old settings
+
+//format:
+//<base|stripe>Scalar   <R1/R2>, <hue 0..1> <scalar 0..2>
+//scalars for Race 2
+baseScalar      R2, 0.2, 1.2
+baseScalar      R2, 0.3, 1.1
+baseScalar      R2, 0.4, 1.1
+baseScalar      R2, 0.5, 1.2
+baseScalar      R2, 1.0, 1.2
+stripeScalar      R2, 0.2, 1.25
+stripeScalar      R2, 0.3, 1.15
+stripeScalar      R2, 0.4, 1.15
+stripeScalar      R2, 0.5, 1.25
+stripeScalar      R2, 1.0, 1.25
+
+//new settings
+
+////---Red
+//baseScalar	R2, 0.0000, 2.0
+//stripeScalar	R2, 0.0000, 1.0
+////---Yellow
+//baseScalar      R2, 0.1666, 1.0
+//stripeScalar    R2, 0.1666, 1.0
+////---Green
+//baseScalar      R2, 0.3333, 1.0
+//stripeScalar    R2, 0.3333, 1.0
+////---Cyan
+//baseScalar      R2, 0.5000, 1.0
+//stripeScalar    R2, 0.5000, 1.0
+////---Blue
+//baseScalar	R2, 0.6666, 1.0
+//stripeScalar	R2, 0.6666, 1.0
+////---Magenta
+//baseScalar	R2, 0.8333, 1.0
+//stripeScalar	R2, 0.8333, 1.0
+////---Red
+//baseScalar      R2, 1.0000, 1.0
+//stripeScalar    R2, 1.0000, 1.0
+
+; COLOUR PICKER SATURATION ARROW VARIABLES
+
+;cpValueArrowWidth	5
+cpValueArrowHeight	8
+;cpValueArrowColor	255,0,0

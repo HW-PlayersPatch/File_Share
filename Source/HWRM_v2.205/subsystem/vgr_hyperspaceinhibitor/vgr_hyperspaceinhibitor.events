@@ -1,0 +1,43 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Inhibit",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "death_generic_fighter" },
+        },
+        event2 =
+        {
+            { "anim", "Inhibit" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "sound", "SP_ELEMENTS/VGR_HYPERSPACEINHIBITOR_INHIBIT" },
+        },
+    }
+}

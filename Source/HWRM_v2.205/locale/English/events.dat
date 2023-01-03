@@ -1,0 +1,273 @@
+filerange 5600 5884
+rangestart 5600 5884
+
+// Subtitles
+5600	Frigate lost.
+5601	Mobile Refinery destroyed.
+5602	Destroyer lost.
+5603	Carrier destroyed.
+5604	Shipyard destroyed.
+5605	Battlecruiser destroyed.
+5606	Enemy Frigate captured.
+5607	Enemy Destroyer captured.
+5608	Enemy Carrier captured.
+5609	Enemy Shipyard captured.
+5610	Enemy Battlecruiser captured.
+5611	Frigate being boarded.
+5612	Destroyer being boarded.
+5613	Carrier being boarded.
+5614	Battlecruiser being boarded.
+5615	Mothership being boarded.
+5616	Shipyard being boarded.
+5617	Dreadnaught being boarded.
+5618	Mothership under attack.
+5619	Mothership under attack.
+5620	Mothership under attack.
+5621	Mothership under attack.
+5622	Mothership under attack.
+5623	Mothership under attack.
+5624	Dreadnaught under attack.
+5625	Dreadnaught under attack.
+5626	Dreadnaught under attack.
+5627	Dreadnaught under attack.
+5628	Dreadnaught under attack.
+5629	Dreadnaught under attack.
+5630	Dreadnaught Destroyed.
+5631	Dreadnaught Destroyed.
+5632	Sajuuk under attack.
+5633	Sajuuk under attack.
+5634	Sajuuk under attack.
+5635	Sajuuk under attack.
+5636	Sajuuk under attack.
+5637	Sajuuk under attack.
+5638	Sajuuk destroyed.
+5639	Sajuuk destroyed.
+5640	Shipyard destroyed.
+5641	Shipyard destroyed.
+5642	Torpedo detected.
+5643	Destroyer under attack.
+5644	Carrier under attack.
+5645	Battlecruiser under attack.
+5646	Shipyard under attack.
+5647	Subsystem lost.
+5648	Mothership Fighter Facility under attack.
+5649	Mothership Fighter Facility damaged.
+5650	Mothership Fighter Facility lost.
+5651	Mothership Corvette Facility under attack.
+5652	Mothership Corvette Facility damaged.
+5653	Mothership Corvette Facility lost.
+5654	Mothership Frigate Facility under attack.
+5655	Mothership Frigate Facility damaged.
+5656	Mothership Frigate Facility lost.
+5657	Mothership Advanced Frigate Facility under attack.
+5658	Mothership Advanced Frigate Facility damaged.
+5659	Mothership Advanced Frigate Facility lost.
+5660	Mothership Platform Facility under attack.
+5661	Mothership Platform Facility damaged.
+5662	Mothership Platform Facility lost.
+5663	Mothership Capital Ship Facility under attack.
+5664	Mothership Capital Ship Facility damaged.
+5665	Mothership Capital Ship Facility lost.
+5666	Mothership Advanced Capital Ship Facility under attack.
+5667	Mothership Advanced Capital Ship Facility damaged.
+5668	Mothership Advanced Capital Ship Facility lost.
+5669	Mothership Research Module under attack.
+5670	Mothership Research Module damaged.
+5671	Mothership Research Module lost.
+5672	Mothership Sensor Array under attack.
+5673	Mothership Sensor Array damaged.
+5674	Mothership Sensor Array lost.
+5675	Mothership Cloak Generator under attack.
+5676	Mothership Cloak Generator damaged.
+5677	Mothership Cloak Generator lost.
+5678	Mothership Hyperspace Module under attack.
+5679	Mothership Hyperspace Module damaged.
+5680	Mothership Hyperspace Module lost.
+5681	Mothership Fire Control Tower under attack.
+5682	Mothership Fire Control Tower damaged.
+5683	Mothership Fire Control Tower lost.
+5684	Mothership Engines under attack.
+5685	Mothership Engines damaged.
+5686	Mothership Engines disabled. We can't move.
+5687	Mothership Engines repaired. We can move.
+5688	Advanced Research Module Under Attack
+5689	Advanced Research Module damaged
+5690	Advanced Research Module lost
+5691	Resource Collector destroyed.
+5692	Resource Collector lost.
+5693	Mobile Refinery under fire.
+5694	Mobile Refinery under attack.
+5695	Unit Limit Reached.
+5696	Unit Limit increased.
+5697	Unit Limit decreased.
+5698	Scout squadron complete.
+5699	Interceptor squadron complete.
+5700	Bomber squadron complete.
+5701	Gunship Corvette squadron complete.
+5702	Pulsar Gunship squadron complete.
+5703	Minelayer Corvette complete.
+5704	Flak Frigate complete.
+5705	Torpedo Frigate complete.
+5706	Support Frigate complete.
+5707	Marine Frigate complete.
+5708	Defense Field Frigate complete.
+5709	Destroyer complete.
+5710	Carrier complete.
+5711	Battlecruiser complete.
+5712	Shipyard has arrived.
+5713	Gun Platform complete.
+5714	Ion Cannon Turret complete.
+5715	Resource Collector complete.
+5716	Mobile Refinery complete.
+5717	Probe complete.
+5718	ECM Probe complete.
+5719	Proximity Sensor complete.
+5720	Mothership Advanced Research Module Complete.
+5721	Carrier Fighter Facility complete.
+5722	Carrier Corvette Facility complete.
+5723	Mothership Fighter Facility complete.
+5724	Mothership Corvette Facility complete.
+5725	Mothership Frigate Facility complete.
+5726	Mothership Advanced Frigate Facility complete.
+5727	Mothership Platform Facility complete.
+5728	Mothership Capital Ship Facility complete.
+5729	Mothership Advanced Capital Ship Facility complete.
+5730	Mothership Research Module complete.
+5731	Mothership Sensors Array complete.
+5732	Mothership Cloak Generator complete.
+5733	Mothership Hyperspace Module complete.
+5734	Mothership Fire Control Tower complete.
+5735	New Build Options Available.
+5736	Strikegroup under attack.
+5737	Group one under attack.
+5738	Group two under attack.
+5739	Group three under attack.
+5740	Group four under attack.
+5741	Group five under attack.
+5742	Group six under attack.
+5743	Group seven under attack.
+5744	Group eight under attack.
+5745	Group nine under attack.
+5746	Group ten under attack.
+5747	Group one reports enemy contact.
+5748	Group two reports enemy contact.
+5749	Group three reports enemy contact.
+5750	Group four reports enemy contact.
+5751	Group five reports enemy contact.
+5752	Group six reports enemy contact.
+5753	Group seven reports enemy contact.
+5754	Group eight reports enemy contact.
+5755	Group nine reports enemy contact.
+5756	Group ten reports enemy contact.
+5757	Group One has defeated the enemy.
+5758	Group Two has defeated the enemy.
+5759	Group Three has defeated the enemy.
+5760	Group Four has defeated the enemy.
+5761	Group Five has defeated the enemy.
+5762	Group Six has defeated the enemy.
+5763	Group Seven has defeated the enemy.
+5764	Group Eight has defeated the enemy.
+5765	Group Nine has defeated the enemy.
+5766	Group Ten has defeated the enemy.
+5767	Group One reports victory.
+5768	Group Two reports victory.
+5769	Group Three reports victory.
+5770	Group Four reports victory.
+5771	Group Five reports victory.
+5772	Group Six reports victory.
+5773	Group Seven reports victory.
+5774	Group Eight reports victory.
+5775	Group Nine reports victory.
+5776	Group Ten reports victory.
+5777	Group One lost.
+5778	Group Two lost.
+5779	Group Three lost.
+5780	Group Four lost.
+5781	Group Five lost.
+5782	Group Six lost.
+5783	Group Seven lost.
+5784	Group Eight lost.
+5785	Group Nine lost.
+5786	Group Ten lost.
+5787	Group One destroyed.
+5789	Group Two destroyed.
+5790	Group Three destroyed.
+5791	Group Four destroyed.
+5792	Group Five destroyed.
+5793	Group Six destroyed.
+5794	Group Seven destroyed.
+5795	Group Eight destroyed.
+5796	Group Nine destroyed.
+5797	Group Ten destroyed.
+5798	Group One defeated.
+5799	Group Two defeated.
+5800	Group Three defeated.
+5801	Group Four defeated.
+5802	Group Five defeated.
+5803	Group Six defeated.
+5804	Group Seven defeated.
+5805	Group Eight defeated.
+5806	Group Nine defeated.
+5807	Group Ten defeated.
+5808	Research complete.
+5809	New Research available.
+5810	Insufficient resources. Research paused.
+5811	Upgrade complete.
+5812	New Upgrades available.
+5813	Insufficient resources. Upgrades paused.
+5814	New construction options available.
+5815	New Fighters available for construction.
+5816	New corvettes available for construction.
+5817	New frigates available for construction.
+5818	New capital ships available for construction.
+5819	New supercapital ships available for construction.
+5820	New utility class ships available for construction.
+5821	New platforms available for construction.
+5822	Research Module complete.
+5823	Advanced Research Module complete.
+5824	Probe deployed.
+5825	Enemy Probe detected.
+5826	Enemy Probe detected.
+5827	Insufficient resources for Hyperspace jump.  Jump aborted.
+5828	Insufficient resources for Hyperspace jump.  Jump aborted.
+5829	Unit Limit reached.
+5830	Unit Limit reached.
+5831	Unit Limit reached.
+5832	Unit Limit reached.
+5850	Resources Exhausted
+5851	MISSION FAILED
+5852	MISSION SUCCESSFUL
+5853	Heavy Cruiser destroyed.
+5854	Heavy Cruiser captured.
+5855	Heavy Cruiser being boarded.
+5856	Heavy Cruiser under attack.
+5857	Resource Controller destroyed.
+5858	Resource Controller captured.
+5859	Resource Controller being boarded.
+5860	Resource Controller under attack.
+5861	Scout complete.
+5862	Interceptor complete.
+5863	Assault Bomber complete.
+5864	Defender complete.
+5865	Cloaked Fighter complete.
+5866	Defense Fighter complete.
+5867	Light Corvette complete.
+5868	Heavy Corvette complete.
+5869	Multi-Gun Corvette complete.
+5870	Repair Corvette complete.
+5871	Salvage Corvette complete.
+5872	Support Frigate complete.
+5873	Assault Frigate complete.
+5874	Ion Cannon Frigate complete.
+5875	Drone Frigate complete.
+5876	Defense Field Frigate complete.
+5877	Heavy Cruiser complete.
+5878	Resource Controller complete.
+5879	Cloak Generator complete.
+5880	GravWell Generator complete.
+5881	Proximity Sensor complete.
+5882	Sensors Array complete.
+5883	Cannot complete transfer.
+5884	Insufficient resources. Build paused.
+
+rangeend

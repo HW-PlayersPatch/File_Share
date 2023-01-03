@@ -1,0 +1,37 @@
+NewShipType = StartShipConfig()
+NewShipType.maxhealth = 1000000
+NewShipType.regentime = 1
+NewShipType.minRegenTime = 1
+NewShipType.sideArmourDamage = 0
+NewShipType.rearArmourDamage = 0
+NewShipType.frontArmourDamage = 0
+
+NewShipType.mass = 0
+NewShipType.dustCloudDamageTime = 0
+NewShipType.nebulaDamageTime = 0
+NewShipType.AttackFamily = "UnAttackable"
+NewShipType.AvoidanceFamily = "None"
+NewShipType.CollisionFamily = "Unmoveable"
+NewShipType.DisplayFamily = "Munition"
+
+NewShipType.visualRange = 0
+NewShipType.prmSensorRange = 0
+NewShipType.secSensorRange = 0
+NewShipType.mouseOverMinFadeSize = 0
+NewShipType.mouseOverMaxFadeSize = 0
+NewShipType.SMRepresentation = "Mesh"
+NewShipType.meshRenderLimit = 0
+NewShipType.visibleInSecondary = 0
+NewShipType.selectionLimit = 0
+NewShipType.preciseSelectionLimit = 0
+NewShipType.preciseATILimit = 0
+NewShipType.selectionPriority = 0
+NewShipType.militaryUnit = 0
+
+LoadModel(NewShipType, 1)
+
+
+
+
+
+

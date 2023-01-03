@@ -1,0 +1,28 @@
+speechSetDir("n08r1d")
+at frame 0
+    fadeSet(0.0)
+    loadBackground("ez10")
+at frame 477
+    seekForward(0.166666666666667)
+at frame 480
+	cameraCut("Camera1")
+at frame 870
+    fadeTo(0.995, 2)
+at frame 1007
+    newNIS("nis/n08r1e")
+at frame 1008
+    --musicStop(0.0333333333333333)
+with Kus_Mothership
+{
+    at 0
+        hide()
+    at frame 240
+        speechEventActor("$66641", 18, 2)
+}
+
+with Der_PrisonShipNew5
+{
+    at frame 560
+        death("deathCannon")
+}
+

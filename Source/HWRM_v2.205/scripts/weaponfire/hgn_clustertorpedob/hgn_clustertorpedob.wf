@@ -1,0 +1,16 @@
+
+-- formats:
+-- SetFireEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetBulletEffect(NewWeaponFireType, <filename>, real32 distance)
+-- SetHitEffect(NewWeaponFireType, <filename>, real32 distance)
+-- the 'distance' variable sets the max distance to which this effect is visible.
+
+hitfx = "dmg_cloud_torpedo_combo"
+blowthroughfx = "dmg_cloud_torpedo_combo"
+bulletfx = "bullet_generic"
+nopenetratefx = "dmg_cloud_torpedo_combo"
+deathtype = "deathCannon"
+scartype = "Hgn_Torpedo/Torpedo"
+hit_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_HEAVY_FUSION_MISSILE_DETONATION"
+nopentrate_sfx = "WEAPON/FRIGATE/IMPACT/WEAPON_FRIGATE_HEAVY_FUSION_MISSILE_DETONATION"
+hit_clamp = {1.0, 1.0}

@@ -1,0 +1,10 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="Corvette_hw1"
+NewSubSystemType.ArmourFamily="LightArmour_hw1"
+LoadSharedModel(NewSubSystemType,"Kus_HvCorvette1");
+StartSubSystemWeaponConfig(NewSubSystemType,"Kus_HvCorvette2","Weapon_Gun0","Weapon_Gun");
+StartSubSystemWeaponConfig(NewSubSystemType,"Kus_HvCorvette_Special2","Weapon_Gun0","Weapon_Gun_Special");

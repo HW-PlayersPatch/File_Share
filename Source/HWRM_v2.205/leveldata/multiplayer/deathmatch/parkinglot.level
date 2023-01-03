@@ -1,0 +1,122 @@
+--  hw2 level exporter generated file
+--=============================================================================
+--  Name    : ParkingLot.level
+--  Purpose : Automatically generated level file by the level exporter.
+--  Created Monday, July 14, 2003 by the level exporter.
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================
+
+function DetermChunk()
+	addSquadron("Hgn_AssaultCorvette", "Hgn_AssaultCorvette",	{-2977, 0, -1085},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultFrigate", "Hgn_AssaultFrigate",	{-3028, -2, -1616},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomber", "Hgn_AttackBomber",	{-2523, 0, -819},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_BattleCruiser", "Hgn_BattleCruiser",	{-352, 0, -1416},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Carrier", "Hgn_Carrier",	{252, 0, -1416},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_DefenseFieldFrigate", "Hgn_DefenseFieldFrigate",	{-2459, 0, -1618},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Destroyer", "Hgn_Destroyer",	{-848, 0, -1380},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Dreadnaught", "Hgn_Dreadnaught",	{-5328, 0, 137},	0, {0.000, 90.000, 0.000},0,0)
+	addSquadron("Hgn_Interceptor", "Hgn_Interceptor",	{-2741, 0, -819},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate", "Hgn_IonCannonFrigate",	{-2688, 0, -1345},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonCannonFrigate1", "Hgn_IonCannonFrigate",	{-2480, 0, -1345},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MarineFrigate", "Hgn_MarineFrigate",	{-2652, 0, -1618},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MinelayerCorvette", "Hgn_MinelayerCorvette",	{-2479, 0, -1085},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_MotherShip", "Hgn_MotherShip",	{-1881, 0, -1411},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Probe", "Hgn_Probe",	{-1851, 0, -755},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_PulsarCorvette", "Hgn_PulsarCorvette",	{-2723, 0, -1085},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceCollector", "Hgn_ResourceCollector",	{-1196, 0, -1349},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ResourceController", "Hgn_ResourceController",	{-1429, 0, -1349},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Scout", "Hgn_Scout",	{-2947, 0, -819},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_Shipyard", "Hgn_Shipyard",	{1092, 0, -1416},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_TorpedoFrigate", "Hgn_TorpedoFrigate",	{-2838, -2, -1616},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Vgr_AssaultFrigate", "Vgr_AssaultFrigate",	{1197, 0, 2259},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_BattleCruiser", "Vgr_BattleCruiser",	{-1685, 0, 1199},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Bomber", "Vgr_Bomber",	{513, 0, 1451},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Carrier", "Vgr_Carrier",	{-2648, 0, 1199},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_CommandCorvette", "Vgr_CommandCorvette",	{1357, 0, 1779},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Destroyer", "Vgr_Destroyer",	{-937, 0, 1199},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_HeavyMissileFrigate", "Vgr_HeavyMissileFrigate",	{978, 0, 2259},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_InfiltratorFrigate", "Vgr_InfiltratorFrigate",	{766, 0, 2259},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Interceptor", "Vgr_Interceptor",	{764, 0, 1451},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_LanceFighter", "Vgr_LanceFighter",	{1045, 0, 1451},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_LaserCorvette", "Vgr_LaserCorvette",	{1054, 0, 1779},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_MinelayerCorvette", "Vgr_MinelayerCorvette",	{757, 0, 1779},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_MissileCorvette", "Vgr_MissileCorvette",	{472, 0, 1779},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_MotherShip", "Vgr_MotherShip",	{-61, 0, 1199},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Probe", "Vgr_Probe",	{452, 0, 982},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_ResourceCollector", "Vgr_ResourceCollector",	{803, 0, 911},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_ResourceController", "Vgr_ResourceController",	{999, 0, 911},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_Scout", "Vgr_Scout",	{1361, 0, 1451},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_ShipYard", "Vgr_ShipYard",	{-3610, 0, 1199},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Kpr_AttackDroid", "Kpr_AttackDroid",	{-5038, 0, -817},	0, {0.000, 90.000, 0.000},0,0)
+	addSquadron("Kpr_Destroyer", "Kpr_Destroyer",	{-5036, 0, -320},	0, {0.000, 90.000, 0.000},0,0)
+	addSquadron("Kpr_Mover", "Kpr_Mover",	{-5038, 0, -1293},	0, {0.000, 90.000, 0.000},0,0)
+	addSquadron("Vgr_Probe_ECM", "Vgr_Probe_ECM",	{666, 0, 980},	1, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Vgr_Probe_Prox", "Vgr_Probe_Prox",	{552, 0, 980},	1, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Vgr_WeaponPlatform_gun", "Vgr_WeaponPlatform_gun",	{376, 0, 663},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_WeaponPlatform_missile", "Vgr_WeaponPlatform_missile",	{620, 2, 674},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Vgr_HyperSpace_Platform1", "Vgr_HyperSpace_Platform",	{1994, 0, 1064},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Hgn_ProximitySensor", "Hgn_ProximitySensor",	{-1932, 0, -755},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_ECMProbe", "Hgn_ECMProbe",	{-2008, 0, -755},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_GunTurret", "Hgn_GunTurret",	{-2208, 0, -548},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_IonTurret", "Hgn_IonTurret",	{-1923, 0, -548},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_HSCore", "Hgn_HSCore",	{-1566, 0, -548},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AttackBomberElite1", "Hgn_AttackBomberElite",	{-2265, 0, -819},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Hgn_AssaultCorvetteElite1", "Hgn_AssaultCorvetteElite",	{-3302, 0, -1085},	0, {0.000, 0.000, 0.000},0,0)
+	addSquadron("Vgr_HyperSpace_Platform2", "Vgr_HyperSpace_Platform",	{2185, 0, 1027},	1, {0.000, 180.000, 0.000},0,0)
+	addSquadron("Kpr_Sajuuk", "Kpr_Sajuuk",	{3278, 0, 0},	0, {0.000, 0.000, 0.000},0,0)
+
+	setWorldBoundsInner({-791.74, -0.31, -65.08}, {6255.80, 2102.30, 6163.46})
+
+end -- end of deterministic function
+
+function NonDetermChunk()
+	setGlareIntensity(0.000000)
+
+	fogSetActive(0)
+
+	loadBackground("m01")
+	setSensorsManagerCameraDistances(0,60000)
+
+	setDefaultMusic("Data:sound/music/M04.PAT")
+
+
+
+
+end -- end of nondeterm function
+
+
+--HeaderInfo: max number of players allowed on this level
+maxPlayers = 2;
+testMap = 1
+
+--PlayerInfo: info on each possible player in this level
+player = {};
+player[0] = {
+	id = 0,
+	name = "",
+	resources = 10000,
+	raceName = "Hiigaran",
+	startPos = 0
+}
+
+player[1] = {
+	id = 1,
+	name = "",
+	resources = 10000,
+	raceName = "Vaygr",
+	startPos = 0
+}
+
+
+
+-- **** Object Counts **** --
+
+
+--Pebbles: 0
+--Asteroids: 0
+--Dustclouds: 0
+--DustcloudMeshes: 0
+--NebulaBranches: 0
+--NebulaMeshes - Total number of points: 0
+--NebulaNexii 0
+

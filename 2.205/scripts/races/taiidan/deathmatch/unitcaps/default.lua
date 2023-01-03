@@ -1,3 +1,0 @@
---Taiidan
-
-supplyShow("Utility", "Never");

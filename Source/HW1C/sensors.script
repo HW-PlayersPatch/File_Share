@@ -1,0 +1,81 @@
+;
+;   Sensors.script - tweakables for the sensors manager
+;
+
+;tweakables for blobs - sensors manager
+smBobDensityLow                   2.0e-012        ; range of mass densites for blobs in the sensors manager, tonnes/m^3
+smBobDensityHigh                  4.0e-012
+smBobSmallestRadius               10000
+smBobBiggestRadius                12000
+smBobOverlapFactor                0.5
+smBobRadiusCombineMargin          3000
+smBobStartSphereSize              4000
+smBobDoingCollisionBobs           FALSE
+
+smBlobUpdateRate                4
+smHeightCircleColor             223, 220, 20
+smBlobColor                     0,0,149
+smBlobColorHigh                 0,0,149
+smBlobColorLow                  0,0,149
+smBlobCircleSize                1800
+smSelectedFlashSpeed            0.4
+smFocusScalar                   4
+smFocusRadius                   5000
+smZoomLength                    0.4
+smMainViewZoomLength            0.15
+smPlayerListTextColor           250,250,250
+smCursorTextColor               250,250,250
+smTOColor                       250,250,250
+smPlayerListTextMargin          4
+smPlayerListMarginX             4
+smPlayerListMarginY             3
+smTOBottomCornerX               0
+smTOBottomCornerY               -0.5
+smTOLineSpacing                 1
+smTickLength                    .03
+smClosestDistance               2000
+smSelectionWidth                20
+smSelectionHeight               10
+smFarthestMargin                20000
+smClosestMargin                 20000
+smProjectionScale               0.002
+smZoomMinFactor                 6000
+
+smTORadius                      0.01875
+
+;tweakabled for fog-of-war sub-blobs
+FOWBobDensityLow                2.0e-012        ; range of mass densites for blobs in the sensors manager, tonnes/m^3
+FOWBobDensityHigh               4.0e-012
+FOWBobSmallestRadius            4000
+FOWBobBiggestRadius             8000
+FOWBobOverlapFactor             0.3
+FOWBobRadiusCombineMargin       2000
+FOWBobStartSphereSize           6000
+FOWBobDoingCollisionBobs        FALSE
+
+; formula to determine if ships are hidden in asteroid belts:
+; (k1 * #rocks + k2 * #rockRUs) / (k3 * #ships + k4 * shipMass) > 1.0
+FOW_AsteroidK1                  999999999999999999999999
+FOW_AsteroidK2                  999999999999999999999999
+FOW_AsteroidK3                  0.000000001
+FOW_AsteroidK4                  0.000000001
+
+; likewise, the formula for determining if ships are hidden in dust clouds:
+; k2 * #dustRUs / (k3 * #ships + k4 * shipMass) > 1.0
+;FOW_DustGasK1
+FOW_DustGasK2                   1.5
+FOW_DustGasK3                   10
+FOW_DustGasK4                   1
+
+;how long the FOW sub-blobs last
+smFOWBlobUpdateTime             0.8
+
+;parameters for scrolling about
+smPanSpeedMultiplier            0.003       ;controls of mouse tracking on the pan
+smPanTrack                      0.05        ;controls spline tension/evaluation step
+smPanEvalThreshold              1.0         ;min distance a pan camera spline will be evaluated
+smCursorPanX                    300         ;cursor panning is same as mouse-scrolling this many pixels/second
+smCursorPanY                    300
+smMaxFrameTicks                 64          ;prevent evaluation task overflow.
+smWorldPlaneDistanceFactor      0.90        ;portion of world radius you can scroll to
+smPanUnivExtentMult             1.00        ;portion of smUniverseExtents you cam pan to

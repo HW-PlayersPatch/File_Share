@@ -1,0 +1,9 @@
+
+NewSubSystemType = StartSubSystemConfig()
+NewSubSystemType.selectionLimit=1
+NewSubSystemType.type="Weapon"
+NewSubSystemType.hasIcon=0
+NewSubSystemType.AttackFamily="BigCapitalShip"
+NewSubSystemType.ArmourFamily="HeavyArmour"
+LoadSharedModel(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannon");
+StartSubSystemWeaponConfig(NewSubSystemType,"Hgn_BattleCruiserKineticBurstCannonRightSide","Weapon_TurretTop","Weapon_TurretTop");

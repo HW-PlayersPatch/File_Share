@@ -1,0 +1,221 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Deathtrail",
+            length = 3,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },     
+        animation3 =
+        {
+            name = "Weapon_Gun0",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation4 =
+        {
+            name = "Weapon_Mine",
+            length = 1,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },     
+        animation5 =
+        {
+            name = "PowerOff",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation6 =
+        {
+            name = "Damage",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation7 =
+        {
+            name = "dmg01",
+            length = 1,
+            loop = 1,
+            parent = "Damage",
+            minimum = 0.75,
+            maximum = 1,
+            markers = {""}
+        }, 
+        animationrad =
+        {
+            name = "Radiation",
+            length = 2,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animationOn =
+        {
+            name = "On",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        death0 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+            { "fx", "death_generic_fighter" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "0.75" },
+        },
+        death1 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.85" },
+            { "marker", "Root" },
+            { "fx", "death_generic_fighter_nodebris" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "2" },
+        },
+        deathtrail1 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+            { "fx", "FIERY_TRAIL_SPRAY" },
+            { "sound", "EXPLOSION/DEATHTRAIL" },
+            { "fx_scale", "5" },
+        },
+        deathtrail2 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+            { "fx", "fiery_trail_spray_small" },
+            { "fx_scale", "5" },
+        },
+        deathtrail3 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "0" },
+            { "marker", "Root" },
+            { "fx", "fiery_flash_ring_long" },
+            { "fx_scale", "30" },
+        },
+        deathtrail4 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "0.5" },
+            { "marker", "Root" },
+            { "fx", "fiery_trail_lines_spray" },
+            { "fx_scale", "entity" },
+        },
+        deathtrail5 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "0.5" },
+            { "marker", "Root" },
+            { "fx", "fiery_trail_death_combo" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "7" },
+        },
+        deathtrail6 =
+        {
+            { "anim", "Deathtrail" },
+            { "animtime", "1" },
+            { "marker", "Root" },
+            { "fx", "fiery_trail_shockwave_small" },
+            { "fx_scale", "entity" },
+        },
+        wpn1 =
+        {
+            { "anim", "Weapon_Gun0" },
+            { "animtime", "0" },
+            { "marker", "Weapon_Gun0_Position" },
+            { "fx", "muzzle_flash_combo" },
+            { "sound", "WEAPON/FIGHTER/FIRE/VWEAPON_LANCE_TEST" },
+                        { "fx_scale", "0.5" },
+            { "fx_nlips", "on" },
+        },                        
+        wpn2 =
+        {
+            { "anim", "Weapon_Mine" },
+            { "animtime", "0" },
+            { "marker", "root" },
+            { "fx", "torpedo_steam_spray" },
+            { "fx_scale", "1" },
+        },
+        --chunck fast                
+        chunckfast1 = 
+        { 
+                { "anim", "death", }, 
+                { "animtime", "0.86", },                         
+                { "marker", "Root", }, 
+                { "fx", "dmg_capital_explosion_large_hull_flare_cf_noscar_35_final_fast2", },                 
+                { "fx_scale", "0.5", }, 
+        },    
+        eventPowerOff = 
+        { 
+                { "anim", "PowerOff", }, 
+                { "animtime", "0", }, 
+                { "marker", "Root", }, 
+                { "fx", "plasma_ball_spray", }, 
+                { "sound", "SPECIAL/SPECIAL_ABILITIES_PHASE_OFF", }, 
+                { "fx_scale", "5", }, 
+        },
+        Radiation =
+        {
+            { "anim", "Radiation", },
+            { "animtime", "-1", },
+            { "marker", "Root", },
+            { "fx", "sparks_small_spray_rad", }, 
+                        --{ "sound", "SPECIAL/SPECIAL_ABILITIES_PHASE_OFF", }, 
+            { "fx_scale", "6", },
+            { "fx_nlips", "on" },
+        },                
+        fieldOn =
+        {
+            { "anim", "On", },
+            { "animtime", "-1", },
+            { "marker", "root", },
+            { "fx", "defensefield_sphere_spray_DF", },
+            { "fx_scale", "600", },
+        },
+    }
+}

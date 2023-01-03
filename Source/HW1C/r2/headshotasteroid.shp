@@ -1,0 +1,44 @@
+[HeadShotAsteroid]
+LODFile                             headshotasteroid.lod
+pMexData                            headshotasteroid\Rl0\LOD0\headshotasteroid.mex
+mass                             200000.0
+momentOfInertiaX                 20000.0
+momentOfInertiaY                 20000.0
+momentOfInertiaZ                 20000.0
+maxvelocity                         1000.0
+maxrot                              10.0
+renderlistFade						12000.0
+renderlistLimit						24000.0
+
+shipclass                           CLASS_Mothership
+maxhealth                           450000
+
+blastRadiusShockWave                1.0
+blastRadiusDamage                   125
+
+;Moving Around
+;=-----------=
+thruststrength[TRANS_UP]            35.0                ; acceleration (m/s^2) [1-1000 approx. range]
+thruststrength[TRANS_DOWN]          35.0
+thruststrength[TRANS_RIGHT]         35.0
+thruststrength[TRANS_LEFT]          35.0
+thruststrength[TRANS_FORWARD]       35.0
+thruststrength[TRANS_BACK]          35.0
+rotstrength[ROT_YAWLEFT]            0.25                        ; rotational acceleration (deg/s^2) [0.01 - 1.0]
+rotstrength[ROT_YAWRIGHT]           0.25
+rotstrength[ROT_PITCHUP]            0.02
+rotstrength[ROT_PITCHDOWN]          0.02
+rotstrength[ROT_ROLLRIGHT]          0.02
+rotstrength[ROT_ROLLLEFT]           0.02
+turnspeed[TURN_YAW]                 0.2                          ; speed at which ship tries to turn (1=standard)
+turnspeed[TURN_PITCH]               0.2
+turnspeed[TURN_ROLL]                0.2
+
+;asteroidCanBreak                    TRUE
+;breakinto[Asteroid0]                0
+;breakinto[Asteroid1]                4
+;breakinto[Asteroid2]                2
+;breakinto[Asteroid3]                3
+;breakinto[Asteroid4]                5
+
+minimumZoomDistance              	1000

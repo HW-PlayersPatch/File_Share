@@ -1,0 +1,172 @@
+--===========================================================================
+--  Purpose : Lua definition file for Homeworld Ship.
+--            Contains loading information and flight dynamics information (among other things?)
+--
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--===========================================================================
+NewShipType = StartShipConfig()
+NewShipType.displayedName="$10094"
+NewShipType.sobDescription="$10095"
+NewShipType.maxhealth=400000
+NewShipType.regentime=26667
+NewShipType.minRegenTime=26667
+NewShipType.sideArmourDamage=1
+NewShipType.rearArmourDamage=1
+NewShipType.isTransferable=0
+NewShipType.useEngagementRanges=0
+NewShipType.unitCapsNumber=1
+NewShipType.addedUnitCaps=101
+NewShipType.SquadronSize=1
+NewShipType.passiveFormation="Spear"
+NewShipType.defensiveFormation="x"
+NewShipType.aggressiveFormation="Claw"
+NewShipType.mass=900
+NewShipType.collisionMultiplier=1
+NewShipType.thrusterMaxSpeed=100
+NewShipType.mainEngineMaxSpeed=100
+NewShipType.rotationMaxSpeed=23
+NewShipType.thrusterAccelTime=4
+NewShipType.thrusterBrakeTime=1.5
+NewShipType.mainEngineAccelTime=4
+NewShipType.mainEngineBrakeTime=1.5
+NewShipType.rotationAccelTime=2
+NewShipType.rotationBrakeTime=1
+NewShipType.thrusterUsage=1
+NewShipType.accelerationAngle=20
+NewShipType.mirrorAngle=0
+NewShipType.secondaryTurnAngle=0
+NewShipType.maxBankingAmount=5
+NewShipType.descendPitch=10
+NewShipType.goalReachEpsilon=25
+NewShipType.slideMoveRange=500
+NewShipType.controllerType="Ship"
+NewShipType.tumbleStaticX = 2
+NewShipType.tumbleStaticY = 3
+NewShipType.tumbleStaticZ = 2
+NewShipType.tumbleDynamicX = 2
+NewShipType.tumbleDynamicY = 2
+NewShipType.tumbleDynamicZ = 2
+NewShipType.tumbleSpecialDynamicX = 2
+NewShipType.tumbleSpecialDynamicY = 2
+NewShipType.tumbleSpecialDynamicZ = 2
+NewShipType.relativeMoveFactor=1
+NewShipType.swayUpdateTime=10
+NewShipType.swayOffsetRandomX=10
+NewShipType.swayOffsetRandomY=10
+NewShipType.swayOffsetRandomZ=10
+NewShipType.swayBobbingFactor=0
+NewShipType.swayRotateFactor=0
+NewShipType.useTargetRandom=1
+NewShipType.targetRandomPointXMin=-0.4
+NewShipType.targetRandomPointXMax=0.4
+NewShipType.targetRandomPointYMin=-0.7
+NewShipType.targetRandomPointYMax=0.7
+NewShipType.targetRandomPointZMin=-0.7
+NewShipType.targetRandomPointZMax=0.4
+NewShipType.dustCloudDamageTime=280
+NewShipType.nebulaDamageTime=800
+NewShipType.MinimalFamilyToFindPathAround="MotherShip"
+NewShipType.BuildFamily="NotBuildable"
+NewShipType.AttackFamily="Mothership"
+NewShipType.DockFamily="Flagship"
+NewShipType.AvoidanceFamily="MotherShip"
+NewShipType.DisplayFamily="Capital"
+NewShipType.AutoFormationFamily="SuperCap"
+NewShipType.CollisionFamily="Big"
+NewShipType.ArmourFamily="HeavyArmour"
+NewShipType.UnitCapsFamily="Mothership"
+NewShipType.fighterValue=0
+NewShipType.corvetteValue=0
+NewShipType.frigateValue=30
+NewShipType.neutralValue=10
+NewShipType.antiFighterValue=0
+NewShipType.antiCorvetteValue=0
+NewShipType.antiFrigateValue=0
+NewShipType.buildCost=3200
+NewShipType.buildTime=300
+NewShipType.buildPriorityOrder=10
+NewShipType.retaliationRange=4800
+NewShipType.retaliationDistanceFromGoal=160
+NewShipType.visualRange=1000
+NewShipType.prmSensorRange=6500
+NewShipType.secSensorRange=8500
+NewShipType.detectionStrength=1
+NewShipType.TOScale=1
+NewShipType.TOGroupScale=1
+NewShipType.TOGroupMergeSize=0
+NewShipType.mouseOverMinFadeSize=0.15
+NewShipType.mouseOverMaxFadeSize=0.25
+NewShipType.healthBarStyle=2
+NewShipType.nlips=0
+NewShipType.nlipsRange=75000
+NewShipType.nlipsFar=0
+NewShipType.nlipsFarRange=0
+NewShipType.SMRepresentation="Mesh"
+NewShipType.meshRenderLimit=35000
+NewShipType.dotRenderLimit=10
+NewShipType.visibleInSecondary=1
+NewShipType.goblinsStartFade=3200
+NewShipType.goblinsOff=3200
+NewShipType.upLOD=6150
+NewShipType.downLOD=6165
+NewShipType.minimumZoomFactor=0.5
+NewShipType.selectionLimit=150000
+NewShipType.preciseSelectionLimit=15000
+NewShipType.preciseATILimit=100000
+NewShipType.selectionPriority=75
+NewShipType.militaryUnit=0
+NewShipType.blobName="$1575"
+NewShipType.blobNamePriority=100
+NewShipType.alternativeHyperspaceV="hyperspace_gate_bentusi_hold03"
+NewShipType.alternativeHyperspaceA="/etg/special/SPECIAL_ABILITIES_HYPERSPACE_IN_MS"
+NewShipType.alternativeHyperspaceTime = 15
+NewShipType.SMHighlightDistMin=20000
+NewShipType.SMHighlightDistMax=30000
+NewShipType.nbRestrictedHardpoints=1
+addAbility(NewShipType,"MoveCommand",1,0);
+addAbility(NewShipType,"WaypointMove");
+addAbility(NewShipType,"HyperSpaceCommand",1,1,500,1000,0,3);
+addAbility(NewShipType,"CanAttack",1,1,0,1,0.35,1,"BigCapitalShip, SmallCapitalShip, Frigate, Utility, Capturer, Corvette, Fighter, Mothership","Frontal",
+{Fighter="JustShoot"},
+{Corvette="JustShoot"},
+{Munition="JustShoot"},
+{SubSystem="FrontalVsSubSystem"});
+addAbility(NewShipType,"RetireAbility",1,0);
+addCustomCode(NewShipType,"data:Ship/Ben_BentusiExchange/Ben_BentusiExchange.lua","","","Update_Ben_BentusiExchange","","Ben_BentusiExchange",30)
+LoadSharedModel(NewShipType,"Ben_BentusiExchange");
+StartShipWeaponConfig(NewShipType,"Ben_DeadlyAssIon","Weapon_Gun0","Weapon_Gun0");
+StartShipWeaponConfig(NewShipType,"Ben_DeadlyAssIon","Weapon_Gun1","Weapon_Gun1");
+StartShipWeaponConfig(NewShipType,"Ben_DeadlyAssIon","Weapon_Gun2","Weapon_Gun2");
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg03",1, 0.75,0,0,0, 0,0,0,50,0,0,0,200,0,0,0,50,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg02",1, 0.05,0,0,0, 30,-20,200,25,300,150,85,50,0,0,0,85,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg04",1, 0.05,0,0,0, 50,40,-150,50,65,25,5,25,0,0,0,95,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg05",1, 0.05,0,0,0, 25,10,-100,30,35,75,62,75,0,0,0,80,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Lrg01",1, 0.05,0,0,0, 60,30,150,25,35,125,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml01",1, 0.01,0,0,0, 80,125,60,75,125,80,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml02",1, 0.01,0,0,0, 25,0,-125,50,80,35,120,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml03",1, 0.01,0,0,0, 60,95,200,50,15,200,20,125,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml04",1, 0.01,0,0,0, 10,60,-300,25,35,80,65,75,0,0,0,60,0,0,0,50);
+SpawnSalvageOnDeath(NewShipType,"Slv_Chunk_Sml05",1, 0.01,0,0,0, 60,10,30,75,35,25,65,75,0,0,0,60,0,0,0,50);
+NewShipType.battleScarCoverage=4
+NewShipType.battleScarBudgetLow = 1200
+NewShipType.battleScarBudgetNext = 1800
+NewShipType.sobDieTime=15.8
+NewShipType.sobSpecialDieTime=1
+NewShipType.specialDeathSpeed=40
+NewShipType.chanceOfSpecialDeath=0
+NewShipType.deadSobFadeTime=0.2
+setEngineBurn(NewShipType,9,0.2,0.5,300,1.02,0.1,0.25,380);
+setEngineGlow(NewShipType,1,1,1.02,20,450,200,2,{0.27, 0.47, .69, 0.25});
+loadShipPatchList(NewShipType,"data:sound/sfx/ship/"
+                             ,0,"Hiigaran/MegaShip/Engines/HMothershipEng",""
+                             ,1,"Hiigaran/MegaShip/Ambience/HMotherShipAmb",""
+                             ,3,"Megaliths/RandomEmit/HANGAR_EMITTERS","marker3");
+NewShipType.alliesCanAttack=1
+NewShipType.canAttackAllies=1
+NewShipType.targetRandomPointXMin=-0.75
+NewShipType.targetRandomPointXMax=0.75
+NewShipType.targetRandomPointYMin=-0.7
+NewShipType.targetRandomPointYMax=0.7
+NewShipType.targetRandomPointZMin=-0.25
+NewShipType.targetRandomPointZMax=0.8
+

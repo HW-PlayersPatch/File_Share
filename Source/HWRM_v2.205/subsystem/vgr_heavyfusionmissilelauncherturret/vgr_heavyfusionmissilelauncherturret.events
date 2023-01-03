@@ -1,0 +1,28 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Fire_Missle",
+            length = 3,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Fire_Missle" },
+            { "animtime", "0" },
+            { "marker", "Weapon_MissileRight_Muzzle" },
+            { "fx", "TORPEDO_STEAM_SPRAY" },
+            { "sound", "WEAPON/CARRIER/FIRE/WEAPON_DESTROYER_MISSLE_LAUNCH" },
+            { "fx_scale", "1" },
+        },		
+    }
+}

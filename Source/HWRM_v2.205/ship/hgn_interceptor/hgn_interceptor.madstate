@@ -1,0 +1,23 @@
+-- =============================================================================
+--     Name    : HGN_Interceptor.animStates
+--     Purpose : Animation state data for HGN_Interceptor
+--
+--     Created 7/03/2001 by lmoloney
+--     Copyright Relic Entertainment, Inc.  All rights reserved.
+-- =============================================================================
+
+--Custom0 is the turnaround testing state
+Hgn_Interceptor_Custom0_OnSet = function(ship)
+    rndVal = abs(random())
+    if rndVal < 0.5 then
+        startAnim(ship, "Turnback_l")
+    else
+        startAnim(ship, "Turnback_r")
+    end
+end
+
+--at end of turnaround, go back to default state
+Hgn_Interceptor_Custom0_OnEnd = function(ship)
+    setState(ship, "Custom0", false)
+    setState(ship, "Normal", true)
+end

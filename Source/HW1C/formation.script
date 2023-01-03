@@ -1,0 +1,34 @@
+
+FORMATION_TRAVEL_SLOWEST_SHIP               TRUE    ; either TRUE or FALSE. Indicates if ships should stay in formation by limiting speed to slowest ship
+
+DELTA_FORMATION_PADDING_SCALE               1.55     ; scale minimum colliding distance by this number to get formation spacing
+                                                    ; NOTE - this number must be greater than AVOID_OBJ_PADDING_SCALE in aiship.script
+BROAD_FORMATION_PADDING_SCALE               1.8     ; scale minimum colliding distance by this number to get formation spacing
+                                                    ; NOTE - this number must be greater than AVOID_OBJ_PADDING_SCALE in aiship.script
+DELTA3D_FORMATION_PADDING_SCALE             1.55     ; scale minimum colliding distance by this number to get formation spacing
+                                                    ; NOTE - this number must be greater than AVOID_OBJ_PADDING_SCALE in aiship.script
+CLAW_FORMATION_PADDING_SCALE                1.55     ; scale minimum colliding distance by this number to get formation spacing
+                                                    ; NOTE - this number must be greater than AVOID_OBJ_PADDING_SCALE in aiship.script
+CLAW_FORMATION_CURVATURE                    1.2     ; 1.x, where x is the %increase in forward distance for each layer of
+                                                    ; the claw.  Range 1.00001 - 1.5
+WALL_FORMATION_PADDING_SCALE                3.0
+WALL_FORMATION_PADDING                      30.0
+
+SPHERE_FORMATION_PADDING_SCALE              2.0
+
+SPHERE_MINIMUM_RADIUS                       500.0
+SPHERE_MAXIMUM_RADIUS                       5000.0
+SPHERESIZE_IGNORE_NUMDECLINATIONS           600.0
+
+STRIKECRAFT_PADDING_MODIFIER                1.3     ; multiply all padding scales by this number for strikecraft
+
+PARADE_CONSIDERED_STEADY_VELSQR             50.0
+
+FORMATION_TRAVELVEL_MINSCALE                0.5
+FORMATION_TRAVELVEL_MAXSCALE                1.0
+
+FORMATION_ERROR_BIG                         10000.0
+FORMATION_ERROR_NEGLIGIBLE                  100.0
+
+TARGETDRONE_FORMATION_SIZE                  1000.0
+

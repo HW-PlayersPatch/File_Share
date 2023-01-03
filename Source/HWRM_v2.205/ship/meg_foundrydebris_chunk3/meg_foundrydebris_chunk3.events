@@ -1,0 +1,78 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_noscar" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "10" },
+        },
+        event2 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "marker2" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "15" },
+        },
+        event3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "marker4" },
+            { "fx", "dmg_capital_explosion_large_hull_flare_noscar" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "25" },
+        },
+        event4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "marker5" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "fx_scale", "10" },
+        },
+        event5 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.15" },
+            { "marker", "marker3" },
+            { "fx", "dmg_capital_explosion_large" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "15" },
+        },
+        event6 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "Root" },
+            { "fx", "dmg_capital_explosion_combo" },
+            { "fx_scale", "50" },
+        },
+        event7 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "Root" },
+            { "fx", "DMG_MASSIVE_MESH_SPHERE_RING" },
+            { "fx_scale", "2" },
+        },
+    }
+}

@@ -1,0 +1,217 @@
+-- =============================================================================
+--     Name    : HomeworldClassic.campaign
+--     Purpose : campaign for Homeworld missions to run in HW2 engine.
+--
+--     Last modified: 11 Aug 2013, 2013 by lmoloney
+--     Copyright Relic Entertainment, Inc.  All rights reserved.
+-- =============================================================================
+
+-- DAT strings found in UI.DAT
+
+-- localized display name for the UI
+displayName = "$5502"
+
+-- 0 = Primary
+contentType = 0
+contentName = "homeworldclassic"
+contentOrdered = 1
+contentChooseText = "$3492" -- CHOOSE MISSION//
+
+ExtFilter = "campaign_hw1,campaign_gbx,campaign_gbx_hw1"
+contentRules = "SinglePlayer"	-- A DEFAULT that actually reads from SinglePlayerOptions.lua
+
+-- initialization
+Mission = { }   -- create a mission structure
+
+-- Mission01	TRIALS [KHARAK SYSTEM]
+Mission[1] =
+{
+    postload        = function () playAnimaticNisAtPoint("data:animatics/A00_01.lua", "nis/n01r1", "PlayerStartPoint_NIS");  end,
+    directory       = "Mission01",
+    level           = "Mission01.level",
+    postlevel       = function () postLevelComplete() end,
+
+    displayName     = "$4030",
+    description     = "$4031",
+}
+
+-- Mission 2    BATTLE W/ TURANIC RAIDERS [GREAT WASTELANDS]
+Mission[2] = {
+	postload        = function () playAnimatic("data:animatics/A01_02.lua", 0, 0);  end,
+    directory       = "Mission02",
+    level           = "Mission02.level",
+	
+    postlevel	    = function () postLevelComplete() end,
+
+	displayName     = "$4032",
+	description     = "$4033",
+}
+
+
+-- Mission 3    BACK TO KHARAK [KHARAK SYSTEM]
+Mission[3] = {
+    postload        = function () playAnimatic("data:animatics/A02_03.lua", 0, 0); end,
+    directory       = "Mission03",
+    level           = "Mission03.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4034",
+    description     = "$4035",
+}
+
+-- Mission 4    DEFEAT P1 [GREAT WASTELANDS]
+Mission[4] = {
+    postload        = function () playAnimatic("data:animatics/A03_04.lua", 0, 0); end,
+
+    directory       = "Mission04",
+    level           = "Mission04.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4036",
+    description     = "$4037",
+}
+
+-- Mission 5   BATTLE AGAINST SACKING FORCE [GARDEN VIEW]
+Mission[5] = {
+    postload        = function () playAnimatic("data:animatics/A04_05.lua", 0, 0); end,
+
+    directory       = "Mission05",
+    level           = "Mission05.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4038",
+    description     = "$4039",
+}
+
+-- Mission 6  ASTEROIDS 3D [DIAMOND SHOALS]
+Mission[6] = {
+    postload        = function () playAnimatic("data:animatics/A05_06.lua", 0, 0); end,
+
+    directory       = "Mission06",
+    level           = "Mission06.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4040",
+    description     = "$4041",
+}
+
+-- Mission 7  SWARMER BATTLE [GARDENS]
+Mission[7] = {
+    postload        = function () playAnimatic("data:animatics/A06_07.lua", 0, 0); end,
+
+    directory       = "Mission07",
+    level           = "Mission07.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4042",
+    description     = "$4043",
+}
+
+-- Mission 8  FALKIRK [OUTER GARDENS]
+Mission[8] = {
+    postload        = function () playAnimatic("data:animatics/A07_08.lua", 0, 0); end,
+
+    directory       = "Mission08",
+    level           = "Mission08.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4044",
+    description     = "$4045",
+}
+
+-- Mission 9  GHOSTSHIP [WHISPERING OCEAN]
+Mission[9] = {
+    postload        = function () playAnimatic("data:animatics/A08_09.lua", 0, 0); end,
+
+    directory       = "Mission09",
+    level           = "Mission09.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4046",
+    description     = "$4047",
+}
+
+-- Mission 10 SUPERNOVA STATION [WHISPERING OCEAN]
+Mission[10] = {
+    postload        = function () playAnimatic("data:animatics/A09_10.lua", 0, 0); end,
+
+    directory       = "Mission10",
+    level           = "Mission10.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4048",
+    description     = "$4049",
+}
+
+-- Mission 11 P3 VS. TRADERS [TENHAUSER GATE]
+Mission[11] = {
+    postload        = function () playAnimatic("data:animatics/A10_11.lua", 0, 0); end,
+
+    directory       = "Mission11",
+    level           = "Mission11.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4050",
+    description     = "$4051",
+}
+
+-- Mission 12 ELITE GUARD TRAP [GALACTIC CORE]
+Mission[12] = {
+    postload        = function () playAnimatic("data:animatics/A11_12.lua", 0, 0); end,
+
+    directory       = "Mission12",
+    level           = "Mission12.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4052",
+    description     = "$4053",
+}
+
+-- Mission 13   SHIP GRAVEYARD [SHINING HINTERLANDS]
+Mission[13] = {
+    postload        = function () playAnimatic("data:animatics/A12_13.lua", 0, 0); end,
+
+    directory       = "Mission13",
+    level           = "Mission13.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4054",
+    description     = "$4055",
+}
+
+-- Mission 14   MINING FACILITY [BRIDGE OF SIGHS]
+Mission[14] = {
+    postload        = function () playAnimatic("data:animatics/A13_14.lua", 0, 0); end,
+
+    directory       = "Mission14",
+    level           = "Mission14.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4056",
+    description     = "$4057",
+}
+
+-- Mission 15   HEADSHOT [CHAPEL PERILOUS]
+Mission[15] = {
+    postload        = function () playAnimatic("data:animatics/A14_15.lua", 0, 0); end,
+
+    directory       = "Mission15",
+    level           = "Mission15.level",
+    postlevel	    = function () postLevelComplete() end,
+
+    displayName     = "$4058",
+    description     = "$4059",
+}
+
+-- Mission 16   FINAL BATTLE [HOMEWORLD SYSTEM]
+Mission[16] = {
+    postload        = function () playAnimatic("data:animatics/A15_16.lua", 0, 0); end,
+
+    directory       = "Mission16",
+    level           = "Mission16.level",
+    postlevel       = function ( bWin ) if ( bWin == 1 ) then playAnimatic("data:animatics/A16_17.lua", 1, 0) else postLevelComplete() end end,
+
+    displayName     = "$4060",
+    description     = "$4061",
+}
+

@@ -1,0 +1,13 @@
+
+-- formats: 
+
+hitfx = "dmg_laser_hit"
+bulletfx = "Vgr_laser_combo"
+nopenetratefx = "dmg_laser_hit"
+deathtype = "deathBeam"
+scartype = "Plasma_Bomb/Plasma_Bomb"
+fire_sfx = "WEAPON/FIGHTER/FIRE/VWEAPON_LANCE_FLECHETTE_REPEATER_SHELL"
+hit_sfx = "WEAPON/FIGHTER/FIRE/VWEAPON_LANCE_KINETIC_AUTOGUN_SHELL"
+nopenetrate_sfx = "WEAPON/FIGHTER/IMPACT/WEAPON_FIGHTER_PLASMA_LANCE_BEAM_HIT"
+
+hit_clamp = {1.0, 1.0}

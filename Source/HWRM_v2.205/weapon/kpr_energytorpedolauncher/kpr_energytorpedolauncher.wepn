@@ -1,0 +1,18 @@
+
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Missile","Hgn_Torpedo","Normal",40,200,0,0,0,0,1,1,0,2,0,0,1,0,0,0,0.1,"Normal",1,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",1000,1000,"");
+setPenetration(NewWeaponType,5,1,
+{PlanetKillerArmour=0},
+{SpaceMineArmor=1},
+{TorpedoArmor=0},
+{HeavyMissileArmor=0},
+{SmallMissileArmor=0},
+
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1});
+setAccuracy(NewWeaponType,1);
+setAngles(NewWeaponType,0,-180,180,-10,60);
+setMiscValues(NewWeaponType,1,0.5);
+addAnimTurretSound(NewWeaponType,"Data:Sound/SFX/ETG/SPECIAL/SPECIAL_ABILITIES_TURRET_ON");
+
+setFireMultFactor(NewWeaponType, 1.0);

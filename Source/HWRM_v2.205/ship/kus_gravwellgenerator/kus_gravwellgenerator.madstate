@@ -1,0 +1,50 @@
+KUS_GRAVWELLGENERATOR_Normal_OnSet = function(ship)
+	startTime = 0
+	startAnim(ship, "arms_close")
+	setTime(ship,"arms_close",getAnimLength(ship, "arms_close"))
+	setPauseTime(ship, "arms_close", 1000)
+end
+
+KUS_GRAVWELLGENERATOR_CustomCommandActivate_OnSet = function(ship)    
+	setState(ship, "CustomCommandActivate", 1)
+
+	if(isAnimRunning(ship, "arms_open") == 0) then
+		startTime = 0
+
+		if(isAnimRunning(ship, "arms_close") ~= 0) then
+			startTime = getAnimLength(ship, "arms_close") - getTime(ship, "arms_close")
+			stopAnim(ship, "arms_close")	
+			endEffect(ship, "Close")
+		end
+			
+		startAnim(ship, "arms_open")		
+		startEffect(ship, "Open")
+		setTime(ship,"arms_open",startTime)        
+		setPauseTime(ship, "arms_open", 1000)
+	end
+end
+
+KUS_GRAVWELLGENERATOR_CustomCommandActivate_OnPause = function(ship)    
+	setState(ship, "CustomCommandActivate", 1)	
+	endEffect(ship, "Open")
+	startEffect(ship, "On")
+end
+
+KUS_GRAVWELLGENERATOR_CustomCommandDeActivate_OnSet = function(ship)    
+	if(isAnimRunning(ship,"arms_close") == 0) then
+		startTime = 0
+
+		if(isAnimRunning(ship, "arms_open") ~= 0) then
+			startTime = getAnimLength(ship, "arms_open") - getTime(ship, "arms_open")
+			stopAnim(ship, "arms_open")			
+		end
+		
+		startAnim(ship, "arms_close")
+		endEffect(ship, "On")
+		startEffect(ship, "Close")
+		setTime(ship,"arms_close",startTime)
+		setPauseTime(ship, "arms_close", 1000)
+	end
+
+	setState(ship, "CustomCommandDeActivate", 1)
+end

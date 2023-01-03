@@ -1,0 +1,31 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+fps = 19
+startFrame = 0
+loopCount = 100000
+texture = {
+	"data:UI/Pings/Meshes/arrowBlank.tga",
+	"data:UI/Pings/Meshes/arrowBlank.tga",
+	"data:UI/Pings/Meshes/arrowBlank.tga",
+	"data:UI/Pings/Meshes/arrow.mtga",
+	"data:UI/Pings/Meshes/arrow0b.mtga",
+	"data:UI/Pings/Meshes/arrow1.mtga",
+	"data:UI/Pings/Meshes/arrow1b.mtga",
+	"data:UI/Pings/Meshes/arrow2.mtga",
+	"data:UI/Pings/Meshes/arrow2b.mtga",
+	"data:UI/Pings/Meshes/arrow3.mtga",
+	"data:UI/Pings/Meshes/arrow3b.mtga",
+	"data:UI/Pings/Meshes/arrow4.mtga",
+	"data:UI/Pings/Meshes/arrow4b.mtga",
+	"data:UI/Pings/Meshes/arrow5.mtga",
+	"data:UI/Pings/Meshes/arrow5b.mtga",
+	"data:UI/Pings/Meshes/arrow6.mtga",
+	"data:UI/Pings/Meshes/arrow6b.mtga",
+	"data:UI/Pings/Meshes/arrow7.mtga",
+	"data:UI/Pings/Meshes/arrow7b.mtga"}

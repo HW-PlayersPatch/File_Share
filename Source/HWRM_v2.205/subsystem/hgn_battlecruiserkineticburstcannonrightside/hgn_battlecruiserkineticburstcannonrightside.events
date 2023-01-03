@@ -1,0 +1,37 @@
+effects =
+{
+    animations =
+    {
+         animation1 =
+        {
+            name = "Weapon_TurretTop",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+	event1 =
+        {
+            { "anim", "Weapon_TurretTop" },
+            { "animtime", "0" },
+            { "marker", "Weapon_TurretTop_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "sound", "WEAPON/CARRIER/FIRE/WEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL" },
+            { "fx_scale", "3" },
+        },
+        event2 =
+        {
+            { "anim", "Weapon_TurretTop" },
+            { "animtime", "0.4" },
+            { "marker", "Weapon_TurretTopSlave_Muzzle" },
+            { "fx", "muzzle_flash_combo_small_capital" },
+            { "sound", "WEAPON/CARRIER/FIRE/WEAPON_CARRIER_KINETIC_BURST_CANNON_SHELL" },
+            { "fx_scale", "3" },
+        },			
+    }
+}

@@ -1,0 +1,753 @@
+cameraBlendIn(1)
+wideScreenIn(1)
+at frame 0
+	cameraCut("StartCorvShape")
+	displayCard("NIS/NISCard02.tga", 0, 1, 1, 0, 0, 0, 0)
+at frame 1
+	displayCard("NIS/NISCard01.tga", 0, 0.833, 1, 0.1,0,0,0)
+	playMusic("E3NISDEM_L_STR.mp3")
+at frame 2
+	displayCard("NIS/NISCard03.tga", 0.4, 0.37, 0.6, 0.238, 0, 0, 0)
+at frame 300
+	cameraCut("StartCorvShape2")
+at frame 750
+	cameraCut("OpenShotShape")
+at frame 1740
+	cameraCut("BigFollowerShape")
+at frame 3300
+	cameraCut("ScoutAssShape")
+at frame 3700
+	cameraCut("ScoutChaserShape")
+at frame 3900
+	cameraCut("VgrSupriseShape")
+at frame 3950
+	cameraCut("CorvDeathShape")
+at frame 4010
+	cameraCut("ChaseCamShape")
+at frame 4200
+	cameraCut("TurDeathShape")
+at frame 4460
+	cameraCut("EstablishShape1")
+at frame 4650
+	cameraCut("EstablishShape2")
+at frame 4761
+	cameraCut("FlagshipIntroShape")
+at frame 5281
+	cameraCut("ShadowShotShape")
+at frame 5880
+	displayCard("NIS/NISCard01.tga", 0, 0.833, 1, 0.167, 0, 1, 3)
+at frame 6060
+	displayCard("NIS/NISCard02.tga", 0, 1, 1, 0, 0, 1, 3)
+	displayCard("NIS/NISCard03.tga", 0.4, 0.37, 0.6, 0.238, 0, 1, 3)
+at frame 6240
+	fadeSet(1)
+at frame 6330
+	displayCard("NIS/NISCard01.tga", 0, 0.833, 1, 0.167, 1, 0, 3)
+	displayCard("NIS/NISCard02.tga", 0, 1, 1, 0, 1, 0, 3)
+	displayCard("NIS/NISCard03.tga", 0.4, 0.37, 0.6, 0.238, 1, 0, 3)
+at frame 6507
+	fadeSet(0)
+	playMusic("AMBIENT1_L_STR.mp3")
+	wideScreenOut(0.01)
+
+with |OpenShot_root|HAC
+{
+	at frame 1740
+		hide()
+}
+
+with |OpenShot_root|HAC1
+{
+	at frame 1740
+		hide()
+}
+
+with |HACGrp|HAC2
+{
+	at frame 0
+		hide()
+	at frame 3000
+		show()
+	at frame 3980
+		attack("|vaf")
+	at frame 4520
+		deathDamage()
+}
+
+with |HACGrp|HAC3
+{
+	at frame 0
+		hide()
+	at frame 3000
+		show()
+	at frame 3980
+		deathDamage()
+}
+
+with |HGrp2|HAF8
+{
+	at frame 4204
+		attack("|vlcgrp|vlc2")
+	at frame 4460
+		deathDamage()
+}
+
+with |HGrp2|HAF9
+{
+	at frame 4700
+		deathDamage()
+}
+
+with |HGrp2|HAF10
+{
+	at frame 4600
+		deathDamage()
+}
+
+with |HI8
+{
+	at frame 0
+		hide()
+	at frame 2600
+		show()
+	at frame 2938
+		hide()
+}
+
+with |HI9
+{
+	at frame 0
+		hide()
+	at frame 2600
+		show()
+	at frame 2938
+		hide()
+}
+
+with |HT
+{
+	at frame 3295
+		setMADState("Landed")
+	at frame 4600
+		deathDamage()
+}
+
+with |HT1
+{
+	at frame 0
+		hide()
+	at frame 2550
+		show()
+	at frame 3600
+		setMADState("Landed")
+	at frame 4490
+		deathDamage()
+}
+
+with |HT2
+{
+	at frame 0
+		hide()
+		invincible()
+	at frame 2200
+		show()
+	at frame 4140
+		setMADState("Landed")
+	at frame 4170
+		attack("|vlcgrp|vlc")
+	at frame 4324
+		vincible()
+	at frame 4325
+		deathDamage()
+}
+
+with |HT3
+{
+	at frame 0
+		hide()
+	at frame 2550
+		show()
+	at frame 3559
+		setMADState("Landed")
+	at frame 4700
+		deathDamage()
+}
+
+with |Hgn_AntiCapTurret
+{
+	at frame 1740
+		attack("|Vgr_AssaultFrigate")
+	at frame 2200
+		haltAttack()
+	at frame 2220
+		attack("|Vgr_AssaultFrigate2")
+}
+
+with |Hgn_AntiCapTurret1
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2116
+		attack("|Vgr_AssaultFrigate8")
+	at frame 3383
+		deathDamage()
+}
+
+with |Hgn_AssaultCorvette
+{
+	at frame 0
+		hide()
+	at frame 3340
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate
+{
+	at frame 2220
+		attack("|Vgr_AssaultFrigate4")
+	at frame 2350
+		haltAttack()
+	at frame 3340
+		attack("|Vgr_LaserCorvette3")
+}
+
+with |Hgn_AssaultFrigate1
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2219
+		attack("|Vgr_AssaultFrigate3")
+	at frame 2380
+		deathDamage()
+}
+
+with |Hgn_AssaultFrigate2
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 1939
+		attack("|Vgr_AssaultFrigate1")
+	at frame 2000
+		haltAttack()
+	at frame 2200
+		attack("Vgr_AssaultFrigate3")
+	at frame 2400
+		deathDamage()
+}
+
+with |Hgn_AssaultFrigate3
+{
+	at frame 0
+		hide()
+	at frame 2629
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate4
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2682
+		deathDamage()
+}
+
+with |Hgn_AssaultFrigate5
+{
+	at frame 0
+		hide()
+	at frame 3132
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate6
+{
+	at frame 0
+		hide()
+	at frame 3175
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate7
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2966
+		attack("|Vgr_AssaultFrigate8")
+	at frame 3204
+		deathDamage()
+}
+
+with |Hgn_AssaultFrigate8
+{
+	at frame 0
+		hide()
+	at frame 3139
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate9
+{
+	at frame 0
+		hide()
+	at frame 3179
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate10
+{
+	at frame 0
+		hide()
+	at frame 3277
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate11
+{
+	at frame 0
+		hide()
+	at frame 3402
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate12
+{
+	at frame 0
+		hide()
+	at frame 3501
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Hgn_AssaultFrigate13
+{
+	at frame 0
+		hide()
+	at frame 3660
+		deathDamage()
+	at frame 13300
+		show()
+}
+
+with |Hgn_SalvageCollector
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2100
+		hide()
+}
+
+with |Vgr_AssaultFrigate
+{
+	at frame 2200
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate1
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2009
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate2
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2379
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate3
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2180
+		attack("|Hgn_AssaultFrigate2")
+	at frame 2350
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate4
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2360
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate5
+{
+	at frame 0
+		hide()
+	at frame 3001
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate6
+{
+	at frame 0
+		hide()
+	at frame 3012
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate7
+{
+	at frame 0
+		hide()
+	at frame 3026
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate8
+{
+	at frame 0
+		hide()
+		invincible()
+	at frame 1740
+		show()
+	at frame 2800
+		attack("|HT2")
+	at frame 3080
+		haltAttack()
+	at frame 3090
+		attack("|Hgn_AssaultFrigate7")
+	at frame 3254
+		deathDamage()
+}
+
+with |Vgr_AssaultFrigate9
+{
+	at frame 0
+		hide()
+	at frame 3239
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate10
+{
+	at frame 0
+		hide()
+	at frame 3251
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate11
+{
+	at frame 0
+		hide()
+	at frame 3535
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate12
+{
+	at frame 0
+		hide()
+	at frame 3569
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |Vgr_AssaultFrigate13
+{
+	at frame 0
+		hide()
+	at frame 3682
+		deathDamage()
+	at frame 13300
+		show()
+}
+
+with |Vgr_AssaultFrigate14
+{
+	at frame 0
+		hide()
+	at frame 3815
+		deathDamage()
+	at frame 13300
+		show()
+}
+
+with |Vgr_AssaultFrigate15
+{
+	at frame 0
+		hide()
+	at frame 3854
+		deathDamage()
+	at frame 13300
+		show()
+}
+
+with |Vgr_HeavyMissileFrigate
+{
+	at frame 0
+		hide()
+	at frame 2751
+		deathDamage()
+	at frame 11740
+		show()
+}
+
+with |attackwav|Vgr_LaserCorvette
+{
+	at frame 2653
+		deathDamage()
+}
+
+with |attackwav|Vgr_LaserCorvette1
+{
+	at frame 2595
+		deathDamage()
+}
+
+with |Vgr_LaserCorvette2
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 1965
+		deathDamage()
+}
+
+with |Vgr_LaserCorvette3
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 3485
+		deathDamage()
+}
+
+with |group1|Vgr_MissileCorvette
+{
+	at frame 3835
+		deathDamage()
+}
+
+with |group1|Vgr_MissileCorvette1
+{
+	at frame 3687
+		deathDamage()
+}
+
+with |Vgr_SalvageCollector
+{
+	at frame 3004
+		hide()
+	at frame 5867
+		show()
+}
+
+with |Vgr_SensorsFrigate
+{
+	at frame 0
+		hide()
+	at frame 1740
+		show()
+	at frame 2776
+		deathDamage()
+}
+
+with |vaf
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 3920
+		attack("|HACGrp|HAC3")
+	at frame 3950
+		attack("|HACGrp|HAC2")
+	at frame 4660
+		deathDamage()
+}
+
+with |vaf1
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 3880
+		attack("|HACGrp|HAC3")
+	at frame 3970
+		attack("|HACGrp|HAC2")
+	at frame 4480
+		deathDamage()
+}
+
+with |VgrGroup|vc
+{
+	at frame 0
+		hide()
+	at frame 4761
+		show()
+}
+
+with |vlcgrp|vlc
+{
+	at frame 0
+		hide()
+	at frame 2700
+		show()
+	at frame 3000
+		hide()
+	at frame 3880
+		show()
+	at frame 4290
+		attack("|HT2")
+	at frame 4480
+		deathDamage()
+}
+
+with |vlcgrp|vlc1
+{
+	at frame 0
+		hide()
+	at frame 2700
+		show()
+	at frame 3000
+		hide()
+	at frame 3880
+		show()
+	at frame 4280
+		attack("|HT2")
+	at frame 4500
+		deathDamage()
+}
+
+with |vlcgrp|vlc2
+{
+	at frame 0
+		hide()
+	at frame 2700
+		show()
+	at frame 3000
+		hide()
+	at frame 3880
+		show()
+	at frame 4300
+		attack("|HT2")
+	at frame 4400
+		deathDamage()
+}
+
+with |VgrGroup|vlc3
+{
+	at frame 0
+		hide()
+}
+
+with |VgrGroup|vlc5
+{
+	at frame 0
+		hide()
+}
+
+with |VgrGroup|vlc7
+{
+	at frame 0
+		hide()
+}
+
+with |VMCGrp|vmc
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 4010
+		attack("|HACGrp|HAC2")
+	at frame 4060
+		haltAttack()
+	at frame 4520
+		deathDamage()
+}
+
+with |VMCGrp|vmc1
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 4090
+		attack("|HACGrp|HAC2")
+	at frame 4130
+		haltAttack()
+	at frame 4440
+		deathDamage()
+}
+
+with |vmf
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 4510
+		deathDamage()
+}
+
+with |vsf
+{
+	at frame 0
+		hide()
+	at frame 3800
+		show()
+	at frame 4700
+		deathDamage()
+}

@@ -1,0 +1,7 @@
+
+StartWeaponConfig(NewWeaponType,"AnimatedTurret","Bullet","Kinetic_Large","Normal",400,800,0,0,0,1,0.2,0.7,0.5,80,40,"Normal");
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",20,20,"");
+setPenetration(NewWeaponType,1);
+setAccuracy(NewWeaponType,1);
+
+setFireMultFactor(NewWeaponType, 1.0);

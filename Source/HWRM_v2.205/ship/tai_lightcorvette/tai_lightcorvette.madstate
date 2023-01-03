@@ -1,0 +1,25 @@
+TAI_LIGHTCORVETTE_Launched_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "Wings_CLOSE") ~= 0) then
+        startTime = getAnimLength(ship, "Wings_CLOSE") - getTime(ship, "Wings_CLOSE")
+        stopAnim(ship, "Wings_CLOSE")
+        endEffect(ship, "Wings_CLOSE")
+    end
+    startAnim(ship, "Wings_OPEN")
+    startEffect(ship, "Wings_OPEN")
+    setTime(ship,"Wings_OPEN",startTime)
+    setPauseTime(ship, "Wings_OPEN", 1000)
+end
+
+TAI_LIGHTCORVETTE_Docked_OnSet = function(ship)
+    startTime = 0
+    if(isAnimRunning(ship, "Wings_OPEN") ~= 0) then
+        startTime = getAnimLength(ship, "Wings_OPEN") - getTime(ship, "Wings_OPEN")
+        stopAnim(ship, "Wings_OPEN")
+        endEffect(ship, "Wings_OPEN")
+    end
+    startAnim(ship, "Wings_CLOSE")
+    startEffect(ship, "Wings_CLOSE")
+    setTime(ship,"Wings_CLOSE",startTime)
+    setPauseTime(ship, "Wings_CLOSE", 1000)
+end

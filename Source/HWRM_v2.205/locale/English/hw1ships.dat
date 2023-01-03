@@ -1,0 +1,122 @@
+filerange 10000 10301
+rangestart 10000 10301
+
+// Subtitles
+10000	Scout
+10001	Fighter Class - Reconnaissance
+10002	Interceptor
+10003	Fighter Class - Anti-Fighter
+10004	Attack Bomber
+10005	Fighter Class - Anti-Capital Ship
+10006	Defender
+10007	Fighter Class - Fleet Defense
+10008	Cloaked Fighter
+10009	Fighter Class - Infiltration
+10010	Defense Fighter
+10011	Fighter Class - Anti-Projectile Defense
+10012	Light Corvette
+10013	Corvette Class - Light Attack
+10014	Heavy Corvette
+10015	Corvette Class - Heavy Attack
+10016	Multi-Gun Corvette
+10017	Corvette Class - Anti-Fighter
+10018	Minelayer Corvette
+10019	Corvette Class - Mine Deployment
+10020	Salvage Corvette
+10021	Corvette Class - Salvage & Capture
+10022	Repair Corvette
+10023	Corvette Class - Field Repair
+10024	Assault Frigate
+10025	Frigate Class - Anti-Frigate/Corvette
+10026	Ion Cannon Frigate
+10027	Frigate Class - Anti-Capital Ship
+10028	Support Frigate
+10029	Frigate Class - Field Repair
+10030	Drone Frigate
+10031	Frigate Class - Drone Deployment
+10032	Field Frigate
+10033	Frigate Class - Anti-Munitions Field
+10034	Destroyer
+10035	Capital Class - Anti-Frigate
+10036	Missile Destroyer
+10037	Capital Class - Long-Range Bombardment
+10038	Heavy Cruiser
+10039	Capital Class - Heavy Attack
+10040	Carrier
+10041	Capital Class - Ship Production
+10042	Mothership
+10043	Flagship Class - Fleet Central Command
+10044	Research Ship
+10045	Resource Class - Research & Development
+10046	Resource Collector
+10047	Resource Class - Mineral Excavation
+10048	Resource Controller
+10049	Non-Combat Class - Remote Ore Processing
+10050	Gravwell Generator
+10051	Non-Combat Class - Gravity Well
+10052	Cloak Generator
+10053	Non-Combat Class - Cloaking Field
+10054	Probe
+10055	Non-Combat Class - Sensor Drone
+10056	Proximity Sensor
+10057	Non-Combat Class - Cloak Detection
+10058	Sensors Array
+10059	Non-Combat Class - Sensor Upgrade
+10060	Target Drone
+10061	Marksmanship / Salvage Training Drone
+10062	Cryo Tray
+10063	Cryogenic Hibernation & Life Support
+10064	Massive Object
+10065	Anti-Mothership Weapon
+10066	Fighter
+10067	Fighter Class - Combat Recon
+10068	Standard Corvette
+10069	Corvette Class - Combat & Salvage
+10070	Missile Corvette
+10071	Corvette Class - Heavy Bombardment
+10072	Ion Array Frigate
+10073	Frigate Class - Heavy Ion Beam
+10074	Mothership
+10075	Flagship Class - Pirate Base
+10076	Swarmer
+10077	Fighter Class - Superiority Fighter
+10078	Advanced Swarmer
+10079	Fighter Class - Heavy Attack Fighter
+10080	Multi-Beam Frigate
+10081	Frigate Class - Quad-Beam Platform
+10082	Mothership
+10083	Flagship Class - Hyperspace Inhibitor
+10084	Fuel Pod
+10085	Non-Combat Class - Fighter Refueling
+10086	Junkyard Dog
+10087	Automated Salvage Drone
+10088	Junkyard Office
+10089	Rebel Communications Relay
+10090	Auto Gun
+10091	Small Automatic Turret
+10092	Auto Gun
+10093	Large Automatic Turret
+10094	Bentusi Exchange
+10095	Flagship Class - Information Trader
+10096	Cargo Barge
+10097	Non-Combat Class - Cargo Transport
+10098	Field Generator
+10099	Hiigaran System Hyperspace Inhibitor
+10100	Research Station
+10101	Supernova Station Research Outpost
+10102	Res. Station Bridge
+10103	10103 xMISSINGx
+10104	Res. Station Tower
+10105	10105 xMISSINGx
+10106	Ghost Ship
+10107	Alien Anomaly
+10108	Destroyer
+10109	10109 xMISSINGx
+10110	Frigate
+10111	10111 xMISSINGx
+10112	Megaship
+10113	10113 xMISSINGx
+10300	Resource
+10301	Non-Combat
+
+rangeend

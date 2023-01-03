@@ -1,0 +1,10 @@
+
+StartWeaponConfig(NewWeaponType,"Gimble","Bullet","Kinetic_Small","Normal",100,250,0,0,0,0,1,1,0,1,0,0,0,0,0,0,0.1,"Normal",0,0,0);
+AddWeaponResult(NewWeaponType,"Hit","DamageHealth","Target",10000,10000,"");
+setPenetration(NewWeaponType,100,1,{PlanetKillerArmour=0},
+{SwarmerArmor=0.10},
+{SpaceMineArmor=1},{SubSystemArmour=3},{ResArmour=0.6});
+setAccuracy(NewWeaponType,1);
+setAngles(NewWeaponType,180,0,0,0,0);
+
+setFireMultFactor(NewWeaponType, 1.0);

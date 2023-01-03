@@ -1,0 +1,142 @@
+-- =============================================================================
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+-- =============================================================================
+
+NewShipType = StartShipConfig()
+NewShipType["displayedName"] = "$1644"
+NewShipType["sobDescription"] = "$1645"
+NewShipType["maxhealth"] = 50
+NewShipType["regentime"] = 0
+NewShipType["minRegenTime"] = 0
+NewShipType["sideArmourDamage"] = 1
+NewShipType["rearArmourDamage"] = 1
+NewShipType["isTransferable"] = 1
+NewShipType["useEngagementRanges"] = 0
+NewShipType["unitCapsNumber"] = 0
+NewShipType["SquadronSize"] = 1
+NewShipType["passiveFormation"] = "dockline"
+NewShipType["defensiveFormation"] = "broad"
+NewShipType["aggressiveFormation"] = "delta"
+NewShipType["mass"] = 10
+NewShipType["collisionMultiplier"] = 1
+NewShipType["thrusterMaxSpeed"] = 600
+NewShipType["mainEngineMaxSpeed"] = 600
+NewShipType["rotationMaxSpeed"] = 171
+NewShipType["thrusterAccelTime"] = 2
+NewShipType["thrusterBrakeTime"] = 1
+NewShipType["mainEngineAccelTime"] = 2
+NewShipType["mainEngineBrakeTime"] = 1
+NewShipType["rotationAccelTime"] = 0.6
+NewShipType["rotationBrakeTime"] = 0.3
+NewShipType["thrusterUsage"] = 1
+NewShipType["accelerationAngle"] = 90
+NewShipType["mirrorAngle"] = 0
+NewShipType["secondaryTurnAngle"] = 0
+NewShipType["maxBankingAmount"] = 85
+NewShipType["descendPitch"] = 0
+NewShipType["goalReachEpsilon"] = 5
+NewShipType["slideMoveRange"] = 100
+NewShipType["controllerType"] = "Ship"
+NewShipType["tumbleStaticX"] = 10
+NewShipType["tumbleStaticY"] = 20
+NewShipType["tumbleStaticZ"] = 5
+NewShipType["tumbleDynamicX"] = 2
+NewShipType["tumbleDynamicY"] = 10
+NewShipType["tumbleDynamicZ"] = 5
+NewShipType["tumbleSpecialDynamicX"] = 2
+NewShipType["tumbleSpecialDynamicY"] = 10
+NewShipType["tumbleSpecialDynamicZ"] = 5
+NewShipType["relativeMoveFactor"] = 6
+NewShipType["swayUpdateTime"] = 2
+NewShipType["swayOffsetRandomX"] = 10
+NewShipType["swayOffsetRandomY"] = 10
+NewShipType["swayOffsetRandomZ"] = 10
+NewShipType["swayBobbingFactor"] = 0.2
+NewShipType["swayRotateFactor"] = 0
+NewShipType["dustCloudDamageTime"] = 60
+NewShipType["nebulaDamageTime"] = 20
+NewShipType["MinimalFamilyToFindPathAround"] = "SuperPriority"
+NewShipType["BuildFamily"] = "Probe_Vgr"
+NewShipType["AttackFamily"] = "Utility"
+NewShipType["DockFamily"] = "Utility"
+NewShipType["AvoidanceFamily"] = "Utility"
+NewShipType["DisplayFamily"] = "Utility"
+NewShipType["AutoFormationFamily"] = "Fighter"
+NewShipType["CollisionFamily"] = "Small"
+NewShipType["ArmourFamily"] = "Unarmoured"
+NewShipType["UnitCapsFamily"] = "Utility"
+NewShipType["UnitCapsShipType"] = "ECMProbe"
+NewShipType["fighterValue"] = 0
+NewShipType["corvetteValue"] = 0
+NewShipType["frigateValue"] = 0
+NewShipType["neutralValue"] = 0
+NewShipType["antiFighterValue"] = 0
+NewShipType["antiCorvetteValue"] = 0
+NewShipType["antiFrigateValue"] = 0
+NewShipType["totalValue"] = 0
+NewShipType["buildCost"] = 500
+NewShipType["buildTime"] = 25
+NewShipType["buildPriorityOrder"] = 10
+NewShipType["retaliationRange"] = 4000
+NewShipType["retaliationDistanceFromGoal"] = 800
+NewShipType["visualRange"] = 5000
+NewShipType["prmSensorRange"] = 16000
+NewShipType["secSensorRange"] = 16000
+NewShipType["detectionStrength"] = 1
+NewShipType["TOIcon"] = "InvertedPentagon"
+NewShipType["TOScale"] = 1
+NewShipType["TODistanceFade0"] = 7000
+NewShipType["TODistanceDisappear0"] = 5000
+NewShipType["TODistanceFade1"] = 350
+NewShipType["TODistanceDisappear1"] = 300
+NewShipType["TODistanceFade2"] = 12000
+NewShipType["TODistanceDisappear2"] = 35000
+NewShipType["TOGroupScale"] = 1
+NewShipType["TOGroupMergeSize"] = 0
+NewShipType["mouseOverMinFadeSize"] = 0.045
+NewShipType["mouseOverMaxFadeSize"] = 0.1
+NewShipType["healthBarStyle"] = 1
+NewShipType["nlips"] = 0.000865
+NewShipType["nlipsRange"] = 10000
+NewShipType["nlipsFar"] = 0
+NewShipType["nlipsFarRange"] = 0
+NewShipType["SMRepresentation"] = "HardDot"
+NewShipType["meshRenderLimit"] = 10400
+NewShipType["dotRenderLimit"] = 10
+NewShipType["visibleInSecondary"] = 0
+NewShipType["goblinsStartFade"] = 80
+NewShipType["goblinsOff"] = 80
+NewShipType["upLOD"] = 600
+NewShipType["upLOD"] = 1700
+NewShipType["upLOD"] = 2500
+NewShipType["downLOD"] = 605
+NewShipType["downLOD"] = 1705
+NewShipType["downLOD"] = 2505
+NewShipType["minimumZoomFactor"] = 0.5
+NewShipType["selectionLimit"] = 150000
+NewShipType["preciseATILimit"] = 0
+NewShipType["selectionPriority"] = 75
+NewShipType["militaryUnit"] = 0
+addAbility(NewShipType, "MoveCommand", 1, 1)
+NewShipType["dontDockWithOtherRaceShips"] = 0
+NewShipType["ignoreRaceWhenDocking"] = 0
+addAbility(NewShipType, "CanLaunch")
+NewShipType["launchTimeBetweenTwoFormations"] = 1
+NewShipType["launchTimeBeforeStart"] = 2
+NewShipType["launchNrOfShipsInDockFormation"] = 1
+NewShipType["launchFormation"] = "delta"
+addAbility(NewShipType, "ParadeCommand", 1)
+LoadModel(NewShipType, 1)
+AddShipMultiplier(NewShipType, "SensorDistortion", "OwnShipsWithinRadius", "Linear", 0.6, 0.6, 6000)
+NewShipType["sobDieTime"] = 1
+NewShipType["sobSpecialDieTime"] = 1
+NewShipType["specialDeathSpeed"] = 40
+NewShipType["chanceOfSpecialDeath"] = 0
+NewShipType["deadSobFadeTime"] = 1
+setEngineTrail(NewShipType, 0, 20, "trail_ribbon.tga", 0.05, 0.5, 0.025, 1.5)
+setEngineBurn(NewShipType, 20, 0.5, 0.6, 5, 1, 0.1, 0, 40)
+loadShipPatchList(NewShipType, "data:sound/sfx/ship/Vaygr/NonMilitary/", 0, "Engines/VProbeEng", "")

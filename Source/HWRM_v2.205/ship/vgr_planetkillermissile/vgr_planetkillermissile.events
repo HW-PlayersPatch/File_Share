@@ -1,0 +1,106 @@
+effects =
+{
+    animations =
+    {
+        animation1 =
+        {
+            name = "Burn",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation2 =
+        {
+            name = "Death",
+            length = 2,
+            loop = 0,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+        animation3 =
+        {
+            name = "Burn_Loop",
+            length = 1,
+            loop = 1,
+            parent = "",
+            minimum = 0,
+            maximum = 0,
+            markers = {""}
+        },
+    },
+    events =
+    {
+        event1 =
+        {
+            { "anim", "Burn" },
+            { "animtime", "-1" },
+            { "marker", "Root" },
+            { "fx", "planetkiller_atmosphere_mesh" },
+            { "fx_nlips", "on" },
+        },
+        event2 =
+        {
+            { "anim", "death" },
+            { "animtime", "0" },
+            { "marker", "marker1" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_PLASMA" },
+            { "fx_scale", "1.5" },
+        },
+        event3 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.1" },
+            { "marker", "marker2" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "fx_scale", "2" },
+        },
+        event4 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.35" },
+            { "marker", "marker4" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "sound", "EXPLOSION/SMALL/ETG_EXPLODE_SMALL_FIREY" },
+            { "fx_scale", "3" },
+        },
+        event5 =
+        {
+            { "anim", "death" },
+            { "animtime", "0.4" },
+            { "marker", "marker5" },
+            { "fx", "dmg_cloud_explosion_large" },
+            { "fx_scale", "4" },
+        },
+        event6 =
+        {
+            { "anim", "Death" },
+            { "animtime", "0.4" },
+            { "marker", "Root" },
+            { "fx", "dmg_cloud_main_explosion_combo" },
+            { "sound", "EXPLOSION/MEDIUM/ETG_EXPLODE_MEDIUM_FIREY" },
+            { "fx_scale", "15" },
+        },
+        event7 =
+        {
+            { "anim", "Burn" },
+            { "animtime", "0" },
+            { "marker", "markerA2" },
+            { "fx", "planetkiller_atmosphere_lensflare" },
+            { "fx_nlips", "on" },
+        },
+        event8 =
+        {
+            { "anim", "Burn" },
+            { "animtime", "-1" },
+            { "marker", "markerA1" },
+            { "fx", "planetkiller_missle_atmospher_spray" },
+            { "fx_nlips", "on" },
+        },
+    }
+}

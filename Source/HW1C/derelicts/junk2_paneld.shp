@@ -1,0 +1,17 @@
+[Junk2_panelD]
+LODFile                             Junk2_panelD.lod
+pMexData                            Junk2_panelD\Rl0\LOD0\Junk2_panelD.mex
+mass                                1000.0              ; ship mass [fighter = 1]
+momentOfInertiaX                    1000.0               ; resistance to rotation
+momentOfInertiaY                    1000.0               ; [fighter = 1]
+momentOfInertiaZ                    1000.0
+maxvelocity                         350.0
+maxrot                              0.4
+maxhealth                           800000                        ; hit points
+
+
+renderlistFade     8000.0
+renderlistLimit    21000.0
+
+
+minimumZoomDistance              	560

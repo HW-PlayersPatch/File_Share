@@ -1,0 +1,14 @@
+--  ============================================================================= 
+-- Homeworld 2 Clean Data Resource Project
+-- By S110
+-- Version 1.0
+-- 02/06/2010
+-- Tools used: EditPad Lite, LuaDC version 0.9.19, and Cold Fusion LUA Decompiler v1.0.0
+--  =============================================================================
+
+StartWeaponConfig(NewWeaponType, "Gimble", "Bullet", "Kinetic_Small", "Special Attack", 900, 600, 0, 0, 0, 0, 1, 1, 0, 70, 0, 0, 0, 0, 0, 0, 0.1, "Normal", 0, 0, 0)
+AddWeaponResult(NewWeaponType, "Hit", "SpawnWeaponFire", "Target", 0, 0, "Vgr_SmallEMPBurst")
+AddWeaponResult(NewWeaponType, "Miss", "SpawnWeaponFire", "Target", 0, 0, "Vgr_SmallEMPBurst")
+setPenetration(NewWeaponType, 5, 1, {PlanetKillerArmour = 0})
+setAngles(NewWeaponType, 180, 0, 0, 0, 0)
+

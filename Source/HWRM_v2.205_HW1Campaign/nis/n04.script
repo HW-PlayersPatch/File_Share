@@ -1,0 +1,787 @@
+speechSetDir("n04")
+at 0
+    print("swapRaces")
+at frame 0
+    fadeTo(1, 0.5)
+at frame 1
+    musicVolume(0.8)
+    speechVolume(1.0)
+    SFXVolume(0.5)
+at frame 2
+    musicStart("N04_LearnOfSacking")
+at frame 60
+    fadeSet(0)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+    SMPTEOn("07:14:08:27", 0.9984375, 0.81875)
+at frame 955
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 986
+    cameraCut("Camera1")
+    fadeSet(0.0)
+    SMPTEOn("07:15:29:18", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 1278
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1309
+	cameraCut("Camera2")
+at frame 1310
+    fadeSet(0.0)
+    SMPTEOn("09:34:05:12", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 1430
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1461
+    cameraCut("Camera3")
+    fadeSet(0.0)
+    SMPTEOn("08:57:16:03", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 1669
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1700
+	cameraCut("Camera4")
+at frame 1701
+    fadeSet(0.0)
+    SMPTEOn("08:59:08:27", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 1810
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1841
+    cameraCut("Camera5")
+    fadeSet(0.0)
+    SMPTEOn("09:14:08:27", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 2038
+    seekForward(0.166666666666667)
+at frame 2042
+   cameraCut("Camera6")
+at frame 2264
+    SMPTEOff()
+    fadeSet(1.0)
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 2295
+    cameraCut("Camera7")
+    fadeSet(0.0)
+    SMPTEOn("10:02:57:00", 0.9984375, 0.81875)
+    staticOff(0)
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 2595
+    fadeSet(1.0)
+    SMPTEOff()
+    staticOff(1)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 2640
+    staticOff(0)
+at frame 2808
+    fadeTo(0.0, 1)
+at frame 2788
+    wideScreenOut(2)
+    focus()
+    cameraBlendOut("Camera0", 2)
+at frame 2848
+    musicStop(1)
+with Kus_Mothership
+{
+    at 0
+        hide()
+        focusAtEnd()
+}
+
+with Der_Scaffold
+{
+    at frame 0
+        hide()
+    at frame 120
+        show()
+    at frame 986
+        hide()
+    at frame 1110
+        show()
+    at frame 2175
+        hide()
+}
+
+with Der_Scaffold_scarred
+{
+    at frame 0
+        hide()
+    at frame 2175
+        show()
+}
+
+with Der_ScaffoldFingerA_scarred
+{
+    at frame 0
+        hide()
+    at frame 2175
+        show()
+}
+
+with Kus_SalvageCorvette1
+{
+    at 0
+        hide()
+    at frame 630
+        show()
+    at frame 815
+        death("deathCannon")
+}
+
+with Kus_SalvageCorvette2
+{
+    at 0
+        hide()
+    at frame 700
+        show()
+    at frame 838
+        death("deathCannon")
+}
+
+with Kus_Scout1
+{
+    at 0
+        hide()
+    at frame 1110
+        show()
+    at frame 1210
+        --fire
+    at frame 1215
+        attack("Tai_Interceptor3")
+    at frame 1260
+        haltAttack()
+        hide()
+    at frame 1290
+        show()
+        trailZero()
+    at frame 1470
+        hide()
+    at frame 1720
+        show()
+        attack("Tai_AttackBomber")
+    at frame 1796
+        haltAttack()
+        hide()
+}
+
+with Kus_Scout2
+{
+    at frame 0
+        hide()
+    at frame 1110
+        show()
+    at frame 1210
+        attack("Tai_Interceptor3")
+    at frame 1260
+        haltAttack()
+        hide()
+    at frame 1319
+        show()
+        trailZero()
+        attack("Tai_Interceptor3")
+    at frame 1560
+        hide()
+}
+
+with Kus_Scout3
+{
+    at frame 0
+        hide()
+    at frame 1110
+        show()
+    at frame 1200
+        --fire
+    at frame 1210
+        attack("Tai_Interceptor6")
+    at frame 1260
+        haltAttack()
+        hide()
+}
+
+with Tai_Probe
+{
+    at frame 0
+        show()
+    at frame 855
+        hide()
+}
+
+with Tai_Interceptor1
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette1")
+    at frame 825
+        haltAttack()
+    at frame 1490
+        hide()
+    at frame 1840
+        show()
+    at frame 1215
+        --fire
+    at frame 1232
+        --fire
+    at frame 1240
+        --fire
+    at frame 1845
+        --fire
+    at frame 1890
+        --fire
+    at frame 1895
+        --fire
+    at frame 1910
+        --fire
+    at frame 1970
+        --fire
+    at frame 1990
+        --fire
+    at frame 2294
+        hide()
+    at frame 990
+        speechEventActor("$66437", 20, 2)
+    at frame 1860
+        speechEventActor("$66453", 20, 2)
+    at frame 1950
+        speechEventActor("$66454", 20, 2)
+    at frame 2160
+        speechEventActor("$66455", 20, 2)
+}
+
+with Tai_Interceptor2
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette1")
+    at frame 825
+        haltAttack()
+    at frame 1205
+        --fire
+    at frame 1278
+        hide()
+    at frame 1309
+        show()
+    at frame 1461
+        hide()
+    at frame 1710
+        show()
+        trailZero()
+        attack("Kus_Scout1")
+    at frame 1800
+        hide()
+    at frame 2040
+        show()
+    at frame 2294
+        hide()
+}
+
+with Tai_Interceptor3
+{
+    at 0
+        hide()
+        invincible()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette1")
+    at frame 825
+        haltAttack()
+    at frame 1268
+        hide()
+    at frame 1320
+        show()
+    at frame 1560
+        hide()
+}
+
+with Tai_Interceptor4
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette1")
+    at frame 825
+        haltAttack()
+    at frame 990
+        trailZero()
+    at frame 1200
+        hide()
+}
+
+with Tai_Interceptor5
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette1")
+    at frame 825
+        haltAttack()
+    at frame 990
+        trailZero()
+    at frame 1200
+        hide()
+    at frame 2400
+        show()
+    at frame 2520
+        speechEventActor("$66456", 20, 2)
+    at frame 2630
+        hide()
+}
+
+with Tai_Interceptor6
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette2")
+    at frame 845
+        haltAttack()
+    at frame 1278
+        hide()
+    at frame 2040
+        show()
+    at frame 2294
+        hide()
+}
+
+with Tai_Interceptor7
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette2")
+    at frame 845
+        haltAttack()
+    at frame 990
+        trailZero()
+    at frame 1200
+        hide()
+    at frame 1309
+        show()
+    at frame 1461
+        hide()
+}
+
+with Tai_Interceptor8
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette2")
+    at frame 845
+        haltAttack()
+    at frame 1200
+        hide()
+    at frame 1309
+        show()
+    at frame 1530
+        hide()
+}
+
+with Tai_Interceptor9
+{
+    at 0
+        hide()
+    at frame 760
+        show()
+    at frame 800
+        attack("Kus_SalvageCorvette2")
+    at frame 845
+        haltAttack()
+    at frame 990
+        trailZero()
+    at frame 1200
+        hide()
+    at frame 1309
+        show()
+    at frame 1345
+        death("deathPlasma")
+}
+
+with Tai_Carrier
+{
+    at frame 0
+        hide()
+    at frame 984
+        show()
+    at frame 1100
+        hide()
+    at frame 1300
+        show()
+    at frame 1315
+        speechEventActor("$66439", 20, 2)
+    at frame 1350
+        speechEventActor("$66440", 20, 2)
+    at frame 1380
+        speechEventActor("$66441", 20, 2)
+    at frame 1700
+        hide()
+    at frame 1840
+        show()
+    at frame 1920
+        hide()
+    at frame 2294
+        show()
+        speechEventActor("$66447", 20, 2)
+    at frame 2340
+        speechEventActor("$66449", 20, 2)
+    at frame 2400
+        speechEventActor("$66451", 20, 2)
+    at frame 2520
+        speechEventActor("$66457", 20, 2)
+    at frame 2580
+        speechEventActor("$66458", 20, 2)
+}
+
+with Tai_Destroyer1
+{
+    at frame 0
+        hide()
+    at frame 984
+        show()
+    at frame 1060
+        hide()
+    at frame 1460
+        show()
+    at frame 1690
+        hide()
+    at frame 1840
+        show()
+    at frame 1920
+        hide()
+    at frame 2294
+        show()
+}
+
+with Tai_Destroyer2
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1080
+        hide()
+    at frame 1300
+        show()
+    at frame 1500
+        speechEventActor("$66443", 20, 2)
+    at frame 1560
+        speechEventActor("$66444", 20, 2)
+    at frame 1620
+        speechEventActor("$66446", 20, 2)
+    at frame 1700
+        hide()
+    at frame 1840
+        show()
+    at frame 1900
+        hide()
+    at frame 2294
+        show()
+    at frame 2310
+        speechEventActor("$66448", 20, 2)
+    at frame 2370
+        speechEventActor("$66450", 20, 2)
+    at frame 2430
+        speechEventActor("$66452", 20, 2)
+}
+
+with Tai_AssaultFrigate1
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1440
+        speechEventActor("$66442", 20, 2)
+    at frame 1699
+        hide()
+}
+
+with Tai_AssaultFrigate2
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1699
+        hide()
+}
+
+with Tai_AssaultFrigate3
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1699
+        hide()
+}
+
+with Tai_AssaultFrigate4
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1675
+        hide()
+}
+
+with Tai_IonCannonFrigate1
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1699
+        hide()
+}
+
+with Tai_IonCannonFrigate2
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1699
+        hide()
+}
+
+with Tai_IonCannonFrigate3
+{
+    at frame 0
+        hide()
+    at frame 985
+        show()
+    at frame 1700
+        hide()
+}
+
+with Tai_AttackBomber
+{
+    at frame 0
+        hide()
+    at frame 1309
+        show()
+    at frame 1461
+        hide()
+    at frame 1695
+        show()
+    at frame 1730
+        --fire
+    at frame 1760
+        --fire
+    at frame 1840
+        hide()
+    at frame 2294
+        show()
+    at frame 2630
+        hide()
+}
+
+with ScaffoldRippleExplosion1
+{
+    at frame 2139
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion2
+{
+    at frame 2157
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion3
+{
+    at frame 2075
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion4
+{
+    at frame 2180
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion5
+{
+    at frame 2216
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion6
+{
+    at frame 2190
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion7
+{
+    at frame 2100
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion8
+{
+    at frame 2229
+        triggerEffect(1)
+}
+
+with ScaffoldRippleExplosion9
+{
+    at frame 2260
+        triggerEffect(1)
+}
+
+with NIS_DeathEgg
+{
+    at frame 2230
+        triggerEffect(1)
+}
+
+at frame 0
+    BKG_MeshSetSurface("KharakBurn", "bg_planetmelt")
+at 56
+    BKG_MeshSetParamTime("KharakBurn", "BG_Trigger", 0.0, -15)
+    BKG_MeshSetParamF1("KharakBurn", "BG_TimeScale", 0.20)
+at 75
+    BKG_MeshSetParamTime("KharakBurn", "BG_Trigger", 0.0, -55)
+    BKG_MeshSetParamF1("KharakBurn", "BG_TimeScale", 0.125)
+at frame 2600
+    BKG_MeshSetSurface("KharakBurn", "bg_planetmelted")
+at frame 240
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 255
+    staticOff(2)
+at frame 260
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 265
+    fadeSet(0.0)
+    staticOff(0)
+at frame 270
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 280
+    staticOff(2)
+at frame 290
+    staticOff(1)
+at frame 320
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 330
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 340
+    staticOff(2)
+at frame 390
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 410
+    staticOff(2)
+at frame 420
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 450
+    staticOff(2)
+at frame 560
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 565
+    staticOff(2)
+at frame 570
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 580
+    staticOff(2)
+at frame 600
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 610
+    staticOff(2)
+at frame 640
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 650
+    fadeSet(0.0)
+    staticOff(0)
+at frame 660
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 670
+    fadeSet(0.0)
+    staticOff(0)
+at frame 700
+    staticOff(1)
+at frame 730
+    staticOn(1, 50, 25, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.9, 0.1, 0.2, 0.1, 0.6, 0.2, 1)
+at frame 1400
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1415
+    fadeSet(0.0)
+    staticOff(0)
+at frame 1425
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 1430
+    fadeSet(0.0)
+    staticOff(0)
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 1450
+    staticOff(2)
+at frame 2070
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 2085
+    staticOff(2)
+at frame 2120
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 2160
+    staticOff(2)
+at frame 2170
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 2180
+    fadeSet(0.0)
+    staticOff(0)
+at frame 2210
+    fadeSet(1.0)
+    staticOn(0, 400, 100, 0.0078125, 0.0046875, 0.5, 0.360416666666667, 0.5, 0.5, 0.8, 0.2, 0.2, 0.1, 0.9, 0.1, 1)
+at frame 2220
+    fadeSet(0.0)
+    staticOff(0)
+at frame 2230
+    staticOn(2, 50, 25, 0.015625, 0.0125, 0.5, 0.0208333333333333, 0.5, 0.5, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0)
+at frame 2263
+    staticOff(2)
+-- List of unhandled functions (not converted):
+--fire: 14 instances
+
+

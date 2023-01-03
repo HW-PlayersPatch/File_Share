@@ -1,0 +1,61 @@
+--  hw2 level exporter generated file
+--=============================================================================
+--  Name    : parkinglot_asteroid.level
+--  Purpose : Automatically generated level file by the level exporter.
+--  Created Thursday, June 26, 2003 by the level exporter.
+--  Copyright Relic Entertainment, Inc.  All rights reserved.
+--=============================================================================
+
+function DetermChunk()
+	addSquadron("Hgn_ResourceCollector", "Hgn_ResourceCollector",	{278, 0, 18},	0, {0.000, 0.000, 0.000},-842150451,0)
+	addSquadron("Vgr_ResourceCollector", "Vgr_ResourceCollector",	{277, 0, -21},	0, {0.000, 0.000, 0.000},-842150451,0)
+	addSquadron("Hgn_MotherShip", "Hgn_MotherShip",	{0, 0, -1355},	0, {0.000, 0.000, 0.000},0,0)
+
+	addAsteroid("Asteroid_3",	{0, 0, 0},	100, 0.000, 0.000, 0.000, 0)
+	addAsteroid("Asteroid_4",	{0, 0, 0},	100, 0.000, 0.000, 0.000, 0)
+	addAsteroid("Asteroid_5",	{0, 0, 0},	100, 0.000, 0.000, 0.000, 0)
+
+end -- end of deterministic function
+
+function NonDetermChunk()
+	setGlareIntensity(0.000000)
+
+	fogSetActive(0)
+
+	loadBackground("m01")
+	setSensorsManagerCameraDistances(0,6000)
+
+
+
+
+
+end -- end of nondeterm function
+
+
+--HeaderInfo: max number of players allowed on this level
+maxPlayers = 1;
+testMap = 1
+
+--PlayerInfo: info on each possible player in this level
+player = {};
+player[0] = {
+	id = 0,
+	name = "",
+	resources = 0,
+	raceName = "Hiigaran",
+	startPos = 0
+}
+
+
+
+-- **** Object Counts **** --
+
+
+--Pebbles: 0
+--Asteroids: 3
+--Dustclouds: 0
+--DustcloudMeshes: 0
+--NebulaBranches: 0
+--NebulaMeshes - Total number of points: 0
+--NebulaNexii 0
+
