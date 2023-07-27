@@ -1,4 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
+# Homeworld Remastered Players Patch
 # Build 11 Change List | September 28, 2019
 
 ## HWR Bugs Fixes and Improvements

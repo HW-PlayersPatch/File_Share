@@ -1,4 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
+# Homeworld Remastered Players Patch
 # Build 13 Change List | December 16, 2019
 
 ## Gameplay Options and Features

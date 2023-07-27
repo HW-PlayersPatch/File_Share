@@ -1,4 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
+# Homeworld Remastered Players Patch
 # Build 1 Change List | Nov 3, 2017
 
 ## General

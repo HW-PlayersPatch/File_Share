@@ -1,4 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
+# Homeworld Remastered Players Patch
 # Build 14 Change List | March 7, 2020
 
 ## HWR Bugs Fixes and Improvements

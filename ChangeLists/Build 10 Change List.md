@@ -1,4 +1,4 @@
-# Homeworld Remastered 2.3 Players Patch
+# Homeworld Remastered Players Patch
 # Build 10 Change List | August 31, 2019
 
 ## Gameplay Options and Features
