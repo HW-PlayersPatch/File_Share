@@ -6,7 +6,7 @@
 
 ## Balance
 * The bulk of the balance changes are from Gearbox’s 2.205 Patch Preview. Additional changes are listed below.
-* Fixed the major [666 Formation Targeting Bug](https://web.archive.org/web/20220720191730/https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832). Formations and squadrons now perform as they were intended to!
+* Fixed the major [666 Formation Targeting Bug](http://web.archive.org/web/https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832). Formations and squadrons now perform as they were intended to!
 * Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game’s performance in long games.
 * High Unit Caps adjusted so cruisers are capped at 3, rather than 4.
 * Hiigaran/Vaygr Gun Platforms, Ion Platforms, and Missile Platforms speed 100->125 (to match hw2c)
