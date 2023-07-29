@@ -2,7 +2,11 @@
 # Build 1 Change List | Nov 3, 2017
 
 ## General
-* Included all the changes from Gearbox’s 2016 2.205 Patch Preview (which was just released in July 2023 as the 2.3 Patch), as described [here](https://github.com/HWRM/KarosGraveyard/wiki/Patch-Changes).
+* Included all the changes from Gearbox’s 2.205 Patch Preview (which was released in the 2023 2.3 Patch) as described [here](https://github.com/HWRM/KarosGraveyard/wiki/Patch-Changes). In summary:
+    * Fixed Hiigaran Mothership visual errors, including the badge being cut off.
+    * Fixed the Turanic Carrier Engine missing icon.
+    * Many balance improvements/fixes
+    * Note that the Players Patch does not distribute the updated Exe, which enables two developer changes around ship patching and traceHODs that only affect modding.
 
 ## Balance
 * The bulk of the balance changes are from Gearbox’s 2.205/2.3 Patches. Additional changes are listed below.

@@ -2,7 +2,7 @@
 # Build 1-14 Full Change List | March 7, 2020
 
 ## Summary
-The community created Homeworld Remastered Players Patch resolves many bugs, exploits, and balance issues. It includes the changes from Gearbox’s 2016 2.205 Patch Preview (which was just released in July 2023 as the 2.3 Patch), plus hundreds of additional improvements. It enhances singleplayer and multiplayer while respecting the look, sound, and feel of Relic's classics. All changes from Gearbox's 2.205 Patch Preview and the Players Patch are listed below. Links: [Subscribe on Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1190476337), or [Download for GOG](http://www.moddb.com/mods/homeworld-remastered-players-patch).
+The community created Homeworld Remastered Players Patch resolves many bugs, exploits, and balance issues. It includes the changes from Gearbox’s 2.205 Patch Preview (which was released in the 2023 2.3 Patch), plus hundreds of additional improvements. It enhances singleplayer and multiplayer while respecting the look, sound, and feel of Relic's classics. All changes from the Players Patch are listed below. Links: [Subscribe on Steam](http://steamcommunity.com/sharedfiles/filedetails/?id=1190476337), or [Download for GOG](http://www.moddb.com/mods/homeworld-remastered-players-patch).
 
 ## Gameplay Options and Features
 * Added a Mission Difficulty adjuster. At the start of each campaign mission, extra enemy AI reinforcement ships and RU are added based on your fleet size and RU. This dynamic scaling difficulty can now be adjusted.
@@ -34,6 +34,11 @@ The community created Homeworld Remastered Players Patch resolves many bugs, exp
 * Fixed the bug that allowed Kushan/Taiidan players to build two research ships at once on separate carriers.
 * Expert Taiidan AI now harvests resources at the same rate as the other races. (it was 10% higher by mistake)
 #### General Improvements
+* Included all the changes from Gearbox’s 2.205 Patch Preview (which was released in the 2023 2.3 Patch) as described [here](https://github.com/HWRM/KarosGraveyard/wiki/Patch-Changes). In summary:
+    * Fixed Hiigaran Mothership visual errors, including the badge being cut off.
+    * Fixed the Turanic Carrier Engine missing icon.
+    * Many balance improvements/fixes
+    * Note that the Players Patch does not distribute the updated Exe, which enables two developer changes around ship patching and traceHODs that only affect modding.
 * Ships have always held their formation in aggressive stance, but now they also hold their formation in neutral stance like hw1c.
 * Improved parade formations for resource collectors, to reduce collisions with the motherships.
 * Kushan and Taiidan Support Frigates now keep units docked in Passive tactics and launch units in Offensive tactics. They can also now carry docked units through hyperspace like hw1c.
@@ -50,7 +55,7 @@ The community created Homeworld Remastered Players Patch resolves many bugs, exp
 * In the carrier only gamemode, all races now start with the same number of carriers.
 * In the Strikecraft & Support Only game mode, Kushan Drone Technology research is now disabled as intended.
 * In the Strikecraft & Support Only game mode, Vaygr carrier health now matches the other races as intended.
-#### UI
+#### User Interface
 * Fixed the build/research/launch menu scaling problem, that primarily affects 4k resolutions.
 * Fixed the build and research queue pause buttons, so that they no longer get disabled.
 * Improved the spacing in the build/research queues for better readability.
@@ -137,7 +142,7 @@ The community created Homeworld Remastered Players Patch resolves many bugs, exp
 
 
 ## Balance
-* This section covers balances changes and balance related bug fixes. Version 2.3 has many bugs that render some units overpowered, underpowered, or useless.
+* This section covers balances changes and balance related bug fixes. The 2.3 Patch has many bugs that render some units overpowered, underpowered, or useless.
 * The Players Patch makes units relatively closer to their classic stats, performance, and feel while enabling balance across all races. The goal is to make all units useful and effective at what they are supposed to do, while utilizing ballistic/simulation combat features (so for example idle ships are generally easier to hit than moving ships).
 * Fixed the major [666 Formation Targeting Bug](http://web.archive.org/web/https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832) - Formations and squadrons now perform as they were intended to! With the 666 bug resolved, all fighters and corvettes went through a very thorough balance testing process. Tweaks were made as needed to align them with intended balance that Gearbox and the balance testers had crafted.
 * Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance for skilled and casual players alike.
