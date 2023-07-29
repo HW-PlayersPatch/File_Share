@@ -5,7 +5,7 @@
 * Included all the changes from Gearbox’s 2016 2.205 Patch Preview (which was just released in July 2023 as the 2.3 Patch), as described [here](https://github.com/HWRM/KarosGraveyard/wiki/Patch-Changes).
 
 ## Balance
-* The bulk of the balance changes are from Gearbox’s 2.205 Patch Preview. Additional changes are listed below.
+* The bulk of the balance changes are from Gearbox’s 2.205/2.3 Patches. Additional changes are listed below.
 * Fixed the major [666 Formation Targeting Bug](http://web.archive.org/web/https://forums.gearboxsoftware.com/t/666-formation-targeting-bug/1541832). Formations and squadrons now perform as they were intended to!
 * Reduced the amount of small low-RU debris for destroyers and cruisers. This improves the game’s performance in long games.
 * High Unit Caps adjusted so cruisers are capped at 3, rather than 4.
