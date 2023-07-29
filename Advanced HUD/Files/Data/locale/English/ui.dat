@@ -1592,6 +1592,36 @@ rangestart 2550 5599
 3076	Show/Hide Join and Leave Notifications in chat
 3077	Profanity Filter
 3078	Filter out profanity in chat
+3079	Request <c=FFA500>SHiFT™</c> Friend
+3080	Accept <c=FFA500>SHiFT™</c> Friend
+3081	Remove <c=FFA500>SHiFT™</c> Friend
+3082	Block On <c=FFA500>SHiFT™</c>
+3083	Unblock On <c=FFA500>SHiFT™</c>
+3084	<i><c=005EBD>%1NAME%</c><c=7F7F7F> has been requested as a  <c=FFA500>SHiFT™</c> friend</c></i>
+3085	<i><c=005EBD>%1NAME%</c><c=7F7F7F> has been accepted as a  <c=FFA500>SHiFT™</c> friend</c></i>
+3086	<i><c=005EBD>%1NAME%</c><c=7F7F7F> has been removed as a  <c=FFA500>SHiFT™</c> friend</c></i>
+3087	<i><c=005EBD>%1NAME%</c><c=7F7F7F> has been blocked on  <c=FFA500>SHiFT™</c></c></i>
+3088	<i><c=005EBD>%1NAME%</c><c=7F7F7F> has been unblocked on  <c=FFA500>SHiFT™</c></c></i>
+3089	<c=f>/requestfriend</c>   <c=9>[player name]</c>
+3090	<c=f>/acceptfriend</c>   <c=9>[player name]</c>
+3091	<c=f>/removefriend</c>   <c=9>[player name]</c>
+3092	<c=f>/blockfriend</c>   <c=9>[player name]</c>
+3093	<c=f>/unblockfriend</c>   <c=9>[player name]</c>
+3094	<i><c=ff0000>Friend not requested on  <c=FFA500>SHiFT™</c>.  Cannot request non-existent player.</c></i>
+3095	<i><c=ff0000>Friend not accepted on  <c=FFA500>SHiFT™</c>.  Cannot accept non-existent player.</c></i>
+3096	<i><c=ff0000>Friend not removed on  <c=FFA500>SHiFT™</c>.  Cannot remove non-existent player.</c></i>
+3097	<i><c=ff0000>Player not blocked on  <c=FFA500>SHiFT™</c>.  Cannot block non-existent player.</c></i>
+3098	<i><c=ff0000>Player not unblocked on  <c=FFA500>SHiFT™</c>.  Cannot unblock non-existent player.</c></i>
+3099	<b><c=00AFFF>%1NAME%</c></b> <c=FFD800> has made a  <c=FFA500>SHiFT™</c> friend request (Double click this message to accept)</c>.
+3100	Confirm request to add  <c=005EBD>%1NAME%</c> as a  <c=FFA500>SHiFT™</c> friend
+3101	Confirm accepting  <c=005EBD>%1NAME%</c> as a  <c=FFA500>SHiFT™</c> friend
+3102	Confirm request to remove  <c=005EBD>%1NAME%</c> as a  <c=FFA500>SHiFT™</c> friend
+3103	Confirm request to block  <c=005EBD>%1NAME%</c> on  <c=FFA500>SHiFT™</c>
+3104	Confirm unblocking  <c=005EBD>%1NAME%</c> on  <c=FFA500>SHiFT™</c>
+3105	<c=FFA500>SHiFT™</c> Friends
+3110	Connection(s) pending
+3111	Not yet connected to all players in lobby.  Unable to change ready state.
+3112	Game Starting.  Unable to change ready state.
 4062	Raider Retreat
 4063	We've located the origin of the Turanic Raider fleets.  They came from a small, isolated planetoid located in a remote area of the Great Wasteland. Engage hyperspace.
 4064	Bonus Homeworld 1 Mission - Raider Retreat
