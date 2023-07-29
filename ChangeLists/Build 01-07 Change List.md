@@ -132,9 +132,7 @@
 * Probe cost 70->100 (half way between hw1c and hw2c)
 * Addressed the gun alignment on the Hiigaran Shipyard and Vaygr Scout. They were shooting to the side of their targets, and rarely landing hits vs small targets like probes and fighters.
 * Hiigaran Ion Cannon Platform/Vaygr Heavy Missile Platform damage -16% (same as hw2c)
-* Kushan/Taiidan Multi-Gun Corvette Research Time 40->25
 * Kushan/Taiidan Multi-Gun Corvette Cost 300->235 (general buff, and to balance vs hw2 corvettes)
-* Kushan/Taiidan Heavy Corvette Research time 30->20
 * Kushan/Taiidan Heavy Corvette Cost 285->240, Build time 22->20 (general buff, and to balance vs hw2 corvettes)
 * Kushan/Taiidan Missile Destroyer damage vs hw1 corvettes -40%
 * Kushan/Taiidan Missile Destroyer Speed 130->145 (relatively closer to hw1c)

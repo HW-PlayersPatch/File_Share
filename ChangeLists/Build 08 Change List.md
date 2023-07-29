@@ -29,11 +29,12 @@
 * Lowered the Vaygr corvette, frigate, and captial ship health upgrades to be closer to hw2c. (these were unintentionally altered in the 2.0 patch)
 
 ## Balance
+* Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
 * Balanced dock repair times for fighters and corvettes (addressed a bug that caused squadrons to dock extremely fast. hw2 ships now repair slower, closer to their hw2c rate. hw1 corvettes repair 4.5x faster than before, to balance vs hw2.)
 * Removed evasive stance bonuses from non-combat/utility ships (evasive stance re-routes power from weapons to engines, however this is not possible on non-combat ships and had no effect in hw1c)
 * Tweaked rotational speeds on some units, for example to aid in positioning motherships around asteriod patches.
 * Tweaked ship damage vs resourcing units, to be closer to the classics.
-* Thousands of ship vs ship tests have been performed with Gearbox's developer balance testing tools, to fine tune combat performance.
+* Note: the base research times below get faster with each research ship/module.
 
 ### Hiigaran
 #### Bombers
@@ -83,13 +84,13 @@
 * Sensors range -9% (scouting was too hard to deny)
 * Speed burst ability duration 50->30secs -40%
 #### Interceptors
-* Fighter Drive Research Cost 100->500, Time 25->14sec
-* Fighter Chassis Research Cost 200->800, Time 35->21sec
+* Fighter Drive Research Cost 100->500, Time 35->20
+* Fighter Chassis Research Cost 200->800, Time 50->30
 * Build Time 7->9sec +29% (was funny to have interceptors build faster than scouts)
 #### Bombers
 * Cost 120->130 +8%
 #### Defenders
-* Defender Sub-Systems Research Cost 400->1000, Time 64->53sec
+* Defender Sub-Systems Research Cost 400->1000, Time 90->75
 * Build Time 9->7sec -22%
 #### Kushan Cloaked Fighters
 * Cloaked Fighter Research Cost 500->1100
@@ -106,7 +107,7 @@
 * Health 1440->1200 -17%
 * Healing beam arc increased
 #### Light Corvettes
-* Corvette Drive Research Cost 800->1500, Time 71->53sec
+* Corvette Drive Research Cost 800->1500, Time 100->75
 * Speed 285->305 +7%
 #### Salvage Corvettes
 * Corvette Chassis Cost 900->1200, Time 64->42sec
@@ -117,52 +118,52 @@
 * Speed 275->320 +16%
 * Health 1100->1400 +27%
 #### Minelayer Corvettes
-* Minelaying Tech Research Cost 700->1200, Time 49->71sec
+* Minelaying Tech Research Cost 700->1200, Time 70->100
 * Build Time 25->35sec +40%
 * Speed 246->255 +4%
 * Health 1080->1800 +67%
 * Damage bonus in aggressive stance 1.32->1.1 -17%
 #### Support Frigates
-* Capital Ship Drive Research Cost 800->1300, Time 71->53sec
+* Capital Ship Drive Research Cost 800->1300, Time 100->75
 * Cost 800->600 -25%
 * Build Time 85->65sec -24%
 * Health 26000->21000 -19%
 * Healing beam arc increased
 #### Assault Frigates
-* Capital Ship Chassis Research Cost 1400->1500, Time 85->64sec
+* Capital Ship Chassis Research Cost 1400->1500, Time 120->90
 * Cost 800->700 -13%
 * Build Time 68->60sec -12%
 * Now prioritize attacking corvettes over frigates.
 * Rebalanced weapons to be more consistent vs fighters and corvettes, by increasing accuracy and decreasing damage.
 * For Taiidan, fixed a gun alignment bug which caused 2 of their 4 guns to always miss small targets.
 #### Ion Frigates
-* Ion Cannon Research Cost 1000->2000, Time 64->85sec
+* Ion Cannon Research Cost 1000->2000, Time 90->120
 * Cost 900->800 -11%
 * Build Time 73->60sec -18%
 #### Kushan Drone Frigates
-* Drone Tech Research Cost 1100->1300, Time 28->57sec
+* Drone Tech Research Cost 1100->1300, Time 40->80
 * Build Time 77->70sec -9%
 * Speed 166->206 +24%
 * Health 25500->27500 +8%
 * Drone ability now lasts indefinitely and drones deploy 70% faster (same as hw1c)
 #### Taiidan Field Frigates
-* Defense Field Research Cost 1100->1300, Time 28->57sec
+* Defense Field Research Cost 1100->1300, Time 40->80
 * Build Time 77->70sec -9%
 * Speed 166->206 +24%
 * Health 26000->30000 +15%
 #### Motherships
 * Multiplayer Only: Health 322k->420k +30% (to match an upgraded Hiigaran Mothership)
 #### Carriers
-* Super Capital Ship Drive Research Cost 1300->1700, Time 71->35sec
+* Super Capital Ship Drive Research Cost 1300->1700, Time 100->50
 * Cost 3000->3500 +17% (with a frigate module Hiigaran is 3800 and Vaygr is 3100)
 * Build time 210->165sec -21% (it was a huge blow to lose a carrier, since they took so long to build)
 * Health 105k->120k +14%
 #### Destroyers
-* Super Heavy Chassis Research Cost 1900->5000, Time 53->99sec
+* Super Heavy Chassis Research Cost 1900->5000, Time 75->140
 * Cost 2500->2250 -10%
 * Health 106k->112k +6%
 #### Missile Destroyers
-* Guided Missile Research Cost 1400->3500, Time 42->71sec
+* Guided Missile Research Cost 1400->3500, Time 60->100
 * Cost 2000->2500 +25%
 * Health 65k->106k +63%
 * Damage vs hw2 corvettes -20%
@@ -189,7 +190,7 @@
 * Speed 90->175 +94%
 * Sensors range +8%
 #### Gravity Wells
-* Gravity Generator Research Time 35->71sec (same as v2.1)
+* Gravity Generator Research Time 50->100 (same as v2.1)
 * Cost 800->1000 +25%
 * Health 14400->11000 -24%
 * Ability duration 30->25sec (they are extremely effective with ballistics)
